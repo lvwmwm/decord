@@ -1,10 +1,10 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16071
+// Function ID: 16072
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5237, 1391, 1925, 21, 4342, 712, 1499, 589, 4338, 1236, 8477, 6072, 4775, 5828, 5435, 4909, 8700, 5421, 1435, 7721, 1297, 6060, 5829, 4706, 2]
+// Dependencies: [32, 19, 17, 6727, 1391, 1925, 21, 4661, 712, 1500, 589, 4734, 1236, 8516, 5432, 4733, 6286, 6291, 5433, 9298, 6930, 1435, 7939, 1297, 7341, 7178, 4656, 2]
 // Exports: default
 
-// Module 16021 (ChannelSettingsEditForumTag)
+// Module 16071 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";
@@ -72,7 +72,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   const tmp = createCacheKey();
   dependencyMap = tmp;
   callback = tmp2;
-  let obj = channelId(1499);
+  let obj = channelId(1500);
   navigation = obj.useNavigation();
   let obj1 = navigation;
   let tmp6 = null;
@@ -235,7 +235,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "title" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   obj = { style: tmp.container, children: null };
@@ -270,22 +270,22 @@ export default function ChannelSettingsEditForumTag(channelId) {
           usableCustomEmojiById(null);
           callback("");
         };
-        obj5[2] = tmp27(tmp3(6060).CircleXIcon, { size: "xs" });
-        let tmp27Result = tmp27(tmp3(4909).PressableOpacity, obj5);
+        obj5[2] = tmp27(tmp3(7341).CircleXIcon, { size: "xs" });
+        let tmp27Result = tmp27(tmp3(5433).PressableOpacity, obj5);
       } else {
         tmp27Result = null;
       }
       const obj6 = { children: null };
       const obj7 = { hasIcons: true, children: null };
       obj3[2] = tmp27Result;
-      obj7[1] = tmp27(tmp3(5435).TableRow, obj3);
-      const items6 = [tmp27(tmp3(5828).TableRowGroup, obj7), ];
+      obj7[1] = tmp27(tmp3(6291).TableRow, obj3);
+      const items6 = [tmp27(tmp3(6286).TableRowGroup, obj7), ];
       const obj8 = { style: null, children: null };
       obj8[0] = tmp.hint;
       const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
       let intl2 = tmp3(1236).intl;
       obj9[2] = intl2.string(tmp3(1236).t["3v8kZH"]);
-      obj8[1] = tmp27(tmp3(4338).Text, obj9);
+      obj8[1] = tmp27(tmp3(4734).Text, obj9);
       items6[1] = tmp27(tmp28, obj8);
       obj6[0] = items6;
       const items7 = [tmp29(tmp28, obj6), , ];
@@ -309,8 +309,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
         }
         closure_10(tmp2);
       };
-      obj11[1] = tmp27(tmp3(5829).TableSwitchRow, obj10);
-      items7[1] = tmp27(tmp3(5828).TableRowGroup, obj11);
+      obj11[1] = tmp27(tmp3(7178).TableSwitchRow, obj10);
+      items7[1] = tmp27(tmp3(6286).TableRowGroup, obj11);
       tmp27Result = null;
       if (!tmp2) {
         const obj12 = { hasIcons: false, children: null };
@@ -337,12 +337,12 @@ export default function ChannelSettingsEditForumTag(channelId) {
           };
           obj.show(obj);
         };
-        obj12[1] = tmp27(tmp3(5435).TableRow, obj13);
-        tmp27Result = tmp27(tmp3(5828).TableRowGroup, obj12);
+        obj12[1] = tmp27(tmp3(6291).TableRow, obj13);
+        tmp27Result = tmp27(tmp3(6286).TableRowGroup, obj12);
       }
       items7[2] = tmp27Result;
       obj1[2] = items7;
-      obj[1] = tmp29(tmp3(4775).Stack, obj1);
+      obj[1] = tmp29(tmp3(4733).Stack, obj1);
       return tmp27(tmp28, obj);
     }
     const obj14 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
@@ -364,9 +364,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
       str2 = "";
     }
     obj14[3] = str2;
-    tmp27Result1 = tmp27(tag(5421), obj14);
+    tmp27Result1 = tmp27(tag(6930), obj14);
     tmp31 = tag;
-    const tmp32 = tag(5421);
+    const tmp32 = tag(6930);
   }
-  tmp27Result1 = tmp27(tmp3(7721).ReactionIcon, {});
+  tmp27Result1 = tmp27(tmp3(7939).ReactionIcon, {});
 };

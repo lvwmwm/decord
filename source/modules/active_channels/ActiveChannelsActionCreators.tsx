@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15324
+// Function ID: 15325
 // Name: _fetchActiveChannels
-// Dependencies: [5, 676, 709, 530, 4242, 2]
+// Dependencies: [5, 676, 709, 530, 4274, 2]
 // Exports: fetchActiveChannels
 
-// Module 15275 (_fetchActiveChannels)
+// Module 15324 (_fetchActiveChannels)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -29,7 +29,7 @@ function _fetchActiveChannels() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

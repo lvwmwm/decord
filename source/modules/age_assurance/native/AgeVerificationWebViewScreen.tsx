@@ -1,10 +1,10 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 6303
+// Function ID: 6304
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 7864, 7866, 21, 3, 4342, 712, 4197, 4582, 7869, 4058, 7876, 500, 5884, 2]
+// Dependencies: [32, 19, 17, 5427, 5429, 21, 3, 4661, 712, 4229, 4992, 5436, 4090, 6304, 500, 5446, 2]
 // Exports: default
 
-// Module 7875 (AgeVerificationWebViewScreen)
+// Module 6303 (AgeVerificationWebViewScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

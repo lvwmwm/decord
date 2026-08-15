@@ -1,12 +1,12 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16037
+// Function ID: 16038
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8083, 1391, 676, 21, 4342, 712, 1628, 589, 8082, 9745, 1297, 9762, 9763, 1236, 5883, 15988, 8597, 2]
+// Dependencies: [32, 19, 17, 8133, 1391, 676, 21, 4661, 712, 1629, 589, 8132, 9948, 1297, 9973, 9974, 1236, 6549, 16038, 8636, 2]
 // Exports: default
 
-// Module 15987 (ConnectedChannelSettingsInstantInvites)
+// Module 16037 (ConnectedChannelSettingsInstantInvites)
 import _slicedToArray from "_slicedToArray";
-import module_8597 from "module_8597";
+import module_8636 from "module_8636";
 import { View } from "SceneLoadingIndicator";
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -89,26 +89,26 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items5);
   const items6 = [memo1.length];
   const effect = memo.useEffect(() => {
-    callback(8082).setSection(constants.INSTANT_INVITES);
+    callback(8132).setSection(constants.INSTANT_INVITES);
   }, []);
   const items7 = [memo1];
   const callback1 = memo.useCallback((arg0, arg1) => {
     if ("invite" === memo1[arg1].type) {
       let obj = { invite: null };
       obj[0] = tmp.data;
-      let tmp5 = outer1_9(outer1_1(9745), obj);
+      let tmp5 = outer1_9(outer1_1(9948), obj);
     } else {
       obj = { channel: null };
       obj[0] = tmp.data;
-      tmp5 = outer1_9(tmp(9745).LinkedChannelInvite, obj);
+      tmp5 = outer1_9(tmp(9948).LinkedChannelInvite, obj);
     }
     return tmp5;
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
       obj = { lightSource: null, darkSource: null, title: null, body: null };
-      obj[0] = tmp2(9762);
-      obj[1] = tmp2(9763);
+      obj[0] = tmp2(9973);
+      obj[1] = tmp2(9974);
       const intl = tmpResult(1236).intl;
       obj[2] = intl.string(tmpResult(1236).t["+nLJkZ"]);
       const intl2 = tmpResult(1236).intl;
@@ -125,17 +125,17 @@ export default function ConnectedChannelSettingsInstantInvites() {
       obj1[2] = tmp4;
       obj1[3] = callback1;
       obj1[4] = tmp.gap.height;
-      obj1[5] = importDefault(1628)().bottom;
-      obj[1] = callback(tmp2(8597), obj1);
+      obj1[5] = importDefault(1629)().bottom;
+      obj[1] = callback(tmp2(8636), obj1);
       let tmp16Result = callback(stateFromStoresArray, obj);
     }
   }
   obj2 = { style: tmp.content, children: null };
   tmp = callback;
-  const items8 = [callback(tmpResult(5883).SceneLoadingIndicator, {}), ];
+  const items8 = [callback(tmpResult(6549).SceneLoadingIndicator, {}), ];
   tmpResult = null;
   if (memo1.length > 0) {
-    tmp2 = tmp2(15988);
+    tmp2 = tmp2(16038);
     obj = { item: null, onMeasured: null };
     memo1 = memo1[0];
     obj[0] = memo1;

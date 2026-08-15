@@ -1,9 +1,9 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14211
+// Function ID: 14212
 // Name: toggle
-// Dependencies: [5890, 8148, 676, 14149, 4705, 1236, 4795, 14180, 14181, 589, 10421, 2]
+// Dependencies: [5258, 8198, 676, 14181, 4827, 1236, 4763, 14212, 14213, 589, 10669, 2]
 
-// Module 14179 (toggle)
+// Module 14211 (toggle)
 import hasConsented from "hasConsented";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -14,7 +14,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.XuADY2);
   },
-  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
   useValue: function useDataToImproveDiscordSettingValue() {
     const items = [hasConsented];
     return require(589) /* initialize */.useStateFromStores(items, () => hasConsented.hasConsented(constants.USAGE_STATISTICS));
@@ -22,11 +22,11 @@ createToggle = {
   onValueChange: function handleUsageStatisticsChange(arg0) {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
-      const obj3 = require(14180) /* handleRequestSuccess */;
-      require(14180) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14181).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(14180) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(14212) /* handleRequestSuccess */;
+      require(14212) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14213).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(14212) /* handleRequestSuccess */.setConsents(items, []);
     } else {
-      let obj = importDefault(4705);
+      let obj = importDefault(4827);
       obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OdPCbN);
@@ -36,16 +36,16 @@ createToggle = {
       obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["D3+rU4"]);
       const intl4 = require(1236) /* getSystemLocale */.intl;
       obj[3] = intl4.string(require(1236) /* getSystemLocale */.t.kYpG0u);
-      obj[4] = importDefault(4795).Colors.RED;
+      obj[4] = importDefault(4763).Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.USAGE_STATISTICS];
-        return callback(14180).setConsents([], items);
+        return callback(14212).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(14149) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(14181) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

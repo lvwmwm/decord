@@ -1,10 +1,10 @@
-// Module ID: 4781
-// Function ID: 4782
+// Module ID: 4749
+// Function ID: 4750
 // Name: MINIMUM_HIT_AREA
-// Dependencies: [4779, 712, 2]
+// Dependencies: [4747, 712, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 4781 (MINIMUM_HIT_AREA)
+// Module 4749 (MINIMUM_HIT_AREA)
 import IconSizes from "IconSizes";
 import IconSizes from "IconSizes";
 import IconSizes from "IconSizes";
@@ -43,7 +43,7 @@ export function getButtonDefaultTextVariant(size) {
   return str;
 }
 export const getButtonPadding = function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
-  return (FAB_BUTTON_SIZE - require(4779) /* IconSizes */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
+  return (FAB_BUTTON_SIZE - require(4747) /* IconSizes */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
 };
 export const getButtonBorderRadius = function getButtonBorderRadius(arg0) {
   if ("lg" === arg0) {

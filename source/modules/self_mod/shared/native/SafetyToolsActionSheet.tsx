@@ -1,11 +1,11 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10605
+// Function ID: 10606
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 3998, 10311, 21, 4342, 712, 10346, 10349, 10350, 589, 10324, 5839, 1236, 8831, 8830, 4310, 10354, 2007, 4058, 8569, 8567, 8568, 8566, 9307, 10357, 6060, 7850, 4706, 10344, 8833, 8832, 8086, 9710, 9709, 4572, 10358, 10362, 10363, 10364, 10332, 10333, 10365, 10355, 5828, 5435, 5441, 2]
+// Dependencies: [19, 17, 4030, 10569, 21, 4661, 712, 10603, 10606, 10607, 589, 10582, 6685, 1236, 9184, 9183, 4342, 10611, 2007, 4090, 8608, 8606, 8607, 8605, 9736, 10614, 7341, 6553, 4656, 10601, 9436, 9435, 8136, 9905, 9904, 5260, 10615, 10619, 10620, 10621, 9835, 9834, 10622, 10612, 6286, 6291, 6296, 2]
 // Exports: default
 
-// Module 10348 (SafetyToolsActionSheet)
-import module_4058 from "module_4058";
+// Module 10605 (SafetyToolsActionSheet)
+import module_4090 from "module_4090";
 import { View } from "SafetyToolsCrisisTextLineActionSheet";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
@@ -80,7 +80,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_4058,
+        recipientId: module_4090,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -140,10 +140,10 @@ export default function SafetyToolsActionSheet(channelId) {
     obj2[5] = function onPress() {
       const obj = outer1_1(outer1_2[24]);
       if (closure_11) {
-        obj.unignoreUser(module_4058, outer1_6, closure_0);
+        obj.unignoreUser(module_4090, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
       } else {
-        obj.ignoreUser(module_4058, outer1_6, closure_0);
+        obj.ignoreUser(module_4090, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
       }
     };
@@ -167,8 +167,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let tmpResult = tmp(tmp2[24]);
         let obj = { location: null };
         obj[0] = outer1_6;
-        tmpResult.unblockUser(module_4058, obj);
-        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_4058, closure_0);
+        tmpResult.unblockUser(module_4090, obj);
+        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_4090, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
         const obj5 = outer1_1(outer1_2[27]);
       } else {
@@ -231,7 +231,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_4058,
+        recipientId: module_4090,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -262,7 +262,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_4058,
+        recipientId: module_4090,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -303,8 +303,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let trailing;
         ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = arg0);
         const obj = { label, subLabel, onPress, trailing, disabled, icon: null };
-        obj[5] = callback2(callback(5441).TableRowIcon, { source: icon, IconComponent });
-        return callback2(callback(5435).TableRow, obj, arg1);
+        obj[5] = callback2(callback(6296).TableRowIcon, { source: icon, IconComponent });
+        return callback2(callback(6291).TableRow, obj, arg1);
       });
       obj[1] = stateFromStores1(channelId(warningType[44]).TableRowGroup, obj);
       return stateFromStores1(onClose, obj, buttons.sectionKey);

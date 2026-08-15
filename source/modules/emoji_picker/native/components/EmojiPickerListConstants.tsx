@@ -1,9 +1,9 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 9301
+// Function ID: 9302
 // Name: IMAGE_SIZE
 // Dependencies: [1338, 2]
 
-// Module 8703 (IMAGE_SIZE)
+// Module 9301 (IMAGE_SIZE)
 const result = 2 * require("ExpressionPickerViewType").PADDING_VERTICAL;
 const result1 = require("set").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListConstants.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 9843
+// Function ID: 9844
 // Name: XboxLinkDiscordError
-// Dependencies: [19, 10473, 21, 1499, 10532, 10533, 1236, 2]
+// Dependencies: [19, 9752, 21, 1500, 9793, 9794, 1236, 2]
 // Exports: default
 
-// Module 10531 (XboxLinkDiscordError)
+// Module 9843 (XboxLinkDiscordError)
 import "noop";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import { jsx } from "jsxProd";
@@ -13,9 +13,9 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkError.tsx");
 
 export default function XboxLinkDiscordError(onClose) {
-  let obj = require(1499) /* useNavigation */;
+  let obj = require(1500) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const connectRetry = require(10532) /* useConnectRetry */.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
+  const connectRetry = require(9793) /* useConnectRetry */.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
   obj = { title: null, body: null, onClose: null, onRetry: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.INwPCV);
@@ -23,5 +23,5 @@ export default function XboxLinkDiscordError(onClose) {
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.GyXRRz);
   obj[2] = onClose.onClose;
   obj[3] = connectRetry;
-  return jsx(require(10533) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  return jsx(require(9794) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13486
+// Function ID: 13487
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4342, 712, 500, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 500, 4734, 1236, 2]
 // Exports: default
 
-// Module 13454 (LiveTag)
+// Module 13486 (LiveTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -38,6 +38,6 @@ export default function LiveTag(arg0) {
   items1 = [tmp.tagText, textStyle];
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.dI3q4h).toUpperCase();
-  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-xs/bold", style: items1, lineClamp: 1, allowFontScaling, children: null });
+  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", style: items1, lineClamp: 1, allowFontScaling, children: null });
   return <View variant="text-xs/bold" style={items1} lineClamp={1} allowFontScaling={allowFontScaling}>{null}</View>;
 };

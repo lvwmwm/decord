@@ -1,10 +1,10 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 8810
+// Function ID: 8811
 // Name: GuildEventTopic
-// Dependencies: [19, 17, 1397, 676, 21, 4342, 7856, 1236, 9005, 4338, 8726, 1891, 4310, 9031, 2007, 9032, 9033, 9034, 4892, 9035, 9036, 8079, 4888, 8051, 8050, 8042, 3943, 9038, 4775, 2]
+// Dependencies: [19, 17, 1397, 676, 21, 4661, 8071, 1236, 8785, 4734, 8811, 1892, 4342, 8821, 2007, 8822, 8823, 8824, 6896, 8825, 8826, 8129, 6892, 8101, 8100, 8092, 3975, 8828, 4733, 2]
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
 
-// Module 9030 (GuildEventTopic)
+// Module 8810 (GuildEventTopic)
 import registerAsset from "registerAsset";
 import { View } from "registerAsset";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -39,7 +39,7 @@ export const GuildEventTopic = function GuildEventTopic(arg0) {
   obj[3] = onChange;
   obj[4] = topic;
   obj[5] = closure_9;
-  obj[1] = callback(require(7856) /* TextInput */.TextInput, obj);
+  obj[1] = callback(require(8071) /* TextInput */.TextInput, obj);
   return callback(View, obj);
 };
 export const GuildEventLocation = function GuildEventLocation(arg0) {
@@ -57,7 +57,7 @@ export const GuildEventLocation = function GuildEventLocation(arg0) {
   obj[3] = closure_8;
   obj[4] = onChange;
   obj[5] = onFocus;
-  obj[1] = callback(require(7856) /* TextInput */.TextInput, obj);
+  obj[1] = callback(require(8071) /* TextInput */.TextInput, obj);
   return callback(View, obj);
 };
 export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
@@ -69,7 +69,7 @@ export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
   const tmp = callback3();
   const items = [recurrenceRule, startDate];
   dependencyMap = recurrenceOptions.useMemo(() => startDate(paths[8]).recurrenceRuleToOption(startDate, recurrenceRule), items);
-  let obj = startDate(9005);
+  let obj = startDate(8785);
   recurrenceOptions = obj.getRecurrenceOptions(startDate);
   const found = recurrenceOptions.find((value) => value.value === closure_3);
   let label;
@@ -81,7 +81,7 @@ export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
   const obj1 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
   let intl = tmp2(1236).intl;
   obj1[2] = intl.string(startDate(1236).t["59TVxL"]);
-  obj[1] = callback(startDate(4338).Text, obj1);
+  obj[1] = callback(startDate(4734).Text, obj1);
   const items1 = [callback(View, obj), ];
   let obj2 = {
     onPress() {
@@ -109,11 +109,11 @@ export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
   const intl2 = tmp2(1236).intl;
   obj2[1] = intl2.string(startDate(1236).t["59TVxL"]);
   obj2[2] = label;
-  obj2[3] = recurrenceRule(9032);
+  obj2[3] = recurrenceRule(8822);
   const intl3 = tmp2(1236).intl;
   obj2[5] = intl3.string(startDate(1236).t["59TVxL"]);
   obj2[6] = label;
-  items1[1] = callback(startDate(8726).InputButton, obj2);
+  items1[1] = callback(startDate(8811).InputButton, obj2);
   obj[1] = items1;
   return callback2(View, obj);
 };
@@ -124,7 +124,7 @@ export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelect
   let onChange;
   ({ guild, disabled } = arg0);
   ({ entityType, onChange } = arg0);
-  let obj = require(9033) /* useChannelsUserCanStartStageIn */;
+  let obj = require(8823) /* useChannelsUserCanStartStageIn */;
   obj = { name: null, value: null, description: null, icon: null, IconComponent: null, disabled: null };
   const channelsUserCanStartStageIn = obj.useChannelsUserCanStartStageIn(guild);
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -132,8 +132,8 @@ export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelect
   obj[1] = constants.VOICE;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["EV//4f"]);
-  obj[3] = importDefault(9034);
-  obj[4] = require(4892) /* VoiceNormalIcon */.VoiceNormalIcon;
+  obj[3] = importDefault(8824);
+  obj[4] = require(6896) /* VoiceNormalIcon */.VoiceNormalIcon;
   obj[5] = disabled;
   const items = [obj, ];
   obj = { name: null, value: null, description: null, icon: null, IconComponent: null, disabled: null };
@@ -142,8 +142,8 @@ export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelect
   obj[1] = constants.EXTERNAL;
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl4.string(require(1236) /* getSystemLocale */.t.DYxrHm);
-  obj[3] = importDefault(9035);
-  obj[4] = require(9036) /* LocationIcon */.LocationIcon;
+  obj[3] = importDefault(8825);
+  obj[4] = require(8826) /* LocationIcon */.LocationIcon;
   obj[5] = disabled;
   items[1] = obj;
   const features = guild.features;
@@ -154,8 +154,8 @@ export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelect
     obj1[1] = constants.STAGE_INSTANCE;
     const intl6 = tmp(1236).intl;
     obj1[2] = intl6.string(tmp(1236).t.LgALpp);
-    obj1[3] = importDefault(8079);
-    obj1[4] = tmp(4888).StageIcon;
+    obj1[3] = importDefault(8129);
+    obj1[4] = tmp(6892).StageIcon;
     obj1[5] = 0 === channelsUserCanStartStageIn.length || disabled;
     items.unshift(obj1);
   }
@@ -172,7 +172,7 @@ export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelect
     obj[4] = disabled;
     return callback2(callback(table[24]).TableRadioRow, obj, name);
   });
-  return callback(require(8051) /* context */.TableRadioGroup, obj2);
+  return callback(require(8101) /* context */.TableRadioGroup, obj2);
 };
 export const GuildEventDescription = function GuildEventDescription(onFocus) {
   let description;
@@ -195,7 +195,7 @@ export const GuildEventDescription = function GuildEventDescription(onFocus) {
     }
   };
   obj[5] = description;
-  obj[2] = callback(onFocus(8042).TextArea, obj);
+  obj[2] = callback(onFocus(8092).TextArea, obj);
   return callback(View, obj);
 };
 export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
@@ -206,11 +206,11 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
   const timeLabel = dateLabel.timeLabel;
   let date = dateLabel.date;
   if (date === undefined) {
-    date = timeLabel(3943)();
+    date = timeLabel(3975)();
   }
   ({ minimumDate: dependencyMap, maximumDate } = dateLabel);
   if (maximumDate === undefined) {
-    let obj = timeLabel(3943)();
+    let obj = timeLabel(3975)();
     maximumDate = obj.add(30, "days").endOf("month");
     const addResult = obj.add(30, "days");
   }
@@ -225,13 +225,13 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
   obj = { style: tmp5.formGroup, children: null };
   obj = { direction: "horizontal", spacing: 16, children: null };
   const obj1 = { style: tmp5.dateInput, children: null };
-  const items = [callback(time(4338).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: dateLabel }), ];
+  const items = [callback(time(4734).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: dateLabel }), ];
   const obj3 = { text: dateLabel, value: null, onPress: null, disabled: null };
   obj3[1] = date.format("MMM Do YYYY");
   time = "date";
   obj3[2] = () => {
     if (!disabled) {
-      let obj = importAll(1891);
+      let obj = importAll(1892);
       const result = obj.dismissGlobalKeyboard();
       let openLazyResult = time;
       obj = { onSubmit: null, title: null, startDate: null, minimumDate: null, maximumDate: null, requireDateChanged: true, mode: null };
@@ -246,7 +246,7 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
         }
       };
       obj[1] = "date" === time ? time : timeLabel;
-      const obj2 = importDefault(4310);
+      const obj2 = importDefault(4342);
       const obj4 = date;
       const tmp2 = dependencyMap;
       const tmp5 = "date" === time ? time : timeLabel;
@@ -259,23 +259,23 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
       obj[3] = toDateResult;
       obj[4] = maximumDate.toDate();
       obj[6] = openLazyResult;
-      openLazyResult = obj2.openLazy(require(2007) /* asyncRequireImpl */(9038, dependencyMap.paths), "DatePicker", obj);
+      openLazyResult = obj2.openLazy(require(2007) /* asyncRequireImpl */(8828, dependencyMap.paths), "DatePicker", obj);
       obj5 = outer1_3;
-      const tmp8 = require(2007) /* asyncRequireImpl */(9038, dependencyMap.paths);
+      const tmp8 = require(2007) /* asyncRequireImpl */(8828, dependencyMap.paths);
     }
   };
   obj3[3] = disabled;
-  items[1] = callback(time(8726).InputButton, obj3);
+  items[1] = callback(time(8811).InputButton, obj3);
   obj1[1] = items;
   const items1 = [callback2(disabled, obj1), ];
   let obj4 = { style: tmp5.timeInput, children: null };
-  const items2 = [callback(time(4338).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: timeLabel }), ];
+  const items2 = [callback(time(4734).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: timeLabel }), ];
   const obj6 = { text: timeLabel, value: null, onPress: null, disabled: null };
   obj6[1] = date.format("LT");
   time = "time";
   obj6[2] = () => {
     if (!disabled) {
-      let obj = importAll(1891);
+      let obj = importAll(1892);
       const result = obj.dismissGlobalKeyboard();
       let openLazyResult = time;
       obj = { onSubmit: null, title: null, startDate: null, minimumDate: null, maximumDate: null, requireDateChanged: true, mode: null };
@@ -290,7 +290,7 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
         }
       };
       obj[1] = "date" === time ? time : timeLabel;
-      const obj2 = importDefault(4310);
+      const obj2 = importDefault(4342);
       const obj4 = date;
       const tmp2 = dependencyMap;
       const tmp5 = "date" === time ? time : timeLabel;
@@ -303,16 +303,16 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
       obj[3] = toDateResult;
       obj[4] = maximumDate.toDate();
       obj[6] = openLazyResult;
-      openLazyResult = obj2.openLazy(require(2007) /* asyncRequireImpl */(9038, dependencyMap.paths), "DatePicker", obj);
+      openLazyResult = obj2.openLazy(require(2007) /* asyncRequireImpl */(8828, dependencyMap.paths), "DatePicker", obj);
       obj5 = outer1_3;
-      const tmp8 = require(2007) /* asyncRequireImpl */(9038, dependencyMap.paths);
+      const tmp8 = require(2007) /* asyncRequireImpl */(8828, dependencyMap.paths);
     }
   };
   obj6[3] = disabled;
-  items2[1] = callback(time(8726).InputButton, obj6);
+  items2[1] = callback(time(8811).InputButton, obj6);
   obj4[1] = items2;
   items1[1] = callback2(disabled, obj4);
   obj[2] = items1;
-  obj[1] = callback2(time(4775).Stack, obj);
+  obj[1] = callback2(time(4733).Stack, obj);
   return callback(disabled, obj);
 };

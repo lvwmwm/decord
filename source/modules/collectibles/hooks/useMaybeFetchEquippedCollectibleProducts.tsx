@@ -1,10 +1,10 @@
-// Module ID: 8875
-// Function ID: 8876
+// Module ID: 8960
+// Function ID: 8961
 // Name: useEquippedCollectibleSkuIds
-// Dependencies: [19, 1922, 589, 8377, 8876, 8877, 8878, 2]
+// Dependencies: [19, 1922, 589, 8416, 4797, 8961, 8962, 2]
 // Exports: default
 
-// Module 8875 (useEquippedCollectibleSkuIds)
+// Module 8960 (useEquippedCollectibleSkuIds)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

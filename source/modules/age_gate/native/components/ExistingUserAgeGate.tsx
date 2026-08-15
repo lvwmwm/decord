@@ -1,10 +1,10 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16521
+// Function ID: 16522
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16469, 676, 21, 4342, 1499, 589, 698, 1236, 1993, 38, 15177, 4572, 3943, 15200, 5389, 4338, 16472, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16519, 676, 21, 4661, 1500, 589, 698, 1236, 1993, 38, 15226, 5260, 3975, 15249, 6803, 4734, 16522, 4745, 2]
 // Exports: default
 
-// Module 16471 (ExistingUserAgeGate)
+// Module 16521 (ExistingUserAgeGate)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "t";
@@ -77,7 +77,7 @@ export default function ExistingUserAgeGate(onSuccess) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -187,7 +187,7 @@ export default function ExistingUserAgeGate(onSuccess) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -232,7 +232,7 @@ export default function ExistingUserAgeGate(onSuccess) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c0 = tmp;
           throw tmp10;

@@ -1,10 +1,10 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16672
+// Function ID: 16673
 // Name: buildRequestHashPayload
-// Dependencies: [5, 16631, 500, 16632, 2]
+// Dependencies: [5, 16673, 500, 16674, 2]
 // Exports: getAgeSignalIntegrityToken
 
-// Module 16630 (buildRequestHashPayload)
+// Module 16672 (buildRequestHashPayload)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -92,7 +92,7 @@ function _getAgeSignalIntegrityToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ function _getAgeSignalIntegrityToken() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp9) {
           v0 = tmp;
           throw tmp9;
@@ -184,7 +184,7 @@ function _getAgeSignalIntegrityToken() {
 const result = require("set").fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalAttestation.tsx");
 
 export { buildRequestHashPayload };
-export const getAgeSignalIntegrityToken = function getAgeSignalIntegrityToken(outer1_0) {
+export const getAgeSignalIntegrityToken = function getAgeSignalIntegrityToken(closure_0) {
   const self = this;
   const apply = _getAgeSignalIntegrityToken.apply;
   if (typeof apply === "unknown") {

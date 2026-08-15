@@ -1,10 +1,10 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 9740
+// Function ID: 9741
 // Name: validateDiscordTag
-// Dependencies: [32, 676, 1236, 38, 698, 9001, 2]
+// Dependencies: [32, 676, 1236, 38, 698, 8781, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 9311 (validateDiscordTag)
+// Module 9740 (validateDiscordTag)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 
@@ -25,9 +25,9 @@ function validateDiscordTag(arr) {
       }
       obj[2] = str2.length;
       obj[3] = tmp4[0].length;
-      let tmp5Result = tmp5(9001);
+      let tmp5Result = tmp5(8781);
       obj[4] = tmp5Result.isEmail(arr);
-      tmp5Result = tmp5(9001);
+      tmp5Result = tmp5(8781);
       obj[5] = tmp5Result.isInvite(arr);
       obj[6] = regex.test(arr);
       obj.track(constants2.FRIEND_REQUEST_FAILED, obj);

@@ -1,10 +1,10 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12159
+// Function ID: 12160
 // Name: _fetchNote
-// Dependencies: [5, 19, 12415, 676, 589, 709, 530, 2]
+// Dependencies: [5, 19, 12160, 676, 589, 709, 530, 2]
 // Exports: default
 
-// Module 12414 (_fetchNote)
+// Module 12159 (_fetchNote)
 import dispatcher from "dispatcher";
 import noop from "noop";
 import getNote from "getNote";
@@ -30,7 +30,7 @@ function _fetchNote() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

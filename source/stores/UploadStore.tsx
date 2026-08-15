@@ -1,9 +1,9 @@
-// Module ID: 7364
-// Function ID: 7365
+// Module ID: 7582
+// Function ID: 7583
 // Name: initialize
-// Dependencies: [4584, 589, 709, 2]
+// Dependencies: [4994, 589, 709, 2]
 
-// Module 7364 (initialize)
+// Module 7582 (initialize)
 import reinjectEphemerals from "reinjectEphemerals";
 import { Store } from "initialize";
 

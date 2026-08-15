@@ -1,8 +1,8 @@
-// Module ID: 16028
-// Function ID: 16029
-// Dependencies: [19, 17, 1391, 8468, 21, 4342, 712, 1502, 589, 11746, 15887, 2]
+// Module ID: 16078
+// Function ID: 16079
+// Dependencies: [19, 17, 1391, 8507, 21, 4661, 712, 1503, 589, 11466, 15937, 2]
 
-// Module 16028
+// Module 16078
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SearchTabs } from "MessageEmbedTypes";
@@ -16,7 +16,7 @@ obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER
 obj[0] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(() => {
-  let obj = channelId(1502);
+  let obj = channelId(1503);
   channelId = obj.useRoute().params.channelId;
   const items = [ensureGuildLoaded];
   const stateFromStores = channelId(589).useStateFromStores(items, () => {
@@ -28,8 +28,8 @@ const memoResult = require("noop").memo(() => {
     return guild_id;
   });
   const obj2 = channelId(589);
-  const channelDetailsSearchContext = channelId(11746).useChannelDetailsSearchContext(channelId, stateFromStores);
-  obj = { style: callback().container, children: jsx(importDefault(15887), obj) };
+  const channelDetailsSearchContext = channelId(11466).useChannelDetailsSearchContext(channelId, stateFromStores);
+  obj = { style: callback().container, children: jsx(importDefault(15937), obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;
 });

@@ -1,9 +1,9 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14889
+// Function ID: 14890
 // Name: pressable
-// Dependencies: [13738, 21, 13334, 589, 3943, 14167, 4292, 13920, 10421, 2]
+// Dependencies: [13770, 21, 13366, 589, 3975, 14199, 4324, 13952, 10669, 2]
 
-// Module 14849 (pressable)
+// Module 14889 (pressable)
 import checkForNewerBuild from "checkForNewerBuild";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,9 +17,9 @@ createToggle = {
   IconComponent: function InstallNativeUpdateIcon() {
     const items = [checkForNewerBuild];
     if (obj.useStateFromStores(items, () => null !== checkForNewerBuild.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp(4292).DownloadIcon;
+      let RefreshIcon = tmp(4324).DownloadIcon;
     } else {
-      RefreshIcon = tmp(13920).RefreshIcon;
+      RefreshIcon = tmp(13952).RefreshIcon;
     }
     return <RefreshIcon />;
   },
@@ -43,21 +43,21 @@ createToggle = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + importDefault(3943)(stateFromStores1).fromNow();
-        const obj3 = importDefault(3943)(stateFromStores1);
+        str = "Last refreshed " + importDefault(3975)(stateFromStores1).fromNow();
+        const obj3 = importDefault(3975)(stateFromStores1);
       }
     }
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = require(14167) /* useStaffOrDeveloperSettingPredicate */;
-    return checkForNewerBuild.hasUpdatesConfigured && require(14167) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(14199) /* useStaffOrDeveloperSettingPredicate */;
+    return checkForNewerBuild.hasUpdatesConfigured && require(14199) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
     const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(13334).openBuildInstaller(newBuild);
-      const obj2 = importAll(13334);
+      importAll(13366).openBuildInstaller(newBuild);
+      const obj2 = importAll(13366);
     } else {
       checkForNewerBuild.checkForNewerBuild();
     }

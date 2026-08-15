@@ -1,24 +1,24 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14287
+// Function ID: 14288
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 676, 8148, 21, 10421, 1236, 1993, 13959, 2]
+// Dependencies: [19, 17, 676, 8198, 21, 10669, 1236, 1993, 13991, 2]
 // Exports: default
 
-// Module 14255 (FamilyCenterParentalControlsContentAndSocial)
+// Module 14287 (FamilyCenterParentalControlsContentAndSocial)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
 
 export default function FamilyCenterParentalControlsContentAndSocial() {
-  let obj = require(10421) /* createToggle */;
+  let obj = require(10669) /* createToggle */;
   obj = { sections: null };
   obj = { settings: items, subLabel: null };
-  items = [MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
+  items = [MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
   const intl = require(1236) /* getSystemLocale */.intl;
   const obj1 = { learnMoreLink: null };
   let obj4 = importDefault(1993);
@@ -29,19 +29,19 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl2.string(require(1236) /* getSystemLocale */.t.MeYuqs);
   const items2 = [, ];
-  ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileSetting);
+  ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileUserSettings);
   obj2[1] = items2;
   items1[1] = obj2;
   const obj3 = { label: null, settings: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.XlGG9c);
   const items3 = [, , ];
-  ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileSetting);
+  ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileUserSettings);
   obj3[1] = items3;
   items1[2] = obj3;
   obj[0] = items1;
   obj4 = { children: null };
   const list = obj.createList(obj);
-  obj4[0] = jsx(importDefault(13959), { node: list });
+  obj4[0] = jsx(importDefault(13991), { node: list });
   return <View>{null}</View>;
 };

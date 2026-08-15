@@ -1,9 +1,9 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16525
+// Function ID: 16526
 // Name: handleMessageCreate
-// Dependencies: [1391, 4584, 1979, 1922, 676, 7845, 3, 6986, 5982, 5322, 1954, 4040, 5203, 5052, 2]
+// Dependencies: [1391, 4994, 1979, 1922, 676, 5430, 3, 7427, 7269, 5038, 1954, 4072, 5039, 4996, 2]
 
-// Module 16475 (handleMessageCreate)
+// Module 16525 (handleMessageCreate)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -76,7 +76,7 @@ let prototype = function AgeVerificationManager() {
         }
         if (tmp16) {
           (function handleLoadChannelMessages(channelId) {
-            let obj = callback(6986);
+            let obj = callback(7427);
             obj = { channelId, limit: closure_9 };
             const messages = obj.fetchMessages(obj);
           })(tmp12);
@@ -95,8 +95,8 @@ let prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(5982).preloadForumThreads(channel);
-              const obj = channelId(5982);
+              channelId(7269).preloadForumThreads(channel);
+              const obj = channelId(7269);
             }
           })(tmp12);
         }

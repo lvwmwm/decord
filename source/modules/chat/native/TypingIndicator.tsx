@@ -1,9 +1,9 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11432
+// Function ID: 11433
 // Name: TypingIndicatorInner
-// Dependencies: [19, 17, 8674, 7214, 21, 4342, 712, 1367, 11483, 4083, 4711, 4776, 4780, 4065, 1297, 4338, 11714, 11438, 2]
+// Dependencies: [19, 17, 8682, 7440, 21, 4661, 712, 1367, 11196, 4115, 4668, 4744, 4748, 4097, 1297, 4734, 11433, 11151, 2]
 
-// Module 11713 (TypingIndicatorInner)
+// Module 11432 (TypingIndicatorInner)
 import importAllResult from "noop";
 import { View } from "useTypingUserIds";
 import { useChatShowingAutoComplete as closure_5 } from "updateChatInputContainerHeight";

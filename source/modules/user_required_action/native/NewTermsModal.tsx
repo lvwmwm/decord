@@ -1,10 +1,10 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16737
+// Function ID: 16738
 // Name: handleTouch
-// Dependencies: [5, 32, 19, 17, 1385, 676, 21, 4342, 712, 5822, 1236, 5888, 1628, 5337, 4774, 8379, 9413, 503, 4338, 4777, 9120, 9114, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 676, 21, 4661, 712, 7172, 1236, 5256, 1629, 6318, 4732, 8418, 9177, 503, 4734, 4745, 8910, 8904, 2]
 // Exports: default
 
-// Module 16691 (handleTouch)
+// Module 16737 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -26,7 +26,7 @@ function handleTouch() {
   closure_7.dismiss();
 }
 function handleMoreActions() {
-  let obj = require(5822) /* showSimpleActionSheet */;
+  let obj = require(7172) /* showSimpleActionSheet */;
   obj = { key: "NewTermsModalMore", options: null, hasIcons: false };
   obj = { label: null, isDestructive: true, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -60,13 +60,13 @@ let result = require("noop").fileFinishedImporting("modules/user_required_action
 
 export default function NewTermsModal() {
   const tmp = createCacheKey();
-  const rect = importDefault(1628)();
+  const rect = importDefault(1629)();
   const top = rect.top;
   const memo = React.useMemo(() => action.getAction(), []);
   const tmp5 = callback2(React.useState(false), 2);
   importDefault = tmp5[1];
-  let obj = memo(5337);
-  obj.useNavigatorBackPressHandler(memo(4774).BackPressHandler.minimize);
+  let obj = memo(6318);
+  obj.useNavigatorBackPressHandler(memo(4732).BackPressHandler.minimize);
   const dependencyMap = React.useCallback(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
@@ -79,7 +79,7 @@ export default function NewTermsModal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ export default function NewTermsModal() {
           closure_0 = arg1;
           callback(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         c3 = tmp;
@@ -129,7 +129,7 @@ export default function NewTermsModal() {
   obj[0] = memo(503).ImpressionTypes.VIEW;
   obj[1] = memo(503).ImpressionNames.USER_AGREEMENTS;
   obj[2] = { required_action: memo };
-  importDefault(9413)(obj, {}, []);
+  importDefault(9177)(obj, {}, []);
   let tmp10 = null;
   if (null != memo) {
     obj = { style: null, children: null };
@@ -147,43 +147,43 @@ export default function NewTermsModal() {
     const obj3 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold", children: null };
     const intl = tmp6(1236).intl;
     obj3[2] = intl.string(tmp6(1236).t["7glvXu"]);
-    const items2 = [callback3(tmp6(4338).Text, obj3), , , , , , ];
+    const items2 = [callback3(tmp6(4734).Text, obj3), , , , , , ];
     const obj4 = { variant: "text-md/normal", style: null, children: null };
     obj4[1] = tmp.description;
     const intl2 = tmp6(1236).intl;
     const obj5 = { url: null };
     obj5[0] = constants.TERMS_SUMMARY;
     obj4[2] = intl2.format(tmp6(1236).t.CN0Hvb, obj5);
-    items2[1] = callback3(tmp6(4338).Text, obj4);
+    items2[1] = callback3(tmp6(4734).Text, obj4);
     const obj6 = { variant: "text-md/normal", children: null };
     const intl3 = tmp6(1236).intl;
     const obj7 = { url: null };
     obj7[0] = constants.TERMS;
     obj6[1] = intl3.format(tmp6(1236).t.iw0hFi, obj7);
-    items2[2] = callback3(tmp6(4338).Text, obj6);
+    items2[2] = callback3(tmp6(4734).Text, obj6);
     const obj8 = { variant: "text-md/normal", children: null };
     const intl4 = tmp6(1236).intl;
     const obj9 = { url: null };
     obj9[0] = constants.PAID_TERMS;
     obj8[1] = intl4.format(tmp6(1236).t["36klnD"], obj9);
-    items2[3] = callback3(tmp6(4338).Text, obj8);
+    items2[3] = callback3(tmp6(4734).Text, obj8);
     const obj10 = { variant: "text-md/normal", children: null };
     const intl5 = tmp6(1236).intl;
     const obj11 = { url: null };
     obj11[0] = constants.PRIVACY;
     obj10[1] = intl5.format(tmp6(1236).t.TquFBF, obj11);
-    items2[4] = callback3(tmp6(4338).Text, obj10);
+    items2[4] = callback3(tmp6(4734).Text, obj10);
     const obj12 = { variant: "text-md/normal", children: null };
     const intl6 = tmp6(1236).intl;
     const obj13 = { url: null };
     obj13[0] = constants.GUIDELINES;
     obj12[1] = intl6.format(tmp6(1236).t.ia96Tb, obj13);
-    items2[5] = callback3(tmp6(4338).Text, obj12);
+    items2[5] = callback3(tmp6(4734).Text, obj12);
     const obj14 = { variant: "text-md/normal", style: null, children: null };
     obj14[1] = tmp.agreementDescription;
     const intl7 = tmp6(1236).intl;
     obj14[2] = intl7.string(tmp6(1236).t["+USXQE"]);
-    items2[6] = callback3(tmp6(4338).Text, obj14);
+    items2[6] = callback3(tmp6(4734).Text, obj14);
     obj2[3] = items2;
     const items3 = [callback4(closure_8, obj2), , ];
     const obj15 = { style: null, children: null };
@@ -197,7 +197,7 @@ export default function NewTermsModal() {
     };
     const intl8 = tmp6(1236).intl;
     obj16[2] = intl8.string(tmp6(1236).t["+TBKL1"]);
-    obj15[1] = callback3(tmp6(4777).Button, obj16);
+    obj15[1] = callback3(tmp6(4745).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = { style: null, source: null, color: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null };
     const items4 = [tmp.navbarRight, ];
@@ -205,15 +205,15 @@ export default function NewTermsModal() {
     obj18[0] = top;
     items4[1] = obj18;
     obj17[0] = items4;
-    obj17[1] = tmp2(9114);
+    obj17[1] = tmp2(8904);
     obj17[2] = tmp.navbarRight.tintColor;
     obj17[3] = handleMoreActions;
     const intl9 = tmp6(1236).intl;
     obj17[5] = intl9.string(tmp6(1236).t["UKOtz+"]);
-    items3[2] = callback3(tmp2(9120), obj17);
+    items3[2] = callback3(tmp2(8910), obj17);
     obj[1] = items3;
     tmp10 = callback4(closure_6, obj);
-    const tmp2Result = tmp2(9120);
+    const tmp2Result = tmp2(8910);
   }
   return tmp10;
 };

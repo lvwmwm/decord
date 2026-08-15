@@ -1,9 +1,9 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15833
+// Function ID: 15834
 // Name: memoResult1
-// Dependencies: [19, 17, 6987, 21, 4342, 712, 4187, 4338, 15784, 1435, 5435, 1297, 1628, 15789, 4168, 15790, 589, 1236, 7811, 8890, 5775, 2]
+// Dependencies: [19, 17, 7428, 21, 4661, 712, 4219, 4734, 15834, 1435, 6291, 1297, 1629, 15839, 4200, 15840, 589, 1236, 8029, 8974, 6550, 2]
 
-// Module 15783 (memoResult1)
+// Module 15833 (memoResult1)
 import importAllResult from "getNoResultsSource";
 import get_ActivityIndicator from "getSystemLocale";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -29,18 +29,18 @@ obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((user) => {
   user = user.user;
-  let obj = importDefault(4187);
+  let obj = importDefault(4219);
   const globalName = obj.getGlobalName(user);
   let username = globalName;
   if (globalName == null) {
     username = user.username;
   }
-  const children = [closure_7(require(4338) /* Text */.Text, { variant: "text-md/semibold", children: username }), ];
+  const children = [closure_7(require(4734) /* Text */.Text, { variant: "text-md/semibold", children: username }), ];
   let tmp5Result = null != globalName;
   if (tmp5Result) {
     obj = { variant: "text-xs/medium", children: null };
     obj[1] = user.username;
-    tmp5Result = tmp5(require(4338) /* Text */.Text, obj);
+    tmp5Result = tmp5(require(4734) /* Text */.Text, obj);
   }
   children[1] = tmp5Result;
   return closure_8(closure_5, { children });
@@ -75,7 +75,7 @@ let closure_12 = importAllResult.memo((joinRequest) => {
       obj[3] = tmp;
       obj[4] = start;
       obj[5] = end;
-      return callback(joinRequest(5435).TableRow, obj);
+      return callback(joinRequest(6291).TableRow, obj);
     }
   }
 });

@@ -1,9 +1,9 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9888
+// Function ID: 9889
 // Name: showRequestFailedAlert
-// Dependencies: [5, 676, 4241, 4705, 1236, 530, 1363, 2]
+// Dependencies: [5, 676, 4273, 4827, 1236, 530, 1363, 2]
 
-// Module 9693 (showRequestFailedAlert)
+// Module 9888 (showRequestFailedAlert)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -11,7 +11,7 @@ let c4;
 let c5;
 const require = arg1;
 function showRequestFailedAlert(arg0) {
-  const aPIError = new require(4241) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4273) /* V6OrEarlierAPIError */.APIError(arg0);
   let anyErrorMessage = aPIError.getAnyErrorMessage();
   const obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -21,7 +21,7 @@ function showRequestFailedAlert(arg0) {
     anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
   }
   obj[1] = anyErrorMessage;
-  importDefault(4705).show(obj);
+  importDefault(4827).show(obj);
 }
 function deleteGameRelationship() {
   const self = this;
@@ -55,7 +55,7 @@ function _deleteGameRelationship() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ function _removeGameFriend() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ function _removeGameFriend() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c4 = tmp;
@@ -259,7 +259,7 @@ function _cancelGameFriendRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -317,7 +317,7 @@ function _cancelGameFriendRequest() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c4 = tmp;
@@ -366,7 +366,7 @@ export default {
       const intl = onSuccess(outer1_2[4]).intl;
       AccessibilityAnnouncer.announce(intl.string(onSuccess(outer1_2[4]).t.taJiuc));
     }).catch((arg0) => {
-      const aPIError = new onSuccess(4241).APIError(arg0);
+      const aPIError = new onSuccess(4273).APIError(arg0);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1236).intl;
@@ -376,7 +376,7 @@ export default {
         anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4705).show(obj);
+      callback(4827).show(obj);
       return Promise.reject(arg0);
     });
   },

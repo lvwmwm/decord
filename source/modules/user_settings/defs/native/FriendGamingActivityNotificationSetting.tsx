@@ -1,9 +1,9 @@
-// Module ID: 14772
-// Function ID: 14773
+// Module ID: 14812
+// Function ID: 14813
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 4034, 14773, 2]
+// Dependencies: [8198, 10669, 1236, 4066, 14813, 2]
 
-// Module 14772 (toggle)
+// Module 14812 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -15,7 +15,7 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.Amy1fz);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableFriendGamingActivityNotifications.useSetting,
   onValueChange: require("onFriendGamingActivityNotificationSettingsChanged").onFriendGamingActivityNotificationSettingsChanged
 });
@@ -28,7 +28,7 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.Amy1fz);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableFriendGamingActivityNotifications.useSetting,
   onValueChange: require("onFriendGamingActivityNotificationSettingsChanged").onFriendGamingActivityNotificationSettingsChanged
 };

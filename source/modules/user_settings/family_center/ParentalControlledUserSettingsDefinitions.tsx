@@ -1,10 +1,10 @@
-// Module ID: 14151
-// Function ID: 14152
+// Module ID: 14183
+// Function ID: 14184
 // Name: defineParentalControlledSetting
-// Dependencies: [7069, 7068, 589, 2]
+// Dependencies: [5299, 5298, 589, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 14151 (defineParentalControlledSetting)
+// Module 14183 (defineParentalControlledSetting)
 import getSettings from "getSettings";
 
 const require = arg1;

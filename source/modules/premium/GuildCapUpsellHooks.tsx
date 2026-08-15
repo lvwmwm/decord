@@ -1,10 +1,10 @@
-// Module ID: 5895
-// Function ID: 5896
+// Module ID: 7192
+// Function ID: 7193
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1910, 1922, 676, 589, 5896, 4007, 2]
+// Dependencies: [1910, 1922, 676, 589, 7193, 4039, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5895 (useShouldShowInlineGuildCapUpsell)
+// Module 7192 (useShouldShowInlineGuildCapUpsell)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MAX_USER_GUILDS } from "ME";
@@ -16,14 +16,14 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   const items = [createGuildRecordFromRust];
   let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
   const obj = require(589) /* initialize */;
-  const items1 = [require(5896) /* HotspotStore */.HotspotStore];
+  const items1 = [require(7193) /* HotspotStore */.HotspotStore];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => {
-    const HotspotStore = callback(5896).HotspotStore;
-    return HotspotStore.hasHotspot(callback(5896).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+    const HotspotStore = callback(7193).HotspotStore;
+    return HotspotStore.hasHotspot(callback(7193).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
   const obj2 = require(589) /* initialize */;
   const items2 = [mergeGuildAvatar];
-  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(4007).isPremium(currentUser.getCurrentUser()));
+  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(4039).isPremium(currentUser.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -33,10 +33,10 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  require(5896) /* HotspotStore */.hideHotspot(require(5896) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  require(7193) /* HotspotStore */.hideHotspot(require(7193) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export const hasIncreasedGuildCap = function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(4007).canUseIncreasedGuildCap(currentUser);
+  let result = importDefault(4039).canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (currentUser != null) {
@@ -50,7 +50,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
   let tmp = guildCount.getGuildCount() >= MAX_USER_GUILDS;
   if (tmp) {
     currentUser = currentUser.getCurrentUser();
-    let result = importDefault(4007).canUseIncreasedGuildCap(currentUser);
+    let result = importDefault(4039).canUseIncreasedGuildCap(currentUser);
     if (!result) {
       let isStaffResult;
       if (currentUser != null) {
@@ -59,7 +59,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
       result = true === isStaffResult;
     }
     tmp = !result;
-    const obj2 = importDefault(4007);
+    const obj2 = importDefault(4039);
   }
   return tmp;
 };

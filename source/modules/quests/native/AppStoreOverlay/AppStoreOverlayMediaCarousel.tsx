@@ -1,10 +1,10 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10700
+// Function ID: 10701
 // Name: AppStoreOverlayScreenshotItem
-// Dependencies: [19, 17, 4334, 505, 21, 4342, 712, 10573, 1236, 5329, 589, 8933, 9867, 2]
+// Dependencies: [19, 17, 4662, 505, 21, 4661, 712, 10701, 1236, 5449, 589, 9018, 10071, 2]
 // Exports: default
 
-// Module 10572 (AppStoreOverlayScreenshotItem)
+// Module 10700 (AppStoreOverlayScreenshotItem)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

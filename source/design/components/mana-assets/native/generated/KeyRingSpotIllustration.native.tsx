@@ -1,10 +1,10 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 5914
+// Function ID: 5915
 // Name: KeyRingSpotIllustration
-// Dependencies: [21, 5329, 6557, 2]
+// Dependencies: [21, 5449, 5915, 2]
 // Exports: KeyRingSpotIllustration
 
-// Module 6556 (KeyRingSpotIllustration)
+// Module 5914 (KeyRingSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/KeyRingSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const KeyRingSpotIllustration = function KeyRingSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6557);
+  obj[0] = importDefault(5915);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const KeyRingSpotIllustration = function KeyRingSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

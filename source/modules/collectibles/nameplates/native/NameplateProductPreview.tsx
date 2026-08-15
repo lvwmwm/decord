@@ -1,10 +1,10 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9572
+// Function ID: 9573
 // Name: NameplateUser
-// Dependencies: [19, 17, 4334, 21, 4342, 712, 9438, 1946, 1236, 4338, 4788, 9412, 8371, 8337, 589, 4187, 4596, 9533, 9534, 1297, 9619, 5435, 2]
+// Dependencies: [19, 17, 4662, 21, 4661, 712, 9205, 1946, 1236, 4734, 4756, 9176, 8410, 8376, 589, 4219, 4815, 9452, 9453, 1297, 9573, 6291, 2]
 // Exports: default
 
-// Module 9618 (NameplateUser)
+// Module 9572 (NameplateUser)
 import Button from "Button";
 import { View } from "AVERAGE_FONT_WIDTH_RATIO";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = React.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "LottieAnimationView", autoStatusCutout: null, "aria-hidden": null };
+    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "cartesianOffset", autoStatusCutout: null, "aria-hidden": "\u{1F473}" };
     obj[2] = currentUser(stateFromStores[19]).AvatarSizes.NORMAL;
     obj[3] = c1;
     obj[4] = !stateFromStores;
@@ -76,7 +76,7 @@ function PlaceholderUser(end) {
   obj[1] = user.name;
   obj[2] = start;
   obj[3] = flag;
-  return callback(require(5435) /* TableRowInner */.TableRow, obj);
+  return callback(require(6291) /* TableRowInner */.TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: { position: "relative", flex: 1, justifyContent: "center", overflow: "hidden" }, memberListContainer: null, memberListTitle: null, memberListGradient: null };
@@ -93,7 +93,7 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = createCacheKey();
-  let obj = require(9438) /* firstAvatarDecoration */;
+  let obj = require(9205) /* firstAvatarDecoration */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
   let obj1 = require(1946) /* getNameplateData */;
@@ -118,7 +118,7 @@ export default function NameplateProductPreview(product) {
     const intl2 = tmp2(1236).intl;
     const items1 = [intl2.string(tmp2(1236).t["yzW/fZ"]), " \u2014 3"];
     obj3[5] = items1;
-    items[1] = callback2(tmp2(4338).Text, obj3);
+    items[1] = callback2(tmp2(4734).Text, obj3);
     const obj4 = { user: null, start: true };
     obj4[0] = nameplateSampleUsers.phibi;
     items[2] = callback(PlaceholderUser, obj4);
@@ -134,7 +134,7 @@ export default function NameplateProductPreview(product) {
     const intl3 = tmp2(1236).intl;
     const items2 = [intl3.string(tmp2(1236).t["NG43/6"]), " \u2014 12"];
     obj7[5] = items2;
-    items[5] = callback2(tmp2(4338).Text, obj7);
+    items[5] = callback2(tmp2(4734).Text, obj7);
     const obj8 = { user: null, start: true };
     obj8[0] = nameplateSampleUsers.boom;
     items[6] = callback(PlaceholderUser, obj8);
@@ -148,19 +148,19 @@ export default function NameplateProductPreview(product) {
     const _HermesInternal = HermesInternal;
     items4[1] = "" + tmp.memberListGradient.color + "00";
     obj9[3] = items4;
-    items3[1] = callback(importDefault(4788), obj9);
+    items3[1] = callback(importDefault(4756), obj9);
     const obj10 = { style: null, start: null, end: null, colors: null };
     obj10[0] = tmp.memberListGradient;
     obj10[1] = { x: 0, y: 0.6 };
     obj10[2] = { x: 0, y: 1 };
     const _HermesInternal2 = HermesInternal;
-    const tmp14 = importDefault(4788);
+    const tmp14 = importDefault(4756);
     const items5 = ["" + tmp.memberListGradient.color + "00", tmp.memberListGradient.color];
     obj10[3] = items5;
-    items3[2] = callback(importDefault(4788), obj10);
+    items3[2] = callback(importDefault(4756), obj10);
     obj[5] = items3;
     tmp7 = callback2(View, obj);
-    const tmp16 = importDefault(4788);
+    const tmp16 = importDefault(4756);
   }
   return tmp7;
 };

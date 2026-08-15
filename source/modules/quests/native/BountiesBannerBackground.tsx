@@ -1,8 +1,8 @@
-// Module ID: 14406
-// Function ID: 14407
-// Dependencies: [19, 17, 4334, 21, 589, 8933, 4788, 2]
+// Module ID: 14438
+// Function ID: 14439
+// Dependencies: [19, 17, 4662, 21, 589, 9018, 4756, 2]
 
-// Module 14406
+// Module 14438
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const memoResult = require("noop").memo(function BountiesBannerBackground(arg0) 
   obj = { style, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { source: { uri }, style: closure_3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  const items1 = [callback(require(8933) /* VideoComponent */.VideoComponent, obj), callback(importDefault(4788), { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
+  const items1 = [callback(require(9018) /* VideoComponent */.VideoComponent, obj), callback(importDefault(4756), { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
   obj[1] = items1;
   return callback2(closure_4, obj);
 });

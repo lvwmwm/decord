@@ -1,10 +1,10 @@
-// Module ID: 4893
-// Function ID: 4894
+// Module ID: 6897
+// Function ID: 6898
 // Name: HubIcon
-// Dependencies: [19, 21, 712, 4064, 4837, 2]
+// Dependencies: [19, 21, 712, 4096, 6842, 2]
 // Exports: HubIcon
 
-// Module 4893 (HubIcon)
+// Module 6897 (HubIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const HubIcon = function HubIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4837) /* registerAsset */;
+  obj[0] = require(6842) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

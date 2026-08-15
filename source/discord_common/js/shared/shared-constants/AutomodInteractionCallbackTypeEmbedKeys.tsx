@@ -1,9 +1,9 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 5237
+// Function ID: 5238
 // Name: AutomodInteractionCallbackTypeEmbedKeys
 // Dependencies: [2]
 
-// Module 7042 (AutomodInteractionCallbackTypeEmbedKeys)
+// Module 5237 (AutomodInteractionCallbackTypeEmbedKeys)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodInteractionCallbackTypeEmbedKeys.tsx");
 
 export const AutomodInteractionCallbackTypeEmbedKeys = { MODAL: "MODAL" };

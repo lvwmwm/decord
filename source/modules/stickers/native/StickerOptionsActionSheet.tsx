@@ -1,10 +1,10 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10235
+// Function ID: 10236
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 5817, 4061, 4310, 5825, 5828, 5435, 4286, 1236, 2]
+// Dependencies: [19, 21, 7167, 4093, 4342, 7175, 6286, 6291, 4318, 1236, 2]
 // Exports: default
 
-// Module 10030 (StickerOptionsActionSheet)
+// Module 10235 (StickerOptionsActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,11 +24,11 @@ export default function StickerOptionsActionSheet(stickerUrl) {
   let obj = { children: null };
   obj = { hasIcons: true, children: null };
   obj = { icon: null, label: null, onPress: null };
-  obj[0] = jsx(stickerUrl(4286).LinkIcon, {});
+  obj[0] = jsx(stickerUrl(4318).LinkIcon, {});
   const intl = stickerUrl(1236).intl;
   obj[1] = intl.string(stickerUrl(1236).t.B1ubHx);
   obj[2] = callback;
-  obj[1] = jsx(stickerUrl(5435).TableRow, { icon: null, label: null, onPress: null });
-  obj[0] = jsx(stickerUrl(5828).TableRowGroup, { icon: null, label: null, onPress: null });
-  return jsx(stickerUrl(5825).ActionSheet, { icon: null, label: null, onPress: null });
+  obj[1] = jsx(stickerUrl(6291).TableRow, { icon: null, label: null, onPress: null });
+  obj[0] = jsx(stickerUrl(6286).TableRowGroup, { icon: null, label: null, onPress: null });
+  return jsx(stickerUrl(7175).ActionSheet, { icon: null, label: null, onPress: null });
 };

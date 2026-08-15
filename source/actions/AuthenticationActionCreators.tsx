@@ -1,9 +1,9 @@
-// Module ID: 5888
-// Function ID: 5889
+// Module ID: 5256
+// Function ID: 5257
 // Name: handleLogout
-// Dependencies: [5, 5889, 1218, 5890, 676, 5891, 3, 4336, 709, 4198, 1222, 4572, 4562, 503, 530, 4241, 5892, 5893, 595, 707, 2]
+// Dependencies: [5, 5257, 1218, 5258, 676, 5259, 3, 4648, 709, 4230, 1222, 5260, 5227, 503, 530, 4273, 5264, 5265, 595, 707, 2]
 
-// Module 5888 (handleLogout)
+// Module 5256 (handleLogout)
 import closure_5 from "str2";
 import { setPromoEmailConsentState } from "setPromoEmailConsentState";
 import fetchFingerprint from "fetchFingerprint";
@@ -24,7 +24,7 @@ function handleLogout(arg0, ME) {
   if (ME === undefined) {
     DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
   }
-  let obj = importDefault(4336);
+  let obj = importDefault(4648);
   const result = obj.clearNavigationHistory();
   obj = { type: "LOGOUT" };
   const merged = Object.assign(undefined);
@@ -38,21 +38,21 @@ function handleLogout(arg0, ME) {
     throw error;
   });
   if (null != DEFAULT_LOGGED_OUT) {
-    const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
+    const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      tmp2(4572).popAll();
+      tmp2(5260).popAll();
       obj = { index: 0, routes: null };
       const items = [{ name: "auth" }];
       obj[1] = items;
       rootNavigationRef.reset(obj);
-      const tmp2Result = tmp2(4572);
+      const tmp2Result = tmp2(5260);
     } else {
       const obj1 = { source: null };
       obj1[0] = arg0;
       tmp11(1222).transitionTo(DEFAULT_LOGGED_OUT, obj1);
       const tmp11Result = tmp11(1222);
     }
-    const obj8 = require(4198) /* getRootNavigationRef */;
+    const obj8 = require(4230) /* getRootNavigationRef */;
     tmp11 = require;
   }
 }
@@ -216,7 +216,7 @@ obj = {
     const self = this;
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
-    let obj = self(4562);
+    let obj = self(5227);
     obj = { url: closure_9.LOGIN_MFA(mfaType), body: null, retries: 2, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
     obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: null };
     if (loginInstanceId == null) {
@@ -279,7 +279,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -310,7 +310,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(5892).fetchWebAuthnPasswordlessChallenge();
+              obj1[0] = outer1_0(5264).fetchWebAuthnPasswordlessChallenge();
               return obj1;
             }
           } else if (1 === tmp8) {
@@ -370,7 +370,7 @@ obj = {
             if (4 === tmp8) {
               dependencyMap = 1;
               c4 = c2;
-              let tmp16 = c4 instanceof outer1_0(4241).APIError;
+              let tmp16 = c4 instanceof outer1_0(4273).APIError;
               if (tmp16) {
                 tmp16 = null != c4.status;
               }
@@ -381,7 +381,7 @@ obj = {
                 tmp16 = c4.status < 500;
               }
               if (tmp16) {
-                obj2 = outer1_1(5893);
+                obj2 = outer1_1(5265);
                 c4 = 6;
                 c5 = 1;
                 const obj8 = { value: null, done: false };
@@ -401,7 +401,7 @@ obj = {
               } else {
                 dependencyMap = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -437,7 +437,7 @@ obj = {
     const self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    let obj = self(4562);
+    let obj = self(5227);
     obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: null, rejectWithError: true };
     obj = { event: isMultiAccount(503).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     obj[3] = obj;
@@ -510,7 +510,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -542,7 +542,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = outer1_1(4562).post(obj1);
+              obj4[0] = outer1_1(5227).post(obj1);
               return obj4;
             }
           } else if (1 === tmp7) {
@@ -550,7 +550,7 @@ obj = {
             closure_1 = closure_2;
             obj4 = outer1_1(709);
             const obj5 = { type: "LOGIN_FAILURE", error: null };
-            const v6OrEarlierAPIError = new outer1_0(4241).V6OrEarlierAPIError(closure_1);
+            const v6OrEarlierAPIError = new outer1_0(4273).V6OrEarlierAPIError(closure_1);
             obj5[1] = v6OrEarlierAPIError;
             obj4.dispatch(obj5);
             throw closure_1;
@@ -615,7 +615,7 @@ obj = {
     importDefault(709).dispatch({ type: "LOGIN_STATUS_RESET" });
   },
   logoutInternal(arg0) {
-    let obj = importDefault(4336);
+    let obj = importDefault(4648);
     const result = obj.clearNavigationHistory();
     obj = { type: "LOGOUT" };
     const merged = Object.assign(arg0);
@@ -635,7 +635,7 @@ obj = {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
     const importAll = arg2;
-    let obj = DEFAULT_LOGGED_OUT(4562);
+    let obj = DEFAULT_LOGGED_OUT(5227);
     obj = { url: closure_9.LOGOUT, body: null, oldFormErrors: true, trackedActionData: null };
     obj = { provider: callback2(), token: null, voip_provider: null, voip_token: null };
     const Storage = _require(595).Storage;
@@ -683,10 +683,10 @@ obj = {
     let obj = { wasLoggedIn: null != token, tokenHasChanged: token !== token };
     tmp4.log("Switching accounts", obj);
     obj = { isSwitchingAccount: true, goHomeAfterSwitching: flag };
-    const result = importDefault(4336).clearNavigationHistory();
+    const result = importDefault(4648).clearNavigationHistory();
     obj = { type: "LOGOUT" };
     const merged = Object.assign(obj);
-    const obj3 = importDefault(4336);
+    const obj3 = importDefault(4648);
     const obj5 = importDefault(709);
     importDefault(709).dispatch(obj).catch((error) => {
       logger.error("Error while dispatching LOGOUT", error);
@@ -719,7 +719,7 @@ obj = {
     return callback(function*() {
       let closure_1 = tmp2;
       let closure_0 = tmp5;
-      const obj7 = outer1_1(4562);
+      const obj7 = outer1_1(5227);
       const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
       obj1[0] = outer1_9.VERIFY;
       const obj2 = { token: null };
@@ -738,21 +738,21 @@ obj = {
     })();
   },
   authorizePayment(token) {
-    let obj = importDefault(4562);
+    let obj = importDefault(5227);
     obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj, trackedActionData: null, rejectWithError: true };
     obj = { token };
     obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_PAYMENT };
     return obj.post(obj);
   },
   authorizeIPAddress(closure_0) {
-    let obj = importDefault(4562);
+    let obj = importDefault(5227);
     obj = { url: closure_9.AUTHORIZE_IP, body: obj, trackedActionData: null, rejectWithError: true };
     obj = { token: closure_0 };
     obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_IP };
     return obj.post(obj);
   },
   verifyResend() {
-    let obj = importDefault(4562);
+    let obj = importDefault(5227);
     obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_VERIFY_RESEND };
     obj[2] = obj;
@@ -775,7 +775,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -828,7 +828,7 @@ obj = {
                 obj1.push_voip_token = value;
               }
               dependencyMap = 1;
-              let obj4 = outer1_1(4562);
+              let obj4 = outer1_1(5227);
               let obj2 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
               obj2[0] = outer1_9.RESET_PASSWORD;
               obj2[1] = obj1;
@@ -847,7 +847,7 @@ obj = {
           } else if (1 === tmp7) {
             dependencyMap = 0;
             outer1_9 = sms;
-            const v6OrEarlierAPIError = new outer1_0(4241).V6OrEarlierAPIError(outer1_9);
+            const v6OrEarlierAPIError = new outer1_0(4273).V6OrEarlierAPIError(outer1_9);
             const outer1_8 = v6OrEarlierAPIError;
             obj2 = outer1_1(709);
             const obj5 = { type: "LOGIN_FAILURE", error: null };
@@ -945,7 +945,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -975,7 +975,7 @@ obj = {
               let obj3 = { event: null };
               obj3[0] = outer1_0(503).NetworkActionNames.FORGOT_PASSWORD;
               obj1[3] = obj3;
-              const obj13 = outer1_1(4562);
+              const obj13 = outer1_1(5227);
               obj1[4] = outer1_0(530).rejectWithMigratedError();
               c4 = 2;
               c5 = 1;
@@ -986,7 +986,7 @@ obj = {
           } else if (1 === tmp7) {
             dependencyMap = 0;
             const outer1_2 = closure_2;
-            const v6OrEarlierAPIError = new outer1_0(4241).V6OrEarlierAPIError(outer1_2);
+            const v6OrEarlierAPIError = new outer1_0(4273).V6OrEarlierAPIError(outer1_2);
             outer1_1 = v6OrEarlierAPIError;
             if (outer1_1.code === outer1_12.PHONE_VERIFICATION_REQUIRED) {
               let obj5 = outer1_1(709);

@@ -1,10 +1,10 @@
-// Module ID: 8345
-// Function ID: 8346
+// Module ID: 8384
+// Function ID: 8385
 // Name: getArchivedAvatarURL
-// Dependencies: [676, 1435, 1469, 1483, 1236, 8346, 1370, 2]
+// Dependencies: [676, 1435, 1469, 1484, 1236, 8385, 1370, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 8345 (getArchivedAvatarURL)
+// Module 8384 (getArchivedAvatarURL)
 import { Endpoints } from "ME";
 
 function getArchivedAvatarURL(allowWebp) {
@@ -63,7 +63,7 @@ function getArchivedAvatarURL(allowWebp) {
     const obj4 = require(1469) /* handleImageLoad */;
     const ARCHIVED_AVATARResult = Endpoints.ARCHIVED_AVATAR(userId, avatarId, storageHash, str2);
     const _HermesInternal2 = HermesInternal;
-    return "" + combined + ARCHIVED_AVATARResult + "?" + importDefault(1483).stringify(obj);
+    return "" + combined + ARCHIVED_AVATARResult + "?" + importDefault(1484).stringify(obj);
   }
   str2 = "jpg";
   if (null != window.GLOBAL_ENV.CDN_HOST) {
@@ -123,9 +123,9 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
   }
   ({ filename, assetOrigin } = obj);
   if (undefined === assetOrigin) {
-    assetOrigin = require(8346) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    assetOrigin = require(8385) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
-  if (assetOrigin !== require(8346) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (assetOrigin !== require(8385) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
     if (filename == null) {
       const intl = tmp3(1236).intl;
       filename = intl.string(tmp3(1236).t.lqaIxI);
@@ -133,7 +133,7 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
     const _Date = Date;
     const date = new Date();
     const intl2 = tmp3(1236).intl;
-    if (assetOrigin === tmp3(8346).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+    if (assetOrigin === tmp3(8385).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
       let DYil93 = tmp3(1236).t.eC2sZi;
     } else {
       DYil93 = tmp3(1236).t.DYil93;
@@ -212,7 +212,7 @@ export const getPendingAvatarSrc = function getPendingAvatarSrc(canAnimate) {
   if (null != image) {
     tmp = image;
     if (typeof image !== "string") {
-      if (image.assetOrigin === require(8346) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+      if (image.assetOrigin === require(8385) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
         const obj = { userId: null, avatarId: null, storageHash: null, size: null, canAnimate: null };
         obj[0] = userId;
         userId = image.originalAsset.id;

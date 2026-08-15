@@ -1,9 +1,9 @@
-// Module ID: 4151
-// Function ID: 4152
+// Module ID: 4183
+// Function ID: 4184
 // Name: MicrophoneRive
-// Dependencies: [109, 19, 21, 4077, 4152, 4132, 2]
+// Dependencies: [109, 19, 21, 4109, 4184, 4164, 2]
 
-// Module 4151 (MicrophoneRive)
+// Module 4183 (MicrophoneRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(4077) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(4077) /* BaseRive */;
+    const booleanBinding = require(4109) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(4109) /* BaseRive */;
     const tmp = require;
     let fill;
     if (dataBinding != null) {
@@ -31,8 +31,8 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(4077) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(4077) /* BaseRive */;
+    const colorBinding = require(4109) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(4109) /* BaseRive */;
     let on;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -41,7 +41,7 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = tmp(4077).useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = tmp(4109).useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   },
   "Animation Main": function AnimationMainBindings(reducedMotionEnabled) {
@@ -50,8 +50,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(4077) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(4077) /* BaseRive */;
+    const booleanBinding = require(4109) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(4109) /* BaseRive */;
     const tmp = require;
     let fill;
     if (dataBinding != null) {
@@ -61,8 +61,8 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(4077) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(4077) /* BaseRive */;
+    const colorBinding = require(4109) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(4109) /* BaseRive */;
     let on;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -71,7 +71,7 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = tmp(4077).useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = tmp(4109).useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   }
 };
@@ -118,7 +118,7 @@ const forwardRefResult = importAllResult.forwardRef(function MicrophoneRiveWithB
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4164) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/MicrophoneRive.tsx");
 

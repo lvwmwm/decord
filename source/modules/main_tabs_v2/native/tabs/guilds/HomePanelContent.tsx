@@ -1,9 +1,9 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15544
+// Function ID: 15545
 // Name: HomeDrawerPanelContent
-// Dependencies: [19, 17, 15240, 676, 21, 4342, 15239, 15495, 15243, 8464, 4065, 712, 4083, 2]
+// Dependencies: [19, 17, 15289, 676, 21, 4661, 15288, 15545, 15292, 8503, 4097, 712, 4115, 2]
 
-// Module 15494 (HomeDrawerPanelContent)
+// Module 15544 (HomeDrawerPanelContent)
 import { View } from "get ActivityIndicator";
 import withEqualityFn from "withEqualityFn";
 import { DM_WIDTH } from "ME";
@@ -60,7 +60,7 @@ let closure_7 = createCacheKey.createStyles((width) => {
 let closure_8 = { code: "function HomePanelContentTsx1(){const{isGradientTheme,maxX,interpolateColor,panelSpringTranslateX,baseLowest,panelBg}=this.__closure;if(isGradientTheme||maxX<=0){return{backgroundColor:'transparent'};}return{backgroundColor:interpolateColor(panelSpringTranslateX.get(),[0,maxX],[baseLowest,panelBg])};}" };
 const memoResult = require("noop").memo(() => {
   const tmp = callback(DM_WIDTH);
-  let obj = require(15239) /* context */;
+  let obj = require(15288) /* context */;
   if (obj.useIsHomeDrawerEnabled()) {
     let tmp3Result = tmp3(HomeDrawerPanelContent, {});
   } else {
@@ -68,7 +68,7 @@ const memoResult = require("noop").memo(() => {
     obj[0] = tmp.container;
     obj = { style: null, children: null };
     obj[0] = tmp.guildLisetContainerDefault;
-    obj[1] = tmp3(importDefault(15495), {});
+    obj[1] = tmp3(importDefault(15545), {});
     obj[1] = tmp3(View, obj);
     tmp3Result = tmp3(View, obj);
   }

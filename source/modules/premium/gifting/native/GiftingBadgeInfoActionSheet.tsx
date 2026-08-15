@@ -1,15 +1,15 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10301
+// Function ID: 10302
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4334, 8853, 676, 21, 4342, 712, 1628, 589, 8849, 698, 5458, 4338, 1236, 2399, 10097, 2]
+// Dependencies: [19, 17, 4662, 8936, 676, 21, 4661, 712, 1629, 589, 8932, 698, 6950, 4734, 1236, 2431, 10302, 2]
 // Exports: default
 
-// Module 10096 (GiftingBadgeInfoActionSheet)
+// Module 10301 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import map from "map";
-import { getSingleRequirementThreshold as closure_7 } from "map";
+import initialize from "initialize";
+import { getSingleRequirementThreshold as closure_7 } from "initialize";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -40,8 +40,8 @@ export default function GiftingBadgeInfoActionSheet() {
   const tmp = createCacheKey();
   const require = tmp;
   let obj = require(589) /* initialize */;
-  let items = [map];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8849).BadgeId.GIFTING));
+  let items = [initialize];
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8932).BadgeId.GIFTING));
   let obj1 = require(589) /* initialize */;
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -51,18 +51,18 @@ export default function GiftingBadgeInfoActionSheet() {
   obj = { style: null, children: null };
   const items2 = [tmp.container, ];
   obj = { paddingBottom: null };
-  obj[0] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
   items2[1] = obj;
   obj[0] = items2;
   obj1 = { style: tmp.headerContainer, children: null };
   let obj2 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
-  obj2[4] = intl.string(importDefault(2399)["0MB2C6"]);
-  const items3 = [callback(require(4338) /* Text */.Text, obj2), ];
+  obj2[4] = intl.string(importDefault(2431)["0MB2C6"]);
+  const items3 = [callback(require(4734) /* Text */.Text, obj2), ];
   let obj3 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl2.string(importDefault(2399).k9sNVH);
-  items3[1] = callback(require(4338) /* Text */.Text, obj3);
+  obj3[3] = intl2.string(importDefault(2431).k9sNVH);
+  items3[1] = callback(require(4734) /* Text */.Text, obj3);
   obj1[1] = items3;
   const items4 = [callback2(View, obj1), ];
   const obj4 = { style: tmp.tierCards, children: null };
@@ -118,5 +118,5 @@ export default function GiftingBadgeInfoActionSheet() {
   items4[1] = callback(View, obj4);
   obj[1] = items4;
   obj5[2] = callback2(View, obj);
-  return callback(require(5458) /* Background */.BottomSheet, obj5);
+  return callback(require(6950) /* Background */.BottomSheet, obj5);
 };

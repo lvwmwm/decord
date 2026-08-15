@@ -1,17 +1,17 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16680
+// Function ID: 16681
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7066, 7067, 676, 1388, 21, 1377, 7068, 4198, 6080, 4575, 4342, 712, 1628, 1236, 2303, 698, 709, 1379, 4310, 4572, 16635, 2007, 5458, 4775, 6091, 4338, 4777, 2]
+// Dependencies: [19, 17, 5296, 5297, 676, 1388, 21, 1377, 5298, 4230, 7360, 5263, 4661, 712, 1629, 1236, 2335, 698, 709, 1379, 4342, 5260, 16681, 2007, 6950, 4733, 5447, 4734, 4745, 2]
 // Exports: default
 
-// Module 16634 (ParentalConsentWarningModal)
+// Module 16680 (ParentalConsentWarningModal)
 import addVersionedDismissedContent from "addVersionedDismissedContent";
 import { View } from "expandEventProperties";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "module_4572";
+import jsxProd from "module_5260";
 import createCacheKey from "createCacheKey";
 
 let c10;

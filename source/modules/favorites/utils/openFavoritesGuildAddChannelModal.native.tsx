@@ -1,10 +1,10 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 11959
+// Function ID: 11960
 // Name: openFavoritesGuildAddChannelModal
-// Dependencies: [11138, 12217, 2007, 4572, 2]
+// Dependencies: [9078, 11960, 2007, 5260, 2]
 // Exports: closeFavoritesGuildAddChannelModal, default
 
-// Module 12216 (openFavoritesGuildAddChannelModal)
+// Module 11959 (openFavoritesGuildAddChannelModal)
 const FavoritesGuildAddChannelModal = "FavoritesGuildAddChannelModal";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/favorites/utils/openFavoritesGuildAddChannelModal.native.tsx");
 
@@ -12,9 +12,9 @@ export default function openFavoritesGuildAddChannelModal(arg0) {
   let parentId;
   let source;
   ({ parentId, source } = arg0);
-  importDefault(11138)(require(2007) /* asyncRequireImpl */(12217, dependencyMap.paths), { parentId, source }, FavoritesGuildAddChannelModal);
+  importDefault(9078)(require(2007) /* asyncRequireImpl */(11960, dependencyMap.paths), { parentId, source }, FavoritesGuildAddChannelModal);
 };
 export const FAVORITES_GUILD_ADD_CHANNEL_MODAL_KEY = "FavoritesGuildAddChannelModal";
 export const closeFavoritesGuildAddChannelModal = function closeFavoritesGuildAddChannelModal() {
-  importDefault(4572).popWithKey(FavoritesGuildAddChannelModal);
+  importDefault(5260).popWithKey(FavoritesGuildAddChannelModal);
 };

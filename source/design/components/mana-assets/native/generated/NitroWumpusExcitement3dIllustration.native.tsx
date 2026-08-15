@@ -1,10 +1,10 @@
-// Module ID: 6654
-// Function ID: 6655
+// Module ID: 6012
+// Function ID: 6013
 // Name: NitroWumpusExcitement3dIllustration
-// Dependencies: [21, 5329, 6655, 2]
+// Dependencies: [21, 5449, 6013, 2]
 // Exports: NitroWumpusExcitement3dIllustration
 
-// Module 6654 (NitroWumpusExcitement3dIllustration)
+// Module 6012 (NitroWumpusExcitement3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusExcitement3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroWumpusExcitement3dIllustration = function NitroWumpusExcitemen
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6655);
+  obj[0] = importDefault(6013);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWumpusExcitement3dIllustration = function NitroWumpusExcitemen
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

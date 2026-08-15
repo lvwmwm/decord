@@ -1,10 +1,10 @@
-// Module ID: 4524
-// Function ID: 4525
+// Module ID: 9860
+// Function ID: 9861
 // Name: watchStream
-// Dependencies: [5, 4359, 4525, 4526, 4364, 1218, 1391, 1910, 1979, 4361, 676, 4409, 709, 4408, 38, 4527, 4538, 4570, 4571, 530, 687, 4562, 503, 9232, 5191, 4355, 9306, 2]
+// Dependencies: [5, 4540, 8702, 9861, 4652, 1218, 1391, 1910, 1979, 4542, 676, 4532, 709, 4531, 38, 4979, 9862, 8666, 9883, 530, 687, 5227, 503, 9667, 4975, 4770, 9735, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 4524 (watchStream)
+// Module 9860 (watchStream)
 import fetchFingerprint from "fetchFingerprint";
 import set from "set";
 import initialize from "initialize";
@@ -28,7 +28,7 @@ function watchStream(stream, forceMultiple) {
   if (null == remoteSessionId.getRemoteSessionId()) {
     ({ guildId, channelId } = stream);
     if (null == guildId) {
-      const encodeStreamKeyResult = require(4408) /* isStreamKey */.encodeStreamKey(stream);
+      const encodeStreamKeyResult = require(4531) /* isStreamKey */.encodeStreamKey(stream);
       forceMultiple = undefined;
       if (forceMultiple != null) {
         forceMultiple = forceMultiple.forceMultiple;
@@ -37,7 +37,7 @@ function watchStream(stream, forceMultiple) {
         const allActiveStreamsForChannel = authStore.getAllActiveStreamsForChannel(channelId);
         forceMultiple = allActiveStreamsForChannel.filter((ownerId) => ownerId.ownerId !== id.getId()).length >= MAX_VALUE;
       }
-      const obj2 = require(4408) /* isStreamKey */;
+      const obj2 = require(4531) /* isStreamKey */;
       const tmp12 = require;
       const tmp18 = importDefault;
       let obj = { type: "STREAM_WATCH", streamKey: null, allowMultiple: null };
@@ -45,8 +45,8 @@ function watchStream(stream, forceMultiple) {
       obj[2] = forceMultiple;
       importDefault(709).dispatch(obj);
       if (null != guildId) {
-        const result = tmp12(4538).maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
-        const tmp12Result = tmp12(4538);
+        const result = tmp12(9862).maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
+        const tmp12Result = tmp12(9862);
       }
       let forceFocus;
       if (forceMultiple != null) {
@@ -64,8 +64,8 @@ function watchStream(stream, forceMultiple) {
         tmp22 = forceMultiple;
       }
       if (!tmp22) {
-        const participant = tmp18(4570).selectParticipant(stream.channelId, encodeStreamKeyResult);
-        const tmp18Result = tmp18(4570);
+        const participant = tmp18(8666).selectParticipant(stream.channelId, encodeStreamKeyResult);
+        const tmp18Result = tmp18(8666);
       }
       const obj3 = importDefault(709);
     } else {
@@ -74,7 +74,7 @@ function watchStream(stream, forceMultiple) {
       const isInChannelResult = updateVoiceState.isInChannel(channelId);
       let isChannelFullResult = !isInChannelResult;
       if (!isInChannelResult) {
-        obj = require(4527) /* allowChannelAccess */;
+        obj = require(4979) /* allowChannelAccess */;
         isChannelFullResult = obj.isChannelFull(channel, tmp6, createGuildRecordFromRust);
       }
       tmp6 = updateVoiceState;
@@ -102,7 +102,7 @@ function _fetchStreamPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ function _fetchStreamPreview() {
               dependencyMap = undefined;
               if (c6.shouldFetchPreview(c0, lib, dependencyMap)) {
                 let obj5 = callback;
-                let result = callback(4408);
+                let result = callback(4531);
                 let HTTP = result.encodeStreamKey;
                 if (null != tmp55) {
                   let CALL = outer1_16.GUILD;
@@ -225,7 +225,7 @@ function _notifyStreamStart() {
       const obj2 = { event: null };
       obj2[0] = callback(503).NetworkActionNames.STREAM_NOTIFY;
       obj1[2] = obj2;
-      yield v0(4562).post(obj1);
+      yield v0(5227).post(obj1);
       if (1 === tmp6) {
         c4 = 0;
         v0 = 3;
@@ -263,7 +263,7 @@ export const startStream = function startStream(guildId, channelId) {
   obj.dispatch(obj);
 };
 export const setStreamPaused = function setStreamPaused(currentUserActiveStream, paused) {
-  let obj = require(4408) /* isStreamKey */;
+  let obj = require(4531) /* isStreamKey */;
   const encodeStreamKeyResult = obj.encodeStreamKey(currentUserActiveStream);
   obj = { type: "STREAM_SET_PAUSED", streamKey: encodeStreamKeyResult, paused };
   importDefault(709).dispatch(obj);
@@ -283,7 +283,7 @@ export const watchStreamAndTransitionToStream = function watchStreamAndTransitio
       windowOpen = store2.getVoiceChannelId() === channelId;
     }
     if (!windowOpen) {
-      importDefault(4571)(stream);
+      importDefault(9883)(stream);
     }
   } else {
     const channel = store.getChannel(channelId);
@@ -291,8 +291,8 @@ export const watchStreamAndTransitionToStream = function watchStreamAndTransitio
     const isInChannelResult = updateVoiceState.isInChannel(channelId);
     let isChannelFullResult = !isInChannelResult;
     if (!isInChannelResult) {
-      isChannelFullResult = require(4527) /* allowChannelAccess */.isChannelFull(channel, tmp6, createGuildRecordFromRust);
-      const obj = require(4527) /* allowChannelAccess */;
+      isChannelFullResult = require(4979) /* allowChannelAccess */.isChannelFull(channel, tmp6, createGuildRecordFromRust);
+      const obj = require(4979) /* allowChannelAccess */;
     }
     tmp6 = updateVoiceState;
   }
@@ -355,7 +355,7 @@ export const notifyStreamStart = function notifyStreamStart() {
 };
 export const updateStreamSettings = function updateStreamSettings(noTrack) {
   if (true !== noTrack.noTrack) {
-    let obj = require(9232) /* isPremiumResolution */;
+    let obj = require(9667) /* isPremiumResolution */;
     const result = obj.trackStreamSettingsUpdate(noTrack.preset, noTrack.resolution, noTrack.frameRate, noTrack.soundshareEnabled);
   }
   obj = { type: "STREAM_UPDATE_SETTINGS" };
@@ -375,7 +375,7 @@ export const stopOwnStream = function stopOwnStream(arg0) {
   }
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    const encodeStreamKeyResult = require(4408) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
+    const encodeStreamKeyResult = require(4531) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
     if (flag === undefined) {
       flag = true;
     }
@@ -387,7 +387,7 @@ export const stopOwnStream = function stopOwnStream(arg0) {
     obj[1] = encodeStreamKeyResult;
     obj[2] = flag;
     obj.dispatch(obj);
-    const obj5 = require(4408) /* isStreamKey */;
+    const obj5 = require(4531) /* isStreamKey */;
     obj = { type: "STREAM_STOP", streamKey: null, appContext: null };
     obj[1] = encodeStreamKeyResult;
     obj[2] = constants.APP;
@@ -398,15 +398,15 @@ export const stopOwnStream = function stopOwnStream(arg0) {
 export const joinPrivateChannelAndWatchStream = function joinPrivateChannelAndWatchStream(arg0, streamKey) {
   const _require = arg0;
   id = id.getId();
-  const importDefault = _require(4408).decodeStreamKey(streamKey);
+  const importDefault = _require(4531).decodeStreamKey(streamKey);
   const voiceChannelId = store2.getVoiceChannelId();
   if (tmp4) {
-    importDefault(5191).disconnect();
-    const obj2 = importDefault(5191);
+    importDefault(4975).disconnect();
+    const obj2 = importDefault(4975);
   }
-  let obj = _require(4408);
+  let obj = _require(4531);
   tmp4 = null != voiceChannelId && voiceChannelId !== arg0;
-  importDefault(4355).addRecipient(arg0, id, undefined, () => {
+  importDefault(4770).addRecipient(arg0, id, undefined, () => {
     const tmp = callback(outer1_2[26]);
     const call = tmp.call;
     const fn = () => {

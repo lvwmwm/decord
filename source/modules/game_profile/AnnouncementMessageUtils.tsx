@@ -1,10 +1,10 @@
-// Module ID: 9399
-// Function ID: 9400
+// Module ID: 9163
+// Function ID: 9164
 // Name: toAnnouncementMessages
-// Dependencies: [3999, 1954, 4593, 4532, 9400, 4586, 8392, 1236, 1486, 2]
+// Dependencies: [4031, 1954, 4810, 4811, 9164, 4803, 8431, 1236, 1487, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9399 (toAnnouncementMessages)
+// Module 9163 (toAnnouncementMessages)
 import { isMessageComponentsV2 } from "hasFlag";
 
 const re4 = /^#{1,3}\s+(.+)$/;
@@ -247,7 +247,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
   });
 };
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
-  let result = require(8392) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+  let result = require(8431) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
   if (result == null) {
     const intl = tmp(1236).intl;
     result = intl.string(tmp(1236).t["e+J3JZ"]);
@@ -255,7 +255,7 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   return result;
 };
 export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
-  let str = importDefault(1486).toURLSafe(proxyUrl);
+  let str = importDefault(1487).toURLSafe(proxyUrl);
   str = null;
   if (null != str) {
     const searchParams = str.searchParams;

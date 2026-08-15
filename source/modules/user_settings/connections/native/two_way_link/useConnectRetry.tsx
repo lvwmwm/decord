@@ -1,10 +1,10 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 9793
+// Function ID: 9794
 // Name: useConnectRetry
 // Dependencies: [19, 2]
 // Exports: useConnectRetry
 
-// Module 10532 (useConnectRetry)
+// Module 9793 (useConnectRetry)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useConnectRetry.tsx");

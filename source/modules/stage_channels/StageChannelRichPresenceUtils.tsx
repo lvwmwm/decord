@@ -1,10 +1,10 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 7254
+// Function ID: 7255
 // Name: unpackStageChannelParty
-// Dependencies: [32, 1218, 1391, 1910, 5201, 5194, 676, 2]
+// Dependencies: [32, 1218, 1391, 1910, 4990, 4978, 676, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9715 (unpackStageChannelParty)
+// Module 7254 (unpackStageChannelParty)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

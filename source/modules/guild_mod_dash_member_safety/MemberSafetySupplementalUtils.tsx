@@ -1,10 +1,10 @@
-// Module ID: 7031
-// Function ID: 7032
+// Module ID: 5096
+// Function ID: 5097
 // Name: createFetchKeys
-// Dependencies: [5, 676, 1236, 5063, 7032, 4278, 1363, 530, 2]
+// Dependencies: [5, 676, 1236, 5097, 5220, 4310, 1363, 530, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 7031 (createFetchKeys)
+// Module 5096 (createFetchKeys)
 import useTheme from "useTheme";
 import { Endpoints } from "ME";
 
@@ -45,7 +45,7 @@ function _fetchMemberSupplemental() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -234,8 +234,8 @@ export const getIntegrationLabel = function getIntegrationLabel(arg0) {
   }
 };
 export const useGetIntegrationIconString = function useGetIntegrationIconString(arg0) {
-  const obj = importDefault(5063);
-  const value = obj.get(require(7032) /* PlatformTypes */.useLegacyPlatformType(arg0));
+  const obj = importDefault(5097);
+  const value = obj.get(require(5220) /* PlatformTypes */.useLegacyPlatformType(arg0));
   let tmp5 = null;
   if (null != value) {
     const items = [, ];

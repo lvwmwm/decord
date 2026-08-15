@@ -1,13 +1,13 @@
-// Module ID: 7803
-// Function ID: 7804
+// Module ID: 8021
+// Function ID: 8022
 // Name: BuyNitroPurchaseButton
-// Dependencies: [32, 19, 17, 5920, 1924, 21, 4342, 5809, 6936, 1236, 500, 7804, 5777, 7440, 7714, 589, 5789, 4706, 4777, 7805, 7806, 2]
+// Dependencies: [32, 19, 17, 5319, 1924, 21, 4661, 7159, 4489, 1236, 500, 8022, 7127, 7658, 7932, 589, 7139, 4656, 4745, 8023, 8024, 2]
 // Exports: default
 
-// Module 7803 (BuyNitroPurchaseButton)
+// Module 8021 (BuyNitroPurchaseButton)
 import _slicedToArray from "_slicedToArray";
 import BuyNitroPurchaseButtonLegalDisclaimer from "BuyNitroPurchaseButtonLegalDisclaimer";
-import { View } from "module_4706";
+import { View } from "module_4656";
 import updateProduct from "updateProduct";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "set";

@@ -1,10 +1,10 @@
-// Module ID: 7873
-// Function ID: 7874
+// Module ID: 5440
+// Function ID: 5441
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 4342, 712, 5430, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 5441, 2]
 // Exports: ModalScreen
 
-// Module 7873 (ModalScreen)
+// Module 5440 (ModalScreen)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ const result = require("jsxProd").fileFinishedImporting("design/components/Modal
 export const ModalScreen = function ModalScreen(children) {
   let backgroundColor = children.backgroundColor;
   const tmp = createCacheKey();
-  const insets = importDefault(5430)().insets;
+  const insets = importDefault(5441)().insets;
   const style = [tmp.container, ];
   if (backgroundColor == null) {
     backgroundColor = tmp.container.backgroundColor;

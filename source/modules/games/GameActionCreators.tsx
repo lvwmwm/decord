@@ -1,10 +1,10 @@
-// Module ID: 5989
-// Function ID: 5990
+// Module ID: 5379
+// Function ID: 5380
 // Name: requestGames
-// Dependencies: [5, 4366, 676, 530, 709, 4227, 12, 2]
+// Dependencies: [5, 4505, 676, 530, 709, 4259, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 5989 (requestGames)
+// Module 5379 (requestGames)
 import importDefaultResult from "start";
 import handleLoadMessages from "handleLoadMessages";
 import { Endpoints } from "ME";
@@ -87,7 +87,7 @@ function _fetchGamesWithSupplementalData() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ function _fetchGamesWithSupplementalData() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -153,7 +153,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -185,7 +185,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         v0 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14611
+// Function ID: 14612
 // Name: route
-// Dependencies: [1302, 8148, 676, 1367, 589, 10421, 1236, 14575, 14580, 2]
+// Dependencies: [1302, 8198, 676, 1367, 589, 10669, 1236, 14607, 14612, 2]
 
-// Module 14579 (route)
+// Module 14611 (route)
 import handleThemeChange from "handleThemeChange";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.Ksh3ik);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
     const tmp = importDefault(1367)("AppearanceThemePickerSetting");
     const items = [handleThemeChange];
@@ -29,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_THEME_PICKER,
   getComponent() {
-    return require(14580) /* ThemeTypes */.default;
+    return require(14612) /* ThemeTypes */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

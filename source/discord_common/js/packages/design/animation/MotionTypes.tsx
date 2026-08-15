@@ -1,7 +1,7 @@
-// Module ID: 4074
-// Function ID: 4075
+// Module ID: 4106
+// Function ID: 4107
 // Name: set
 // Dependencies: [2]
 
-// Module 4074 (set)
+// Module 4106 (set)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/animation/MotionTypes.tsx");

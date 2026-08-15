@@ -1,24 +1,24 @@
-// Module ID: 5439
-// Function ID: 5440
+// Module ID: 6294
+// Function ID: 6295
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4083, 4909, 5440, 4065, 712, 500, 2]
+// Dependencies: [19, 17, 21, 4115, 5433, 6295, 4097, 712, 500, 2]
 
-// Module 5439 (AnimatedPressableHighlight)
+// Module 6294 (AnimatedPressableHighlight)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 import set from "jsxProd";
 
 const require = arg1;
-let closure_6 = require("module_4083").createAnimatedComponent(require("PressableBase").PressableHighlight);
+let closure_6 = require("module_4115").createAnimatedComponent(require("PressableBase").PressableHighlight);
 const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
 
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   const merged = Object.assign(children, Object.create(null));
   let token;
-  let obj = merged(4065);
+  let obj = merged(4097);
   token = obj.useToken(token(712).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
   let androidRippleConfig = merged.androidRippleConfig;
@@ -59,7 +59,7 @@ export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPr
   }, items)} />;
 }) : (function AnimatedPressableHighlightiOS(children) {
   const merged = Object.assign(children, Object.create(null));
-  let obj = require(5440) /* SPRING_CONFIG */;
+  let obj = require(6295) /* SPRING_CONFIG */;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);

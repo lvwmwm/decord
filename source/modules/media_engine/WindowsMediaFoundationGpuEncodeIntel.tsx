@@ -1,10 +1,10 @@
-// Module ID: 13241
-// Function ID: 13242
+// Module ID: 13169
+// Function ID: 13170
 // Name: getWmfGpuEncodeIntel
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 13241 (getWmfGpuEncodeIntel)
+// Module 13169 (getWmfGpuEncodeIntel)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

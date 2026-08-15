@@ -1,9 +1,9 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16579
+// Function ID: 16580
 // Name: handleConnectionOpen
-// Dependencies: [5, 8411, 8410, 5237, 4812, 5279, 5287, 1340, 685, 4371, 687, 5322, 1374, 1341, 1342, 12, 2]
+// Dependencies: [5, 8450, 8449, 6727, 4780, 6768, 6772, 1340, 685, 4482, 687, 5038, 1374, 1341, 1342, 12, 2]
 
-// Module 16529 (handleConnectionOpen)
+// Module 16579 (handleConnectionOpen)
 import handleStickersStoreUpdate from "handleStickersStoreUpdate";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import closure_5 from "handleUserSettingsProtoStoreChange";
@@ -75,7 +75,7 @@ function _saveProtos() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ function _saveProtos() {
             const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
           });
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp25) {
           c4 = tmp;
           throw tmp25;

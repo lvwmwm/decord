@@ -1,13 +1,13 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15233
+// Function ID: 15234
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14087, 15163, 15164, 21, 4342, 712, 1236, 8543, 1499, 15161, 15179, 15162, 691, 15178, 15181, 14088, 6072, 8555, 8570, 7856, 4777, 5885, 2]
+// Dependencies: [5, 32, 19, 17, 14119, 15212, 15213, 21, 4661, 712, 1236, 8582, 1500, 15210, 15228, 15211, 691, 15227, 15230, 14120, 5432, 8594, 8609, 8071, 4745, 6551, 2]
 // Exports: default
 
-// Module 15184 (RegisterDisplayName)
+// Module 15233 (RegisterDisplayName)
 import closure_3 from "useRegistrationUIStore";
 import _slicedToArray from "_slicedToArray";
-import module_14088 from "module_14088";
+import module_14120 from "module_14120";
 import { View } from "useInitialRegistrationStep";
 import isRateLimited from "isRateLimited";
 import useRegistrationUIStore from "useRegistrationUIStore";
@@ -101,7 +101,7 @@ export default function RegisterDisplayName() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ export default function RegisterDisplayName() {
               obj3 = callback(str[15]);
               const result = obj3.handleNextOrSubmitRegistration(callback(str[16]).AuthStates.REGISTER_DISPLAY_NAME, callback, outer1_4);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c3 = 3;

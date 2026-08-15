@@ -1,10 +1,10 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 10309
+// Function ID: 10310
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4334, 21, 4342, 712, 589, 9450, 501, 7481, 5329, 4338, 2]
+// Dependencies: [32, 19, 17, 4662, 21, 4661, 712, 589, 9217, 501, 7699, 5449, 4734, 2]
 // Exports: default
 
-// Module 10105 (AnimatedImage)
+// Module 10309 (AnimatedImage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -107,7 +107,7 @@ export default function PremiumGiftPromotionDetails(imageUrl) {
   }
   const items1 = [tmp4, ];
   obj = { style: tmp.textContainer, children: null };
-  const items2 = [callback(require(4338) /* Text */.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
+  const items2 = [callback(require(4734) /* Text */.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
   obj[1] = items2;
   items1[1] = closure_8(View, obj);
   obj[1] = items1;

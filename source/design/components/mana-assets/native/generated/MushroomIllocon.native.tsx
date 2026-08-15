@@ -1,10 +1,10 @@
-// Module ID: 6590
-// Function ID: 6591
+// Module ID: 5948
+// Function ID: 5949
 // Name: MushroomIllocon
-// Dependencies: [21, 5329, 6591, 2]
+// Dependencies: [21, 5449, 5949, 2]
 // Exports: MushroomIllocon
 
-// Module 6590 (MushroomIllocon)
+// Module 5948 (MushroomIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const MushroomIllocon = function MushroomIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6591);
+  obj[0] = importDefault(5949);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { uri: null });
+  return jsx(importDefault(5449), { uri: null });
 };

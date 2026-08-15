@@ -1,10 +1,10 @@
-// Module ID: 13388
-// Function ID: 13389
+// Module ID: 13420
+// Function ID: 13421
 // Name: markGuildsAsRead
-// Dependencies: [5303, 5284, 1391, 1980, 4357, 676, 4551, 12, 11, 698, 5314, 2]
+// Dependencies: [6788, 5251, 1391, 1980, 4772, 676, 5044, 12, 11, 698, 5277, 2]
 // Exports: default
 
-// Module 13388 (markGuildsAsRead)
+// Module 13420 (markGuildsAsRead)
 import handleUpdate from "handleUpdate";
 import rebuild from "rebuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -92,5 +92,5 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   obj = { source, type: "guild" };
   importDefault(698).track(AnalyticEvents.MARK_AS_READ, obj);
   let obj2 = importDefault(698);
-  return mapped(5314).bulkAck(mapped, onFinished);
+  return mapped(5277).bulkAck(mapped, onFinished);
 };

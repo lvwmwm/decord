@@ -1,8 +1,8 @@
-// Module ID: 1629
-// Function ID: 1630
-// Dependencies: [1630, 644, 2]
+// Module ID: 1630
+// Function ID: 1631
+// Dependencies: [1631, 644, 2]
 
-// Module 1629
+// Module 1630
 import keys from "keys";
 
 let obj = { safeAreaInsets: require("EMPTY_SAFE_AREA_INSETS").INITIAL_SAFE_AREA_INSETS };

@@ -1,9 +1,9 @@
-// Module ID: 8095
-// Function ID: 8096
+// Module ID: 8145
+// Function ID: 8146
 // Name: REMEDIATION_ELEMENT_TYPES
 // Dependencies: [2]
 
-// Module 8095 (REMEDIATION_ELEMENT_TYPES)
+// Module 8145 (REMEDIATION_ELEMENT_TYPES)
 const result = require("set").fileFinishedImporting("modules/in_app_reports/MenuConstants.tsx");
 
 export const REMEDIATION_ELEMENT_TYPES = ["ignore_users", "block_users", "leave_guild", "delete_message", "deauthorize_app", "share_with_parents"];

@@ -1,10 +1,10 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 14036
+// Function ID: 14037
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4338, 7770, 1297, 1236, 7857, 4909, 5442, 500, 5830, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 4734, 7988, 1297, 1236, 8072, 5433, 6297, 500, 7179, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 14004 (FormControlText)
+// Module 14036 (FormControlText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -18,7 +18,7 @@ let error;
 let require = arg1;
 function FormControlText(children) {
   const tmp = createCacheKey();
-  return callback2(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
+  return callback2(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
 }
 function FormControlSubtext(text) {
   text = text.text;
@@ -27,7 +27,7 @@ function FormControlSubtext(text) {
     const obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj[2] = tmp.formControlText;
     obj[3] = text;
-    tmp2 = callback2(require(4338) /* Text */.Text, obj);
+    tmp2 = callback2(require(4734) /* Text */.Text, obj);
   }
   return tmp2;
 }
@@ -59,7 +59,7 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
     obj[0] = tmp.labelTrailing;
     let tmp5 = null;
     if (flag) {
-      tmp5 = callback2(require(7770) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
+      tmp5 = callback2(require(7988) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
     }
     const items = [tmp5, ];
     let tmp9 = null;
@@ -133,12 +133,12 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[2] = trailing;
   tmp2Result = !flag2;
   if (!flag2) {
-    tmp2Result = tmp2(require(5442) /* TableRowArrow */.TableRowArrow, {});
+    tmp2Result = tmp2(require(6297) /* TableRowArrow */.TableRowArrow, {});
   }
   items[3] = tmp2Result;
   obj[8] = items;
-  obj[2] = closure_7(require(4909) /* PressableBase */.PressableHighlight, obj);
-  return closure_6(require(7857) /* Input */.Input, obj);
+  obj[2] = closure_7(require(5433) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(8072) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -165,7 +165,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     callback(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(4909).PressableHighlight;
+    let PressableHighlight = tmp2(5433).PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
@@ -206,8 +206,8 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj[5] = accessibilityHint;
   obj[6] = { disabled, checked: tmp5[0] };
   obj[7] = disabled;
-  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5830) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(7179) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(7857) /* Input */.Input, obj);
+  return closure_6(require(8072) /* Input */.Input, obj);
 };

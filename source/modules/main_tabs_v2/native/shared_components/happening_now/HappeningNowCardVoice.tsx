@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15349
+// Function ID: 15350
 // Name: formatVoiceActivityTitle
-// Dependencies: [19, 17, 7188, 1922, 4361, 14608, 676, 21, 4342, 698, 10962, 2007, 15283, 14609, 4892, 12401, 15293, 8239, 589, 12, 1370, 4534, 1236, 2]
+// Dependencies: [19, 17, 5407, 1922, 4542, 14640, 676, 21, 4661, 698, 8734, 2007, 15332, 14641, 6896, 12142, 15342, 8285, 589, 12, 1370, 4796, 1236, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15300 (formatVoiceActivityTitle)
+// Module 15349 (formatVoiceActivityTitle)
 import importAllResult from "apply";
 import { View } from "apexExperiment";
 import recomputeAffinities from "recomputeAffinities";
@@ -22,20 +22,20 @@ function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
   if (0 === stateFromStoresArray.length) {
     return "";
   } else if (1 === length) {
-    return importDefault(4534).getName(guildId, null, stateFromStoresArray[0]);
+    return importDefault(4796).getName(guildId, null, stateFromStoresArray[0]);
   } else if (2 === length) {
     const intl = require(1236) /* getSystemLocale */.intl;
     let obj = { user1: null, user2: null };
-    obj[0] = importDefault(4534).getName(guildId, null, stateFromStoresArray[0]);
-    const obj2 = importDefault(4534);
-    obj[1] = importDefault(4534).getName(guildId, null, stateFromStoresArray[1]);
+    obj[0] = importDefault(4796).getName(guildId, null, stateFromStoresArray[0]);
+    const obj2 = importDefault(4796);
+    obj[1] = importDefault(4796).getName(guildId, null, stateFromStoresArray[1]);
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["4SM/RX"], obj);
   } else {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj = { user1: null, user2: null, extras: null };
-    obj[0] = importDefault(4534).getName(guildId, null, stateFromStoresArray[0]);
-    const obj6 = importDefault(4534);
-    obj[1] = importDefault(4534).getName(guildId, null, stateFromStoresArray[1]);
+    obj[0] = importDefault(4796).getName(guildId, null, stateFromStoresArray[0]);
+    const obj6 = importDefault(4796);
+    obj[1] = importDefault(4796).getName(guildId, null, stateFromStoresArray[1]);
     obj[2] = stateFromStoresArray.length - 2;
     return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.pjxkCI, obj);
   }
@@ -136,8 +136,8 @@ const result = require("recomputeAffinities").fileFinishedImporting("modules/mai
 export default memoResult;
 export const useVoiceChannelUsers = function useVoiceChannelUsers(channelId) {
   const _require = channelId;
-  const voiceUserAffinitySortType = _require(8239).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(8239);
+  const voiceUserAffinitySortType = _require(8285).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(8285);
   const items = [updateVoiceState, mergeGuildAvatar, recomputeAffinities];
   const items1 = [voiceUserAffinitySortType, channelId.channelId];
   return _require(589).useStateFromStoresArray(items, () => {

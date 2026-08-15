@@ -1,10 +1,10 @@
-// Module ID: 9198
-// Function ID: 9199
+// Module ID: 12400
+// Function ID: 12401
 // Name: restoreEventRecurrence
-// Dependencies: [9003, 2]
+// Dependencies: [8783, 2]
 // Exports: default
 
-// Module 9198 (restoreEventRecurrence)
+// Module 12400 (restoreEventRecurrence)
 let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/restoreEventRecurrence.tsx");
 
 export default function restoreEventRecurrence(arg0, guild_id, id, c2) {
@@ -13,12 +13,12 @@ export default function restoreEventRecurrence(arg0, guild_id, id, c2) {
   ({ scheduled_start_time, scheduled_end_time } = arg0);
   if (null == scheduled_start_time) {
     if (null == scheduled_end_time) {
-      let result = importDefault(9003).deleteGuildEventException(guild_id, id, c2);
-      const obj3 = importDefault(9003);
+      let result = importDefault(8783).deleteGuildEventException(guild_id, id, c2);
+      const obj3 = importDefault(8783);
     }
     return result;
   }
-  let obj = importDefault(9003);
+  let obj = importDefault(8783);
   obj = { scheduled_start_time, scheduled_end_time, is_canceled: false };
   result = obj.updateGuildEventException(obj, guild_id, id, c2);
 };

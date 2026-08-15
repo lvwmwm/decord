@@ -1,10 +1,10 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17032
+// Function ID: 17033
 // Name: _getMyContentInventory
-// Dependencies: [5, 8983, 676, 530, 4241, 709, 1236, 2]
+// Dependencies: [5, 9064, 676, 530, 4273, 709, 1236, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 16986 (_getMyContentInventory)
+// Module 17032 (_getMyContentInventory)
 import dispatcher from "dispatcher";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 import { Endpoints } from "ME";
@@ -32,7 +32,7 @@ function _getMyContentInventory() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function _getMyContentInventory() {
           } else if (2 === tmp7) {
             constants = 0;
             c6 = body;
-            const aPIError = new callback(4241).APIError(c6);
+            const aPIError = new callback(4273).APIError(c6);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -157,7 +157,7 @@ function _getContentInventoryOutbox() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ function _getContentInventoryOutbox() {
             obj4 = { type: "CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE", userId: null };
             obj4[1] = callback;
             obj4.dispatch(obj4);
-            const aPIError = new callback(4241).APIError(dependencyMap);
+            const aPIError = new callback(4273).APIError(dependencyMap);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -328,7 +328,7 @@ function _postTrackToContentInventory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -378,7 +378,7 @@ function _postTrackToContentInventory() {
           } else {
             constants = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_4 = tmp19;

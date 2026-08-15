@@ -1,9 +1,9 @@
-// Module ID: 5320
-// Function ID: 5321
+// Module ID: 6797
+// Function ID: 6798
 // Name: handleConnectionOpen
-// Dependencies: [5, 5321, 1391, 676, 687, 530, 5322, 2]
+// Dependencies: [5, 5270, 1391, 676, 687, 530, 5038, 2]
 
-// Module 5320 (handleConnectionOpen)
+// Module 6797 (handleConnectionOpen)
 import sendRequest from "sendRequest";
 import incrementVersion from "incrementVersion";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,7 +51,7 @@ function _saveUserGuildSettings() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ function _saveUserGuildSettings() {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -165,7 +165,7 @@ function _saveUserGuildSettingsBulk() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

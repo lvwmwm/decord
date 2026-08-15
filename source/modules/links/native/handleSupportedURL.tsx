@@ -1,10 +1,10 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 4492
+// Function ID: 4493
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5405, 7055, 6953, 12771, 1218, 676, 1398, 4409, 4579, 10611, 7067, 4325, 13279, 11346, 8148, 12112, 4572, 4198, 13280, 8846, 6080, 9397, 11258, 1891, 10387, 698, 10389, 5928, 11048, 11388, 13287, 12144, 10615, 2007, 10612, 10610, 13289, 13291, 1624, 4924, 13296, 4058, 13298, 1910, 6021, 9003, 9012, 5995, 4571, 10869, 4197, 5234, 1222, 709, 5186, 1486, 9084, 13301, 13316, 500, 13327, 9128, 13334, 4686, 13335, 7070, 5809, 9277, 7245, 5228, 11232, 10090, 13407, 5213, 10587, 9347, 9341, 4308, 2]
+// Dependencies: [109, 5, 4493, 4370, 7392, 12849, 1218, 676, 1398, 4532, 4839, 8774, 5297, 4357, 13311, 11059, 8198, 11849, 5260, 4230, 13312, 8929, 7360, 9151, 10971, 1892, 10642, 698, 10644, 7212, 10782, 11101, 13319, 11881, 10766, 2007, 12426, 8773, 13321, 13323, 1625, 4840, 13328, 4090, 13330, 1910, 7302, 8783, 8792, 7279, 9883, 9845, 4229, 4376, 1222, 709, 5223, 1487, 8874, 13333, 13348, 500, 13359, 8918, 13366, 4466, 13367, 5300, 7159, 9712, 7470, 6721, 10947, 10295, 13439, 6710, 8706, 9101, 9096, 4340, 2]
 // Exports: default
 
-// Module 13278 (handleSupportedURL)
+// Module 4492 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -20,7 +20,7 @@ import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items";
 import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow";
 import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 
 let closure_12;
 let closure_14;
@@ -386,7 +386,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -461,7 +461,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj2.openGuildEventDetails(obj4);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp35) {
                 c4 = tmp;
@@ -493,7 +493,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -555,7 +555,7 @@ export default function handleSupportedURL(payload) {
                   obj3.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp37) {
                 c2 = tmp;
                 throw tmp37;
@@ -615,7 +615,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -801,7 +801,7 @@ export default function handleSupportedURL(payload) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -889,15 +889,15 @@ export default function handleSupportedURL(payload) {
               } else if (result.QUESTS === type) {
                 addPostConnectionCallback(() => {
                   if (null != payload.questId) {
-                    let obj = payload(inviteCode[70]);
-                    obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
+                    let obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
                     obj[0] = arr.questId;
                     obj[1] = outer1_12.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT;
                     obj[2] = payload(inviteCode[71]).QuestContent.QUEST_EMBED_MOBILE;
                     obj = { referrer_id: null };
                     obj[0] = arr.referrerId;
                     obj[3] = obj;
-                    obj.trackQuestEvent(obj);
+                    payload(inviteCode[70]).trackQuestEvent(obj);
+                    const obj3 = payload(inviteCode[70]);
                   }
                   let sort;
                   if (payload != null) {
@@ -907,25 +907,26 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
+                  obj = payload(inviteCode[72]);
                   const obj1 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp9 = null;
+                  let tmp3 = null;
                   if (null != sort) {
-                    tmp9 = null;
+                    tmp3 = null;
                     if ("" !== sort) {
-                      tmp9 = sort;
+                      tmp3 = sort;
                     }
                   }
-                  obj1[1] = tmp9;
-                  let tmp10 = null;
+                  obj1[1] = tmp3;
+                  let tmp4 = null;
                   if (null != filter) {
-                    tmp10 = null;
+                    tmp4 = null;
                     if ("" !== filter) {
-                      tmp10 = filter;
+                      tmp4 = filter;
                     }
                   }
-                  obj1[2] = tmp10;
+                  obj1[2] = tmp4;
                   obj1[3] = payload(inviteCode[71]).QuestContent.QUEST_SHARE_LINK;
-                  payload(inviteCode[72]).openQuestHome(obj1);
+                  obj.openQuestHome(obj1);
                 });
                 flag = true;
               } else if (result.QUEST_HOME_PREVIEW === type) {

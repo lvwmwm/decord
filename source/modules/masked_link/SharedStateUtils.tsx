@@ -1,10 +1,10 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12421
+// Function ID: 12422
 // Name: useUrlParts
-// Dependencies: [32, 19, 8998, 2]
+// Dependencies: [32, 19, 8778, 2]
 // Exports: useModalState, useUrlParts
 
-// Module 12314 (useUrlParts)
+// Module 12421 (useUrlParts)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

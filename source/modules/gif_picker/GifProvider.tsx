@@ -1,10 +1,10 @@
-// Module ID: 9991
-// Function ID: 9992
+// Module ID: 10196
+// Function ID: 10197
 // Name: GIF_PROVIDER
 // Dependencies: [1236, 2]
 // Exports: getSearchPlaceholder
 
-// Module 9991 (GIF_PROVIDER)
+// Module 10196 (GIF_PROVIDER)
 const result = require("set").fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
 
 export const GIF_PROVIDER = "klipy";

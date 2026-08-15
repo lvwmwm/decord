@@ -1,10 +1,10 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 8446
+// Function ID: 8447
 // Name: isActivityInTextSupportedForChannel
-// Dependencies: [1391, 3989, 505, 692, 589, 2]
+// Dependencies: [1391, 4021, 505, 692, 589, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 8407 (isActivityInTextSupportedForChannel)
+// Module 8446 (isActivityInTextSupportedForChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
@@ -24,7 +24,7 @@ function isActivityInTextSupportedForChannel(channel) {
       hasItem = type === require(692) /* set */.ChannelTypes.GUILD_CATEGORY;
     }
     if (hasItem) {
-      const items = [require(692) /* set */.ChannelTypes.GUILD_TEXT, require(692) /* set */.ChannelTypes.GUILD_VOICE, require(692) /* set */.ChannelTypes.GROUP_DM, require(692) /* set */.ChannelTypes.DM];
+      const items = [require(692) /* set */.ChannelTypes.GUILD_TEXT, require(692) /* set */.ChannelTypes.GUILD_VOICE, require(692) /* set */.ChannelTypes.GROUP_DM, require(692) /* set */.ChannelTypes.DM, require(692) /* set */.ChannelTypes.GUILD_SPACE];
       hasItem = items.includes(channel.type);
     }
     return hasItem;

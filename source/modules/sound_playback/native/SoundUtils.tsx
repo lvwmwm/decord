@@ -1,10 +1,10 @@
-// Module ID: 9844
-// Function ID: 9845
+// Module ID: 10044
+// Function ID: 10045
 // Name: _createSound
-// Dependencies: [17, 1624, 500, 2]
+// Dependencies: [17, 1625, 500, 2]
 // Exports: MobileAudioSound
 
-// Module 9844 (_createSound)
+// Module 10044 (_createSound)
 import { NativeModules } from "get ActivityIndicator";
 import isMetaQuest from "isMetaQuest";
 import isMetaQuest from "isMetaQuest";

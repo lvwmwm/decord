@@ -1,10 +1,10 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12004
+// Function ID: 12005
 // Name: apexExperiment
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: useIsShopCardImpressionMobileEnabled
 
-// Module 12258 (apexExperiment)
+// Module 12004 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-shop-card-impression-mobile", kind: "user", defaultConfig: { enableShopCardImpression: false }, variations: { 0: { enableShopCardImpression: false }, 1: { enableShopCardImpression: true } } });

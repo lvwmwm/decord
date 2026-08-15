@@ -1,8 +1,8 @@
-// Module ID: 9152
-// Function ID: 9153
-// Dependencies: [32, 19, 17, 9153, 21, 4342, 712, 4783, 5488, 9188, 7817, 9157, 2]
+// Module ID: 12368
+// Function ID: 12369
+// Dependencies: [32, 19, 17, 12369, 21, 4661, 712, 4751, 6377, 12398, 8035, 12048, 2]
 
-// Module 9152
+// Module 12368
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,12 +28,12 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
   onItemPressed = onItemPressed.onItemPressed;
   let closure_1;
   let dependencyMap;
-  let obj = onItemPressed(4783);
+  let obj = onItemPressed(4751);
   closure_1 = obj.useFontScale();
   const tmp = callback2();
   [arr, c2] = callback(importAllResult.useState(closure_8), 2);
   const tmp2 = callback(importAllResult.useState(closure_8), 2);
-  const gesture = onItemPressed(5488).useNativeGesture({ disallowInterruption: true });
+  const gesture = onItemPressed(6377).useNativeGesture({ disallowInterruption: true });
   const effect = importAllResult.useEffect(() => {
     Promise.all(outer1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];
@@ -123,7 +123,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
     obj[1] = tmpResult;
     return outer1_9(outer1_5, obj, type.type);
   })}</closure_6>;
-  return jsx(onItemPressed(5488).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(6377).GestureDetector, { gesture, children });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

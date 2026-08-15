@@ -1,14 +1,14 @@
-// Module ID: 14576
-// Function ID: 14577
-// Dependencies: [19, 4163, 1303, 1302, 14577, 8148, 676, 21, 1499, 500, 8453, 1236, 9516, 705, 3047, 1993, 4793, 14578, 647, 10421, 13959, 2]
+// Module ID: 14608
+// Function ID: 14609
+// Dependencies: [19, 4195, 1303, 1302, 14609, 8198, 676, 21, 1500, 500, 8492, 1236, 9289, 705, 3079, 1993, 4761, 14610, 647, 10669, 13991, 2]
 
-// Module 14576
+// Module 14608
 import importAllResult from "createToggle";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
 import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "set";
 
@@ -20,10 +20,10 @@ let c3 = importAllResult;
 const memoResult = importAllResult.memo(() => {
   let gradientPresetId;
   let theme;
-  nativeStackNavigation(4793)(() => {
+  nativeStackNavigation(4761)(() => {
     if (initialize.shouldSync("appearance")) {
-      const userCustomThemes = _undefined(14578).fetchUserCustomThemes();
-      const obj = _undefined(14578);
+      const userCustomThemes = _undefined(14610).fetchUserCustomThemes();
+      const obj = _undefined(14610);
     }
   });
   let items = [handleThemeChange, isSyncedModeThemesEnabled];
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(() => {
   const tmp3 = callback();
   _require = tmp3;
   let obj = _require(647);
-  nativeStackNavigation = _require(1499).useNativeStackNavigation();
+  nativeStackNavigation = _require(1500).useNativeStackNavigation();
   let items1 = [nativeStackNavigation, , , , ];
   ({ fontScale: arr2[1], isClassicChatFontScaleEnabled: arr2[2], persistedFontScale: arr2[3], persistedIsClassicChatFontScaleEnabled: arr2[4] } = tmp3);
   const effect = importAllResult.useEffect(() => {
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(() => {
     if (obj.isAndroid()) {
       if (_undefined.persistedFontScale === _undefined.fontScale) {
         if (tmp3.persistedIsClassicChatFontScaleEnabled === tmp3.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "title" });
+          nativeStackNavigation.setOptions({ headerRight: "r" });
         }
       }
       obj = { headerRight: null };
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(() => {
     callback(table[13]).batchUpdates(() => state.setState(closure_7));
   }, []);
   const node = importAllResult.useMemo(() => {
-    let obj = _undefined(10421);
+    let obj = _undefined(10669);
     obj = { sections: null };
     const items = [constants.MOBILE_VISUAL_REFRESH];
     const items1 = [{ settings: items }, , , , , , , , , ];
@@ -97,7 +97,7 @@ const memoResult = importAllResult.memo(() => {
     const intl3 = _undefined(1236).intl;
     const obj3 = { helpCenterLink: null };
     obj3[0] = nativeStackNavigation(1993).getArticleURL(constants2.FAVORITES_GUILD);
-    obj2[1] = intl3.format(nativeStackNavigation(3047).GR2KOG, obj3);
+    obj2[1] = intl3.format(nativeStackNavigation(3079).GR2KOG, obj3);
     items1[6] = obj2;
     const obj4 = { label: null, settings: null };
     const intl4 = _undefined(1236).intl;
@@ -116,8 +116,8 @@ const memoResult = importAllResult.memo(() => {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  let obj2 = _require(1499);
-  return jsx(nativeStackNavigation(13959), { node }, "" + theme + "-" + gradientPresetId);
+  let obj2 = _require(1500);
+  return jsx(nativeStackNavigation(13991), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("initialize").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

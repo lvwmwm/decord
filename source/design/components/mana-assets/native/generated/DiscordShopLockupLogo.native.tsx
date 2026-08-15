@@ -1,10 +1,10 @@
-// Module ID: 6290
-// Function ID: 6291
+// Module ID: 5648
+// Function ID: 5649
 // Name: DiscordShopLockupLogo
-// Dependencies: [17, 21, 712, 4065, 6291, 2]
+// Dependencies: [17, 21, 712, 4097, 5649, 2]
 // Exports: DiscordShopLockupLogo
 
-// Module 6290 (DiscordShopLockupLogo)
+// Module 5648 (DiscordShopLockupLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const DiscordShopLockupLogo = function DiscordShopLockupLogo(color) {
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(4065) /* map */;
+  let obj = require(4097) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const DiscordShopLockupLogo = function DiscordShopLockupLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6291) };
+  obj1[1] = { uri: importDefault(5649) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

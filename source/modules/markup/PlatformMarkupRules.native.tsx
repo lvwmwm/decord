@@ -1,10 +1,10 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 6831
+// Function ID: 6832
 // Name: match
-// Dependencies: [17, 4827, 4002, 4060, 4806, 1435, 4807, 4894, 4376, 1236, 4810, 2]
+// Dependencies: [17, 6832, 4034, 4092, 6815, 1435, 6816, 6898, 4507, 1236, 6819, 2]
 // Exports: decorateWithIcon
 
-// Module 4826 (match)
+// Module 6831 (match)
 import { Image } from "get ActivityIndicator";
 
 const re4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
@@ -25,7 +25,7 @@ obj = {
           const json = JSON.stringify(match[0]);
           tmp3 = null;
         }
-        obj = importDefault(4002);
+        obj = importDefault(4034);
       }
       return tmp3;
     }
@@ -48,7 +48,7 @@ obj[2] = {
       obj[0] = arg0[0];
       return obj;
     } else {
-      obj = importDefault(4002);
+      obj = importDefault(4034);
       const result = obj.maybeTranslateSurrogatesToInlineEmoji(arg0[0]);
       if (null == result) {
         obj = { content: null };
@@ -66,7 +66,7 @@ obj[2] = {
 };
 obj[3] = {
   parse(content) {
-    let obj = importDefault(4002);
+    let obj = importDefault(4034);
     obj = { type: "emoji", content: content[0], surrogate: obj.convertNameToSurrogate(content[1]) };
     return obj;
   }
@@ -101,7 +101,7 @@ obj[4] = {
 };
 obj[5] = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(4807).channelMention;
+    const channelMention = importDefault(6816).channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -170,13 +170,13 @@ obj[5] = {
 };
 obj[6] = {
   parse(closure_0, arg1, channelId) {
-    let obj = require(4894) /* getGameMentionData */;
+    let obj = require(6898) /* getGameMentionData */;
     const gameMentionData = obj.getGameMentionData(tmp);
     let gameIcon;
     if (gameMentionData != null) {
       gameIcon = gameMentionData.gameIcon;
     }
-    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4376)(tmp, gameIcon, { size: 32 }), displayName: null };
+    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4507)(tmp, gameIcon, { size: 32 }), displayName: null };
     let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
@@ -191,7 +191,7 @@ obj[6] = {
 };
 obj[7] = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(4807).channelOrMessageUrl;
+    const channelOrMessageUrl = importDefault(6816).channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -260,7 +260,7 @@ obj[7] = {
 };
 obj[8] = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(4807).mediaPostLink;
+    const mediaPostLink = importDefault(6816).mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     let obj = {};
     let merged = Object.assign(parsed);
@@ -329,7 +329,7 @@ obj[8] = {
 };
 obj[9] = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(4810).attachmentLink;
+    const attachmentLink = importDefault(6819).attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };

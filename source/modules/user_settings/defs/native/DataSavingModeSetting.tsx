@@ -1,9 +1,9 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14773
+// Function ID: 14774
 // Name: toggle
-// Dependencies: [1304, 8148, 589, 14731, 4034, 10421, 1236, 2]
+// Dependencies: [1304, 8198, 589, 14771, 4066, 10669, 1236, 2]
 
-// Module 14733 (toggle)
+// Module 14773 (toggle)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
@@ -13,15 +13,15 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.ix8XIj);
   },
-  parent: require("MobileSetting").MobileSetting.CHAT,
+  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: function useDataSavingModeSettingValue() {
     const items = [CHANNEL_SIDEBAR_WIDTH];
     return require(589) /* initialize */.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
   },
   onValueChange: function onDataSavingModeSettingValueChange(arg0) {
-    let obj = require(14731) /* UserSettingsText */;
+    let obj = require(14771) /* UserSettingsText */;
     obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
-    const ViewImageDescriptions = require(4034) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(4066) /* explicitContentFromProto */.ViewImageDescriptions;
     obj[1] = ViewImageDescriptions.getSetting();
     obj[2] = CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode;
     obj[3] = arg0;

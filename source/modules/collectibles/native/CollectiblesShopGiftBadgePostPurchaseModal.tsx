@@ -1,10 +1,10 @@
-// Module ID: 12238
-// Function ID: 12239
+// Module ID: 11984
+// Function ID: 11985
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4342, 712, 1628, 4572, 7070, 5809, 7873, 1236, 5387, 4338, 2399, 10219, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 1629, 5260, 5300, 7159, 5440, 1236, 6368, 4734, 2431, 10419, 2]
 // Exports: default
 
-// Module 12238 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11984 (CollectiblesShopGiftBadgePostPurchaseModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,17 +28,17 @@ let closure_8 = createCacheKey.createStyles((paddingTop) => {
 let result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftBadgePostPurchaseModal.tsx");
 
 export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgress) {
-  const tmp = callback3(importDefault(1628)().top);
+  const tmp = callback3(importDefault(1629)().top);
   const callback = React.useCallback(() => {
-    let arr = callback2(4572);
+    let arr = callback2(5260);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(7070);
+    let obj = callback(5300);
     obj = { analyticsLocations: null, analyticsSource: null };
-    const items = [callback2(5809).GIFTING_BADGE_POST_PURCHASE];
+    const items = [callback2(7159).GIFTING_BADGE_POST_PURCHASE];
     obj[0] = items;
-    obj[1] = callback2(5809).GIFTING_BADGE_POST_PURCHASE;
+    obj[1] = callback2(7159).GIFTING_BADGE_POST_PURCHASE;
     const result = obj.openCollectiblesShopMobile(obj);
   }, []);
   let obj = { children: null };
@@ -47,14 +47,14 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgre
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[3] = tmp.closeButton;
-  obj[4] = callback(require(5387) /* XSmallIcon */.XSmallIcon, { size: "md", style: tmp.closeIcon });
+  obj[4] = callback(require(6368) /* XSmallIcon */.XSmallIcon, { size: "md", style: tmp.closeIcon });
   let items = [callback(closure_4, obj), ];
   const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[5] = intl2.string(importDefault(2399).roVAey);
-  items[1] = callback(require(4338) /* Text */.Text, obj2);
+  obj2[5] = intl2.string(importDefault(2431).roVAey);
+  items[1] = callback(require(4734) /* Text */.Text, obj2);
   obj[1] = items;
-  const items1 = [callback2(closure_5, obj), callback(importDefault(10219), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
+  const items1 = [callback2(closure_5, obj), callback(importDefault(10419), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
   obj[0] = items1;
-  return callback2(require(7873) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(5440) /* ModalScreen */.ModalScreen, obj);
 };

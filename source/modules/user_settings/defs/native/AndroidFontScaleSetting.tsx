@@ -1,9 +1,9 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14657
+// Function ID: 14658
 // Name: slider
-// Dependencies: [19, 14577, 685, 8148, 21, 705, 14626, 9590, 1236, 10421, 500, 2]
+// Dependencies: [19, 14609, 685, 8198, 21, 705, 14658, 9545, 1236, 10669, 500, 2]
 
-// Module 14625 (slider)
+// Module 14657 (slider)
 import noop from "noop";
 import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import { FontScales } from "MAX_FAVORITES";
@@ -16,7 +16,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.i19n5L);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useProps: function useFontScaleSliderProps() {
     const tmp = useFontScaleStore();
     const require = tmp;

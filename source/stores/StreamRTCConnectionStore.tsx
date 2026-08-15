@@ -1,9 +1,9 @@
-// Module ID: 4430
-// Function ID: 4431
+// Module ID: 4558
+// Function ID: 4559
 // Name: initialize
-// Dependencies: [4365, 1218, 4393, 4431, 4416, 676, 4409, 38, 4433, 12, 4408, 7265, 709, 4441, 500, 589, 13146, 2]
+// Dependencies: [4504, 1218, 4497, 4559, 4539, 676, 4532, 38, 4561, 12, 4531, 7487, 709, 4569, 500, 589, 13074, 2]
 
-// Module 4430 (initialize)
+// Module 4558 (initialize)
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import importDefaultResult from "_detectH265HardwareDecode";
@@ -42,7 +42,7 @@ prototype["getRTCConnection"] = function getRTCConnection(arg0) {
   return dependencyMap3[arg0];
 };
 prototype["getQuality"] = function getQuality(arg0) {
-  if (importDefault(13146)(closure_6)) {
+  if (importDefault(13074)(closure_6)) {
     if (null != arg0) {
       let quality;
       if (dependencyMap3[arg0] != null) {
@@ -222,8 +222,8 @@ if (importDefaultResult.isSupported()) {
     } else {
       GUILD = StreamTypes.GUILD;
     }
-    const encodeStreamKeyResult = require(4408) /* isStreamKey */.encodeStreamKey({ streamType: GUILD, guildId, channelId, ownerId: userId });
-    let tmp6 = context === require(4441) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM;
+    const encodeStreamKeyResult = require(4531) /* isStreamKey */.encodeStreamKey({ streamType: GUILD, guildId, channelId, ownerId: userId });
+    let tmp6 = context === require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM;
     if (tmp6) {
       tmp6 = null != dependencyMap3[encodeStreamKeyResult];
     }
@@ -261,7 +261,7 @@ if (importDefaultResult.isSupported()) {
     appContext = appContext.appContext;
     ({ pid, nativePickerStyleUsed: importDefault, goLiveModalDurationMs } = appContext);
     ({ streamType, guildId, channelId, sourceId, sourcePid, analyticsLocations } = appContext);
-    let obj = appContext(4408);
+    let obj = appContext(4531);
     obj = { streamType, guildId, channelId, ownerId: id.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     closure_11[encodeStreamKeyResult] = { appContext, analyticsLocations };
@@ -302,7 +302,7 @@ if (importDefaultResult.isSupported()) {
   obj[9] = function handleStreamStop(appContext) {
     appContext = appContext.appContext;
     const streamKey = appContext.streamKey;
-    closure_11[streamKey] = { appContext, analyticsLocations: "r" };
+    closure_11[streamKey] = { appContext, analyticsLocations: "a" };
     const item = importDefault(12).forEach(closure_18, (analyticsContext) => {
       analyticsContext = analyticsContext.analyticsContext;
       analyticsContext.setActionContext(appContext);
@@ -323,7 +323,7 @@ if (importDefaultResult.isSupported()) {
     ({ streamKey, rtcServerId, viewerIds } = arg0);
     let obj = dependencyMap3[streamKey];
     ({ rtcChannelId, region } = arg0);
-    let obj1 = require(4408) /* isStreamKey */;
+    let obj1 = require(4531) /* isStreamKey */;
     let tmp7 = null == obj;
     if (tmp7) {
       tmp7 = null != rtcServerId;
@@ -337,8 +337,8 @@ if (importDefaultResult.isSupported()) {
         tmp11 = null == dependencyMap2[streamKey];
       }
       if (tmp11) {
-        tmp10[streamKey] = tmp4(7265).getStreamerApplication(decodeStreamKeyResult, sortActivity);
-        const tmp4Result = tmp4(7265);
+        tmp10[streamKey] = tmp4(7487).getStreamerApplication(decodeStreamKeyResult, sortActivity);
+        const tmp4Result = tmp4(7487);
       }
       obj = { streamRegion: null, streamApplication: null, streamSourceType: null, actionContext: null, numViewers: null, goLiveModalDurationMs: null, analyticsLocations: null };
       obj[0] = region;
@@ -401,7 +401,7 @@ if (importDefaultResult.isSupported()) {
         analyticsLocations = tmp23.analyticsLocations;
       }
       obj[6] = analyticsLocations;
-      const streamRTCAnalyticsContext = new tmp4(4433).StreamRTCAnalyticsContext(obj);
+      const streamRTCAnalyticsContext = new tmp4(4561).StreamRTCAnalyticsContext(obj);
       importDefault(38)(null != closure_3, "Creating RTCConnection without session.");
       obj = { sessionId: null, streamKey: null, serverId: null, channelId: null, initialLayout: null, analyticsContext: null, parentMediaSessionId: null };
       obj[0] = closure_3;
@@ -410,7 +410,7 @@ if (importDefaultResult.isSupported()) {
       obj[3] = rtcChannelId;
       obj[4] = PORTRAIT;
       obj[5] = streamRTCAnalyticsContext;
-      let tmp32 = importDefault(4433);
+      let tmp32 = importDefault(4561);
       obj[6] = mediaSessionId.getMediaSessionId();
       tmp32 = new tmp32(obj);
       tmp3[streamKey] = tmp32;

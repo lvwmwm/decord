@@ -1,9 +1,9 @@
-// Module ID: 4261
-// Function ID: 4262
+// Module ID: 4293
+// Function ID: 4294
 // Name: isInRange
-// Dependencies: [32, 4262, 4263, 1910, 14, 1217, 11, 687, 2]
+// Dependencies: [32, 4294, 4295, 1910, 14, 1217, 11, 687, 2]
 
-// Module 4261 (isInRange)
+// Module 4293 (isInRange)
 import _slicedToArray from "_slicedToArray";
 import getGuild from "getGuild";
 import handleInviteData from "handleInviteData";

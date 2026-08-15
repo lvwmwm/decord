@@ -1,9 +1,9 @@
-// Module ID: 10200
-// Function ID: 10201
+// Module ID: 10400
+// Function ID: 10401
 // Name: BalanceWidgetPill
-// Dependencies: [19, 17, 21, 4342, 4781, 712, 500, 10201, 1236, 10202, 10208, 10209, 2]
+// Dependencies: [19, 17, 21, 4661, 4749, 712, 500, 10401, 1236, 10402, 10408, 10409, 2]
 
-// Module 10200 (BalanceWidgetPill)
+// Module 10400 (BalanceWidgetPill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

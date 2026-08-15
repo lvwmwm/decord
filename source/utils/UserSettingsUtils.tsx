@@ -1,10 +1,10 @@
-// Module ID: 6077
-// Function ID: 6078
+// Module ID: 7357
+// Function ID: 7358
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4704, 1910, 676, 4034, 4549, 6078, 1236, 1231, 2]
+// Dependencies: [4826, 1910, 676, 4066, 5042, 7358, 1236, 1231, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6077 (getSanitizedRestrictedGuilds)
+// Module 7357 (getSanitizedRestrictedGuilds)
 import handleConnectionOpen from "handleConnectionOpen";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -19,7 +19,7 @@ let obj = { UNDECIDED: 0, [0]: "UNDECIDED", OPTIN: 1, [1]: "OPTIN", OPTOUT: 2, [
 const result = require("ME").fileFinishedImporting("utils/UserSettingsUtils.tsx");
 
 export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuilds() {
-  const RestrictedGuildIds = require(4034) /* explicitContentFromProto */.RestrictedGuildIds;
+  const RestrictedGuildIds = require(4066) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   let found = setting;
   if (0 === handleConnectionOpen.totalUnavailableGuilds) {
@@ -28,7 +28,7 @@ export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuild
   return new Set(found);
 };
 export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedMessageRequestRestrictedGuilds() {
-  const MessageRequestRestrictedGuildIds = require(4034) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
+  const MessageRequestRestrictedGuildIds = require(4066) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.getSetting();
   let found = setting;
   if (0 === handleConnectionOpen.totalUnavailableGuilds) {
@@ -37,7 +37,7 @@ export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedM
   return new Set(found);
 };
 export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivityRestrictedGuilds() {
-  const ActivityRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+  const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
   const setting = ActivityRestrictedGuilds.getSetting();
   let found = setting;
   if (0 === handleConnectionOpen.totalUnavailableGuilds) {
@@ -46,7 +46,7 @@ export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivit
   return new Set(found);
 };
 export const getSanitizedActivityJoiningRestrictedGuilds = function getSanitizedActivityJoiningRestrictedGuilds() {
-  const ActivityJoiningRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+  const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
   const setting = ActivityJoiningRestrictedGuilds.getSetting();
   let found = setting;
   if (0 === handleConnectionOpen.totalUnavailableGuilds) {
@@ -72,9 +72,9 @@ export const trackUserSettingsPaneViewed = function trackUserSettingsPaneViewed(
   let source;
   let subsection;
   ({ destinationPane, originPane, source, subsection, locationStack, applicationId } = arg0);
-  let obj = importDefault(4549);
+  let obj = importDefault(5042);
   obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: null };
-  obj[7] = importDefault(6078).getSearchSessionId();
+  obj[7] = importDefault(7358).getSearchSessionId();
   obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj);
 };
 export const NonSpamRetrainingOptInOptions = obj;

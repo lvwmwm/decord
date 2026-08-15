@@ -1,10 +1,10 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15960
+// Function ID: 15961
 // Name: useSendMessageChannelCount
-// Dependencies: [1980, 3989, 676, 589, 506, 2]
+// Dependencies: [1980, 4021, 676, 589, 506, 2]
 // Exports: default
 
-// Module 15910 (useSendMessageChannelCount)
+// Module 15960 (useSendMessageChannelCount)
 import comparator from "comparator";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_4 } from "comparator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

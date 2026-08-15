@@ -1,18 +1,18 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14784
+// Function ID: 14785
 // Name: useWebBrowserSettingOptions
-// Dependencies: [8148, 4308, 1236, 691, 500, 10421, 2]
+// Dependencies: [8198, 4340, 1236, 691, 500, 10669, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 14744 (useWebBrowserSettingOptions)
+// Module 14784 (useWebBrowserSettingOptions)
 import createToggle from "createToggle";
 
 function useWebBrowserSettingOptions() {
   let CHROME = dependencyMap;
-  let obj = require(4308) /* NativeModules */;
+  let obj = require(4340) /* NativeModules */;
   const items = [];
   const browserManagerIsChromeInstalled = obj.useBrowserManagerIsChromeInstalled();
-  let obj1 = require(4308) /* NativeModules */;
+  let obj1 = require(4340) /* NativeModules */;
   if (obj1.useBrowserManagerSupportsInAppBrowser()) {
     obj = { label: null, value: null };
     const intl = tmp(1236).intl;
@@ -53,12 +53,12 @@ const radio = createToggle.createRadio({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
   },
-  parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
+  parent: require("MobileUserSettings").MobileUserSettings.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4308) /* NativeModules */.useBrowserManagerSelectedBrowser();
+    return require(4340) /* NativeModules */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4308) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4340) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 });
@@ -67,12 +67,12 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
   },
-  parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
+  parent: require("MobileUserSettings").MobileUserSettings.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4308) /* NativeModules */.useBrowserManagerSelectedBrowser();
+    return require(4340) /* NativeModules */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4308) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4340) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 };

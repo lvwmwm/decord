@@ -1,15 +1,15 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14795
+// Function ID: 14796
 // Name: onChange
-// Dependencies: [8148, 4000, 4034, 1236, 1306, 10421, 2]
+// Dependencies: [8198, 4032, 4066, 1236, 1306, 10669, 2]
 // Exports: onChange
 
-// Module 14755 (onChange)
+// Module 14795 (onChange)
 import createToggle from "createToggle";
 
 function onChange(arg0) {
-  const obj = require(4000) /* MAX_REACTIONS */;
-  const ReactionNotifications = require(4034) /* explicitContentFromProto */.ReactionNotifications;
+  const obj = require(4032) /* MAX_REACTIONS */;
+  const ReactionNotifications = require(4066) /* explicitContentFromProto */.ReactionNotifications;
   const result = obj.updateReactionNotificationsSetting(Number(arg0), ReactionNotifications.getSetting());
 }
 const radio = createToggle.createRadio({
@@ -17,7 +17,7 @@ const radio = createToggle.createRadio({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {
@@ -44,7 +44,7 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {

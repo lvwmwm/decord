@@ -1,9 +1,9 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11303
+// Function ID: 11304
 // Name: ApplicationCollectionItemFlags
 // Dependencies: [2]
 
-// Module 11586 (ApplicationCollectionItemFlags)
+// Module 11303 (ApplicationCollectionItemFlags)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionItemFlags.tsx");
 
 export const ApplicationCollectionItemFlags = { PROMOTED: 1, [1]: "PROMOTED", SKIPS_APPLICATION_DISCOVERABILITY_VALIDATION: 2, [2]: "SKIPS_APPLICATION_DISCOVERABILITY_VALIDATION", DEFAULT: 0, [0]: "DEFAULT" };

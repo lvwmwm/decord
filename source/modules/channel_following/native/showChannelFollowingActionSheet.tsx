@@ -1,10 +1,10 @@
-// Module ID: 10271
-// Function ID: 10272
+// Module ID: 10529
+// Function ID: 10530
 // Name: showChannelFollowingActionSheet
-// Dependencies: [19, 21, 4310, 10272, 2007, 4706, 10279, 2]
+// Dependencies: [19, 21, 4342, 10530, 2007, 4656, 10537, 2]
 // Exports: showChannelFollowingActionSheet
 
-// Module 10271 (showChannelFollowingActionSheet)
+// Module 10529 (showChannelFollowingActionSheet)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("module
 export const showChannelFollowingActionSheet = function showChannelFollowingActionSheet(id, guildId) {
   const _require = id;
   const importDefault = guildId;
-  let obj = importDefault(4310);
+  let obj = importDefault(4342);
   obj = {
     sourceChannelId: id,
     sourceGuildId: guildId,
@@ -112,5 +112,5 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
       return callback(dependencyMap[2]).hideActionSheet();
     }
   };
-  obj.openLazy(_require(2007)(10272, dependencyMap.paths), "NewChannelFollower." + id, obj);
+  obj.openLazy(_require(2007)(10530, dependencyMap.paths), "NewChannelFollower." + id, obj);
 };

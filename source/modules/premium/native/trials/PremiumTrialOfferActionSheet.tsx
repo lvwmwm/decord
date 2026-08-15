@@ -1,10 +1,10 @@
-// Module ID: 15092
-// Function ID: 15093
+// Module ID: 15141
+// Function ID: 15142
 // Name: markAsDismissed
-// Dependencies: [19, 1924, 676, 1388, 21, 5789, 5809, 698, 7657, 8685, 4007, 5458, 15093, 2]
+// Dependencies: [19, 1924, 676, 1388, 21, 7139, 7159, 698, 7875, 9325, 4039, 6950, 15142, 2]
 // Exports: default
 
-// Module 15092 (markAsDismissed)
+// Module 15141 (markAsDismissed)
 import noop from "noop";
 import { PremiumTypes } from "GuildFeatures";
 import { AnalyticEvents } from "ME";
@@ -28,7 +28,7 @@ export default function _default(markAsDismissed) {
       let obj = userTrialOffer(analyticsLocations[7]);
       obj = { location: null, trial_id: null };
       obj[0] = analyticsLocations;
-      obj[1] = tmp.trial_id;
+      obj[1] = tmp.trialId;
       obj.track(outer1_5.PREMIUM_TRIAL_OFFER_ACTION_SHEET_VIEWED, obj);
       const result = userTrialOffer(analyticsLocations[8]).acknowledgeUserTrialOffer(tmp);
       const obj3 = userTrialOffer(analyticsLocations[8]);
@@ -45,22 +45,22 @@ export default function _default(markAsDismissed) {
   const callback = React.useCallback(() => {
     let obj = userTrialOffer(analyticsLocations[7]);
     obj = { location: analyticsLocations, trial_id: null };
-    let trial_id;
+    let trialId;
     if (userTrialOffer != null) {
-      trial_id = userTrialOffer.trial_id;
+      trialId = userTrialOffer.trialId;
     }
-    obj[1] = trial_id;
+    obj[1] = trialId;
     obj.track(outer1_5.PREMIUM_TRIAL_OFFER_ACTION_SHEET_DISMISSED, obj);
     markAsDismissed(outer1_6.USER_DISMISS);
   }, items1);
   const callback1 = React.useCallback(() => {
     let obj = userTrialOffer(analyticsLocations[7]);
     obj = { location: analyticsLocations, trial_id: null };
-    let trial_id;
+    let trialId;
     if (userTrialOffer != null) {
-      trial_id = userTrialOffer.trial_id;
+      trialId = userTrialOffer.trialId;
     }
-    obj[1] = trial_id;
+    obj[1] = trialId;
     obj.track(outer1_5.PREMIUM_TRIAL_OFFER_ACTION_SHEET_CTA_CLICKED, obj);
     markAsDismissed(outer1_6.TAKE_ACTION);
     userTrialOffer(analyticsLocations[9])({ analyticsLocations });
@@ -68,19 +68,19 @@ export default function _default(markAsDismissed) {
   markAsDismissed(analyticsLocations[10]);
   let interval;
   if (userTrialOffer != null) {
-    const subscription_trial = userTrialOffer.subscription_trial;
-    if (subscription_trial != null) {
-      interval = subscription_trial.interval;
+    const subscriptionTrial = userTrialOffer.subscriptionTrial;
+    if (subscriptionTrial != null) {
+      interval = subscriptionTrial.interval;
     }
   }
-  let interval_count;
+  let intervalCount;
   if (userTrialOffer != null) {
-    const subscription_trial2 = userTrialOffer.subscription_trial;
-    if (subscription_trial2 != null) {
-      interval_count = subscription_trial2.interval_count;
+    const subscriptionTrial2 = userTrialOffer.subscriptionTrial;
+    if (subscriptionTrial2 != null) {
+      intervalCount = subscriptionTrial2.intervalCount;
     }
   }
-  { intervalType: interval, intervalCount: null }[1] = interval_count;
+  { intervalType: interval, intervalCount: null }[1] = intervalCount;
   let tmp14 = null;
   if (null != userTrialOffer) {
     let obj = { startExpanded: true, onDismiss: null, children: null };

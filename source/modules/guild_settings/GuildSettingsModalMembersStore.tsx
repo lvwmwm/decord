@@ -1,9 +1,9 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11017
+// Function ID: 11018
 // Name: handleStopEditingRoles
 // Dependencies: [1990, 676, 589, 709, 2]
 
-// Module 11304 (handleStopEditingRoles)
+// Module 11017 (handleStopEditingRoles)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { FormStates } from "ME";
 import { Store } from "initialize";

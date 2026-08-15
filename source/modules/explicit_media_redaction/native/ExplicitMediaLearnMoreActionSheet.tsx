@@ -1,10 +1,10 @@
-// Module ID: 11343
-// Function ID: 11344
+// Module ID: 11056
+// Function ID: 11057
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7130, 676, 21, 4342, 712, 11344, 4582, 7129, 1236, 6080, 4310, 4058, 1993, 7863, 7865, 11131, 2007, 5458, 6091, 4338, 4777, 2]
+// Dependencies: [19, 17, 5004, 676, 21, 4661, 712, 11057, 4992, 5001, 1236, 7360, 4342, 4090, 1993, 5428, 5254, 10868, 2007, 6950, 5447, 4734, 4745, 2]
 // Exports: default
 
-// Module 11343 (ExplicitMediaLearnMoreActionSheet)
+// Module 11056 (ExplicitMediaLearnMoreActionSheet)
 import Background from "Background";
 import { View } from "ExplicitMediaObscuredFalsePositiveActionSheet";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY";

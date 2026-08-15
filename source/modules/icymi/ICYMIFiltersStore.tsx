@@ -1,9 +1,9 @@
-// Module ID: 8973
-// Function ID: 8974
+// Module ID: 9054
+// Function ID: 9055
 // Name: initialize
-// Dependencies: [589, 7371, 709, 2]
+// Dependencies: [589, 7589, 709, 2]
 
-// Module 8973 (initialize)
+// Module 9054 (initialize)
 import { DeviceSettingsStore } from "initialize";
 
 const require = arg1;
@@ -23,7 +23,7 @@ prototype["filterStaffContent"] = function filterStaffContent() {
 prototype["getDoubleTapBehavior"] = function getDoubleTapBehavior() {
   let DEFAULT = closure_2.doubleTapBehavior;
   if (DEFAULT == null) {
-    DEFAULT = require(7371) /* MessageEmbedTypes */.GravityICYMIDoubleTapBehavior.DEFAULT;
+    DEFAULT = require(7589) /* MessageEmbedTypes */.GravityICYMIDoubleTapBehavior.DEFAULT;
   }
   return DEFAULT;
 };

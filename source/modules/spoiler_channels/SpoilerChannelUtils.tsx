@@ -1,10 +1,10 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 5267
+// Function ID: 5268
 // Name: isChannelSpoilerGated
-// Dependencies: [1391, 6009, 589, 2]
+// Dependencies: [1391, 5268, 589, 2]
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 6008 (isChannelSpoilerGated)
+// Module 5267 (isChannelSpoilerGated)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import initialize from "initialize";
 
@@ -91,10 +91,10 @@ export const useGetSpoilerGatingChannelId = function useGetSpoilerGatingChannelI
   }, items1);
 };
 export { isChannelSpoilerGated };
-export const useIsChannelSpoilerGated = function useIsChannelSpoilerGated(stateFromStores) {
-  const _require = stateFromStores;
+export const useIsChannelSpoilerGated = function useIsChannelSpoilerGated(channel) {
+  const _require = channel;
   const items = [initialize, ensureGuildLoaded];
-  const items1 = [stateFromStores];
+  const items1 = [channel];
   return _require(589).useStateFromStores(items, () => outer1_4(closure_0, outer1_3, outer1_2), items1);
 };
 export const useShouldShowSpoilerGateForChannelId = function useShouldShowSpoilerGateForChannelId(arg0) {

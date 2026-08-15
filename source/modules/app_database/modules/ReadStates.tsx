@@ -1,9 +1,9 @@
-// Module ID: 7019
-// Function ID: 7020
+// Module ID: 5084
+// Function ID: 5085
 // Name: getAll
-// Dependencies: [5, 1391, 4357, 3, 1955, 12, 11, 2]
+// Dependencies: [5, 1391, 4772, 3, 1955, 12, 11, 2]
 
-// Module 7019 (getAll)
+// Module 5084 (getAll)
 import apply from "apply";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

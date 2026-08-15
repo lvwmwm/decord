@@ -1,9 +1,9 @@
-// Module ID: 11025
-// Function ID: 11026
+// Module ID: 10754
+// Function ID: 10755
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 5311, 1994, 1930, 1218, 1391, 5061, 1990, 3989, 5188, 676, 21, 4342, 712, 4278, 5063, 1435, 1363, 1297, 4827, 4535, 4338, 1236, 5187, 11026, 5792, 9195, 11027, 11028, 12, 4065, 11029, 38, 4062, 8675, 4793, 8033, 5186, 589, 5189, 5293, 698, 4549, 4310, 6080, 11032, 10470, 709, 4572, 10615, 2007, 9604, 11036, 5458, 11037, 5833, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 5289, 1994, 1930, 1218, 1391, 5221, 1990, 4021, 5225, 676, 21, 4661, 712, 4310, 5097, 1435, 1363, 1297, 6832, 4984, 4734, 1236, 5224, 10755, 7142, 9462, 10756, 10757, 12, 4097, 10758, 38, 4094, 10455, 4761, 8083, 5223, 589, 5226, 6778, 698, 5042, 4342, 7360, 10761, 9779, 709, 5260, 10766, 2007, 8770, 10770, 6950, 10771, 7182, 4745, 2]
 
-// Module 11025 (PlatformIcon)
+// Module 10754 (PlatformIcon)
 import _getSystemLocale from "_getSystemLocale";
 import apply from "apply";
 import getAvatarURL from "getAvatarURL";
@@ -42,9 +42,9 @@ let metroImportAll;
 const require = arg1;
 function PlatformIcon(platformType) {
   const tmp = createCacheKey();
-  let obj = importDefault(5063);
+  let obj = importDefault(5097);
   const value = obj.get(platformType.platformType);
-  const tmp3 = importDefault(4278)();
+  const tmp3 = importDefault(4310)();
   const tmp5 = require;
   const obj2 = require(1435) /* getAvatarURL */;
   const icon = value.icon;
@@ -55,7 +55,7 @@ function PlatformIcon(platformType) {
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  let obj = require(4827) /* getChannelIcon */;
+  let obj = require(6832) /* getChannelIcon */;
   const channelIcon = obj.getChannelIcon(channel);
   obj = { style: items, children: null };
   items = [tmp.channelName, channel.style];
@@ -67,10 +67,10 @@ function ChannelName(channel) {
     tmp8 = callback2(tmp2(1297).Icon, obj);
   }
   const items1 = [tmp8, ];
-  const tmp5 = importDefault(4535)(channel);
+  const tmp5 = importDefault(4984)(channel);
   const tmp6 = closure_30;
   const tmp7 = closure_8;
-  items1[1] = callback2(require(4338) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4535)(channel) });
+  items1[1] = callback2(require(4734) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4984)(channel) });
   obj[1] = items1;
   return tmp6(tmp7, obj);
 }
@@ -120,7 +120,7 @@ function ConnectionsCheck(result) {
       } else {
         return null;
       }
-      obj = require(5187) /* officialApplicationIds */;
+      obj = require(5224) /* officialApplicationIds */;
       const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, operatorText: null, value: null };
       obj1[0] = connectionType;
       obj1[1] = connectionMetadataField;
@@ -139,7 +139,7 @@ function ConnectionsCheck(result) {
       obj2[1] = str;
       obj2[2] = tmp.connectionsCheck;
       obj2[3] = formatResult;
-      tmp21Result = closure_29(require(4338) /* Text */.Text, obj2);
+      tmp21Result = closure_29(require(4734) /* Text */.Text, obj2);
       const tmp21 = closure_29;
     }
     return tmp21Result;
@@ -301,7 +301,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
     obj3[3] = callback;
     let tmp15Result = null;
     if (null != memo) {
-      const obj4 = { style: null, user: null, size: null, guildId: "a" };
+      const obj4 = { style: null, user: null, size: null, guildId: "Array" };
       obj4[0] = tmp.appIcon;
       obj4[1] = memo;
       obj4[2] = tmp2(tmp3[21]).AvatarSizes.XSMALL;
@@ -433,7 +433,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     }
   }, items3);
   let tmp3 = callback(React.useState(0), 2);
-  getUncachedChannelPermissions = eligibilityStatesGroups(4065).useToken(importDefault(712).unsafe_rawColors.GREEN_330);
+  getUncachedChannelPermissions = eligibilityStatesGroups(4097).useToken(importDefault(712).unsafe_rawColors.GREEN_330);
   obj = { children: null };
   const keys = Object.keys(memo1);
   const sorted = keys.sort((arg0, arg1) => {
@@ -628,7 +628,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     items1[1] = tmp24Result1;
     let tmp24Result2 = null;
     if (null != tmp11) {
-      const obj10 = { style: null, user: null, size: null, guildId: "a" };
+      const obj10 = { style: null, user: null, size: null, guildId: "Array" };
       obj10[0] = tmp38.appIcon;
       obj10[1] = tmp11;
       obj10[2] = tmp15(tmp6[21]).AvatarSizes.XSMALL;
@@ -715,11 +715,11 @@ function ConnectedUserAccountOptions(account) {
   const tmp7 = callback(first.useState(1 === account.visibility), 2);
   first1 = tmp7[0];
   closure_8 = tmp7[1];
-  importDefault(4793)(() => {
+  importDefault(4761)(() => {
     callback(!first1);
     callback2(first);
   });
-  let obj = importDefault(5063);
+  let obj = importDefault(5097);
   const value = obj.get(account.type);
   let tmp12;
   if (set.has(account.type)) {
@@ -731,7 +731,7 @@ function ConnectedUserAccountOptions(account) {
       _undefined(closure_0);
       outer1_1(outer1_2[40]).setFriendSync(account.type, account.id, closure_0);
     };
-    tmp12 = callback2(account(8033).FormSwitchRow, obj);
+    tmp12 = callback2(account(8083).FormSwitchRow, obj);
   }
   let tmp15;
   if (set2.has(account.type)) {
@@ -745,7 +745,7 @@ function ConnectedUserAccountOptions(account) {
       callback3(closure_0);
       outer1_1(outer1_2[40]).setShowActivity(account.type, account.id, closure_0);
     };
-    tmp15 = callback2(account(8033).FormSwitchRow, obj);
+    tmp15 = callback2(account(8083).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -766,7 +766,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = outer1_1(outer1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(8033).FormSwitchRow, obj2);
+    tmp18 = callback2(account(8083).FormSwitchRow, obj2);
   }
   const obj3 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj4 = { label: null, value: null, onValueChange: null };
@@ -785,7 +785,7 @@ function ConnectedUserAccountOptions(account) {
     }
     outer1_1(outer1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(8033).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
+  const items = [callback2(account(8083).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
   obj3[1] = items;
   return callback3(closure_8, obj3);
 }
@@ -857,9 +857,9 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     c14 = undefined;
     useState = undefined;
-    f86845 = undefined;
+    f86448 = undefined;
     useState = undefined;
-    f86846 = undefined;
+    f86449 = undefined;
     c19 = undefined;
     _handleAssignRole = function _handleAssignRole() {
       const self = this;
@@ -875,7 +875,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -908,7 +908,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
               return obj;
             } else {
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp11) {
             c0 = tmp;
@@ -980,7 +980,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp2;
     }), 2);
-    [tmp26, f86845] = tmp25;
+    [tmp26, f86448] = tmp25;
     tmp27 = onCloseModal(CHECKS_REQUIRED.useState(null), 2);
     [arr6, useState] = tmp27;
     tmp28 = role;
@@ -989,7 +989,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores3 = obj4.useStateFromStores(items3, () => member.getMember(guildId, stateFromStores2));
-    f86846 = stateFromStores3;
+    f86449 = stateFromStores3;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;

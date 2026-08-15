@@ -1,10 +1,10 @@
-// Module ID: 11443
-// Function ID: 11444
+// Module ID: 11156
+// Function ID: 11157
 // Name: subscribeToWindowDimensions
-// Dependencies: [1494, 2]
+// Dependencies: [1495, 2]
 // Exports: default
 
-// Module 11443 (subscribeToWindowDimensions)
+// Module 11156 (subscribeToWindowDimensions)
 import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 
 const result = require("set").fileFinishedImporting("modules/screen/subscribeToWindowDimensions.native.tsx");

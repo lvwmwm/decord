@@ -1,17 +1,17 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10564
+// Function ID: 10565
 // Name: useCreateThreadViewProps
-// Dependencies: [1391, 9962, 647, 2]
+// Dependencies: [1391, 10167, 647, 2]
 // Exports: default
 
-// Module 10306 (useCreateThreadViewProps)
+// Module 10564 (useCreateThreadViewProps)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 let require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
 
 export default function useCreateThreadViewProps(arg0) {
-  const tmp = importDefault(9962)(arg0);
+  const tmp = importDefault(10167)(arg0);
   const require = tmp;
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [ensureGuildLoaded];

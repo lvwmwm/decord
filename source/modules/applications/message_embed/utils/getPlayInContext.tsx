@@ -1,10 +1,10 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11129
+// Function ID: 11130
 // Name: usePlayInContext
-// Dependencies: [1390, 1979, 589, 10627, 2]
+// Dependencies: [1390, 1979, 589, 11130, 2]
 // Exports: getPlayInContext, usePlayInContext
 
-// Module 11417 (usePlayInContext)
+// Module 11129 (usePlayInContext)
 import participantFromServer from "participantFromServer";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -66,12 +66,12 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
     return { currentChannelId: null, instanceId: null, instanceLocation: null, isCurrentlyInInstance: false, canLaunchInChannel: false };
   } else {
     if (null != channelId) {
-      let obj = _require(10627);
+      let obj = _require(11130);
       let NO_CHANNEL = obj.getEmbeddedActivityLaunchabilityForChannel(channelId);
       let tmp3 = _require;
     } else {
       tmp3 = _require;
-      NO_CHANNEL = _require(10627).EmbeddedActivityLaunchability.NO_CHANNEL;
+      NO_CHANNEL = _require(11130).EmbeddedActivityLaunchability.NO_CHANNEL;
     }
     embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(channelId);
     const found = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_0);
@@ -101,7 +101,7 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
       tmp11 = compositeInstanceId1 === compositeInstanceId;
     }
     obj[3] = tmp11;
-    obj[4] = NO_CHANNEL === tmp3(10627).EmbeddedActivityLaunchability.CAN_LAUNCH;
+    obj[4] = NO_CHANNEL === tmp3(11130).EmbeddedActivityLaunchability.CAN_LAUNCH;
     return obj;
   }
 };

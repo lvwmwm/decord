@@ -1,10 +1,10 @@
-// Module ID: 6348
-// Function ID: 6349
+// Module ID: 5706
+// Function ID: 5707
 // Name: ForceIllocon
-// Dependencies: [21, 5329, 6349, 2]
+// Dependencies: [21, 5449, 5707, 2]
 // Exports: ForceIllocon
 
-// Module 6348 (ForceIllocon)
+// Module 5706 (ForceIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ForceIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const ForceIllocon = function ForceIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6349);
+  obj[0] = importDefault(5707);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { uri: null });
+  return jsx(importDefault(5449), { uri: null });
 };

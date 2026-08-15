@@ -1,10 +1,10 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11233
+// Function ID: 11234
 // Name: useEmbeddedApps
-// Dependencies: [19, 4431, 1922, 1390, 589, 3979, 5795, 1370, 2]
+// Dependencies: [19, 4559, 1922, 1390, 589, 4011, 7145, 1370, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11519 (useEmbeddedApps)
+// Module 11233 (useEmbeddedApps)
 import noop from "noop";
 import sortActivity from "sortActivity";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -16,7 +16,7 @@ function useEmbeddedApps(arr, arg1) {
   const _require = arr;
   const importDefault = arg1;
   let mapped = arr.map((applicationId) => applicationId.applicationId);
-  const tmp2 = importDefault(5795)(mapped);
+  const tmp2 = importDefault(7145)(mapped);
   const dependencyMap = tmp2;
   const set = new Set([]);
   const iter = arr[Symbol.iterator]();

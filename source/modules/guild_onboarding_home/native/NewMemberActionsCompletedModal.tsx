@@ -1,10 +1,10 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16583
+// Function ID: 16584
 // Name: NewMemberActionsCompleted
-// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4572, 11733, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4115, 4664, 5260, 11453, 4734, 1236, 2]
 // Exports: default
 
-// Module 16533 (NewMemberActionsCompleted)
+// Module 16583 (NewMemberActionsCompleted)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,34 +29,34 @@ export default function NewMemberActionsCompleted(arg0) {
   let sharedValue;
   ({ initialPercent, numActions } = arg0);
   const tmp = createCacheKey();
-  let obj = sharedValue(4083);
+  let obj = sharedValue(4115);
   sharedValue = obj.useSharedValue(initialPercent);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj1 = sharedValue(4083);
+  let obj1 = sharedValue(4115);
   const fn = function b() {
     const obj = { width: null };
     const obj2 = sharedValue(outer1_2[5]);
     obj[0] = obj2.withDelay(500, sharedValue(outer1_2[6]).withTiming(`${100 * sharedValue.get()}%`, { duration: 700 }));
     return obj;
   };
-  obj = { withDelay: sharedValue(4083).withDelay, withTiming: sharedValue(4343).withTiming, barWidth: sharedValue };
+  obj = { withDelay: sharedValue(4115).withDelay, withTiming: sharedValue(4664).withTiming, barWidth: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 7643178959760;
   fn.__initData = closure_8;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   const effect1 = React.useEffect(() => {
-    const timerId = setTimeout(() => callback2(4572).popWithKey(callback(11733).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
+    const timerId = setTimeout(() => callback2(5260).popWithKey(callback(11453).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
   }, []);
   obj = { style: tmp.screen, children: null };
   obj1 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: null };
   const intl = sharedValue(1236).intl;
   obj1[3] = intl.format(sharedValue(1236).t.pGj5u2, { count: numActions });
-  const items1 = [callback(sharedValue(4338).Text, obj1), ];
+  const items1 = [callback(sharedValue(4734).Text, obj1), ];
   const items2 = [tmp.progressForeground, animatedStyle];
-  items1[1] = callback(View, { style: tmp.progressBackground, children: callback(importDefault(4083).View, { style: items2 }) });
+  items1[1] = callback(View, { style: tmp.progressBackground, children: callback(importDefault(4115).View, { style: items2 }) });
   obj[1] = items1;
   return callback2(View, obj);
 };

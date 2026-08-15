@@ -1,10 +1,10 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12764
+// Function ID: 12765
 // Name: createGuildScheduledEventEmbed
-// Dependencies: [32, 17, 7055, 1434, 1391, 1910, 3998, 1922, 10982, 1397, 7263, 8119, 8121, 9021, 9011, 9005, 9203, 1236, 8124, 9154, 8111, 712, 9933, 4332, 9008, 4535, 9095, 9016, 12687, 9003, 1430, 2]
+// Dependencies: [32, 17, 4370, 1434, 1391, 1910, 4030, 1922, 10510, 1397, 4371, 8169, 8171, 8801, 8791, 8785, 12404, 1236, 8174, 10843, 8161, 712, 8764, 6807, 8788, 4984, 8885, 8796, 12765, 8783, 1430, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12686 (createGuildScheduledEventEmbed)
+// Module 12764 (createGuildScheduledEventEmbed)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import scheduledEventSort from "scheduledEventSort";
@@ -39,7 +39,7 @@ function createGuildScheduledEventEmbed(type) {
   let theme;
   let userCount;
   ({ channel, guildEvent, userCount, guild, theme, recurrenceId } = type);
-  const colors = importDefault(8119)(theme).colors;
+  const colors = importDefault(8169)(theme).colors;
   if (channel != null) {
     const id = channel.id;
   }
@@ -49,34 +49,34 @@ function createGuildScheduledEventEmbed(type) {
   }
   let assetUriForEmbed;
   if (null != tmp3) {
-    let obj = require(8121) /* frozen */;
+    let obj = require(8171) /* frozen */;
     assetUriForEmbed = obj.getAssetUriForEmbed(tmp3);
   }
-  let obj1 = require(9021) /* canEveryoneRoleViewEvent */;
+  let obj1 = require(8801) /* canEveryoneRoleViewEvent */;
   const result = obj1.isGuildEventInvitable(guildEvent);
   const result1 = store.isInterestedInEventRecurrence(guildEvent.id, recurrenceId);
   ({ description, name, entity_type } = guildEvent);
   const tmp9 = callback3(guildEvent);
-  const eventSchedule = require(9011) /* useEventSchedule */.getEventSchedule(guildEvent, recurrenceId);
-  const obj3 = require(9011) /* useEventSchedule */;
+  const eventSchedule = require(8791) /* useEventSchedule */.getEventSchedule(guildEvent, recurrenceId);
+  const obj3 = require(8791) /* useEventSchedule */;
   let toISOStringResult;
   if (eventSchedule != null) {
     const startTime = eventSchedule.startTime;
     toISOStringResult = startTime.toISOString();
   }
-  const eventTimeData = require(9005) /* getRRule */.getEventTimeData(toISOStringResult);
-  let tmp7Result = tmp7(9203);
+  const eventTimeData = require(8785) /* getRRule */.getEventTimeData(toISOStringResult);
+  let tmp7Result = tmp7(12404);
   const guildScheduledEventHeaderProps = tmp7Result.getGuildScheduledEventHeaderProps({ eventTimeData, isStage: entity_type === constants.STAGE_INSTANCE, theme, event: guildEvent });
   const color = guildScheduledEventHeaderProps.color;
   obj = { titleColor: colors.titleColor, borderColor: colors.borderColor, backgroundColor: colors.backgroundColor, thumbnailCornerRadius: 15, embedCanBeTapped: tmp16 };
   ({ icon, shouldChangeTextColor, text } = guildScheduledEventHeaderProps);
   const intl = tmp7(1236).intl;
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t.DlcqlU);
-  tmp7Result = tmp7(8121);
-  const assetUriForEmbed1 = tmp7Result.getAssetUriForEmbed(tmp(8124));
-  const obj4 = require(9005) /* getRRule */;
+  tmp7Result = tmp7(8171);
+  const assetUriForEmbed1 = tmp7Result.getAssetUriForEmbed(tmp(8174));
+  const obj4 = require(8785) /* getRRule */;
   const tmp13 = entity_type === constants.STAGE_INSTANCE;
-  const assetUriForEmbed2 = require(8121) /* frozen */.getAssetUriForEmbed(tmp(9154));
+  const assetUriForEmbed2 = require(8171) /* frozen */.getAssetUriForEmbed(tmp(10843));
   if (null != guild) {
     if (tmp9) {
       if (guildEvent.entity_type === constants.EXTERNAL) {
@@ -90,12 +90,12 @@ function createGuildScheduledEventEmbed(type) {
       const acceptLabelActiveBackgroundColor2 = colors.acceptLabelActiveBackgroundColor;
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
-      let assetUriForEmbed3 = tmp7(8121).getAssetUriForEmbed(tmp(9933));
+      let assetUriForEmbed3 = tmp7(8171).getAssetUriForEmbed(tmp(8764));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       let tmp21 = assetUriForEmbed2;
       let stringResult2 = stringResult;
       let flag2 = result1;
-      const tmp7Result2 = tmp7(8121);
+      const tmp7Result2 = tmp7(8171);
     } else {
       ({ acceptLabelActiveBackgroundColor, acceptLabelGreenColor } = colors);
       tmp21 = assetUriForEmbed2;
@@ -104,34 +104,34 @@ function createGuildScheduledEventEmbed(type) {
       flag2 = result1;
     }
   } else {
-    acceptLabelActiveBackgroundColor = tmp7(8111).processColorOrThrow(tmp(712).unsafe_rawColors.GREEN_360);
+    acceptLabelActiveBackgroundColor = tmp7(8161).processColorOrThrow(tmp(712).unsafe_rawColors.GREEN_360);
     const intl2 = tmp7(1236).intl;
     stringResult2 = intl2.string(tmp7(1236).t.XpeFYr);
     acceptLabelGreenColor = colors.acceptLabelGreenColor;
     flag2 = false;
-    const tmp7Result3 = tmp7(8111);
+    const tmp7Result3 = tmp7(8161);
   }
   let parseToASTResult;
   if (null != description) {
-    let tmpResult = tmp(4332);
+    let tmpResult = tmp(6807);
     obj = { channelId: null, allowLinks: true, allowEmojiLinks: true, allowHeading: true, allowList: true };
     obj[0] = id;
     parseToASTResult = tmpResult.parseToAST(description, true, obj);
   }
-  const tmp7Result1 = require(8121) /* frozen */;
-  let locationFromEvent = require(9008) /* getChannelFromEvent */.getLocationFromEvent(guildEvent);
+  const tmp7Result1 = require(8171) /* frozen */;
+  let locationFromEvent = require(8788) /* getChannelFromEvent */.getLocationFromEvent(guildEvent);
   if (locationFromEvent == null) {
     let channelName;
     if (null != channel) {
-      channelName = tmp7(4535).computeChannelName(channel, user, markAllUserIdListsStale);
-      const tmp7Result5 = tmp7(4535);
+      channelName = tmp7(4984).computeChannelName(channel, user, markAllUserIdListsStale);
+      const tmp7Result5 = tmp7(4984);
     }
     locationFromEvent = channelName;
   }
-  const tmp7Result4 = require(9008) /* getChannelFromEvent */;
-  const eventLocationIconSource = require(9095) /* getEventLocationIconSource */.getEventLocationIconSource(guildEvent, channel, tmp16);
+  const tmp7Result4 = require(8788) /* getChannelFromEvent */;
+  const eventLocationIconSource = require(8885) /* getEventLocationIconSource */.getEventLocationIconSource(guildEvent, channel, tmp16);
   user = user.getUser(guildEvent.creator_id);
-  tmpResult = tmp(9016);
+  tmpResult = tmp(8796);
   ({ guild_id, id: id2 } = guildEvent);
   if (null != recurrenceId) {
     const items = [recurrenceId];
@@ -140,8 +140,8 @@ function createGuildScheduledEventEmbed(type) {
     items1 = [];
   }
   const guildEventUserCounts = tmpResult.getGuildEventUserCounts(guild_id, id2, items1);
-  const tmp7Result6 = require(9095) /* getEventLocationIconSource */;
-  const guildEventsForCurrentUser = importDefault(9016).getGuildEventsForCurrentUser(guildEvent.guild_id);
+  const tmp7Result6 = require(8885) /* getEventLocationIconSource */;
+  const guildEventsForCurrentUser = importDefault(8796).getGuildEventsForCurrentUser(guildEvent.guild_id);
   obj1 = {};
   const merged = Object.assign(obj);
   obj1.acceptLabelBackgroundColor = acceptLabelActiveBackgroundColor;
@@ -158,20 +158,20 @@ function createGuildScheduledEventEmbed(type) {
     toLocaleStringResult = userCount.toLocaleString();
   }
   obj1.badgeCount = toLocaleStringResult;
-  const tmpResult1 = importDefault(9016);
-  obj1.badgeIcon = require(8121) /* frozen */.getAssetUriForEmbed(importDefault(12687));
+  const tmpResult1 = importDefault(8796);
+  obj1.badgeIcon = require(8171) /* frozen */.getAssetUriForEmbed(importDefault(12765));
   let assetUriForEmbed4;
   if (null != eventLocationIconSource) {
-    assetUriForEmbed4 = tmp7(8121).getAssetUriForEmbed(eventLocationIconSource);
-    const tmp7Result8 = tmp7(8121);
+    assetUriForEmbed4 = tmp7(8171).getAssetUriForEmbed(eventLocationIconSource);
+    const tmp7Result8 = tmp7(8171);
   }
   obj1.channelIcon = assetUriForEmbed4;
   obj1.channelName = locationFromEvent;
   obj1.content = parseToASTResult;
   let assetUriForEmbed5;
   if (null != user) {
-    assetUriForEmbed5 = tmp7(8121).getAssetUriForEmbed(user.getAvatarSource(guildEvent.guild_id));
-    const tmp7Result9 = tmp7(8121);
+    assetUriForEmbed5 = tmp7(8171).getAssetUriForEmbed(user.getAvatarSource(guildEvent.guild_id));
+    const tmp7Result9 = tmp7(8171);
   }
   obj1.creatorAvatar = assetUriForEmbed5;
   obj1.extendedType = CodedLinkExtendedType.GUILD_SCHEDULED_EVENT;
@@ -187,8 +187,8 @@ function createGuildScheduledEventEmbed(type) {
   }
   obj1.headerColor = headerColor;
   const tmp40 = processColor;
-  const tmp7Result7 = require(8121) /* frozen */;
-  obj1.headerIcon = require(8121) /* frozen */.getAssetUriForEmbed(icon);
+  const tmp7Result7 = require(8171) /* frozen */;
+  obj1.headerIcon = require(8171) /* frozen */.getAssetUriForEmbed(icon);
   obj1.headerText = text;
   if (shouldChangeTextColor) {
     let headerColor3 = tmp40(color);
@@ -234,13 +234,13 @@ export const createGuildScheduledEventInviteEmbed = function createGuildSchedule
   if (null == guildScheduledEvent) {
     let tmp11Result = null;
     if (null != guild_id) {
-      const guildEventsForGuild = importDefault(9003).fetchGuildEventsForGuild(guild_id);
+      const guildEventsForGuild = importDefault(8783).fetchGuildEventsForGuild(guild_id);
       tmp11Result = null;
-      const obj4 = importDefault(9003);
+      const obj4 = importDefault(8783);
     }
   } else {
     if (null != guild_id) {
-      let obj = importDefault(9016);
+      let obj = importDefault(8796);
       const guildEventUserCounts = obj.getGuildEventUserCounts(guild_id, guildScheduledEvent.id, []);
     }
     obj = { channel: null, guildEvent: null, userCount: null, guild: null, theme: null, type: null };
@@ -276,8 +276,8 @@ export const createGuildScheduledEventLinkEmbed = function createGuildScheduledE
   let obj = store;
   const guildScheduledEvent = store.getGuildScheduledEvent(tmp[1]);
   if (nextRecurrenceIdInEvent == null) {
-    nextRecurrenceIdInEvent = first(9005).getNextRecurrenceIdInEvent(guildScheduledEvent);
-    const obj2 = first(9005);
+    nextRecurrenceIdInEvent = first(8785).getNextRecurrenceIdInEvent(guildScheduledEvent);
+    const obj2 = first(8785);
   }
   if (null != guildScheduledEvent) {
     if (!callback2(guildScheduledEvent)) {
@@ -287,7 +287,7 @@ export const createGuildScheduledEventLinkEmbed = function createGuildScheduledE
       } else {
         items1 = [];
       }
-      const guildEventUserCounts = importDefault(9016).getGuildEventUserCounts(first, guildScheduledEvent.id, items1);
+      const guildEventUserCounts = importDefault(8796).getGuildEventUserCounts(first, guildScheduledEvent.id, items1);
       let channel_id;
       const userCount = obj.getUserCount(guildScheduledEvent.id, nextRecurrenceIdInEvent);
       if (guildScheduledEvent != null) {
@@ -305,8 +305,8 @@ export const createGuildScheduledEventLinkEmbed = function createGuildScheduledE
     }
   }
   if (!table[first]) {
-    const guildEventsForGuild = importDefault(9003).fetchGuildEventsForGuild(first);
-    const obj5 = importDefault(9003);
+    const guildEventsForGuild = importDefault(8783).fetchGuildEventsForGuild(first);
+    const obj5 = importDefault(8783);
     guildEventsForGuild.then(() => {
       delete tmp3[tmp2];
       return tmp;

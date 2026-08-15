@@ -1,13 +1,13 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 14002
+// Function ID: 14003
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 8853, 10196, 5837, 676, 685, 13971, 21, 8346, 13972, 4007, 5789, 5809, 13973, 4310, 13974, 2007, 8338, 8335, 8337, 1236, 8898, 13985, 8333, 6068, 5430, 712, 9525, 13986, 8350, 11338, 8377, 9511, 13991, 8345, 8899, 13989, 13992, 589, 8856, 8886, 8895, 13993, 4338, 4072, 9512, 13994, 9513, 9532, 13999, 14000, 14005, 14007, 14014, 14015, 14019, 14023, 14028, 14029, 14032, 14033, 2]
+// Dependencies: [19, 17, 8936, 9537, 7186, 676, 685, 14003, 21, 8385, 14004, 4039, 7139, 7159, 14005, 4342, 14006, 2007, 8377, 8374, 8376, 1236, 8982, 14017, 8372, 7349, 5441, 712, 9444, 14018, 8389, 11051, 8416, 7256, 14023, 8384, 8983, 14021, 14024, 589, 8939, 8970, 8979, 14025, 4734, 4104, 9285, 14026, 9286, 9451, 14031, 14032, 14037, 14039, 14046, 14047, 14051, 14055, 14060, 14061, 14064, 14065, 2]
 // Exports: default
 
-// Module 13970 (EditUserProfileBanner)
+// Module 14002 (EditUserProfileBanner)
 import setPendingChanges from "setPendingChanges";
 import get_ActivityIndicator from "asyncRequireImpl";
-import map from "map";
+import initialize from "initialize";
 import zustandStore from "zustandStore";
 import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET";
 import ME from "ME";
@@ -86,8 +86,8 @@ function EditUserProfileBanner(user) {
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
 ({ DISPLAY_NAME_MAX_LENGTH: c9, PRONOUNS_MAX_LENGTH: c10 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "ti" };
-let result = require("map").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
+let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "accessibilityRole" };
+let result = require("initialize").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
 export default function UserProfileEditForm(currentUser) {
   let autoFocusElement;

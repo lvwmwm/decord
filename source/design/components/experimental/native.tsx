@@ -1,9 +1,9 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8811
+// Function ID: 8812
 // Name: TwinButtons
-// Dependencies: [8727, 2, 8728, 8729, 8730, 8731, 8732, 8734, 8037, 8038, 5439, 8735]
+// Dependencies: [8812, 2, 8813, 8814, 8815, 8816, 8817, 8819, 8087, 8088, 6294, 8820]
 
-// Module 8726 (TwinButtons)
+// Module 8811 (TwinButtons)
 const result = require("TwinButtons").fileFinishedImporting("design/components/experimental/native.tsx");
 
 export const TwinButtons = require("TwinButtons").TwinButtons;

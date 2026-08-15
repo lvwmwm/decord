@@ -1,10 +1,10 @@
-// Module ID: 4275
-// Function ID: 4276
+// Module ID: 4307
+// Function ID: 4308
 // Name: getCustomThemesName
-// Dependencies: [1302, 4276, 1346, 1348, 1236, 2501, 1349, 4277, 589, 1367, 2]
+// Dependencies: [1302, 4308, 1346, 1348, 1236, 2533, 1349, 4309, 589, 1367, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4275 (getCustomThemesName)
+// Module 4307 (getCustomThemesName)
 import handleThemeChange from "handleThemeChange";
 import validateSavedTheme from "validateSavedTheme";
 import reset from "reset";
@@ -16,7 +16,7 @@ let metroImportAll;
 const require = arg1;
 function getCustomThemesName() {
   const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2501).yl1iMm);
+  return intl.string(importDefault(2533).yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: closure_6, LEGACY_STANDARD_BACKGROUND_THEMES: error, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportAll } = ThemeTypes);
 const result = require("reset").fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
@@ -34,7 +34,7 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
   return tmp2;
 };
 export const useCustomBackgroundGradient = function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4277) /* useCustomThemeDisplaySettings */;
+  let obj = require(4309) /* useCustomThemeDisplaySettings */;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp4 = null;
   if (undefined !== customThemeDisplaySettings) {
@@ -105,7 +105,7 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   if (null != stateFromStores) {
     tmp4 = stateFromStores;
   }
-  let tmpResult = tmp(4277);
+  let tmpResult = tmp(4309);
   const customThemeDisplaySettings = tmpResult.useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {

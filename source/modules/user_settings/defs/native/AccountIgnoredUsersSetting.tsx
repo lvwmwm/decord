@@ -1,9 +1,9 @@
-// Module ID: 14132
-// Function ID: 14133
+// Module ID: 14164
+// Function ID: 14165
 // Name: route
-// Dependencies: [3998, 8148, 676, 589, 1236, 10421, 8566, 14133, 2]
+// Dependencies: [4030, 8198, 676, 589, 1236, 10669, 8605, 14165, 2]
 
-// Module 14132 (route)
+// Module 14164 (route)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import createToggle from "createToggle";
 
@@ -22,13 +22,13 @@ createToggle = {
     obj = { numberOfIgnoredUsers: stateFromStoresArray.length };
     return intl.format(require(1236) /* getSystemLocale */.t.rXUeOl, obj);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return require(14133) /* IgnoredUsersList */.default;
+    return require(14165) /* IgnoredUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

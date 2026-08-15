@@ -1,10 +1,10 @@
-// Module ID: 16078
-// Function ID: 16079
+// Module ID: 16128
+// Function ID: 16129
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [32, 19, 17, 1388, 21, 4342, 712, 7310, 4311, 4312, 709, 4083, 4343, 10056, 1377, 1297, 7352, 4338, 1236, 4072, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 4661, 712, 7531, 4343, 4344, 709, 4115, 4664, 10261, 1377, 1297, 7573, 4734, 1236, 4104, 2]
 // Exports: default
 
-// Module 16078 (BurstReactionAnimationContainerInner)
+// Module 16128 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import get_ActivityIndicator from "Text";
@@ -45,13 +45,13 @@ function BurstReactionAnimationContainerInner() {
       first(709).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     };
   }, []);
-  let obj = _require(4083);
+  let obj = _require(4115);
   let fn = function y() {
     if (null == first) {
       let obj = { opacity: 0 };
     } else {
       obj = { opacity: null };
-      const tmp11 = callback(4343);
+      const tmp11 = callback(4664);
       const withTiming = tmp11.withTiming;
       const obj1 = { duration: 300 };
       if (first1) {
@@ -64,7 +64,7 @@ function BurstReactionAnimationContainerInner() {
           }
         };
         obj = { runOnJS: null, handleComponentFinish: null };
-        obj[0] = callback(4083).runOnJS;
+        obj[0] = callback(4115).runOnJS;
         obj[1] = handleComponentFinish;
         fn.__closure = obj;
         fn.__workletHash = 9326347209552;
@@ -74,7 +74,7 @@ function BurstReactionAnimationContainerInner() {
     }
     return obj;
   };
-  obj = { animationData: first, showAnimation: first1, withTiming: _require(4343).withTiming, runOnJS: _require(4083).runOnJS, handleComponentFinish };
+  obj = { animationData: first, showAnimation: first1, withTiming: _require(4664).withTiming, runOnJS: _require(4115).runOnJS, handleComponentFinish };
   fn.__closure = obj;
   fn.__workletHash = 12044515783370;
   fn.__initData = closure_12;
@@ -90,7 +90,7 @@ function BurstReactionAnimationContainerInner() {
       obj = { style: items, children: null };
       items = [markAsDismissed.fill, closure_7];
       obj = { activeOpacity: null, onPress: null, style: null, children: null };
-      obj[0] = callback(7310).BACKDROP_OPACITY;
+      obj[0] = callback(7531).BACKDROP_OPACITY;
       obj[1] = function onPress() {
         outer1_4(false);
         outer1_5.current = false;
@@ -109,7 +109,7 @@ function BurstReactionAnimationContainerInner() {
             closure_5.current = false;
           }
         };
-        tmpResult = tmp(first(7352), obj3);
+        tmpResult = tmp(first(7573), obj3);
       }
       obj2[1] = tmpResult;
       items1[1] = outer1_8(handleComponentFinish, obj2);
@@ -120,7 +120,7 @@ function BurstReactionAnimationContainerInner() {
         obj5[0] = tmp4.dismissTextContainer;
         const intl = tmp2(1236).intl;
         obj5[2] = intl.string(tmp2(1236).t.QpPMih);
-        const items2 = [tmp(tmp2(4338).Text, obj5), ];
+        const items2 = [tmp(tmp2(4734).Text, obj5), ];
         const obj6 = { style: null };
         obj6[0] = tmp4.dismissTextBackground;
         items2[1] = tmp(tmp8, obj6);
@@ -130,11 +130,11 @@ function BurstReactionAnimationContainerInner() {
       items1[2] = tmp6Result;
       obj[3] = items1;
       obj[1] = outer1_10(closure_5, obj);
-      obj[1] = outer1_8(first(4083).View, obj);
+      obj[1] = outer1_8(first(4115).View, obj);
       return outer1_8(callback(1297).OverlayView, obj);
     };
-    tmp8 = callback(first(10056), obj);
-    let tmp11 = first(10056);
+    tmp8 = callback(first(10261), obj);
+    let tmp11 = first(10261);
   }
   return tmp8;
 }
@@ -164,5 +164,5 @@ export default function BurstReactionAnimationContainer() {
   const obj = { theme: null, children: null };
   obj[0] = importDefault(712).themes.DARKER;
   obj[1] = callback(BurstReactionAnimationContainerInner, {});
-  return callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
 };

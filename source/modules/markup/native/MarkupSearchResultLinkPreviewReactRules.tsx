@@ -1,12 +1,12 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15900
+// Function ID: 15901
 // Name: createSearchResultLinkPreviewReactRules
-// Dependencies: [9854, 2]
+// Dependencies: [10054, 2]
 // Exports: createSearchResultLinkPreviewReactRules
 
-// Module 15850 (createSearchResultLinkPreviewReactRules)
+// Module 15900 (createSearchResultLinkPreviewReactRules)
 const result = require("set").fileFinishedImporting("modules/markup/native/MarkupSearchResultLinkPreviewReactRules.tsx");
 
 export const createSearchResultLinkPreviewReactRules = function createSearchResultLinkPreviewReactRules() {
-  return require(9854) /* defaultReactFn */.createMessagePreviewReactRules({ customEmojiSize: 16 });
+  return require(10054) /* defaultReactFn */.createMessagePreviewReactRules({ customEmojiSize: 16 });
 };

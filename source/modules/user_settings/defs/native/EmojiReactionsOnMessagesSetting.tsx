@@ -1,9 +1,9 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14776
+// Function ID: 14777
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 4034, 2]
+// Dependencies: [8198, 10669, 1236, 4066, 2]
 
-// Module 14736 (toggle)
+// Module 14776 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -11,7 +11,7 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["zge/fP"]);
   },
-  parent: require("MobileSetting").MobileSetting.CHAT,
+  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: require("explicitContentFromProto").RenderReactions.useSetting,
   onValueChange: require("explicitContentFromProto").RenderReactions.updateSetting
 });
@@ -20,7 +20,7 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["zge/fP"]);
   },
-  parent: require("MobileSetting").MobileSetting.CHAT,
+  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: require("explicitContentFromProto").RenderReactions.useSetting,
   onValueChange: require("explicitContentFromProto").RenderReactions.updateSetting
 };

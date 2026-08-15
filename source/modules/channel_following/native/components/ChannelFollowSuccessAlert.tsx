@@ -1,10 +1,10 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10537
+// Function ID: 10538
 // Name: items
-// Dependencies: [19, 17, 21, 10280, 10281, 10282, 10283, 10284, 10285, 1236, 4342, 4278, 1363, 6972, 12, 4795, 4338, 2]
+// Dependencies: [19, 17, 21, 10538, 10539, 10540, 10541, 10542, 10543, 1236, 4661, 4310, 1363, 7411, 12, 4763, 4734, 2]
 // Exports: default
 
-// Module 10279 (items)
+// Module 10537 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";
@@ -64,16 +64,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/channel_followi
 export default function ChannelFollowSuccessAlert(arg0) {
   const tmp = callback3();
   let obj = require(1363) /* AccessibilityAnnouncer */;
-  const tmp6 = obj.isThemeDark(importDefault(4278)()) ? items1 : items;
+  const tmp6 = obj.isThemeDark(importDefault(4310)()) ? items1 : items;
   require = tmp6;
-  let tmp5Result = tmp5(6972);
+  let tmp5Result = tmp5(7411);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(6972);
+  tmp5Result = tmp5(7411);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;
-  const tmp4 = importDefault(4278)();
+  const tmp4 = importDefault(4310)();
   const merged = Object.assign(arg0);
   const intl = tmp5(1236).intl;
   obj.confirmText = intl.string(require(1236) /* getSystemLocale */.t["+IrDzN"]);
@@ -81,11 +81,11 @@ export default function ChannelFollowSuccessAlert(arg0) {
   items1 = [callback(Image, obj), , ];
   const obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   obj1[3] = stableMemo1();
-  items1[1] = callback(require(4338) /* Text */.Text, obj1);
+  items1[1] = callback(require(4734) /* Text */.Text, obj1);
   const obj2 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: null };
   const intl2 = tmp5(1236).intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["2QbSea"]);
-  items1[2] = callback(require(4338) /* Text */.Text, obj2);
+  items1[2] = callback(require(4734) /* Text */.Text, obj2);
   obj.children = items1;
-  return callback2(importDefault(4795), obj);
+  return callback2(importDefault(4763), obj);
 };

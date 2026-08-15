@@ -1,8 +1,8 @@
-// Module ID: 16797
-// Function ID: 16798
-// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 4338, 4805, 5813, 4706, 1236, 11036, 5293, 4795, 7817, 4301, 5833, 4788, 1370, 688, 9069, 5435, 4880, 1297, 8751, 4886, 2]
+// Module ID: 16843
+// Function ID: 16844
+// Dependencies: [5, 19, 17, 676, 21, 4661, 712, 4734, 6814, 7163, 4656, 1236, 10770, 6778, 4763, 8035, 4333, 7182, 4756, 1370, 688, 8859, 6291, 6884, 1297, 9355, 6890, 2]
 
-// Module 16797
+// Module 16843
 import closure_3 from "createCacheKey";
 import importAllResult from "isDiscordFrontendDevelopment";
 import get_ActivityIndicator from "VerifiedRoleIcon";
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
                 obj1 = outer2_1(outer2_2[13]);
                 obj1.deleteRole(outer1_4, outer1_0.id);
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp16) {
                 c2 = tmp;
                 throw tmp16;

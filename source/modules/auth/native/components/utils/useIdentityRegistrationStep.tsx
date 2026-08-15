@@ -1,10 +1,10 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15222
+// Function ID: 15223
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15163, 15164, 676, 1499, 15161, 1236, 15174, 10439, 8546, 15171, 691, 15162, 1500, 8561, 8555, 9001, 2]
+// Dependencies: [5, 32, 19, 15212, 15213, 676, 1500, 15210, 1236, 15223, 10478, 8585, 15220, 691, 15211, 1501, 8600, 8594, 8781, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15173 (useIdentityRegistrationStep)
+// Module 15222 (useIdentityRegistrationStep)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -64,7 +64,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -105,7 +105,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             ref = c4;
             if (ref instanceof callback(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               obj1 = callback(navigation[11]);
               const context = obj1.getAuthenticationErrorsFromAPIError(set);
@@ -189,7 +189,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             };
             outer1_2.push(callback(navigation[13]).AuthStates.VERIFY_PHONE, obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp55) {
           c4 = tmp55;

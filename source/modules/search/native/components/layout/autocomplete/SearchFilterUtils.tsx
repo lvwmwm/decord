@@ -1,10 +1,10 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15853
+// Function ID: 15854
 // Name: getSearchTokenLabel
-// Dependencies: [8468, 8467, 676, 1236, 11291, 9851, 13273, 4881, 9107, 15804, 15806, 10520, 11788, 11810, 11785, 4310, 9038, 2007, 11807, 2]
+// Dependencies: [8507, 8506, 676, 1236, 11004, 10051, 13069, 6885, 8897, 15854, 15856, 9832, 11512, 11534, 11509, 4342, 8828, 2007, 11531, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 15803 (getSearchTokenLabel)
+// Module 15853 (getSearchTokenLabel)
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import ME from "ME";
@@ -90,21 +90,21 @@ export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchToke
 };
 export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    return require(11291) /* UserIcon */.UserIcon;
+    return require(11004) /* UserIcon */.UserIcon;
   } else if (tmp.FILTER_HAS === searchTokenType) {
-    return require(9851) /* AttachmentIcon */.AttachmentIcon;
+    return require(10051) /* AttachmentIcon */.AttachmentIcon;
   } else if (tmp.FILTER_IN === searchTokenType) {
-    return require(13273) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
+    return require(13069) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
   } else if (tmp.FILTER_MENTIONS === searchTokenType) {
-    return require(4881) /* AtIcon */.AtIcon;
+    return require(6885) /* AtIcon */.AtIcon;
   } else if (tmp.FILTER_ON === searchTokenType) {
-    return require(9107) /* CalendarIcon */.CalendarIcon;
+    return require(8897) /* CalendarIcon */.CalendarIcon;
   } else if (tmp.FILTER_BEFORE === searchTokenType) {
-    return require(15804) /* CalendarMinusIcon */.CalendarMinusIcon;
+    return require(15854) /* CalendarMinusIcon */.CalendarMinusIcon;
   } else if (tmp.FILTER_AFTER === searchTokenType) {
-    return require(15806) /* CalendarPlusIcon */.CalendarPlusIcon;
+    return require(15856) /* CalendarPlusIcon */.CalendarPlusIcon;
   } else if (tmp.FILTER_AUTHOR_TYPE === searchTokenType) {
-    return require(10520) /* RobotIcon */.RobotIcon;
+    return require(9832) /* RobotIcon */.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -207,7 +207,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(cl
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(11788));
+  const keys = Object.keys(items(11512));
   const item = keys.forEach((type) => {
     let obj = textInputValue(outer1_2[12]);
     if (obj.isSearchFilterTokenType(type)) {

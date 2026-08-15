@@ -1,10 +1,10 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16998
+// Function ID: 16999
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 1388, 21, 4342, 712, 1628, 5458, 5460, 4338, 1236, 1297, 4778, 2]
+// Dependencies: [19, 17, 1388, 21, 4661, 712, 1629, 6950, 6952, 4734, 1236, 1297, 4746, 2]
 // Exports: default
 
-// Module 16952 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16998 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -34,15 +34,15 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
     children: null
   };
   obj = { style: tmp.container, children: null };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(1628)().bottom }, children: null };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1629)().bottom }, children: null };
   const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1236).intl;
   obj1[2] = intl.string(markAsDismissed(1236).t.Y0PTc0);
-  const items = [callback(markAsDismissed(4338).Text, obj1), callback(markAsDismissed(1297).Spacer, { size: 12 }), , , ];
+  const items = [callback(markAsDismissed(4734).Text, obj1), callback(markAsDismissed(1297).Spacer, { size: 12 }), , , ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = markAsDismissed(1236).intl;
   obj2[2] = intl2.string(markAsDismissed(1236).t["YSI/1/"]);
-  items[2] = callback(markAsDismissed(4338).Text, obj2);
+  items[2] = callback(markAsDismissed(4734).Text, obj2);
   items[3] = callback(markAsDismissed(1297).Spacer, { size: 48 });
   const obj3 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl3 = markAsDismissed(1236).intl;
@@ -51,9 +51,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj3[2] = function onPress() {
     return markAsDismissed(outer1_4.UNKNOWN);
   };
-  items[4] = callback(markAsDismissed(4778).BaseTextButton, obj3);
+  items[4] = callback(markAsDismissed(4746).BaseTextButton, obj3);
   obj[1] = items;
-  obj[1] = callback2(markAsDismissed(5460).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(6952).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5458).BottomSheet, obj);
+  return callback(markAsDismissed(6950).BottomSheet, obj);
 };

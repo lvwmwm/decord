@@ -1,8 +1,8 @@
-// Module ID: 15520
-// Function ID: 15521
-// Dependencies: [19, 4165, 676, 21, 15508, 11257, 589, 15500, 4083, 4311, 5293, 1236, 15507, 11683, 2]
+// Module ID: 15570
+// Function ID: 15571
+// Dependencies: [19, 4197, 676, 21, 15558, 9535, 589, 15550, 4115, 4343, 6778, 1236, 15557, 11400, 2]
 
-// Module 15520
+// Module 15570
 import importAllResult from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -18,8 +18,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   id = id.id;
   let importDefault;
   ({ expanded, childNodes } = id);
-  let obj = id(15508);
-  importDefault = importDefault(11257)();
+  let obj = id(15558);
+  importDefault = importDefault(9535)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [handleConnectionOpen];
   const items1 = [id];
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   ({ accessibilityActions, onAccessibilityAction } = memo);
   const obj2 = id(589);
   const items2 = [id];
-  const sharedValue = id(4083).useSharedValue("" + id);
+  const sharedValue = id(4115).useSharedValue("" + id);
   const memo1 = importAllResult.useMemo(() => ({
     onPress() {
       const result = outer1_0(outer1_2[9]).triggerHapticFeedback(outer1_0(outer1_2[9]).HapticFeedbackTypes.IMPACT_LIGHT);
@@ -59,8 +59,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
       const result1 = outer1_1(outer1_2[10]).toggleGuildFolderExpand(closure_0);
     }
   }), items2);
-  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 72972693307659580000000000000000000000000000000000000000000000000000000000000000000000000000, externalChildren: 663224131631259200000, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000334830254644715 };
-  const obj3 = id(4083);
+  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "disabled", config: null, externalChildren: null, children: "INSTANTIATION_OPTION_REQUIRED" };
+  const obj3 = id(4115);
   obj[0] = "" + id;
   obj[1] = accessibilityActions;
   obj[2] = onAccessibilityAction;
@@ -75,11 +75,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
     obj = { folderId: null, totalItems: null };
     obj[0] = id;
     obj[1] = childNodes.length;
-    tmp8Result = tmp8(tmp(15507).GuildsBarGuildFolderBG, obj);
+    tmp8Result = tmp8(tmp(15557).GuildsBarGuildFolderBG, obj);
   }
   obj[12] = tmp8Result;
-  obj[13] = jsx(id(11683).HourglassIcon, {});
-  return jsx(importDefault(15508), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 72972693307659580000000000000000000000000000000000000000000000000000000000000000000000000000, externalChildren: 663224131631259200000, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000334830254644715 });
+  obj[13] = jsx(id(11400).HourglassIcon, {});
+  return jsx(importDefault(15558), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "disabled", config: null, externalChildren: null, children: "INSTANTIATION_OPTION_REQUIRED" });
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

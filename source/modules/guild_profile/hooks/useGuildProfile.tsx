@@ -1,10 +1,10 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 8855
+// Function ID: 8856
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9064, 589, 9066, 2]
+// Dependencies: [5, 19, 8854, 589, 8856, 2]
 // Exports: useGuildProfile
 
-// Module 9065 (useGuildProfile)
+// Module 8855 (useGuildProfile)
 import set from "set";
 import noop from "noop";
 import handleUpdateStart from "handleUpdateStart";
@@ -37,7 +37,7 @@ export const useGuildProfile = function useGuildProfile(guildId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11688
+// Function ID: 11689
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4230, 1236, 2335, 2]
+// Dependencies: [19, 4262, 1236, 2367, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 11959 (useCalculatePowerupCardStatus)
+// Module 11688 (useCalculatePowerupCardStatus)
 import noop from "noop";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 
@@ -48,12 +48,12 @@ export const useCalculatePowerupCardStatus = function useCalculatePowerupCardSta
         const obj1 = { type: "active", statusText: null };
         const obj2 = { perkName: null };
         obj2[0] = title;
-        obj1[1] = intl2.formatToPlainString(lib(2335).WRRYUT, obj2);
+        obj1[1] = intl2.formatToPlainString(lib(2367).WRRYUT, obj2);
         tmp5 = obj1;
       } else if (tmp.type !== tmp4.INACTIVE) {
         obj = { type: "active", statusText: null };
         const intl = powerup(1236).intl;
-        obj[1] = intl.string(lib(2335).FFLkmx);
+        obj[1] = intl.string(lib(2367).FFLkmx);
         tmp5 = obj;
       }
     }

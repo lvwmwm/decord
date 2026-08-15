@@ -1,9 +1,9 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16551
+// Function ID: 16552
 // Name: timeout
-// Dependencies: [5059, 676, 4227, 5322, 4034, 9825, 1374, 1337, 9824, 2]
+// Dependencies: [7250, 676, 4259, 5038, 4066, 10025, 1374, 1337, 10024, 2]
 
-// Module 16501 (timeout)
+// Module 16551 (timeout)
 import filterPlayingActivities from "filterPlayingActivities";
 import ME from "ME";
 import "initialize";
@@ -39,7 +39,7 @@ let prototype = function CustomStatusManager() {
     const result2 = applyArgumentsResult.manageExpiringFocusMode();
   };
   applyArgumentsResult.manageExpiringCustomStatus = function manageExpiringCustomStatus() {
-    let CustomStatusSetting = applyArgumentsResult(4034).CustomStatusSetting;
+    let CustomStatusSetting = applyArgumentsResult(4066).CustomStatusSetting;
     const setting = CustomStatusSetting.getSetting();
     if (null == setting) {
       closure_8.stop();
@@ -59,7 +59,7 @@ let prototype = function CustomStatusManager() {
               CustomStatusSetting.updateSetting(undefined);
             }, true);
           } else {
-            const CustomStatusSetting2 = applyArgumentsResult(4034).CustomStatusSetting;
+            const CustomStatusSetting2 = applyArgumentsResult(4066).CustomStatusSetting;
             CustomStatusSetting2.updateSetting(undefined);
             closure_8.stop();
           }
@@ -72,7 +72,7 @@ let prototype = function CustomStatusManager() {
     }
   };
   applyArgumentsResult.manageExpiringStatus = function manageExpiringStatus() {
-    const StatusExpiresAtSetting = applyArgumentsResult(4034).StatusExpiresAtSetting;
+    const StatusExpiresAtSetting = applyArgumentsResult(4066).StatusExpiresAtSetting;
     const setting = StatusExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -98,7 +98,7 @@ let prototype = function CustomStatusManager() {
             obj1[0] = constants.CUSTOM_STATUS_MANAGER;
             obj[0] = obj1;
             obj[1] = obj;
-            callback(9825)(obj);
+            callback(10025)(obj);
             closure_6.stop();
           }
         }
@@ -112,7 +112,7 @@ let prototype = function CustomStatusManager() {
   applyArgumentsResult.lazilyMigrateStatusCreatedAt = function lazilyMigrateStatusCreatedAt() {
     let tmp = store.getStatus() !== constants2.ONLINE;
     if (tmp) {
-      const StatusCreatedAtSetting = applyArgumentsResult(4034).StatusCreatedAtSetting;
+      const StatusCreatedAtSetting = applyArgumentsResult(4066).StatusCreatedAtSetting;
       tmp = null == StatusCreatedAtSetting.getSetting();
     }
     if (tmp) {
@@ -124,7 +124,7 @@ let prototype = function CustomStatusManager() {
     }
   };
   applyArgumentsResult.manageExpiringFocusMode = function manageExpiringFocusMode() {
-    const FocusModeExpiresAtSetting = applyArgumentsResult(4034).FocusModeExpiresAtSetting;
+    const FocusModeExpiresAtSetting = applyArgumentsResult(4066).FocusModeExpiresAtSetting;
     const setting = FocusModeExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -140,9 +140,9 @@ let prototype = function CustomStatusManager() {
             callback(table[8]).setFocusMode(false);
           }, true);
         } else {
-          applyArgumentsResult(9824).setFocusMode(false);
+          applyArgumentsResult(10024).setFocusMode(false);
           closure_7.stop();
-          const tmpResult = applyArgumentsResult(9824);
+          const tmpResult = applyArgumentsResult(10024);
         }
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 9775
-// Function ID: 9776
+// Module ID: 9984
+// Function ID: 9985
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 676, 5789, 5809, 698, 2]
+// Dependencies: [19, 676, 7139, 7159, 698, 2]
 // Exports: default
 
-// Module 9775 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 9984 (useTrackFavoritesGuildUpsellModalOpened)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -18,5 +18,5 @@ export default function useTrackFavoritesGuildUpsellModalOpened(arg0) {
     obj = { source: callback };
     obj.track(outer1_3.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj);
   }, items);
-  return { analyticsLocations: importDefault(5789)(importDefault(5809).FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations };
+  return { analyticsLocations: importDefault(7139)(importDefault(7159).FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations };
 };

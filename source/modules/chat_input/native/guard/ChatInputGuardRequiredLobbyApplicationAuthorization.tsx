@@ -1,8 +1,8 @@
-// Module ID: 11900
-// Function ID: 11901
-// Dependencies: [19, 17, 21, 4342, 712, 11888, 1236, 4058, 2]
+// Module ID: 11628
+// Function ID: 11629
+// Dependencies: [19, 17, 21, 4661, 712, 11616, 1236, 4090, 2]
 
-// Module 11900
+// Module 11628
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,7 +35,7 @@ const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyAppl
         obj = { name: null };
         obj[0] = requiredLinkedLobbyApplication.name;
         obj[2] = intl3.format(connectionEntrypointUrl(1236).t["SU2mY/"], obj);
-        return jsx(importDefault(11888), { name: null });
+        return jsx(importDefault(11616), { name: null });
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
         const obj1 = { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null };
@@ -55,11 +55,11 @@ const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyAppl
           fn = () => outer1_1(outer1_2[7]).openURLExternally(connectionEntrypointUrl);
         }
         obj1[4] = fn;
-        return jsx(importDefault(11888), { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null });
+        return jsx(importDefault(11616), { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null });
       }
     }
   }
-  return jsx(importDefault(11888), { type: "simple-action", message: "" });
+  return jsx(importDefault(11616), { type: "simple-action", message: "" });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
 

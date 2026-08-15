@@ -1,9 +1,9 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14779
+// Function ID: 14780
 // Name: toggle
-// Dependencies: [1303, 8148, 589, 10421, 1236, 8761, 2]
+// Dependencies: [1303, 8198, 589, 10669, 1236, 9365, 2]
 
-// Module 14739 (toggle)
+// Module 14779 (toggle)
 import initialize from "initialize";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["3340dY"]);
   },
-  parent: require("MobileSetting").MobileSetting.CHAT,
+  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: function useTextAndMediaSyncSettingValue() {
     const items = [initialize];
     return require(589) /* initialize */.useStateFromStores(items, () => initialize.shouldSync("text"));

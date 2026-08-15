@@ -1,16 +1,16 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8432
+// Function ID: 8433
 // Name: buildPlatformPollResources
-// Dependencies: [12, 8394, 4342, 712, 8121, 5452, 5831, 1438, 2]
+// Dependencies: [12, 8433, 4661, 712, 8171, 6944, 7180, 1438, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 8393 (buildPlatformPollResources)
+// Module 8432 (buildPlatformPollResources)
 import importDefaultResult from "apply";
 
 const require = arg1;
 let closure_3 = require("apply").mapValues(require("normal").pollStyleSets, (arg0) => {
   const _require = arg0;
-  let closure_1 = _require(4342).createNativeStyleProperties((arg0) => {
+  let closure_1 = _require(4661).createNativeStyleProperties((arg0) => {
     let tmp = callback(callback2(outer1_2[3]), arg0);
     return callback2(outer1_2[0]).pickBy(tmp, (num) => {
       let tmp = typeof num !== "number";
@@ -43,9 +43,9 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   const obj = { styles: null, selectedIcon: null, checkmarkIcon: null };
   obj[0] = importDefault(12).mapValues(closure_3, (arg0) => arg0(closure_0, closure_1));
   const obj2 = importDefault(12);
-  obj[1] = _require(8121).getAssetUriForEmbed(importDefault(5452));
-  const obj3 = _require(8121);
-  obj[2] = _require(8121).getAssetUriForEmbed(importDefault(5831));
+  obj[1] = _require(8171).getAssetUriForEmbed(importDefault(6944));
+  const obj3 = _require(8171);
+  obj[2] = _require(8171).getAssetUriForEmbed(importDefault(7180));
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {

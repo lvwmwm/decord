@@ -1,9 +1,9 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 9012
+// Function ID: 9013
 // Name: THUMBNAIL_MARGIN
 // Dependencies: [2]
 
-// Module 8927 (THUMBNAIL_MARGIN)
+// Module 9012 (THUMBNAIL_MARGIN)
 const result = require("set").fileFinishedImporting("modules/media_viewer/native/Constants.tsx");
 
 export const THUMBNAIL_MARGIN = 2;

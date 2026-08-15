@@ -1,10 +1,10 @@
-// Module ID: 12871
-// Function ID: 12872
+// Module ID: 12948
+// Function ID: 12949
 // Name: handlePress
-// Dependencies: [17, 21, 4342, 712, 4310, 12872, 2007, 1236, 4338, 2]
+// Dependencies: [17, 21, 4661, 712, 4342, 12949, 2007, 1236, 4734, 2]
 // Exports: default
 
-// Module 12871 (handlePress)
+// Module 12948 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,11 +14,11 @@ let c4;
 let c5;
 let closure_6;
 function handlePress() {
-  let obj = importDefault(4310);
+  let obj = importDefault(4342);
   obj = { aboutText: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["07lzz7"]);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12872, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(12949, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -52,7 +52,7 @@ export default function BoostingCountDownPill(style) {
     const obj1 = { variant: "text-sm/bold", style: null, children: null };
     obj1[1] = tmp.fpDurationText;
     obj1[2] = fpDurationText.toUpperCase();
-    obj[1] = tmp2(require(4338) /* Text */.Text, obj1);
+    obj[1] = tmp2(require(4734) /* Text */.Text, obj1);
     tmp2Result = tmp2(tmp6, obj);
   }
   const items1 = [tmp2Result, ];
@@ -64,7 +64,7 @@ export default function BoostingCountDownPill(style) {
   const obj3 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: null };
   const intl = tmp10(1236).intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
-  obj2[1] = closure_5(require(4338) /* Text */.Text, obj3);
+  obj2[1] = closure_5(require(4734) /* Text */.Text, obj3);
   items1[1] = closure_5(closure_4, obj2);
   obj[1] = items1;
   obj[2] = closure_6(closure_4, obj);

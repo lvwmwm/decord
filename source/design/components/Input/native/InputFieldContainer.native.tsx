@@ -1,10 +1,10 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 7345
+// Function ID: 7346
 // Name: useInputStyles
-// Dependencies: [19, 17, 21, 712, 4065, 4342, 6065, 4338, 4083, 4776, 2]
+// Dependencies: [19, 17, 21, 712, 4097, 4661, 7346, 4734, 4115, 4744, 2]
 // Exports: InputFieldContainer
 
-// Module 6064 (useInputStyles)
+// Module 7345 (useInputStyles)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,12 +41,12 @@ function useInputStyles(size) {
   } else if ("lg" === str) {
     INPUT_FIELD_RADIUS_LG = importDefault(712).modules.mobile.INPUT_FIELD_RADIUS_LG;
   }
-  let token = require(4065) /* map */.useToken(INPUT_FIELD_RADIUS_LG);
-  let tmpResult = tmp(4065);
+  let token = require(4097) /* map */.useToken(INPUT_FIELD_RADIUS_LG);
+  let tmpResult = tmp(4097);
   if (flag) {
     token = tmpResult.useToken(importDefault(712).modules.mobile.INPUT_FIELD_ROUND_RADIUS);
   }
-  tmpResult = tmp(4065);
+  tmpResult = tmp(4097);
   if ("sm" === str) {
     let INPUT_FIELD_TEXT_STYLE_LG = tmp7(712).modules.mobile.INPUT_FIELD_TEXT_STYLE_SM;
   } else if ("md" === str) {
@@ -55,8 +55,8 @@ function useInputStyles(size) {
     INPUT_FIELD_TEXT_STYLE_LG = tmp7(712).modules.mobile.INPUT_FIELD_TEXT_STYLE_LG;
   }
   const token1 = tmpResult.useToken(INPUT_FIELD_TEXT_STYLE_LG);
-  const obj = require(4065) /* map */;
-  return callback3(str, flag2, flag3, token, token1, require(4065) /* map */.useToken(importDefault(712).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
+  const obj = require(4097) /* map */;
+  return callback3(str, flag2, flag3, token, token1, require(4097) /* map */.useToken(importDefault(712).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
 }
 ({ Platform, StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -82,7 +82,7 @@ let closure_9 = createCacheKey.createStyles(() => {
   if (arg4 === undefined) {
     str2 = "text-md/medium";
   }
-  let obj = { sm: require(6065) /* InputHeights */.InputHeights.SM, md: require(6065) /* InputHeights */.InputHeights.MD, lg: require(6065) /* InputHeights */.InputHeights.LG };
+  let obj = { sm: require(7346) /* InputHeights */.InputHeights.SM, md: require(7346) /* InputHeights */.InputHeights.MD, lg: require(7346) /* InputHeights */.InputHeights.LG };
   obj = { sm: importDefault(712).space.PX_8, md: importDefault(712).space.PX_12, lg: importDefault(712).space.PX_16 };
   obj = { sm: importDefault(712).space.PX_4, md: importDefault(712).space.PX_8, lg: importDefault(712).space.PX_8 };
   const obj1 = { sm: null, md: null, lg: null };
@@ -116,7 +116,7 @@ let closure_9 = createCacheKey.createStyles(() => {
   obj6[4] = { borderRadius: num };
   obj6[5] = obj1[str];
   const obj9 = {};
-  const merged = Object.assign(tmp(4338).TextStyleSheet[str2]);
+  const merged = Object.assign(tmp(4734).TextStyleSheet[str2]);
   obj9.lineHeight = undefined;
   const colors = tmp3(712).colors;
   obj9.color = flag ? colors.TEXT_MUTED : colors.TEXT_DEFAULT;

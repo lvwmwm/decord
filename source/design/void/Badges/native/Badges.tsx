@@ -1,10 +1,10 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 13546
+// Function ID: 13547
 // Name: BadgeColors
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4734, 2]
 // Exports: TextBadge
 
-// Module 13514 (BadgeColors)
+// Module 13546 (BadgeColors)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -52,6 +52,6 @@ export const TextBadge = function TextBadge(color) {
   const obj = { style: items, children: null };
   items = [tmp2.base, tmp2[DANGER], style];
   const items1 = [tmp3.text, tmp3["" + DANGER + "Text"], textStyle];
-  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-xs/bold", style: items1, children: text });
+  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", style: items1, children: text });
   return <View style={items}>{null}</View>;
 };

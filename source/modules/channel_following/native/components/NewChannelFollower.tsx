@@ -1,10 +1,10 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10530
+// Function ID: 10531
 // Name: canFollowIntoChannel
-// Dependencies: [32, 19, 17, 1391, 1980, 1910, 3989, 5217, 676, 21, 4342, 712, 7470, 4278, 589, 4535, 4793, 1363, 10273, 10274, 5458, 5460, 5840, 1297, 4827, 4338, 1236, 4775, 5828, 5435, 4310, 9031, 2007, 10275, 8033, 5212, 4777, 10278, 5773, 2]
+// Dependencies: [32, 19, 17, 1391, 1980, 1910, 4021, 5078, 676, 21, 4661, 712, 7688, 4310, 589, 4984, 4761, 1363, 10531, 10532, 6950, 6952, 7188, 1297, 6832, 4734, 1236, 4733, 6286, 6291, 4342, 8821, 2007, 10533, 8083, 6687, 4745, 10536, 7124, 2]
 // Exports: default
 
-// Module 10272 (canFollowIntoChannel)
+// Module 10530 (canFollowIntoChannel)
 import asyncRequireImpl from "asyncRequireImpl";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "AccessibilityAnnouncer";

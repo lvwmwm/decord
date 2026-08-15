@@ -1,9 +1,9 @@
-// Module ID: 4391
-// Function ID: 4392
+// Module ID: 4521
+// Function ID: 4522
 // Name: addSku
-// Dependencies: [4385, 1994, 589, 709, 2]
+// Dependencies: [4515, 1994, 589, 709, 2]
 
-// Module 4391 (addSku)
+// Module 4521 (addSku)
 import createFromServer from "createFromServer";
 import _getSystemLocale from "_getSystemLocale";
 import { Store } from "initialize";

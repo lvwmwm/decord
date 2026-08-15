@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15980
+// Function ID: 15981
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [19, 17, 9846, 21, 500, 4342, 4083, 589, 2]
+// Dependencies: [19, 17, 10046, 21, 500, 4661, 4115, 589, 2]
 // Exports: default
 
-// Module 15930 (MediaKeyboardAccessoriesContainer)
+// Module 15980 (MediaKeyboardAccessoriesContainer)
 import noop from "noop";
 import initialize from "initialize";
 import { jsx } from "jsxProd";

@@ -1,22 +1,22 @@
-// Module ID: 14281
-// Function ID: 14282
+// Module ID: 14313
+// Function ID: 14314
 // Name: onPress
-// Dependencies: [19, 21, 4310, 14282, 2007, 1499, 6946, 8453, 1236, 14283, 2]
+// Dependencies: [19, 21, 4342, 14314, 2007, 1500, 7385, 8492, 1236, 14315, 2]
 
-// Module 14281 (onPress)
+// Module 14313 (onPress)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function onPress() {
-  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14282, dependencyMap.paths), "AddConnection");
+  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(14314, dependencyMap.paths), "AddConnection");
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
-  stackNavigation = stackNavigation(1499).useStackNavigation();
-  let obj = stackNavigation(1499);
+  stackNavigation = stackNavigation(1500).useStackNavigation();
+  let obj = stackNavigation(1500);
   const tmp = stackNavigation;
-  const params = stackNavigation(6946).useSettingNavigationRoute().params;
+  const params = stackNavigation(7385).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
     selectedPlatformType = params.selectedPlatformType;
@@ -30,11 +30,11 @@ const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
         obj.onPress = closure_5;
         const intl = callback(1236).intl;
         obj.label = intl.string(callback(1236).t.OYkgVk);
-        return callback2(callback(8453).HeaderTextButton, obj);
+        return callback2(callback(8492).HeaderTextButton, obj);
       }
     });
   }, items);
-  return jsx(tmp(14283).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(14315).UserSettingsConnections, { selectedPlatformType });
 });
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

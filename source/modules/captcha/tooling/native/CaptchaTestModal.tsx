@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 15089
+// Module ID: 15137
+// Function ID: 15138
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4342, 712, 15089, 15090, 4062, 4338, 1297, 5389, 4777, 4572, 5331, 5844, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4661, 712, 15138, 15139, 4094, 4734, 1297, 6803, 4745, 5260, 6314, 6312, 1236, 2]
 // Exports: default
 
-// Module 15088 (CaptchaTestScreen)
+// Module 15137 (CaptchaTestScreen)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -41,7 +41,7 @@ function CaptchaTestScreen(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -231,5 +231,5 @@ export default function CaptchaTestModal() {
   let obj = { screens: memo, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(5844) /* NavigationStack */.Navigator, obj);
+  return callback(require(6312) /* NavigationStack */.Navigator, obj);
 };

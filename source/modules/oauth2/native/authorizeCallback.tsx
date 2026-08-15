@@ -1,10 +1,10 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 12426
+// Function ID: 12427
 // Name: authorizeCallback
-// Dependencies: [10611, 4572, 10499, 2007, 1486, 10613, 4308, 691, 4058, 2]
+// Dependencies: [8774, 5260, 9776, 2007, 1487, 12427, 4340, 691, 4090, 2]
 // Exports: default
 
-// Module 10612 (authorizeCallback)
+// Module 12426 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let c3;
@@ -23,25 +23,25 @@ export default function authorizeCallback(arg0) {
   let wasDeepLink;
   ({ location: _location, canceled, wasDeepLink } = arg0);
   if (null != _location) {
-    let toURLSafeResult = importDefault(1486).toURLSafe(_location);
+    let toURLSafeResult = importDefault(1487).toURLSafe(_location);
     if (toURLSafeResult == null) {
       toURLSafeResult = {};
     }
     ({ host, pathname, searchParams } = toURLSafeResult);
     if (null != host) {
-      let tmp8Result = tmp8(1486);
+      let tmp8Result = tmp8(1487);
       if (tmp8Result.isDiscordHostname(host)) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
-            tmp8Result = tmp8(4572);
+            tmp8Result = tmp8(5260);
             let obj = { application: null, guild: null };
             obj[0] = tmp;
             obj[1] = tmp2;
-            tmp8Result.pushLazy(require(2007) /* asyncRequireImpl */(10613, tmp9.paths), obj, closure_3);
+            tmp8Result.pushLazy(require(2007) /* asyncRequireImpl */(12427, tmp9.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               let str;
-              const tmp8Result1 = tmp8(4572);
+              const tmp8Result1 = tmp8(5260);
               if (searchParams != null) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -61,27 +61,27 @@ export default function authorizeCallback(arg0) {
               }
               obj = { error: null };
               obj[0] = str;
-              tmp8Result1.pushLazy(require(2007) /* asyncRequireImpl */(10499, tmp9.paths), obj, closure_4);
-              const tmp17 = require(2007) /* asyncRequireImpl */(10499, tmp9.paths);
+              tmp8Result1.pushLazy(require(2007) /* asyncRequireImpl */(9776, tmp9.paths), obj, closure_4);
+              const tmp17 = require(2007) /* asyncRequireImpl */(9776, tmp9.paths);
             }
           }
         }
       }
     }
     if (wasDeepLink) {
-      const browserManagerSelectedBrowser = require(4308) /* NativeModules */.getBrowserManagerSelectedBrowser();
+      const browserManagerSelectedBrowser = require(4340) /* NativeModules */.getBrowserManagerSelectedBrowser();
       wasDeepLink = browserManagerSelectedBrowser === require(691) /* keys */.WebBrowserType.IN_APP;
-      const obj5 = require(4308) /* NativeModules */;
+      const obj5 = require(4340) /* NativeModules */;
     }
-    const obj2 = importDefault(1486);
+    const obj2 = importDefault(1487);
     let SAFARI;
     if (wasDeepLink) {
       SAFARI = require(691) /* keys */.WebBrowserType.SAFARI;
     }
-    importDefault(4058).openURL(_location, SAFARI);
-    const tmp8Result2 = importDefault(4058);
+    importDefault(4090).openURL(_location, SAFARI);
+    const tmp8Result2 = importDefault(4090);
   } else if (!canceled) {
-    obj = importDefault(4572);
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(10499, dependencyMap.paths), undefined, closure_4);
+    obj = importDefault(5260);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(9776, dependencyMap.paths), undefined, closure_4);
   }
 };

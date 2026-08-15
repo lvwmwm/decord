@@ -1,10 +1,10 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15494
+// Function ID: 15495
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1394, 676, 1388, 21, 9781, 5776, 589, 1236, 3047, 8716, 2]
+// Dependencies: [19, 1394, 676, 1388, 21, 9990, 7126, 589, 1236, 3079, 9314, 2]
 // Exports: default
 
-// Module 15444 (FavoritesGuildCoachmarkMenuItemContent)
+// Module 15494 (FavoritesGuildCoachmarkMenuItemContent)
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -37,7 +37,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, callback, callback1];
   const memo = callback.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "tokenize must be called with bankDetails or bankLogin, not both.", onButtonPress: "M14 0h-3v1h3V0ZM4 15H1v1h3v-1ZM6 14H4v1h2v-1ZM3 2H1v1h2V2ZM4 4v1h1v1h1V4H4ZM4 7H3v2h1V7ZM3 9H2v2h1V9ZM2 11H1v2h1v-2ZM1 13H0v2h1v-2ZM10 11H8v1h2v-1ZM10 0H1v1h9V0Z" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "tokenize must be called with bankDetails or bankLogin.", onButtonPress: "M16 6h-1v6h1V6Z" };
     const intl = stateFromStores(markPopoverAsDismissed[8]).intl;
     const tmp4 = shouldShowPopover(markPopoverAsDismissed[9]);
     if (stateFromStores) {
@@ -64,14 +64,14 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
 export default function FavoritesGuildCoachmarkMenuItem(arg0) {
-  let obj = require(9781) /* items1 */;
+  let obj = require(9990) /* items1 */;
   let tmp3 = null;
   if (obj.useShouldRenderFavoritesMenuItemPopover()) {
     obj = { zIndex: 1, children: null };
     obj = {};
     const merged = Object.assign(arg0);
     obj[1] = <FavoritesGuildCoachmarkMenuItemContent />;
-    tmp3 = jsx(require(5776) /* Layer */.LayerScope, {});
+    tmp3 = jsx(require(7126) /* Layer */.LayerScope, {});
   }
   return tmp3;
 };

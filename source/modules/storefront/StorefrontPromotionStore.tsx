@@ -1,9 +1,9 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9195
+// Function ID: 9196
 // Name: handleReset
 // Dependencies: [589, 709, 2]
 
-// Module 9430 (handleReset)
+// Module 9195 (handleReset)
 import { Store } from "initialize";
 
 function handleReset() {

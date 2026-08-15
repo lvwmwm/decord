@@ -1,9 +1,9 @@
-// Module ID: 5063
-// Function ID: 5064
+// Module ID: 5097
+// Function ID: 5098
 // Name: getPlatformUserUrl
-// Dependencies: [676, 4372, 711, 5064, 5065, 5066, 5067, 5068, 5069, 5070, 5071, 5072, 5073, 5074, 5075, 4373, 5076, 5077, 5078, 5079, 5080, 5081, 5082, 5083, 5084, 5085, 5086, 5087, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129, 5130, 5131, 5132, 5133, 5134, 5135, 5136, 5137, 5138, 5139, 5140, 5141, 5142, 5143, 5144, 5145, 5146, 5147, 5148, 5149, 5150, 5151, 5152, 5153, 5154, 5155, 5156, 5157, 5158, 5159, 5160, 5161, 5162, 5163, 5164, 5165, 5166, 5167, 5168, 5169, 5170, 5171, 5172, 5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180, 5181, 5182, 5183, 5184, 5185, 12, 1486, 2]
+// Dependencies: [676, 4483, 711, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 4484, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129, 5130, 5131, 5132, 5133, 5134, 5135, 5136, 5137, 5138, 5139, 5140, 5141, 5142, 5143, 5144, 5145, 5146, 5147, 5148, 5149, 5150, 5151, 5152, 5153, 5154, 5155, 5156, 5157, 5158, 5159, 5160, 5161, 5162, 5163, 5164, 5165, 5166, 5167, 5168, 5169, 5170, 5171, 5172, 5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5199, 5200, 5201, 5202, 5203, 5204, 5205, 5206, 5207, 5208, 5209, 5210, 5211, 5212, 5213, 5214, 5215, 5216, 5217, 5218, 5219, 12, 1487, 2]
 
-// Module 5063 (getPlatformUserUrl)
+// Module 5097 (getPlatformUserUrl)
 import { PlatformTypes } from "ME";
 import { ApplicationIdentityAppIds } from "items";
 import unsafe_getRawColor from "unsafe_getRawColor";
@@ -50,18 +50,14 @@ obj2[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"
 const obj4 = {
   replacedBy: ApplicationIdentityAppIds.BATTLENET,
   getMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4373) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+    const battlenetSocialSDKMigrationExperiment = require(4484) /* apexExperiment */.battlenetSocialSDKMigrationExperiment;
     return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
-  },
-  useMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4373) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
-    return battlenetSocialSDKMigrationExperiment.useConfig({ location }).enabled;
   },
   helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord",
   deprecationDate: null
 };
 const obj3 = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"), whitePNG: require("registerAsset"), lightSVG: require("registerAsset"), darkSVG: require("registerAsset"), whiteSVG: require("registerAsset"), blackSVG: require("registerAsset") };
-obj4[4] = new Date("2026-09-22Z-07:00");
+obj4[3] = new Date("2026-09-22Z-07:00");
 obj2[5] = obj4;
 items[2] = obj2;
 const obj5 = { type: PlatformTypes.BLUESKY, name: "Bluesky", icon: null, enabled: true, getPlatformUserUrl: null, isFederated: true, hasMetadata: true };
@@ -90,21 +86,14 @@ const obj10 = { lightPNG: require("registerAsset"), darkPNG: require("registerAs
 obj11[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"), whitePNG: require("registerAsset"), lightSVG: require("registerAsset"), darkSVG: require("registerAsset"), whiteSVG: require("registerAsset") };
 const obj13 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
-  getMigrationExperimentEnabled(location) {
-    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
-    obj = { location };
-    return obj.getIsRiotSocialSDKMigrationEnabled(obj);
-  },
-  useMigrationExperimentEnabled(location) {
-    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
-    obj = { location };
-    return obj.useIsRiotSocialSDKMigrationEnabled(obj);
+  getMigrationExperimentEnabled() {
+    return true;
   },
   helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
   deprecationDate: null
 };
 const obj12 = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"), whitePNG: require("registerAsset"), lightSVG: require("registerAsset"), darkSVG: require("registerAsset"), whiteSVG: require("registerAsset") };
-obj13[4] = new Date("2026-07-10Z-07:00");
+obj13[3] = new Date("2026-07-10Z-07:00");
 obj11[5] = obj13;
 items[6] = obj11;
 const obj14 = { type: PlatformTypes.STEAM, name: "Steam", color: null, icon: null, enabled: true, getPlatformUserUrl: null, hasMetadata: true };
@@ -194,21 +183,14 @@ const obj37 = { lightPNG: require("registerAsset"), darkPNG: require("registerAs
 obj38[2] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"), whitePNG: require("registerAsset"), lightSVG: require("registerAsset"), darkSVG: require("registerAsset"), whiteSVG: require("registerAsset"), blackSVG: require("registerAsset") };
 const obj40 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
-  getMigrationExperimentEnabled(location) {
-    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
-    obj = { location };
-    return obj.getIsRiotSocialSDKMigrationEnabled(obj);
-  },
-  useMigrationExperimentEnabled(location) {
-    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
-    obj = { location };
-    return obj.useIsRiotSocialSDKMigrationEnabled(obj);
+  getMigrationExperimentEnabled() {
+    return true;
   },
   helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
   deprecationDate: null
 };
 const obj39 = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"), whitePNG: require("registerAsset"), lightSVG: require("registerAsset"), darkSVG: require("registerAsset"), whiteSVG: require("registerAsset"), blackSVG: require("registerAsset") };
-obj40[4] = new Date("2026-07-10Z-07:00");
+obj40[3] = new Date("2026-07-10Z-07:00");
 obj38[4] = obj40;
 items[19] = obj38;
 const obj41 = { type: PlatformTypes.ROBLOX, name: "Roblox", icon: null, enabled: true, getPlatformUserUrl: null };
@@ -293,7 +275,7 @@ const obj61 = {
     return tmp;
   },
   getByUrl(url) {
-    const toURLSafeResult = importDefault(1486).toURLSafe(url);
+    const toURLSafeResult = importDefault(1487).toURLSafe(url);
     if (null != toURLSafeResult) {
       const hostname = toURLSafeResult.hostname;
       let substr = hostname;
@@ -302,7 +284,7 @@ const obj61 = {
       }
       return table2[substr];
     }
-    const obj = importDefault(1486);
+    const obj = importDefault(1487);
   },
   isSupported(key10009) {
     const call = hasOwnProperty.call;

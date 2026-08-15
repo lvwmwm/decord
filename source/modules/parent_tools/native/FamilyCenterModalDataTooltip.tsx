@@ -1,10 +1,10 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14248
+// Function ID: 14249
 // Name: Row
-// Dependencies: [19, 17, 7067, 21, 4863, 11395, 4063, 7784, 4865, 11397, 4306, 9635, 4342, 712, 4338, 11394, 1236, 2303, 7404, 7122, 7873, 7874, 11401, 4777, 4572, 5331, 11403, 2]
+// Dependencies: [19, 17, 5297, 21, 6867, 11108, 4095, 8002, 6869, 11110, 4338, 9589, 4661, 712, 4734, 11107, 1236, 2335, 7622, 5363, 5440, 5445, 11114, 4745, 5260, 6314, 11115, 2]
 // Exports: default
 
-// Module 14216 (Row)
+// Module 14248 (Row)
 import getEmptyActivityFormatter from "getEmptyActivityFormatter";
 import { View } from "messagesProxy";
 import jsxProd from "ModalContent";
@@ -33,7 +33,7 @@ function Row(arg0) {
   obj = { style: tmp.icon };
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content, children: null };
-  const items1 = [callback(require(4338) /* Text */.Text, { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header }), callback(require(4338) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: description })];
+  const items1 = [callback(require(4734) /* Text */.Text, { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header }), callback(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: description })];
   obj1[1] = items1;
   items[1] = callback2(View, obj1);
   obj[1] = items;
@@ -41,18 +41,18 @@ function Row(arg0) {
 }
 function FamilyCenterModalDataTooltipScreen() {
   const tmp = callback4();
-  let obj = _require(11394);
+  let obj = _require(11107);
   const intl = _require(1236).intl;
   const intl2 = _require(1236).intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2303).n6LOrh), intl2.string(importDefault(2303).JNLpDZ));
-  _require = importDefault(7404)();
-  let obj1 = _require(7122);
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2335).n6LOrh), intl2.string(importDefault(2335).JNLpDZ));
+  _require = importDefault(7622)();
+  let obj1 = _require(5363);
   const sortedActivityTypeConfigs = obj1.getSortedActivityTypeConfigs();
   obj = { children: null };
   obj = { children: null };
   obj1 = { style: tmp.container, children: null };
   const items = [
-    callback(_require(4338).Text, { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText }),
+    callback(_require(4734).Text, { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText }),
     sortedActivityTypeConfigs.map((arg0) => {
       let obj;
       let tmp;
@@ -64,16 +64,16 @@ function FamilyCenterModalDataTooltipScreen() {
   ];
   obj1[1] = items;
   obj[0] = callback2(View, obj1);
-  const items1 = [callback(_require(7874).ModalContent, obj), ];
+  const items1 = [callback(_require(5445).ModalContent, obj), ];
   const obj3 = { children: null };
   const obj4 = { variant: "primary", text: null, onPress: null };
   const intl3 = _require(1236).intl;
   obj4[1] = intl3.string(_require(1236).t["NX+WJN"]);
-  obj4[2] = importDefault(4572).pop;
-  obj3[0] = callback(_require(4777).Button, obj4);
-  items1[1] = callback(_require(11401).ModalFooter, obj3);
+  obj4[2] = importDefault(5260).pop;
+  obj3[0] = callback(_require(4745).Button, obj4);
+  items1[1] = callback(_require(11114).ModalFooter, obj3);
   obj[0] = items1;
-  return callback2(_require(7873).ModalScreen, obj);
+  return callback2(_require(5440).ModalScreen, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { [USER_INTERACTION]: require("ChatIcon").ChatIcon, [USER_CALLED]: require("PhoneIcon").PhoneIcon, [USER_ADD]: require("FriendsIcon").FriendsIcon, [GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [GIFTS]: require("GiftIcon").GiftIcon };
@@ -101,7 +101,7 @@ export default function FamilyCenterModalDataTooltip() {
   const memo = React.useMemo(() => {
     let obj = { DATA_TOOLTIP: null };
     obj = { headerShown: true, headerLeft: null, headerTitle: null, render: null };
-    obj[1] = callback(5331).getHeaderCloseButton(callback2(4572).pop);
+    obj[1] = callback(6314).getHeaderCloseButton(callback2(5260).pop);
     obj[2] = function headerTitle() {
       return null;
     };
@@ -114,5 +114,5 @@ export default function FamilyCenterModalDataTooltip() {
   let obj = { initialRouteName: "DATA_TOOLTIP", screens: memo, headerBackTitle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(11403) /* Modal */.Modal, obj);
+  return callback(require(11115) /* Modal */.Modal, obj);
 };

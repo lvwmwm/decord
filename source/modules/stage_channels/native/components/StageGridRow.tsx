@@ -1,8 +1,8 @@
-// Module ID: 10926
-// Function ID: 10927
-// Dependencies: [19, 17, 21, 4342, 10918, 5204, 4912, 10927, 10917, 2]
+// Module ID: 12612
+// Function ID: 12613
+// Dependencies: [19, 17, 21, 4661, 12605, 6703, 8944, 12613, 12604, 2]
 
-// Module 10926
+// Module 12612
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,18 +16,18 @@ const memoResult = require("noop").memo((row) => {
   ({ channel: require, participants } = row);
   let THIRD;
   const tmp = callback();
-  let obj = require(4912) /* getIsScreenLandscape */;
+  let obj = require(8944) /* getIsScreenLandscape */;
   let containerLandscape = obj.useIsScreenLandscape();
   let num = 3;
   if (0 === row.row) {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10918).StageTileSize.FULL;
+    THIRD = tmp2(12605).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10918).StageTileSize.HALF;
+    THIRD = tmp2(12605).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10918).StageTileSize.THIRD;
+    THIRD = tmp2(12605).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {

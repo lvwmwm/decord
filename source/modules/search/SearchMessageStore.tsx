@@ -1,35 +1,51 @@
-// Module ID: 5961
-// Function ID: 5962
+// Module ID: 4971
+// Function ID: 4972
 // Name: handleReaction
-// Dependencies: [1218, 3998, 4241, 4586, 4000, 589, 709, 2]
+// Dependencies: [1218, 1391, 4030, 676, 4273, 4803, 4032, 589, 709, 2]
 
-// Module 5961 (handleReaction)
+// Module 4971 (handleReaction)
 import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
+import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 
 const require = arg1;
 function handleReaction(optimistic) {
+  let channelId;
   let emoji;
   let messageId;
   let type;
   let userId;
-  let tmp = optimistic;
+  let colors = optimistic;
   ({ messageId, emoji } = optimistic);
-  ({ type, userId } = optimistic);
+  ({ type, userId, channelId } = optimistic);
+  let obj = require(4032) /* MAX_REACTIONS */;
   if (obj.shouldApplyReaction(optimistic)) {
     const id = store.getId();
+    basicChannel = basicChannel.getBasicChannel(channelId);
+    if (basicChannel != null) {
+      let addReaction = basicChannel.type;
+    }
+    let DM = ChannelTypes.DM;
     const value = map1.get(messageId);
     if (null == value) {
       return false;
     } else {
-      const reactionType = tmp.reactionType;
+      const reactionType = colors.reactionType;
       if ("MESSAGE_REACTION_ADD" === type) {
-        let addReactionResult = value.addReaction(emoji, tmp6, tmp.colors, reactionType);
+        addReaction = value.addReaction;
+        obj = { colors: null, reactionType: null, isDMChannel: null };
+        colors = colors.colors;
+        obj[0] = colors;
+        obj[1] = reactionType;
+        obj[2] = addReaction === DM;
+        let addReactionResult = addReaction(emoji, tmp8, obj);
+        const tmp10 = addReaction === DM;
       } else {
-        addReactionResult = value.removeReaction(emoji, tmp6, reactionType);
+        addReactionResult = value.removeReaction(emoji, tmp8, reactionType);
       }
-      tmp = map1;
+      DM = map1;
       const result = map1.set(messageId, addReactionResult);
     }
   } else {
@@ -63,7 +79,7 @@ prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isIndexing = false;
   this.isInitialFetchComplete = true;
   this.isHistoricalIndexing = false;
-  const aPIError = new require(4241) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4273) /* V6OrEarlierAPIError */.APIError(arg0);
   this.error = aPIError;
   this.analyticsId = null;
   this.documentsIndexed = 0;
@@ -90,7 +106,7 @@ prototype["handleSearchSuccess"] = function handleSearchSuccess(analyticsId, arr
     const messageIds = self.messageIds;
     let hasItem = messageIds.has(id.id);
     if (!hasItem) {
-      hasItem = outer1_3.isBlockedOrIgnoredForMessage(id);
+      hasItem = outer1_4.isBlockedOrIgnoredForMessage(id);
     }
     if (!hasItem) {
       const messageIds2 = self.messageIds;
@@ -110,7 +126,7 @@ class SearchMessageStore extends Store {
 }
 const prototype2 = SearchMessageStore.prototype;
 prototype2["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, markAllUserIdListsStale);
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, markAllUserIdListsStale);
 };
 prototype2["getMessage"] = function getMessage(arg0) {
   return map1.get(arg0);
@@ -275,15 +291,15 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     const item = ids.forEach((arg0) => {
       let value = store.get(arg0);
       if (value == null) {
-        if (typeof closure_4 !== "function") {
+        if (typeof closure_6 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        const obj = Object.create(closure_4.prototype);
+        const obj = Object.create(closure_6.prototype);
         const _Set = Set;
         const set = new Set();
         obj[8] = set;
         value = obj;
-        const tmp = closure_4;
+        const tmp = closure_6;
       }
       const result = store.set(arg0, value);
       value.handleSearchStart();
@@ -295,24 +311,24 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       id = id.id;
       let value = store.get(id);
       if (value == null) {
-        if (typeof closure_4 !== "function") {
+        if (typeof closure_6 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        const obj = Object.create(closure_4.prototype);
+        const obj = Object.create(closure_6.prototype);
         const _Set = Set;
         const set = new Set();
         obj[8] = set;
         value = obj;
-        const tmp = closure_4;
+        const tmp = closure_6;
       }
       let result = store.set(id, value);
       const messages = id.messages;
       const item = value.handleSearchSuccess(id, messages.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return callback(table[3]).createMessageRecord(tmp);
+        return callback(table[5]).createMessageRecord(tmp);
       })).forEach((id) => {
-        const result = closure_6.set(id.id, id);
+        const result = closure_8.set(id.id, id);
         let num = store.get(id.id);
         if (num == null) {
           num = 0;
@@ -326,15 +342,15 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     const item = ids.forEach((arg0) => {
       let value = store.get(arg0);
       if (value == null) {
-        if (typeof closure_4 !== "function") {
+        if (typeof closure_6 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        const obj = Object.create(closure_4.prototype);
+        const obj = Object.create(closure_6.prototype);
         const _Set = Set;
         const set = new Set();
         obj[8] = set;
         value = obj;
-        const tmp = closure_4;
+        const tmp = closure_6;
       }
       const result = store.set(arg0, value);
       value.handleSearchIndexing();
@@ -344,19 +360,19 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     let closure_0 = ids;
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
-      let value = outer1_5.get(arg0);
+      let value = outer1_7.get(arg0);
       if (value == null) {
-        if (typeof outer1_4 !== "function") {
+        if (typeof outer1_6 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        const obj = Object.create(outer1_4.prototype);
+        const obj = Object.create(outer1_6.prototype);
         const _Set = Set;
         const set = new Set();
         obj[8] = set;
         value = obj;
-        const tmp = outer1_4;
+        const tmp = outer1_6;
       }
-      const result = outer1_5.set(arg0, value);
+      const result = outer1_7.set(arg0, value);
       value.handleSearchFailure(ids.error);
     });
   },
@@ -395,7 +411,7 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, require(4586) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
+        const result = map1.set(id, require(4803) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
       }
     }
   },
@@ -438,6 +454,6 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     const map2 = new Map();
   }
 });
-let result = require("V6OrEarlierAPIError").fileFinishedImporting("modules/search/SearchMessageStore.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/search/SearchMessageStore.tsx");
 
 export default searchMessageStore;

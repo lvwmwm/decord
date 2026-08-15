@@ -1,10 +1,10 @@
-// Module ID: 13126
-// Function ID: 13127
+// Module ID: 12660
+// Function ID: 12661
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 676, 21, 4342, 5297, 712, 1628, 1297, 1236, 13127, 13128, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 6782, 712, 1629, 1297, 1236, 12661, 12662, 2]
 // Exports: default
 
-// Module 13126 (VoiceEmptyState)
+// Module 12660 (VoiceEmptyState)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -35,7 +35,7 @@ export default function VoiceEmptyState(channel) {
   const tmp = createCacheKey();
   let obj = { style: null, children: null };
   const items = [tmp.container, ];
-  obj = { paddingBottom: importDefault(1628)().bottom };
+  obj = { paddingBottom: importDefault(1629)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { title: null, body: null, lightSource: null, darkSource: null, titleStyle: null, bodyStyle: null, imageStyle: null };
@@ -43,11 +43,11 @@ export default function VoiceEmptyState(channel) {
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["/HABZo"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["5Jy2FY"]);
-  obj[2] = importDefault(13127);
-  obj[3] = importDefault(13127);
+  obj[2] = importDefault(12661);
+  obj[3] = importDefault(12661);
   ({ emptyTitle: obj3[4], emptyBody: obj3[5] } = tmp);
   obj[6] = { marginBottom: 16, marginTop: 20 };
-  const items1 = [callback(require(1297) /* Button */.ThemedEmptyState, obj), callback(importDefault(13128), { channel: channel.channel, style: tmp.button })];
+  const items1 = [callback(require(1297) /* Button */.ThemedEmptyState, obj), callback(importDefault(12662), { channel: channel.channel, style: tmp.button })];
   obj[1] = items1;
   return callback2(View, obj);
 };

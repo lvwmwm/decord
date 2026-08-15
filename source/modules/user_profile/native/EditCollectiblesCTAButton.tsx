@@ -1,8 +1,8 @@
-// Module ID: 8347
-// Function ID: 8348
-// Dependencies: [19, 4334, 678, 1623, 21, 4342, 1628, 589, 8348, 4083, 4776, 4007, 7083, 1236, 4311, 8349, 7070, 4310, 4777, 2]
+// Module ID: 8386
+// Function ID: 8387
+// Dependencies: [19, 4662, 678, 1624, 21, 4661, 1629, 589, 8387, 4115, 4744, 4039, 5313, 1236, 4343, 8388, 5300, 4342, 4745, 2]
 
-// Module 8347
+// Module 8386
 import importAllResult from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";

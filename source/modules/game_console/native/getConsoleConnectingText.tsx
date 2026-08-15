@@ -1,10 +1,10 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16389
+// Function ID: 16390
 // Name: getConsoleConnectingText
 // Dependencies: [676, 1236, 2]
 // Exports: getConsoleConnectingText
 
-// Module 16339 (getConsoleConnectingText)
+// Module 16389 (getConsoleConnectingText)
 import { PlatformTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");

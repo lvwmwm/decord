@@ -1,10 +1,10 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14695
+// Function ID: 14696
 // Name: AnimatedStripe
-// Dependencies: [32, 19, 21, 4342, 1933, 4083, 13980, 2]
+// Dependencies: [32, 19, 21, 4661, 1933, 4115, 14012, 2]
 // Exports: default
 
-// Module 14663 (AnimatedStripe)
+// Module 14695 (AnimatedStripe)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import jsxProd from "jsxProd";

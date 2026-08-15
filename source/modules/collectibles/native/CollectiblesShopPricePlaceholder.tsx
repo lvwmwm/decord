@@ -1,10 +1,10 @@
-// Module ID: 9491
-// Function ID: 9492
+// Module ID: 9258
+// Function ID: 9259
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 4342, 712, 4083, 4343, 2]
+// Dependencies: [19, 21, 4661, 712, 4115, 4664, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9491 (CollectiblesShopPricePlaceholder)
+// Module 9258 (CollectiblesShopPricePlaceholder)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,20 +20,20 @@ let result = require("createCacheKey").fileFinishedImporting("modules/collectibl
 export const CollectiblesShopPricePlaceholder = function CollectiblesShopPricePlaceholder(style) {
   let sharedValue;
   const tmp = createCacheKey();
-  sharedValue = sharedValue(4083).useSharedValue(0.3);
+  sharedValue = sharedValue(4115).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const obj = sharedValue(outer1_2[4]);
     const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[5]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(4083);
+  let obj = sharedValue(4115);
   const fn = function h() {
     return { opacity: sharedValue.get() };
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10107093534072;
   fn.__initData = closure_6;
-  const animatedStyle = sharedValue(4083).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4115).useAnimatedStyle(fn);
   style = [tmp.skeletonContainer, style.style, animatedStyle];
-  return jsx(importDefault(4083).View, { style });
+  return jsx(importDefault(4115).View, { style });
 };

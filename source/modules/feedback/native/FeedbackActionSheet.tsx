@@ -1,10 +1,10 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 10832
+// Function ID: 10833
 // Name: closeActionSheet
-// Dependencies: [32, 19, 17, 11077, 21, 4342, 712, 4310, 8916, 12, 11080, 4793, 4572, 11099, 2007, 1628, 5458, 5457, 5826, 5460, 4338, 11081, 5828, 5435, 8519, 1236, 2]
+// Dependencies: [32, 19, 17, 10811, 21, 4661, 712, 4342, 6701, 12, 10814, 4761, 5260, 10833, 2007, 1629, 6950, 6949, 7176, 6952, 4734, 10815, 6286, 6291, 8558, 1236, 2]
 // Exports: default
 
-// Module 11098 (closeActionSheet)
+// Module 10832 (closeActionSheet)
 import _slicedToArray from "_slicedToArray";
 import BottomSheetModal from "BottomSheetModal";
 import { View } from "RedesignBottomSheetTitleHeaderBase";
@@ -16,7 +16,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function closeActionSheet() {
-  importDefault(4310).hideActionSheet();
+  importDefault(4342).hideActionSheet();
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createCacheKey = { container: null, ratingsHeader: null, reasonsList: null };

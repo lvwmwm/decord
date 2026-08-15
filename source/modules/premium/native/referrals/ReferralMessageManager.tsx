@@ -1,9 +1,9 @@
-// Module ID: 17005
-// Function ID: 17006
+// Module ID: 17051
+// Function ID: 17052
 // Name: handleReferralMessages
-// Dependencies: [4013, 6982, 686, 11, 7658, 5322, 16583, 2]
+// Dependencies: [4045, 7421, 686, 11, 7876, 5038, 16635, 2]
 
-// Module 17005 (handleReferralMessages)
+// Module 17051 (handleReferralMessages)
 import reset from "reset";
 import emitChanges from "emitChanges";
 import "initialize";
@@ -16,8 +16,8 @@ function handleReferralMessages(type) {
         premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
         const tmp9Result = tmp9(11);
         if (tmp6) {
-          const userOffer = require(7658) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
-          const tmpResult = require(7658) /* _fetchUserOffer */;
+          const userOffer = require(7876) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
+          const tmpResult = require(7876) /* _fetchUserOffer */;
         }
         tmp6 = null == premiumTypeSubscription && emitChanges.shouldFetchReferralOffer(tmp9(11).extractTimestamp(type.content));
       }

@@ -1,9 +1,9 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 5399
+// Function ID: 5400
 // Name: getAll
-// Dependencies: [1395, 1218, 1391, 1990, 1983, 1910, 3989, 676, 1398, 505, 506, 3, 1955, 3980, 514, 698, 1403, 2]
+// Dependencies: [1395, 1218, 1391, 1990, 1983, 1910, 4021, 676, 1398, 505, 506, 3, 1955, 4012, 514, 698, 1403, 2]
 
-// Module 7181 (getAll)
+// Module 5399 (getAll)
 import createChannelRecord from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -101,21 +101,21 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     if (isSubscriptionRoleResult) {
       let tmp = obj;
       let tmp2 = dependencyMap;
-      obj = obj(3980);
+      obj = obj(4012);
       isSubscriptionRoleResult = obj.isSubscriptionRole(tmp18);
     }
     if (isSubscriptionRoleResult) {
       let tmp4 = obj;
       let tmp5 = dependencyMap;
-      let obj2 = obj(3980);
+      let obj2 = obj(4012);
       isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp18);
     }
     let tmp7 = dependencyMap;
     let tmp6 = obj;
-    let obj3 = obj(3980);
+    let obj3 = obj(4012);
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(3980);
+      let tmp6Result = tmp6(4012);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {

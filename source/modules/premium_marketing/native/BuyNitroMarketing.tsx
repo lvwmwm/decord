@@ -1,10 +1,10 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7923
+// Function ID: 7924
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1924, 21, 4342, 712, 7706, 1499, 7708, 7715, 7714, 7719, 5789, 7709, 7713, 7798, 7808, 7809, 7811, 7812, 7820, 12761, 12765, 12766, 12767, 2]
+// Dependencies: [19, 17, 1924, 21, 4661, 712, 7924, 1500, 7926, 7933, 7932, 7937, 7139, 7927, 7931, 8016, 8026, 8027, 8029, 8030, 8038, 12839, 12843, 12844, 12845, 2]
 // Exports: default
 
-// Module 7705 (BuyNitroMarketing)
+// Module 7923 (BuyNitroMarketing)
 import BuyNitroMarketingHeader from "BuyNitroMarketingHeader";
 import { View } from "BuyNitroPerk";
 import { PremiumTypes } from "GuildFeatures";
@@ -60,7 +60,7 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
   let obj3 = applicationId(onPaymentDismiss[9]);
   let tmp7;
   if (null != initialTier) {
-    obj = { tier: null, productId: "r" };
+    obj = { tier: null, productId: "a" };
     obj[0] = initialTier;
     tmp7 = obj;
   }
@@ -148,16 +148,16 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
     tmp19Result = "marketingPageBanner" === oneofKind;
   }
   if (tmp19Result) {
-    const obj5 = { bannerFields: null, componentId: null, analyticsPage: "Marketing Page Banner Tile", style: null, onPaymentSuccess: null, onPaymentDismiss: null };
+    const obj5 = { bannerFields: null, componentId: null, promotionId: null, analyticsPage: "Marketing Page Banner Tile", style: null, onPaymentSuccess: null, onPaymentDismiss: null };
     obj5[0] = promotionMarketingComponent.properties.properties.marketingPageBanner;
-    obj5[1] = promotionMarketingComponent.id;
+    ({ id: obj14[1], promotionId: obj14[2] } = promotionMarketingComponent);
     let disabled;
     if (isBuyNitroPurchaseBlocked) {
       disabled = tmp.disabled;
     }
-    obj5[3] = disabled;
-    obj5[4] = onPaymentSuccess;
-    obj5[5] = onPaymentDismiss;
+    obj5[4] = disabled;
+    obj5[5] = onPaymentSuccess;
+    obj5[6] = onPaymentDismiss;
     tmp19Result = tmp19(tmp11(tmp3[20]), obj5);
     const tmp11Result = tmp11(tmp3[20]);
   }

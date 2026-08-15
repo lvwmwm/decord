@@ -1,10 +1,10 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 9271
+// Function ID: 9272
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4083, 8719, 1356, 8721, 8722, 2]
+// Dependencies: [32, 19, 17, 21, 4115, 9272, 1356, 9274, 9275, 2]
 // Exports: AnimatedTooltip
 
-// Module 8718 (renderTooltipItem)
+// Module 9271 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -18,10 +18,10 @@ function renderTooltipItem(arg0, arg1) {
   if (null != arg0) {
     obj = {};
     const merged = Object.assign(arg0);
-    tmpResult = tmp(require(8719) /* Tooltip */.Tooltip, obj);
+    tmpResult = tmp(require(9272) /* Tooltip */.Tooltip, obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(4083).View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(importDefault(4115).View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
@@ -29,7 +29,7 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
   const merged = Object.assign(visible, Object.create(null));
   let importDefault;
-  let obj = visible(8721);
+  let obj = visible(9274);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const tmp3 = callback(React.useState(false), 2);
   importDefault = tmp3[1];
@@ -46,5 +46,5 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   obj[2] = result;
   obj[3] = result;
   obj[4] = renderTooltipItem;
-  return jsx(importDefault(8722), { useReducedMotion: React.useContext(visible(1356).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null });
+  return jsx(importDefault(9275), { useReducedMotion: React.useContext(visible(1356).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null });
 };

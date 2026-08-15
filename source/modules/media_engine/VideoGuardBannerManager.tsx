@@ -1,9 +1,9 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16721
+// Function ID: 16722
 // Name: prototype
-// Dependencies: [16676, 676, 4406, 5322, 13178, 16677, 709, 2]
+// Dependencies: [16722, 676, 4529, 5038, 13106, 16723, 709, 2]
 
-// Module 16675 (prototype)
+// Module 16721 (prototype)
 import initialize from "initialize";
 import { RTCConnectionStates } from "ME";
 import { MediaEngineContextTypes } from "DesktopSources";
@@ -26,12 +26,12 @@ let prototype = function VideoGuardBannerManager() {
     if (tmp) {
       let videoEnabled = initialize.hasShownBanner();
       if (!videoEnabled) {
-        const VideoGuardExperiment = applyArgumentsResult(13178).VideoGuardExperiment;
+        const VideoGuardExperiment = applyArgumentsResult(13106).VideoGuardExperiment;
         videoEnabled = VideoGuardExperiment.getConfig({ location: "VideoGuardBannerManager" }).videoEnabled;
       }
       if (!videoEnabled) {
-        const result = applyArgumentsResult(16677).presentVideoGuardBanner();
-        const obj = applyArgumentsResult(16677);
+        const result = applyArgumentsResult(16723).presentVideoGuardBanner();
+        const obj = applyArgumentsResult(16723);
         callback(709).dispatch({ type: "VIDEO_GUARD_BANNER_SHOWN" });
         const obj2 = callback(709);
       }

@@ -1,10 +1,10 @@
-// Module ID: 15508
-// Function ID: 15509
+// Module ID: 15558
+// Function ID: 15559
 // Name: UnreadIndicator
-// Dependencies: [19, 4785, 15498, 21, 4342, 712, 4065, 4711, 4776, 4083, 8075, 15509, 15239, 1236, 1351, 5842, 8363, 2]
+// Dependencies: [19, 4753, 15548, 21, 4661, 712, 4097, 4668, 4744, 4115, 8125, 15559, 15288, 1236, 1351, 7190, 8402, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 15508 (UnreadIndicator)
+// Module 15558 (UnreadIndicator)
 import noop from "noop";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
@@ -39,7 +39,7 @@ class UnreadIndicator {
     tmp5 = id;
     token = obj.useToken(require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE);
     c4 = token;
-    tmp7 = f62025(c7());
+    tmp7 = f62143(c7());
     GUILD_BAR_ITEM_SIZE = tmp7;
     tmp8 = MOUNTED === require("wrapChildrenDefault").TransitionStates.MOUNTED;
     c6 = tmp8;
@@ -94,7 +94,7 @@ class UnreadIndicator {
     obj[5] = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f62026;
+    fn.__initData = f62144;
     items1 = [, , , ];
     items1[0] = tmp8;
     items1[1] = sharedId;
@@ -129,10 +129,10 @@ class UnreadIndicator {
     obj1[2] = MOUNTED;
     obj1[3] = require("wrapChildrenDefault").TransitionStates;
     obj1[4] = cleanUp;
-    obj1[5] = require("module_4083").runOnJS;
+    obj1[5] = require("module_4115").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f62026;
+    fn2.__initData = f62144;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
@@ -506,7 +506,7 @@ export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWr
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const token = require(4065) /* map */.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const token = require(4097) /* map */.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
   return callback4(flag, flag2, token, callback());
 };
 export { UnreadIndicator };

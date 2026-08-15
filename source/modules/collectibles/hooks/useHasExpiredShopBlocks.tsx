@@ -1,10 +1,10 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 14954
+// Function ID: 14955
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 676, 7102, 2]
+// Dependencies: [32, 19, 676, 5339, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 14914 (useHasExpiredShopBlocks)
+// Module 14954 (useHasExpiredShopBlocks)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_TIMEOUT_MS } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 5415
-// Function ID: 5416
+// Module ID: 6924
+// Function ID: 6925
 // Name: decideFileExtension
-// Dependencies: [1486, 2]
+// Dependencies: [1487, 2]
 // Exports: decideFileExtension
 
-// Module 5415 (decideFileExtension)
+// Module 6924 (decideFileExtension)
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
 const result = require("set").fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 
@@ -15,7 +15,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
   }
   let tmp;
   if (flag) {
-    const toURLSafeResult = importDefault(1486).toURLSafe(outer1_0);
+    const toURLSafeResult = importDefault(1487).toURLSafe(outer1_0);
     let formatted;
     if (toURLSafeResult != null) {
       const searchParams = toURLSafeResult.searchParams;
@@ -35,7 +35,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
       }
     }
     tmp = tmp7;
-    const obj = importDefault(1486);
+    const obj = importDefault(1487);
   }
   if (tmp == null) {
     let tmp9;
@@ -61,7 +61,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
     tmp = tmp9;
   }
   if (tmp == null) {
-    const toURLSafeResult1 = importDefault(1486).toURLSafe(outer1_0);
+    const toURLSafeResult1 = importDefault(1487).toURLSafe(outer1_0);
     let tmp15;
     if (null != toURLSafeResult1) {
       let formatted1;
@@ -83,7 +83,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
       tmp15 = tmp14;
     }
     tmp = tmp15;
-    const obj3 = importDefault(1486);
+    const obj3 = importDefault(1487);
   }
   return tmp;
 };

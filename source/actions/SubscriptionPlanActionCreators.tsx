@@ -1,10 +1,10 @@
-// Module ID: 5939
-// Function ID: 5940
+// Module ID: 7223
+// Function ID: 7224
 // Name: fetchSubscriptionPlansForSKU
-// Dependencies: [5, 4009, 676, 1924, 709, 4686, 530, 4022, 4030, 2]
+// Dependencies: [5, 4041, 676, 1924, 709, 4466, 530, 4054, 4062, 2]
 // Exports: fetchPremiumSubscriptionPlans, fetchSubscriptionPlansBySKUs, resetSubscriptionPlanData
 
-// Module 5939 (fetchSubscriptionPlansForSKU)
+// Module 7223 (fetchSubscriptionPlansForSKU)
 import _deletePaymentSource from "_deletePaymentSource";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { Endpoints } from "ME";
@@ -47,7 +47,7 @@ function _fetchSubscriptionPlansForSKU() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

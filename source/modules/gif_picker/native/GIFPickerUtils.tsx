@@ -1,16 +1,16 @@
-// Module ID: 9993
-// Function ID: 9994
+// Module ID: 10198
+// Function ID: 10199
 // Name: transformFavoriteGifUrl
-// Dependencies: [19, 676, 1486, 9807, 9994, 1236, 2]
+// Dependencies: [19, 676, 1487, 9085, 10199, 1236, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 9993 (transformFavoriteGifUrl)
+// Module 10198 (transformFavoriteGifUrl)
 import noop from "noop";
 
 const require = arg1;
 function transformFavoriteGifUrl(url) {
   let combined = url;
-  const str = importDefault(1486).toURLSafe(url);
+  const str = importDefault(1487).toURLSafe(url);
   if (null != str) {
     if (obj6.isExternalProxiedAttachmentUrl(str)) {
       const formatted = str.pathname.toLowerCase();
@@ -29,9 +29,9 @@ function transformFavoriteGifUrl(url) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const tmp14Result = tmp14(9807);
+      const tmp14Result = tmp14(9085);
     }
-    obj6 = require(9807) /* shouldRefreshAttachmentUrl */;
+    obj6 = require(9085) /* shouldRefreshAttachmentUrl */;
     tmp14 = require;
   }
   if (regex.test(arg1)) {
@@ -52,7 +52,7 @@ function transformFavoriteGifUrl(url) {
     }
     return combined;
   }
-  const obj = importDefault(1486);
+  const obj = importDefault(1487);
 }
 require("ME").GIFPickerResultTypes;
 const re5 = /(https?:\/\/)(?!media(?:\d+)?\.)(?:[^.]+\.)*giphy\.com/;
@@ -62,7 +62,7 @@ let result = require("isDiscordProxiedAssetUrl").fileFinishedImporting("modules/
 
 export const GIF_HEADER_HEIGHT = 56;
 export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  let obj = sortedFavoriteGIFs(9994);
+  let obj = sortedFavoriteGIFs(10199);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   obj = {

@@ -1,10 +1,10 @@
-// Module ID: 10602
-// Function ID: 10603
+// Module ID: 8725
+// Function ID: 8726
 // Name: _getActivityLaunchErrorInfo
-// Dependencies: [5, 7654, 676, 1236, 10603, 4034, 10604, 4591, 8289, 2]
+// Dependencies: [5, 7872, 676, 1236, 8726, 4066, 8701, 4808, 8330, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10602 (_getActivityLaunchErrorInfo)
+// Module 8725 (_getActivityLaunchErrorInfo)
 import explicitContentFromProto from "explicitContentFromProto";
 import initialize from "initialize";
 import { DevShelfFetchState } from "initialize";
@@ -33,7 +33,7 @@ function _getActivityLaunchErrorInfo() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

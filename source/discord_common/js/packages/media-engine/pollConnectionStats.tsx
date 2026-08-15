@@ -1,10 +1,10 @@
-// Module ID: 4449
-// Function ID: 4450
+// Module ID: 4577
+// Function ID: 4578
 // Name: pollConnectionStats
-// Dependencies: [5, 4441, 4450, 2]
+// Dependencies: [5, 4569, 4578, 2]
 // Exports: default
 
-// Module 4449 (pollConnectionStats)
+// Module 4577 (pollConnectionStats)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -36,7 +36,7 @@ export default function pollConnectionStats(on) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -72,7 +72,7 @@ export default function pollConnectionStats(on) {
               }
               let num5 = 3;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp5) {
             let tmp14 = closure_4;
@@ -148,9 +148,9 @@ export default function pollConnectionStats(on) {
     return applyArgumentsResult;
   }
   const dependencyMap = false;
-  on.on(_require(4441).MediaEngineEvent.Destroy, () => {
+  on.on(_require(4569).MediaEngineEvent.Destroy, () => {
     let c1 = true;
     return true;
   });
-  let timerId = setTimeout(pollStats, _require(4450).STATS_INTERVAL);
+  let timerId = setTimeout(pollStats, _require(4578).STATS_INTERVAL);
 };

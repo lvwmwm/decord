@@ -1,10 +1,10 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 10045
+// Function ID: 10046
 // Name: NotificationWrapper
-// Dependencies: [32, 19, 17, 9846, 9830, 676, 21, 4083, 4342, 9847, 9916, 9919, 9920, 9952, 9953, 10263, 10264, 10267, 9829, 589, 4793, 4343, 698, 5488, 4776, 1297, 5389, 9876, 2]
+// Dependencies: [32, 19, 17, 10046, 10030, 676, 21, 4115, 4661, 10047, 10122, 10125, 10126, 10157, 10158, 10521, 10522, 10525, 10029, 589, 4761, 4664, 698, 6377, 4744, 1297, 6803, 10080, 2]
 // Exports: default
 
-// Module 9845 (NotificationWrapper)
+// Module 10045 (NotificationWrapper)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import { StyleSheet } from "MessageRequestInAppNotification";
@@ -12,7 +12,7 @@ import closure_6 from "initialize";
 import set from "set";
 import ME from "ME";
 import { jsx } from "CONFIG_NEVER_ANIMATE_TIMING";
-import { Easing } from "module_4083";
+import { Easing } from "module_4115";
 import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
@@ -31,38 +31,38 @@ function NotificationWrapper(notification) {
   if (constants.MESSAGE === type) {
     let obj = { notification: null };
     obj[0] = notification;
-    return jsx(importDefault(9847), { notification: null });
+    return jsx(importDefault(10047), { notification: null });
   } else if (tmp.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification: null };
     obj[0] = notification;
-    return jsx(importDefault(9916), { notification: null });
+    return jsx(importDefault(10122), { notification: null });
   } else if (tmp.FORUM_THREAD_CREATED === type) {
     const obj1 = { notification: null };
     obj1[0] = notification;
-    return jsx(importDefault(9919), { notification: null });
+    return jsx(importDefault(10125), { notification: null });
   } else if (tmp.BUG_REPORTER === type) {
     const obj2 = { notification: null };
     obj2[0] = notification;
-    return jsx(require(9920) /* BugReporterNotification */.BugReporterNotification, { notification: null });
+    return jsx(require(10126) /* BugReporterNotification */.BugReporterNotification, { notification: null });
   } else if (tmp.ALERT === type) {
     const obj3 = { notification: null };
     obj3[0] = notification;
-    return jsx(importDefault(9952), { notification: null });
+    return jsx(importDefault(10157), { notification: null });
   } else if (tmp.REACTION === type) {
     const obj4 = { notification: null };
     obj4[0] = notification;
-    return jsx(importDefault(9953), { notification: null });
+    return jsx(importDefault(10158), { notification: null });
   } else if (tmp.MESSAGE_REMINDER === type) {
     const obj5 = { notification: null };
     obj5[0] = notification;
-    return jsx(importDefault(10263), { notification: null });
+    return jsx(importDefault(10521), { notification: null });
   } else {
     if (tmp.RESTRICTED_HOURS_WARNING !== type) {
       if (tmp.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (tmp.MESSAGE_REQUEST === type) {
           obj = { notification: null };
           obj[0] = notification;
-          return jsx(importDefault(10267), { notification: null });
+          return jsx(importDefault(10525), { notification: null });
         } else {
           return null;
         }
@@ -70,13 +70,13 @@ function NotificationWrapper(notification) {
     }
     const obj6 = { notification: null };
     obj6[0] = notification;
-    return jsx(importDefault(10264), { notification: null });
+    return jsx(importDefault(10522), { notification: null });
   }
 }
 ({ DEFAULT_ANIMATION_TIMING: error, extrapolateConfig: metroImportAll, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = set);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = ME);
 let obj = { duration: 200, easing: null };
-obj[1] = Easing.in(require("module_4083").Easing.ease);
+obj[1] = Easing.in(require("module_4115").Easing.ease);
 let closure_16 = createCacheKey.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_18 = { code: "function InAppNotificationContainerTsx1(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };
 let closure_19 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setPanning}=this.__closure;runOnJS(setPanning)(false);}" };

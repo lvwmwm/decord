@@ -1,9 +1,9 @@
-// Module ID: 14090
-// Function ID: 14091
+// Module ID: 14122
+// Function ID: 14123
 // Name: route
-// Dependencies: [1922, 8148, 676, 589, 10421, 1236, 13968, 2]
+// Dependencies: [1922, 8198, 676, 589, 10669, 1236, 14000, 2]
 
-// Module 14090 (route)
+// Module 14122 (route)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["9AjdkD"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountDisplayNameSettingTrailing() {
     const items = [mergeGuildAvatar];
     return require(589) /* initialize */.useStateFromStores(items, () => {
@@ -30,7 +30,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PROFILE_CUSTOMIZATION,
   getComponent() {
-    return require(13968) /* ProfileCustomizationSubsection */.default;
+    return require(14000) /* ProfileCustomizationSubsection */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

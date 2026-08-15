@@ -1,10 +1,10 @@
-// Module ID: 4323
-// Function ID: 4324
+// Module ID: 4355
+// Function ID: 4356
 // Name: parseQuery
-// Dependencies: [32, 676, 678, 4324, 4325, 1483, 4060, 1488, 4326, 4331, 12308, 4601, 13276, 1486, 4536, 10488, 6936, 1624, 500, 9282, 698, 513, 13277, 2]
+// Dependencies: [32, 676, 678, 4356, 4357, 1484, 4092, 1489, 4358, 4363, 4380, 4381, 4487, 1487, 4488, 4373, 4489, 1625, 500, 4490, 698, 513, 4491, 2]
 // Exports: default
 
-// Module 4323 (parseQuery)
+// Module 4355 (parseQuery)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import items from "items";
@@ -24,7 +24,7 @@ function parseQuery(arg0) {
   try {
     const _Object = Object;
     const _Object2 = Object;
-    const entries = Object.entries(importDefault(1483).parse(arg0));
+    const entries = Object.entries(importDefault(1484).parse(arg0));
     return Object.fromEntries(entries.map((arg0) => {
       let tmp;
       let tmp2;
@@ -85,7 +85,7 @@ export default function parseURL(arg0) {
     flag = false;
   }
   let uRL = importDefault;
-  let obj = importDefault(4060);
+  let obj = importDefault(4092);
   const sanitizeUrlResult = obj.sanitizeUrl(arg0);
   if (null == sanitizeUrlResult) {
     obj = { payload: null };
@@ -94,7 +94,7 @@ export default function parseURL(arg0) {
     obj[0] = obj;
     return obj;
   } else {
-    const parsed = uRL(1488).parse(sanitizeUrlResult);
+    const parsed = uRL(1489).parse(sanitizeUrlResult);
     ({ host, pathname, query } = parsed);
     let str = query;
     ({ protocol, hostname } = parsed);
@@ -104,11 +104,11 @@ export default function parseURL(arg0) {
     let tmp87Result = tmp87(str);
     ({ fingerprint, attemptId, installationId, referrer_id, sort, filter } = tmp87Result);
     ({ username, custom_id, link_id } = tmp87Result);
-    let obj1 = require(4326) /* getPathsFromURL */;
+    let obj1 = require(4358) /* trimTrailingPunctuation */;
     const findCodedLinkResult = obj1.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
       const type = findCodedLinkResult.type;
-      if (tmp5(4331).CodedLinkType.INVITE === type) {
+      if (tmp5(4363).CodedLinkType.INVITE === type) {
         obj1 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
         obj1[0] = fingerprint;
         obj1[1] = attemptId;
@@ -120,7 +120,7 @@ export default function parseURL(arg0) {
         obj2[3] = attemptId;
         obj1[3] = obj2;
         return obj1;
-      } else if (tmp5(4331).CodedLinkType.TEMPLATE === type) {
+      } else if (tmp5(4363).CodedLinkType.TEMPLATE === type) {
         const obj3 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
         obj3[0] = fingerprint;
         obj3[1] = attemptId;
@@ -131,13 +131,13 @@ export default function parseURL(arg0) {
         obj3[3] = obj4;
         return obj3;
       } else {
-        if (tmp5(4331).CodedLinkType.BUILD_OVERRIDE !== type) {
-          if (tmp5(4331).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-            if (tmp5(4331).CodedLinkType.EXPERIMENT !== type) {
-              if (tmp5(4331).CodedLinkType.EVENT !== type) {
-                if (tmp5(4331).CodedLinkType.CHANNEL_LINK !== type) {
-                  if (tmp5(4331).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-                    if (tmp5(4331).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        if (tmp5(4363).CodedLinkType.BUILD_OVERRIDE !== type) {
+          if (tmp5(4363).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+            if (tmp5(4363).CodedLinkType.EXPERIMENT !== type) {
+              if (tmp5(4363).CodedLinkType.EVENT !== type) {
+                if (tmp5(4363).CodedLinkType.CHANNEL_LINK !== type) {
+                  if (tmp5(4363).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+                    if (tmp5(4363).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                       const obj5 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                       obj5[0] = fingerprint;
                       obj5[1] = attemptId;
@@ -151,13 +151,13 @@ export default function parseURL(arg0) {
                       obj6[5] = flag;
                       obj5[3] = obj6;
                       return obj5;
-                    } else if (tmp5(4331).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                      if (tmp5(4331).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp5(4331).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp5(4331).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp5(4331).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp5(4331).CodedLinkType.QUESTS_EMBED !== type) {
-                                if (tmp5(4331).CodedLinkType.GAME_PROFILE === type) {
+                    } else if (tmp5(4363).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                      if (tmp5(4363).CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (tmp5(4363).CodedLinkType.SERVER_SHOP !== type) {
+                          if (tmp5(4363).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                            if (tmp5(4363).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                              if (tmp5(4363).CodedLinkType.QUESTS_EMBED !== type) {
+                                if (tmp5(4363).CodedLinkType.GAME_PROFILE === type) {
                                   const obj7 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                                   obj7[0] = fingerprint;
                                   obj7[1] = attemptId;
@@ -167,11 +167,11 @@ export default function parseURL(arg0) {
                                   obj8[1] = findCodedLinkResult.code;
                                   obj7[3] = obj8;
                                   return obj7;
-                                } else if (tmp5(4331).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp5(4331).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp5(4331).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                      if (tmp5(4331).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                        let tmp5Result = tmp5(12308);
+                                } else if (tmp5(4363).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                  if (tmp5(4363).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                    if (tmp5(4363).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                      if (tmp5(4363).CodedLinkType.COLLECTIBLES_SHOP === type) {
+                                        let tmp5Result = tmp5(4380);
                                         const tmp10 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                         if (tmp5Result.isVirtualCurrencyEnabled().enabled) {
                                           if (tmp9 === constants2.ORBS) {
@@ -195,8 +195,8 @@ export default function parseURL(arg0) {
                                         FEATURED_PAGE = constants3.FEATURED_PAGE;
                                         const str2 = findCodedLinkResult.code;
                                         const tmp8 = callback(findCodedLinkResult.code.split("-"), 2);
-                                      } else if (tmp5(4331).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                        if (tmp5(4331).CodedLinkType.USER_PROFILE !== type) {
+                                      } else if (tmp5(4363).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                        if (tmp5(4363).CodedLinkType.USER_PROFILE !== type) {
                                           const _Error2 = Error;
                                           const _HermesInternal = HermesInternal;
                                           throw Error("Unknown coded link type: " + findCodedLinkResult.type);
@@ -228,7 +228,7 @@ export default function parseURL(arg0) {
         return obj11;
       }
     }
-    const findGiftCodesResult = require(4601) /* _resolveGiftCode */.findGiftCodes(sanitizeUrlResult);
+    const findGiftCodesResult = require(4381) /* _resolveGiftCode */.findGiftCodes(sanitizeUrlResult);
     if (findGiftCodesResult.length > 0) {
       const obj13 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
       obj13[0] = fingerprint;
@@ -240,7 +240,7 @@ export default function parseURL(arg0) {
       obj13[3] = obj14;
       return obj13;
     } else {
-      tmp5Result = tmp5(13276);
+      tmp5Result = tmp5(4487);
       const result = tmp5Result.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -257,7 +257,7 @@ export default function parseURL(arg0) {
       }
       if (!uRLResult1.isDiscordHostname(host)) {
         if (!uRLResult2.isDiscordProtocol(protocol)) {
-          const uRLResult3 = uRL(1486);
+          const uRLResult3 = uRL(1487);
         }
         let match;
         if (host != null) {
@@ -301,7 +301,7 @@ export default function parseURL(arg0) {
         return obj21;
       }
       if (null != pathname) {
-        const tryParseDiceRollLinkResult = tmp5(4536).tryParseDiceRollLink(pathname);
+        const tryParseDiceRollLinkResult = tmp5(4488).tryParseDiceRollLink(pathname);
         if (null != tryParseDiceRollLinkResult) {
           const obj23 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
           obj23[0] = fingerprint;
@@ -309,11 +309,11 @@ export default function parseURL(arg0) {
           obj23[2] = installationId;
           const obj24 = { type: null, guildId: null, channelId: null, diceCount: null, diceSides: null };
           obj24[0] = closure_7.ROLL_DICE;
-          ({ guildId: obj62[1], channelId: obj62[2], diceCount: obj62[3], diceSides: obj62[4] } = tryParseDiceRollLinkResult);
+          ({ guildId: obj64[1], channelId: obj64[2], diceCount: obj64[3], diceSides: obj64[4] } = tryParseDiceRollLinkResult);
           obj23[3] = obj24;
           return obj23;
         } else {
-          const tryParseChannelPathResult = tmp5(4536).tryParseChannelPath(pathname);
+          const tryParseChannelPathResult = tmp5(4488).tryParseChannelPath(pathname);
           if (null != tryParseChannelPathResult) {
             if (query == null) {
               query = "";
@@ -329,7 +329,7 @@ export default function parseURL(arg0) {
             }
             const obj26 = { type: null, guildId: null, channelId: null, messageId: null, summaryId: null };
             obj26[0] = CHANNEL;
-            ({ guildId: obj60[1], channelId: obj60[2], messageId: obj60[3] } = tryParseChannelPathResult);
+            ({ guildId: obj62[1], channelId: obj62[2], messageId: obj62[3] } = tryParseChannelPathResult);
             obj26[4] = tmp87(query).summaryId;
             obj25[3] = obj26;
             return obj25;
@@ -370,7 +370,7 @@ export default function parseURL(arg0) {
               if (query == null) {
                 str13 = "";
               }
-              let ad_creative_ids = uRL(1483).parse(str13).ad_creative_ids;
+              let ad_creative_ids = uRL(1484).parse(str13).ad_creative_ids;
               if (ad_creative_ids == null) {
                 ad_creative_ids = [];
               }
@@ -428,7 +428,7 @@ export default function parseURL(arg0) {
                 if (query == null) {
                   str5 = "";
                 }
-                const result1 = tmp5(10488).parseOAuth2AuthorizeProps(str5);
+                const result1 = tmp5(4373).parseOAuth2AuthorizeProps(str5);
                 if (null != result1) {
                   const obj39 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                   obj39[0] = fingerprint;
@@ -443,7 +443,7 @@ export default function parseURL(arg0) {
                   obj39[3] = obj40;
                   return obj39;
                 }
-                const tmp5Result3 = tmp5(10488);
+                const tmp5Result3 = tmp5(4373);
               }
               if (null != pathname.match(closure_17)) {
                 let str12 = query;
@@ -479,17 +479,33 @@ export default function parseURL(arg0) {
                   }
                 }
                 const match5 = pathname.match(closure_13);
-                const result2 = tmp5(4536).tryParseEventDetailsPath(pathname);
+                if (null != match5) {
+                  if (match5.length > 1) {
+                    const obj46 = { type: null };
+                    obj46[0] = closure_7.SUBSCRIPTION_SETTINGS;
+                    while (true) {
+                      if (null != tmp25) {
+                        let obj47 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                        obj47[0] = fingerprint;
+                        obj47[1] = attemptId;
+                        obj47[2] = installationId;
+                        obj47[3] = tmp25;
+                        return obj47;
+                      }
+                    }
+                  }
+                }
+                const result2 = tmp5(4488).tryParseEventDetailsPath(pathname);
                 if (null != result2) {
-                  const obj46 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                  obj46[0] = fingerprint;
-                  obj46[1] = attemptId;
-                  obj46[2] = installationId;
-                  const obj47 = { type: null, guildEventId: null, guildId: null, recurrenceId: null };
-                  obj47[0] = closure_7.GUILD_EVENT_DETAILS;
-                  ({ guildEventId: obj38[1], guildId: obj38[2], recurrenceId: obj38[3] } = result2);
-                  obj46[3] = obj47;
-                  return obj46;
+                  const obj48 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                  obj48[0] = fingerprint;
+                  obj48[1] = attemptId;
+                  obj48[2] = installationId;
+                  const obj49 = { type: null, guildEventId: null, guildId: null, recurrenceId: null };
+                  obj49[0] = closure_7.GUILD_EVENT_DETAILS;
+                  ({ guildEventId: obj39[1], guildId: obj39[2], recurrenceId: obj39[3] } = result2);
+                  obj48[3] = obj49;
+                  return obj48;
                 } else if (null != pathname.match(closure_19)) {
                   const _decodeURIComponent = decodeURIComponent;
                   tmp87Result = tmp87(decodeURIComponent(query));
@@ -508,25 +524,25 @@ export default function parseURL(arg0) {
                         const searchParams = uRL.searchParams;
                         searchParams.append("fingerprint", fingerprint2);
                       }
-                      const obj48 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                      obj48[0] = fingerprint2;
-                      obj48[1] = attemptId;
-                      obj48[2] = installationId;
-                      const obj49 = { type: null, nonce: null, redirectUrl: null, fingerprint: null };
-                      obj49[0] = closure_7.MOBILE_WEB_HANDOFF;
-                      obj49[1] = key;
-                      obj49[2] = uRL;
-                      obj49[3] = fingerprint2;
-                      obj48[3] = obj49;
-                      return obj48;
+                      const obj50 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                      obj50[0] = fingerprint2;
+                      obj50[1] = attemptId;
+                      obj50[2] = installationId;
+                      const obj51 = { type: null, nonce: null, redirectUrl: null, fingerprint: null };
+                      obj51[0] = closure_7.MOBILE_WEB_HANDOFF;
+                      obj51[1] = key;
+                      obj51[2] = uRL;
+                      obj51[3] = fingerprint2;
+                      obj50[3] = obj51;
+                      return obj50;
                     }
                   }
-                  const obj50 = { reason: "invalid_query_params", fingerprint: null };
+                  const obj52 = { reason: "invalid_query_params", fingerprint: null };
                   const uRLResult5 = uRL(698);
-                  obj50[1] = tmp5(513).maybeExtractId(fingerprint2);
-                  const obj51 = { fingerprint: null };
-                  obj51[0] = fingerprint2;
-                  uRLResult5.track(constants.MOBILE_WEB_HANDOFF_FAILURE, obj50, obj51);
+                  obj52[1] = tmp5(513).maybeExtractId(fingerprint2);
+                  const obj53 = { fingerprint: null };
+                  obj53[0] = fingerprint2;
+                  uRLResult5.track(constants.MOBILE_WEB_HANDOFF_FAILURE, obj52, obj53);
                   const _Error = Error;
                   const error = new Error("Missing nonce or redirect query params");
                   throw error;
@@ -537,51 +553,52 @@ export default function parseURL(arg0) {
                     if (query == null) {
                       str9 = "";
                     }
-                    const obj52 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                    obj52[0] = fingerprint;
-                    obj52[1] = attemptId;
-                    obj52[2] = installationId;
-                    const obj53 = { type: null, provider: null, callbackCode: null, callbackState: null };
-                    obj53[0] = closure_7.USER_CONNECTIONS_LINK_CALLBACK;
-                    obj53[1] = match6[1];
-                    ({ code: obj30[2], state: obj30[3] } = tmp87(decodeURIComponent(str9)));
-                    obj52[3] = obj53;
-                    return obj52;
+                    const obj54 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                    obj54[0] = fingerprint;
+                    obj54[1] = attemptId;
+                    obj54[2] = installationId;
+                    const obj55 = { type: null, provider: null, callbackCode: null, callbackState: null };
+                    obj55[0] = closure_7.USER_CONNECTIONS_LINK_CALLBACK;
+                    obj55[1] = match6[1];
+                    ({ code: obj31[2], state: obj31[3] } = tmp87(decodeURIComponent(str9)));
+                    obj54[3] = obj55;
+                    return obj54;
                   } else {
-                    const match7 = pathname.match(closure_21);
-                    if (null != match7) {
-                      const tmp46 = callback(match7, 2);
+                    uRL = closure_21;
+                    uRL = pathname.match(closure_21);
+                    if (null != uRL) {
+                      const tmp46 = callback(uRL, 2);
                       const first = tmp46[0];
                       let str8 = query;
                       if (query == null) {
                         str8 = "";
                       }
-                      const obj54 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                      obj54[0] = fingerprint;
-                      obj54[1] = attemptId;
-                      obj54[2] = installationId;
-                      const obj55 = { type: null, provider: null, searchParams: null };
-                      obj55[0] = closure_7.USER_CONNECTIONS_CALLBACK;
-                      obj55[1] = tmp46[1];
-                      obj55[2] = tmp87(decodeURIComponent(str8));
-                      obj54[3] = obj55;
-                      return obj54;
+                      const obj56 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                      obj56[0] = fingerprint;
+                      obj56[1] = attemptId;
+                      obj56[2] = installationId;
+                      const obj57 = { type: null, provider: null, searchParams: null };
+                      obj57[0] = closure_7.USER_CONNECTIONS_CALLBACK;
+                      obj57[1] = tmp46[1];
+                      obj57[2] = tmp87(decodeURIComponent(str8));
+                      obj56[3] = obj57;
+                      return obj56;
                     } else {
                       uRL = closure_22;
                       uRL = pathname.match(closure_22);
                       if (null != uRL) {
                         const tmp41 = callback(uRL, 4);
-                        const obj56 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                        obj56[0] = fingerprint;
-                        obj56[1] = attemptId;
-                        obj56[2] = installationId;
-                        const obj57 = { type: null, guildId: null, settingsSection: null, settingsSubsection: null };
-                        obj57[0] = closure_7.GUILD_SETTINGS;
-                        obj57[1] = tmp41[1];
-                        obj57[2] = uRL(13277)(closure_5, tmp41[2]);
-                        obj57[3] = uRL(13277)(closure_6, tmp41[3]);
-                        obj56[3] = obj57;
-                        return obj56;
+                        const obj58 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                        obj58[0] = fingerprint;
+                        obj58[1] = attemptId;
+                        obj58[2] = installationId;
+                        const obj59 = { type: null, guildId: null, settingsSection: null, settingsSubsection: null };
+                        obj59[0] = closure_7.GUILD_SETTINGS;
+                        obj59[1] = tmp41[1];
+                        obj59[2] = uRL(4491)(closure_5, tmp41[2]);
+                        obj59[3] = uRL(4491)(closure_6, tmp41[3]);
+                        obj58[3] = obj59;
+                        return obj58;
                       } else {
                         uRL = closure_23;
                         uRL = pathname.match(closure_23);
@@ -591,17 +608,17 @@ export default function parseURL(arg0) {
                           if (query == null) {
                             str7 = "";
                           }
-                          const obj58 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                          obj58[0] = fingerprint;
-                          obj58[1] = attemptId;
-                          obj58[2] = installationId;
-                          const obj59 = { type: null, settingsSection: null, settingsSubsection: null, feature: null };
-                          obj59[0] = closure_7.GUILD_SETTINGS_PICKER;
-                          obj59[1] = uRL(13277)(closure_5, tmp36[1]);
-                          obj59[2] = uRL(13277)(closure_6, tmp36[2]);
-                          obj59[3] = tmp87(str7).feature;
-                          obj58[3] = obj59;
-                          return obj58;
+                          const obj60 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                          obj60[0] = fingerprint;
+                          obj60[1] = attemptId;
+                          obj60[2] = installationId;
+                          const obj61 = { type: null, settingsSection: null, settingsSubsection: null, feature: null };
+                          obj61[0] = closure_7.GUILD_SETTINGS_PICKER;
+                          obj61[1] = uRL(4491)(closure_5, tmp36[1]);
+                          obj61[2] = uRL(4491)(closure_6, tmp36[2]);
+                          obj61[3] = tmp87(str7).feature;
+                          obj60[3] = obj61;
+                          return obj60;
                         } else {
                           uRL = closure_24;
                           if (null != pathname.match(closure_24)) {
@@ -609,31 +626,31 @@ export default function parseURL(arg0) {
                             if (query == null) {
                               str6 = "";
                             }
-                            const obj60 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
-                            obj60[0] = fingerprint;
-                            obj60[1] = attemptId;
-                            obj60[2] = installationId;
-                            const obj61 = { type: null, userCode: null };
-                            obj61[0] = closure_7.ACTIVATE_DEVICE;
-                            obj61[1] = tmp87(decodeURIComponent(str6)).user_code;
-                            obj60[3] = obj61;
-                            return obj60;
+                            const obj62 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
+                            obj62[0] = fingerprint;
+                            obj62[1] = attemptId;
+                            obj62[2] = installationId;
+                            const obj63 = { type: null, userCode: null };
+                            obj63[0] = closure_7.ACTIVATE_DEVICE;
+                            obj63[1] = tmp87(decodeURIComponent(str6)).user_code;
+                            obj62[3] = obj63;
+                            return obj62;
                           }
                         }
                       }
                     }
                   }
                 }
-                const tmp5Result4 = tmp5(4536);
+                const tmp5Result4 = tmp5(4488);
               }
             }
           }
-          const tmp5Result2 = tmp5(4536);
+          const tmp5Result2 = tmp5(4488);
         }
-        const tmp5Result1 = tmp5(4536);
+        const tmp5Result1 = tmp5(4488);
       }
-      uRLResult1 = uRL(1486);
+      uRLResult1 = uRL(1487);
     }
-    const uRLResult = uRL(1488);
+    const uRLResult = uRL(1489);
   }
 };

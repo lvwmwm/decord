@@ -1,9 +1,9 @@
-// Module ID: 4165
-// Function ID: 4166
+// Module ID: 4197
+// Function ID: 4198
 // Name: handleConnectionOpen
-// Dependencies: [4166, 1218, 4169, 1910, 676, 1222, 589, 4170, 4183, 709, 2]
+// Dependencies: [4198, 1218, 4201, 1910, 676, 1222, 589, 4202, 4215, 709, 2]
 
-// Module 4165 (handleConnectionOpen)
+// Module 4197 (handleConnectionOpen)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -72,9 +72,9 @@ prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
     lastSelectedGuildId = null;
   }
   const obj = { path: null };
-  const RouteParam = require(4183) /* RouteParam */.RouteParam;
+  const RouteParam = require(4215) /* RouteParam */.RouteParam;
   obj[0] = closure_7.CHANNEL(RouteParam.guildId());
-  const matchPathResult = require(4170) /* matchPath */.matchPath(initialize.lastNonVoiceRoute, obj);
+  const matchPathResult = require(4202) /* matchPath */.matchPath(initialize.lastNonVoiceRoute, obj);
   let guildId;
   if (matchPathResult != null) {
     const params = matchPathResult.params;

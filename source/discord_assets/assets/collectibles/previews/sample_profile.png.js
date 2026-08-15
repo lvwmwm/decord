@@ -1,9 +1,9 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9209
+// Function ID: 9210
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9442 (metadata)
+// Module 9209 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/collectibles/previews/sample_profile.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2c2da7ef53f198d0066525641b01ec9b6b6d53e543ac18d2cbf64c1604055bff.png";

@@ -1,10 +1,10 @@
-// Module ID: 8283
-// Function ID: 8284
+// Module ID: 8324
+// Function ID: 8325
 // Name: transformToRowGeneratedComponent
-// Dependencies: [109, 17, 4589, 8284, 8269, 1370, 1954, 4588, 1236, 8285, 8292, 8293, 8295, 8298, 8299, 4582, 4920, 8300, 8302, 8127, 4532, 1403, 4593, 8280, 8279, 1486, 1405, 687, 4332, 8314, 501, 4002, 2]
+// Dependencies: [109, 17, 4806, 8325, 8315, 1370, 1954, 4805, 1236, 8326, 8333, 8334, 8336, 8339, 8340, 4992, 4835, 8341, 8343, 8177, 4811, 1403, 4810, 8321, 8320, 1487, 1405, 687, 6807, 8353, 501, 4034, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8283 (transformToRowGeneratedComponent)
+// Module 8324 (transformToRowGeneratedComponent)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { processColor } from "set";
 import { CheckpointVersions } from "CheckpointPersonas";
@@ -570,27 +570,27 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(8299).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(8340).MediaGalleryItemType.IMAGE;
             let tmp4 = tmp;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8299).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8340).MediaGalleryItemType.VIDEO;
               tmp4 = tmp;
             }
-            tmpResult = tmp(4532);
+            tmpResult = tmp(4811);
           }
-          obj = require(4532) /* urlMatchesFileExtension */;
+          obj = require(4811) /* urlMatchesFileExtension */;
         }
         const size = {};
         const merged = Object.assign(file);
         let tmp4Result = tmp4(1403);
-        size.srcIsAnimated = tmp4Result.hasFlag(file.flags, tmp4(4593).UnfurledMediaItemFlags.IS_ANIMATED);
+        size.srcIsAnimated = tmp4Result.hasFlag(file.flags, tmp4(4810).UnfurledMediaItemFlags.IS_ANIMATED);
         if (!shouldShowMedia.shouldShowMedia) {
           size.height = 0;
           size.width = 0;
         }
-        if (VISUAL_PLACEHOLDER === tmp4(8299).MediaGalleryItemType.IMAGE) {
-          const obj4 = importDefault(8280);
+        if (VISUAL_PLACEHOLDER === tmp4(8340).MediaGalleryItemType.IMAGE) {
+          const obj4 = importDefault(8321);
           ({ proxyUrl, width: width2 } = size);
           if (width2 == null) {
             width2 = 0;
@@ -601,14 +601,14 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
           }
           size.proxyUrl = obj4.getImageSrc(proxyUrl, width2, num3, !shouldShowMedia.shouldAutoPlayGifs);
         }
-        tmp4Result = tmp4(8279);
+        tmp4Result = tmp4(8320);
         size.width = tmp4Result.sanitizeMediaDimension(size.width);
-        size.height = tmp4(8279).sanitizeMediaDimension(size.height);
+        size.height = tmp4(8320).sanitizeMediaDimension(size.height);
         return size;
       }
     }
   }
-  VISUAL_PLACEHOLDER = require(8299) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  VISUAL_PLACEHOLDER = require(8340) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
   tmp4 = require;
 }
 let closure_3 = ["checkpointData"];
@@ -620,7 +620,7 @@ let result = require("CheckpointPersonas").fileFinishedImporting("modules/messag
 
 export default function transformMessageComponents(message, arr) {
   let obj = { type: "textDisplayComponent", parserState: null };
-  obj[1] = obj(8269).getInitialParserStateFromMessage(message.message, closure_7);
+  obj[1] = obj(8315).getInitialParserStateFromMessage(message.message, closure_7);
   obj = {};
   const merged = Object.assign(message);
   obj.markdownConfigs = { textDisplayComponent: obj };
@@ -637,17 +637,17 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(8299).MediaGalleryItemType.IMAGE;
+            return tmp(8340).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(8299).MediaGalleryItemType.VIDEO;
+              return tmp(8340).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4532);
+            tmpResult = tmp(4811);
           }
-          obj = require(4532) /* urlMatchesFileExtension */;
+          obj = require(4811) /* urlMatchesFileExtension */;
         }
       }
     }
   }
-  return require(8299) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  return require(8340) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
 };

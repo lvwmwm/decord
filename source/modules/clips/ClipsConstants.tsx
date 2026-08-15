@@ -1,10 +1,10 @@
-// Module ID: 4400
-// Function ID: 4401
+// Module ID: 4523
+// Function ID: 4524
 // Name: result
 // Dependencies: [687, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds
 
-// Module 4400 (result)
+// Module 4523 (result)
 let obj = {};
 const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;

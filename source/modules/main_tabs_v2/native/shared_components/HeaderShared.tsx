@@ -1,10 +1,10 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8492
+// Function ID: 8493
 // Name: GenericHeaderTitle
-// Dependencies: [19, 17, 8454, 21, 4342, 712, 4338, 4065, 5332, 5338, 8455, 500, 8460, 1628, 1500, 8462, 5432, 643, 8465, 12627, 4909, 1297, 2]
+// Dependencies: [19, 17, 8493, 21, 4661, 712, 4734, 4097, 6315, 6319, 8494, 500, 8499, 1629, 1501, 8501, 5443, 643, 8504, 12705, 5433, 1297, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 8453 (GenericHeaderTitle)
+// Module 8492 (GenericHeaderTitle)
 import importAllResult from "ChannelHeader";
 import get_ActivityIndicator from "shallowEqual";
 import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
@@ -133,7 +133,7 @@ function HeaderChannelActions(arg0) {
   const tmp = callback2();
   const merged = Object.assign(route.params);
   obj.screenIndex = screenIndex;
-  return callback(importDefault(8465), obj);
+  return callback(importDefault(8504), obj);
 }
 let c3 = importAllResult;
 ({ View: c4, Platform } = get_ActivityIndicator);
@@ -339,5 +339,5 @@ export const HeaderIconButton = function HeaderIconButton(color) {
     tintColor = tmp.actionButtonIcon.tintColor;
   }
   obj[4] = closure_6(require(1297) /* Button */.Icon, { color: tintColor, source, resizeMode });
-  return closure_6(require(4909) /* PressableBase */.PressableOpacity, obj);
+  return closure_6(require(5433) /* PressableBase */.PressableOpacity, obj);
 };

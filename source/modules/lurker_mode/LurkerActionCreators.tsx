@@ -1,10 +1,10 @@
-// Module ID: 6000
-// Function ID: 6001
+// Module ID: 7284
+// Function ID: 7285
 // Name: stopLurkingAll
-// Dependencies: [5, 4416, 3990, 676, 709, 530, 1370, 2]
+// Dependencies: [5, 4539, 4022, 676, 709, 530, 1370, 2]
 // Exports: stopLurking
 
-// Module 6000 (stopLurkingAll)
+// Module 7284 (stopLurkingAll)
 import sendRequest from "sendRequest";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -39,7 +39,7 @@ function _stopLurkingAll() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     let c6 = 0;
                     let c7 = 0;
                     let c5 = 0;
-                    return (/* F120428 */ function*() { ... })();
+                    return (/* F120622 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -103,7 +103,7 @@ function _stopLurkingAll() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           v0 = tmp;
           throw tmp13;
@@ -138,7 +138,7 @@ function _stopLurking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ function _stopLurking() {
               return obj;
             }
             guildId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           guildId = tmp;

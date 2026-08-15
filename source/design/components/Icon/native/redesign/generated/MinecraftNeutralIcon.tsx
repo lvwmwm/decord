@@ -1,10 +1,10 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9119
+// Function ID: 9120
 // Name: MinecraftNeutralIcon
-// Dependencies: [19, 17, 21, 712, 4064, 9366, 9367, 9368, 2]
+// Dependencies: [19, 17, 21, 712, 4096, 9120, 9121, 9122, 2]
 // Exports: MinecraftNeutralIcon
 
-// Module 9365 (MinecraftNeutralIcon)
+// Module 9119 (MinecraftNeutralIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,29 +33,29 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   const merged = Object.assign(secondaryColor, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(9366) /* registerAsset */;
+  obj[0] = require(9120) /* registerAsset */;
   obj[1] = color;
   obj[2] = style;
   const merged1 = Object.assign(merged);
-  const items = [callback(require(4064) /* BaseIconImage */.BaseIconImage, obj), , ];
+  const items = [callback(require(4096) /* BaseIconImage */.BaseIconImage, obj), , ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(9367) /* registerAsset */;
+  obj[0] = require(9121) /* registerAsset */;
   obj[1] = str;
   const items1 = [style];
   const items2 = [];
   items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
   obj[2] = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(4064) /* BaseIconImage */.BaseIconImage, obj);
+  items[1] = callback(require(4096) /* BaseIconImage */.BaseIconImage, obj);
   const obj1 = { source: null, color: null, style: null };
-  obj1[0] = require(9368) /* registerAsset */;
+  obj1[0] = require(9122) /* registerAsset */;
   obj1[1] = str2;
   const items3 = [style];
   const items4 = [];
   items4[HermesBuiltin.arraySpread(items3.flat(), 0)] = { position: "absolute", top: 0 };
   obj1[2] = items4;
   const merged3 = Object.assign(merged);
-  items[2] = callback(require(4064) /* BaseIconImage */.BaseIconImage, obj1);
+  items[2] = callback(require(4096) /* BaseIconImage */.BaseIconImage, obj1);
   obj[0] = items;
   return callback2(View, obj);
 };

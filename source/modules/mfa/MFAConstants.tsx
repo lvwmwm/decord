@@ -1,9 +1,9 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15119
+// Function ID: 15120
 // Name: get webauthn
 // Dependencies: [1236, 2]
 
-// Module 15070 (get webauthn)
+// Module 15119 (get webauthn)
 const obj = {};
 Object.defineProperty(obj, "webauthn", {
   get: () => {

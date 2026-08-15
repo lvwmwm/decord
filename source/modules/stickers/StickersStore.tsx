@@ -1,9 +1,9 @@
-// Module ID: 5280
-// Function ID: 5281
+// Module ID: 6769
+// Function ID: 6770
 // Name: loadSavedGuildStickers
-// Dependencies: [5, 1393, 1910, 5281, 5282, 1955, 1974, 10, 5283, 709, 589, 2]
+// Dependencies: [5, 1393, 1910, 6770, 6771, 1955, 1974, 10, 5400, 709, 589, 2]
 
-// Module 5280 (loadSavedGuildStickers)
+// Module 6769 (loadSavedGuildStickers)
 import items from "items";
 import allGuildIds from "allGuildIds";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -36,7 +36,7 @@ function _loadSavedGuildStickers() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

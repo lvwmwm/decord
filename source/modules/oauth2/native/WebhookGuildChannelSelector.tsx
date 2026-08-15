@@ -1,10 +1,10 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 9822
+// Function ID: 9823
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1395, 3998, 1922, 21, 4342, 712, 4310, 9031, 2007, 1236, 4535, 10495, 4338, 1297, 8033, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 4030, 1922, 21, 4661, 712, 4342, 8821, 2007, 1236, 4984, 9772, 4734, 1297, 8083, 2]
 // Exports: default
 
-// Module 10510 (styles)
+// Module 9822 (styles)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -58,7 +58,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       const channels = tmp.channels;
       obj[1] = channels.map((id) => {
         const obj = { label: null, value: null };
-        obj[0] = callback(4535).computeChannelName(callback2(id), mergeGuildAvatar, closure_8);
+        obj[0] = callback(4984).computeChannelName(callback2(id), mergeGuildAvatar, closure_8);
         obj[1] = id.id;
         return obj;
       });
@@ -92,7 +92,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -136,7 +136,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   outer1_5.current = true;
                 }
                 v0 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp20) {
               v0 = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10370
+// Function ID: 10371
 // Name: PremiumWishlistItemCard
-// Dependencies: [19, 21, 9418, 9419, 2]
+// Dependencies: [19, 21, 9181, 9182, 2]
 // Exports: default
 
-// Module 10166 (PremiumWishlistItemCard)
+// Module 10370 (PremiumWishlistItemCard)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -20,5 +20,5 @@ export default function PremiumWishlistItemCard(size) {
   const items = [size];
   const callback = React.useCallback(() => outer1_4(size(outer1_2[2]).PremiumSKUPreview, { size }), items);
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(9419), { accessibilityLabel: sku.name, renderPreview: callback, source, size });
+  return jsx(importDefault(9182), { accessibilityLabel: sku.name, renderPreview: callback, source, size });
 };

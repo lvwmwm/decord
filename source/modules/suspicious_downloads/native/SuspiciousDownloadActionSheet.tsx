@@ -1,10 +1,10 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12417
+// Function ID: 12418
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 4342, 712, 1628, 5458, 4775, 6091, 4338, 1236, 4777, 4310, 4052, 2]
+// Dependencies: [19, 21, 4661, 712, 1629, 6950, 4733, 5447, 4734, 1236, 4745, 4342, 4084, 2]
 // Exports: default
 
-// Module 12310 (SuspiciousDownloadActionSheet)
+// Module 12417 (SuspiciousDownloadActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,19 +26,19 @@ export default function SuspiciousDownloadActionSheet(href) {
   const tmp = createCacheKey();
   let obj = { startExpanded: true, children: null };
   obj = { spacing: 16, justify: "center", align: "center", style: items, children: null };
-  items = [tmp.container, { paddingBottom: importDefault(1628)().bottom }];
+  items = [tmp.container, { paddingBottom: importDefault(1629)().bottom }];
   obj = { spacing: 8, justify: "center", align: "center", children: null };
-  const items1 = [callback(href(6091).TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback(href(5447).TrafficConeSpotIllustration, {}), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = href(1236).intl;
   obj1[4] = intl.string(href(1236).t.XtDo9Z);
-  items1[1] = callback(href(4338).Text, obj1);
+  items1[1] = callback(href(4734).Text, obj1);
   const obj2 = { style: tmp.body, variant: "text-md/medium", children: null };
   const intl2 = href(1236).intl;
   obj2[2] = intl2.string(href(1236).t.L9yFko);
-  items1[2] = callback(href(4338).Text, obj2);
+  items1[2] = callback(href(4734).Text, obj2);
   obj[3] = items1;
-  const items2 = [callback2(href(4775).Stack, obj), ];
+  const items2 = [callback2(href(4733).Stack, obj), ];
   const obj3 = { spacing: 8, children: null };
   const obj4 = { text: null, onPress: null };
   const intl3 = href(1236).intl;
@@ -46,7 +46,7 @@ export default function SuspiciousDownloadActionSheet(href) {
   obj4[1] = function onPress() {
     return callback(table[11]).hideActionSheet();
   };
-  const items3 = [callback(href(4777).Button, obj4), ];
+  const items3 = [callback(href(4745).Button, obj4), ];
   const obj5 = { text: null, onPress: null, variant: "secondary" };
   const intl4 = href(1236).intl;
   obj5[0] = intl4.string(href(1236).t["/bHu89"]);
@@ -54,10 +54,10 @@ export default function SuspiciousDownloadActionSheet(href) {
     outer1_1(outer1_2[11]).hideActionSheet();
     outer1_1(outer1_2[12])(href, true);
   };
-  items3[1] = callback(href(4777).Button, obj5);
+  items3[1] = callback(href(4745).Button, obj5);
   obj3[1] = items3;
-  items2[1] = callback2(href(4775).Stack, obj3);
+  items2[1] = callback2(href(4733).Stack, obj3);
   obj[4] = items2;
-  obj[1] = callback2(href(4775).Stack, obj);
-  return callback(href(5458).BottomSheet, obj);
+  obj[1] = callback2(href(4733).Stack, obj);
+  return callback(href(6950).BottomSheet, obj);
 };

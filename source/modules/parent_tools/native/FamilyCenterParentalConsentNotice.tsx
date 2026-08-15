@@ -1,10 +1,10 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14230
+// Function ID: 14231
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4342, 712, 14190, 14191, 4058, 4338, 14199, 1236, 2303, 2]
+// Dependencies: [19, 21, 4661, 712, 14222, 14223, 4090, 4734, 14231, 1236, 2335, 2]
 // Exports: default
 
-// Module 14198 (FamilyCenterParentalConsentNotice)
+// Module 14230 (FamilyCenterParentalConsentNotice)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,9 +20,9 @@ const result = require("createCacheKey").fileFinishedImporting("modules/parent_t
 export default function FamilyCenterParentalConsentNotice() {
   const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(14190) /* useIsParentalConsentBannerActive */;
+  let obj = require(14222) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  let obj1 = require(14191) /* useParentalConsentWarning */;
+  let obj1 = require(14223) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (parentalConsentWarning != null) {
@@ -46,16 +46,16 @@ export default function FamilyCenterParentalConsentNotice() {
           const intl2 = tmp2(1236).intl;
           obj = { learnMoreHook: null };
           obj[0] = learnMoreHook;
-          let formatResult = intl2.format(tmp9(2303).S5kmfO, obj);
+          let formatResult = intl2.format(tmp9(2335).S5kmfO, obj);
         } else {
           const intl = tmp2(1236).intl;
           obj1 = { count: null, learnMoreHook: null };
           obj1[0] = daysRemaining;
           obj1[1] = learnMoreHook;
-          formatResult = intl.format(tmp9(2303)["5jm+T3"], obj1);
+          formatResult = intl.format(tmp9(2335)["5jm+T3"], obj1);
         }
         obj[1] = formatResult;
-        return jsx(importDefault(14199), { style: null, text: null });
+        return jsx(importDefault(14231), { style: null, text: null });
       }
     }
   }

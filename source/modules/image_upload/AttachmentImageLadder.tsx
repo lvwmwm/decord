@@ -1,15 +1,22 @@
-// Module ID: 1895
-// Function ID: 1896
+// Module ID: 1471
+// Function ID: 1472
 // Name: items
 // Dependencies: [2]
-// Exports: snapAttachmentDimensions
+// Exports: getSnapDownMaxUpscale, snapAttachmentDimensions
 
-// Module 1895 (items)
+// Module 1471 (items)
 const items = [128, 192, 256, 320, 384, 512, 640, 768, 1024, 1280, 1536, 2048, 3072, 4096];
 let result = require("set").fileFinishedImporting("modules/image_upload/AttachmentImageLadder.tsx");
 
 export const ATTACHMENT_LADDER = items;
 export const ATTACHMENT_LADDER_MAX_UPSCALE = 1.1;
+export const getSnapDownMaxUpscale = function getSnapDownMaxUpscale(minSnapDownDpr, arg1) {
+  let maxUpscale = null;
+  if (arg1 >= minSnapDownDpr.minSnapDownDpr) {
+    maxUpscale = minSnapDownDpr.maxUpscale;
+  }
+  return maxUpscale;
+};
 export const snapAttachmentDimensions = function snapAttachmentDimensions(arg0) {
   let maxUpscale;
   let sourceHeight;

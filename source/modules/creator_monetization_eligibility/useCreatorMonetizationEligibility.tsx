@@ -1,10 +1,10 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16933
+// Function ID: 16934
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 16857, 16860, 4242, 2]
+// Dependencies: [5, 32, 19, 16903, 16906, 4274, 2]
 // Exports: default
 
-// Module 16887 (useCreatorMonetizationEligibility)
+// Module 16933 (useCreatorMonetizationEligibility)
 import prototype from "prototype";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -41,7 +41,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

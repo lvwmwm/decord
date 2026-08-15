@@ -1,17 +1,17 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11206
+// Function ID: 11207
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 500, 4083, 11440, 11441, 11442, 2]
+// Dependencies: [19, 500, 4115, 11153, 11154, 11155, 2]
 // Exports: default, getIsChatInputHeightWorkletEnabled
 
-// Module 11493 (useChatInputHeightWorklet)
+// Module 11206 (useChatInputHeightWorklet)
 import noop from "noop";
 
 const require = arg1;
 let closure_4 = { code: "function useChatInputHeightWorkletNativeTsx1(event){const{contentSize,textFieldHeight,getChatInputHeightAnimationTimingWorklet,textFieldMinHeight}=this.__closure;contentSize.set(event.height);textFieldHeight.set(getChatInputHeightAnimationTimingWorklet(event.height,textFieldMinHeight.get()));}" };
 let closure_5 = { code: "function useChatInputHeightWorkletNativeTsx2(){const{keyboardState,windowDimensions,getChatInputMaxHeightWorklet}=this.__closure;keyboardState.get();windowDimensions.get();return getChatInputMaxHeightWorklet();}" };
 let closure_6 = { code: "function useChatInputHeightWorkletNativeTsx3(maxHeight,maxHeightPrev){const{isWorkletDriven,contentSize,textFieldHeight,getChatInputHeightAnimationTimingWorklet,textFieldMinHeight}=this.__closure;if(!isWorkletDriven||maxHeightPrev==null||maxHeight===maxHeightPrev){return;}if(contentSize.get()===0){return;}textFieldHeight.set(getChatInputHeightAnimationTimingWorklet(contentSize.get(),textFieldMinHeight.get()));}" };
-let result = require("module_4083").fileFinishedImporting("modules/chat_input/native/useChatInputHeightWorklet.native.tsx");
+let result = require("module_4115").fileFinishedImporting("modules/chat_input/native/useChatInputHeightWorklet.native.tsx");
 
 export default function useChatInputHeightWorklet(textFieldHeight) {
   textFieldHeight = textFieldHeight.textFieldHeight;

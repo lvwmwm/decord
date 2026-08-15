@@ -1,10 +1,10 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10371
+// Function ID: 10372
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 4383, 10165, 21, 4342, 712, 589, 9461, 5329, 9419, 2]
+// Dependencies: [19, 4478, 10369, 21, 4661, 712, 589, 9228, 5449, 9182, 2]
 // Exports: default
 
-// Module 10167 (SocialLayerStorefrontWishlistItemCard)
+// Module 10371 (SocialLayerStorefrontWishlistItemCard)
 import noop from "noop";
 import addApplication from "addApplication";
 import initialize from "initialize";

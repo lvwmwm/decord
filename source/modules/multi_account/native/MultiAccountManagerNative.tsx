@@ -1,9 +1,9 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16638
+// Function ID: 16639
 // Name: push
-// Dependencies: [11858, 676, 3, 687, 4572, 16587, 2007, 4198, 1231, 16588, 15, 11861, 1222, 4203, 4197, 4062, 1236, 16589, 2]
+// Dependencies: [11586, 676, 3, 687, 5260, 16639, 2007, 4230, 1231, 16640, 15, 11589, 1222, 4235, 4229, 4094, 1236, 16641, 2]
 
-// Module 16586 (push)
+// Module 16638 (push)
 import { SWITCH_ACCOUNTS_MODAL_KEY } from "MAX_ACCOUNTS";
 import ME from "ME";
 import "_initialize";
@@ -88,7 +88,7 @@ class MultiAccountManagerNative extends tmp5 {
 }
 const prototype = MultiAccountManagerNative.prototype;
 prototype["onSwitchStart"] = function onSwitchStart() {
-  const obj = importDefault(4572);
+  const obj = importDefault(5260);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   tmp3.info("Closing fast-connect socket because of account switch logout");
   let result = obj(15).closeFastConnectSocket();
@@ -107,10 +107,10 @@ prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHom
   if (navigateHome) {
     obj = obj(1222);
     obj.transitionTo(constants.ME, { navigationReplace: true });
-    const MobileHomeDrawerExperiment = obj(4203).MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = obj(4235).MobileHomeDrawerExperiment;
     if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-      tmp(4197).setHomeDrawerState(false);
-      const tmpResult = tmp(4197);
+      tmp(4229).setHomeDrawerState(false);
+      const tmpResult = tmp(4229);
     }
     tmp = obj;
   }
@@ -125,15 +125,15 @@ prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHom
   }, 100);
 };
 prototype["onSwitchError"] = function onSwitchError(currentUser) {
-  let obj = importDefault(4062);
+  let obj = importDefault(4094);
   obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: null, icon: null };
   const intl = obj(1236).intl;
   obj[1] = intl.string(obj(1236).t.pqvKWA);
-  obj[2] = importDefault(16589);
+  obj[2] = importDefault(16641);
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {
-  const obj = importDefault(4572);
+  const obj = importDefault(5260);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   obj.pop();
   if (null !== c9) {

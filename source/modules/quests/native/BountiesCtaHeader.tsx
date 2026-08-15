@@ -1,9 +1,9 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14436
+// Function ID: 14437
 // Name: BountiesCtaDescription
-// Dependencies: [19, 17, 4334, 14405, 5223, 21, 4342, 712, 1236, 4338, 14386, 589, 7244, 10971, 5226, 7245, 7255, 14327, 14406, 14407, 1297, 4777, 14400, 11238, 4072, 7813, 11242, 2]
+// Dependencies: [19, 17, 4662, 14437, 6716, 21, 4661, 712, 1236, 4734, 14418, 589, 7469, 10711, 6719, 7470, 7480, 14359, 14438, 14439, 1297, 4745, 14432, 10953, 4104, 8031, 10957, 2]
 
-// Module 14404 (BountiesCtaDescription)
+// Module 14436 (BountiesCtaDescription)
 import importAllResult from "metadata";
 import get_ActivityIndicator from "BOUNTIES_MODAL_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,23 +33,23 @@ function BountiesCtaDescription(isEmptyOrCompleted) {
   let obj = { variant: "text-sm/medium", color: "text-subtle", children: null };
   const intl = tmp5(1236).intl;
   obj[2] = intl.string(AZGGo1);
-  const tmp7 = callback(tmp5(4338).Text, obj);
+  const tmp7 = callback(tmp5(4734).Text, obj);
   const intl2 = tmp5(1236).intl;
   obj = { onClick: null };
-  obj[0] = importDefault(14386);
+  obj[0] = importDefault(14418);
   const formatResult = intl2.format(tmp5(1236).t.fjSvsC, obj);
   if (isEmptyOrCompleted) {
     obj = { variant: "text-sm/medium", children: null };
     const items = [tmp7, " ", formatResult];
     obj[1] = items;
-    let tmp9Result = tmp9(tmp5(4338).Text, obj);
+    let tmp9Result = tmp9(tmp5(4734).Text, obj);
   } else {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.description;
     const items1 = [tmp7, ];
     const obj2 = { variant: "text-sm/medium", children: null };
     obj2[1] = formatResult;
-    items1[1] = callback(tmp5(4338).Text, obj2);
+    items1[1] = callback(tmp5(4734).Text, obj2);
     obj1[1] = items1;
     tmp9Result = tmp9(closure_4, obj1);
   }
@@ -70,8 +70,8 @@ function BountiesCtaHeaderInner(bounties) {
   const items1 = [getOrCreateSet];
   const items2 = [bounties];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => bounties.some((id) => !getOrCreateSet.hasSeen(callback(table[12]).AdCreativeType.BOUNTY, id.id)), items2);
-  let obj2 = bounties(10971);
-  const QuestContent = bounties(5226).QuestContent;
+  let obj2 = bounties(10711);
+  const QuestContent = bounties(6719).QuestContent;
   const tmp6 = obj2.useBountiesExperience(constants2.QUEST_HOME_MOBILE).verticalScrollEnabled ? QuestContent.VIDEO_MODAL_MOBILE : QuestContent.QUEST_HOME_MOBILE_CAROUSEL;
   importDefault = tmp6;
   const items3 = [bounties, tmp6];
@@ -84,7 +84,7 @@ function BountiesCtaHeaderInner(bounties) {
     _undefined(outer1_2[17]).showModal(obj);
   }, items3);
   obj = { uri: null, style: null, children: null };
-  obj[0] = importDefault(14407);
+  obj[0] = importDefault(14439);
   const items4 = [, ];
   ({ header: arr5[0], headerRoundedBottom: arr5[1] } = tmp);
   obj[1] = items4;
@@ -99,20 +99,20 @@ function BountiesCtaHeaderInner(bounties) {
   const obj3 = { variant: "text-lg/semibold", color: "text-strong", children: null };
   const intl = tmp2(1236).intl;
   obj3[2] = intl.string(bounties(1236).t.qetVDw);
-  const items6 = [callback(bounties(4338).Text, obj3), callback(BountiesCtaDescription, { isEmptyOrCompleted: flag }), ];
+  const items6 = [callback(bounties(4734).Text, obj3), callback(BountiesCtaDescription, { isEmptyOrCompleted: flag }), ];
   let tmp13Result = !flag;
   if (!flag) {
     const obj4 = { grow: true, size: "md", variant: "primary-overlay", text: null, onPress: null };
     const intl2 = tmp2(1236).intl;
     obj4[3] = intl2.string(tmp2(1236).t["1kkbKw"]);
     obj4[4] = callback;
-    tmp13Result = callback(tmp2(4777).Button, obj4);
+    tmp13Result = callback(tmp2(4745).Button, obj4);
   }
   items6[2] = tmp13Result;
   obj2[1] = items6;
   items5[1] = closure_11(closure_4, obj2);
   obj[2] = items5;
-  const items7 = [closure_11(importDefault(14406), obj), false];
+  const items7 = [closure_11(importDefault(14438), obj), false];
   obj[2] = items7;
   return closure_11(closure_4, obj);
 }
@@ -144,7 +144,7 @@ let closure_12 = createCacheKey.createStyles(() => {
 });
 const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrCompleted) {
   const _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(14400)();
+  const tmp2 = containerRef(14432)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -152,10 +152,10 @@ const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrComp
     tmp3 = isEmptyOrCompleted;
   }
   if (!tmp3) {
-    let obj = _require(11238);
+    let obj = _require(10953);
     const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(null);
     obj = { theme: null, children: null };
-    obj[0] = _require(7813).ThemeTypes.DARKER;
+    obj[0] = _require(8031).ThemeTypes.DARKER;
     if (tmp3) {
       obj = {};
       let merged = Object.assign(isEmptyOrCompleted);
@@ -164,20 +164,20 @@ const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrComp
     } else {
       const obj1 = { adContentId: null, adCreativeType: null, questContent: null, questContentPosition: 0, overrideVisibility: null, sourceQuestContent: null, children: null };
       obj1[0] = closure_8;
-      obj1[1] = tmp7(7244).AdCreativeType.BOUNTY;
-      obj1[2] = tmp7(5226).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
+      obj1[1] = tmp7(7469).AdCreativeType.BOUNTY;
+      obj1[2] = tmp7(6719).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
       obj1[4] = tmp2.isInView;
-      obj1[5] = tmp7(5226).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
+      obj1[5] = tmp7(6719).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
       obj1[6] = function children() {
         const obj = {};
         const merged = Object.assign(closure_0);
         obj.containerRef = containerRef;
         return outer1_10(outer1_14, obj);
       };
-      tmp9Result = tmp9(tmp7(11242).QuestContentImpressionTrackerNative, obj1);
+      tmp9Result = tmp9(tmp7(10957).QuestContentImpressionTrackerNative, obj1);
     }
     obj[1] = tmp9Result;
-    return closure_10(_require(4072).ThemeContextProvider, obj);
+    return closure_10(_require(4104).ThemeContextProvider, obj);
   } else if (0 === isEmptyOrCompleted.bounties.length) {
     let COMPLETED = constants.EMPTY;
   } else {

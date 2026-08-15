@@ -1,10 +1,10 @@
-// Module ID: 6534
-// Function ID: 6535
+// Module ID: 5892
+// Function ID: 5893
 // Name: HeadphonesAndControllerSpotIllustration
-// Dependencies: [21, 5329, 6535, 2]
+// Dependencies: [21, 5449, 5893, 2]
 // Exports: HeadphonesAndControllerSpotIllustration
 
-// Module 6534 (HeadphonesAndControllerSpotIllustration)
+// Module 5892 (HeadphonesAndControllerSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeadphonesAndControllerSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndCon
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6535);
+  obj[0] = importDefault(5893);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndCon
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

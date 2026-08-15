@@ -1,10 +1,10 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14254
+// Function ID: 14255
 // Name: UserRow
-// Dependencies: [19, 1922, 21, 4342, 7122, 5435, 4187, 1297, 5825, 4338, 1236, 2303, 5828, 2]
+// Dependencies: [19, 1922, 21, 4661, 5363, 6291, 4219, 1297, 7175, 4734, 1236, 2335, 6286, 2]
 // Exports: default
 
-// Module 14222 (UserRow)
+// Module 14254 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -19,16 +19,16 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(7122) /* getEmptyActivityFormatter */;
+    let obj = require(5363) /* getEmptyActivityFormatter */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
-    obj[0] = importDefault(4187).getName(user);
+    obj[0] = importDefault(4219).getName(user);
     obj[1] = topUserOrGuildDescription;
-    obj = { size: null, user: null, guildId: "r" };
+    obj = { size: null, user: null, guildId: "Array" };
     obj[0] = require(1297) /* Button */.AvatarSizes.SMALL;
     obj[1] = user;
     obj[2] = callback(require(1297) /* Button */.Avatar, obj);
-    return callback(require(5435) /* TableRowInner */.TableRow, obj);
+    return callback(require(6291) /* TableRowInner */.TableRow, obj);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -40,11 +40,11 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: null };
   obj = { variant: "text-md/bold", style: callback3().header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(2303).BxbvS7);
-  const items = [callback(require(4338) /* Text */.Text, obj), ];
+  obj[2] = intl.string(importDefault(2335).BxbvS7);
+  const items = [callback(require(4734) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: null };
   obj[1] = topUserActivities.map((userActivity) => callback(closure_7, { userActivity }, userActivity.user_id));
-  items[1] = callback(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[1] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj[0] = items;
-  return callback2(require(5825) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
 };

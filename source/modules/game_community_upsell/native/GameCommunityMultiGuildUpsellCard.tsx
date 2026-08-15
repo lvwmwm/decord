@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15531
+// Function ID: 15532
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4334, 3990, 1910, 676, 21, 4342, 712, 589, 1435, 1469, 1493, 698, 5293, 6021, 6020, 1236, 8363, 9327, 1297, 4338, 4777, 8661, 7817, 8667, 2]
+// Dependencies: [5, 32, 19, 17, 4662, 4022, 1910, 676, 21, 4661, 712, 589, 1435, 1469, 1494, 698, 6778, 7302, 7301, 1236, 8402, 9152, 1297, 4734, 4745, 9958, 8035, 9415, 2]
 // Exports: default
 
-// Module 15481 (GameCommunityMultiGuildUpsellCard)
+// Module 15531 (GameCommunityMultiGuildUpsellCard)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -147,7 +147,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

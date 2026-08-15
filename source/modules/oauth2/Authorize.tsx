@@ -1,10 +1,10 @@
-// Module ID: 10488
-// Function ID: 10489
+// Module ID: 4373
+// Function ID: 4374
 // Name: filterScopes
-// Dependencies: [1391, 4165, 676, 10489, 8965, 5234, 3994, 506, 2]
+// Dependencies: [1391, 4197, 676, 4374, 4375, 4376, 4026, 506, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 10488 (filterScopes)
+// Module 4373 (filterScopes)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
@@ -21,21 +21,21 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = callback(table[3]).RemovedScopes;
     return !RemovedScopes.includes(arg0);
   });
-  let hasItem = found.includes(require(8965) /* set */.OAuth2Scopes.BOT);
+  let hasItem = found.includes(require(4375) /* set */.OAuth2Scopes.BOT);
   if (hasItem) {
-    hasItem = !found.includes(tmp(8965).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    hasItem = !found.includes(tmp(4375).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   if (hasItem) {
-    found.push(tmp(8965).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    found.push(tmp(4375).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
 };
 export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(query) {
   let channel_id;
   let guild_id;
-  let obj = require(5234) /* keysSorter */;
+  let obj = require(4376) /* keysSorter */;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
-  const NONE = importAll(3994).NONE;
+  const NONE = importAll(4026).NONE;
   try {
     let str2 = "0";
     if (null != parsed.permissions) {

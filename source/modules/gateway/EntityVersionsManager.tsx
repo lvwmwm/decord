@@ -1,9 +1,9 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16559
+// Function ID: 16560
 // Name: handleDeletedEntityIds
-// Dependencies: [5237, 5280, 1391, 1983, 1910, 5057, 3, 5322, 709, 589, 7180, 1217, 11, 2]
+// Dependencies: [6727, 6769, 1391, 1983, 1910, 4495, 3, 5038, 709, 589, 5398, 1217, 11, 2]
 
-// Module 16509 (handleDeletedEntityIds)
+// Module 16559 (handleDeletedEntityIds)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,7 +37,7 @@ function handleDeletedEntityIds(guild_id) {
         if (!set1.has(arg0)) {
           let obj = set3(set1[8]);
           obj = { type: "CHANNEL_DELETE", channel: null };
-          obj = { guild_id: null, id: null, parent_id: "r" };
+          obj = { guild_id: null, id: null, parent_id: "Array" };
           obj[0] = set3;
           obj[1] = arg0;
           obj[1] = obj;
@@ -98,7 +98,7 @@ function handleDeletedEntityIds(guild_id) {
   });
 }
 function handleConnectionOpen() {
-  const all = importDefault(7180).getAll();
+  const all = importDefault(5398).getAll();
   all.then((arr) => {
     const item = arr.forEach((arg0) => {
       let closure_0 = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 16291
+// Function ID: 16292
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 19, 4334, 1302, 16234, 5459, 1493, 589, 1363, 1374, 6017, 2]
+// Dependencies: [5, 19, 4662, 1302, 16284, 6951, 1494, 589, 1363, 1374, 7299, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16241 (useSoundButtonStyleConfig)
+// Module 16291 (useSoundButtonStyleConfig)
 import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -19,7 +19,7 @@ const require = arg1;
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
 export const useSoundButtonStyleConfig = function useSoundButtonStyleConfig() {
-  return { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, importDefault(1493)().width) - closure_8) / closure_7 };
+  return { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, importDefault(1494)().width) - closure_8) / closure_7 };
 };
 export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSounds(shouldFetch) {
   shouldFetch = shouldFetch.shouldFetch;
@@ -43,7 +43,7 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -77,7 +77,7 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
               return obj;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp9) {
             c0 = tmp;
             throw tmp9;

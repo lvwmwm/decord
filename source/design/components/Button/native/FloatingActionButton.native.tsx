@@ -1,10 +1,10 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8818
+// Function ID: 8819
 // Name: styles
-// Dependencies: [19, 21, 4342, 712, 4781, 1367, 4083, 4776, 7818, 2]
+// Dependencies: [19, 21, 4661, 712, 4749, 1367, 4115, 4744, 8036, 2]
 // Exports: FloatingActionButton
 
-// Module 8733 (styles)
+// Module 8818 (styles)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ const styles = createCacheKey.createStyles(() => {
   obj = {};
   const merged = Object.assign(importDefault(712).shadows.SHADOW_HIGH);
   obj[0] = obj;
-  obj = { minWidth: require(4781) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, minHeight: require(4781) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, padding: 0 };
+  obj = { minWidth: require(4749) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, minHeight: require(4749) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, padding: 0 };
   if (flag) {
     const obj1 = { borderRadius: null };
     obj1[0] = importDefault(712).radii.lg;
@@ -43,7 +43,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   ({ icon, positionBottom } = positionRight);
   positionRight = positionRight.positionRight;
   const merged = Object.assign(positionRight, Object.create(null));
-  let obj = positionBottom(4083);
+  let obj = positionBottom(4115);
   class F {
     constructor() {
       tmp = positionBottom;
@@ -64,7 +64,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
       return obj;
     }
   }
-  obj = { withSpring: positionBottom(4776).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4744).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1367)("FloatingActionButton")));
-  obj[1] = jsx(positionBottom(7818).BaseIconButton, {});
-  return jsx(positionRight(4083).View, { style: animatedStyle, children: null });
+  obj[1] = jsx(positionBottom(8036).BaseIconButton, {});
+  return jsx(positionRight(4115).View, { style: animatedStyle, children: null });
 };

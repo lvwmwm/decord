@@ -1,9 +1,9 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15005
+// Function ID: 15006
 // Name: toggle
-// Dependencies: [8148, 4034, 10421, 1236, 2]
+// Dependencies: [8198, 4066, 10669, 1236, 2]
 
-// Module 14960 (toggle)
+// Module 15005 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -15,9 +15,9 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(4034) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = require(4066) /* explicitContentFromProto */.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;
@@ -35,9 +35,9 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(4034) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = require(4066) /* explicitContentFromProto */.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;

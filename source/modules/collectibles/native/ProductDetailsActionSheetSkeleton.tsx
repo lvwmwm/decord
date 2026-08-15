@@ -1,10 +1,10 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12002
+// Function ID: 12003
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 4342, 712, 4781, 4083, 4343, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4749, 4115, 4664, 2]
 // Exports: default
 
-// Module 12256 (ProductDetailsActionSheetSkeleton)
+// Module 12002 (ProductDetailsActionSheetSkeleton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,14 +38,14 @@ let result = require("jsxProd").fileFinishedImporting("modules/collectibles/nati
 export default function ProductDetailsActionSheetSkeleton() {
   const tmp = createCacheKey();
   let sharedValue;
-  let obj = sharedValue(4083);
+  let obj = sharedValue(4115);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const obj = sharedValue(outer1_2[6]);
     const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[7]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj1 = sharedValue(4083);
+  let obj1 = sharedValue(4115);
   const fn = function o() {
     return { opacity: sharedValue.get() };
   };
@@ -58,20 +58,20 @@ export default function ProductDetailsActionSheetSkeleton() {
   const items1 = [, , ];
   ({ block: arr2[0], preview: arr2[1] } = tmp);
   items1[2] = animatedStyle;
-  const items2 = [callback(importDefault(4083).View, { style: items1 }), ];
+  const items2 = [callback(importDefault(4115).View, { style: items1 }), ];
   obj1 = { style: tmp.info, children: null };
   const items3 = [, , ];
   ({ block: arr4[0], title: arr4[1] } = tmp);
   items3[2] = animatedStyle;
-  const items4 = [callback(importDefault(4083).View, { style: items3 }), , ];
+  const items4 = [callback(importDefault(4115).View, { style: items3 }), , ];
   const items5 = [, , ];
   ({ block: arr6[0], description: arr6[1] } = tmp);
   items5[2] = animatedStyle;
-  items4[1] = callback(importDefault(4083).View, { style: items5 });
+  items4[1] = callback(importDefault(4115).View, { style: items5 });
   const items6 = [, , ];
   ({ block: arr7[0], price: arr7[1] } = tmp);
   items6[2] = animatedStyle;
-  items4[2] = callback(importDefault(4083).View, { style: items6 });
+  items4[2] = callback(importDefault(4115).View, { style: items6 });
   obj1[1] = items4;
   items2[1] = callback2(View, obj1);
   obj[1] = items2;
@@ -79,7 +79,7 @@ export default function ProductDetailsActionSheetSkeleton() {
   const items8 = [, , ];
   ({ block: arr9[0], purchaseButton: arr9[1] } = tmp);
   items8[2] = animatedStyle;
-  items7[1] = callback(View, { style: tmp.purchaseSection, children: callback(importDefault(4083).View, { style: items8 }) });
+  items7[1] = callback(View, { style: tmp.purchaseSection, children: callback(importDefault(4115).View, { style: items8 }) });
   obj[1] = items7;
   return callback2(View, obj);
 };

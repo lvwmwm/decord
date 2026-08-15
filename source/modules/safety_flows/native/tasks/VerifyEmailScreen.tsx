@@ -1,10 +1,10 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17094
+// Function ID: 17095
 // Name: onTaskComplete
-// Dependencies: [5, 32, 19, 21, 17043, 17044, 17038, 4062, 1236, 2565, 17047, 4775, 712, 4338, 7856, 17049, 2]
+// Dependencies: [5, 32, 19, 21, 17089, 17090, 17084, 4094, 1236, 2597, 17093, 4733, 712, 4734, 8071, 17095, 2]
 // Exports: default
 
-// Module 17048 (onTaskComplete)
+// Module 17094 (onTaskComplete)
 import fetchAndUpdateTask from "fetchAndUpdateTask";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -41,7 +41,7 @@ export default function _default() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

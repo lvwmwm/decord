@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11147
+// Function ID: 11148
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11435, 644, 4083, 705, 4776, 2]
+// Dependencies: [11148, 644, 4115, 705, 4744, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11434 (VoiceMessageRecordingStatus)
+// Module 11147 (VoiceMessageRecordingStatus)
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import keys from "keys";
 
@@ -12,14 +12,14 @@ let c3;
 let obj1;
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TYPING_STOP_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: 251, isUsingHoldGesture: 5 };
+  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: 0, savedVoiceMessageUploadData: 1, isVoiceMessageButtonMounted: 4, isUsingHoldGesture: "Shape Layer 2" };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
-  obj[0] = require(4083).makeMutable(items);
+  obj[0] = require(4115).makeMutable(items);
   obj[6] = [];
   return obj;
 });
-let result = require("module_4083").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
+let result = require("module_4115").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
 
 export const VoiceMessageRecordingStatus = { REQUESTED: 0, [0]: "REQUESTED", STARTED: 1, [1]: "STARTED" };
 export const useVoiceMessagesUIStore = obj;
@@ -59,7 +59,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4776);
+    obj = waveformVersion(4744);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
@@ -81,12 +81,12 @@ export const hideVoiceMessagesTooltip = function hideVoiceMessagesTooltip() {
 export const resetVoiceMessageState = function resetVoiceMessageState() {
   const obj = require(705) /* batchUpdates */;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "applicationId" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "HermesInternal" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    const result = currWaveHeight.set(require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(0));
-    const tmpResult = require(4776) /* CONFIG_NEVER_ANIMATE */;
+    const result = currWaveHeight.set(require(4744) /* CONFIG_NEVER_ANIMATE */.withSpring(0));
+    const tmpResult = require(4744) /* CONFIG_NEVER_ANIMATE */;
   }
 };
 export const setSavedVoiceMessageUploadData = function setSavedVoiceMessageUploadData(arg0) {

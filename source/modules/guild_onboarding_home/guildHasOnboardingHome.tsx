@@ -1,10 +1,10 @@
-// Module ID: 4558
-// Function ID: 4559
+// Module ID: 5050
+// Function ID: 5051
 // Name: guildHasOnboardingHome
 // Dependencies: [676, 1913, 2]
 // Exports: default
 
-// Module 4558 (guildHasOnboardingHome)
+// Module 5050 (guildHasOnboardingHome)
 import ME from "ME";
 
 let c3;

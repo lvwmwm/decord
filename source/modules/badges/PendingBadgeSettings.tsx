@@ -1,13 +1,13 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 14021
+// Function ID: 14022
 // Name: getSavedBadgeSettings
-// Dependencies: [32, 1922, 8853, 13990, 709, 8854, 2]
+// Dependencies: [32, 1922, 8936, 14022, 709, 8937, 2]
 // Exports: applyPendingBadgeSettings, applyPendingBadgeSettingsToProfileBadges, moveBadgeInDisplayOrder, resetPendingBadgeSettings, setPendingBadgeDisplayOrder, setPendingBadgeHiddenBadges
 
-// Module 13989 (getSavedBadgeSettings)
+// Module 14021 (getSavedBadgeSettings)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
-import map from "map";
+import initialize from "initialize";
 
 const require = arg1;
 function getSavedBadgeSettings() {
@@ -17,7 +17,7 @@ function getSavedBadgeSettings() {
     id = currentUser.id;
   }
   if (null != id) {
-    if (map.hasCatalogFor(id)) {
+    if (initialize.hasCatalogFor(id)) {
       const items = [];
       const _Set = Set;
       const set = new Set();
@@ -26,7 +26,7 @@ function getSavedBadgeSettings() {
         let tmp10 = item10020;
         let tmp11 = require;
         let tmp12 = dependencyMap;
-        let NON_CUSTOMIZABLE_BADGE_IDS = require(13990) /* set */.NON_CUSTOMIZABLE_BADGE_IDS;
+        let NON_CUSTOMIZABLE_BADGE_IDS = require(14022) /* set */.NON_CUSTOMIZABLE_BADGE_IDS;
         if (!NON_CUSTOMIZABLE_BADGE_IDS.has(item10020.badge_id)) {
           let tmp13 = item10020;
           if (tmp10.owned) {
@@ -47,19 +47,19 @@ function getSavedBadgeSettings() {
       obj[1] = set;
       return obj;
     }
-    obj3 = map;
+    obj3 = initialize;
   }
   return null;
 }
-function moveBadgeInDisplayOrder(value, value2, clampResult1) {
-  if (value2 !== clampResult1) {
-    if (value2 >= 0) {
-      if (value2 < value.length) {
+function moveBadgeInDisplayOrder(value, index, clampResult) {
+  if (index !== clampResult) {
+    if (index >= 0) {
+      if (index < value.length) {
         const items = [];
         HermesBuiltin.arraySpread(value, 0);
         const _Math = Math;
         const _Math2 = Math;
-        items.splice(Math.min(Math.max(clampResult1, 0), items.length), 0, callback(items.splice(value2, 1), 1)[0]);
+        items.splice(Math.min(Math.max(clampResult, 0), items.length), 0, callback(items.splice(index, 1), 1)[0]);
         return items;
       }
     }
@@ -69,7 +69,7 @@ function moveBadgeInDisplayOrder(value, value2, clampResult1) {
 moveBadgeInDisplayOrder.__closure = {};
 moveBadgeInDisplayOrder.__workletHash = 15133920248237;
 moveBadgeInDisplayOrder.__initData = { code: "function moveBadgeInDisplayOrder_PendingBadgeSettingsTsx1(badgeIds,fromIndex,toIndex){if(fromIndex===toIndex||fromIndex<0||fromIndex>=badgeIds.length){return badgeIds;}const next=[...badgeIds];const[moved]=next.splice(fromIndex,1);next.splice(Math.min(Math.max(toIndex,0),next.length),0,moved);return next;}" };
-let result = require("map").fileFinishedImporting("modules/badges/PendingBadgeSettings.tsx");
+let result = require("initialize").fileFinishedImporting("modules/badges/PendingBadgeSettings.tsx");
 
 export const setPendingBadgeDisplayOrder = function setPendingBadgeDisplayOrder(arr) {
   const tmp = getSavedBadgeSettings();
@@ -104,7 +104,7 @@ export const setPendingBadgeHiddenBadges = function setPendingBadgeHiddenBadges(
   importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeHiddenBadges: tmp4 });
 };
 export const resetPendingBadgeSettings = function resetPendingBadgeSettings() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "accessible", pendingBadgeHiddenBadges: "useRef" });
+  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "accessible", pendingBadgeHiddenBadges: "height" });
 };
 export const applyPendingBadgeSettings = function applyPendingBadgeSettings(stateFromStoresArray, arg1) {
   let pendingBadgeDisplayOrder;
@@ -143,7 +143,7 @@ export const applyPendingBadgeSettings = function applyPendingBadgeSettings(stat
       let tmp11 = item10026;
       let tmp12 = set;
       let tmp13 = dependencyMap;
-      let NON_CUSTOMIZABLE_BADGE_IDS = set(13990).NON_CUSTOMIZABLE_BADGE_IDS;
+      let NON_CUSTOMIZABLE_BADGE_IDS = set(14022).NON_CUSTOMIZABLE_BADGE_IDS;
       if (NON_CUSTOMIZABLE_BADGE_IDS.has(item10026.badge_id)) {
         let tmp16 = item10026;
         let arr = items1.push(tmp11);
@@ -216,11 +216,11 @@ export const applyPendingBadgeSettingsToProfileBadges = function applyPendingBad
       let tmp11 = item10027;
       let tmp12 = set;
       let tmp13 = dependencyMap;
-      let obj = set(8854);
+      let obj = set(8937);
       let profileBadgeId = obj.resolveProfileBadgeId(item10027.id);
       let tmp15 = profileBadgeId;
       if (null != profileBadgeId) {
-        let NON_CUSTOMIZABLE_BADGE_IDS = tmp12(13990).NON_CUSTOMIZABLE_BADGE_IDS;
+        let NON_CUSTOMIZABLE_BADGE_IDS = tmp12(14022).NON_CUSTOMIZABLE_BADGE_IDS;
         let tmp16 = profileBadgeId;
         if (!NON_CUSTOMIZABLE_BADGE_IDS.has(tmp15)) {
           let tmp17 = profileBadgeId;

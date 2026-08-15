@@ -1,8 +1,8 @@
-// Module ID: 11309
-// Function ID: 11310
-// Dependencies: [5, 3943, 5293, 2]
+// Module ID: 11022
+// Function ID: 11023
+// Dependencies: [5, 3975, 6778, 2]
 
-// Module 11309
+// Module 11022
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const result = require("showTooManyUserGuildsAlert").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
@@ -27,7 +27,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -44,7 +44,7 @@ export default {
             } else {
               let toISOStringResult = null;
               if (null != outer1_2) {
-                let obj1 = v0(3943)();
+                let obj1 = v0(3975)();
                 toISOStringResult = obj1.add(tmp21, "s").toISOString();
                 const addResult = obj1.add(tmp21, "s");
               }
@@ -59,7 +59,7 @@ export default {
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = v0(5293).setCommunicationDisabledUntil(obj1);
+              obj2[0] = v0(6778).setCommunicationDisabledUntil(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -72,7 +72,7 @@ export default {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           v0 = tmp;

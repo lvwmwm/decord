@@ -1,10 +1,10 @@
-// Module ID: 15347
-// Function ID: 15348
+// Module ID: 15367
+// Function ID: 15368
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [3990, 676, 589, 2]
-// Exports: default
+// Dependencies: [4022, 676, 589, 2]
+// Exports: default, isGameCommunityServerPreview
 
-// Module 15347 (useIsGameCommunityServerPreview)
+// Module 15367 (useIsGameCommunityServerPreview)
 import initialize from "initialize";
 import { JoinGuildSources } from "ME";
 
@@ -23,4 +23,12 @@ export default function useIsGameCommunityServerPreview(arg0) {
     }
     return type === outer1_3.GAME_COMMUNITY_UPSELL;
   }, items1);
+};
+export const isGameCommunityServerPreview = function isGameCommunityServerPreview(id) {
+  lurkingSourceForGuild = lurkingSourceForGuild.getLurkingSourceForGuild(id);
+  let type;
+  if (lurkingSourceForGuild != null) {
+    type = lurkingSourceForGuild.type;
+  }
+  return type === JoinGuildSources.GAME_COMMUNITY_UPSELL;
 };

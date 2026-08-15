@@ -1,10 +1,10 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 14933
+// Function ID: 14934
 // Name: StackBlock
-// Dependencies: [19, 17, 21, 4342, 712, 4775, 5437, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4733, 6292, 4734, 2]
 // Exports: default
 
-// Module 14893 (StackBlock)
+// Module 14933 (StackBlock)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,36 +32,36 @@ export default function UserSettingsDesignSystemStack() {
   obj = { spacing: 16, children: null };
   const obj1 = { children: null };
   const obj2 = { children: null };
-  const items = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Basic Example" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." }), ];
+  const items = [callback(require(4734) /* Text */.Text, { variant: "text-lg/bold", children: "Basic Example" }), callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." }), ];
   const obj3 = { children: null };
   const items1 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj3[0] = items1;
-  items[2] = callback2(require(4775) /* Stack */.Stack, obj3);
+  items[2] = callback2(require(4733) /* Stack */.Stack, obj3);
   obj2[0] = items;
-  obj1[0] = callback2(require(4775) /* Stack */.Stack, obj2);
-  const items2 = [callback(require(5437) /* PressableCard */.Card, obj1), , ];
+  obj1[0] = callback2(require(4733) /* Stack */.Stack, obj2);
+  const items2 = [callback(require(6292) /* PressableCard */.Card, obj1), , ];
   const obj4 = { children: null };
   const obj5 = { children: null };
-  const items3 = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Spacing" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." }), ];
+  const items3 = [callback(require(4734) /* Text */.Text, { variant: "text-lg/bold", children: "Spacing" }), callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." }), ];
   const obj6 = { spacing: 24, children: null };
   const items4 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj6[1] = items4;
-  items3[2] = callback2(require(4775) /* Stack */.Stack, obj6);
+  items3[2] = callback2(require(4733) /* Stack */.Stack, obj6);
   obj5[0] = items3;
-  obj4[0] = callback2(require(4775) /* Stack */.Stack, obj5);
-  items2[1] = callback(require(5437) /* PressableCard */.Card, obj4);
+  obj4[0] = callback2(require(4733) /* Stack */.Stack, obj5);
+  items2[1] = callback(require(6292) /* PressableCard */.Card, obj4);
   const obj7 = { children: null };
   const obj8 = { children: null };
-  const items5 = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Horizontal" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." }), ];
+  const items5 = [callback(require(4734) /* Text */.Text, { variant: "text-lg/bold", children: "Horizontal" }), callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." }), ];
   const obj9 = { direction: "horizontal", children: null };
   const items6 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj9[1] = items6;
-  items5[2] = callback2(require(4775) /* Stack */.Stack, obj9);
+  items5[2] = callback2(require(4733) /* Stack */.Stack, obj9);
   obj8[0] = items5;
-  obj7[0] = callback2(require(4775) /* Stack */.Stack, obj8);
-  items2[2] = callback(require(5437) /* PressableCard */.Card, obj7);
+  obj7[0] = callback2(require(4733) /* Stack */.Stack, obj8);
+  items2[2] = callback(require(6292) /* PressableCard */.Card, obj7);
   obj[1] = items2;
-  obj[1] = callback2(require(4775) /* Stack */.Stack, obj);
+  obj[1] = callback2(require(4733) /* Stack */.Stack, obj);
   obj[0] = callback(closure_2, obj);
   return callback(closure_3, obj);
 };

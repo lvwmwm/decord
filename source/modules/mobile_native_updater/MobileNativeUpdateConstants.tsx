@@ -1,9 +1,9 @@
-// Module ID: 4324
-// Function ID: 4325
+// Module ID: 4356
+// Function ID: 4357
 // Name: UPDATE_CHECK_INTERVAL
-// Dependencies: [3943, 500, 1486, 1625, 2]
+// Dependencies: [3975, 500, 1487, 1626, 2]
 
-// Module 4324 (UPDATE_CHECK_INTERVAL)
+// Module 4356 (UPDATE_CHECK_INTERVAL)
 import importDefaultResult from "t";
 import getConstants from "getConstants";
 import getConstants from "getConstants";

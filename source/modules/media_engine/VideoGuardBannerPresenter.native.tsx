@@ -1,10 +1,10 @@
-// Module ID: 16677
-// Function ID: 16678
+// Module ID: 16723
+// Function ID: 16724
 // Name: VideoGuardBannerContent
-// Dependencies: [19, 21, 4342, 712, 4338, 1236, 13178, 4062, 2]
+// Dependencies: [19, 21, 4661, 712, 4734, 1236, 13106, 4094, 2]
 // Exports: presentVideoGuardBanner
 
-// Module 16677 (VideoGuardBannerContent)
+// Module 16723 (VideoGuardBannerContent)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,10 +18,10 @@ function VideoGuardBannerContent() {
   const items = [intl.string(require(1236) /* getSystemLocale */.t.UoW002), " ", ];
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj = { helpdeskArticle: null };
-  obj[0] = require(13178) /* articleURL */.VIDEO_GUARD_HELP_ARTICLE_URL;
+  obj[0] = require(13106) /* articleURL */.VIDEO_GUARD_HELP_ARTICLE_URL;
   items[2] = intl2.format(require(1236) /* getSystemLocale */.t.BPDKoA, obj);
   obj[2] = items;
-  return callback(require(4338) /* Text */.Text, obj);
+  return callback(require(4734) /* Text */.Text, obj);
 }
 ({ jsxs: c3, jsx: c4 } = jsxProd);
 createCacheKey = { toastText: null };
@@ -31,7 +31,7 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("createCacheKey").fileFinishedImporting("modules/media_engine/VideoGuardBannerPresenter.native.tsx");
 
 export const presentVideoGuardBanner = function presentVideoGuardBanner() {
-  let obj = importDefault(4062);
+  let obj = importDefault(4094);
   obj = {
     key: "VIDEO_GUARD_BANNER",
     content() {

@@ -1,9 +1,9 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 5365
+// Function ID: 5366
 // Name: createUserWidgetFromServer
-// Dependencies: [1994, 1930, 1218, 1910, 1220, 4431, 5217, 676, 7151, 12, 7152, 7162, 7159, 7158, 1370, 4227, 1949, 1900, 7163, 1236, 7164, 5063, 2]
+// Dependencies: [1994, 1930, 1218, 1910, 1220, 4559, 5078, 676, 5366, 12, 5367, 5380, 5375, 5374, 1370, 4259, 1949, 1900, 5381, 1236, 5382, 5097, 2]
 
-// Module 7150 (createUserWidgetFromServer)
+// Module 5365 (createUserWidgetFromServer)
 import _getSystemLocale from "_getSystemLocale";
 import createdAt from "createdAt";
 import fetchFingerprint from "fetchFingerprint";
@@ -17,25 +17,25 @@ import set from "fetchFingerprint";
 const require = arg1;
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (require(7151) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (tmp(7151).WidgetType.FAVORITE_GAMES !== type) {
-      if (tmp(7151).WidgetType.PLAYED_GAMES !== type) {
-        if (tmp(7151).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (tmp(7151).WidgetType.APPLICATION === type) {
+  if (require(5366) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (tmp(5366).WidgetType.FAVORITE_GAMES !== type) {
+      if (tmp(5366).WidgetType.PLAYED_GAMES !== type) {
+        if (tmp(5366).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (tmp(5366).WidgetType.APPLICATION === type) {
             let obj = { id: null, applicationId: null };
             obj[0] = data.id;
             obj[1] = data.data.application_id;
-            const applicationWidget = new tmp(7162).ApplicationWidget(obj);
+            const applicationWidget = new tmp(5380).ApplicationWidget(obj);
             return applicationWidget;
-          } else if (tmp(7151).WidgetType.PERSONAL === type) {
+          } else if (tmp(5366).WidgetType.PERSONAL === type) {
             obj = { id: null, header: null, sections: null };
             obj[0] = data.id;
             const header = data.data.header;
             obj[1] = header;
-            obj[2] = tmp(7159).parsePersonalWidgetSections(data.data.sections);
-            const userProfilePersonalWidget = new tmp(7159).UserProfilePersonalWidget(obj);
+            obj[2] = tmp(5375).parsePersonalWidgetSections(data.data.sections);
+            const userProfilePersonalWidget = new tmp(5375).UserProfilePersonalWidget(obj);
             return userProfilePersonalWidget;
-          } else if (tmp(7151).WidgetType.CLIPS_GALLERY === type) {
+          } else if (tmp(5366).WidgetType.CLIPS_GALLERY === type) {
             obj = { id: null, clips: null };
             obj[0] = data.id;
             const clips = data.data.clips;
@@ -55,7 +55,7 @@ function createUserWidgetFromServer(data) {
               return tmp;
             });
             obj[1] = mapped.filter(tmp(1370).isNotNullish);
-            const clipsGalleryWidget = new tmp(7158).ClipsGalleryWidget(obj);
+            const clipsGalleryWidget = new tmp(5374).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           }
         }
@@ -66,7 +66,7 @@ function createUserWidgetFromServer(data) {
   const mapped1 = games.map((gameId) => ({ gameId: gameId.game_id, comment: gameId.comment, tags: gameId.tags }));
   const obj5 = importDefault(12);
   const uniqByResult = importDefault(12).uniqBy(mapped1, "gameId");
-  const baseGameWidget = new tmp(7152).BaseGameWidget({ id: data.id, type, games: importDefault(12).uniqBy(mapped1, "gameId") });
+  const baseGameWidget = new tmp(5367).BaseGameWidget({ id: data.id, type, games: importDefault(12).uniqBy(mapped1, "gameId") });
   return baseGameWidget;
 }
 function createUserWidgetFromSnapshot(type) {
@@ -81,31 +81,31 @@ function createUserWidgetFromSnapshot(type) {
   let sections;
   let type3;
   type = type.type;
-  if (require(7151) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (tmp(7151).WidgetType.FAVORITE_GAMES !== type) {
-      if (tmp(7151).WidgetType.PLAYED_GAMES !== type) {
-        if (tmp(7151).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (tmp(7151).WidgetType.APPLICATION === type) {
+  if (require(5366) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (tmp(5366).WidgetType.FAVORITE_GAMES !== type) {
+      if (tmp(5366).WidgetType.PLAYED_GAMES !== type) {
+        if (tmp(5366).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (tmp(5366).WidgetType.APPLICATION === type) {
             ({ id: id3, applicationId } = type);
             let obj = { id: null, applicationId: null };
             obj[0] = id3;
             obj[1] = applicationId;
-            const applicationWidget = new tmp(7162).ApplicationWidget(obj);
+            const applicationWidget = new tmp(5380).ApplicationWidget(obj);
             return applicationWidget;
-          } else if (tmp(7151).WidgetType.PERSONAL === type) {
+          } else if (tmp(5366).WidgetType.PERSONAL === type) {
             ({ id: id2, header, sections } = type);
             obj = { id: null, header: null, sections: null };
             obj[0] = id2;
             obj[1] = header;
             obj[2] = sections;
-            const userProfilePersonalWidget = new tmp(7159).UserProfilePersonalWidget(obj);
+            const userProfilePersonalWidget = new tmp(5375).UserProfilePersonalWidget(obj);
             return userProfilePersonalWidget;
-          } else if (tmp(7151).WidgetType.CLIPS_GALLERY === type) {
+          } else if (tmp(5366).WidgetType.CLIPS_GALLERY === type) {
             ({ id, clips } = type);
             obj = { id: null, clips: null };
             obj[0] = id;
             obj[1] = clips;
-            const clipsGalleryWidget = new tmp(7158).ClipsGalleryWidget(obj);
+            const clipsGalleryWidget = new tmp(5374).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           } else {
             const type2 = type.type;
@@ -115,7 +115,7 @@ function createUserWidgetFromSnapshot(type) {
     }
   }
   ({ id: id4, type: type3, games } = type);
-  const baseGameWidget = new tmp(7152).BaseGameWidget({ id: id4, type: type3, games });
+  const baseGameWidget = new tmp(5367).BaseGameWidget({ id: id4, type: type3, games });
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -551,7 +551,7 @@ function handleProfileFetchFailure(arg0) {
   set.delete(userId);
   value = map1.get(userId);
   if (value == null) {
-    const obj = { connectedAccounts: null, applicationRoleConnections: null, premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId: null, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "diversity" };
+    const obj = { connectedAccounts: null, applicationRoleConnections: null, premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId: null, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "call" };
     obj[0] = [];
     obj[1] = [];
     obj[6] = userId;
@@ -616,7 +616,7 @@ function handleProfileUpdateSuccess(guild_id) {
           const merged = Object.assign(value);
           obj = { collectibles: null };
           obj[0] = collectibles;
-          const merged1 = Object.assign(importDefault(7164)(obj));
+          const merged1 = Object.assign(importDefault(5382)(obj));
           obj.accentColor = accent_color;
           obj.banner = banner;
           obj.bio = bio;
@@ -637,7 +637,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: null };
       obj2[0] = collectibles2;
-      const merged3 = Object.assign(importDefault(7164)(obj2));
+      const merged3 = Object.assign(importDefault(5382)(obj2));
       obj1.accentColor = accent_color2;
       obj1.banner = banner2;
       obj1.bio = bio2;

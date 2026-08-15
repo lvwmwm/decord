@@ -1,14 +1,14 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10495
+// Function ID: 10496
 // Name: getDurationStringOfFractionalPremium
-// Dependencies: [4007, 1236, 7233, 4031, 687, 2]
+// Dependencies: [4039, 1236, 7458, 4063, 687, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10456 (getDurationStringOfFractionalPremium)
+// Module 10495 (getDurationStringOfFractionalPremium)
 const result = require("QuestRewardTypes").fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
-  let obj = require(4007) /* getPremiumPlanItem */;
+  let obj = require(4039) /* getPremiumPlanItem */;
   const fractionalPremiumUnitsHoursFromSkuIds = obj.getFractionalPremiumUnitsHoursFromSkuIds(arr.map((skuId) => skuId.skuId));
   if (fractionalPremiumUnitsHoursFromSkuIds % 24 === 0) {
     const intl2 = tmp(1236).intl;
@@ -32,15 +32,15 @@ export const getFractionalPremiumQuestRewardName = function getFractionalPremium
   const found = rewards.filter((type) => type.type === callback(table[2]).QuestRewardTypes.FRACTIONAL_PREMIUM);
   const flatMapResult = found.flatMap((quantity) => Array(quantity.quantity).fill(quantity.skuId));
   let obj = { days: null, hours: null, minutes: null };
-  const fractionalPremiumUnitsHoursFromSkuIds = require(4007) /* getPremiumPlanItem */.getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult);
+  const fractionalPremiumUnitsHoursFromSkuIds = require(4039) /* getPremiumPlanItem */.getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult);
   obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
   obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
   obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
-  const obj2 = require(4007) /* getPremiumPlanItem */;
-  const obj4 = require(4031) /* resetCache */;
+  const obj2 = require(4039) /* getPremiumPlanItem */;
+  const obj4 = require(4063) /* resetCache */;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { time: null };
-  const diffAsUnitsResult = require(4031) /* resetCache */.diffAsUnits(0, fractionalPremiumUnitsHoursFromSkuIds * importDefault(687).Millis.HOUR);
-  obj[0] = require(4031) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
+  const diffAsUnitsResult = require(4063) /* resetCache */.diffAsUnits(0, fractionalPremiumUnitsHoursFromSkuIds * importDefault(687).Millis.HOUR);
+  obj[0] = require(4063) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
   return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["4SqnVD"], obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16304
+// Function ID: 16305
 // Name: useSelfHasVideo
-// Dependencies: [4358, 1218, 4393, 589, 10699, 2]
+// Dependencies: [4773, 1218, 4497, 589, 11444, 2]
 // Exports: default
 
-// Module 16254 (useSelfHasVideo)
+// Module 16304 (useSelfHasVideo)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

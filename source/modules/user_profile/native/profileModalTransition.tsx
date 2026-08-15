@@ -1,10 +1,10 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 16004
+// Function ID: 16005
 // Name: set
-// Dependencies: [19, 1499, 2]
+// Dependencies: [19, 1500, 2]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 15954 (set)
+// Module 16004 (set)
 import noop from "noop";
 import set from "set";
 
@@ -14,7 +14,7 @@ let set = new Set();
 const result = set.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  navigation = navigation(1499).useNavigation();
+  navigation = navigation(1500).useNavigation();
   let items = [navigation];
   const effect = React.useEffect(() => {
     function leave() {

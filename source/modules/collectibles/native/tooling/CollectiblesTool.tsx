@@ -1,10 +1,10 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15172
+// Function ID: 15173
 // Name: FramePreviewOverrideSection
-// Dependencies: [32, 19, 17, 7071, 7087, 8862, 21, 4342, 712, 9408, 4338, 4778, 647, 8350, 15124, 1297, 10185, 2]
+// Dependencies: [32, 19, 17, 5301, 5324, 8947, 21, 4661, 712, 9172, 4734, 4746, 647, 8389, 15173, 1297, 10389, 2]
 // Exports: default
 
-// Module 15123 (FramePreviewOverrideSection)
+// Module 15172 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -37,28 +37,28 @@ function FramePreviewOverrideSection() {
     obj[0] = tmp.sectionHeader;
     obj = { variant: "heading-md/semibold", style: null, children: "Frame Preview Override" };
     obj[1] = tmp.sectionTitle;
-    obj[1] = callback3(_require(4338).Text, obj);
+    obj[1] = callback3(_require(4734).Text, obj);
     const items = [callback3(closure_6, obj), , , , ];
     const obj1 = { variant: "text-sm/normal", style: null, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
     obj1[1] = tmp.description;
-    items[1] = callback3(_require(4338).Text, obj1);
+    items[1] = callback3(_require(4734).Text, obj1);
     const obj2 = { variant: "text-xs/normal", style: null, children: null };
     const items1 = [tmp.statusText, statusError];
     obj2[1] = items1;
     obj2[2] = "Loading\u2026";
-    items[2] = callback3(_require(4338).Text, obj2);
+    items[2] = callback3(_require(4734).Text, obj2);
     const obj3 = { pillStyle: null, text: "Load from device", onPress: null };
     obj3[0] = tmp.secondaryButton;
     obj3[2] = function onPress() {
       callback();
     };
-    items[3] = callback3(_require(4778).BaseTextButton, obj3);
+    items[3] = callback3(_require(4746).BaseTextButton, obj3);
     let tmp13Result = null != tmp2;
     if (tmp13Result) {
       const obj4 = { pillStyle: null, text: "Clear override", onPress: null };
       obj4[0] = tmp.secondaryButton;
       obj4[2] = tmp4;
-      tmp13Result = callback3(_require(4778).BaseTextButton, obj4);
+      tmp13Result = callback3(_require(4746).BaseTextButton, obj4);
     }
     items[4] = tmp13Result;
     obj[1] = items;
@@ -139,7 +139,7 @@ function UnpurchasedCollectiblesShopCardV2(arg0) {
   const obj = {};
   const tmp = callback(React.useState(0), 2);
   const merged = Object.assign(arg0);
-  return callback3(importDefault(9408), obj, tmp2);
+  return callback3(importDefault(9172), obj, tmp2);
 }
 const obj17 = { color: require("Themes").colors.TEXT_MUTED, textAlign: "center", fontSize: 14 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");

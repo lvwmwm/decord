@@ -1,8 +1,8 @@
-// Module ID: 13959
-// Function ID: 13960
-// Dependencies: [19, 10422, 21, 13960, 15019, 2]
+// Module ID: 13991
+// Function ID: 13992
+// Dependencies: [19, 10670, 21, 13992, 15068, 2]
 
-// Module 13959
+// Module 13991
 import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -14,11 +14,11 @@ const memoResult = require("noop").memo(function SettingLayout(node) {
   if (NodeType.LIST === type) {
     let obj = { node: null };
     obj[0] = node;
-    return jsx(require(13960) /* SearchListSectionLabel */.SettingsList, { node: null });
+    return jsx(require(13992) /* SearchListSectionLabel */.SettingsList, { node: null });
   } else if (tmp.SEGMENTED_CONTROL === type) {
     obj = { node: null };
     obj[0] = node;
-    return jsx(importDefault(15019), { node: null });
+    return jsx(importDefault(15068), { node: null });
   }
 });
 const result = require("jsxProd").fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");

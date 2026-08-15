@@ -1,14 +1,14 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17105
+// Function ID: 17106
 // Name: handleUserApplicationIdentityGatewayEvent
-// Dependencies: [12535, 5322, 2]
+// Dependencies: [12286, 5038, 2]
 
-// Module 17059 (handleUserApplicationIdentityGatewayEvent)
+// Module 17105 (handleUserApplicationIdentityGatewayEvent)
 import "initialize";
 
 const require = arg1;
 function handleUserApplicationIdentityGatewayEvent(user_id) {
-  const useUserApplicationIdentities = require(12535) /* fetchStore */.useUserApplicationIdentities;
+  const useUserApplicationIdentities = require(12286) /* fetchStore */.useUserApplicationIdentities;
   useUserApplicationIdentities.refetch(user_id.user_id);
 }
 let prototype = function UserApplicationIdentityManager() {

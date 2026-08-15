@@ -1,10 +1,10 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 10752
+// Function ID: 10753
 // Name: _bulkClearRecents
 // Dependencies: [5, 676, 1374, 1336, 709, 698, 2]
 // Exports: bulkClearRecents
 
-// Module 11023 (_bulkClearRecents)
+// Module 10752 (_bulkClearRecents)
 import expandEventProperties from "expandEventProperties";
 import { AnalyticEvents } from "ME";
 
@@ -28,7 +28,7 @@ function _bulkClearRecents() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ function _bulkClearRecents() {
             const obj5 = callback2(709);
             callback2(698).track(constants.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c5 = tmp;

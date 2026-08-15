@@ -1,9 +1,9 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 14574
+// Function ID: 14575
 // Name: AllChannelAccessOptions
 // Dependencies: [644, 705, 2]
 
-// Module 14542 (AllChannelAccessOptions)
+// Module 14574 (AllChannelAccessOptions)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {

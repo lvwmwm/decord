@@ -1,10 +1,10 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 12680
+// Function ID: 12681
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 676, 21, 4342, 4710, 7859, 1236, 1993, 4710, 2]
+// Dependencies: [19, 676, 21, 4661, 4660, 8074, 1236, 1993, 4660, 2]
 // Exports: default
 
-// Module 13145 (ProvisionalAccountNoCallAllowed)
+// Module 12680 (ProvisionalAccountNoCallAllowed)
 import "noop";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/provisional_acc
 export default function ProvisionalAccountNoCallAllowed() {
   let obj = { header: null, title: null, content: null, actions: null };
   obj = { size: "lg", style: callback().header };
-  obj[0] = jsx(require(7859) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
+  obj[0] = jsx(require(8074) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vh+Zpq"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -29,7 +29,7 @@ export default function ProvisionalAccountNoCallAllowed() {
   const obj2 = { variant: "secondary", text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
-  obj1[0] = jsx(require(4710) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", text: null }, "got-it");
-  obj[3] = jsx(require(4710) /* getAlertModalItemKey */.AlertActions, { children: null });
-  return jsx(require(4710) /* getAlertModalItemKey */.AlertModal, { helpdeskArticle: null });
+  obj1[0] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", text: null }, "got-it");
+  obj[3] = jsx(require(4660) /* getAlertModalItemKey */.AlertActions, { children: null });
+  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { helpdeskArticle: null });
 };

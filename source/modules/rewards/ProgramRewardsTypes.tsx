@@ -1,9 +1,9 @@
-// Module ID: 13072
-// Function ID: 13073
+// Module ID: 13275
+// Function ID: 13276
 // Name: RewardProgram
-// Dependencies: [2, 13073, 13074]
+// Dependencies: [2, 13276, 13277]
 
-// Module 13072 (RewardProgram)
+// Module 13275 (RewardProgram)
 const result = require("ProgramCurrentState").fileFinishedImporting("modules/rewards/ProgramRewardsTypes.tsx");
 
 export const RewardProgram = require("RewardProgram").RewardProgram;

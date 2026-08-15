@@ -1,10 +1,10 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 16904
+// Function ID: 16905
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4342, 712, 5329, 8516, 4338, 4777, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 5449, 8555, 4734, 4745, 2]
 // Exports: default
 
-// Module 16858 (WarningNotice)
+// Module 16904 (WarningNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,11 +43,11 @@ export default function WarningNotice(arg0) {
   ({ container: arr[1], containerYellow: arr[2] } = tmp);
   obj = { style: tmp.horizontalContainer, children: null };
   obj = { style: tmp.alertIcon, source: null };
-  obj[1] = importDefault(8516);
-  const items1 = [callback(importDefault(5329), obj), ];
+  obj[1] = importDefault(8555);
+  const items1 = [callback(importDefault(5449), obj), ];
   const items2 = [, ];
   ({ message: arr3[0], textYellow: arr3[1] } = tmp);
-  items1[1] = callback(require(4338) /* Text */.Text, { style: items2, variant: "text-sm/medium", color: "interactive-text-active", children: notice });
+  items1[1] = callback(require(4734) /* Text */.Text, { style: items2, variant: "text-sm/medium", color: "interactive-text-active", children: notice });
   obj[1] = items1;
   const items3 = [callback2(View, obj), ];
   let tmp4Result = null != onClick && null != ctaLabel;
@@ -59,7 +59,7 @@ export default function WarningNotice(arg0) {
     obj2[1] = disabled;
     obj2[2] = submitting;
     obj2[3] = ctaLabel;
-    obj1[1] = tmp4(require(4777) /* Button */.Button, obj2);
+    obj1[1] = tmp4(require(4745) /* Button */.Button, obj2);
     tmp4Result = tmp4(tmp3, obj1);
   }
   items3[1] = tmp4Result;

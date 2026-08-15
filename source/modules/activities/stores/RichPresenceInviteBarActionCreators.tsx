@@ -1,10 +1,10 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10675
+// Function ID: 10676
 // Name: markChannelInvited
 // Dependencies: [709, 2]
 // Exports: dismissSession, markChannelInvited
 
-// Module 10427 (markChannelInvited)
+// Module 10675 (markChannelInvited)
 const result = require("set").fileFinishedImporting("modules/activities/stores/RichPresenceInviteBarActionCreators.tsx");
 
 export const markChannelInvited = function markChannelInvited(activitySessionKey, id) {

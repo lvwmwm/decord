@@ -1,9 +1,9 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14848
+// Function ID: 14849
 // Name: pressable
-// Dependencies: [676, 4058, 10421, 1236, 4298, 2]
+// Dependencies: [676, 4090, 10669, 1236, 4330, 2]
 
-// Module 14808 (pressable)
+// Module 14848 (pressable)
 import { MarketingURLs } from "ME";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ const pressable = createToggle.createPressable({
   parent: null,
   IconComponent: require("CircleInformationIcon").CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    importDefault(4058).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    importDefault(4090).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
 });
@@ -27,7 +27,7 @@ const obj = {
   parent: null,
   IconComponent: require("CircleInformationIcon").CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    importDefault(4058).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    importDefault(4090).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
 };

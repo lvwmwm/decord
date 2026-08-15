@@ -1,9 +1,9 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7594
+// Function ID: 7595
 // Name: getAutocompleterBoosterMap
-// Dependencies: [7377, 7378, 1980, 3998, 1922, 5288, 5221, 7379, 1374, 5292, 7381, 1903, 4326, 4331, 4060, 1486, 12, 5291, 2]
+// Dependencies: [7595, 7596, 1980, 4030, 1922, 6773, 6714, 7597, 1374, 6777, 7599, 1903, 4358, 4363, 4092, 1487, 12, 6776, 2]
 
-// Module 7376 (getAutocompleterBoosterMap)
+// Module 7594 (getAutocompleterBoosterMap)
 import handleUserUpdate from "handleUserUpdate";
 import fromPath from "fromPath";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
@@ -13,8 +13,8 @@ import mergeGuildAvatar from "mergeGuildAvatar";
 const require = arg1;
 function getAutocompleterBoosterMap(USER, options) {
   if (options.frecencyBoosters) {
-    let boosterMap = require(5221) /* NOOP */.getBoosterMap(USER);
-    const obj2 = require(5221) /* NOOP */;
+    let boosterMap = require(6714) /* NOOP */.getBoosterMap(USER);
+    const obj2 = require(6714) /* NOOP */;
   } else {
     boosterMap = {};
   }
@@ -123,8 +123,8 @@ const prototype = Autocompleter.prototype;
 prototype["createSearchContext"] = function createSearchContext() {
   const self = this;
   if (null == this.userSearchContext) {
-    self.userSearchContext = importDefault(7379).getUserSearchContext(self.parseUserResults, self._limit);
-    const obj = importDefault(7379);
+    self.userSearchContext = importDefault(7597).getUserSearchContext(self.parseUserResults, self._limit);
+    const obj = importDefault(7597);
   }
 };
 prototype["setLimit"] = function setLimit(_limit) {
@@ -368,8 +368,8 @@ prototype["queryTextChannels"] = function queryTextChannels(closure_1, _limit) {
   const self = this;
   if (this._include(AutocompleterResultTypes.TEXT_CHANNEL)) {
     if (self.options.frecencyBoosters) {
-      let boosterMap = blacklist(5221).getBoosterMap(tmp);
-      const obj2 = blacklist(5221);
+      let boosterMap = blacklist(6714).getBoosterMap(tmp);
+      const obj2 = blacklist(6714);
     } else {
       boosterMap = {};
     }
@@ -385,7 +385,7 @@ prototype["queryTextChannels"] = function queryTextChannels(closure_1, _limit) {
     obj[4] = options.allowSnowflake;
     obj[5] = fn;
     obj[6] = boosterMap;
-    return importDefault(5221).queryChannels(obj);
+    return importDefault(6714).queryChannels(obj);
   } else {
     return [];
   }
@@ -397,8 +397,8 @@ prototype["queryVoiceChannels"] = function queryVoiceChannels(closure_1, _limit)
   if (this._include(AutocompleterResultTypes.VOICE_CHANNEL)) {
     ({ allowSnowflake, voiceChannelGuildFilter } = self.options);
     if (self.options.frecencyBoosters) {
-      let boosterMap = require(5221) /* NOOP */.getBoosterMap(tmp);
-      const obj2 = require(5221) /* NOOP */;
+      let boosterMap = require(6714) /* NOOP */.getBoosterMap(tmp);
+      const obj2 = require(6714) /* NOOP */;
     } else {
       boosterMap = {};
     }
@@ -409,7 +409,7 @@ prototype["queryVoiceChannels"] = function queryVoiceChannels(closure_1, _limit)
     obj[4] = GUILD_VOCAL_CHANNELS_KEY;
     obj[5] = allowSnowflake;
     obj[6] = boosterMap;
-    return importDefault(5221).queryChannels(obj);
+    return importDefault(6714).queryChannels(obj);
   } else {
     return [];
   }
@@ -418,8 +418,8 @@ prototype["queryGuilds"] = function queryGuilds(arg0, arg1) {
   const self = this;
   if (this._include(AutocompleterResultTypes.GUILD)) {
     if (self.options.frecencyBoosters) {
-      let boosterMap = blacklist(5221).getBoosterMap(tmp);
-      const obj2 = blacklist(5221);
+      let boosterMap = blacklist(6714).getBoosterMap(tmp);
+      const obj2 = blacklist(6714);
     } else {
       boosterMap = {};
     }
@@ -435,7 +435,7 @@ prototype["queryGuilds"] = function queryGuilds(arg0, arg1) {
     obj[3] = fn;
     obj[4] = boosterMap;
     obj[5] = options.allowSnowflake;
-    return importDefault(5221).queryGuilds(obj);
+    return importDefault(6714).queryGuilds(obj);
   } else {
     return [];
   }
@@ -454,8 +454,8 @@ prototype["queryUsers"] = function queryUsers(arg0, arg1, arg2) {
       }
       if (null == thread) {
         if (undefined !== arg1) {
-          const members = importDefault(5292).requestMembers(arg1, arg0, 100);
-          const obj4 = importDefault(5292);
+          const members = importDefault(6777).requestMembers(arg1, arg0, 100);
+          const obj4 = importDefault(6777);
         }
         userSearchContext.setLimit(arg2);
         let obj = { query: null, filters: null, blacklist: null, boosters: null };
@@ -514,8 +514,8 @@ prototype["queryUsers"] = function queryUsers(arg0, arg1, arg2) {
         obj[2] = arg2;
         obj[3] = tmp2;
         obj[4] = options.allowSnowflake;
-        self._userResults = importDefault(5221).queryUsers(obj);
-        const obj2 = importDefault(5221);
+        self._userResults = importDefault(6714).queryUsers(obj);
+        const obj2 = importDefault(6714);
       }
     }
     tmp25 = AutocompleterResultTypes;
@@ -526,8 +526,8 @@ prototype["queryGroupDMs"] = function queryGroupDMs(arg0, arg1) {
   if (this._include(AutocompleterResultTypes.GROUP_DM)) {
     const blacklist = self.options.blacklist;
     if (self.options.frecencyBoosters) {
-      let boosterMap = blacklist(5221).getBoosterMap(tmp);
-      const obj2 = blacklist(5221);
+      let boosterMap = blacklist(6714).getBoosterMap(tmp);
+      const obj2 = blacklist(6714);
     } else {
       boosterMap = {};
     }
@@ -540,14 +540,14 @@ prototype["queryGroupDMs"] = function queryGroupDMs(arg0, arg1) {
     obj[1] = arg1;
     obj[3] = fn;
     obj[4] = boosterMap;
-    return importDefault(5221).queryGroupDMs(obj);
+    return importDefault(6714).queryGroupDMs(obj);
   } else {
     return [];
   }
 };
 prototype["queryApplications"] = function queryApplications(arg0, arg1) {
   if (this._include(AutocompleterResultTypes.APPLICATION)) {
-    let obj = importDefault(5221);
+    let obj = importDefault(6714);
     obj = { query: null, limit: null, fuzzy: true };
     obj[0] = arg0;
     obj[1] = arg1;
@@ -559,7 +559,7 @@ prototype["queryApplications"] = function queryApplications(arg0, arg1) {
 };
 prototype["queryGameProfiles"] = function queryGameProfiles(query, _limit) {
   if (this._include(AutocompleterResultTypes.GAME_PROFILE)) {
-    let result = _require(7381).queryGamesAutocomplete(query);
+    let result = _require(7599).queryGamesAutocomplete(query);
     if (result == null) {
       result = [];
     }
@@ -593,22 +593,22 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
   let hostname;
   let pathname;
   if (this._include(AutocompleterResultTypes.LINK)) {
-    let obj = require(4326) /* getPathsFromURL */;
+    let obj = require(4358) /* trimTrailingPunctuation */;
     const findCodedLinkResult = obj.findCodedLink(query);
     let type;
     if (findCodedLinkResult != null) {
       type = findCodedLinkResult.type;
     }
-    if (type === require(4331) /* CodedLinkType */.CodedLinkType.INVITE) {
+    if (type === require(4363) /* CodedLinkType */.CodedLinkType.INVITE) {
       obj = { type: null, record: null, score: null };
       obj[0] = tmp.LINK;
       obj[1] = fromPath.fromInviteCode(findCodedLinkResult.code);
-      let tmp3Result = tmp3(5221);
+      let tmp3Result = tmp3(6714);
       obj[2] = tmp3Result.calculateScore(11);
       const items = [obj];
       return items;
     } else {
-      const sanitizeUrlResult = importDefault(4060).sanitizeUrl(query);
+      const sanitizeUrlResult = importDefault(4092).sanitizeUrl(query);
       try {
         const _URL = URL;
         const uRL = new URL(sanitizeUrlResult);
@@ -617,7 +617,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
         if (undefined !== hostname) {
           str = hostname;
         }
-        let tmp17Result = tmp17(1486);
+        let tmp17Result = tmp17(1487);
         let isDiscordHostnameResult = tmp17Result.isDiscordHostname(str);
         if (!isDiscordHostnameResult) {
           const _window = window;
@@ -625,12 +625,12 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
         }
         if (null !== pathname) {
           if (isDiscordHostnameResult) {
-            tmp17Result = tmp17(1486);
+            tmp17Result = tmp17(1487);
             if (tmp17Result.isAppRoute(pathname)) {
               obj = { type: null, record: null, score: null };
               obj[0] = tmp.LINK;
               obj[1] = fromPath.fromPath(pathname);
-              tmp3Result = tmp3(5221);
+              tmp3Result = tmp3(6714);
               obj[2] = tmp3Result.calculateScore(11);
               const items1 = [obj];
               let items2 = items1;
@@ -642,7 +642,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
       } catch (err) {
         return [];
       }
-      const obj8 = importDefault(4060);
+      const obj8 = importDefault(4092);
     }
   } else {
     return [];
@@ -650,7 +650,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
 };
 prototype["queryInAppNavigations"] = function queryInAppNavigations(arg0, arg1) {
   if (this._include(AutocompleterResultTypes.IN_APP_NAVIGATION)) {
-    let obj = importDefault(5221);
+    let obj = importDefault(6714);
     obj = { query: null, limit: null, fuzzy: true };
     obj[0] = arg0;
     obj[1] = arg1;

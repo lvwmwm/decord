@@ -1,10 +1,10 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14522
+// Function ID: 14523
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7228, 1302, 21, 712, 4342, 1500, 589, 14491, 14493, 1236, 9019, 10438, 709, 14494, 9205, 12054, 14500, 2]
+// Dependencies: [32, 19, 17, 7453, 1302, 21, 712, 4661, 1501, 589, 14523, 14525, 1236, 8799, 10477, 709, 14526, 10096, 11785, 14532, 2]
 // Exports: default
 
-// Module 14490 (SettingsQuestPreviewScreen)
+// Module 14522 (SettingsQuestPreviewScreen)
 import _slicedToArray from "_slicedToArray";
 import QuestBarPreview from "QuestBarPreview";
 import get_ActivityIndicator from "SegmentedControl";

@@ -1,10 +1,10 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 12925
+// Function ID: 12926
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 676, 1924, 5789, 6979, 6978, 6954, 1236, 4007, 2]
+// Dependencies: [19, 676, 1924, 7139, 7418, 7417, 7393, 1236, 4039, 2]
 // Exports: default
 
-// Module 12848 (useOpenPremiumMarketingPayment)
+// Module 12925 (useOpenPremiumMarketingPayment)
 import noop from "noop";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -65,20 +65,20 @@ export default function useOpenPremiumMarketingPayment(arg0) {
   items = [analyticsLocations, premiumTrialOfferPremiumType];
   let interval;
   if (premiumTrialOffer != null) {
-    let subscription_trial = premiumTrialOffer.subscription_trial;
-    if (subscription_trial != null) {
-      interval = subscription_trial.interval;
+    let subscriptionTrial = premiumTrialOffer.subscriptionTrial;
+    if (subscriptionTrial != null) {
+      interval = subscriptionTrial.interval;
     }
   }
   const items1 = [interval, , ];
-  let interval_count;
+  let intervalCount;
   if (premiumTrialOffer != null) {
-    let subscription_trial2 = premiumTrialOffer.subscription_trial;
-    if (subscription_trial2 != null) {
-      interval_count = subscription_trial2.interval_count;
+    let subscriptionTrial2 = premiumTrialOffer.subscriptionTrial;
+    if (subscriptionTrial2 != null) {
+      intervalCount = subscriptionTrial2.intervalCount;
     }
   }
-  items1[1] = interval_count;
+  items1[1] = intervalCount;
   items1[2] = premiumTrialOfferPremiumType;
   obj[1] = React.useMemo(() => {
     if (null == premiumTrialOfferPremiumType) {
@@ -88,21 +88,21 @@ export default function useOpenPremiumMarketingPayment(arg0) {
       let obj = analyticsLocations(premiumTrialOfferPremiumType[8]);
       let interval;
       if (premiumTrialOffer != null) {
-        const subscription_trial = tmp3.subscription_trial;
-        if (subscription_trial != null) {
-          interval = subscription_trial.interval;
+        const subscriptionTrial = tmp3.subscriptionTrial;
+        if (subscriptionTrial != null) {
+          interval = subscriptionTrial.interval;
         }
       }
       obj = { intervalType: null, intervalCount: null };
       obj[0] = interval;
-      let interval_count;
+      let intervalCount;
       if (premiumTrialOffer != null) {
-        const subscription_trial2 = tmp3.subscription_trial;
-        if (subscription_trial2 != null) {
-          interval_count = subscription_trial2.interval_count;
+        const subscriptionTrial2 = tmp3.subscriptionTrial;
+        if (subscriptionTrial2 != null) {
+          intervalCount = subscriptionTrial2.intervalCount;
         }
       }
-      obj[1] = interval_count;
+      obj[1] = intervalCount;
       stringResult = obj.formatTrialCtaIntervalDuration(obj);
     }
     return stringResult;

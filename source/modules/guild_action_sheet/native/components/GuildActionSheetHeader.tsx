@@ -1,10 +1,10 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13427
+// Function ID: 13428
 // Name: CommunityPill
-// Dependencies: [19, 17, 13396, 1910, 5958, 676, 21, 4342, 712, 501, 1236, 9329, 9325, 10514, 9332, 4909, 4062, 1297, 4338, 7707, 589, 1430, 13397, 13398, 1493, 5840, 1435, 1469, 8462, 4065, 5329, 9327, 12635, 2]
+// Dependencies: [19, 17, 13428, 1910, 7240, 676, 21, 4661, 712, 501, 1236, 9156, 9155, 9826, 9159, 5433, 4094, 1297, 4734, 7925, 589, 1430, 13429, 13430, 1494, 7188, 1435, 1469, 8501, 4097, 5449, 9152, 12713, 2]
 // Exports: default
 
-// Module 13395 (CommunityPill)
+// Module 13427 (CommunityPill)
 import useIsWindowLarge from "useIsWindowLarge";
 import get_ActivityIndicator from "Button";
 import initialize from "initialize";
@@ -26,12 +26,12 @@ function CommunityPill(guildVisibility) {
   const tmp = createCacheKey();
   const intl = GlobeEarthIcon(1236).intl;
   importDefault = intl.string(GlobeEarthIcon(1236).t.TME4LJ);
-  let tmp4Result = importDefault(9329);
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(9325).GuildVisibility.PUBLIC) {
+  let tmp4Result = importDefault(9156);
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(9155).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1236).intl;
     importDefault = intl2.string(tmp2(1236).t.op2cJ6);
-    GlobeEarthIcon = tmp2(10514).GlobeEarthIcon;
-    tmp4Result = importDefault(9332);
+    GlobeEarthIcon = tmp2(9826).GlobeEarthIcon;
+    tmp4Result = importDefault(9159);
   }
   let obj = {
     style: tmp.communityPill,
@@ -48,9 +48,9 @@ function CommunityPill(guildVisibility) {
   obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: null };
   const intl3 = tmp2(1236).intl;
   obj[3] = intl3.string(GlobeEarthIcon(1236).t.K7iRig);
-  items[1] = callback(GlobeEarthIcon(4338).Text, obj);
+  items[1] = callback(GlobeEarthIcon(4734).Text, obj);
   obj[3] = items;
-  return callback2(GlobeEarthIcon(4909).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(5433).PressableOpacity, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

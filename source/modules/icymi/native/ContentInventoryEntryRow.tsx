@@ -1,10 +1,10 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15756
+// Function ID: 15757
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 3998, 21, 589, 8303, 15707, 15716, 2]
+// Dependencies: [19, 4030, 21, 589, 8344, 15757, 15766, 2]
 // Exports: default
 
-// Module 15706 (ContentInventoryEntryRow)
+// Module 15756 (ContentInventoryEntryRow)
 import "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { jsx } from "jsxProd";
@@ -25,9 +25,9 @@ export default function ContentInventoryEntryRow(content) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (tmp(8303).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (tmp(8303).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (tmp(8303).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (tmp(8344).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (tmp(8344).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (tmp(8344).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           obj = { content: null, renderForScreenshot: null, visible: null };
           obj[0] = content;
           obj[1] = flag;
@@ -35,7 +35,7 @@ export default function ContentInventoryEntryRow(content) {
             flag2 = false;
           }
           obj[2] = flag2;
-          return jsx(importDefault(15716), { content: null, renderForScreenshot: null, visible: null });
+          return jsx(importDefault(15766), { content: null, renderForScreenshot: null, visible: null });
         } else {
           return null;
         }
@@ -44,6 +44,6 @@ export default function ContentInventoryEntryRow(content) {
     obj = { content: null, renderForScreenshot: null };
     obj[0] = content;
     obj[1] = flag;
-    return jsx(importDefault(15707), { content: null, renderForScreenshot: null });
+    return jsx(importDefault(15757), { content: null, renderForScreenshot: null });
   }
 };

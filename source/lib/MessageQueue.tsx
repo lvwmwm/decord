@@ -1,10 +1,10 @@
-// Module ID: 7360
-// Function ID: 7361
+// Module ID: 5040
+// Function ID: 5041
 // Name: items
-// Dependencies: [109, 4341, 1218, 4436, 676, 4335, 687, 7361, 3, 4549, 7362, 6990, 530, 1954, 38, 4913, 4915, 4919, 2]
+// Dependencies: [109, 4737, 1218, 4564, 676, 4663, 687, 5041, 3, 5042, 5051, 5052, 530, 1954, 38, 4828, 4830, 4834, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7360 (items)
+// Module 5040 (items)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import getUserAgnosticState from "getUserAgnosticState";
 import fetchFingerprint from "fetchFingerprint";
@@ -198,7 +198,7 @@ prototype["handleSend"] = function handleSend(nonce) {
   let analyticsLocation;
   let channelId;
   ({ channelId, analyticsLocation } = nonce);
-  let tmp3 = importDefault(7362)();
+  let tmp3 = importDefault(5051)();
   if (tmp3 == null) {
     tmp3 = analyticsLocation;
   }
@@ -207,7 +207,7 @@ prototype["handleSend"] = function handleSend(nonce) {
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  let obj1 = handleCommand(6990);
+  let obj1 = handleCommand(5052);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(nonce, closure_3));
@@ -250,7 +250,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
   let analyticsLocation;
   let channelId;
   ({ channelId, analyticsLocation } = message);
-  let tmp3 = importDefault(7362)();
+  let tmp3 = importDefault(5051)();
   if (tmp3 == null) {
     tmp3 = analyticsLocation;
   }
@@ -259,7 +259,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  let obj1 = handleCommand(6990);
+  let obj1 = handleCommand(5052);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(message, closure_4));

@@ -1,10 +1,10 @@
-// Module ID: 12624
-// Function ID: 12625
+// Module ID: 12702
+// Function ID: 12703
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [1391, 3989, 676, 589, 2]
+// Dependencies: [1391, 4021, 676, 589, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 12624 (useCanSearchForumPostsByChannelId)
+// Module 12702 (useCanSearchForumPostsByChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";

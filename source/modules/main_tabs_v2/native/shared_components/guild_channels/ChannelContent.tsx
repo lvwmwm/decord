@@ -1,10 +1,10 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15884
+// Function ID: 15885
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 9855, 4551, 21, 4342, 500, 9856, 4857, 15835, 4886, 8028, 15330, 4338, 2]
+// Dependencies: [19, 17, 10055, 5044, 21, 4661, 500, 10056, 5287, 15885, 6890, 8078, 15380, 4734, 2]
 // Exports: renderChannelContent
 
-// Module 15834 (ChannelContentComponent)
+// Module 15884 (ChannelContentComponent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,12 +35,12 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = createCacheKey();
-  let obj = require(9856) /* getLayoutStyles */;
+  let obj = require(10056) /* getLayoutStyles */;
   let tmp10Result = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp10Result) {
     if (!locked) {
-      locked = importDefault(4857)(channel);
+      locked = importDefault(5287)(channel);
     }
     tmp10Result = locked;
   }
@@ -74,7 +74,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(importDefault(15835), obj3), ];
+  const items1 = [closure_6(importDefault(15885), obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -96,19 +96,19 @@ function ChannelContentComponent(arg0) {
     if (tmp10Result) {
       const obj6 = { size: "xxs", color: "icon-muted", style: null };
       obj6[2] = tmp.channelTraitIcon;
-      tmp10Result = tmp10(tmp2(4886).LockIcon, obj6);
+      tmp10Result = tmp10(tmp2(6890).LockIcon, obj6);
     }
     const items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj7 = { size: "xxs", color: "icon-muted", style: null };
       obj7[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp10(tmp2(8028).WarningIcon, obj7);
+      isNSFWResult = tmp10(tmp2(8078).WarningIcon, obj7);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj8 = { locked: null, isInMainTabsExperiment: true };
       obj8[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp10(importDefault(15330), obj8);
+      isSubscriptionGated = tmp10(importDefault(15380), obj8);
     }
     items3[2] = isSubscriptionGated;
     obj4[1] = items3;
@@ -146,7 +146,7 @@ function ChannelContentComponent(arg0) {
     const obj13 = { variant: "text-xs/medium", color: "text-muted", style: null, maxFontSizeMultiplier: 1.75, children: null };
     obj13[2] = { marginLeft: "auto" };
     obj13[4] = lastMessageTimestampString;
-    tmp10Result1 = tmp10(tmp2(4338).Text, obj13);
+    tmp10Result1 = tmp10(tmp2(4734).Text, obj13);
   }
   const items7 = [tmp10Result1, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];

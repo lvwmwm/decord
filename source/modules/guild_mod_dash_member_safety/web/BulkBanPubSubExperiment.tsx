@@ -1,10 +1,10 @@
-// Module ID: 6001
-// Function ID: 6002
+// Module ID: 7285
+// Function ID: 7286
 // Name: apexExperiment
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: useBulkBanPubSubExperimentConfig
 
-// Module 6001 (apexExperiment)
+// Module 7285 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

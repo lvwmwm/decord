@@ -1,10 +1,10 @@
-// Module ID: 11303
-// Function ID: 11304
+// Module ID: 11016
+// Function ID: 11017
 // Name: GuildSettingsModalMemberEditScene
-// Dependencies: [19, 17, 4334, 1434, 1984, 1990, 1983, 1910, 3989, 1922, 11304, 676, 21, 4342, 712, 3994, 12, 8519, 1297, 4338, 5435, 1236, 5828, 4072, 6072, 5331, 4187, 9195, 3978, 8033, 4775, 7856, 11305, 11306, 4061, 11311, 1499, 589, 38, 11302, 5990, 5775, 11316, 11318, 5777, 5844, 2]
+// Dependencies: [19, 17, 4662, 1434, 1984, 1990, 1983, 1910, 4021, 1922, 11017, 676, 21, 4661, 712, 4026, 12, 8558, 1297, 4734, 6291, 1236, 6286, 4104, 5432, 6314, 4219, 9462, 4010, 8083, 4733, 8071, 11018, 11019, 4093, 11024, 1500, 589, 38, 11015, 7275, 6550, 11029, 11031, 7127, 6312, 2]
 // Exports: default
 
-// Module 11303 (GuildSettingsModalMemberEditScene)
+// Module 11016 (GuildSettingsModalMemberEditScene)
 import importAllResult from "Text";
 import get_ActivityIndicator from "TableCheckboxRow";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -379,7 +379,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       outer1_1(outer1_3[32]).startEditingRoles(applyArgumentsResult.props.guild.id, applyArgumentsResult.props.user.id);
     };
     applyArgumentsResult.handleToggleRole = function handleToggleRole(roleId, state) {
-      callback(11305).toggleRole(roleId, state);
+      callback(11018).toggleRole(roleId, state);
     };
     applyArgumentsResult.handleSetCommunicationDisabled = function handleSetCommunicationDisabled() {
       let guild;
@@ -427,7 +427,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
     };
     applyArgumentsResult.handleCancelEditMemberRoles = function handleCancelEditMemberRoles() {
-      callback(11305).stopEditingRoles();
+      callback(11018).stopEditingRoles();
     };
     return applyArgumentsResult;
   }
@@ -457,7 +457,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting) {
         return outer1_19(self(outer1_3[24]).HeaderActionButton, obj);
       };
     } else if (null != onClose) {
-      let setOptionsResult = self(5331);
+      let setOptionsResult = self(6314);
       fn = setOptionsResult.getHeaderCloseButton(onClose);
     }
     setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
@@ -507,12 +507,12 @@ prototype["render"] = function render() {
     let obj = { style: null, children: null };
     obj[0] = tmp.rowLabel;
     obj = { variant: "text-sm/medium", children: null };
-    obj[1] = importDefault(4187).getUserTag(user);
-    const items = [callback3(require(4338) /* Text */.Text, obj), ];
+    obj[1] = importDefault(4219).getUserTag(user);
+    const items = [callback3(require(4734) /* Text */.Text, obj), ];
     let tmp18Result = null;
     if (user.bot) {
       obj = { verified: null };
-      let tmp21Result = tmp21(9195);
+      let tmp21Result = tmp21(9462);
       obj[0] = user.isVerifiedBot();
       tmp18Result = tmp18(tmp21Result, obj);
     }
@@ -533,8 +533,8 @@ prototype["render"] = function render() {
         const intl2 = tmp19(1236).intl;
         obj2[1] = intl2.string(tmp19(1236).t.Z5s7PM);
         obj2[2] = self.handleTransferOwnership;
-        obj1[1] = tmp18(tmp19(5435).TableRow, obj2);
-        tmp18Result = tmp18(tmp19(5828).TableRowGroup, obj1);
+        obj1[1] = tmp18(tmp19(6291).TableRow, obj2);
+        tmp18Result = tmp18(tmp19(6286).TableRowGroup, obj1);
       }
       const obj3 = { style: null, contentContainerStyle: null, children: null };
       obj3[0] = tmp.form;
@@ -551,8 +551,8 @@ prototype["render"] = function render() {
       obj7[2] = guild.id;
       obj6[0] = tmp18(tmp19(1297).Avatar, obj7);
       obj6[1] = tmp7;
-      obj5[1] = tmp18(tmp19(5435).TableRow, obj6);
-      const items2 = [tmp18(tmp19(5828).TableRowGroup, obj5), , , , , , ];
+      obj5[1] = tmp18(tmp19(6291).TableRow, obj6);
+      const items2 = [tmp18(tmp19(6286).TableRowGroup, obj5), , , , , , ];
       if (!canChangeNick) {
         canChangeNick = currentUser.id === user.id;
       }
@@ -568,7 +568,7 @@ prototype["render"] = function render() {
         obj8[2] = intl4.string(tmp19(1236).t.h7UKXj);
         ({ handleChangeNickname: obj16[3], handleSaveNickname: obj16[4] } = self);
         obj8[6] = tmp3;
-        canChangeNick = tmp18(tmp19(7856).TextInput, obj8);
+        canChangeNick = tmp18(tmp19(8071).TextInput, obj8);
       }
       items2[1] = canChangeNick;
       if (canManageRoles) {
@@ -599,12 +599,12 @@ prototype["render"] = function render() {
         const obj11 = { variant: "danger", label: null, onPress: null };
         const intl5 = tmp19(1236).intl;
         const obj12 = { user: null };
-        tmp21Result = tmp21(4187);
+        tmp21Result = tmp21(4219);
         obj12[0] = tmp21Result.getName(user);
         obj11[1] = intl5.formatToPlainString(tmp19(1236).t.yOiJHB, obj12);
         obj11[2] = self.handleKick;
-        obj10[1] = tmp18(tmp19(5435).TableRow, obj11);
-        canKick = tmp18(tmp19(5828).TableRowGroup, obj10);
+        obj10[1] = tmp18(tmp19(6291).TableRow, obj11);
+        canKick = tmp18(tmp19(6286).TableRowGroup, obj10);
       }
       items2[4] = canKick;
       if (canBan) {
@@ -612,49 +612,49 @@ prototype["render"] = function render() {
         const obj14 = { variant: "danger", label: null, onPress: null };
         const intl6 = tmp19(1236).intl;
         const obj15 = { user: null };
-        obj15[0] = tmp21(4187).getName(user);
+        obj15[0] = tmp21(4219).getName(user);
         obj14[1] = intl6.formatToPlainString(tmp19(1236).t.TuAZuW, obj15);
         obj14[2] = self.handleBan;
-        obj13[1] = tmp18(tmp19(5435).TableRow, obj14);
-        canBan = tmp18(tmp19(5828).TableRowGroup, obj13);
-        const tmp21Result1 = tmp21(4187);
+        obj13[1] = tmp18(tmp19(6291).TableRow, obj14);
+        canBan = tmp18(tmp19(6286).TableRowGroup, obj13);
+        const tmp21Result1 = tmp21(4219);
       }
       items2[5] = canBan;
       items2[6] = tmp18Result;
       obj4[2] = items2;
-      obj3[2] = tmp16(tmp19(4775).Stack, obj4);
-      return tmp18(tmp19(8033).Form, obj3);
+      obj3[2] = tmp16(tmp19(4733).Stack, obj4);
+      return tmp18(tmp19(8083).Form, obj3);
     } else {
-      const result = tmp19(3978).isMemberCommunicationDisabled(member);
-      const TableRowGroup = tmp19(5828).TableRowGroup;
+      const result = tmp19(4010).isMemberCommunicationDisabled(member);
+      const TableRowGroup = tmp19(6286).TableRowGroup;
       const obj16 = { hasIcons: false, children: null };
-      const TableRow = tmp19(5435).TableRow;
+      const TableRow = tmp19(6291).TableRow;
       let obj17 = { variant: "danger", label: null, onPress: null };
       const intl = tmp19(1236).intl;
       const formatToPlainString = intl.formatToPlainString;
       let handleClearCommunicationDisabled = tmp19(1236).t;
       if (result) {
         const obj18 = { user: null };
-        obj18[0] = tmp21(4187).getName(user);
+        obj18[0] = tmp21(4219).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.RuL6o7, obj18);
         handleClearCommunicationDisabled = self.handleClearCommunicationDisabled;
         obj17[2] = handleClearCommunicationDisabled;
         obj17 = tmp18(TableRow, obj17);
         obj16[1] = obj17;
         let tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result2 = tmp21(4187);
+        const tmp21Result2 = tmp21(4219);
       } else {
         const obj19 = { user: null };
-        obj19[0] = tmp21(4187).getName(user);
+        obj19[0] = tmp21(4219).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.FN7NIS, obj19);
         obj17[2] = self.handleSetCommunicationDisabled;
         obj16[1] = tmp18(TableRow, obj17);
         tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result3 = tmp21(4187);
+        const tmp21Result3 = tmp21(4219);
       }
-      const tmp19Result = tmp19(3978);
+      const tmp19Result = tmp19(4010);
     }
-    const obj28 = importDefault(4187);
+    const obj28 = importDefault(4219);
     tmp16 = closure_20;
   }
 };
@@ -668,7 +668,7 @@ export default function MemberModalEdit(onClose) {
   const onRemove = onClose.onRemove;
   let c2;
   ({ guildId, userId } = onClose);
-  const tmp = onRemove(5777)(guildId);
+  const tmp = onRemove(7127)(guildId);
   c2 = tmp;
   const items = [onClose, onRemove, tmp];
   const memo = importAllResult.useMemo(() => {
@@ -713,6 +713,6 @@ export default function MemberModalEdit(onClose) {
   let obj = { screens: memo, initialRouteName: constants.MEMBER_EDIT, initialRouteStack: items1 };
   obj = { name: constants.MEMBER_EDIT, params: { userId } };
   items1 = [obj];
-  return callback3(onClose(5844).Navigator, obj);
+  return callback3(onClose(6312).Navigator, obj);
 };
 export { GuildSettingsModalMemberEditScene };

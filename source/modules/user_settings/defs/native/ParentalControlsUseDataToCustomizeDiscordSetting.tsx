@@ -1,9 +1,9 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15044
+// Function ID: 15045
 // Name: toggle
-// Dependencies: [7066, 8148, 676, 14149, 7068, 10421, 1236, 2]
+// Dependencies: [5296, 8198, 676, 14181, 5298, 10669, 1236, 2]
 
-// Module 14999 (toggle)
+// Module 15044 (toggle)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -14,9 +14,9 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.MNKzyg);
   },
-  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToCustomizeDiscordSettingValue() {
-    return require(14149) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
+    return require(14181) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
   },
   onValueChange: function handlePersonalizationChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
@@ -32,8 +32,8 @@ createToggle = {
       } else {
         items2 = [Consents.PERSONALIZATION];
       }
-      importDefault(7068).updateTeenConsents(selectedTeenId, items1, items2);
-      const obj = importDefault(7068);
+      importDefault(5298).updateTeenConsents(selectedTeenId, items1, items2);
+      const obj = importDefault(5298);
     }
   }
 };

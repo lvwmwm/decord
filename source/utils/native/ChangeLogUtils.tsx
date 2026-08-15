@@ -1,9 +1,9 @@
-// Module ID: 8260
-// Function ID: 8261
+// Module ID: 8306
+// Function ID: 8307
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4342, 712, 5220, 4796, 4338, 8261, 8262, 4060, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 6289, 4764, 4734, 8307, 8308, 4092, 2]
 
-// Module 8260 (ChangeLogLink)
+// Module 8306 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -86,7 +86,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = require(4338) /* Text */.Text;
+    Paragraph = require(4734) /* Text */.Text;
   }
   const tmp = createCacheKey();
   return <Paragraph key={state.key} variant="text-sm/normal" style={createCacheKey().text}>{output(node.content, state)}</Paragraph>;
@@ -96,7 +96,7 @@ function ChangeLogStrong(arg0) {
   let output;
   let state;
   ({ node, output, state } = arg0);
-  let obj = require(8261) /* apexExperiment */;
+  let obj = require(8307) /* apexExperiment */;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
     if (state != null) {
@@ -107,10 +107,10 @@ function ChangeLogStrong(arg0) {
     }
     obj = { variant: "experimental/body-sm/semibold", color: null, children: null };
     obj[1] = str;
-    obj[2] = tmp(8262).smartOutput(node, output, state);
-    let reactResult = jsx(tmp(4338).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
+    obj[2] = tmp(8308).smartOutput(node, output, state);
+    let reactResult = jsx(tmp(4734).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
     const tmp5 = jsx;
-    const tmpResult = tmp(8262);
+    const tmpResult = tmp(8308);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);
@@ -123,7 +123,7 @@ function ChangeLogImage(arg0) {
   ({ node, state } = arg0);
   let obj = { style: createCacheKey().image, source: null };
   obj = { uri: null };
-  obj[0] = importDefault(4060).sanitizeUrl(node.target);
+  obj[0] = importDefault(4092).sanitizeUrl(node.target);
   obj[1] = obj;
   return <closure_4 key={state.key} uri={null} />;
 }
@@ -136,7 +136,7 @@ function ChangeLogBlockQuote(state) {
   let obj = { style: tmp.container, children: null };
   obj = { variant: "text-sm/normal", style: tmp.text, children: null };
   obj[2] = output(node.content, state);
-  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
+  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
   return <closure_3 key={state.key} variant="text-sm/normal" style={tmp.text}>{null}</closure_3>;
 }
 ({ View: c3, Image: c4 } = get_ActivityIndicator);

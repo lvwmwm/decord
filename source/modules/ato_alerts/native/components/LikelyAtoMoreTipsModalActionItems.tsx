@@ -1,10 +1,10 @@
-// Module ID: 10336
-// Function ID: 10337
+// Module ID: 10592
+// Function ID: 10593
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1922, 21, 589, 4187, 5828, 5435, 1236, 9792, 2]
+// Dependencies: [19, 1922, 21, 589, 4219, 6286, 6291, 1236, 10001, 2]
 // Exports: default
 
-// Module 10336 (LikelyAtoMoreTipsModalActionItems)
+// Module 10592 (LikelyAtoMoreTipsModalActionItems)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function LikelyAtoMoreTipsModalActionItems(senderId) {
   const intl2 = senderId(1236).intl;
   obj[1] = intl2.string(senderId(1236).t.w2ve0t);
   obj[2] = senderId.handleMutePressed;
-  obj[3] = jsx(senderId(9792).BellSlashIcon, {});
-  obj[1] = jsx(senderId(5435).TableRow, { label: null, subLabel: null, onPress: null, icon: null });
-  return jsx(senderId(5828).TableRowGroup, { label: null, subLabel: null, onPress: null, icon: null });
+  obj[3] = jsx(senderId(10001).BellSlashIcon, {});
+  obj[1] = jsx(senderId(6291).TableRow, { label: null, subLabel: null, onPress: null, icon: null });
+  return jsx(senderId(6286).TableRowGroup, { label: null, subLabel: null, onPress: null, icon: null });
 };

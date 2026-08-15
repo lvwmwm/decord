@@ -1,9 +1,9 @@
-// Module ID: 14122
-// Function ID: 14123
+// Module ID: 14154
+// Function ID: 14155
 // Name: renderContent
-// Dependencies: [19, 21, 530, 4775, 4338, 7856, 4795, 5885, 2]
+// Dependencies: [19, 21, 530, 4733, 4734, 8071, 4763, 6551, 2]
 
-// Module 14122 (renderContent)
+// Module 14154 (renderContent)
 import jsxProd from "jsxProd";
 import { PureComponent } from "noop";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ let c3;
 let c4;
 let require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-let closure_5 = { input: "", error: "ti" };
+let closure_5 = { input: "", error: "accessibilityRole" };
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -85,7 +85,7 @@ prototype["renderContent"] = function renderContent() {
     if (tmp7) {
       let obj = { variant: "text-md/normal", children: null };
       obj[1] = helpText;
-      tmp7 = callback(tmp5(4338).Text, obj);
+      tmp7 = callback(tmp5(4734).Text, obj);
     }
     const items = [tmp7, ];
     obj = { label: null, placeholder: null, secureTextEntry: null, returnKeyType: "done", autoFocus: true, status: null, errorMessage: null, onSubmitEditing: null, onChange: null };
@@ -103,9 +103,9 @@ prototype["renderContent"] = function renderContent() {
     obj[8] = function onChange(input) {
       return self.setState({ input });
     };
-    items[1] = callback(self(7856).TextInput, obj);
+    items[1] = callback(self(8071).TextInput, obj);
     obj[1] = items;
-    return closure_4(self(4775).Stack, obj);
+    return closure_4(self(4733).Stack, obj);
   }
   error = self.state.error;
 };
@@ -118,12 +118,12 @@ prototype["render"] = function render() {
   ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
   let obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: null };
   obj[6] = this.renderContent();
-  const tmp5 = callback(importDefault(4795), obj);
+  const tmp5 = callback(importDefault(4763), obj);
   let tmpResult = tmp5;
   if (useKeyboardAwareWrapper) {
     obj = { children: null };
     obj[0] = tmp5;
-    tmpResult = callback(importDefault(5885), obj);
+    tmpResult = callback(importDefault(6551), obj);
   }
   return tmpResult;
 };

@@ -1,10 +1,10 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16707
+// Function ID: 16708
 // Name: preloadStaffMembers
-// Dependencies: [1910, 1922, 16662, 5293, 2]
+// Dependencies: [1910, 1922, 16708, 6778, 2]
 // Exports: preloadStaffMembers
 
-// Module 16661 (preloadStaffMembers)
+// Module 16707 (preloadStaffMembers)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID";
@@ -21,7 +21,7 @@ export const preloadStaffMembers = function preloadStaffMembers() {
     isStaffResult = null != guild.getGuild(PRELOAD_SERVER_ID);
   }
   if (isStaffResult) {
-    const obj2 = importDefault(5293);
+    const obj2 = importDefault(6778);
     const members = obj2.requestMembers(PRELOAD_SERVER_ID, "", 0, false);
   }
 };

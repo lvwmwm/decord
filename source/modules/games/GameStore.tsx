@@ -1,9 +1,9 @@
-// Module ID: 4366
-// Function ID: 4367
+// Module ID: 4505
+// Function ID: 4506
 // Name: handleLoadMessages
-// Dependencies: [4367, 589, 1486, 709, 2]
+// Dependencies: [4506, 589, 1487, 709, 2]
 
-// Module 4366 (handleLoadMessages)
+// Module 4505 (handleLoadMessages)
 import getOfficialApplicationId from "getOfficialApplicationId";
 import { Store } from "initialize";
 import set from "isDiscordProxiedAssetUrl";
@@ -133,7 +133,7 @@ prototype["getCoverImageUrl"] = function getCoverImageUrl(arg0, size) {
   } else if (null == size) {
     return tmp;
   } else {
-    let str = importDefault(1486).toURLSafe(tmp);
+    let str = importDefault(1487).toURLSafe(tmp);
     str = tmp;
     if (null != str) {
       const searchParams = str.searchParams;

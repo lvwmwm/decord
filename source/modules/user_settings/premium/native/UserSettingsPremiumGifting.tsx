@@ -1,13 +1,13 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 12985
+// Function ID: 12986
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8853, 6929, 676, 1924, 21, 4342, 712, 1367, 5828, 4338, 6945, 1499, 1628, 589, 12, 4601, 6949, 12822, 9638, 8849, 12775, 709, 6930, 6951, 8856, 7659, 6077, 8686, 12909, 1236, 12910, 12916, 12920, 12923, 12925, 7471, 8585, 2399, 12926, 5884, 2]
+// Dependencies: [32, 19, 17, 8936, 5357, 676, 1924, 21, 4661, 712, 1367, 6286, 4734, 7384, 1500, 1629, 589, 12, 4381, 7388, 12899, 9592, 8932, 12853, 709, 5358, 7390, 8939, 7877, 7357, 9326, 12986, 1236, 12987, 12993, 12997, 13000, 13002, 7689, 8624, 2431, 13003, 5446, 2]
 
-// Module 12908 (GiftingSectionTitle)
+// Module 12985 (GiftingSectionTitle)
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "useBlockedPaymentsConfig";
 import get_ActivityIndicator from "apply";
-import map from "map";
+import initialize from "initialize";
 import addEntitlement from "addEntitlement";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -32,12 +32,12 @@ function GiftingSectionTitle(title) {
   if (importDefault(1367)("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
-    let tmp3Result = tmp3(tmp4(5828).TableRowGroupTitle, obj);
+    let tmp3Result = tmp3(tmp4(6286).TableRowGroupTitle, obj);
   } else {
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: null };
     obj[0] = tmp.title;
     obj[4] = title;
-    tmp3Result = tmp3(tmp4(4338).Text, obj);
+    tmp3Result = tmp3(tmp4(4734).Text, obj);
   }
   return tmp3Result;
 }
@@ -113,7 +113,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
   const GiftingBadgeExperiment = _require(stateFromStoresArray[21]).GiftingBadgeExperiment;
   enabled = GiftingBadgeExperiment.useConfig({ location: "gift_inventory" }).enabled;
   let obj5 = _require(stateFromStoresArray[16]);
-  const items2 = [map];
+  const items2 = [initialize];
   const stateFromStores = obj5.useStateFromStores(items2, () => badgeById.getBadgeById(_undefined(stateFromStoresArray[22]).BadgeId.GIFTING));
   [tmp14, c6] = memo(undefined.useState(false), 2);
   let obj6 = _require(stateFromStoresArray[23]);

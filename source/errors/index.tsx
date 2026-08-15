@@ -1,9 +1,9 @@
-// Module ID: 4241
-// Function ID: 4242
+// Module ID: 4273
+// Function ID: 4274
 // Name: V6OrEarlierAPIError
-// Dependencies: [2, 4030, 4242, 4029, 4243, 4244, 4246, 4247, 4248]
+// Dependencies: [2, 4062, 4274, 4061, 4275, 4276, 4278, 4279, 4280]
 
-// Module 4241 (V6OrEarlierAPIError)
+// Module 4273 (V6OrEarlierAPIError)
 const result = require("prototype").fileFinishedImporting("errors/index.tsx");
 
 export const V6OrEarlierAPIError = require("prototype");

@@ -1,10 +1,10 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15069
+// Function ID: 15070
 // Name: DismissableContentsEmpty
-// Dependencies: [32, 19, 17, 1381, 21, 4342, 712, 1377, 15021, 5829, 5828, 9778, 5435, 1374, 4301, 5442, 15022, 6056, 4338, 8779, 5290, 1628, 10799, 589, 14335, 14336, 7811, 2]
+// Dependencies: [32, 19, 17, 1381, 21, 4661, 712, 1377, 15070, 7178, 6286, 9987, 6291, 1374, 4333, 6297, 15071, 7337, 4734, 9383, 6775, 1629, 12529, 589, 14367, 14368, 8029, 2]
 // Exports: default
 
-// Module 15020 (DismissableContentsEmpty)
+// Module 15069 (DismissableContentsEmpty)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getSearchEmptySource";
 import { View } from "SearchField";
@@ -22,7 +22,7 @@ function DismissableContentsEmpty() {
   obj = { marginBottom: null };
   obj[0] = importDefault(712).space.PX_16;
   obj[0] = obj;
-  const items = [callback2(require(4338) /* Text */.Text, obj), callback2(require(8779) /* getSearchEmptySource */.SearchEmpty, {})];
+  const items = [callback2(require(4734) /* Text */.Text, obj), callback2(require(9383) /* getSearchEmptySource */.SearchEmpty, {})];
   obj[1] = items;
   return callback3(View, obj);
 }
@@ -48,8 +48,8 @@ let closure_11 = importAllResult.memo((content) => {
   let start;
   const label = content.content;
   ({ start, end } = content);
-  ({ isDismissed, handleToggleDismissState } = importDefault(15021)(require(1377) /* DismissibleContent */.DismissibleContent[label]));
-  return callback2(require(5829) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
+  ({ isDismissed, handleToggleDismissState } = importDefault(15070)(require(1377) /* DismissibleContent */.DismissibleContent[label]));
+  return callback2(require(7178) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
 });
 let closure_12 = importAllResult.memo((arg0) => {
   let dailyCapOverridden;
@@ -64,39 +64,39 @@ let closure_12 = importAllResult.memo((arg0) => {
   obj = { style: tmp.headerSection, children: null };
   obj = { title: "Global Overrides", hasIcons: false, children: null };
   const obj1 = { onValueChange: null, value: null, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
-  obj1[0] = require(9778) /* handleDCShownToUser */.overrideDismissibleContentFramework;
+  obj1[0] = require(9987) /* handleDCShownToUser */.overrideDismissibleContentFramework;
   obj1[1] = dailyCapOverridden;
-  const items = [callback2(require(5829) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
+  const items = [callback2(require(7178) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
   const obj2 = { onValueChange: null, value: null, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
-  obj2[0] = require(9778) /* handleDCShownToUser */.overrideNewUserMinAgeRequired;
+  obj2[0] = require(9987) /* handleDCShownToUser */.overrideNewUserMinAgeRequired;
   obj2[1] = newUserMinAgeRequiredOverridden;
-  items[1] = callback2(require(5829) /* TableSwitchRow */.TableSwitchRow, obj2);
-  items[2] = callback2(require(5829) /* TableSwitchRow */.TableSwitchRow, { onValueChange: onForceBountiesSwipeUpNuxChange, value: forceBountiesSwipeUpNux, label: "Force bounties swipe-up NUX", subLabel: "When enabled, treat bounties swipe-up NUX as shown so scroll affordances always appear. Reopen the bounties modal after toggling." });
+  items[1] = callback2(require(7178) /* TableSwitchRow */.TableSwitchRow, obj2);
+  items[2] = callback2(require(7178) /* TableSwitchRow */.TableSwitchRow, { onValueChange: onForceBountiesSwipeUpNuxChange, value: forceBountiesSwipeUpNux, label: "Force bounties swipe-up NUX", subLabel: "When enabled, treat bounties swipe-up NUX as shown so scroll affordances always appear. Reopen the bounties modal after toggling." });
   obj[2] = items;
-  obj[1] = callback3(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[1] = callback3(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
   const items1 = [callback2(View, obj), , , ];
   const obj3 = { style: tmp.headerSection, children: null };
   const obj4 = { title: "Bulk actions", hasIcons: true, children: null };
   const obj5 = { label: "Clear all dismissed dismissible contents", onPress: null, icon: null, trailing: null };
   obj5[1] = require(1374) /* updateUserGuildSettings */.clearDismissedContents;
-  obj5[2] = callback2(require(4301) /* TrashIcon */.TrashIcon, {});
-  obj5[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  const items2 = [callback2(require(5435) /* TableRowInner */.TableRow, obj5), , ];
+  obj5[2] = callback2(require(4333) /* TrashIcon */.TrashIcon, {});
+  obj5[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  const items2 = [callback2(require(6291) /* TableRowInner */.TableRow, obj5), , ];
   const obj6 = { label: "Clear all guild dismissed dismissible contents", onPress: null, icon: null, trailing: null };
   obj6[1] = require(1374) /* updateUserGuildSettings */.clearGuildDismissedContents;
-  obj6[2] = callback2(require(4301) /* TrashIcon */.TrashIcon, {});
-  obj6[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  items2[1] = callback2(require(5435) /* TableRowInner */.TableRow, obj6);
+  obj6[2] = callback2(require(4333) /* TrashIcon */.TrashIcon, {});
+  obj6[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  items2[1] = callback2(require(6291) /* TableRowInner */.TableRow, obj6);
   const obj7 = { label: "Dismiss all dismissible contents", onPress: null, icon: null, trailing: null };
   obj7[1] = require(1374) /* updateUserGuildSettings */.checkAllDismissedContents;
-  obj7[2] = callback2(require(15022) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
-  obj7[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  items2[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj7);
+  obj7[2] = callback2(require(15071) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
+  obj7[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  items2[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj7);
   obj4[2] = items2;
-  obj3[1] = callback3(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj4);
+  obj3[1] = callback3(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj4);
   items1[1] = callback2(View, obj3);
-  items1[2] = callback2(View, { style: tmp.search, children: callback2(require(6056) /* SearchField */.SearchField, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) });
-  items1[3] = callback2(require(4338) /* Text */.Text, { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" });
+  items1[2] = callback2(View, { style: tmp.search, children: callback2(require(7337) /* SearchField */.SearchField, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) });
+  items1[3] = callback2(require(4734) /* Text */.Text, { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" });
   obj[0] = items1;
   return callback3(closure_9, obj);
 });
@@ -109,8 +109,8 @@ export default function DevToolsDismissableContentsScreen() {
   const tmp = callback4();
   const ref = first.useRef(null);
   const importDefault = first.useRef(0);
-  let obj = ref(10799);
-  let tmp2 = importDefault(1628)();
+  let obj = ref(12529);
+  let tmp2 = importDefault(1629)();
   [dependencyMap, tmp5] = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   callback = tmp5;
   first = callback(first.useState(() => {
@@ -160,7 +160,7 @@ export default function DevToolsDismissableContentsScreen() {
   const dailyCapOverridden = stateFromStoresObject.dailyCapOverridden;
   const newUserMinAgeRequiredOverridden = stateFromStoresObject.newUserMinAgeRequiredOverridden;
   let tmp4 = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
-  let tmp9 = callback(ref(14335).useForceBountiesSwipeUpNux(), 2);
+  let tmp9 = callback(ref(14367).useForceBountiesSwipeUpNux(), 2);
   const first2 = tmp9[0];
   callback4 = tmp11;
   const items1 = [tmp9[1]];
@@ -238,6 +238,6 @@ export default function DevToolsDismissableContentsScreen() {
   };
   obj[9] = callback4;
   obj[10] = callback3;
-  obj[1] = dailyCapOverridden(ref(7811).FlashList, obj);
+  obj[1] = dailyCapOverridden(ref(8029).FlashList, obj);
   return dailyCapOverridden(first1, obj);
 };

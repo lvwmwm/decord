@@ -1,10 +1,10 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11173
+// Function ID: 11174
 // Name: ScheduledMessagesConfig
-// Dependencies: [32, 3999, 1922, 676, 1924, 11457, 3, 38, 1471, 7211, 1403, 3943, 1945, 589, 2]
+// Dependencies: [32, 4031, 1922, 676, 1924, 11170, 3, 38, 1472, 7437, 1403, 3975, 1945, 589, 2]
 // Exports: canUseScheduledMessages, convertServerScheduledMessage, convertServerScheduledMessageSend, getDefaultScheduledTime, getScheduledMessagesLimit, parseContentAndFlagsForSilentMessage, unparseContentAndFlagsForSilentMessage, useCanUseScheduledMessages, useScheduledMessagesLimit
 
-// Module 11460 (ScheduledMessagesConfig)
+// Module 11173 (ScheduledMessagesConfig)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -67,7 +67,7 @@ export const parseContentAndFlagsForSilentMessage = function parseContentAndFlag
   let content;
   let flags;
   ({ content, flags } = arg0);
-  const tmp2 = callback(importDefault(7211)(content), 2);
+  const tmp2 = callback(importDefault(7437)(content), 2);
   const items = [, ];
   if (tmp2[0]) {
     items[0] = tmp2[1];
@@ -98,7 +98,7 @@ export const unparseContentAndFlagsForSilentMessage = function unparseContentAnd
   let combined = content;
   if (obj.hasFlag(flags, MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const _HermesInternal = HermesInternal;
-    combined = "" + require(7211) /* regExp */.SILENT_SENTINEL + " " + content;
+    combined = "" + require(7437) /* regExp */.SILENT_SENTINEL + " " + content;
   }
   return combined;
 };
@@ -109,10 +109,10 @@ export const canUseScheduledMessages = function canUseScheduledMessages(location
   return ApexExperiment.getConfig({ location }).enabled;
 };
 export const getDefaultScheduledTime = function getDefaultScheduledTime() {
-  const obj = importDefault(3943)();
-  const addResult = importDefault(3943)().add(closure_9, "seconds");
-  const obj2 = importDefault(3943)();
-  const addResult1 = importDefault(3943)().startOf("hour").add(1, "hour");
+  const obj = importDefault(3975)();
+  const addResult = importDefault(3975)().add(closure_9, "seconds");
+  const obj2 = importDefault(3975)();
+  const addResult1 = importDefault(3975)().startOf("hour").add(1, "hour");
   let addResult2 = addResult1;
   if (addResult1.isBefore(addResult)) {
     addResult2 = addResult1.add(1, "hour");
@@ -145,9 +145,9 @@ export const convertServerScheduledMessageSend = function convertServerScheduled
   }
   obj[5] = attachment_uploads.map((filename) => ({ filename: filename.filename, uploadedFilename: filename.uploaded_filename, description: filename.description, title: filename.title }));
   obj = { id: body.scheduled_message_id, content: body.scheduled_message.content, author: authStore.getUser(body.user_id), timestamp: null, channel_id: null };
-  obj[3] = importDefault(3943)(body.send_at_timestamp).toDate();
+  obj[3] = importDefault(3975)(body.send_at_timestamp).toDate();
   obj[4] = body.scheduled_message.channel_id;
-  const obj4 = importDefault(3943)(body.send_at_timestamp);
+  const obj4 = importDefault(3975)(body.send_at_timestamp);
   obj[6] = new hasFlag(obj);
   return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 13093
-// Function ID: 13094
+// Module ID: 13296
+// Function ID: 13297
 // Name: _handlePresenceUpdate
-// Dependencies: [7188, 4431, 1922, 676, 13094, 589, 709, 2]
+// Dependencies: [5407, 4559, 1922, 676, 13297, 589, 709, 2]
 
-// Module 13093 (_handlePresenceUpdate)
+// Module 13296 (_handlePresenceUpdate)
 import recomputeAffinities from "recomputeAffinities";
 import sortActivity from "sortActivity";
 import mergeGuildAvatar from "mergeGuildAvatar";

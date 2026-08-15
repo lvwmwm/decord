@@ -1,9 +1,9 @@
-// Module ID: 1623
-// Function ID: 1624
+// Module ID: 1624
+// Function ID: 1625
 // Name: DRAG_HANDLE
-// Dependencies: [1624, 712, 2]
+// Dependencies: [1625, 712, 2]
 
-// Module 1623 (DRAG_HANDLE)
+// Module 1624 (DRAG_HANDLE)
 import isMetaQuest from "isMetaQuest";
 
 if (isMetaQuest.isMetaQuest()) {

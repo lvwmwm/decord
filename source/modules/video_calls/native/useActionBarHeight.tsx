@@ -1,10 +1,10 @@
-// Module ID: 10657
-// Function ID: 10658
+// Module ID: 8693
+// Function ID: 8694
 // Name: sum
-// Dependencies: [4393, 676, 5459, 10658, 10661, 10268, 589, 2]
+// Dependencies: [4497, 676, 6951, 8694, 8697, 10526, 589, 2]
 // Exports: default
 
-// Module 10657 (sum)
+// Module 8693 (sum)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { InputModes } from "ME";
 import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -14,9 +14,9 @@ let sum = 2 * require("ActionButton").SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadiu
 const result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
 
 export default function useActionBarHeight(id) {
-  const isFiveButtonLayout = require(10661) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
-  const obj = require(10661) /* useIsFiveButtonLayout */;
-  const tmp2 = importDefault(10268)(id);
+  const isFiveButtonLayout = require(8697) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
+  const obj = require(8697) /* useIsFiveButtonLayout */;
+  const tmp2 = importDefault(10526)(id);
   const items = [_detectH265HardwareDecode];
   let num = 88;
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);

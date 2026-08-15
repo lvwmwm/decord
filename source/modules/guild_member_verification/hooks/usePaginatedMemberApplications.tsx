@@ -1,10 +1,10 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 15840
+// Function ID: 15841
 // Name: result
-// Dependencies: [5, 32, 19, 4168, 11, 8498, 4241, 2]
+// Dependencies: [5, 32, 19, 4200, 11, 8537, 4273, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 15790 (result)
+// Module 15840 (result)
 import _fetchGuildJoinRequests from "_fetchGuildJoinRequests";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -48,7 +48,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -82,7 +82,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
                   }
                   ref = 2;
                   outer1_2.current = true;
-                  let obj1 = guildJoinRequests(8498);
+                  let obj1 = guildJoinRequests(8537);
                   obj1 = { guildId: null, status: null, limit: null, force: true };
                   obj1[0] = lib;
                   obj1[1] = tmp69;
@@ -129,7 +129,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
             if (2 === tmp8) {
               ref = 1;
               outer1_2 = _slicedToArray;
-              const aPIError = new lib(4241).APIError(outer1_2);
+              const aPIError = new lib(4273).APIError(outer1_2);
               anyErrorMessage = aPIError;
               outer1_4(anyErrorMessage.getAnyErrorMessage());
             } else if (arg0 === 1) {

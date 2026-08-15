@@ -1,10 +1,10 @@
-// Module ID: 4783
-// Function ID: 4784
+// Module ID: 4751
+// Function ID: 4752
 // Name: getFontScale
-// Dependencies: [19, 1494, 1496, 2]
+// Dependencies: [19, 1495, 1497, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 4783 (getFontScale)
+// Module 4751 (getFontScale)
 import noop from "noop";
 import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 
@@ -19,7 +19,7 @@ export const getFontScale = function getFontScale() {
   return state.getState().byAppEntry[str].fontScale;
 };
 export const useFontScale = function useFontScale() {
-  appEntryKey = appEntryKey(1496).useAppEntryKey();
+  appEntryKey = appEntryKey(1497).useAppEntryKey();
   const items = [appEntryKey];
   return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
 };

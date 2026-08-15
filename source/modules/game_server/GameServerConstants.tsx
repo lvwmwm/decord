@@ -1,10 +1,10 @@
-// Module ID: 4231
-// Function ID: 4232
+// Module ID: 4263
+// Function ID: 4264
 // Name: str11
-// Dependencies: [1929, 4232, 2]
+// Dependencies: [1929, 4264, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4231 (str11)
+// Module 4263 (str11)
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };
 obj = { type: "go-to-step", step: obj.SELECT_GAME };
@@ -78,6 +78,6 @@ export const HYTALE_GAME_ID = str8;
 export { NewGamesCoachmarkContent };
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [require(4232).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [require(4264).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

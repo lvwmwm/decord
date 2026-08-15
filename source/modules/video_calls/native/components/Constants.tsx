@@ -1,9 +1,9 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 8677
+// Function ID: 8678
 // Name: PIP_GESTURE_ACTIVE_OFFSET
 // Dependencies: [2]
 
-// Module 10643 (PIP_GESTURE_ACTIVE_OFFSET)
+// Module 8677 (PIP_GESTURE_ACTIVE_OFFSET)
 const result = require("set").fileFinishedImporting("modules/video_calls/native/components/Constants.tsx");
 
 export const PIP_GESTURE_ACTIVE_OFFSET = 2;

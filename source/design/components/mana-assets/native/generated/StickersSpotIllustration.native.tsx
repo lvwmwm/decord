@@ -1,10 +1,10 @@
-// Module ID: 6824
-// Function ID: 6825
+// Module ID: 6182
+// Function ID: 6183
 // Name: StickersSpotIllustration
-// Dependencies: [21, 5329, 6825, 2]
+// Dependencies: [21, 5449, 6183, 2]
 // Exports: StickersSpotIllustration
 
-// Module 6824 (StickersSpotIllustration)
+// Module 6182 (StickersSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/StickersSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const StickersSpotIllustration = function StickersSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6825);
+  obj[0] = importDefault(6183);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const StickersSpotIllustration = function StickersSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

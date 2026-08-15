@@ -1,15 +1,15 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13249
+// Function ID: 13250
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1218, 595, 13047, 4420, 2]
+// Dependencies: [1218, 595, 13250, 4548, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 13046 (getFirstInstallTimeMillis)
+// Module 13249 (getFirstInstallTimeMillis)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = importDefault(13047).getFirstInstallTimeMillis();
+  const firstInstallTimeMillis = importDefault(13250).getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
   if ("authed" === arg0.from) {
     str = "InstallTimeAuthed";
@@ -59,8 +59,8 @@ export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(un
     const diff = Date.now() - tmp;
     let result = diff;
     if (null != unit) {
-      result = require(4420) /* sleep */.convertMinutesToGivenTimeUnit(diff / require(4420) /* sleep */.MS_PER_MINUTE, unit);
-      const obj = require(4420) /* sleep */;
+      result = require(4548) /* sleep */.convertMinutesToGivenTimeUnit(diff / require(4548) /* sleep */.MS_PER_MINUTE, unit);
+      const obj = require(4548) /* sleep */;
     }
     return result;
   }

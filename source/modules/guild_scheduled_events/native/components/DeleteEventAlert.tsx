@@ -1,10 +1,10 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 8915
+// Function ID: 8916
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 7055, 21, 4342, 589, 9003, 4310, 4710, 1236, 4338, 2]
+// Dependencies: [5, 19, 4370, 21, 4661, 589, 8783, 4342, 4660, 1236, 4734, 2]
 // Exports: default
 
-// Module 9125 (DeleteEventAlert)
+// Module 8915 (DeleteEventAlert)
 import initialize from "initialize";
 import "noop";
 import scheduledEventSort from "scheduledEventSort";
@@ -36,7 +36,7 @@ export default function DeleteEventAlert(eventException) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -52,7 +52,7 @@ export default function DeleteEventAlert(eventException) {
               return obj;
             } else {
               let closure_0 = tmp4;
-              const obj8 = v0(9003);
+              const obj8 = v0(8783);
               if (outer1_4) {
                 v0 = 2;
                 dependencyMap = 1;
@@ -87,10 +87,10 @@ export default function DeleteEventAlert(eventException) {
               obj[0] = arg1;
               return obj;
             }
-            obj1 = v0(4310);
+            obj1 = v0(4342);
             obj1.hideActionSheet();
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           dependencyMap = tmp;

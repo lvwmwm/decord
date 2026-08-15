@@ -1,10 +1,10 @@
-// Module ID: 6264
-// Function ID: 6265
+// Module ID: 5622
+// Function ID: 5623
 // Name: D20SpotIllustration
-// Dependencies: [21, 5329, 6265, 2]
+// Dependencies: [21, 5449, 5623, 2]
 // Exports: D20SpotIllustration
 
-// Module 6264 (D20SpotIllustration)
+// Module 5622 (D20SpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/D20SpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const D20SpotIllustration = function D20SpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6265);
+  obj[0] = importDefault(5623);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const D20SpotIllustration = function D20SpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

@@ -1,8 +1,8 @@
-// Module ID: 11862
-// Function ID: 11863
-// Dependencies: [5, 17, 11853, 676, 11856, 698, 10764, 9840, 2]
+// Module ID: 11590
+// Function ID: 11591
+// Dependencies: [5, 17, 11578, 676, 11584, 698, 11579, 10040, 2]
 
-// Module 11862
+// Module 11590
 import expandEventProperties from "expandEventProperties";
 import { NativeModules } from "get ActivityIndicator";
 import { PermissionStateType } from "set";
@@ -13,7 +13,7 @@ let result = require("set").fileFinishedImporting("utils/native/NotificationUtil
 
 export default {
   hasPermission() {
-    return importDefault(10764).requestPermissions((badge) => {
+    return importDefault(11579).requestPermissions((badge) => {
       let _alert;
       let sound;
       ({ alert: _alert, sound } = badge);
@@ -28,11 +28,11 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11856).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11856);
+    let result = _require(11584).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11584);
     importDefault(698).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj2 = importDefault(698);
-    const permissions = importDefault(10764).requestPermissions();
+    const permissions = importDefault(11579).requestPermissions();
     permissions.then((sound) => {
       let _alert;
       let badge;
@@ -76,7 +76,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c0 = tmp;
@@ -106,6 +106,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    require(9840) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
+    require(10040) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
   }
 };

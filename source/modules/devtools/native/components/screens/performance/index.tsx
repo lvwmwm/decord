@@ -1,9 +1,9 @@
-// Module ID: 15132
-// Function ID: 15133
+// Module ID: 15181
+// Function ID: 15182
 // Name: FRAME_BUDGET_MS
-// Dependencies: [2, 15133, 15134, 15135, 15136, 15137, 15138, 15139, 15140]
+// Dependencies: [2, 15182, 15183, 15184, 15185, 15186, 15187, 15188, 15189]
 
-// Module 15132 (FRAME_BUDGET_MS)
+// Module 15181 (FRAME_BUDGET_MS)
 const result = require("FRAME_BUDGET_MS").fileFinishedImporting("modules/devtools/native/components/screens/performance/index.tsx");
 for (const key10018 in require("set")) {
   let tmp3 = key10018;

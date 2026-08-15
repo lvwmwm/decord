@@ -1,10 +1,10 @@
-// Module ID: 15914
-// Function ID: 15915
+// Module ID: 15964
+// Function ID: 15965
 // Name: RedirectUnauthenticated
-// Dependencies: [19, 676, 683, 21, 507, 4176, 2]
+// Dependencies: [19, 676, 683, 21, 507, 4208, 2]
 // Exports: default, getRedirectPath
 
-// Module 15914 (RedirectUnauthenticated)
+// Module 15964 (RedirectUnauthenticated)
 import "noop";
 import { Routes } from "ME";
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
@@ -20,7 +20,7 @@ export default function RedirectUnauthenticated() {
     to = require(507) /* getAuthenticationPath */.getLoginPath(tmp4, false);
     const tmp2Result = require(507) /* getAuthenticationPath */;
   }
-  return jsx(require(4176) /* _extends */.Redirect, { to });
+  return jsx(require(4208) /* _extends */.Redirect, { to });
 };
 export const getRedirectPath = function getRedirectPath() {
   if (CONFERENCE_MODE_ENABLED) {

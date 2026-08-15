@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15403
+// Function ID: 15404
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 15355, 1395, 676, 21, 15356, 1628, 1236, 15357, 15353, 5844, 2]
+// Dependencies: [19, 15404, 1395, 676, 21, 15405, 1629, 1236, 15406, 15402, 6312, 2]
 // Exports: default
 
-// Module 15354 (FavoritesGuildChannelSortModal)
+// Module 15403 (FavoritesGuildChannelSortModal)
 import noop from "noop";
 import sortCategoryList from "sortCategoryList";
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
@@ -20,12 +20,12 @@ export default function FavoritesGuildChannelSortModal() {
     const items = [...closure_5];
     callback(table[5]).startReordering.apply(items);
     return () => {
-      callback(15356).stopReordering();
-      const obj = callback(15356);
-      callback(15356).terminate();
+      callback(15405).stopReordering();
+      const obj = callback(15405);
+      callback(15405).terminate();
     };
   }, []);
-  const bottom = importDefault(1628)().bottom;
+  const bottom = importDefault(1629)().bottom;
   let items = [bottom];
   const screens = React.useMemo(() => {
     let obj = { FAVORITES_GUILD_CHANNEL_SORT: null };
@@ -41,5 +41,5 @@ export default function FavoritesGuildChannelSortModal() {
     obj[0] = obj;
     return obj;
   }, items);
-  return jsx(bottom(5844).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(6312).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 };

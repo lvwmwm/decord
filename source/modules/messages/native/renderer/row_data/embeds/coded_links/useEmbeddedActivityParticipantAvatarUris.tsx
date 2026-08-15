@@ -1,10 +1,10 @@
-// Module ID: 12689
-// Function ID: 12690
+// Module ID: 12767
+// Function ID: 12768
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: [19, 1390, 1922, 1370, 647, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12689 (useEmbeddedActivityParticipantAvatarUris)
+// Module 12767 (useEmbeddedActivityParticipantAvatarUris)
 import noop from "noop";
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";

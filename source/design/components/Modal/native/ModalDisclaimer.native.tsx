@@ -1,10 +1,10 @@
-// Module ID: 13508
-// Function ID: 13509
+// Module ID: 13540
+// Function ID: 13541
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4342, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 4734, 2]
 // Exports: ModalDisclaimer
 
-// Module 13508 (ModalDisclaimer)
+// Module 13540 (ModalDisclaimer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ const result = require("jsxProd").fileFinishedImporting("design/components/Modal
 
 export const ModalDisclaimer = function ModalDisclaimer(children) {
   const tmp = callback();
-  obj = { style: tmp.container, children: jsx(require(4338) /* Text */.Text, obj) };
+  obj = { style: tmp.container, children: jsx(require(4734) /* Text */.Text, obj) };
   obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: children.children };
   return <View variant="text-xs/medium" color="text-muted" style={tmp.disclaimer}>{arg0.children}</View>;
 };

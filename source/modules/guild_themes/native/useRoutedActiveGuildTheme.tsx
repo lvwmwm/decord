@@ -1,10 +1,10 @@
-// Module ID: 4196
-// Function ID: 4197
+// Module ID: 4228
+// Function ID: 4229
 // Name: getGuildIdFromNavigationState
-// Dependencies: [32, 19, 676, 4197, 4198, 4223, 4224, 2]
+// Dependencies: [32, 19, 676, 4229, 4230, 4255, 4256, 2]
 // Exports: default
 
-// Module 4196 (getGuildIdFromNavigationState)
+// Module 4228 (getGuildIdFromNavigationState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ME } from "ME";
@@ -34,7 +34,7 @@ function getGuildIdFromNavigationState(routes) {
   }
 }
 function getActiveGuildThemeGuildIdSnapshot() {
-  const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
@@ -86,7 +86,7 @@ function getActiveGuildThemeGuildIdSnapshot() {
         if (rootState != null) {
           routes = rootState.routes;
           if (routes != null) {
-            const mapped = routes.map(require(4197) /* coerceMainRoute */.coerceMainRoute);
+            const mapped = routes.map(require(4229) /* coerceMainRoute */.coerceMainRoute);
             found = mapped.find((arg0) => null != arg0);
           }
         }
@@ -156,7 +156,7 @@ const result = require("ME").fileFinishedImporting("modules/guild_themes/native/
 export default function useRoutedActiveGuildTheme() {
   let require;
   let tmp4;
-  const context = React.useContext(importDefault(4223));
+  const context = React.useContext(importDefault(4255));
   [tmp4, require] = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
   const effect = React.useEffect(() => {
     const rootNavigationRef = outer1_0(outer1_2[4]).getRootNavigationRef();
@@ -177,5 +177,5 @@ export default function useRoutedActiveGuildTheme() {
     tmp4 = tmp7;
   }
   const tmp3 = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
-  return require(4224) /* resolveSavedActiveGuildTheme */.useActiveGuildThemeForGuildId(tmp4);
+  return require(4256) /* resolveSavedActiveGuildTheme */.useActiveGuildThemeForGuildId(tmp4);
 };

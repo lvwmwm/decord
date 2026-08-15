@@ -1,8 +1,8 @@
-// Module ID: 13125
-// Function ID: 13126
-// Dependencies: [19, 17, 1979, 7055, 21, 4342, 712, 9101, 589, 9049, 9005, 4310, 9024, 4576, 9012, 4909, 9020, 4777, 1236, 2]
+// Module ID: 12659
+// Function ID: 12660
+// Dependencies: [19, 17, 1979, 4370, 21, 4661, 712, 8891, 589, 8839, 8785, 4342, 8804, 8663, 8792, 5433, 8800, 4745, 1236, 2]
 
-// Module 13125
+// Module 12659
 import importAllResult from "set";
 import { View } from "Button";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -27,9 +27,9 @@ const memoResult = importAllResult.memo((channel) => {
   let dependencyMap;
   let nextRecurrenceIdInEvent;
   let tmp = callback3();
-  let obj = channel(9101);
+  let obj = channel(8891);
   activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(9101);
+  let obj1 = channel(8891);
   const imminentUpcomingGuildEvents = obj1.useImminentUpcomingGuildEvents(channel.id);
   let obj2 = channel(589);
   const items = [handleConnectionOpen];
@@ -43,8 +43,8 @@ const memoResult = importAllResult.memo((channel) => {
     tmp7 = first;
   }
   dependencyMap = tmp7;
-  let tmp2Result = tmp2(9049);
-  tmp2Result = tmp2(9005);
+  let tmp2Result = tmp2(8839);
+  tmp2Result = tmp2(8785);
   nextRecurrenceIdInEvent = tmp2Result.getNextRecurrenceIdInEvent(tmp7);
   const items1 = [tmp7, channel, activeEvent, nextRecurrenceIdInEvent];
   [][0] = tmp7;
@@ -71,12 +71,12 @@ const memoResult = importAllResult.memo((channel) => {
     obj[2] = tmp.header;
     obj = { event: null, showUserCount: false };
     obj[0] = tmp7;
-    const items2 = [callback2(tmp2(9020).GuildEventCardHeader, obj), , ];
+    const items2 = [callback2(tmp2(8800).GuildEventCardHeader, obj), , ];
     obj1 = { event: null, descriptionContainerStyle: null, condensed: null };
     obj1[0] = tmp7;
     obj1[1] = tmp.descriptionContainerStyle;
     obj1[2] = tmp18Result;
-    items2[1] = callback2(tmp2(9020).GuildEventCardMetaInfo, obj1);
+    items2[1] = callback2(tmp2(8800).GuildEventCardMetaInfo, obj1);
     if (tmp18Result) {
       tmp18Result = canManageGuildEventResult;
     }
@@ -90,12 +90,12 @@ const memoResult = importAllResult.memo((channel) => {
       const intl = tmp2(1236).intl;
       obj3[0] = intl.string(tmp2(1236).t.cK1GGY);
       obj3[1] = callback;
-      obj2[1] = tmp18(tmp2(4777).Button, obj3);
+      obj2[1] = tmp18(tmp2(4745).Button, obj3);
       tmp18Result = tmp18(View, obj2);
     }
     items2[2] = tmp18Result;
     obj[3] = items2;
-    return closure_8(tmp2(4909).PressableOpacity, obj);
+    return closure_8(tmp2(5433).PressableOpacity, obj);
   }
   canManageGuildEventResult = tmp2Result.useManageResourcePermissions(channel).canManageGuildEvent(tmp7);
 });

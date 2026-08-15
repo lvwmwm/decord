@@ -1,10 +1,10 @@
-// Module ID: 10406
-// Function ID: 10407
+// Module ID: 10660
+// Function ID: 10661
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4342, 712, 1500, 5389, 10407, 10408, 4338, 1236, 4777, 4572, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 1501, 6803, 10661, 10662, 4734, 1236, 4745, 5260, 2]
 // Exports: default
 
-// Module 10406 (GiftCodeRedeemError)
+// Module 10660 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,21 +30,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function GiftCodeRedeemError(children) {
   const tmp = createCacheKey();
-  let obj = require(1500) /* createStandardNavigationFactories */;
+  let obj = require(1501) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10407);
+    let tmp9Result = tmp9(10661);
   } else {
-    tmp9Result = tmp9(10408);
+    tmp9Result = tmp9(10662);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
   const intl = tmp2(1236).intl;
   obj1[2] = intl.formatToMarkdownString(require(1236) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = closure_6(require(4338) /* Text */.Text, obj1);
-  items[2] = closure_6(require(4338) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  items[1] = closure_6(require(4734) /* Text */.Text, obj1);
+  items[2] = closure_6(require(4734) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj[2] = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj3 = { style: tmp.footer, children: null };
@@ -54,8 +54,8 @@ export default function GiftCodeRedeemError(children) {
   obj4[2] = function onPress() {
     return callback(table[12]).pop();
   };
-  obj3[1] = closure_6(require(4777) /* Button */.Button, obj4);
+  obj3[1] = closure_6(require(4745) /* Button */.Button, obj4);
   items1[1] = closure_6(closure_4, obj3);
   obj[2] = items1;
-  return closure_7(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

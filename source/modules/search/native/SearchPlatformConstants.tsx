@@ -1,9 +1,9 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11524
+// Function ID: 11525
 // Name: SEARCH_TEXT_INPUT_DEBOUNCE_TIME
-// Dependencies: [4059, 11801, 11803, 8267, 8265, 11805, 2]
+// Dependencies: [4091, 11525, 11527, 8313, 8311, 11529, 2]
 
-// Module 11800 (SEARCH_TEXT_INPUT_DEBOUNCE_TIME)
+// Module 11524 (SEARCH_TEXT_INPUT_DEBOUNCE_TIME)
 let obj = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.tiktok.regex, Icon: require("TiktokNeutralIcon").TiktokNeutralIcon };
 const items = [obj, , , , ];
 obj = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.twitter.regex, Icon: require("TwitterNeutralIcon").TwitterNeutralIcon };

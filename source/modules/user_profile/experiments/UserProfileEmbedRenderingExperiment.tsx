@@ -1,10 +1,10 @@
-// Module ID: 8276
-// Function ID: 8277
+// Module ID: 8317
+// Function ID: 8318
 // Name: useIsUserProfileEmbedRenderingEnabled
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: getIsUserProfileEmbedRenderingEnabled, useIsUserProfileEmbedRenderingEnabled
 
-// Module 8276 (useIsUserProfileEmbedRenderingEnabled)
+// Module 8317 (useIsUserProfileEmbedRenderingEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

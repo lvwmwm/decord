@@ -1,9 +1,9 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8420
+// Function ID: 8421
 // Name: premiumSince
-// Dependencies: [1924, 7152, 4007, 1435, 8337, 2]
+// Dependencies: [1924, 5367, 4039, 1435, 8376, 2]
 
-// Module 8381 (premiumSince)
+// Module 8420 (premiumSince)
 import { PremiumTypes } from "GuildFeatures";
 
 const result = require("getPremiumPlanItem").fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
@@ -119,7 +119,7 @@ Object.defineProperty(prototype, "gameWidgets", {
     const widgets = this._userProfile.widgets;
     let found;
     if (widgets != null) {
-      found = widgets.filter(require(7152) /* items */.isGameWidget);
+      found = widgets.filter(require(5367) /* items */.isGameWidget);
     }
     return found;
   },
@@ -141,7 +141,7 @@ Object.defineProperty(prototype, "primaryColor", {
 });
 Object.defineProperty(prototype, "canUsePremiumProfileCustomization", {
   get: function canUsePremiumProfileCustomization() {
-    return importDefault(4007).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
+    return importDefault(4039).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
   },
   set: undefined
 });
@@ -152,7 +152,7 @@ Object.defineProperty(prototype, "canEditThemes", {
   set: undefined
 });
 Object.defineProperty(prototype, "application", {
-  get: function application(channelId, arg1, action) {
+  get: function application(setOrientationLockState, arg1) {
     return this._userProfile.application;
   },
   set: undefined
@@ -300,7 +300,7 @@ prototype["getPreviewBanner"] = function getPreviewBanner(pendingBanner, arg1, a
   }
 };
 prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
-  let obj = require(8337) /* useAvatarsWithGuilds */;
+  let obj = require(8376) /* useAvatarsWithGuilds */;
   obj = { pendingValue: pendingBio, userValue: this._userProfile.bio, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let bio;
@@ -312,7 +312,7 @@ prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
   return obj.getProfilePreviewValue(obj);
 };
 prototype["getPreviewPronouns"] = function getPreviewPronouns(pendingValue) {
-  let obj = require(8337) /* useAvatarsWithGuilds */;
+  let obj = require(8376) /* useAvatarsWithGuilds */;
   obj = { pendingValue, userValue: this._userProfile.pronouns, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let pronouns;

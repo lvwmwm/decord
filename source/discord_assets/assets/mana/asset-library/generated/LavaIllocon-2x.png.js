@@ -1,9 +1,9 @@
-// Module ID: 6563
-// Function ID: 6564
+// Module ID: 5921
+// Function ID: 5922
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6563 (metadata)
+// Module 5921 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LavaIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3071cf1d445ede00fce550f8d74778d66ef77f375316c0f502bfbf322ce1aed5.png";

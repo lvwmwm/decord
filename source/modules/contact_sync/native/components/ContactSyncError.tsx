@@ -1,10 +1,10 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 11867
+// Function ID: 11868
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4342, 4083, 4343, 4338, 2]
+// Dependencies: [19, 21, 4661, 4115, 4664, 4734, 2]
 // Exports: default
 
-// Module 12130 (ContactSyncError)
+// Module 11867 (ContactSyncError)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,7 +23,7 @@ export default function ContactSyncError(error) {
     tmp2 = "" !== error;
   }
   _require = tmp2;
-  let obj = _require(4083);
+  let obj = _require(4115);
   const fn = function l() {
     let obj = _undefined(outer1_2[4]);
     let num = 0;
@@ -33,13 +33,13 @@ export default function ContactSyncError(error) {
     obj = { height: obj.withTiming(num) };
     return obj;
   };
-  obj = { withTiming: _require(4343).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  obj = { withTiming: _require(4664).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
   fn.__closure = obj;
   fn.__workletHash = 14558247431913;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: items, children: null };
   items = [tmp.container, error.style, animatedStyle];
-  obj[1] = jsx(_require(4338).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
-  return jsx(importDefault(4083).View, { style: items, children: null });
+  obj[1] = jsx(_require(4734).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
+  return jsx(importDefault(4115).View, { style: items, children: null });
 };

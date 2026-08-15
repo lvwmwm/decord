@@ -1,9 +1,9 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14150
+// Function ID: 14151
 // Name: pressable
-// Dependencies: [8148, 14119, 4705, 1236, 14069, 10421, 14070, 2]
+// Dependencies: [8198, 14151, 4827, 1236, 14101, 10669, 14102, 2]
 
-// Module 14118 (pressable)
+// Module 14150 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -11,9 +11,9 @@ const pressable = createToggle.createPressable({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4705);
+    let obj = importDefault(4827);
     obj = { title: null, body: null, cancelText: null, onConfirm: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
@@ -27,7 +27,7 @@ const pressable = createToggle.createPressable({
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(14119) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(14151) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled
@@ -37,9 +37,9 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4705);
+    let obj = importDefault(4827);
     obj = { title: null, body: null, cancelText: null, onConfirm: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
@@ -53,7 +53,7 @@ let obj = {
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(14119) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(14151) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled

@@ -1,10 +1,10 @@
-// Module ID: 12870
-// Function ID: 12871
+// Module ID: 12947
+// Function ID: 12948
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4021, 21, 4342, 712, 5458, 7859, 4338, 1236, 2885, 2]
+// Dependencies: [17, 4053, 21, 4661, 712, 6950, 8074, 4734, 1236, 2917, 2]
 // Exports: default
 
-// Module 12870 (PremiumGroupEducationActionSheet)
+// Module 12947 (PremiumGroupEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HELP_CENTER_LINK } from "SubscriptionStatusTypes";
 import jsxProd from "jsxProd";
@@ -27,14 +27,14 @@ export default function PremiumGroupEducationActionSheet(children) {
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.aboutContainer, children: null };
-  const items = [callback(require(7859) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
+  const items = [callback(require(8074) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl.format(importDefault(2885).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
-  items1[1] = callback(require(4338) /* Text */.Text, obj3);
+  obj3[3] = intl.format(importDefault(2917).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
+  items1[1] = callback(require(4734) /* Text */.Text, obj3);
   obj[1] = items1;
   obj[0] = callback2(View, obj);
-  return callback(require(5458) /* Background */.BottomSheet, obj);
+  return callback(require(6950) /* Background */.BottomSheet, obj);
 };

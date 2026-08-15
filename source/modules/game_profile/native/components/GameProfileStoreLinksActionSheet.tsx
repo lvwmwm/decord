@@ -1,10 +1,10 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9125
+// Function ID: 9126
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 9344, 4058, 1628, 5825, 5460, 4338, 1236, 4777, 4310, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 9099, 4090, 1629, 7175, 6952, 4734, 1236, 4745, 4342, 2]
 // Exports: default
 
-// Module 9371 (GameProfileStoreLinksActionSheet)
+// Module 9125 (GameProfileStoreLinksActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,24 +29,24 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   ({ websiteButtons, trackAction: require } = gameName);
   let importDefault;
   const tmp = createCacheKey();
-  importDefault = importDefault(9344)(importDefault(4058).openURL);
+  importDefault = importDefault(9099)(importDefault(4090).openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
   obj = { paddingBottom: null };
-  obj[0] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
   obj[0] = obj;
   const obj1 = { style: tmp.header, children: null };
   const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t["/4gj6r"]);
-  const items = [callback(require(4338) /* Text */.Text, obj2), ];
+  const items = [callback(require(4734) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.format(require(1236) /* getSystemLocale */.t["0acM2Y"], { gameName: gameName.gameName });
-  items[1] = callback(require(4338) /* Text */.Text, obj3);
+  items[1] = callback(require(4734) /* Text */.Text, obj3);
   obj1[1] = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(9344);
+  const tmp2 = importDefault(9099);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {
@@ -69,7 +69,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
     })
   });
   obj[1] = items1;
-  obj[0] = callback2(require(5460) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5825) /* ActionSheet */.ActionSheet, obj);
+  obj[0] = callback2(require(6952) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(7175) /* ActionSheet */.ActionSheet, obj);
 };
 export const ACTION_SHEET_KEY = "game-profile-store-links";

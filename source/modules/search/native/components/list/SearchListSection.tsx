@@ -1,8 +1,8 @@
-// Module ID: 15855
-// Function ID: 15856
-// Dependencies: [19, 17, 8468, 21, 4342, 4338, 2]
+// Module ID: 15905
+// Function ID: 15906
+// Dependencies: [19, 17, 8507, 21, 4661, 4734, 2]
 
-// Module 15855
+// Module 15905
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ const memoResult = require("noop").memo((arg0) => {
   let trailing;
   ({ title, trailing } = arg0);
   const obj = { style: callback3().section, children: null };
-  const items = [callback(require(4338) /* Text */.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title }), trailing];
+  const items = [callback(require(4734) /* Text */.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title }), trailing];
   obj[1] = items;
   return callback2(View, obj);
 });

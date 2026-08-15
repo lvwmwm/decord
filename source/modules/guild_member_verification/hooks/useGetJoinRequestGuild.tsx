@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 9540
+// Function ID: 9541
 // Name: useGetGuildJoinRequest
-// Dependencies: [19, 4166, 589, 8498, 2]
+// Dependencies: [19, 4198, 589, 8537, 2]
 // Exports: default
 
-// Module 12298 (useGetGuildJoinRequest)
+// Module 9540 (useGetGuildJoinRequest)
 import noop from "noop";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 

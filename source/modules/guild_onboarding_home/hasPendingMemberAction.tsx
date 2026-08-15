@@ -1,10 +1,10 @@
-// Module ID: 4555
-// Function ID: 4556
+// Module ID: 5047
+// Function ID: 5048
 // Name: hasPendingMemberAction
-// Dependencies: [1391, 1990, 1910, 4556, 4557, 676, 3977, 4558, 1403, 2]
+// Dependencies: [1391, 1990, 1910, 5048, 5049, 676, 4009, 5050, 1403, 2]
 // Exports: hasPendingMemberAction
 
-// Module 4555 (hasPendingMemberAction)
+// Module 5047 (hasPendingMemberAction)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -20,7 +20,7 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
   channel = channel.getChannel(selectedChannelId);
   let hasItem = null != guild && null != channel;
   if (hasItem) {
-    hasItem = importDefault(4558)(guild);
+    hasItem = importDefault(5050)(guild);
   }
   if (hasItem) {
     const features = guild.features;

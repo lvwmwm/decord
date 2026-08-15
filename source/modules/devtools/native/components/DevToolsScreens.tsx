@@ -1,9 +1,9 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 13949
+// Function ID: 13950
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 8495, 13918, 13920, 13922, 13925, 11278, 8630, 13927, 13928, 11291, 13929, 13955, 13957, 7787, 13958, 15020, 15024, 14689, 15027, 4292, 15062, 11059, 15065, 9890, 15068, 11399, 15091, 9732, 15110, 14665, 15111, 10333, 15114, 10520, 15115, 11599, 15122, 15123, 13935, 15125, 4286, 15128, 10823, 15129, 15130, 15131, 2]
+// Dependencies: [19, 21, 8534, 13950, 13952, 13954, 13957, 10991, 12161, 13959, 13960, 11004, 13961, 13987, 13989, 8005, 13990, 15069, 15073, 14729, 15076, 4324, 15111, 10793, 15114, 10094, 15117, 11112, 15140, 9925, 15159, 14697, 15160, 9834, 15163, 9832, 15164, 11316, 15171, 15172, 13967, 15174, 4318, 15177, 10939, 15178, 15179, 15180, 2]
 
-// Module 13917 (DevToolsScreens)
+// Module 13949 (DevToolsScreens)
 import "LanguageIcon";
 import { jsx } from "DownloadIcon";
 
@@ -13,7 +13,7 @@ obj = {
   headerTitle: "Analytics",
   Icon: require("ClipboardListIcon").ClipboardListIcon,
   render() {
-    return jsx(require(13918) /* CommonProperty */.default, {});
+    return jsx(require(13950) /* CommonProperty */.default, {});
   }
 };
 obj[0] = obj;
@@ -21,7 +21,7 @@ obj = {
   headerTitle: "Build Override",
   Icon: require("RefreshIcon").RefreshIcon,
   render() {
-    return jsx(require(13922) /* jsx */.default, {});
+    return jsx(require(13954) /* jsx */.default, {});
   }
 };
 obj[1] = obj;
@@ -29,28 +29,28 @@ obj[2] = {
   headerTitle: "Experiment Overrides",
   Icon: require("BeakerIcon").BeakerIcon,
   render() {
-    return jsx(require(11278) /* UserExperimentDebugView */.default, {});
+    return jsx(require(10991) /* UserExperimentDebugView */.default, {});
   }
 };
 const obj1 = {
   headerTitle: "Experiment Overrides",
   Icon: require("BeakerIcon").BeakerIcon,
   render() {
-    return jsx(require(11278) /* UserExperimentDebugView */.default, {});
+    return jsx(require(10991) /* UserExperimentDebugView */.default, {});
   }
 };
 obj[3] = {
   headerTitle: "Logging Flags",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(13927) /* DevToolsLoggingFlagsScreen */.default, {});
+    return jsx(require(13959) /* DevToolsLoggingFlagsScreen */.default, {});
   }
 };
 const obj2 = {
   headerTitle: "Logging Flags",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(13927) /* DevToolsLoggingFlagsScreen */.default, {});
+    return jsx(require(13959) /* DevToolsLoggingFlagsScreen */.default, {});
   }
 };
 obj[4] = {
@@ -60,7 +60,7 @@ obj[4] = {
     return false;
   },
   render() {
-    return jsx(require(13928) /* CacheLogEntry */.default, {});
+    return jsx(require(13960) /* CacheLogEntry */.default, {});
   }
 };
 const obj3 = {
@@ -70,280 +70,280 @@ const obj3 = {
     return false;
   },
   render() {
-    return jsx(require(13928) /* CacheLogEntry */.default, {});
+    return jsx(require(13960) /* CacheLogEntry */.default, {});
   }
 };
 obj[5] = {
   headerTitle: "Generated Test Users",
   Icon: require("UserIcon").UserIcon,
   render() {
-    return jsx(require(13929) /* PoolIdInput */.default, {});
+    return jsx(require(13961) /* PoolIdInput */.default, {});
   }
 };
 const obj4 = {
   headerTitle: "Generated Test Users",
   Icon: require("UserIcon").UserIcon,
   render() {
-    return jsx(require(13929) /* PoolIdInput */.default, {});
+    return jsx(require(13961) /* PoolIdInput */.default, {});
   }
 };
 obj[6] = {
   headerTitle: "Data Storage",
   Icon: require("FileUpIcon").FileUpIcon,
   render() {
-    return jsx(require(13957) /* DevToolsPersistedStoresActionSheet */.default, {});
+    return jsx(require(13989) /* DevToolsPersistedStoresActionSheet */.default, {});
   }
 };
 const obj5 = {
   headerTitle: "Data Storage",
   Icon: require("FileUpIcon").FileUpIcon,
   render() {
-    return jsx(require(13957) /* DevToolsPersistedStoresActionSheet */.default, {});
+    return jsx(require(13989) /* DevToolsPersistedStoresActionSheet */.default, {});
   }
 };
 obj[7] = {
   headerTitle: "Design Systems",
   Icon: require("PaintPaletteIcon").PaintPaletteIcon,
   render() {
-    return jsx(require(13958) /* SettingsDesignSystemsScreen */.default, {});
+    return jsx(require(13990) /* SettingsDesignSystemsScreen */.default, {});
   }
 };
 const obj6 = {
   headerTitle: "Design Systems",
   Icon: require("PaintPaletteIcon").PaintPaletteIcon,
   render() {
-    return jsx(require(13958) /* SettingsDesignSystemsScreen */.default, {});
+    return jsx(require(13990) /* SettingsDesignSystemsScreen */.default, {});
   }
 };
 obj[8] = {
   headerTitle: "Dismissible Contents",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(15020) /* DismissableContentsEmpty */.default, {});
+    return jsx(require(15069) /* DismissableContentsEmpty */.default, {});
   }
 };
 const obj7 = {
   headerTitle: "Dismissible Contents",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(15020) /* DismissableContentsEmpty */.default, {});
+    return jsx(require(15069) /* DismissableContentsEmpty */.default, {});
   }
 };
 obj[9] = {
   headerTitle: "Game Community Upsell",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(15024) /* MultiGuildDevTools */.default, {});
+    return jsx(require(15073) /* MultiGuildDevTools */.default, {});
   }
 };
 const obj8 = {
   headerTitle: "Game Community Upsell",
   Icon: require("PaperIcon").PaperIcon,
   render() {
-    return jsx(require(15024) /* MultiGuildDevTools */.default, {});
+    return jsx(require(15073) /* MultiGuildDevTools */.default, {});
   }
 };
 obj[10] = {
   headerTitle: "Intl Testing",
   Icon: require("LanguageIcon").LanguageIcon,
   render() {
-    return jsx(require(15027) /* TestLocaleSelector */.default, {});
+    return jsx(require(15076) /* TestLocaleSelector */.default, {});
   }
 };
 const obj9 = {
   headerTitle: "Intl Testing",
   Icon: require("LanguageIcon").LanguageIcon,
   render() {
-    return jsx(require(15027) /* TestLocaleSelector */.default, {});
+    return jsx(require(15076) /* TestLocaleSelector */.default, {});
   }
 };
 obj[11] = {
   headerTitle: "OTA Test",
   Icon: require("DownloadIcon").DownloadIcon,
   render() {
-    return jsx(require(15062) /* OtaVerificationActionSheet */.default, {});
+    return jsx(require(15111) /* OtaVerificationActionSheet */.default, {});
   }
 };
 const obj10 = {
   headerTitle: "OTA Test",
   Icon: require("DownloadIcon").DownloadIcon,
   render() {
-    return jsx(require(15062) /* OtaVerificationActionSheet */.default, {});
+    return jsx(require(15111) /* OtaVerificationActionSheet */.default, {});
   }
 };
 obj[12] = {
   headerTitle: "Profiling",
   Icon: require("TimerIcon").TimerIcon,
   render() {
-    return jsx(require(15065) /* DevToolsProfilingScreen */.default, {});
+    return jsx(require(15114) /* DevToolsProfilingScreen */.default, {});
   }
 };
 const obj11 = {
   headerTitle: "Profiling",
   Icon: require("TimerIcon").TimerIcon,
   render() {
-    return jsx(require(15065) /* DevToolsProfilingScreen */.default, {});
+    return jsx(require(15114) /* DevToolsProfilingScreen */.default, {});
   }
 };
 obj[13] = {
   headerTitle: "Quick Actions",
   Icon: require("MagicWandIcon").MagicWandIcon,
   render() {
-    return jsx(require(15068) /* handleNewUserOnboarding */.default, {});
+    return jsx(require(15117) /* handleNewUserOnboarding */.default, {});
   }
 };
 const obj12 = {
   headerTitle: "Quick Actions",
   Icon: require("MagicWandIcon").MagicWandIcon,
   render() {
-    return jsx(require(15068) /* handleNewUserOnboarding */.default, {});
+    return jsx(require(15117) /* handleNewUserOnboarding */.default, {});
   }
 };
 obj[14] = {
   headerTitle: "Revenue Playground",
   Icon: require("PiggyBankIcon").PiggyBankIcon,
   render() {
-    return jsx(require(15091) /* describeServerError */.default, {});
+    return jsx(require(15140) /* describeServerError */.default, {});
   }
 };
 const obj13 = {
   headerTitle: "Revenue Playground",
   Icon: require("PiggyBankIcon").PiggyBankIcon,
   render() {
-    return jsx(require(15091) /* describeServerError */.default, {});
+    return jsx(require(15140) /* describeServerError */.default, {});
   }
 };
 obj[15] = {
   headerTitle: "Survey & Changelog Override",
   Icon: require("PencilIcon").PencilIcon,
   render() {
-    return jsx(require(15110) /* SurveyOverrideInfoActionSheet */.default, {});
+    return jsx(require(15159) /* SurveyOverrideInfoActionSheet */.default, {});
   }
 };
 const obj14 = {
   headerTitle: "Survey & Changelog Override",
   Icon: require("PencilIcon").PencilIcon,
   render() {
-    return jsx(require(15110) /* SurveyOverrideInfoActionSheet */.default, {});
+    return jsx(require(15159) /* SurveyOverrideInfoActionSheet */.default, {});
   }
 };
 obj[16] = {
   headerTitle: "Toggles (Design, Reporting, etc)",
   Icon: require("EyeDropperIcon").EyeDropperIcon,
   render() {
-    return jsx(require(15111) /* fuzzySearchToggle */.default, {});
+    return jsx(require(15160) /* fuzzySearchToggle */.default, {});
   }
 };
 const obj15 = {
   headerTitle: "Toggles (Design, Reporting, etc)",
   Icon: require("EyeDropperIcon").EyeDropperIcon,
   render() {
-    return jsx(require(15111) /* fuzzySearchToggle */.default, {});
+    return jsx(require(15160) /* fuzzySearchToggle */.default, {});
   }
 };
 obj[17] = {
   headerTitle: "Age Verification",
   Icon: require("ShieldIcon").ShieldIcon,
   render() {
-    return jsx(require(15114) /* showAgeVerificationTestModal */.default, {});
+    return jsx(require(15163) /* showAgeVerificationTestModal */.default, {});
   }
 };
 const obj16 = {
   headerTitle: "Age Verification",
   Icon: require("ShieldIcon").ShieldIcon,
   render() {
-    return jsx(require(15114) /* showAgeVerificationTestModal */.default, {});
+    return jsx(require(15163) /* showAgeVerificationTestModal */.default, {});
   }
 };
 obj[18] = {
   headerTitle: "Bot Components Testing",
   Icon: require("RobotIcon").RobotIcon,
   render() {
-    return jsx(require(15115) /* Select */.default, {});
+    return jsx(require(15164) /* Select */.default, {});
   }
 };
 const obj17 = {
   headerTitle: "Bot Components Testing",
   Icon: require("RobotIcon").RobotIcon,
   render() {
-    return jsx(require(15115) /* Select */.default, {});
+    return jsx(require(15164) /* Select */.default, {});
   }
 };
 obj[19] = {
   headerTitle: "Shop",
   Icon: require("ShopIcon").ShopIcon,
   render() {
-    return jsx(require(15122) /* DevToolsShopScreen */.default, {});
+    return jsx(require(15171) /* DevToolsShopScreen */.default, {});
   }
 };
 const obj18 = {
   headerTitle: "Shop",
   Icon: require("ShopIcon").ShopIcon,
   render() {
-    return jsx(require(15122) /* DevToolsShopScreen */.default, {});
+    return jsx(require(15171) /* DevToolsShopScreen */.default, {});
   }
 };
 obj[20] = {
   headerTitle: "Collectibles Tool",
   Icon: require("ShopIcon").ShopIcon,
   render() {
-    return jsx(require(15123) /* FramePreviewOverrideSection */.default, {});
+    return jsx(require(15172) /* FramePreviewOverrideSection */.default, {});
   }
 };
 const obj19 = {
   headerTitle: "Collectibles Tool",
   Icon: require("ShopIcon").ShopIcon,
   render() {
-    return jsx(require(15123) /* FramePreviewOverrideSection */.default, {});
+    return jsx(require(15172) /* FramePreviewOverrideSection */.default, {});
   }
 };
 obj[21] = {
   headerTitle: "Action Sheets",
   Icon: require("CompassIcon").CompassIcon,
   render() {
-    return jsx(require(15125) /* ActionSheetSelector */.default, {});
+    return jsx(require(15174) /* ActionSheetSelector */.default, {});
   }
 };
 const obj20 = {
   headerTitle: "Action Sheets",
   Icon: require("CompassIcon").CompassIcon,
   render() {
-    return jsx(require(15125) /* ActionSheetSelector */.default, {});
+    return jsx(require(15174) /* ActionSheetSelector */.default, {});
   }
 };
 obj[22] = {
   headerTitle: "Account Linking",
   Icon: require("LinkIcon").LinkIcon,
   render() {
-    return jsx(require(15128) /* DevToolsAccountLinkingScreen */.default, {});
+    return jsx(require(15177) /* DevToolsAccountLinkingScreen */.default, {});
   }
 };
 const obj21 = {
   headerTitle: "Account Linking",
   Icon: require("LinkIcon").LinkIcon,
   render() {
-    return jsx(require(15128) /* DevToolsAccountLinkingScreen */.default, {});
+    return jsx(require(15177) /* DevToolsAccountLinkingScreen */.default, {});
   }
 };
 obj[23] = {
   headerTitle: "Performance Testing",
   Icon: require("SpeedometerIcon").SpeedometerIcon,
   render() {
-    return jsx(require(15129).default, {});
+    return jsx(require(15178).default, {});
   }
 };
 const obj22 = {
   headerTitle: "Performance Testing",
   Icon: require("SpeedometerIcon").SpeedometerIcon,
   render() {
-    return jsx(require(15129).default, {});
+    return jsx(require(15178).default, {});
   }
 };
 obj[24] = {
   headerTitle: "In App Notification Testing",
   Icon: require("MagicWandIcon").MagicWandIcon,
   render() {
-    return jsx(require(15130) /* getSelectedGuildChannel */.default, {});
+    return jsx(require(15179) /* getSelectedGuildChannel */.default, {});
   }
 };
 const obj24 = { displayNameEffectsBenchmark: null };
@@ -351,21 +351,21 @@ const obj23 = {
   headerTitle: "In App Notification Testing",
   Icon: require("MagicWandIcon").MagicWandIcon,
   render() {
-    return jsx(require(15130) /* getSelectedGuildChannel */.default, {});
+    return jsx(require(15179) /* getSelectedGuildChannel */.default, {});
   }
 };
 obj24[0] = {
   headerTitle: "Display Name Effects Benchmark",
   Icon: require("PaintPaletteIcon").PaintPaletteIcon,
   render() {
-    return jsx(require(15131) /* effectName */.default, {});
+    return jsx(require(15180) /* effectName */.default, {});
   }
 };
 const obj25 = {
   headerTitle: "Display Name Effects Benchmark",
   Icon: require("PaintPaletteIcon").PaintPaletteIcon,
   render() {
-    return jsx(require(15131) /* effectName */.default, {});
+    return jsx(require(15180) /* effectName */.default, {});
   }
 };
 const result = require("ClipboardListIcon").fileFinishedImporting("modules/devtools/native/components/DevToolsScreens.tsx");

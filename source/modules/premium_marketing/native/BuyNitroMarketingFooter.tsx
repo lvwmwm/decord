@@ -1,10 +1,10 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12844
+// Function ID: 12845
 // Name: BuyNitroMarketingFooter
-// Dependencies: [17, 21, 4342, 712, 5488, 7803, 5809, 2]
+// Dependencies: [17, 21, 4661, 712, 6377, 8021, 7159, 2]
 // Exports: default
 
-// Module 12766 (BuyNitroMarketingFooter)
+// Module 12844 (BuyNitroMarketingFooter)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,18 +27,18 @@ export default function BuyNitroMarketingFooter(arg0) {
   let onPaymentSuccess;
   let planSelection;
   ({ planSelection, applicationId, onPaymentSuccess, onPaymentDismiss } = arg0);
-  let obj = require(5488) /* LegacyBaseButton */;
+  let obj = require(6377) /* LegacyBaseButton */;
   const panGesture = obj.usePanGesture({ activeOffsetY: [-8, 8] });
   obj = { gesture: panGesture, children: null };
   obj = { style: callback().footer, collapsable: false, children: null };
   const obj1 = { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null };
   const tmp = callback();
-  obj1[0] = importDefault(5809).PREMIUM_MARKETING_FOOTER;
+  obj1[0] = importDefault(7159).PREMIUM_MARKETING_FOOTER;
   obj1[1] = planSelection;
   obj1[2] = applicationId;
   obj1[3] = onPaymentSuccess;
   obj1[4] = onPaymentDismiss;
-  obj[2] = jsx(importDefault(7803), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  obj[2] = jsx(importDefault(8021), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
   obj[1] = <closure_3 style={callback().footer} collapsable={false}>{null}</closure_3>;
-  return jsx(require(5488) /* LegacyBaseButton */.GestureDetector, { style: callback().footer, collapsable: false, children: null });
+  return jsx(require(6377) /* LegacyBaseButton */.GestureDetector, { style: callback().footer, collapsable: false, children: null });
 };

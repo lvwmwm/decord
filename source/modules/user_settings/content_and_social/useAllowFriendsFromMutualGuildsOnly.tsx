@@ -1,17 +1,17 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 15019
+// Function ID: 15020
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 4034, 6077, 2]
+// Dependencies: [19, 4066, 7357, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 14974 (useAllowFriendsFromMutualGuildsOnly)
+// Module 15019 (useAllowFriendsFromMutualGuildsOnly)
 import noop from "noop";
 
 const require = arg1;
 const result = require("getSanitizedRestrictedGuilds").fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
 
 export const useAllowFriendsFromMutualGuildsOnly = function useAllowFriendsFromMutualGuildsOnly() {
-  const FriendSourceFlagsSetting = setting(4034).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(4066).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_1[2]).computeFlags(setting), items);

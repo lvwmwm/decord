@@ -1,9 +1,9 @@
-// Module ID: 14761
-// Function ID: 14762
+// Module ID: 14801
+// Function ID: 14802
 // Name: toggle
-// Dependencies: [14748, 8148, 500, 14750, 10421, 1236, 2]
+// Dependencies: [14788, 8198, 500, 14790, 10669, 1236, 2]
 
-// Module 14761 (toggle)
+// Module 14801 (toggle)
 import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["lFg/O1"]);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: function useAndroidNotificationVibrationsSettingValue() {
     let flag = callback();
     if (flag == null) {
@@ -30,8 +30,8 @@ const toggle = createToggle.createToggle({
     const isIOSResult = require(500) /* set */.isIOS();
     let tmp5 = !isIOSResult;
     if (!isIOSResult) {
-      tmp5 = !tmp2(14750).hasAndroidNotificationChannels();
-      const tmp2Result = tmp2(14750);
+      tmp5 = !tmp2(14790).hasAndroidNotificationChannels();
+      const tmp2Result = tmp2(14790);
     }
     if (tmp5) {
       tmp5 = null != tmp;
@@ -44,7 +44,7 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["lFg/O1"]);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: function useAndroidNotificationVibrationsSettingValue() {
     let flag = callback();
     if (flag == null) {
@@ -59,8 +59,8 @@ const obj = {
     const isIOSResult = require(500) /* set */.isIOS();
     let tmp5 = !isIOSResult;
     if (!isIOSResult) {
-      tmp5 = !tmp2(14750).hasAndroidNotificationChannels();
-      const tmp2Result = tmp2(14750);
+      tmp5 = !tmp2(14790).hasAndroidNotificationChannels();
+      const tmp2Result = tmp2(14790);
     }
     if (tmp5) {
       tmp5 = null != tmp;

@@ -1,10 +1,10 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15877
+// Function ID: 15878
 // Name: GroupDMRow
-// Dependencies: [19, 21, 4535, 9723, 1297, 9724, 4338, 15826, 2]
+// Dependencies: [19, 21, 4984, 9916, 1297, 9917, 4734, 15876, 2]
 // Exports: default
 
-// Module 15827 (GroupDMRow)
+// Module 15877 (GroupDMRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function GroupDMRow(channel) {
   channel = channel.channel;
   const onPress = channel.onPress;
   ({ trailing, onAccessibilityAction, accessibilityActions } = channel);
-  let str = onPress(4535)(channel);
+  let str = onPress(4984)(channel);
   const items = [channel.id, onPress];
   const callback = React.useCallback(() => {
     onPress(channel.id);
@@ -26,14 +26,14 @@ export default function GroupDMRow(channel) {
   let obj = { size: null, channel: null };
   obj[0] = channel(1297).AvatarSizes.LARGE_48;
   obj[1] = channel;
-  const tmp4 = onPress(9723);
-  const tmp6 = jsx(onPress(9723), { size: null, channel: null });
-  const recipientsLabel = channel(9724).useRecipientsLabel(channel);
+  const tmp4 = onPress(9916);
+  const tmp6 = jsx(onPress(9916), { size: null, channel: null });
+  const recipientsLabel = channel(9917).useRecipientsLabel(channel);
   let tmp3Result;
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
     obj[3] = recipientsLabel;
-    tmp3Result = tmp3(tmp5(4338).Text, obj);
+    tmp3Result = tmp3(tmp5(4734).Text, obj);
   }
   let str2 = str;
   if (str == null) {
@@ -48,5 +48,5 @@ export default function GroupDMRow(channel) {
   obj[5] = trailing;
   obj[6] = accessibilityActions;
   obj[7] = onAccessibilityAction;
-  return jsx(channel(15826).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
+  return jsx(channel(15876).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
 };

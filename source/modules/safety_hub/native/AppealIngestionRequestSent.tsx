@@ -1,10 +1,10 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11091
+// Function ID: 11092
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7871, 21, 4342, 11370, 1236, 11368, 11379, 4338, 11373, 2]
+// Dependencies: [19, 17, 5438, 21, 4661, 11083, 1236, 11081, 11092, 4734, 11086, 2]
 // Exports: default
 
-// Module 11378 (AppealIngestionRequestSent)
+// Module 11091 (AppealIngestionRequestSent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import SafetyHubView from "SafetyHubView";
@@ -25,7 +25,7 @@ let closure_9 = createCacheKey.createStyles({ container: { flex: 1, padding: 8 }
 const result = require("SafetyHubView").fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 
 export default function AppealIngestionRequestSent() {
-  let obj = _require(11370);
+  let obj = _require(11083);
   _require = obj.useEmitAppealIngestionEvent();
   const tmp = callback3();
   const intl = _require(1236).intl;
@@ -34,13 +34,13 @@ export default function AppealIngestionRequestSent() {
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { source: null, style: null };
-  obj1[0] = importDefault(11379);
+  obj1[0] = importDefault(11092);
   obj1[1] = tmp.checkboxPng;
-  const items = [callback(closure_4, obj1), callback(_require(11368).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.Qdx8AP) }), , , ];
+  const items = [callback(closure_4, obj1), callback(_require(11081).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.Qdx8AP) }), , , ];
   const obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: null };
   const intl3 = _require(1236).intl;
   obj2[3] = intl3.string(_require(1236).t["9BRc1N"]);
-  items[2] = callback(_require(4338).Text, obj2);
+  items[2] = callback(_require(4734).Text, obj2);
   const obj3 = { text: null, url: null, onPress: null };
   const stringResult1 = intl2.string(_require(1236).t.Qdx8AP);
   const intl4 = _require(1236).intl;
@@ -49,17 +49,17 @@ export default function AppealIngestionRequestSent() {
   obj3[2] = function onPress() {
     return callback(outer1_5.ClickCommunityGuidelinesLink);
   };
-  items[3] = callback(importDefault(11373), obj3);
+  items[3] = callback(importDefault(11086), obj3);
   const obj4 = { text: null, url: null, onPress: null };
-  const tmp4 = importDefault(11373);
+  const tmp4 = importDefault(11086);
   const intl5 = _require(1236).intl;
   obj4[0] = intl5.string(_require(1236).t.qC3XKa);
   obj4[1] = constants.WARNING_SYSTEM_HELPCENTER_LINK;
   obj4[2] = function onPress() {
     return callback(outer1_5.ClickWarningSystemHelpcenterLink);
   };
-  items[4] = callback(importDefault(11373), obj4);
+  items[4] = callback(importDefault(11086), obj4);
   obj[1] = items;
   obj[0] = callback2(closure_3, obj);
-  return callback(_require(11368).AppealIngestionModalScreen, obj);
+  return callback(_require(11081).AppealIngestionModalScreen, obj);
 };

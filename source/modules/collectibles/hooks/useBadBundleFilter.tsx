@@ -1,10 +1,10 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 14429
+// Function ID: 14430
 // Name: useBadBundleFilter
-// Dependencies: [19, 1922, 7087, 647, 4007, 9476, 7083, 7082, 2]
+// Dependencies: [19, 1922, 5324, 647, 4039, 9243, 5313, 5312, 2]
 // Exports: useBadBundleFilter
 
-// Module 14397 (useBadBundleFilter)
+// Module 14429 (useBadBundleFilter)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import map from "map";
 
@@ -15,7 +15,7 @@ export const useBadBundleFilter = function useBadBundleFilter() {
   const items = [mergeGuildAvatar];
   const stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj = require(647) /* defaultAreStatesEqual */;
-  const canUseShopDiscountsResult = importDefault(4007).canUseShopDiscounts(stateFromStores);
+  const canUseShopDiscountsResult = importDefault(4039).canUseShopDiscounts(stateFromStores);
   require = canUseShopDiscountsResult;
   const items1 = [canUseShopDiscountsResult];
   return useCallback((arr) => {

@@ -1,10 +1,10 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12291
+// Function ID: 12292
 // Name: PersonalWidgetText
-// Dependencies: [32, 19, 17, 1218, 676, 21, 4342, 712, 12541, 4338, 4034, 12542, 4788, 4072, 1236, 5329, 8904, 589, 5836, 7770, 12435, 2]
+// Dependencies: [32, 19, 17, 1218, 676, 21, 4661, 712, 12292, 4734, 4066, 12293, 4756, 4104, 1236, 5449, 8989, 589, 7185, 7988, 12186, 2]
 // Exports: default
 
-// Module 12540 (PersonalWidgetText)
+// Module 12291 (PersonalWidgetText)
 import _slicedToArray from "_slicedToArray";
 import NitroWheelIcon from "NitroWheelIcon";
 import get_ActivityIndicator from "initialize";
@@ -109,7 +109,7 @@ function CoverSection(section) {
     obj = { colors: null, style: null, pointerEvents: "none" };
     obj[0] = closure_12;
     obj[1] = closure_6.absoluteFill;
-    tmp6 = callback2(importDefault(4788), obj);
+    tmp6 = callback2(importDefault(4756), obj);
   }
   const items1 = [tmp6, , ];
   let tmp12 = null;
@@ -143,7 +143,7 @@ function CoverSection(section) {
       const obj5 = { source: null, style: null, resizeMode: "cover" };
       obj5[0] = source;
       obj5[1] = closure_6.absoluteFill;
-      obj4[4] = tmp27(importDefault(5329), obj5);
+      obj4[4] = tmp27(importDefault(5449), obj5);
       let tmp27Result = tmp27(closure_5, obj4);
       let tmp20 = importDefault;
     } else {
@@ -151,19 +151,19 @@ function CoverSection(section) {
       const obj6 = { source: null, style: null, resizeMode: "cover" };
       obj6[0] = source;
       obj6[1] = closure_6.absoluteFill;
-      tmp27Result = tmp27(importDefault(5329), obj6);
+      tmp27Result = tmp27(importDefault(5449), obj6);
     }
     const items2 = [tmp27Result, tmp3Result, ];
     tmp27Result = null;
     if (showGifTag) {
       const obj7 = { style: null };
       obj7[0] = tmp.gifTag;
-      tmp27Result = tmp27(tmp20(8904), obj7);
+      tmp27Result = tmp27(tmp20(8989), obj7);
     }
     items2[2] = tmp27Result;
     obj3[1] = items2;
     obj2[3] = tmp3(tmp4, obj3);
-    tmp27Result1 = tmp27(require(4072) /* ManaContext */.ThemeContextProvider, obj2);
+    tmp27Result1 = tmp27(require(4104) /* ManaContext */.ThemeContextProvider, obj2);
   }
   return tmp27Result1;
 }
@@ -184,7 +184,7 @@ function FieldRow(field) {
     let obj = { source: null, style: null, resizeMode: "cover" };
     obj[0] = source;
     obj[1] = tmp.fieldImage;
-    tmp3 = callback2(importDefault(5329), obj);
+    tmp3 = callback2(importDefault(5449), obj);
   }
   obj = { style: tmp.fieldRow, children: null };
   let tmp7Result = tmp3;
@@ -200,7 +200,7 @@ function FieldRow(field) {
       if (showGifTag) {
         const obj1 = { style: null };
         obj1[0] = tmp.gifTagSmall;
-        tmp13 = callback2(importDefault(8904), obj1);
+        tmp13 = callback2(importDefault(8989), obj1);
       }
       items[1] = tmp13;
       obj[3] = items;
@@ -284,7 +284,7 @@ export default function UserProfilePersonalWidgetCard(style) {
   obj = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   const tmp = createCacheKey();
   const tmp5 = disableInteraction;
-  obj[1] = callback2(userId(7770).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback2(userId(7988).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -294,10 +294,10 @@ export default function UserProfilePersonalWidgetCard(style) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(12435), obj);
+    tmp4Result = tmp4(tmp5(12186), obj);
   }
   obj[3] = tmp4Result;
-  const tmp6 = disableInteraction(5836);
+  const tmp6 = disableInteraction(7185);
   const sections = widget.sections;
   obj[4] = callback2(closure_7, {
     style: tmp.sectionsContainer,

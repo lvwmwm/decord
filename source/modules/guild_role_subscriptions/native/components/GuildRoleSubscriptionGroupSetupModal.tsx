@@ -1,9 +1,9 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16993
+// Function ID: 16994
 // Name: _createGroupFromStore
-// Dependencies: [32, 5, 19, 16904, 14519, 676, 21, 14526, 14541, 4061, 1236, 503, 4549, 16916, 16899, 16917, 2]
+// Dependencies: [32, 5, 19, 16950, 14551, 676, 21, 14558, 14573, 4093, 1236, 503, 5042, 16962, 16945, 16963, 2]
 
-// Module 16947 (_createGroupFromStore)
+// Module 16993 (_createGroupFromStore)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import noop from "noop";
@@ -36,7 +36,7 @@ function _createGroupFromStore() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ function _createGroupFromStore() {
             return obj;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           c6 = tmp;
           throw tmp13;
@@ -155,7 +155,7 @@ class GuildRoleSubscriptionGroupSetupModal {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

@@ -1,10 +1,10 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 10066
+// Function ID: 10067
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4334, 676, 8108, 21, 8653, 686, 8654, 5952, 8655, 4342, 712, 500, 8299, 4065, 689, 4788, 2]
+// Dependencies: [32, 19, 17, 4662, 676, 8158, 21, 10067, 686, 10068, 5385, 10069, 4661, 712, 500, 8340, 4097, 689, 4756, 2]
 // Exports: default
 
-// Module 8652 (DCDChatItem)
+// Module 10066 (DCDChatItem)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "n";
@@ -25,21 +25,21 @@ function DCDChatItem(message) {
   if (message.type === MessageTypes.AUTO_MODERATION_ACTION) {
     let obj = {};
     const merged1 = Object.assign(merged);
-    let tmp3Result = callback(require(8653) /* __INTERNAL_VIEW_CONFIG */.default, obj);
+    let tmp3Result = callback(require(10067) /* __INTERNAL_VIEW_CONFIG */.default, obj);
   } else {
     const AUTOMOD_INCIDENT_ACTIONS = require(686) /* set */.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       obj = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = callback(tmp21(8654).default, obj);
-    } else if (importDefault(5952)(message)) {
+      tmp3Result = callback(tmp21(10068).default, obj);
+    } else if (importDefault(5385)(message)) {
       const obj1 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8655).default, obj1);
+      tmp3Result = tmp3(tmp21(10069).default, obj1);
     } else {
       obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8654).default, obj);
+      tmp3Result = tmp3(tmp21(10068).default, obj);
     }
   }
   return tmp3Result;

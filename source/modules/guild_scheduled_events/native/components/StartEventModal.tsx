@@ -1,10 +1,10 @@
-// Module ID: 9115
-// Function ID: 9116
+// Module ID: 8905
+// Function ID: 8906
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 9013, 21, 4342, 712, 4572, 4909, 1236, 1297, 8126, 4338, 9109, 589, 9049, 9116, 5389, 7862, 9119, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 8793, 21, 4661, 712, 5260, 5433, 1236, 1297, 8176, 4734, 8899, 589, 8839, 8906, 6803, 8077, 8909, 4745, 2]
 // Exports: default
 
-// Module 9115 (NavigationBar)
+// Module 8905 (NavigationBar)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import canManageResource from "canManageResource";
@@ -31,9 +31,9 @@ function NavigationBar(onClose) {
     return onClose();
   };
   obj = { source: null };
-  obj[0] = importDefault(8126);
+  obj[0] = importDefault(8176);
   obj[3] = callback(onClose(1297).Icon, obj);
-  obj[0] = callback(onClose(4909).PressableOpacity, obj);
+  obj[0] = callback(onClose(5433).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(children) {
@@ -42,9 +42,9 @@ function StartEventHeader(children) {
   obj = { style: tmp.headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["q+fFJv"]);
-  const items = [callback(require(4338) /* Text */.Text, obj), ];
+  const items = [callback(require(4734) /* Text */.Text, obj), ];
   obj = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: children.event.name };
-  items[1] = callback(require(4338) /* Text */.Text, obj);
+  items[1] = callback(require(4734) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -111,7 +111,7 @@ export default function StartEventModal(event) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ export default function StartEventModal(event) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp11) {
           c0 = tmp;
           throw tmp11;

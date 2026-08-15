@@ -1,10 +1,10 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17076
+// Function ID: 17077
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 9233, 1236, 4795, 4338, 17031, 2]
+// Dependencies: [19, 17, 21, 9668, 1236, 4763, 4734, 17077, 2]
 // Exports: default
 
-// Module 17030 (StreamFullAlert)
+// Module 17076 (StreamFullAlert)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,8 +17,8 @@ let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginT
 const result = require("jsxProd").fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 
 export default function StreamFullAlert(arg0) {
-  let obj = require(9233) /* mapped */;
-  const errorInfo = obj.getErrorInfo(require(9233) /* mapped */.AVError.STREAM_FULL);
+  let obj = require(9668) /* mapped */;
+  const errorInfo = obj.getErrorInfo(require(9668) /* mapped */.AVError.STREAM_FULL);
   let errorCode;
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
@@ -32,10 +32,10 @@ export default function StreamFullAlert(arg0) {
   obj = { variant: "text-md/normal", style: closure_6.body, children: null };
   const intl3 = tmp(1236).intl;
   obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.VVZDBL);
-  const items = [callback(require(4338) /* Text */.Text, obj), callback(require(4338) /* Text */.Text, { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult }), ];
+  const items = [callback(require(4734) /* Text */.Text, obj), callback(require(4734) /* Text */.Text, { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult }), ];
   const obj1 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
-  const tmp6 = importDefault(4795);
-  items[2] = callback(Image, { source: importDefault(17031), style: closure_6.image });
+  const tmp6 = importDefault(4763);
+  items[2] = callback(Image, { source: importDefault(17077), style: closure_6.image });
   obj.children = items;
   return callback2(tmp6, obj);
 };

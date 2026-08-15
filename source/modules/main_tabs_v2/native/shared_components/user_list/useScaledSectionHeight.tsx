@@ -1,10 +1,10 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9644
+// Function ID: 9645
 // Name: useScaledSectionHeight
-// Dependencies: [9687, 4783, 2]
+// Dependencies: [9642, 4751, 2]
 // Exports: default
 
-// Module 9689 (useScaledSectionHeight)
+// Module 9644 (useScaledSectionHeight)
 import PX_24 from "PX_24";
 
 let c3;
@@ -13,5 +13,5 @@ let obj1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledSectionHeight.tsx");
 
 export default function useScaledSectionHeight() {
-  return closure_2 + Math.max(Math.min(require(4783) /* getFontScale */.useFontScale(), 2) * closure_3 - closure_3, 0);
+  return closure_2 + Math.max(Math.min(require(4751) /* getFontScale */.useFontScale(), 2) * closure_3 - closure_3, 0);
 };

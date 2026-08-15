@@ -1,11 +1,11 @@
-// Module ID: 4766
-// Function ID: 4767
+// Module ID: 4724
+// Function ID: 4725
 // Name: animatedComponent
-// Dependencies: [4083, 4767, 2]
+// Dependencies: [4115, 4725, 2]
 
-// Module 4766 (animatedComponent)
+// Module 4724 (animatedComponent)
 import animatedComponent from "isBlurDisabled";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 
 const result = require("set").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewAnimated.tsx");
 

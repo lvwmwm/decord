@@ -1,10 +1,10 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5288
+// Function ID: 5289
 // Name: useCanChannelBeDefault
-// Dependencies: [1981, 1391, 676, 506, 589, 3994, 2]
+// Dependencies: [1981, 1391, 676, 506, 589, 4026, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5305 (useCanChannelBeDefault)
+// Module 5288 (useCanChannelBeDefault)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -47,8 +47,8 @@ export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
     }
     let isChannelGatedResult = channelGated.isChannelGated(guild_id, id);
     if (!isChannelGatedResult) {
-      isChannelGatedResult = importAll(3994).canEveryoneRole(VIEW_CHANNEL, channel.getChannel(id));
-      const obj3 = importAll(3994);
+      isChannelGatedResult = importAll(4026).canEveryoneRole(VIEW_CHANNEL, channel.getChannel(id));
+      const obj3 = importAll(4026);
     }
     return isChannelGatedResult;
   }

@@ -1,10 +1,10 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14424
+// Function ID: 14425
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 6018, 2]
+// Dependencies: [5, 676, 530, 585, 5360, 2]
 // Exports: search
 
-// Module 14392 (_search)
+// Module 14424 (_search)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -29,7 +29,7 @@ function _search() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13355
+// Function ID: 13356
 // Name: useFilteredGuilds
-// Dependencies: [19, 1910, 5217, 1922, 589, 38, 2]
+// Dependencies: [19, 1910, 5078, 1922, 589, 38, 2]
 // Exports: default
 
-// Module 13323 (useFilteredGuilds)
+// Module 13355 (useFilteredGuilds)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import insertUnsortedGuilds from "insertUnsortedGuilds";

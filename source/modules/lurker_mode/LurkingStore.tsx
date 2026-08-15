@@ -1,9 +1,9 @@
-// Module ID: 3990
-// Function ID: 3991
+// Module ID: 4022
+// Function ID: 4023
 // Name: initialize
 // Dependencies: [1434, 1990, 1910, 1922, 676, 589, 709, 2]
 
-// Module 3990 (initialize)
+// Module 4022 (initialize)
 import { isGuildLurker } from "GuildNSFWContentLevel";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

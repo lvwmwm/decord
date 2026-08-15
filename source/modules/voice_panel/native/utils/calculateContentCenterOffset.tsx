@@ -1,10 +1,10 @@
-// Module ID: 16301
-// Function ID: 16302
+// Module ID: 16351
+// Function ID: 16352
 // Name: EDGE_GUTTER
-// Dependencies: [11724, 11152, 2]
+// Dependencies: [11443, 11259, 2]
 // Exports: default
 
-// Module 16301 (EDGE_GUTTER)
+// Module 16351 (EDGE_GUTTER)
 import { EDGE_GUTTER } from "CARD_SIZE";
 
 const fn = function t(arg0) {
@@ -16,7 +16,7 @@ const fn = function t(arg0) {
   let bound1 = bound;
   if (windowHeight > contentHeight) {
     const _Math = Math;
-    bound1 = Math.max(bound, bound + importDefault(11152)((windowHeight - bound - tmp2 - contentHeight) / 2));
+    bound1 = Math.max(bound, bound + importDefault(11259)((windowHeight - bound - tmp2 - contentHeight) / 2));
   }
   return bound1;
 };

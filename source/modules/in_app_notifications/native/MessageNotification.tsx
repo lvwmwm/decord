@@ -1,8 +1,8 @@
-// Module ID: 9847
-// Function ID: 9848
-// Dependencies: [19, 4334, 9830, 21, 4342, 9848, 589, 1297, 1236, 4595, 9876, 7210, 1351, 4572, 4353, 9877, 2007, 9907, 9911, 2]
+// Module ID: 10047
+// Function ID: 10048
+// Dependencies: [19, 4662, 10030, 21, 4661, 10048, 589, 1297, 1236, 4814, 10080, 7436, 1351, 5260, 4768, 10081, 2007, 10113, 10117, 2]
 
-// Module 9847
+// Module 10047
 import importAllResult from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import set from "set";
@@ -16,7 +16,7 @@ const require = arg1;
 let c3 = importAllResult;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: c5, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_6 } = set);
 let closure_8 = createCacheKey.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 } });
-let closure_9 = importAllResult.memo((message) => jsx(importDefault(9848), { message: message.message, lineClamp: closure_6, maxHeight: closure_5 }));
+let closure_9 = importAllResult.memo((message) => jsx(importDefault(10048), { message: message.message, lineClamp: closure_6, maxHeight: closure_5 }));
 const result = set.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
 
 export default importAllResult.memo(function MessageNotification(notification) {

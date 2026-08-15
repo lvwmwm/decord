@@ -1,22 +1,22 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8929
+// Function ID: 8930
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5405, 3998, 1922, 2007, 4034, 8847, 4310, 8859, 2]
+// Dependencies: [5, 4493, 4030, 1922, 2007, 4066, 8930, 4342, 8943, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8846 (showUserProfileActionSheet)
+// Module 8929 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   const timestamp = Date.now();
-  const IgnoreProfileSpeedbumpDisabled = require(4034) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
+  const IgnoreProfileSpeedbumpDisabled = require(4066) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
   if (!ignoreBlockedSpeedBump.ignoreBlockedSpeedBump) {
     const isBlockedResult = markAllUserIdListsStale.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = markAllUserIdListsStale.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      let obj = importDefault(4310);
+      let obj = importDefault(4342);
       const _HermesInternal = HermesInternal;
       obj = {};
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -27,15 +27,15 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(2007)(8847, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(2007)(8930, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = require(2007) /* asyncRequireImpl */(8859, dependencyMap.paths);
+  const tmp15 = require(2007) /* asyncRequireImpl */(8943, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
   obj.openedAt = timestamp;
-  importDefault(4310).openLazy(tmp15, combined1, obj, "replaceAll");
+  importDefault(4342).openLazy(tmp15, combined1, obj, "replaceAll");
 }
 require("processCallbacks").addPostConnectionCallback;
 const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
@@ -64,7 +64,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -99,7 +99,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             outer1_6(userId);
           }
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         paths = tmp;

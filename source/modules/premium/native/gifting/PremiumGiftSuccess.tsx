@@ -1,10 +1,10 @@
-// Module ID: 10179
-// Function ID: 10180
+// Module ID: 10383
+// Function ID: 10384
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 7410, 1388, 21, 4342, 712, 1628, 9671, 38, 10180, 10101, 8350, 589, 10102, 10178, 1379, 1377, 10181, 10182, 10183, 10184, 2]
+// Dependencies: [19, 17, 7628, 1388, 21, 4661, 712, 1629, 9625, 38, 10384, 10306, 8389, 589, 9629, 10382, 1379, 1377, 10385, 10386, 10387, 10388, 2]
 // Exports: default
 
-// Module 10179 (PremiumGiftSuccess)
+// Module 10383 (PremiumGiftSuccess)
 import PremiumGiftDMSuccessBody from "PremiumGiftDMSuccessBody";
 import { View } from "DismissibleContent";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";

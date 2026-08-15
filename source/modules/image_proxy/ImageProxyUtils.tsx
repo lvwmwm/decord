@@ -1,10 +1,10 @@
-// Module ID: 4377
-// Function ID: 4378
+// Module ID: 4508
+// Function ID: 4509
 // Name: isImageProxyURL
-// Dependencies: [1486, 1469, 2]
+// Dependencies: [1487, 1469, 2]
 // Exports: getSizedImageProxyURL, isImageProxyURL
 
-// Module 4377 (isImageProxyURL)
+// Module 4508 (isImageProxyURL)
 import set from "set";
 
 let parts;
@@ -38,7 +38,7 @@ export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1)
   let keepAspectRatio;
   let size;
   ({ size, keepAspectRatio } = arg1);
-  const str = importDefault(1486).toURLSafe(value);
+  const str = importDefault(1487).toURLSafe(value);
   if (null != str) {
     let startsWithResult = set.has(str.hostname);
     if (startsWithResult) {

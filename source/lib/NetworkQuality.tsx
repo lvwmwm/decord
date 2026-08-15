@@ -1,9 +1,9 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13092
+// Function ID: 13093
 // Name: _initStats
-// Dependencies: [4436, 676, 4420, 2]
+// Dependencies: [4564, 676, 4548, 2]
 
-// Module 13164 (_initStats)
+// Module 13092 (_initStats)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import ME from "ME";
 

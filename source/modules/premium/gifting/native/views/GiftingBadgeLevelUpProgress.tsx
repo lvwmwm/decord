@@ -1,13 +1,13 @@
-// Module ID: 10222
-// Function ID: 10223
+// Module ID: 10422
+// Function ID: 10423
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8853, 21, 4342, 712, 10097, 4338, 1236, 2399, 2]
+// Dependencies: [19, 17, 8936, 21, 4661, 712, 10302, 4734, 1236, 2431, 2]
 // Exports: default
 
-// Module 10222 (GiftingBadgeLevelUpProgress)
+// Module 10422 (GiftingBadgeLevelUpProgress)
 import "noop";
 import { View } from "get ActivityIndicator";
-import { getSingleRequirementThreshold as closure_4 } from "map";
+import { getSingleRequirementThreshold as closure_4 } from "initialize";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -26,7 +26,7 @@ createCacheKey[3] = { height: 6, borderRadius: require("Themes").radii.round, ba
 createCacheKey[4] = { flexDirection: "row", justifyContent: "flex-end" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 const obj3 = { height: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-const result = require("map").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeLevelUpProgress.tsx");
+const result = require("initialize").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeLevelUpProgress.tsx");
 
 export default function GiftingBadgeLevelUpProgress(style) {
   let currentTier;
@@ -52,7 +52,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   if (tmp7) {
     obj = { icon: null, size: 24 };
     obj[0] = currentTier.simple_icon_url;
-    tmp7 = callback2(importDefault(10097), obj);
+    tmp7 = callback2(importDefault(10302), obj);
   }
   const items1 = [tmp7, , ];
   const obj1 = { style: tmp.progressBarTrack, children: null };
@@ -65,7 +65,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   if (tmp11Result) {
     const obj4 = { icon: null, size: 24 };
     obj4[0] = newTier.simple_icon_url;
-    tmp11Result = tmp11(importDefault(10097), obj4);
+    tmp11Result = tmp11(importDefault(10302), obj4);
   }
   items1[2] = tmp11Result;
   obj[1] = items1;
@@ -73,8 +73,8 @@ export default function GiftingBadgeLevelUpProgress(style) {
   const obj5 = { style: tmp.labels, children: null };
   const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj6[2] = intl.format(importDefault(2399).iIpfQe, { count: progress, threshold: tmp2 });
-  obj5[1] = callback2(require(4338) /* Text */.Text, obj6);
+  obj6[2] = intl.format(importDefault(2431).iIpfQe, { count: progress, threshold: tmp2 });
+  obj5[1] = callback2(require(4734) /* Text */.Text, obj6);
   items3[1] = callback2(View, obj5);
   obj[1] = items3;
   return closure_6(View, obj);

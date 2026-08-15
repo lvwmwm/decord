@@ -1,10 +1,10 @@
-// Module ID: 12139
-// Function ID: 12140
+// Module ID: 11876
+// Function ID: 11877
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1922, 12113, 21, 4342, 5328, 712, 1499, 4338, 1236, 8589, 8590, 12112, 647, 5882, 38, 8616, 8584, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 11850, 21, 4661, 6370, 712, 1500, 4734, 1236, 8628, 8629, 11849, 647, 6548, 38, 8655, 8623, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12139 (AddPhoneScreen)
+// Module 11876 (AddPhoneScreen)
 import ContactSyncModes from "ContactSyncModes";
 import _slicedToArray from "_slicedToArray";
 import VerifyPhone from "VerifyPhone";
@@ -30,27 +30,27 @@ let obj1 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_
 let result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
 
 export const AddPhoneScreen = function AddPhoneScreen() {
-  let obj = _require(1499);
+  let obj = _require(1500);
   _require = obj.useNavigation();
   const tmp = createCacheKey();
   obj = { style: tmp.header, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = _require(1236).intl;
   obj[4] = intl.string(_require(1236).t.Xgb497);
-  const items = [callback2(_require(4338).Text, obj), ];
+  const items = [callback2(_require(4734).Text, obj), ];
   const obj1 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = _require(1236).intl;
   obj1[3] = intl2.string(_require(1236).t.qFmzyo);
-  items[1] = callback2(_require(4338).Text, obj1);
+  items[1] = callback2(_require(4734).Text, obj1);
   obj[1] = items;
   const obj2 = { style: tmp.container, reason: null, header: null, onComplete: null };
   const tmp2 = callback3(View, obj);
-  obj2[1] = _require(8590).ChangePhoneReason.CONTACT_SYNC;
+  obj2[1] = _require(8629).ChangePhoneReason.CONTACT_SYNC;
   obj2[2] = tmp2;
   obj2[3] = function onComplete(arg0) {
     return callback(outer1_2[15]).submitPhone(arg0, callback);
   };
-  return callback2(importDefault(8589), obj2);
+  return callback2(importDefault(8628), obj2);
 };
 export const VerifyPhoneScreen = function VerifyPhoneScreen() {
   let require;

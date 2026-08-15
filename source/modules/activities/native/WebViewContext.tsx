@@ -1,10 +1,10 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 12472
+// Function ID: 12473
 // Name: context
-// Dependencies: [32, 19, 17, 21, 4342, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 2]
 // Exports: WebViewContextProvider
 
-// Module 10717 (context)
+// Module 12472 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";

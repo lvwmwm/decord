@@ -1,9 +1,9 @@
-// Module ID: 3984
-// Function ID: 3985
+// Module ID: 4016
+// Function ID: 4017
 // Name: CreatorMonetizationRestrictions
 // Dependencies: [2]
 
-// Module 3984 (CreatorMonetizationRestrictions)
+// Module 4016 (CreatorMonetizationRestrictions)
 const obj = { NEW_PURCHASES_DISABLED: "NEW_PURCHASES_DISABLED", REAPPLICATION_DISABLED: "REAPPLICATION_DISABLED", SETTINGS_READ_ONLY: "SETTINGS_READ_ONLY", SUBSCRIPTIONS_ENDED_FULL_REFUND: "SUBSCRIPTIONS_ENDED_FULL_REFUND", SUBSCRIPTIONS_ENDED_PRORATED_REFUND: "SUBSCRIPTIONS_ENDED_PRORATED_REFUND" };
 const items = [, , ];
 ({ NEW_PURCHASES_DISABLED: arr[0], REAPPLICATION_DISABLED: arr[1], SETTINGS_READ_ONLY: arr[2] } = obj);

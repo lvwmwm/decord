@@ -1,10 +1,10 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12278
+// Function ID: 12279
 // Name: ImageSkeleton
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4734, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12527 (ImageSkeleton)
+// Module 12278 (ImageSkeleton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ export const TextSkeleton = function TextSkeleton(widthChars) {
   if (num === undefined) {
     num = 15;
   }
-  const tmp2 = require(4338) /* Text */.TextStyleSheet[widthChars.variant];
+  const tmp2 = require(4734) /* Text */.TextStyleSheet[widthChars.variant];
   const style = [createCacheKey().skeleton, { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight }];
   return <View style={style} />;
 };

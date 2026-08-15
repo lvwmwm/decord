@@ -1,9 +1,9 @@
-// Module ID: 1473
-// Function ID: 1474
+// Module ID: 1474
+// Function ID: 1475
 // Name: awaitOnline
-// Dependencies: [1474, 2]
+// Dependencies: [1475, 2]
 
-// Module 1473 (awaitOnline)
+// Module 1474 (awaitOnline)
 let closure_2 = [];
 let c3 = false;
 const obj = {};

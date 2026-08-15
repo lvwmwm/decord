@@ -1,10 +1,10 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14690
+// Function ID: 14691
 // Name: EffectTile
-// Dependencies: [32, 19, 17, 21, 4342, 712, 7470, 14653, 14654, 4311, 4310, 5458, 5457, 1236, 2661, 4777, 4775, 9536, 9533, 9534, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 7688, 14685, 14686, 4343, 4342, 6950, 6949, 1236, 2693, 4745, 4733, 9457, 9452, 9453, 2]
 // Exports: default
 
-// Module 14658 (EffectTile)
+// Module 14690 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset";
 import get_ActivityIndicator from "DISPLAY_NAME_STYLES_EFFECT_NAMES";
@@ -26,27 +26,27 @@ function EffectTile(arg0) {
   ({ userId, onClick } = arg0);
   const tmp = createCacheKey();
   const intl = require(1236) /* getSystemLocale */.intl;
-  let OpWJ3f = require(9536) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+  let OpWJ3f = require(9457) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = importDefault(2661).OpWJ3f;
+    OpWJ3f = importDefault(2693).OpWJ3f;
   }
   const stringResult = intl.string(OpWJ3f);
   let obj = { onPress: onClick, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: { selected }, children: null };
   const items = [tmp.effectCard, ];
-  const displayNameStylesEffectConfig = require(9536) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.useDisplayNameStylesEffectConfig(effectId);
+  const displayNameStylesEffectConfig = require(9457) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.useDisplayNameStylesEffectConfig(effectId);
   if (selected) {
     selected = tmp.effectCardSelected;
   }
   obj = { style: items, children: null };
   items[1] = selected;
   const obj1 = { userId, userName: stringResult, effectDisplayType: null, pendingDisplayNameStyles: null, style: null, variant: "text-md/semibold" };
-  const tmp2Result = require(9536) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  const tmp2Result = require(9457) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   const tmp8 = closure_6;
   const tmp9 = closure_8;
-  obj1[2] = require(9534) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
+  obj1[2] = require(9453) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
   obj1[3] = displayNameStylesEffectConfig.previewStyles;
   obj1[4] = tmp.effectName;
-  const items1 = [closure_7(importDefault(9533), obj1), ];
+  const items1 = [closure_7(importDefault(9452), obj1), ];
   if (showNewDot) {
     const obj2 = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     obj2[0] = tmp.tileNewDot;
@@ -87,10 +87,10 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let c6;
   let callback2;
   let tmp = createCacheKey();
-  let obj = userId(7470);
-  let obj1 = userId(14653);
+  let obj = userId(7688);
+  let obj1 = userId(14685);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14654);
+  let obj2 = userId(14686);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   const tmp5 = callback(first.useState(selectedEffectId), 2);
@@ -109,16 +109,16 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     obj[0] = tmp.header;
     obj1 = { title: null, trailing: null };
     const intl = tmp2(1236).intl;
-    obj1[0] = intl.string(onSelectEffect(2661).RVtMxT);
+    obj1[0] = intl.string(onSelectEffect(2693).RVtMxT);
     obj2 = { style: null, children: null };
     obj2[0] = tmp.headerTrailing;
     const obj3 = { text: null, onPress: null, variant: "primary", size: "sm" };
     const intl2 = tmp2(1236).intl;
     obj3[0] = intl2.string(tmp2(1236).t.XqMe3N);
     obj3[1] = tmp8;
-    obj2[1] = callback2(tmp2(4777).Button, obj3);
+    obj2[1] = callback2(tmp2(4745).Button, obj3);
     obj1[1] = callback2(closure_5, obj2);
-    obj[1] = callback2(tmp2(5457).BottomSheetTitleHeader, obj1);
+    obj[1] = callback2(tmp2(6949).BottomSheetTitleHeader, obj1);
     obj[1] = callback2(closure_5, obj);
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.container;
@@ -141,10 +141,10 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
         }
       }, effectId);
     });
-    obj5[1] = callback2(tmp2(4775).Stack, obj6);
+    obj5[1] = callback2(tmp2(4733).Stack, obj6);
     obj4[1] = callback2(closure_5, obj5);
     obj[2] = callback2(closure_5, obj4);
-    tmp9 = callback2(tmp2(5458).BottomSheet, obj);
+    tmp9 = callback2(tmp2(6950).BottomSheet, obj);
   }
   return tmp9;
 };

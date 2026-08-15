@@ -1,20 +1,20 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15238
+// Function ID: 15239
 // Name: UsernameStatusMessage
-// Dependencies: [109, 32, 19, 15163, 21, 4342, 4083, 14084, 4775, 7859, 712, 4338, 1236, 15181, 7856, 500, 2]
+// Dependencies: [109, 32, 19, 15212, 21, 4661, 4115, 14116, 4733, 8074, 712, 4734, 1236, 15230, 8071, 500, 2]
 // Exports: RegisterUsernameInput
 
-// Module 15189 (UsernameStatusMessage)
+// Module 15238 (UsernameStatusMessage)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import { FadeIn } from "module_4083";
-import { FadeOut } from "module_4083";
-import { LinearTransition } from "module_4083";
-import { Easing } from "module_4083";
+import { FadeIn } from "module_4115";
+import { FadeOut } from "module_4115";
+import { LinearTransition } from "module_4115";
+import { Easing } from "module_4115";
 
 let c10;
 let c9;
@@ -31,27 +31,27 @@ function UsernameStatusMessage(arg0) {
   if (usernameStatus != null) {
     type = usernameStatus.type;
   }
-  if (type === require(14084) /* NameValidationState */.NameValidationState.ERROR) {
+  if (type === require(14116) /* NameValidationState */.NameValidationState.ERROR) {
     let obj = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
     obj = { size: "xs", color: null };
     obj[1] = importDefault(712).colors.TEXT_FEEDBACK_CRITICAL;
-    const items = [callback3(tmp3(7859).CircleErrorIcon, obj), ];
+    const items = [callback3(tmp3(8074).CircleErrorIcon, obj), ];
     const obj1 = { variant: "text-xs/medium", color: "text-feedback-critical", style: null };
     obj1[2] = tmp.status;
     const merged = Object.assign(createCacheKey);
     const merged1 = Object.assign(createCacheKey);
     obj1.animated = true;
     obj1.children = usernameStatus.message;
-    items[1] = callback3(tmp3(4338).Text, obj1);
+    items[1] = callback3(tmp3(4734).Text, obj1);
     obj[3] = items;
-    let tmp6 = callback4(tmp3(4775).Stack, obj);
+    let tmp6 = callback4(tmp3(4733).Stack, obj);
   } else {
     if (isUsernameFocused) {
       let type1;
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(14084).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(14116).NameValidationState.AVAILABLE) {
         const obj2 = {};
         const merged2 = Object.assign(createCacheKey);
         const merged3 = Object.assign(createCacheKey);
@@ -60,8 +60,8 @@ function UsernameStatusMessage(arg0) {
         obj2.animated = true;
         const obj3 = { variant: "text-xs/medium", color: "text-feedback-positive", children: null };
         obj3[2] = usernameStatus.message;
-        obj2.children = callback3(tmp3(4338).Text, obj3);
-        tmp6 = callback3(tmp3(4338).Text, obj2);
+        obj2.children = callback3(tmp3(4734).Text, obj3);
+        tmp6 = callback3(tmp3(4734).Text, obj2);
       }
     }
     tmp6 = null;
@@ -75,7 +75,7 @@ function UsernameStatusMessage(arg0) {
       obj.animated = true;
       const intl = tmp3(1236).intl;
       obj.children = intl.string(tmp3(1236).t.y7LSyU);
-      tmp6 = callback3(tmp3(4338).Text, obj);
+      tmp6 = callback3(tmp3(4734).Text, obj);
     }
   }
   return tmp6;
@@ -89,7 +89,7 @@ createCacheKey[0] = require("module_300");
 createCacheKey[1] = require("module_300");
 createCacheKey = { layout: null };
 createCacheKey[0] = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_4083").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_4115").Easing.quad));
 const result = require("noop").fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
 
 export const RegisterUsernameInput = function RegisterUsernameInput(setUsername) {
@@ -110,7 +110,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     autoFocus = false;
   }
   obj[1] = autoFocus;
-  importDefault(15181)(obj);
+  importDefault(15230)(obj);
   const tmp5 = callback(obj.useState(true), 2);
   importDefault = tmp6;
   const tmp7 = callback2((errors) => errors.errors);
@@ -140,7 +140,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
   const tmp11 = closure_10;
   const tmp12 = closure_11;
   const tmp14 = setUsername;
-  const tmp3 = importDefault(15181);
+  const tmp3 = importDefault(15230);
   obj[5] = setUsername(500).isAndroid();
   const obj4 = setUsername(500);
   let str = "default";
@@ -157,13 +157,13 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(14084).NameValidationState.ERROR) {
+  if (type === tmp14(14116).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj1 = { children: null };
   obj[16] = str2;
   obj[17] = submitBehavior;
-  const items3 = [closure_9(setUsername(7856).TextInput, obj), closure_9(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [closure_9(setUsername(8071).TextInput, obj), closure_9(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj1[0] = items3;
   return tmp11(tmp12, obj1);
 };

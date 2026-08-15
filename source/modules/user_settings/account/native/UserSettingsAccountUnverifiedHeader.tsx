@@ -1,10 +1,10 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8624
+// Function ID: 8625
 // Name: handleOpenEmailVerification
-// Dependencies: [19, 1922, 21, 4342, 712, 8522, 1236, 589, 4909, 4338, 2]
+// Dependencies: [19, 1922, 21, 4661, 712, 8561, 1236, 589, 5433, 4734, 2]
 // Exports: default
 
-// Module 8585 (handleOpenEmailVerification)
+// Module 8624 (handleOpenEmailVerification)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -14,7 +14,7 @@ let c4;
 let c5;
 const require = arg1;
 function handleOpenEmailVerification() {
-  importDefault(8522).open();
+  importDefault(8561).open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {
@@ -61,13 +61,13 @@ export default function UserSettingsAccountUnverifiedHeader() {
     obj = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
     obj[0] = tmp.accountWarningText;
     obj[3] = tmp4.title;
-    const items1 = [callback(tmp2(4338).Text, obj), ];
+    const items1 = [callback(tmp2(4734).Text, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
     obj1[0] = tmp.accountWarningButton;
     obj1[3] = tmp4.button;
-    items1[1] = callback(tmp2(4338).Text, obj1);
+    items1[1] = callback(tmp2(4734).Text, obj1);
     obj[3] = items1;
-    tmp5 = callback2(tmp2(4909).PressableOpacity, obj);
+    tmp5 = callback2(tmp2(5433).PressableOpacity, obj);
   }
   return tmp5;
 };

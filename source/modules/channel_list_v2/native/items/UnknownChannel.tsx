@@ -1,9 +1,9 @@
-// Module ID: 15450
-// Function ID: 15451
+// Module ID: 15500
+// Function ID: 15501
 // Name: handlePress
-// Dependencies: [19, 9855, 4551, 21, 4342, 712, 4062, 1236, 8675, 4535, 9726, 15328, 2]
+// Dependencies: [19, 10055, 5044, 21, 4661, 712, 4094, 1236, 10455, 4984, 9919, 15378, 2]
 
-// Module 15450 (handlePress)
+// Module 15500 (handlePress)
 import importAllResult from "noop";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
@@ -11,11 +11,11 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function handlePress() {
-  let obj = importDefault(4062);
+  let obj = importDefault(4094);
   obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: null, icon: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["/ZjyYE"]);
-  obj[2] = importDefault(8675);
+  obj[2] = importDefault(10455);
   obj.open(obj);
 }
 let c3 = importAllResult;
@@ -32,14 +32,14 @@ const memoResult = importAllResult.memo((channel) => {
     const result = channel(outer1_2[10]).openChannelLongPressActionSheet(channel.id);
   }, items);
   const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
-  const tmp2 = importDefault(4535)(channel);
+  const tmp2 = importDefault(4984)(channel);
   const intl = channel(1236).intl;
   obj[4] = intl.formatToPlainString(channel(1236).t.yjQ9P8, { channelName: tmp2 });
   obj[5] = { selected };
   obj[6] = channel;
   obj[7] = selected;
   obj[8] = UnreadSetting.ONLY_MENTIONS;
-  return jsx(importDefault(15328), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+  return jsx(importDefault(15378), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
 });
 let result = require("ReadStateTypes").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 

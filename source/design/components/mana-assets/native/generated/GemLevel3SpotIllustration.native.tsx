@@ -1,10 +1,10 @@
-// Module ID: 6462
-// Function ID: 6463
+// Module ID: 5820
+// Function ID: 5821
 // Name: GemLevel3SpotIllustration
-// Dependencies: [21, 5329, 6463, 2]
+// Dependencies: [21, 5449, 5821, 2]
 // Exports: GemLevel3SpotIllustration
 
-// Module 6462 (GemLevel3SpotIllustration)
+// Module 5820 (GemLevel3SpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel3SpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemLevel3SpotIllustration = function GemLevel3SpotIllustration(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6463);
+  obj[0] = importDefault(5821);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GemLevel3SpotIllustration = function GemLevel3SpotIllustration(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

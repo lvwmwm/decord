@@ -1,10 +1,10 @@
-// Module ID: 4887
-// Function ID: 4888
+// Module ID: 6891
+// Function ID: 6892
 // Name: StageLockIcon
-// Dependencies: [19, 21, 712, 4064, 4841, 2]
+// Dependencies: [19, 21, 712, 4096, 6846, 2]
 // Exports: StageLockIcon
 
-// Module 4887 (StageLockIcon)
+// Module 6891 (StageLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const StageLockIcon = function StageLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4841) /* registerAsset */;
+  obj[0] = require(6846) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

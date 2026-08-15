@@ -1,10 +1,10 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13063
+// Function ID: 13064
 // Name: _networkAwareRetry
-// Dependencies: [5, 1218, 4227, 1473, 2]
+// Dependencies: [5, 1218, 4259, 1474, 2]
 // Exports: default
 
-// Module 13267 (_networkAwareRetry)
+// Module 13063 (_networkAwareRetry)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import fetchFingerprint from "fetchFingerprint";
 
@@ -29,7 +29,7 @@ function _networkAwareRetry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ function _networkAwareRetry() {
               if (asyncGeneratorStep + 1 >= num14) {
                 throw store;
               } else {
-                let obj6 = callback(4227);
+                let obj6 = callback(4259);
                 c6 = 4;
                 c7 = 1;
                 const obj2 = { value: null, done: false };
@@ -114,7 +114,7 @@ function _networkAwareRetry() {
                 obj5[0] = arg1;
                 return obj5;
               } else {
-                obj1 = num14(1473);
+                obj1 = num14(1474);
                 c6 = 5;
                 c7 = 1;
                 obj6 = { value: null, done: false };

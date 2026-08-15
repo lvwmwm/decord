@@ -1,10 +1,10 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9149
+// Function ID: 9150
 // Name: GameProfileCommunityServer
-// Dependencies: [5, 32, 19, 17, 1393, 21, 4342, 712, 9350, 4326, 4331, 9396, 589, 9347, 6021, 9397, 1430, 4338, 1236, 5840, 9327, 1297, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1393, 21, 4661, 712, 9104, 4358, 4363, 9150, 589, 9101, 7302, 9151, 1430, 4734, 1236, 7188, 9152, 1297, 4745, 2]
 // Exports: default
 
-// Module 9395 (GameProfileCommunityServer)
+// Module 9149 (GameProfileCommunityServer)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import GuildIconSizes from "GuildIconSizes";
@@ -100,7 +100,7 @@ export default function GameProfileCommunityServer(game) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

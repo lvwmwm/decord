@@ -1,10 +1,10 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 8821
+// Function ID: 8822
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4065, 712, 1628, 5458, 5457, 5826, 5460, 8051, 8050, 2]
+// Dependencies: [19, 21, 4097, 712, 1629, 6950, 6949, 7176, 6952, 8101, 8100, 2]
 // Exports: default
 
-// Module 9031 (ItemSelectorActionSheet)
+// Module 8821 (ItemSelectorActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -25,7 +25,7 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4065);
+  let obj = items(4097);
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === closure_1);
   obj = { title, trailing: null };
@@ -33,20 +33,20 @@ export default function ItemSelectorActionSheet(arg0) {
   if (null != onClose) {
     obj = { onPress: null };
     obj[0] = onClose;
-    tmp6Result = tmp6(tmp(5826).ActionSheetCloseButton, obj);
+    tmp6Result = tmp6(tmp(7176).ActionSheetCloseButton, obj);
   }
-  const obj1 = { scrollable: true, header: closure_3(items(5457).BottomSheetTitleHeader, obj), children: null };
+  const obj1 = { scrollable: true, header: closure_3(items(6949).BottomSheetTitleHeader, obj), children: null };
   obj[1] = tmp6Result;
   const obj2 = { contentContainerStyle: null, children: null };
   const obj3 = { paddingHorizontal: token, paddingBottom: null };
-  obj3[1] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
+  obj3[1] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
   obj2[0] = obj3;
   items = [body, ];
   let num = -1;
   if (findIndexResult >= 0) {
     num = findIndexResult;
   }
-  items[1] = closure_3(items(8051).TableRadioGroup, {
+  items[1] = closure_3(items(8101).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -55,9 +55,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(8050).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(8100).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
-  obj1[2] = closure_4(items(5460).BottomSheetScrollView, obj2);
-  return closure_3(items(5458).BottomSheet, obj1);
+  obj1[2] = closure_4(items(6952).BottomSheetScrollView, obj2);
+  return closure_3(items(6950).BottomSheet, obj1);
 };

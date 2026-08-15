@@ -1,10 +1,10 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8262
+// Function ID: 8263
 // Name: createChannelLinkedToLobbySystemMessage
-// Dependencies: [4383, 676, 8128, 8135, 8137, 1993, 1236, 8138, 2]
+// Dependencies: [4478, 676, 8178, 8185, 8187, 1993, 1236, 8188, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8216 (createChannelLinkedToLobbySystemMessage)
+// Module 8262 (createChannelLinkedToLobbySystemMessage)
 import addApplication from "addApplication";
 import { HelpdeskArticles } from "ME";
 
@@ -16,7 +16,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
   let theme;
   message = message.message;
   ({ roleStyle, theme } = message);
-  const tmp3 = importDefault(8128)(theme);
+  const tmp3 = importDefault(8178)(theme);
   let str = message.applicationId;
   if (str == null) {
     str = "";
@@ -25,7 +25,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
   if (null == application) {
     return null;
   } else {
-    let obj = require(8135) /* getMessageAuthorWithProcessedColor */;
+    let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
     obj = { username: null, usernameOnClick: null, applicationName: null, applicationNameOnClick: null, urlOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
@@ -33,7 +33,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(8137)(obj);
+    obj[1] = tmp(8187)(obj);
     obj[2] = application.name;
     const obj1 = { linkColor: null, medium: true };
     obj1[0] = tmp3.defaultUsernameColor;
@@ -45,7 +45,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     const obj3 = { content: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj3[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t.gZfhOw, obj);
-    const merged = Object.assign(tmp(8138)(message));
+    const merged = Object.assign(tmp(8188)(message));
     return obj3;
   }
 };

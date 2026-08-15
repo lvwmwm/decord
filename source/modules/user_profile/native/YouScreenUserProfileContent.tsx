@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 16019
+// Function ID: 16020
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1383, 5059, 7150, 8848, 5837, 1388, 21, 15962, 15579, 500, 8905, 8898, 12426, 12427, 8851, 9301, 13992, 1377, 6086, 12358, 4777, 9732, 712, 1236, 15970, 15971, 1500, 8377, 9511, 8899, 589, 1367, 8886, 8895, 12308, 15972, 12543, 12549, 12550, 9520, 15973, 12553, 15100, 12360, 9593, 7475, 12559, 15975, 12413, 12564, 12571, 9019, 4083, 5776, 9513, 9532, 9096, 12052, 12054, 2]
+// Dependencies: [32, 19, 17, 1383, 7250, 5365, 8931, 7186, 1388, 21, 16012, 15629, 500, 8990, 8982, 12173, 12174, 8934, 9454, 14024, 1377, 7366, 12093, 4745, 9925, 712, 1236, 16020, 16021, 1501, 8416, 7256, 8983, 589, 1367, 8970, 8979, 4380, 16022, 12294, 12300, 12301, 9293, 16023, 12304, 15149, 12095, 9548, 7693, 12310, 16025, 12158, 12315, 12322, 8799, 4115, 7126, 9286, 9451, 8886, 11783, 11785, 2]
 // Exports: default
 
-// Module 15969 (YouAvatar)
+// Module 16019 (YouAvatar)
 import useBadges from "useBadges";
 import apexExperiment from "apexExperiment";
 import get_ActivityIndicator from "UserProfileAnalyticsProvider";
@@ -24,9 +24,9 @@ let map1;
 const require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(15962).trackYouTabAvatarPress();
-    const obj = callback(15962);
-    const result1 = callback(15579).showYouAccountActionSheet();
+    const result = callback(16012).trackYouTabAvatarPress();
+    const obj = callback(16012);
+    const result1 = callback(15629).showYouAccountActionSheet();
   }, []);
   let obj = require(500) /* set */;
   const isAndroidResult = obj.isAndroid();
@@ -36,7 +36,7 @@ function YouAvatar(arg0) {
   obj.importantForAccessibility = "no-hide-descendants";
   obj.accessibilityElementsHidden = isAndroidResult;
   obj.accessible = !isAndroidResult;
-  return closure_13(importDefault(8905), obj);
+  return closure_13(importDefault(8990), obj);
 }
 function YouScreenWidgetsBoardContainer(containerBackground) {
   let activeSection;
@@ -45,7 +45,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
   let userId;
   containerBackground = containerBackground.containerBackground;
   ({ userId, activeSection, isRefreshEnabled, containerBorderColor } = containerBackground);
-  const tmp3 = importDefault(8898)();
+  const tmp3 = importDefault(8982)();
   const items = [tmp3.card, ];
   if (isRefreshEnabled) {
     let obj = { backgroundColor: null, borderColor: null, borderWidth: 1 };
@@ -60,7 +60,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp4 = items;
   }
   obj = { style: tmp3.profileContent, children: null };
-  const items1 = [callback2(importDefault(12426), {}), callback2(importDefault(12427), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
+  const items1 = [callback2(importDefault(12173), {}), callback2(importDefault(12174), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
   obj[1] = items1;
   return callback3(closure_6, obj);
 }
@@ -456,7 +456,7 @@ export default function YouScreenUserProfileContent(user) {
       const timeout = setTimeout(() => {
         outer1_25(outer1_4 === constants.WISHLIST ? constants.WISHLIST : constants.MAIN);
         outer1_32.current(num, false, true);
-        outer1_6.setParams({ initialTab: "title" });
+        outer1_6.setParams({ initialTab: "r" });
       }, 80);
     }
     return () => {

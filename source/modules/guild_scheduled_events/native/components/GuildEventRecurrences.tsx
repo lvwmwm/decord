@@ -1,10 +1,10 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 8900
+// Function ID: 8901
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4342, 712, 9111, 4338, 1236, 11, 9113, 4777, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 8901, 4734, 1236, 11, 8903, 4745, 2]
 // Exports: default
 
-// Module 9110 (GuildEventRecurrences)
+// Module 8900 (GuildEventRecurrences)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,12 +39,12 @@ export default function GuildEventRecurrences(guildEventId) {
   ({ guildId, recurrenceRule, hideViewMoreButton } = guildEventId);
   ref = ref.useRef(null);
   const tmp2 = createCacheKey();
-  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = importDefault(9111)(guildEventId, guildId, recurrenceRule));
+  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = importDefault(8901)(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container, children: null };
   obj = { variant: "heading-md/semibold", children: null };
   const intl = guildEventId(1236).intl;
   obj[1] = intl.string(guildEventId(1236).t["D/jjoa"]);
-  const items = [callback(guildEventId(4338).Text, obj), , ];
+  const items = [callback(guildEventId(4734).Text, obj), , ];
   obj = {
     style: tmp2.scrollView,
     ref,
@@ -71,7 +71,7 @@ export default function GuildEventRecurrences(guildEventId) {
         current.scrollToEnd();
       }
     };
-    canViewMoreRecurrences = callback(tmp8(4777).Button, obj1);
+    canViewMoreRecurrences = callback(tmp8(4745).Button, obj1);
   }
   items[2] = canViewMoreRecurrences;
   obj[1] = items;

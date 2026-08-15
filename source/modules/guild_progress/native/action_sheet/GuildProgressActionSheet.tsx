@@ -1,12 +1,12 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11645
+// Function ID: 11646
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 9085, 1980, 11909, 676, 21, 4342, 712, 589, 11914, 4061, 698, 11917, 11918, 9128, 6573, 1236, 9084, 4923, 6201, 4353, 4310, 1231, 6695, 11919, 5809, 6191, 4338, 4777, 4909, 5825, 1297, 2]
+// Dependencies: [5, 19, 17, 8875, 1980, 11637, 676, 21, 4661, 712, 589, 11643, 4093, 698, 11646, 11647, 8918, 5931, 1236, 8874, 4838, 5559, 4768, 4342, 1231, 6053, 11648, 7159, 5549, 4734, 4745, 5433, 7175, 1297, 2]
 // Exports: default
 
-// Module 11916 (GuildProgressHeader)
+// Module 11645 (GuildProgressHeader)
 import closure_3 from "Steps";
-import module_9084 from "module_9084";
+import module_8874 from "module_8874";
 import { View } from "metadata";
 import handleFormInit from "handleFormInit";
 import comparator from "comparator";
@@ -75,7 +75,7 @@ export default function GuildProgressActionSheet(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -93,16 +93,16 @@ export default function GuildProgressActionSheet(guild) {
               let closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              outer1_1(9084).init(outer1_5);
-              const obj6 = outer1_1(9084);
-              outer1_0(11914).hideActionSheet(outer1_0.id);
-              const obj7 = outer1_0(11914);
+              outer1_1(8874).init(outer1_5);
+              const obj6 = outer1_1(8874);
+              outer1_0(11643).hideActionSheet(outer1_0.id);
+              const obj7 = outer1_0(11643);
               const obj1 = { size: null };
               obj1[0] = outer1_10;
               dependencyMap = 1;
               c3 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = outer1_1(4923).openImagePicker(obj1);
+              obj2[0] = outer1_1(4838).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -116,11 +116,11 @@ export default function GuildProgressActionSheet(guild) {
           } else {
             base64 = arg1.base64;
             if (null != base64) {
-              obj = outer1_1(9084);
+              obj = outer1_1(8874);
               obj.updateIcon(closure_5, base64);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c3 = tmp;

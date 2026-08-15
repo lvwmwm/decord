@@ -1,10 +1,10 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 11500
+// Function ID: 11501
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1980, 1922, 676, 21, 4342, 5328, 5292, 4923, 11767, 5293, 1430, 9144, 5389, 11781, 2]
+// Dependencies: [5, 32, 19, 1980, 1922, 676, 21, 4661, 6370, 6777, 4838, 11487, 6778, 1430, 11501, 6803, 11503, 2]
 // Exports: default
 
-// Module 11780 (CreateGuildContainer)
+// Module 11500 (CreateGuildContainer)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -75,7 +75,7 @@ export default function CreateGuildContainer(onCreate) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function CreateGuildContainer(onCreate) {
             callback(base64);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         c3 = tmp;
@@ -137,7 +137,7 @@ export default function CreateGuildContainer(onCreate) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

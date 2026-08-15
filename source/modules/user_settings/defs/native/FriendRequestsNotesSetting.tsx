@@ -1,9 +1,9 @@
-// Module ID: 15006
-// Function ID: 15007
+// Module ID: 15051
+// Function ID: 15052
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 4034, 13284, 2]
+// Dependencies: [8198, 10669, 1236, 4066, 13316, 2]
 
-// Module 15006 (toggle)
+// Module 15051 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -11,17 +11,17 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.UVl5Hz);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const HideFriendRequestNotes = require(4034) /* explicitContentFromProto */.HideFriendRequestNotes;
+    const HideFriendRequestNotes = require(4066) /* explicitContentFromProto */.HideFriendRequestNotes;
     return !HideFriendRequestNotes.useSetting();
   },
   onValueChange(arg0) {
-    const HideFriendRequestNotes = require(4034) /* explicitContentFromProto */.HideFriendRequestNotes;
+    const HideFriendRequestNotes = require(4066) /* explicitContentFromProto */.HideFriendRequestNotes;
     return HideFriendRequestNotes.updateSetting(!arg0);
   },
   usePredicate() {
-    return importDefault(13284).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
+    return importDefault(13316).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
   }
 });
 const obj = {
@@ -29,17 +29,17 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.UVl5Hz);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const HideFriendRequestNotes = require(4034) /* explicitContentFromProto */.HideFriendRequestNotes;
+    const HideFriendRequestNotes = require(4066) /* explicitContentFromProto */.HideFriendRequestNotes;
     return !HideFriendRequestNotes.useSetting();
   },
   onValueChange(arg0) {
-    const HideFriendRequestNotes = require(4034) /* explicitContentFromProto */.HideFriendRequestNotes;
+    const HideFriendRequestNotes = require(4066) /* explicitContentFromProto */.HideFriendRequestNotes;
     return HideFriendRequestNotes.updateSetting(!arg0);
   },
   usePredicate() {
-    return importDefault(13284).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
+    return importDefault(13316).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
   }
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsNotesSetting.tsx");

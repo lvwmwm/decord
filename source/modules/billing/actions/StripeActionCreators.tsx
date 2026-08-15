@@ -1,10 +1,10 @@
-// Module ID: 4691
-// Function ID: 4692
+// Module ID: 4471
+// Function ID: 4472
 // Name: _createStripeSetupIntent
 // Dependencies: [5, 676, 530, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4691 (_createStripeSetupIntent)
+// Module 4471 (_createStripeSetupIntent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -27,7 +27,7 @@ function _createStripeSetupIntent() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ function _createSetupIntentForPaymentElements() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

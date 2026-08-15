@@ -1,10 +1,10 @@
-// Module ID: 12386
-// Function ID: 12387
+// Module ID: 12121
+// Function ID: 12122
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 3989, 505, 21, 4342, 500, 5789, 8851, 4763, 12387, 4535, 589, 4888, 4892, 1236, 5840, 4909, 4062, 5839, 4338, 9096, 4576, 4310, 12388, 2007, 8846, 12389, 1297, 2]
+// Dependencies: [17, 4021, 505, 21, 4661, 500, 7139, 8934, 4721, 12122, 4984, 589, 6892, 6896, 1236, 7188, 5433, 4094, 6685, 4734, 8886, 8663, 4342, 12123, 2007, 8929, 12124, 1297, 2]
 // Exports: default
 
-// Module 12386 (UserProfileActivityVoiceChannel)
+// Module 12121 (UserProfileActivityVoiceChannel)
 import { View } from "dispatcher";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";

@@ -1,9 +1,9 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16374
+// Function ID: 16375
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1390, 4359, 13078, 4364, 1218, 1391, 4393, 3989, 4360, 1922, 4361, 4417, 11721, 11724, 676, 13083, 4406, 21, 4342, 11725, 712, 11720, 5191, 4524, 4408, 589, 5842, 4338, 1236, 12400, 5795, 3979, 16315, 1493, 4083, 10638, 10637, 10740, 4909, 16313, 4777, 9413, 503, 7859, 9241, 4534, 5435, 11152, 10378, 5789, 5809, 698, 16283, 16325, 4776, 4711, 8075, 16206, 16327, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 4540, 13281, 4652, 1218, 1391, 4497, 4021, 4541, 1922, 4542, 4545, 11440, 11443, 676, 13286, 4529, 21, 4661, 11445, 712, 11439, 4975, 9860, 4531, 589, 7190, 4734, 1236, 12137, 7145, 4011, 16365, 1494, 4115, 8729, 8728, 11231, 5433, 16363, 4745, 9177, 503, 8074, 9676, 4796, 6291, 11259, 10635, 7139, 7159, 698, 16333, 16375, 4744, 4668, 8125, 16256, 16377, 2]
 
-// Module 16324 (StreamPreview)
+// Module 16374 (StreamPreview)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "GdmWarningMedium";
@@ -136,7 +136,7 @@ function ActivityInfo(activity) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ function RoomMembersSection(title) {
     }
     return items;
   })();
-  return callback(require(9241) /* VoiceBadges */.VoicePanelFormSection, obj);
+  return callback(require(9676) /* VoiceBadges */.VoicePanelFormSection, obj);
 }
 function RoomMembers(members) {
   let blockedMembers;
@@ -538,9 +538,9 @@ let closure_30 = importAllResult.memo((hasMembers) => {
     obj[2] = tmp.subheading;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t.sS2J0G);
-    obj[1] = callback(require(4338) /* Text */.Text, obj);
-    tmp2 = callback(importDefault(5842), obj);
-    const tmp6 = importDefault(5842);
+    obj[1] = callback(require(4734) /* Text */.Text, obj);
+    tmp2 = callback(importDefault(7190), obj);
+    const tmp6 = importDefault(7190);
   }
   return tmp2;
 });
@@ -557,7 +557,7 @@ let closure_34 = importAllResult.memo((blockedUserIds) => {
   obj[0] = require(503) /* encodeProperties */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
   obj = { channel_id: channelId, blocked_user_ids: Array.from(blockedUserIds), warning_surface: constants2.PRE_JOIN_SHEET };
   obj[1] = obj;
-  importDefault(9413)(obj);
+  importDefault(9177)(obj);
   const size = ignoredUserIds.size;
   const size2 = blockedUserIds.size;
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -569,7 +569,7 @@ let closure_34 = importAllResult.memo((blockedUserIds) => {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.blockedMemberWarning;
-    const items = [callback(tmp5(7859).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [callback(tmp5(8074).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj1 = { variant: "text-sm/bold", color: "interactive-text-active", style: null, children: null };
     obj1[2] = { flexShrink: 1 };
     const items1 = [stringResult1, " ", ];
@@ -577,13 +577,13 @@ let closure_34 = importAllResult.memo((blockedUserIds) => {
     if (null != stringResult) {
       const obj2 = { variant: "heading-sm/semibold", children: null };
       obj2[1] = stringResult;
-      tmp11Result = callback(tmp5(4338).Text, obj2);
+      tmp11Result = callback(tmp5(4734).Text, obj2);
     }
     items1[2] = tmp11Result;
     obj1[3] = items1;
-    items[1] = closure_26(tmp5(4338).Text, obj1);
+    items[1] = closure_26(tmp5(4734).Text, obj1);
     obj[1] = items;
-    return closure_26(tmp2(5842), obj);
+    return closure_26(tmp2(7190), obj);
   }
   if (size > 0) {
     const intl3 = tmp5(1236).intl;
@@ -634,7 +634,7 @@ let closure_37 = importAllResult.memo((channelId) => {
   }, items1)) {
     obj = { style: null };
     obj[0] = tmp.consolePreJoinPadding;
-    tmp3 = callback(importDefault(5842), obj);
+    tmp3 = callback(importDefault(7190), obj);
   }
   return tmp3;
 });
@@ -709,10 +709,10 @@ let closure_39 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDi
 let closure_40 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
 let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(11720));
+  const context = importAllResult.useContext(guildId(11439));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(16206)(channelId);
+  const tmp2 = guildId(16256)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, _detectH265HardwareDecode, reset];
@@ -757,9 +757,9 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(16327).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(16377).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
-  return callback(channelId(4711).TransitionItem, obj);
+  return callback(channelId(4668).TransitionItem, obj);
 });
 let result = require("noop").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");
 

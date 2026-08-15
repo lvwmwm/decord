@@ -1,9 +1,9 @@
-// Module ID: 4452
-// Function ID: 4453
+// Module ID: 4580
+// Function ID: 4581
 // Name: destroy
-// Dependencies: [5, 4406, 4444, 4453, 4455, 4456, 4457, 4486, 2]
+// Dependencies: [5, 4529, 4572, 4581, 4583, 4584, 4585, 4614, 2]
 
-// Module 4452 (destroy)
+// Module 4580 (destroy)
 import BaseConnectionEvent from "BaseConnectionEvent";
 import DesktopSources from "DesktopSources";
 import "on";
@@ -72,7 +72,7 @@ prototype["destroy"] = function destroy() {
   const framerateReducer = this.framerateReducer;
   framerateReducer.destroy();
   this.setConnectionState(constants.DISCONNECTED);
-  this.emit(require(4456) /* BaseConnectionEvent */.BaseConnectionEvent.Destroy, this);
+  this.emit(require(4584) /* BaseConnectionEvent */.BaseConnectionEvent.Destroy, this);
   this.removeAllListeners();
 };
 prototype["getLocalMute"] = function getLocalMute(hasItem) {
@@ -87,7 +87,7 @@ prototype["getLocalVideoDisabled"] = function getLocalVideoDisabled(arg0) {
 };
 prototype["setLocalVideoDisabled"] = function setLocalVideoDisabled(arg0, arg1) {
   this.disabledLocalVideos[arg0] = arg1;
-  this.emit(require(4456) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, arg0, arg1);
+  this.emit(require(4584) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, arg0, arg1);
 };
 prototype["getHasActiveVideoOutputSink"] = function getHasActiveVideoOutputSink(arg0) {
   const activeOutputSinks = this.activeOutputSinks;
@@ -117,7 +117,7 @@ prototype["setHasActiveVideoOutputSink"] = function setHasActiveVideoOutputSink(
   const hasActiveVideoOutputSink1 = self.getHasActiveVideoOutputSink(arg0);
   self.isActiveOutputSinksEnabled = true;
   if (hasActiveVideoOutputSink !== hasActiveVideoOutputSink1) {
-    self.emit(require(4456) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, arg0, hasActiveVideoOutputSink1);
+    self.emit(require(4584) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, arg0, hasActiveVideoOutputSink1);
   }
 };
 prototype["getActiveOutputSinkTrackingEnabled"] = function getActiveOutputSinkTrackingEnabled() {
@@ -145,7 +145,7 @@ prototype["presentDesktopSourcePicker"] = function presentDesktopSourcePicker(ar
 
 };
 prototype["getStreamParameters"] = function getStreamParameters() {
-  return importDefault(4457)(this.videoStreamParameters);
+  return importDefault(4585)(this.videoStreamParameters);
 };
 prototype["setExperimentFlag"] = function setExperimentFlag(arg0, arg1) {
   const experimentFlags = this.experimentFlags;
@@ -159,7 +159,7 @@ prototype["setConnectionState"] = function setConnectionState(DISCONNECTED) {
   const logger = this.logger;
   logger.info("Connection state change: " + this.connectionState + " => " + DISCONNECTED);
   this.connectionState = DISCONNECTED;
-  this.emit(require(4456) /* BaseConnectionEvent */.BaseConnectionEvent.ConnectionStateChange, this.connectionState);
+  this.emit(require(4584) /* BaseConnectionEvent */.BaseConnectionEvent.ConnectionStateChange, this.connectionState);
 };
 prototype["updateVideoQuality"] = function updateVideoQuality(closure_8) {
   let bitrateTarget;
@@ -176,7 +176,7 @@ prototype["updateVideoQuality"] = function updateVideoQuality(closure_8) {
   }
   const result = self.applyQualityConstraints({}, self.videoStreamParameters[num].ssrc);
   ({ quality, constraints } = result);
-  const tmp2 = importDefault(4457)(self.videoStreamParameters);
+  const tmp2 = importDefault(4585)(self.videoStreamParameters);
   if (null != quality) {
     ({ bitrateMax: tmp2[num].maxBitrate, bitrateMin: tmp2[num].minBitrate, bitrateTarget } = quality);
     if (bitrateTarget == null) {
@@ -229,7 +229,7 @@ prototype["updateVideoQuality"] = function updateVideoQuality(closure_8) {
       tmp6 = tmp11;
     } while (num2 < self.videoStreamParameters.length);
   }
-  tmp5.streamParameters = importDefault(4457)(self.videoStreamParameters);
+  tmp5.streamParameters = importDefault(4585)(self.videoStreamParameters);
   const prop = self.videoStreamParameters;
   const items = [
     ...prop.map((maxPixelCount) => {
@@ -242,7 +242,7 @@ prototype["updateVideoQuality"] = function updateVideoQuality(closure_8) {
   ];
   tmp5.remoteSinkWantsPixelCount = Math.max.apply(items);
   if (null != closure_8) {
-    let obj = importDefault(4486)(tmp5, closure_8);
+    let obj = importDefault(4614)(tmp5, closure_8);
   } else {
     obj = {};
     const merged = Object.assign(tmp5);
@@ -255,7 +255,7 @@ prototype["applyVideoQualityMode"] = function applyVideoQualityMode(mode) {
   const self = this;
   if (this.context === constants2.DEFAULT) {
     const videoQualityManager = self.videoQualityManager;
-    videoQualityManager.setQualityOverwrite(require(4453) /* WantsVideoQuality */.VIDEO_QUALITY_MODES_TO_OVERWRITES[mode]);
+    videoQualityManager.setQualityOverwrite(require(4581) /* WantsVideoQuality */.VIDEO_QUALITY_MODES_TO_OVERWRITES[mode]);
     self.updateVideoQuality();
   }
 };

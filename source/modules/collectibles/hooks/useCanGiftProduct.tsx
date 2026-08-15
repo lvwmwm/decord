@@ -1,29 +1,26 @@
-// Module ID: 12250
-// Function ID: 12251
+// Module ID: 11996
+// Function ID: 11997
 // Name: useCanGiftProduct
-// Dependencies: [9412, 9415, 7083, 7082, 1949, 4007, 4020, 2]
+// Dependencies: [9176, 5313, 5312, 4039, 1949, 4052, 2]
 // Exports: useCanGiftProduct
 
-// Module 12250 (useCanGiftProduct)
-let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
+// Module 11996 (useCanGiftProduct)
+let result = require("getProductOrbPrice").fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
 export const useCanGiftProduct = function useCanGiftProduct(product) {
-  const currentUser = require(9412) /* useCurrentUser */.useCurrentUser();
-  const obj = require(9412) /* useCurrentUser */;
-  const isProfileFrameGiftingEnabled = require(9415) /* apexExperiment */.useIsProfileFrameGiftingEnabled("useCanGiftProduct");
-  const obj2 = require(9415) /* apexExperiment */;
-  let result = require(7083) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
-  const obj3 = require(7083) /* getItemRecordsFromPurchases */;
-  const result1 = require(7083) /* getItemRecordsFromPurchases */.isFreeCollectiblesProduct(product);
-  const obj4 = require(7083) /* getItemRecordsFromPurchases */;
-  const result2 = require(7082) /* getProductOrbPrice */.isOrbsExclusiveProduct(product);
-  const obj5 = require(7082) /* getProductOrbPrice */;
-  const tmp8 = product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME && !isProfileFrameGiftingEnabled;
-  const obj6 = importDefault(4007);
-  let tmpResult = tmp(7083);
-  const defaultPriceSetAssignmentPurchaseType = tmpResult.getDefaultPriceSetAssignmentPurchaseType(importDefault(4007).canUseShopDiscounts(currentUser));
-  tmpResult = tmp(7083);
-  const result3 = tmpResult.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
+  const currentUser = require(9176) /* useCurrentUser */.useCurrentUser();
+  const obj = require(9176) /* useCurrentUser */;
+  let result = require(5313) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
+  const obj2 = require(5313) /* getItemRecordsFromPurchases */;
+  const result1 = require(5313) /* getItemRecordsFromPurchases */.isFreeCollectiblesProduct(product);
+  const obj3 = require(5313) /* getItemRecordsFromPurchases */;
+  const result2 = require(5312) /* getProductOrbPrice */.isOrbsExclusiveProduct(product);
+  const obj4 = require(5312) /* getProductOrbPrice */;
+  const obj5 = importDefault(4039);
+  const canUseShopDiscountsResult = importDefault(4039).canUseShopDiscounts(currentUser);
+  const defaultPriceSetAssignmentPurchaseType = require(5313) /* getItemRecordsFromPurchases */.getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
+  const obj6 = require(5313) /* getItemRecordsFromPurchases */;
+  const result3 = require(5313) /* getItemRecordsFromPurchases */.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
   if (!result) {
     result = result1;
   }
@@ -31,22 +28,19 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = result2;
   }
   if (!result) {
-    result = tmp8;
-  }
-  if (!result) {
     result = product.type === tmp(1949).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
+    let tmpResult = tmp(5313);
     let currency;
     if (result3 != null) {
       currency = result3.currency;
     }
-    result = tmp(7083).shouldHideGiftingForCurrency(currency);
-    const tmpResult1 = tmp(7083);
+    result = tmpResult.shouldHideGiftingForCurrency(currency);
   }
   if (!result) {
-    result = !tmp(4020).isCollectibleGiftingSupported();
-    const tmpResult2 = tmp(4020);
+    tmpResult = tmp(4052);
+    result = !tmpResult.isCollectibleGiftingSupported();
   }
   return !result;
 };

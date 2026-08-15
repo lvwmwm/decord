@@ -1,10 +1,10 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 10998
+// Function ID: 10999
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11286, 5188, 676, 21, 4342, 712, 1236, 5187, 4294, 4338, 4278, 12, 4065, 5063, 11029, 9195, 1297, 1435, 1363, 38, 5789, 5809, 589, 698, 4549, 5293, 5458, 5833, 4777, 4310, 11032, 8846, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 10999, 5225, 676, 21, 4661, 712, 1236, 5224, 4326, 4734, 4310, 12, 4097, 5097, 10758, 9462, 1297, 1435, 1363, 38, 7139, 7159, 589, 698, 5042, 6778, 6950, 7182, 4745, 4342, 10761, 8929, 2]
 // Exports: default
 
-// Module 11285 (PopoutCheck)
+// Module 10998 (PopoutCheck)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import apply from "apply";
 import get_ActivityIndicator from "Text";
@@ -58,7 +58,7 @@ function PopoutCheck(arg0) {
       }
     }
   } else {
-    obj = require(5187) /* officialApplicationIds */;
+    obj = require(5224) /* officialApplicationIds */;
     const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, value: null };
     obj1[0] = connectionType;
     obj1[1] = connectionMetadataField;
@@ -72,10 +72,10 @@ function PopoutCheck(arg0) {
     obj2[0] = tmp.popoutCheck;
     const obj3 = { size: "sm", style: null };
     obj3[1] = tmp.popoutCheckIcon;
-    const items = [callback(require(4294) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
+    const items = [callback(require(4326) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
     obj4[2] = formatResult;
-    items[1] = callback(require(4338) /* Text */.Text, obj4);
+    items[1] = callback(require(4734) /* Text */.Text, obj4);
     obj2[1] = items;
     tmp9 = callback2(closure_6, obj2);
   }
@@ -154,7 +154,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj3 = { style: null, user: null, size: null, guildId: "a" };
+                const obj3 = { style: null, user: null, size: null, guildId: "Array" };
                 obj3[0] = tmp21.popoutCheckGroupPlatformIcon;
                 obj3[1] = tmp7;
                 obj3[2] = tmp11(tmp3[24]).AvatarSizes.XSMALL;

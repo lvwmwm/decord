@@ -1,10 +1,10 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 9805
+// Function ID: 9806
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [19, 17, 21, 4342, 10477, 10556, 4338, 1236, 5389, 4777, 2]
+// Dependencies: [19, 17, 21, 4661, 9756, 9806, 4734, 1236, 6803, 4745, 2]
 // Exports: default
 
-// Module 10555 (CrunchyrollLinkDiscordSuccess)
+// Module 9805 (CrunchyrollLinkDiscordSuccess)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,20 +21,20 @@ let closure_7 = createCacheKey.createStyles({ image: { width: 232, height: 108, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = require(10477) /* styles */;
+  let obj = require(9756) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(10556), style: callback3().image }), , ];
+  const items = [callback(closure_3, { source: importDefault(9806), style: callback3().image }), , ];
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Fnvxvk);
-  items[1] = callback(require(4338) /* Text */.Text, obj2);
+  items[1] = callback(require(4734) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.YwXceg);
-  items[2] = callback(require(4338) /* Text */.Text, obj3);
+  items[2] = callback(require(4734) /* Text */.Text, obj3);
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
@@ -43,9 +43,9 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[2] = onClose.onClose;
-  obj5[1] = callback(require(4777) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4745) /* Button */.Button, obj6);
   obj4[2] = callback(closure_4, obj5);
-  items1[1] = callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

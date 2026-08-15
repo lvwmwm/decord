@@ -1,10 +1,10 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 11730
+// Function ID: 11731
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 12000, 4249, 589, 1236, 2335, 2]
+// Dependencies: [19, 11731, 4281, 589, 1236, 2367, 2]
 // Exports: default
 
-// Module 11999 (useGuildPowerupsWarningConfig)
+// Module 11730 (useGuildPowerupsWarningConfig)
 import noop from "noop";
 import handleModifyingAppliedBoostStart from "handleModifyingAppliedBoostStart";
 

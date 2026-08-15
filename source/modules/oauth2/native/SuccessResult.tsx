@@ -1,10 +1,10 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 12427
+// Function ID: 12428
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 1391, 3989, 1979, 676, 1498, 21, 4342, 712, 8958, 1236, 4572, 6021, 698, 589, 4310, 4205, 1626, 5389, 10614, 4338, 4777, 2]
+// Dependencies: [19, 17, 1391, 4021, 1979, 676, 1499, 21, 4661, 712, 8671, 1236, 5260, 7302, 698, 589, 4342, 4237, 1627, 6803, 12428, 4734, 4745, 2]
 // Exports: default
 
-// Module 10613 (SuccessResultModal)
+// Module 12427 (SuccessResultModal)
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "getBestActiveInput";
 import ensureGuildLoaded from "ensureGuildLoaded";

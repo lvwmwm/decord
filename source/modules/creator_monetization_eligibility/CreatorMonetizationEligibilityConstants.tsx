@@ -1,9 +1,9 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16903
+// Function ID: 16904
 // Name: CreatorMonetizationApplicationState
 // Dependencies: [2]
 
-// Module 16857 (CreatorMonetizationApplicationState)
+// Module 16903 (CreatorMonetizationApplicationState)
 const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityConstants.tsx");
 
 export const CreatorMonetizationApplicationState = { OPEN: "OPEN", REJECTED: "REJECTED", APPROVED: "APPROVED", ACTION_REQUIRED: "ACTION_REQUIRED" };

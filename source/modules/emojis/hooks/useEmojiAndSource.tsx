@@ -1,10 +1,10 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 9407
+// Function ID: 9408
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 1910, 5237, 5841, 676, 4005, 647, 2]
+// Dependencies: [5, 32, 19, 1910, 6727, 7189, 676, 4037, 647, 2]
 // Exports: useEmojiAndSource
 
-// Module 8804 (useEmojiAndSource)
+// Module 9407 (useEmojiAndSource)
 import closure_2 from "getEmojiSourceData";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -106,7 +106,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -161,7 +161,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
               current();
             }
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp27) {
             v0 = tmp;
             throw tmp27;

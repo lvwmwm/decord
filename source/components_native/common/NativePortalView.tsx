@@ -1,10 +1,10 @@
-// Module ID: 8911
-// Function ID: 8912
+// Module ID: 8997
+// Function ID: 8998
 // Name: MediaPlayerManager
-// Dependencies: [19, 17, 21, 4342, 500, 8912, 8913, 2]
+// Dependencies: [19, 17, 21, 4661, 500, 8998, 8999, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8911 (MediaPlayerManager)
+// Module 8997 (MediaPlayerManager)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

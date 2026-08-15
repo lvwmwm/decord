@@ -1,10 +1,10 @@
-// Module ID: 3995
-// Function ID: 3996
+// Module ID: 4027
+// Function ID: 4028
 // Name: GuildMemberFlags
-// Dependencies: [1990, 3977, 1403, 589, 2]
+// Dependencies: [1990, 4009, 1403, 589, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
 
-// Module 3995 (GuildMemberFlags)
+// Module 4027 (GuildMemberFlags)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { GuildMemberFlags } from "GuildMemberFlags";
 

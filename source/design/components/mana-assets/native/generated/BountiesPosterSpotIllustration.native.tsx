@@ -1,10 +1,10 @@
-// Module ID: 6196
-// Function ID: 6197
+// Module ID: 5554
+// Function ID: 5555
 // Name: BountiesPosterSpotIllustration
-// Dependencies: [21, 5329, 6197, 2]
+// Dependencies: [21, 5449, 5555, 2]
 // Exports: BountiesPosterSpotIllustration
 
-// Module 6196 (BountiesPosterSpotIllustration)
+// Module 5554 (BountiesPosterSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6197);
+  obj[0] = importDefault(5555);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

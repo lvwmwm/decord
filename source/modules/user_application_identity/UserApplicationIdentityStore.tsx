@@ -1,9 +1,9 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12285
+// Function ID: 12286
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 12534 (map)
+// Module 12285 (map)
 import { Store } from "initialize";
 
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };

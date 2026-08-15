@@ -1,10 +1,10 @@
-// Module ID: 7715
-// Function ID: 7716
+// Module ID: 7933
+// Function ID: 7934
 // Name: PremiumTypes
-// Dependencies: [32, 19, 1924, 6939, 6978, 7478, 500, 7407, 7409, 7469, 7716, 2]
+// Dependencies: [32, 19, 1924, 7378, 7417, 7696, 500, 7625, 7627, 7687, 7934, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 7715 (PremiumTypes)
+// Module 7933 (PremiumTypes)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import GuildFeatures from "GuildFeatures";

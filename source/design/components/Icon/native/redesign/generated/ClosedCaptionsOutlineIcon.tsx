@@ -1,10 +1,10 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14381
+// Function ID: 14382
 // Name: ClosedCaptionsOutlineIcon
-// Dependencies: [19, 21, 712, 4064, 14350, 2]
+// Dependencies: [19, 21, 712, 4096, 14382, 2]
 // Exports: ClosedCaptionsOutlineIcon
 
-// Module 14349 (ClosedCaptionsOutlineIcon)
+// Module 14381 (ClosedCaptionsOutlineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ClosedCaptionsOutlineIcon = function ClosedCaptionsOutlineIcon(colo
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14350) /* registerAsset */;
+  obj[0] = require(14382) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

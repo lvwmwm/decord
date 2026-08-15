@@ -1,10 +1,10 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 8201
+// Function ID: 8202
 // Name: createRemoveRecipientSystemMessage
-// Dependencies: [1395, 1391, 1922, 8135, 8137, 1236, 8138, 2]
+// Dependencies: [1395, 1391, 1922, 8185, 8187, 1236, 8188, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 8151 (createRemoveRecipientSystemMessage)
+// Module 8201 (createRemoveRecipientSystemMessage)
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,9 +20,9 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(8135) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8137)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   if (message.author.id === first) {
     const intl = tmp5(1236).intl;
     const formatToParts = intl.formatToParts;
@@ -34,11 +34,11 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     }
     obj = { content: null };
     obj[0] = formatToPartsResult;
-    const merged = Object.assign(tmp8(8138)(message));
+    const merged = Object.assign(tmp8(8188)(message));
     return obj;
   } else {
     user = user.getUser(first);
-    const userAuthorWithProcessedColor = tmp5(8135).getUserAuthorWithProcessedColor(user, channel);
+    const userAuthorWithProcessedColor = tmp5(8185).getUserAuthorWithProcessedColor(user, channel);
     const obj1 = {};
     const merged1 = Object.assign(obj);
     obj1.otherUsername = userAuthorWithProcessedColor.nick;
@@ -47,7 +47,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     obj2[1] = message;
     obj2[2] = userAuthorWithProcessedColor;
     obj2[3] = roleStyle;
-    obj1.otherUsernameOnClick = tmp8(8137)(obj2);
+    obj1.otherUsernameOnClick = tmp8(8187)(obj2);
     const intl2 = tmp5(1236).intl;
     const formatToParts2 = intl2.formatToParts;
     const t2 = tmp5(1236).t;
@@ -58,7 +58,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     }
     const obj3 = { content: null };
     obj3[0] = formatToParts2Result;
-    const merged2 = Object.assign(tmp8(8138)(message));
+    const merged2 = Object.assign(tmp8(8188)(message));
     return obj3;
   }
 };

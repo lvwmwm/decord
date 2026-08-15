@@ -1,10 +1,10 @@
-// Module ID: 15937
-// Function ID: 15938
+// Module ID: 15987
+// Function ID: 15988
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 7187, 3998, 1922, 12135, 676, 12114, 21, 4342, 712, 12112, 7824, 4061, 1236, 7285, 12116, 500, 5789, 5809, 4793, 698, 8846, 647, 12, 4187, 15262, 5795, 4911, 9152, 5884, 9686, 5435, 4063, 4881, 15938, 15939, 15941, 15942, 2]
+// Dependencies: [32, 5, 19, 17, 5406, 4030, 1922, 11872, 676, 11851, 21, 4661, 712, 11849, 8042, 4093, 1236, 7506, 11853, 500, 7139, 7159, 4761, 698, 8929, 647, 12, 4219, 15311, 7145, 9091, 12368, 5446, 9641, 6291, 4095, 6885, 15988, 15989, 15991, 15992, 2]
 // Exports: default
 
-// Module 15937 (handleFindFriends)
+// Module 15987 (handleFindFriends)
 import ActivityIndicator from "ActivityIndicator";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import set from "set";
@@ -28,7 +28,7 @@ let error;
 let map1;
 const require = arg1;
 function handleFindFriends() {
-  require(12112) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
+  require(11849) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
 }
 function handleShare() {
   const self = this;
@@ -59,7 +59,7 @@ function _handleShare() {
           obj[0] = code;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ function _handleShare() {
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            obj1 = callback(4061);
+            obj1 = callback(4093);
             const intl = callback(1236).intl;
             obj1.presentError(intl.string(callback(1236).t.R0RpRX));
             c6 = 3;
@@ -110,12 +110,12 @@ function _handleShare() {
             obj3[1] = code;
             const intl2 = callback(1236).intl;
             const obj4 = { link: null };
-            obj4[0] = code(7285)(code);
+            obj4[0] = code(7506)(code);
             obj3[2] = intl2.formatToPlainString(callback(1236).t.PJf9P9, obj4);
             obj3[3] = constants.ADD_FRIENDS_MODAL;
             callback(obj3);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           let ActivityIndicator = tmp21;
@@ -299,9 +299,9 @@ export default function AddFriendsScreen(navigation) {
     });
     const obj2 = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = callback(4187).getName(arg0);
-      const obj = callback(4187);
-      return name.localeCompare(callback(4187).getName(arg1));
+      const name = callback(4219).getName(arg0);
+      const obj = callback(4219);
+      return name.localeCompare(callback(4219).getName(arg1));
     });
   });
   let obj3 = _require(analyticsLocations[25]);
@@ -341,9 +341,9 @@ export default function AddFriendsScreen(navigation) {
     });
     let obj = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-      const name = items1(4187).getName(user.user);
-      const obj = items1(4187);
-      return name.localeCompare(items1(4187).getName(user2.user));
+      const name = items1(4219).getName(user.user);
+      const obj = items1(4219);
+      return name.localeCompare(items1(4219).getName(user2.user));
     });
   }, items4, areHydratedGameFriendRequestRowStatesEqual);
   let tmp6 = callback(React.useState([]), 2);

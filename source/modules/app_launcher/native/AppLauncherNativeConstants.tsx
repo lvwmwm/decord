@@ -1,16 +1,16 @@
-// Module ID: 1498
-// Function ID: 1499
+// Module ID: 1499
+// Function ID: 1500
 // Name: APP_LAUNCHER_BUILT_IN_SECTION_ICON
-// Dependencies: [1499, 712, 2, 1622]
+// Dependencies: [1500, 712, 2, 1623]
 // Exports: useAppLauncherNavigation
 
-// Module 1498 (APP_LAUNCHER_BUILT_IN_SECTION_ICON)
+// Module 1499 (APP_LAUNCHER_BUILT_IN_SECTION_ICON)
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeConstants.tsx");
 
 export const APP_LAUNCHER_BUILT_IN_SECTION_ICON = require("registerAsset");
 export const AppLauncherRouteName = { HOME: "home", APPLICATION_VIEW: "application_view", COMMAND_VIEW: "command_view", APP_LIST_VIEW: "app_list_view" };
 export const useAppLauncherNavigation = function useAppLauncherNavigation() {
-  return require(1499) /* useNavigation */.useNativeStackNavigation();
+  return require(1500) /* useNavigation */.useNativeStackNavigation();
 };
 export const AppLauncherOptionAutoFocusType = { NONE: 0, [0]: "NONE", FIRST_REQUIRED_OPTION: 1, [1]: "FIRST_REQUIRED_OPTION", OPTIONAL_OPTION_ADDED: 2, [2]: "OPTIONAL_OPTION_ADDED" };
 export const DEFAULT_CONTENT_PADDING = require("Themes").space.PX_16;

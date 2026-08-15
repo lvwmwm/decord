@@ -1,9 +1,9 @@
-// Module ID: 5281
-// Function ID: 5282
+// Module ID: 6770
+// Function ID: 6771
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1432, 1911, 1910, 5048, 4002, 1914, 2]
+// Dependencies: [32, 1432, 1911, 1910, 4964, 4034, 1914, 2]
 
-// Module 5281 (parseServerGuildSticker)
+// Module 6770 (parseServerGuildSticker)
 import _slicedToArray from "_slicedToArray";
 import { TypeTag } from "TypeTag";
 import { LibdiscoreStore } from "identity";
@@ -29,13 +29,13 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  let obj = { type: items(5048).StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: items(4964).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
     obj = { type: null, value: null };
-    obj[0] = tmp(5048).StickerMetadataTypes.TAG;
+    obj[0] = tmp(4964).StickerMetadataTypes.TAG;
     const trimmed1 = str.trim();
     obj[1] = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -49,21 +49,21 @@ function deriveStickerMetadata(arg0, tags) {
       }
       if (tmp5) {
         obj = { type: null, value: null };
-        obj[0] = tmp(5048).StickerMetadataTypes.GUILD_NAME;
+        obj[0] = tmp(4964).StickerMetadataTypes.GUILD_NAME;
         obj[1] = toLocaleLowerCaseResult;
         items.push(obj);
       }
       const str3 = guild.name;
     }
-    const byName = importDefault(4002).getByName(str);
+    const byName = importDefault(4034).getByName(str);
     if (null != byName) {
       const obj1 = { type: null, value: null };
-      obj1[0] = tmp(5048).StickerMetadataTypes.CORRELATED_EMOJI;
+      obj1[0] = tmp(4964).StickerMetadataTypes.CORRELATED_EMOJI;
       obj1[1] = byName.surrogates;
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(outer1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }
-    const obj5 = importDefault(4002);
+    const obj5 = importDefault(4034);
   }
   return items;
 }

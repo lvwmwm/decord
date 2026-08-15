@@ -1,10 +1,10 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 12810
+// Function ID: 12811
 // Name: IgnoreUserElement
-// Dependencies: [19, 1391, 3998, 676, 21, 589, 4534, 4549, 9307, 12733, 1236, 8566, 2]
+// Dependencies: [19, 1391, 4030, 676, 21, 589, 4796, 5042, 9736, 12811, 1236, 8605, 2]
 // Exports: default
 
-// Module 12732 (IgnoreUserElement)
+// Module 12810 (IgnoreUserElement)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

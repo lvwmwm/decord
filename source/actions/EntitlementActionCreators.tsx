@@ -1,10 +1,10 @@
-// Module ID: 6930
-// Function ID: 6931
+// Module ID: 5358
+// Function ID: 5359
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 676, 709, 530, 4604, 2]
+// Dependencies: [5, 676, 709, 530, 4384, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 6930 (_fetchUserEntitlements)
+// Module 5358 (_fetchUserEntitlements)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -28,7 +28,7 @@ function _fetchUserEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

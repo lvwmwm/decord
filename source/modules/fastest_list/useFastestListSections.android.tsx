@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 8644
+// Function ID: 8645
 // Name: useFastestListSections
-// Dependencies: [19, 5777, 8606, 8607, 2]
+// Dependencies: [19, 7127, 8645, 8646, 2]
 // Exports: default
 
-// Module 8605 (useFastestListSections)
+// Module 8644 (useFastestListSections)
 import noop from "noop";
 
 const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");

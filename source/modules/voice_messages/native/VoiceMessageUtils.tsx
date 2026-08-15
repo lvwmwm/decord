@@ -1,10 +1,10 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11419
+// Function ID: 11420
 // Name: _startAudioRecording
-// Dependencies: [5, 4393, 11434, 11435, 676, 3, 11703, 206, 12, 4441, 698, 4311, 500, 2]
+// Dependencies: [5, 4497, 11147, 11148, 676, 3, 11420, 206, 12, 4569, 698, 4343, 500, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11702 (_startAudioRecording)
+// Module 11419 (_startAudioRecording)
 import timestamp from "timestamp";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -45,7 +45,7 @@ function _startAudioRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -106,14 +106,14 @@ function _startAudioRecording() {
             if (state.getState().recordingId !== callback) {
               store = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               callback2(constants.STARTED);
               const _Date = Date;
               callback3(Date.now());
               store = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp22) {
@@ -139,7 +139,7 @@ function _startAudioRecording() {
 }
 function resetAudioRecording() {
   mediaEngine = mediaEngine.getMediaEngine();
-  mediaEngine.removeListener(require(4441) /* BaseConnectionEvent */.MediaEngineEvent.VoiceActivity, closure_21);
+  mediaEngine.removeListener(require(4569) /* BaseConnectionEvent */.MediaEngineEvent.VoiceActivity, closure_21);
   callback3();
 }
 function stopAndGetAudioRecording() {
@@ -153,7 +153,7 @@ function stopAndGetAudioRecording() {
   });
   let arr3 = mapped;
   if (mapped.length > closure_16) {
-    arr3 = importDefault(11703)(mapped, tmp3);
+    arr3 = importDefault(11420)(mapped, tmp3);
   }
   const mapped1 = arr3.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped1);
@@ -181,7 +181,7 @@ function _endAudioRecording() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -274,7 +274,7 @@ function _stopAndCacheAudioRecording() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -312,7 +312,7 @@ function _stopAndCacheAudioRecording() {
           mediaEngine.removeListener(callback(table[9]).MediaEngineEvent.VoiceActivity, closure_21);
           callback2(callback);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c3 = tmp;
@@ -353,7 +353,7 @@ let result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modul
 export const generateBase64EncodedWaveform = function generateBase64EncodedWaveform(arg0) {
   let arr = arg0;
   if (arg0.length > closure_16) {
-    arr = importDefault(11703)(arg0, tmp);
+    arr = importDefault(11420)(arg0, tmp);
   }
   const mapped = arr.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped);
@@ -395,8 +395,8 @@ export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCEL
   }
 };
 export const triggerHaptic = function triggerHaptic() {
-  const obj = require(4311) /* HapticFeedbackTypes */;
+  const obj = require(4343) /* HapticFeedbackTypes */;
   const obj2 = require(500) /* set */;
-  const HapticFeedbackTypes = require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes;
+  const HapticFeedbackTypes = require(4343) /* HapticFeedbackTypes */.HapticFeedbackTypes;
   const result = obj.triggerHapticFeedback(require(500) /* set */.isAndroid() ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
 };

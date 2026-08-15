@@ -1,9 +1,9 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15864
+// Function ID: 15865
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 5961, 11812, 15815, 11786, 8468, 11800, 676, 21, 4909, 11810, 1236, 4338, 9682, 15816, 4355, 11807, 11787, 589, 1500, 15819, 11785, 14146, 7863, 7865, 15820, 15821, 15824, 2]
+// Dependencies: [32, 5, 19, 4971, 11536, 15865, 11510, 8507, 11524, 676, 21, 5433, 11534, 1236, 4734, 9636, 15866, 4770, 11531, 11511, 589, 1501, 15869, 11509, 14178, 5428, 5254, 15870, 15871, 15874, 2]
 
-// Module 15814 (ClearAllHistory)
+// Module 15864 (ClearAllHistory)
 import _slicedToArray from "_slicedToArray";
 import deserialize from "deserialize";
 import importAllResult from "SearchTokenTypes";
@@ -37,8 +37,8 @@ function ClearAllHistory(searchContext) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1236).intl;
   obj[2] = intl2.string(searchContext(1236).t.LFTAUp);
-  obj[4] = jsx(searchContext(4338).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(4909).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(searchContext(4734).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(5433).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };
@@ -47,8 +47,8 @@ function ViewAll(onJumpToMedia) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.Ofpgwh);
-  obj[4] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(require(4909) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(require(4734) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(require(5433) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 let c5 = importAllResult;
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: unpackModuleId, SearchListItemTypes: closure_12, SearchTabs: map1 } = MessageEmbedTypes);
@@ -248,7 +248,7 @@ let closure_20 = importAllResult.memo((searchContext) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -290,7 +290,7 @@ let closure_20 = importAllResult.memo((searchContext) => {
             const result = obj.trackSuggestedSearchClicked(obj3);
             outer1_2(closure_0, closure_1);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c4 = tmp;

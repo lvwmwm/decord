@@ -1,10 +1,10 @@
-// Module ID: 10251
-// Function ID: 10252
+// Module ID: 10451
+// Function ID: 10452
 // Name: AvailableForumTag
-// Dependencies: [19, 5237, 1925, 21, 4342, 712, 589, 10059, 8726, 5421, 1435, 4338, 2]
+// Dependencies: [19, 6727, 1925, 21, 4661, 712, 589, 10264, 8811, 6930, 1435, 4734, 2]
 // Exports: default
 
-// Module 10251 (AvailableForumTag)
+// Module 10451 (AvailableForumTag)
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EMOJI_URL_BASE_SIZE } from "set";

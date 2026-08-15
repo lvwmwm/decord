@@ -1,9 +1,9 @@
-// Module ID: 5911
-// Function ID: 5912
+// Module ID: 7202
+// Function ID: 7203
 // Name: handleUserSettingsStoreUpdate
 // Dependencies: [1994, 1218, 589, 709, 2]
 
-// Module 5911 (handleUserSettingsStoreUpdate)
+// Module 7202 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";

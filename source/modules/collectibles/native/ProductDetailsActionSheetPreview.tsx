@@ -1,10 +1,10 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9279
+// Function ID: 9280
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4342, 712, 1949, 9506, 9508, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 1949, 9280, 9282, 2]
 // Exports: default
 
-// Module 9505 (ProductDetailsActionSheetPreview)
+// Module 9279 (ProductDetailsActionSheetPreview)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -46,7 +46,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     obj[2] = handlePreviewPress;
     obj[3] = onTrackPress;
     obj[4] = onBundleActiveItemChange.onBundleActiveItemChange;
-    let tmp7Result = tmp7(importDefault(9506), obj);
+    let tmp7Result = tmp7(importDefault(9280), obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.previewDivider;
@@ -55,7 +55,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(9508).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(9282).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

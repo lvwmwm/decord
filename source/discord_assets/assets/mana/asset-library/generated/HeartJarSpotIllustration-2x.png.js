@@ -1,9 +1,9 @@
-// Module ID: 6543
-// Function ID: 6544
+// Module ID: 5901
+// Function ID: 5902
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6543 (metadata)
+// Module 5901 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartJarSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/a1d7e9efc5bf8fb02fa30fb8e3a1dfecc84e482fa099fdffb0a665eb4576dbcc.png";

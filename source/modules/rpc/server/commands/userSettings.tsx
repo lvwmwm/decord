@@ -1,9 +1,9 @@
-// Module ID: 13841
-// Function ID: 13842
+// Module ID: 13873
+// Function ID: 13874
 // Name: handler
-// Dependencies: [1994, 676, 8965, 2]
+// Dependencies: [1994, 676, 4375, 2]
 
-// Module 13841 (handler)
+// Module 13873 (handler)
 import _getSystemLocale from "_getSystemLocale";
 
 let obj = {};

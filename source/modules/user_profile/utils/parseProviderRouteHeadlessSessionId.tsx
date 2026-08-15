@@ -1,10 +1,10 @@
-// Module ID: 12377
-// Function ID: 12378
+// Module ID: 12112
+// Function ID: 12113
 // Name: parseProviderRouteHeadlessSessionId
-// Dependencies: [32, 5063, 2]
+// Dependencies: [32, 5097, 2]
 // Exports: default
 
-// Module 12377 (parseProviderRouteHeadlessSessionId)
+// Module 12112 (parseProviderRouteHeadlessSessionId)
 import _slicedToArray from "_slicedToArray";
 
 let c3 = "h:";
@@ -16,7 +16,7 @@ export default function parseProviderRouteHeadlessSessionId(str) {
       const first = callback(str.slice(2).split(","), 1)[0];
       if (null != first) {
         if (0 !== first.length) {
-          const value = importDefault(5063).get(first);
+          const value = importDefault(5097).get(first);
           let tmp5 = null;
           if (null != value) {
             tmp5 = null;

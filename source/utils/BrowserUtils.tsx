@@ -1,10 +1,10 @@
-// Module ID: 4684
-// Function ID: 4685
+// Module ID: 4464
+// Function ID: 4465
 // Name: num2
-// Dependencies: [4685, 2]
+// Dependencies: [4465, 2]
 // Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 4684 (num2)
+// Module 4464 (num2)
 import { name as str } from "format";
 
 if (str == null) {

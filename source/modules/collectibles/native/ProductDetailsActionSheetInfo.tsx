@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 9578
+// Function ID: 9579
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4342, 712, 9625, 4338, 7083, 9476, 1236, 9626, 1949, 2]
+// Dependencies: [17, 21, 4661, 712, 9579, 4734, 5313, 9243, 1236, 9580, 1949, 2]
 // Exports: default
 
-// Module 9624 (ProductNameAndDescription)
+// Module 9578 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,37 +14,37 @@ let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(9625) /* getBundleDescription */;
+  let obj = require(9579) /* getBundleDescription */;
   obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
-  const items = [callback(require(4338) /* Text */.Text, obj), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: productDescription })];
+  const items = [callback(require(4734) /* Text */.Text, obj), callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: productDescription })];
   obj[1] = items;
   return callback2(View, obj);
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(7083) /* getItemRecordsFromPurchases */;
+  let obj = require(5313) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(9476) /* getProductPurchaseState */;
+  let obj1 = require(9243) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl2 = tmp(1236).intl;
     obj[2] = intl2.string(tmp(1236).t["6cfuDj"]);
-    let children = tmp6(tmp(4338).Text, obj);
+    let children = tmp6(tmp(4734).Text, obj);
   } else if (tmp5) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t.BEjTij);
-    children = tmp6(tmp(4338).Text, obj);
+    children = tmp6(tmp(4734).Text, obj);
   } else {
     children = !result;
     if (!result) {
       obj1 = { product: null, onTrackPress: null };
       obj1[0] = product;
       obj1[1] = product.onTrackPress;
-      children = tmp6(importDefault(9626), obj1);
+      children = tmp6(importDefault(9580), obj1);
     }
   }
   return closure_4(View, { children });

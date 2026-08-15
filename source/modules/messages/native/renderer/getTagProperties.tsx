@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 8207
+// Module ID: 8252
+// Function ID: 8253
 // Name: getTagProperties
-// Dependencies: [17, 4335, 8207, 1236, 8209, 8211, 2]
+// Dependencies: [17, 4663, 8253, 1236, 8255, 8257, 2]
 // Exports: default
 
-// Module 8206 (getTagProperties)
+// Module 8252 (getTagProperties)
 import { Image } from "get ActivityIndicator";
 import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
 
@@ -22,10 +22,10 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(8207) /* isPublicSystemMessage */;
+  let obj = require(8253) /* isPublicSystemMessage */;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(8209)(message)) {
+      if (importDefault(8255)(message)) {
         const intl2 = tmp2(1236).intl;
         let stringResult = intl2.string(tmp2(1236).t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
@@ -37,7 +37,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1236).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8211)).uri;
+            uri = Image.resolveAssetSource(tmp4(8257)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1236).t["9RNkeF"]);
@@ -65,7 +65,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1236).intl;
         stringResult2 = intl6.string(tmp2(1236).t.fyE8sH);
       }
-      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "add", tagType: 1274347521, tagIconUrl: -87883773, opTagText: 619577346, opTagTextColor: 1544421377, opTagBackgroundColor: -230227965 };
+      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "alignItems", tagType: "<string:1052311553>", tagIconUrl: "<string:3488022530>", opTagText: "<string:2316959745>", opTagTextColor: "<string:1312358401>", opTagBackgroundColor: "<string:3487956993>" };
       obj[0] = stringResult;
       obj[1] = null;
       obj[2] = flag;
@@ -87,12 +87,12 @@ export default function getTagProperties(arg0) {
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          tmp14 = importDefault(8209)(message);
+          tmp14 = importDefault(8255)(message);
         }
       }
       const intl5 = tmp2(1236).intl;
       stringResult3 = intl5.string(tmp2(1236).t["7s687k"]);
-      tmp2Result = tmp2(8207);
+      tmp2Result = tmp2(8253);
     }
   }
   const intl3 = tmp2(1236).intl;

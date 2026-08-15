@@ -1,10 +1,10 @@
-// Module ID: 14745
-// Function ID: 14746
-// Dependencies: [19, 8148, 21, 10421, 13959, 2]
+// Module ID: 14785
+// Function ID: 14786
+// Dependencies: [19, 8198, 21, 10669, 13991, 2]
 
-// Module 14745
+// Module 14785
 import importAllResult from "noop";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,7 +15,7 @@ const memoResult = importAllResult.memo(function SettingsWebBrowserScreen() {
     const sections = [{ settings: items }];
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13959), { node });
+  return jsx(importDefault(13991), { node });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
 

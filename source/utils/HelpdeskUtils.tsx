@@ -1,7 +1,7 @@
 // Module ID: 1993
 // Function ID: 1994
 // Name: combined
-// Dependencies: [1994, 676, 3973, 500, 2]
+// Dependencies: [1994, 676, 4005, 500, 2]
 
 // Module 1993 (combined)
 import _getSystemLocale from "_getSystemLocale";
@@ -29,7 +29,7 @@ export default {
     return "https://creator-support.discord.com" + "/hc/" + _getSystemLocale.locale.toLowerCase() + "/articles/" + MEDIA_CHANNEL;
   },
   getTwitterURL() {
-    return importDefault(3973)(LocalizedLinks.TWITTER);
+    return importDefault(4005)(LocalizedLinks.TWITTER);
   },
   getCommunityURL() {
     return combined + "/hc/" + _getSystemLocale.locale.toLowerCase();

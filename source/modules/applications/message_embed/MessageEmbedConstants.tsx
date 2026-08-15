@@ -1,9 +1,9 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7442
+// Function ID: 7443
 // Name: LinkType
 // Dependencies: [2]
 
-// Module 7216 (LinkType)
+// Module 7442 (LinkType)
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/MessageEmbedConstants.tsx");
 
 export const LinkType = { ACTIVITY: "activity", APP_DISCOVERY: "app_discovery", OAUTH: "oauth", CUSTOM_ACTIVITY_LINK: "custom_activity_link", ACTIVITY_INVITE: "activity_invite", ACTIVITY_INSTANCE: "activity_instance", RICH_PRESENCE_INVITE: "rich_presence_invite", LEGACY_RICH_PRESENCE_INVITE: "legacy_rich_presence_invite", REQUEST_TO_STREAM: "request_to_stream", UNKNOWN: "unknown" };

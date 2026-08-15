@@ -1,24 +1,24 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 10165
+// Function ID: 10166
 // Name: openCreateForumPostModal
-// Dependencies: [7293, 4572, 9961, 2007, 2]
+// Dependencies: [7514, 5260, 10166, 2007, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 9960 (openCreateForumPostModal)
+// Module 10165 (openCreateForumPostModal)
 let c3 = "create-forum-post";
 let result = require("ForumComposerModal").fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 
 export const openCreateForumPostModal = function openCreateForumPostModal(guildId) {
-  let obj = require(7293) /* trackForumChannelSeenBatch */;
+  let obj = require(7514) /* trackForumChannelSeenBatch */;
   obj = { guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject };
   const result = obj.trackMobileForumComposerOpened(obj);
   if (!tmp4) {
     obj = { guildId: null, channelId: null };
     ({ guildId: obj4[0], parentChannelId: obj4[1] } = guildId);
-    const result1 = tmp(7293).trackForumCreateNewPostStarted(obj);
-    const tmpResult = tmp(7293);
+    const result1 = tmp(7514).trackForumCreateNewPostStarted(obj);
+    const tmpResult = tmp(7514);
   }
-  importDefault(4572).pushLazy(require(2007) /* asyncRequireImpl */(9961, dependencyMap.paths), guildId, c3);
+  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(10166, dependencyMap.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;
@@ -26,8 +26,8 @@ export const closeCreateForumPostModal = function closeCreateForumPostModal() {
     flag = false;
   }
   if (!flag) {
-    const result = require(7293) /* trackForumChannelSeenBatch */.trackMobileForumComposerDismissed();
-    const obj = require(7293) /* trackForumChannelSeenBatch */;
+    const result = require(7514) /* trackForumChannelSeenBatch */.trackMobileForumComposerDismissed();
+    const obj = require(7514) /* trackForumChannelSeenBatch */;
   }
-  importDefault(4572).popWithKey(c3);
+  importDefault(5260).popWithKey(c3);
 };

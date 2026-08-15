@@ -1,10 +1,10 @@
-// Module ID: 4550
-// Function ID: 4551
+// Module ID: 5043
+// Function ID: 5044
 // Name: updateUserGuildSettingsInternal
-// Dependencies: [1982, 3991, 1395, 1391, 1910, 1922, 676, 4001, 4551, 685, 3992, 12, 1403, 709, 11, 589, 2]
+// Dependencies: [1982, 4023, 1395, 1391, 1910, 1922, 676, 4033, 5044, 685, 4024, 12, 1403, 709, 11, 589, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 4550 (updateUserGuildSettingsInternal)
+// Module 5043 (updateUserGuildSettingsInternal)
 import initialize from "initialize";
 import storeThread from "storeThread";
 import createChannelRecord from "createChannelRecord";
@@ -338,7 +338,7 @@ prototype["isMobilePushEnabled"] = function isMobilePushEnabled(closure_2) {
 };
 prototype["isMuted"] = function isMuted(arg0) {
   if (dependencyMap[arg0] != null) {
-    const obj = require(3992) /* reset */;
+    const obj = require(4024) /* reset */;
     return obj.computeIsMuted(tmp);
   } else {
     let guild = store2.getGuild(arg0);
@@ -352,7 +352,7 @@ prototype["isMuted"] = function isMuted(arg0) {
 };
 prototype["isTemporarilyMuted"] = function isTemporarilyMuted(arg0) {
   if (dependencyMap[arg0] != null) {
-    const obj = require(3992) /* reset */;
+    const obj = require(4024) /* reset */;
     return obj.isTemporarilyMuted(tmp);
   } else {
     let guild = store2.getGuild(arg0);

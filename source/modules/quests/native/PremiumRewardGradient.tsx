@@ -1,10 +1,10 @@
-// Module ID: 14483
-// Function ID: 14484
+// Module ID: 14515
+// Function ID: 14516
 // Name: PremiumRewardFillGradient
-// Dependencies: [19, 17, 21, 4342, 4191, 712, 4065, 4278, 1350, 4788, 5371, 2]
+// Dependencies: [19, 17, 21, 4661, 4223, 712, 4097, 4310, 1350, 4756, 6352, 2]
 // Exports: default
 
-// Module 14483 (PremiumRewardFillGradient)
+// Module 14515 (PremiumRewardFillGradient)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -76,9 +76,9 @@ function PremiumRewardGlowGradient(arg0) {
   const tmp = callback3();
   let token;
   let token1;
-  let obj = token(4065);
+  let obj = token(4097);
   token = obj.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  let obj1 = token(4065);
+  let obj1 = token(4097);
   token1 = obj1.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
   let items = [token, token1];
   const memo = React.useMemo(() => {
@@ -86,22 +86,22 @@ function PremiumRewardGlowGradient(arg0) {
     return items;
   }, items);
   let obj2 = token(1350);
-  const isThemeDarkResult = obj2.isThemeDark(token1(4278)());
+  const isThemeDarkResult = obj2.isThemeDark(token1(4310)());
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, style];
   const items2 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
   const tmp10 = closure_5;
-  const tmp7 = token1(4278)();
+  const tmp7 = token1(4310)();
   const tmp9 = closure_7;
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  obj = { style: items2, maskElement: tmp11(tmp3(4788), obj1), children: tmp11(tmp3(4788), obj2) };
+  obj = { style: items2, maskElement: tmp11(tmp3(4756), obj1), children: tmp11(tmp3(4756), obj2) };
   items2[1] = glowLight;
   obj1 = { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 };
   obj2 = { style: closure_4.absoluteFill, colors: memo, start: closure_9, end: closure_10 };
-  const items3 = [closure_6(token1(5371), obj), children];
+  const items3 = [closure_6(token1(6352), obj), children];
   obj[1] = items3;
   return tmp9(tmp10, obj);
 }

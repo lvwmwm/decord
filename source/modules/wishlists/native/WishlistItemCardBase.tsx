@@ -1,10 +1,10 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9182
+// Function ID: 9183
 // Name: SourceIcon
-// Dependencies: [19, 17, 21, 712, 4342, 4062, 8830, 4072, 8895, 4065, 9420, 1236, 1370, 9293, 4886, 2]
+// Dependencies: [19, 17, 21, 712, 4661, 4094, 9183, 4104, 8979, 4097, 9185, 1236, 1370, 9203, 6890, 2]
 // Exports: default
 
-// Module 9419 (SourceIcon)
+// Module 9182 (SourceIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ function SourceIcon(toastText) {
   };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[5] = callback(toastText(8830).HeartIcon, obj);
+  obj[5] = callback(toastText(9183).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 ({ Pressable: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -89,11 +89,11 @@ export default function WishlistItemCardBase(username) {
   }
   ({ overlay, accessibilityHidden } = username);
   const tmp = callback2();
-  let obj = require(4072) /* ManaContext */;
+  let obj = require(4104) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
-  let obj1 = require(8895) /* useUserProfileColors */;
-  let obj2 = require(4065) /* map */;
+  let obj1 = require(8979) /* useUserProfileColors */;
+  let obj2 = require(4097) /* map */;
   let containerBackground = obj2.useToken(importDefault(712).colors.BG_SURFACE_RAISED);
   if (null != primaryColor) {
     containerBackground = obj1.useUserProfileColors({ theme, primaryColor, secondaryColor }).containerBackground;
@@ -120,7 +120,7 @@ export default function WishlistItemCardBase(username) {
       stringResult = intl2.string(tmp2(1236).t.wu4gyV);
     }
   }
-  let tmp14Result1 = source === tmp2(9420).WishlistItemSource.WISHLIST;
+  let tmp14Result1 = source === tmp2(9185).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp10 = null;
   if (tmp14Result1) {
@@ -144,7 +144,7 @@ export default function WishlistItemCardBase(username) {
     const obj3 = { color: null, size: "custom", style: null };
     obj3[0] = tmp5(712).colors.WHITE;
     obj3[2] = { width: 40, height: 40 };
-    obj2[4] = tmp14(tmp2(9293).CheckmarkLargeBoldIcon, obj3);
+    obj2[4] = tmp14(tmp2(9203).CheckmarkLargeBoldIcon, obj3);
     tmp14Result = tmp14(tmp15, obj2);
   }
   items3[1] = tmp14Result;
@@ -155,7 +155,7 @@ export default function WishlistItemCardBase(username) {
     const obj5 = { color: null, size: "custom", style: null };
     obj5[0] = tmp5(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
     obj5[2] = { width: 18, height: 18 };
-    obj4[4] = tmp14(tmp2(4886).LockIcon, obj5);
+    obj4[4] = tmp14(tmp2(6890).LockIcon, obj5);
     tmp14Result = tmp14(tmp15, obj4);
   }
   items3[2] = tmp14Result;

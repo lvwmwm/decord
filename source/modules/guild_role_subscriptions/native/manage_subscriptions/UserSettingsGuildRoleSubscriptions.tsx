@@ -1,10 +1,10 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14555
+// Function ID: 14556
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [19, 17, 21, 4342, 4338, 1236, 1297, 14524, 14525, 14526, 14529, 14530, 2]
+// Dependencies: [19, 17, 21, 4661, 4734, 1236, 1297, 14556, 14557, 14558, 14561, 14562, 2]
 // Exports: default
 
-// Module 14523 (GuildRoleSubscriptionsSectionHeader)
+// Module 14555 (GuildRoleSubscriptionsSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,11 +21,11 @@ function GuildRoleSubscriptionsSectionHeader() {
   obj = { variant: "eyebrow", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(4338) /* Text */.Text, obj), ];
+  const items = [callback(require(4734) /* Text */.Text, obj), ];
   obj = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["Y+ucR7"]);
-  items[1] = callback(require(4338) /* Text */.Text, obj);
+  items[1] = callback(require(4734) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(closure_3, obj);
 }
@@ -47,11 +47,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subs
 
 export default function UserSettingsGuildRoleSubscriptions() {
   const tmp = callback3();
-  importDefault(14524)({ forceRestore: true });
-  const tmp5 = importDefault(14525)({ ensureFresh: true });
-  let obj = require(14526) /* useFetchListingsForGuild */;
+  importDefault(14556)({ forceRestore: true });
+  const tmp5 = importDefault(14557)({ ensureFresh: true });
+  let obj = require(14558) /* useFetchListingsForGuild */;
   if (obj.useFetchListingsForSubscriptions(tmp5).loading) {
-    let tmp6Result = tmp6(importDefault(14529), {});
+    let tmp6Result = tmp6(importDefault(14561), {});
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.container;

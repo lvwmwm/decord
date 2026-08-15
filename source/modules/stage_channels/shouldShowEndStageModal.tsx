@@ -1,10 +1,10 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 12516
+// Function ID: 12517
 // Name: shouldShowEndStageModal
-// Dependencies: [1218, 5198, 5201, 1396, 5204, 2]
+// Dependencies: [1218, 4989, 4990, 1396, 6703, 2]
 // Exports: default
 
-// Module 10782 (shouldShowEndStageModal)
+// Module 12516 (shouldShowEndStageModal)
 import fetchFingerprint from "fetchFingerprint";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";

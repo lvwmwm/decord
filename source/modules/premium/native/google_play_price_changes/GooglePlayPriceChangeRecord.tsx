@@ -1,9 +1,9 @@
-// Module ID: 4015
-// Function ID: 4016
+// Module ID: 4047
+// Function ID: 4048
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 4015 (createFromServer)
+// Module 4047 (createFromServer)
 import "toJS";
 
 const obj = { PRICE_CHANGE_MODE_UNSPECIFIED: "PRICE_CHANGE_MODE_UNSPECIFIED", PRICE_DECREASE: "PRICE_DECREASE", PRICE_INCREASE: "PRICE_INCREASE", OPT_OUT_PRICE_INCREASE: "OPT_OUT_PRICE_INCREASE" };

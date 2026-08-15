@@ -1,9 +1,9 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15636
+// Function ID: 15637
 // Name: ManageAccountsScreens
 // Dependencies: [676, 2]
 
-// Module 15586 (ManageAccountsScreens)
+// Module 15636 (ManageAccountsScreens)
 import { AuthStates } from "ME";
 
 const LOGIN = AuthStates.LOGIN;

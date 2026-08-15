@@ -1,10 +1,10 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14771
+// Function ID: 14772
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1922, 4013, 1303, 1304, 676, 21, 4342, 712, 698, 4034, 8761, 4065, 589, 4007, 1499, 7659, 1297, 10023, 4338, 1236, 8033, 4775, 5828, 5829, 8051, 8050, 2]
+// Dependencies: [19, 17, 1922, 4045, 1303, 1304, 676, 21, 4661, 712, 698, 4066, 9365, 4097, 589, 4039, 1500, 7877, 1297, 10228, 4734, 1236, 8083, 4733, 6286, 7178, 8101, 8100, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 14731 (UserSettingsText)
+// Module 14771 (UserSettingsText)
 import "registerAsset";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -226,7 +226,7 @@ export const setStickerAutocomplete = function setStickerAutocomplete(enabled) {
   obj = { enabled, location: obj };
   obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
   obj.track(constants.STICKERS_IN_AUTOCOMPLETE_TOGGLED, obj);
-  const IncludeStickersInAutocomplete = require(4034) /* explicitContentFromProto */.IncludeStickersInAutocomplete;
+  const IncludeStickersInAutocomplete = require(4066) /* explicitContentFromProto */.IncludeStickersInAutocomplete;
   IncludeStickersInAutocomplete.updateSetting(enabled);
 };
 export const setLowQualityImageMode = function setLowQualityImageMode(lowQualityImageMode) {
@@ -237,7 +237,7 @@ export const setLowQualityImageMode = function setLowQualityImageMode(lowQuality
   ({ videoUploadQuality, viewImageDescriptions, dataSavingMode } = lowQualityImageMode);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "low_quality_image_mode" });
   const obj = importDefault(698);
-  const result = importDefault(8761).updatedUnsyncedSettings({ lowQualityImageMode });
+  const result = importDefault(9365).updatedUnsyncedSettings({ lowQualityImageMode });
 };
 export const setDataSavingMode = function setDataSavingMode(dataSavingMode) {
   let lowQualityImageMode;
@@ -247,7 +247,7 @@ export const setDataSavingMode = function setDataSavingMode(dataSavingMode) {
   ({ videoUploadQuality, viewImageDescriptions, lowQualityImageMode } = dataSavingMode);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "data_saving_mode" });
   const obj = importDefault(698);
-  const result = importDefault(8761).updatedUnsyncedSettings({ dataSavingMode });
+  const result = importDefault(9365).updatedUnsyncedSettings({ dataSavingMode });
 };
 export const setVideoUploadQuality = function setVideoUploadQuality(videoUploadQuality) {
   let dataSavingMode;
@@ -257,7 +257,7 @@ export const setVideoUploadQuality = function setVideoUploadQuality(videoUploadQ
   ({ viewImageDescriptions, lowQualityImageMode, dataSavingMode } = videoUploadQuality);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "video_upload_quality" });
   const obj = importDefault(698);
-  const result = importDefault(8761).updatedUnsyncedSettings({ videoUploadQuality });
+  const result = importDefault(9365).updatedUnsyncedSettings({ videoUploadQuality });
 };
 export const setImageDescriptions = function setImageDescriptions(viewImageDescriptions) {
   let dataSavingMode;
@@ -266,6 +266,6 @@ export const setImageDescriptions = function setImageDescriptions(viewImageDescr
   viewImageDescriptions = viewImageDescriptions.viewImageDescriptions;
   ({ videoUploadQuality, lowQualityImageMode, dataSavingMode } = viewImageDescriptions);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "image_descriptions" });
-  const ViewImageDescriptions = require(4034) /* explicitContentFromProto */.ViewImageDescriptions;
+  const ViewImageDescriptions = require(4066) /* explicitContentFromProto */.ViewImageDescriptions;
   ViewImageDescriptions.updateSetting(viewImageDescriptions);
 };

@@ -1,9 +1,9 @@
-// Module ID: 13178
-// Function ID: 13179
+// Module ID: 13106
+// Function ID: 13107
 // Name: articleURL
-// Dependencies: [1993, 1471, 2]
+// Dependencies: [1993, 1472, 2]
 
-// Module 13178 (articleURL)
+// Module 13106 (articleURL)
 import ApexExperiment from "ApexExperiment";
 import importDefaultResult from "combined";
 

@@ -1,10 +1,10 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 11992
+// Function ID: 11993
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 676, 3, 12225, 7070, 4310, 10185, 1624, 5995, 4022, 4062, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 3, 11971, 5300, 4342, 10389, 1625, 7279, 4054, 4094, 1236, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12246 (useHandleBuyNow)
+// Module 11992 (useHandleBuyNow)
 import useMobileCollectiblesPurchaseSKU from "useMobileCollectiblesPurchaseSKU";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -34,7 +34,7 @@ function useHandleBuyNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function useHandleBuyNow(product) {
               v0 = 1;
               dependencyMap = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(7070).fetchCollectiblesPurchases();
+              obj1[0] = outer1_0(5300).fetchCollectiblesPurchases();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -66,14 +66,14 @@ function useHandleBuyNow(product) {
             return obj2;
           } else {
             callback(false);
-            obj = v0(4310);
+            obj = v0(4342);
             obj.hideActionSheet();
-            obj1 = v0(10185);
+            obj1 = v0(10389);
             const obj3 = { product: null, useCategoryImage: true };
             obj3[0] = closure_0;
             obj1.open(obj3);
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -130,7 +130,7 @@ function useHandleBuyNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

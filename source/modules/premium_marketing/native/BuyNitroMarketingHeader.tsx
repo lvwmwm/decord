@@ -1,10 +1,10 @@
-// Module ID: 7812
-// Function ID: 7813
+// Module ID: 8030
+// Function ID: 8031
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 6964, 21, 712, 4342, 4083, 4345, 4343, 4278, 7813, 500, 7814, 7810, 691, 5329, 6966, 7397, 4788, 1236, 7816, 4338, 7817, 7819, 2]
+// Dependencies: [19, 17, 7403, 21, 712, 4661, 4115, 4666, 4664, 4310, 8031, 500, 8032, 8028, 691, 5449, 7405, 7615, 4756, 1236, 8034, 4734, 8035, 8037, 2]
 // Exports: default
 
-// Module 7812 (BuyNitroMarketingHeader)
+// Module 8030 (BuyNitroMarketingHeader)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
 import { Gradients } from "items";
@@ -65,8 +65,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -importDefault(712).space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "_desired", alignSelf: 139264.18449831803 };
-  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "_desired", alignSelf: 139264.18449831803 };
+  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "rejectWithError", alignSelf: 9126819580.90677 };
+  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "rejectWithError", alignSelf: 9126819580.90677 };
   obj[3] = { position: "absolute", top: arg0 + importDefault(712).space.PX_20, right: importDefault(712).space.PX_4 };
   const obj3 = { height: null };
   obj3[0] = importDefault(712).space.PX_80 + importDefault(712).space.PX_4;

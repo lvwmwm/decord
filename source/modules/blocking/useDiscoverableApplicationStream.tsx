@@ -1,10 +1,10 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9895
+// Function ID: 9896
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4364, 3998, 676, 589, 2]
+// Dependencies: [4652, 4030, 676, 589, 2]
 // Exports: default
 
-// Module 9700 (getDiscoverableApplicationStream)
+// Module 9895 (getDiscoverableApplicationStream)
 import reset from "reset";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";

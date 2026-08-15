@@ -1,10 +1,10 @@
-// Module ID: 4516
-// Function ID: 4517
+// Module ID: 4644
+// Function ID: 4645
 // Name: ROBLOX_PROTOCOL_URL
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 4516 (ROBLOX_PROTOCOL_URL)
+// Module 4644 (ROBLOX_PROTOCOL_URL)
 class ROBLOX_PROTOCOL_URL {
   constructor(arg0) {
     return "roblox://placeId=" + global;

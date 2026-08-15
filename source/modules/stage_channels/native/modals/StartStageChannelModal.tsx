@@ -1,9 +1,9 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 8909
+// Function ID: 8910
 // Name: closeModal
-// Dependencies: [5, 32, 19, 17, 1396, 5194, 676, 1397, 21, 4342, 712, 4572, 4909, 1236, 1297, 8126, 7853, 5840, 589, 5896, 8033, 4338, 9120, 9121, 9122, 4793, 698, 1891, 7844, 5899, 4241, 9123, 9124, 7862, 4777, 5389, 5885, 2]
+// Dependencies: [5, 32, 19, 17, 1396, 4978, 676, 1397, 21, 4661, 712, 5260, 5433, 1236, 1297, 8176, 8068, 7188, 589, 7193, 8083, 4734, 8910, 8911, 8912, 4761, 698, 1892, 8062, 7196, 4273, 8913, 8914, 8077, 4745, 6803, 6551, 2]
 
-// Module 9119 (closeModal)
+// Module 8909 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import GuildStageChannelSelection from "GuildStageChannelSelection";
 import importAllResult from "HotspotStore";
@@ -23,7 +23,7 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function closeModal() {
-  importDefault(4572).popWithKey(closure_11);
+  importDefault(5260).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -37,9 +37,9 @@ function NavigationBar(guild) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
     obj[2] = closeModal;
     obj = { source: null };
-    obj[0] = importDefault(8126);
+    obj[0] = importDefault(8176);
     obj[3] = callback2(require(1297) /* Button */.Icon, obj);
-    obj[1] = callback2(require(4909) /* PressableBase */.PressableOpacity, obj);
+    obj[1] = callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -47,14 +47,14 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(7853), {});
+    let tmp7 = callback2(importDefault(8068), {});
   } else {
     const obj = { style: null, size: null, guild: null };
     obj[0] = tmp.guildIcon;
-    obj[1] = require(5840) /* GuildIconSizes */.GuildIconSizes.LARGE;
+    obj[1] = require(7188) /* GuildIconSizes */.GuildIconSizes.LARGE;
     obj[2] = guild;
-    tmp7 = callback2(importDefault(5840), obj);
-    const tmp5 = importDefault(5840);
+    tmp7 = callback2(importDefault(7188), obj);
+    const tmp5 = importDefault(7188);
   }
   return tmp7;
 }
@@ -69,8 +69,8 @@ class NotificationToggle {
     items[0] = require("HotspotStore").HotspotStore;
     tmp5 = jsx;
     stateFromStores = obj.useStateFromStores(items, () => {
-      const HotspotStore = callback(5896).HotspotStore;
-      return HotspotStore.hasHotspot(callback(5896).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+      const HotspotStore = callback(7193).HotspotStore;
+      return HotspotStore.hasHotspot(callback(7193).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
     });
     obj = { DEPRECATED_style: tmp.notificationToggle, label: null, onPress: null, trailing: null };
     tmp7 = View;
@@ -167,7 +167,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -189,17 +189,17 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                 if (null != outer1_6) {
                   outer1_8(true);
                   outer1_9(null);
-                  let obj3 = outer1_2(1891);
+                  let obj3 = outer1_2(1892);
                   const result = obj3.dismissGlobalKeyboard();
                   let dependencyMap = 1;
                   if (null != dependencyMap) {
                     c4 = 3;
                     c5 = 1;
                     let obj1 = { value: null, done: false };
-                    obj1[0] = outer1_2(7844).editStage(outer1_2, tmp76, tmp47);
+                    obj1[0] = outer1_2(8062).editStage(outer1_2, tmp76, tmp47);
                     return obj1;
                   } else {
-                    const obj5 = outer1_2(7844);
+                    const obj5 = outer1_2(8062);
                     c4 = 2;
                     c5 = 1;
                     const obj2 = { value: null, done: false };
@@ -213,7 +213,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
             if (1 === tmp7) {
               dependencyMap = 0;
               closure_1 = closure_2;
-              aPIError = new outer1_0(4241).APIError(closure_1);
+              aPIError = new outer1_0(4273).APIError(closure_1);
               outer1_9(aPIError);
               outer1_8(false);
             } else {
@@ -227,8 +227,8 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                     tmp8 = closure_13;
                   }
                   if (tmp8) {
-                    obj1 = outer1_2(5899);
-                    obj1.hideHotspot(outer1_0(5896).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                    obj1 = outer1_2(7196);
+                    obj1.hideHotspot(outer1_0(7193).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
                   }
                 }
               } else if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9569
+// Function ID: 9570
 // Name: getNavigatorCurrentRoute
-// Dependencies: [4198, 2]
+// Dependencies: [4230, 2]
 // Exports: default
 
-// Module 9615 (getNavigatorCurrentRoute)
+// Module 9569 (getNavigatorCurrentRoute)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/navigator/getNavigatorCurrentRoute.tsx");
 
 export default function getNavigatorCurrentRoute() {
   let rootNavigationRef = arg0;
   if (arg0 === undefined) {
-    rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
-    const obj2 = require(4198) /* getRootNavigationRef */;
+    rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+    const obj2 = require(4230) /* getRootNavigationRef */;
   }
   let isReadyResult;
   if (rootNavigationRef != null) {

@@ -1,9 +1,9 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8604
+// Function ID: 8605
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 6064, 6058, 6059, 6063, 6066, 2]
+// Dependencies: [19, 17, 21, 7345, 7339, 7340, 7344, 7347, 2]
 
-// Module 8565 (SplitTextField)
+// Module 8604 (SplitTextField)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -18,13 +18,13 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
   let inputStyle;
   let state;
   let trailing;
-  let obj = require(6064) /* useInputStyles */;
+  let obj = require(7345) /* useInputStyles */;
   obj = { size: size.size, isRound: size.isRound };
   const inputStyles = obj.useInputStyles(obj);
-  let obj2 = require(6058) /* useTextFieldState */;
+  let obj2 = require(7339) /* useTextFieldState */;
   const textField = obj2.useTextField(size, ref);
   ({ inputProps, innerRef, state } = textField);
-  let obj3 = require(6059) /* useInputClearButton */;
+  let obj3 = require(7340) /* useInputClearButton */;
   const inputClearButtonConfig = obj3.useInputClearButtonConfig(size, state);
   let tmp6;
   if (null != inputClearButtonConfig) {
@@ -32,7 +32,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
     ({ content: obj5[0], pressableProps: obj5[1] } = inputClearButtonConfig);
     tmp6 = obj;
   }
-  let tmpResult = tmp(6063);
+  let tmpResult = tmp(7344);
   const inputAttachments = tmpResult.useInputAttachments(size, tmp6);
   let tmp8 = null;
   ({ trailing, inputStyle } = inputAttachments);
@@ -51,7 +51,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
         return items;
       };
       const merged = Object.assign(size.leadingPressableProps);
-      tmpResult = tmp(6063);
+      tmpResult = tmp(7344);
       obj2.children = tmpResult.renderInputAttachment(undefined, size.leadingText, inputStyles.text);
       obj1[1] = <closure_2 style={null} />;
       tmp8 = <closure_3 style={null}>{null}</closure_3>;
@@ -63,7 +63,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
   obj3.leading = tmp8;
   obj3.trailing = trailing;
   obj3.inputStyle = inputStyle;
-  return jsx(require(6066) /* BaseTextField */.BaseTextField, {});
+  return jsx(require(7347) /* BaseTextField */.BaseTextField, {});
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
 

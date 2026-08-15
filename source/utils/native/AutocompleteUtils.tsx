@@ -1,9 +1,9 @@
-// Module ID: 5289
-// Function ID: 5290
+// Module ID: 6774
+// Function ID: 6775
 // Name: map
 // Dependencies: [676, 1236, 2]
 
-// Module 5289 (map)
+// Module 6774 (map)
 require("ME").AutoCompleteResultTypes;
 const items = [["game", "gameMentionInput"]];
 const map = new Map(items);

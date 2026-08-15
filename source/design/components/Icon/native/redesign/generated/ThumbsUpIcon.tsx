@@ -1,10 +1,10 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 12179
+// Function ID: 12180
 // Name: ThumbsUpIcon
-// Dependencies: [19, 21, 712, 4064, 8658, 2]
+// Dependencies: [19, 21, 712, 4096, 12180, 2]
 // Exports: ThumbsUpIcon
 
-// Module 8657 (ThumbsUpIcon)
+// Module 12179 (ThumbsUpIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ThumbsUpIcon = function ThumbsUpIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8658) /* registerAsset */;
+  obj[0] = require(12180) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

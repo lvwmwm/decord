@@ -1,10 +1,10 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14291
+// Function ID: 14292
 // Name: OverlappingSchedulesWarning
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4310, 9038, 2007, 4342, 712, 1297, 4775, 4338, 1236, 2303, 1499, 6946, 9816, 647, 14260, 14261, 4301, 5828, 5829, 5435, 5389, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4342, 8828, 2007, 4661, 712, 1297, 4733, 4734, 1236, 2335, 1500, 7385, 10017, 647, 14292, 14293, 4333, 6286, 7178, 6291, 6803, 4745, 2]
 // Exports: default
 
-// Module 14259 (OverlappingSchedulesWarning)
+// Module 14291 (OverlappingSchedulesWarning)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import setsEqual from "setsEqual";
@@ -30,8 +30,8 @@ function OverlappingSchedulesWarning(conflictingEntries) {
     obj = { spacing: 8, children: null };
     obj = { variant: "text-sm/medium", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(importDefault(2303)["26A0Df"]);
-    const items = [callback2(require(4338) /* Text */.Text, obj), ];
+    obj[1] = intl.string(importDefault(2335)["26A0Df"]);
+    const items = [callback2(require(4734) /* Text */.Text, obj), ];
     const obj1 = { spacing: 4, children: null };
     obj1[1] = conflictingEntries.map((dayLabel) => {
       dayLabel = dayLabel.dayLabel;
@@ -39,9 +39,9 @@ function OverlappingSchedulesWarning(conflictingEntries) {
       obj[1] = "" + dayLabel + "  " + dayLabel.timeRange;
       return callback2(callback(table[14]).Text, obj, dayLabel);
     });
-    items[1] = callback2(require(4775) /* Stack */.Stack, obj1);
+    items[1] = callback2(require(4733) /* Stack */.Stack, obj1);
     obj[1] = items;
-    obj[2] = callback3(require(4775) /* Stack */.Stack, obj);
+    obj[2] = callback3(require(4733) /* Stack */.Stack, obj);
     tmp = callback2(require(1297) /* Button */.HelpMessage, obj);
   }
   return tmp;
@@ -82,7 +82,7 @@ export default function ScheduleDowntimeScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ export default function ScheduleDowntimeScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -433,7 +433,7 @@ export default function ScheduleDowntimeScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -569,9 +569,9 @@ export default function ScheduleDowntimeScreen() {
     obj10[1] = callback2(tmp2(stringResult[14]).Text, obj11);
     obj10[3] = function handleStartTimePress() {
       const intl = tmp(rule[15]).intl;
-      const f111197 = (first1) => {
+      const f111372 = (first1) => {
         callback(first1);
-        let obj = f111197(outer1_2[19]);
+        let obj = f111372(outer1_2[19]);
         const result = (obj.timeToMinutes(first1) + 540) % 1440;
         obj = { hours: Math.floor(result / 60), minutes: result % 60 };
         callback2(obj);

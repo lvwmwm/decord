@@ -1,9 +1,9 @@
-// Module ID: 4072
-// Function ID: 4073
+// Module ID: 4104
+// Function ID: 4105
 // Name: ManaContext
-// Dependencies: [2, 1351, 4073, 1356, 1357, 1352, 1358, 4074, 1359, 1360, 1361, 1362, 4075, 1365, 4128, 4161]
+// Dependencies: [2, 1351, 4105, 1356, 1357, 1352, 1358, 4106, 1359, 1360, 1361, 1362, 4107, 1365, 4160, 4193]
 
-// Module 4072 (ManaContext)
+// Module 4104 (ManaContext)
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
 
 const result = require("useCheckboxA11yNative").fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
@@ -62,9 +62,9 @@ for (const key10059 in require("ThemeContextFlags")) {
   arg5[key10059] = require("ThemeContextFlags")[key10059];
   continue;
 }
-for (const key10063 in require("module_4075")) {
+for (const key10063 in require("module_4107")) {
   let tmp15 = key10063;
-  arg5[key10063] = require("module_4075")[key10063];
+  arg5[key10063] = require("module_4107")[key10063];
   continue;
 }
 for (const key10067 in require("WCAGContrastRatios")) {

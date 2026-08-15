@@ -1,10 +1,10 @@
-// Module ID: 6118
-// Function ID: 6119
+// Module ID: 5476
+// Function ID: 5477
 // Name: AccountAgeTier6SmallBadge
-// Dependencies: [21, 5329, 6119, 2]
+// Dependencies: [21, 5449, 5477, 2]
 // Exports: AccountAgeTier6SmallBadge
 
-// Module 6118 (AccountAgeTier6SmallBadge)
+// Module 5476 (AccountAgeTier6SmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier6SmallBadge.native.tsx");
@@ -28,7 +28,7 @@ export const AccountAgeTier6SmallBadge = function AccountAgeTier6SmallBadge(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6119);
+  obj[0] = importDefault(5477);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AccountAgeTier6SmallBadge = function AccountAgeTier6SmallBadge(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

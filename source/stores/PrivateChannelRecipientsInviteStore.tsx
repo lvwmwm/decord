@@ -1,9 +1,9 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13303
+// Function ID: 13304
 // Name: performQuery
-// Dependencies: [4256, 7188, 1395, 1391, 5890, 5287, 1990, 1910, 3998, 1922, 676, 1903, 4187, 7379, 589, 709, 2]
+// Dependencies: [4288, 5407, 1395, 1391, 5258, 6772, 1990, 1910, 4030, 1922, 676, 1903, 4219, 7597, 589, 709, 2]
 
-// Module 13100 (performQuery)
+// Module 13303 (performQuery)
 import getHash from "getHash";
 import recomputeAffinities from "recomputeAffinities";
 import { PrivateChannelRecord } from "createChannelRecord";
@@ -152,11 +152,11 @@ function updateHasFriends() {
 }
 function sortUserList(user, user2) {
   const obj = require(1903) /* isNullOrEmpty */;
-  const name = importDefault(4187).getName(user.user);
-  const obj2 = importDefault(4187);
+  const name = importDefault(4219).getName(user.user);
+  const obj2 = importDefault(4219);
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
   const obj5 = require(1903) /* isNullOrEmpty */;
-  const name1 = importDefault(4187).getName(user2.user);
+  const name1 = importDefault(4219).getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
 function parseUserResults(results) {
@@ -217,7 +217,7 @@ function handleModalActionSheetOpen(key) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7379).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7597).getUserSearchContext(parseUserResults, 1000);
     let c22 = null;
     let c16 = "";
     let c17 = 0;
@@ -321,7 +321,7 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7379).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7597).getUserSearchContext(parseUserResults, 1000);
     channelId = channelId.channelId;
     let c16 = "";
     let c17 = 0;

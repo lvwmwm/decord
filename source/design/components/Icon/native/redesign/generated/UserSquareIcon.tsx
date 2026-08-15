@@ -1,10 +1,10 @@
-// Module ID: 7758
-// Function ID: 7759
+// Module ID: 7976
+// Function ID: 7977
 // Name: UserSquareIcon
-// Dependencies: [19, 21, 712, 4064, 7759, 2]
+// Dependencies: [19, 21, 712, 4096, 7977, 2]
 // Exports: UserSquareIcon
 
-// Module 7758 (UserSquareIcon)
+// Module 7976 (UserSquareIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const UserSquareIcon = function UserSquareIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7759) /* registerAsset */;
+  obj[0] = require(7977) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

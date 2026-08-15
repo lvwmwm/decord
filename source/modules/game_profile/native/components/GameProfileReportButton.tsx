@@ -1,10 +1,10 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12031
+// Function ID: 12032
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 4310, 9347, 4572, 12286, 2007, 12286, 4777, 1236, 2]
+// Dependencies: [19, 21, 4342, 9101, 5260, 12032, 2007, 12032, 4745, 1236, 2]
 // Exports: default
 
-// Module 12285 (GameProfileReportButton)
+// Module 12031 (GameProfileReportButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function GameProfileReportButton(applicationId) {
   const intl = applicationId(1236).intl;
   obj[2] = intl.string(applicationId(1236).t.qP2cXd);
   obj[3] = callback;
-  return jsx(applicationId(4777).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+  return jsx(applicationId(4745).Button, { variant: "secondary", size: "md", text: null, onPress: null });
 };

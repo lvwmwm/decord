@@ -1,7 +1,7 @@
 // Module ID: 1469
 // Function ID: 1470
 // Name: handleImageLoad
-// Dependencies: [32, 5, 676, 1470, 1405, 584, 1473, 1483, 1486, 1490, 1895, 12, 1896, 2]
+// Dependencies: [32, 5, 676, 1470, 1405, 584, 1474, 1484, 1487, 1491, 1471, 1896, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
 // Module 1469 (handleImageLoad)
@@ -51,13 +51,13 @@ function getSrcWithWidthAndHeight(quality) {
     flag2 = false;
   }
   if (!src.startsWith("data:image")) {
-    let obj = importDefault(1486);
+    let obj = importDefault(1487);
     if (!obj.isDiscordCdnUrl(src)) {
       const items = [, ];
       [arr[0], tmp6] = callback(src.split("?"), 2);
-      let tmp2Result = tmp2(1483);
+      let tmp2Result = tmp2(1484);
       items[1] = tmp2Result.parse(tmp6);
-      const tmp5 = callback(src.split("?"), 2);
+      let tmp5 = callback(src.split("?"), 2);
       [tmp8, tmp9] = callback(items, 2);
       if (null != format) {
         tmp9.format = format;
@@ -87,42 +87,48 @@ function getSrcWithWidthAndHeight(quality) {
       obj[1] = targetHeight;
       obj[2] = closure_6;
       obj[3] = closure_6;
-      const obj3 = require(1490) /* fit */;
-      ({ width, height } = require(1490) /* fit */.fit(obj));
+      const obj3 = require(1491) /* fit */;
+      ({ width, height } = require(1491) /* fit */.fit(obj));
       if (width !== sourceWidth) {
-        if ((function isAttachmentLadderEnabled(arg0) {
+        const tmp18 = (function getAttachmentLadderConfig(arg0) {
           try {
             const obj = { location: null };
             obj[0] = "ImageLoaderUtils.getSrcWithWidthAndHeight";
-            return true === callback(table[3]).getAttachmentImageLadderConfig(obj).enabled;
+            const attachmentImageLadderConfig = callback(table[3]).getAttachmentImageLadderConfig(obj);
+            let tmp5 = null;
+            if (true === attachmentImageLadderConfig.enabled) {
+              tmp5 = attachmentImageLadderConfig;
+            }
+            return tmp5;
           } catch (err) {
-            return false;
+            return null;
           }
-        })("ImageLoaderUtils.getSrcWithWidthAndHeight")) {
+        })("ImageLoaderUtils.getSrcWithWidthAndHeight");
+        let size = { width: null, height: null };
+        size[0] = width;
+        size[1] = height;
+        if (null != tmp18) {
+          let tmp15Result = tmp15(1471);
           obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
           obj[0] = width;
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
-          obj[4] = tmp15(1895).ATTACHMENT_LADDER_MAX_UPSCALE;
-          let size = tmp15(1895).snapAttachmentDimensions(obj);
-          const tmp15Result = tmp15(1895);
-        } else {
-          size = { width: null, height: null };
-          size[0] = width;
-          size[1] = height;
+          tmp15Result = tmp15(1471);
+          obj[4] = tmp15Result.getSnapDownMaxUpscale(tmp18, tmp2(1896)());
+          size = tmp15Result.snapAttachmentDimensions(obj);
         }
-        if (!tmp18) {
+        if (!tmp19) {
           tmp9.width = size.width | 0;
           tmp9.height = size.height | 0;
         }
-        tmp18 = size.width === sourceWidth && size.height === sourceHeight;
+        tmp19 = size.width === sourceWidth && size.height === sourceHeight;
       }
       tmp2Result = tmp2(12);
       let text = tmp8;
       if (!tmp2Result.isEmpty(tmp9)) {
-        tmp2(1483);
-        text = `${tmp8}?${obj8.stringify(tmp9)}`;
+        tmp2(1484);
+        text = `${tmp8}?${obj9.stringify(tmp9)}`;
       }
       return text;
     }
@@ -138,9 +144,6 @@ const tmp3 = new require("priv")({ max: 1000 });
 let result = require("ME").fileFinishedImporting("modules/image_upload/ImageLoaderUtils.tsx");
 
 export const getDevicePixelRatio = require("getDevicePixelRatio");
-export const ATTACHMENT_LADDER = require("items").ATTACHMENT_LADDER;
-export const ATTACHMENT_LADDER_MAX_UPSCALE = require("items").ATTACHMENT_LADDER_MAX_UPSCALE;
-export const snapAttachmentDimensions = require("items").snapAttachmentDimensions;
 export const isImageLoaded = function isImageLoaded(arg0) {
   const value = tmp3.get(arg0);
   return null != value && value.loaded;
@@ -199,7 +202,7 @@ export const loadImage = function loadImage(arg0, bind) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -253,7 +256,7 @@ export const loadImage = function loadImage(arg0, bind) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -295,7 +298,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F103668 */ function() { ... });
+                            image.onerror = outer1_4(/* F103843 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });

@@ -1,10 +1,10 @@
-// Module ID: 10387
-// Function ID: 10388
+// Module ID: 10642
+// Function ID: 10643
 // Name: resolveGiftCode
-// Dependencies: [5, 4383, 7071, 7079, 676, 1924, 709, 4601, 5790, 7070, 4241, 530, 10388, 10389, 2]
+// Dependencies: [5, 4478, 5301, 5309, 676, 1924, 709, 4381, 7140, 5300, 4273, 530, 10643, 10644, 2]
 // Exports: resolveGiftCode
 
-// Module 10387 (resolveGiftCode)
+// Module 10642 (resolveGiftCode)
 import GuildFeatures from "GuildFeatures";
 import addApplication from "addApplication";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -47,7 +47,7 @@ function _resolveGiftCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -347,7 +347,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    importDefault(10388).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    importDefault(10643).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

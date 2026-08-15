@@ -1,9 +1,9 @@
-// Module ID: 9343
-// Function ID: 9344
+// Module ID: 9098
+// Function ID: 9099
 // Name: getSimilarGames
 // Dependencies: [589, 709, 2]
 
-// Module 9343 (getSimilarGames)
+// Module 9098 (getSimilarGames)
 import { Store } from "initialize";
 
 let closure_0 = {};

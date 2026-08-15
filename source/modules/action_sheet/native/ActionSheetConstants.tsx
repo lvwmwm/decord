@@ -1,9 +1,9 @@
-// Module ID: 5459
-// Function ID: 5460
+// Module ID: 6951
+// Function ID: 6952
 // Name: ACTION_SHEET_START_HEIGHT_RATIO
 // Dependencies: [2]
 
-// Module 5459 (ACTION_SHEET_START_HEIGHT_RATIO)
+// Module 6951 (ACTION_SHEET_START_HEIGHT_RATIO)
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/ActionSheetConstants.tsx");
 
 export const ACTION_SHEET_START_HEIGHT_RATIO = 0.6;

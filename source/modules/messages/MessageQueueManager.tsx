@@ -1,9 +1,9 @@
-// Module ID: 16584
-// Function ID: 16585
+// Module ID: 16636
+// Function ID: 16637
 // Name: handleLogout
-// Dependencies: [5322, 7360, 2]
+// Dependencies: [5038, 5040, 2]
 
-// Module 16584 (handleLogout)
+// Module 16636 (handleLogout)
 import "initialize";
 
 class MessageQueueManager extends tmp2 {
@@ -14,7 +14,7 @@ class MessageQueueManager extends tmp2 {
   }
 }
 MessageQueueManager.prototype["handleLogout"] = function handleLogout() {
-  importDefault(7360).clear();
+  importDefault(5040).clear();
 };
 const messageQueueManager = new MessageQueueManager();
 const result = require("set").fileFinishedImporting("modules/messages/MessageQueueManager.tsx");

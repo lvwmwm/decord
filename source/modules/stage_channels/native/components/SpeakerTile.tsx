@@ -1,10 +1,10 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 12604
+// Function ID: 12605
 // Name: result
-// Dependencies: [19, 17, 4358, 4363, 21, 4342, 712, 4191, 10918, 1493, 4912, 589, 7839, 10919, 4909, 1236, 8374, 1297, 10921, 10923, 8567, 4338, 2]
+// Dependencies: [19, 17, 4773, 4544, 21, 4661, 712, 4223, 12605, 1494, 8944, 589, 8057, 12606, 5433, 1236, 8413, 1297, 12608, 12610, 8606, 4734, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 10917 (result)
+// Module 12604 (result)
 import importAllResult from "registerAsset";
 import { View } from "Button";
 import getParticipants from "getParticipants";
@@ -170,9 +170,9 @@ export const LANDSCAPE_MAX_TILE_WIDTH_FULL = result;
 export const LANDSCAPE_MAX_TILE_WIDTH = result1;
 export const useSpeakerTileStyles = styles;
 export const getSizeStyle = function getSizeStyle(size, speakerTileStyles) {
-  if (require(10918) /* StageTileSize */.StageTileSize.FULL === size) {
+  if (require(12605) /* StageTileSize */.StageTileSize.FULL === size) {
     return speakerTileStyles.full;
-  } else if (tmp(10918).StageTileSize.HALF === size) {
+  } else if (tmp(12605).StageTileSize.HALF === size) {
     return speakerTileStyles.half;
   } else {
     return speakerTileStyles.third;
@@ -180,7 +180,7 @@ export const getSizeStyle = function getSizeStyle(size, speakerTileStyles) {
   tmp = require;
 };
 export const getTileWidthStyle = function getTileWidthStyle(arg0, arg1, arg2) {
-  const StageTileSize = require(10918) /* StageTileSize */.StageTileSize;
+  const StageTileSize = require(12605) /* StageTileSize */.StageTileSize;
   if (arg2) {
     let obj = { maxWidth: null };
     obj[0] = arg0 === StageTileSize.FULL ? closure_9 : result1;

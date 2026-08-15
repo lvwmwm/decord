@@ -1,13 +1,13 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12896
+// Function ID: 12897
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 676, 1388, 1924, 21, 4342, 712, 5220, 12768, 12769, 1499, 5789, 7706, 1628, 12819, 4083, 7709, 7713, 4164, 1377, 1379, 12820, 1236, 7819, 4007, 6928, 12821, 8585, 698, 12826, 4338, 12828, 7820, 8686, 12829, 12830, 12847, 12850, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 1924, 21, 4661, 712, 6289, 12846, 12847, 1500, 7139, 7924, 1629, 12897, 4115, 7927, 7931, 4196, 1377, 1379, 12664, 1236, 8037, 4039, 5356, 12898, 8624, 698, 12903, 4734, 12905, 8038, 9326, 12906, 12907, 12924, 12927, 2]
 // Exports: default
 
-// Module 12818 (PremiumMarketingPage)
+// Module 12896 (PremiumMarketingPage)
 import Text from "Text";
 import MarketingComponentType from "MarketingComponentType";
-import get_ActivityIndicator from "module_4083";
+import get_ActivityIndicator from "module_4115";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { FractionalPremiumStates } from "GuildFeatures";
@@ -239,7 +239,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       tmp24Result = "marketingPageBanner" === promotionMarketingComponent1.properties.properties.oneofKind;
     }
     if (tmp24Result) {
-      const obj6 = { style: null, bannerFields: null, analyticsPage: "Marketing Page Banner Tile", onPaymentSuccess: null, onPaymentDismiss: null, componentId: null };
+      const obj6 = { style: null, bannerFields: null, analyticsPage: "Marketing Page Banner Tile", onPaymentSuccess: null, onPaymentDismiss: null, componentId: null, promotionId: null };
       const items9 = [, , ];
       ({ sectionWithPadding: arr11[0], sectionWidth: arr11[1] } = tmp4);
       const obj7 = { marginBottom: null };
@@ -249,7 +249,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       obj6[1] = promotionMarketingComponent1.properties.properties.marketingPageBanner;
       obj6[3] = onPaymentSuccess;
       obj6[4] = onPaymentDismiss;
-      obj6[5] = promotionMarketingComponent1.id;
+      ({ id: obj19[5], promotionId: obj19[6] } = promotionMarketingComponent1);
       tmp24Result = tmp24(tmp6(tmp2[34]), obj6);
       const tmp6Result1 = tmp6(tmp2[34]);
     }

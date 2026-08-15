@@ -1,16 +1,16 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 11784
+// Function ID: 11785
 // Name: TabItemCount
-// Dependencies: [19, 17, 21, 4083, 4342, 712, 4776, 4338, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4115, 4661, 712, 4744, 4734, 500, 1236, 2]
 // Exports: TabItem
 
-// Module 12053 (TabItemCount)
+// Module 11784 (TabItemCount)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 
 let c4;
 let c5;
@@ -86,7 +86,7 @@ function TabItemCount(arg0) {
   return callback(activeIndex(pressed[3]).View, obj1);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let closure_6 = require("module_4083").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_6 = require("module_4115").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_7 = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
 let closure_8 = { mass: 2, damping: 30, stiffness: 300, overshootClamping: true };
 let obj = { item: { flexShrink: 0, flexBasis: 0, paddingBottom: 14, flexDirection: "row", justifyContent: "center" }, count: null };

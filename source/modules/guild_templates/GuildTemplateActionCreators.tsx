@@ -1,9 +1,9 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 7287
+// Function ID: 7288
 // Name: map
-// Dependencies: [676, 709, 530, 698, 6004, 2]
+// Dependencies: [676, 709, 530, 698, 7288, 2]
 
-// Module 6003 (map)
+// Module 7287 (map)
 import ME from "ME";
 
 let c3;

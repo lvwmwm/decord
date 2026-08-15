@@ -1,13 +1,13 @@
-// Module ID: 6941
-// Function ID: 6942
+// Module ID: 7380
+// Function ID: 7381
 // Name: launchPremiumPlanSelect
-// Dependencies: [676, 6939, 4572, 6942, 2007, 6942, 6077, 2]
+// Dependencies: [676, 7378, 5260, 7381, 2007, 7381, 7357, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 6941 (launchPremiumPlanSelect)
+// Module 7380 (launchPremiumPlanSelect)
 import { UserSettingsSections } from "ME";
 
-let result = require("module_4572").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
+let result = require("module_5260").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
 
 export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
@@ -76,9 +76,9 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     obj[9] = tmp;
     obj[10] = onPaymentSuccess;
     obj[11] = onPaymentDismiss;
-    const obj3 = flag2(4572);
-    obj3.pushLazy(require(2007) /* asyncRequireImpl */(6942, dependencyMap.paths), obj, require(6942) /* PremiumModal */.PREMIUM_KEY);
-    const tmp7 = require(2007) /* asyncRequireImpl */(6942, dependencyMap.paths);
+    const obj3 = flag2(5260);
+    obj3.pushLazy(require(2007) /* asyncRequireImpl */(7381, dependencyMap.paths), obj, require(7381) /* PremiumModal */.PREMIUM_KEY);
+    const tmp7 = require(2007) /* asyncRequireImpl */(7381, dependencyMap.paths);
   }
-  let result = require(6077) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
+  let result = require(7357) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

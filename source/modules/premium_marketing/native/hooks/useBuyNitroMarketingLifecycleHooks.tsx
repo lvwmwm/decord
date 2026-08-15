@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7926
+// Function ID: 7927
 // Name: useBuyNitroMarketingLifecycleHooks
-// Dependencies: [19, 6953, 1388, 4342, 712, 7709, 7713, 4164, 1377, 1379, 7714, 2]
+// Dependencies: [19, 7392, 1388, 4661, 712, 7927, 7931, 4196, 1377, 1379, 7932, 2]
 // Exports: useBuyNitroMarketingLifecycleHooks
 
-// Module 7708 (useBuyNitroMarketingLifecycleHooks)
+// Module 7926 (useBuyNitroMarketingLifecycleHooks)
 import noop from "noop";
 import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -27,7 +27,7 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
   const dependencyMap = tmp;
   _require = initialLoadCompleted;
   promotionMarketingComponent = undefined;
-  promotionMarketingComponent = _require(7709).usePromotionMarketingComponent(_require(7713).MarketingComponentType.PREMIUM_TAB);
+  promotionMarketingComponent = _require(7927).usePromotionMarketingComponent(_require(7931).MarketingComponentType.PREMIUM_TAB);
   const items = [initialLoadCompleted, promotionMarketingComponent];
   const effect = React.useEffect(() => {
     let tmp = initialLoadCompleted;
@@ -52,9 +52,9 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
     let BuyNitroPurchaseLock = initialLoadCompleted(tmp[10]).BuyNitroPurchaseLock;
     BuyNitroPurchaseLock.end();
     return () => {
-      const BuyNitroPurchaseLock = callback(7714).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock = callback(7932).BuyNitroPurchaseLock;
       BuyNitroPurchaseLock.end();
-      const BuyNitroPurchaseLock2 = callback(7714).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock2 = callback(7932).BuyNitroPurchaseLock;
       const result = BuyNitroPurchaseLock2.setInitialLoadComplete(false);
     };
   }, []);

@@ -1,10 +1,10 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9523
+// Function ID: 9524
 // Name: useResolveGame
-// Dependencies: [19, 5795, 5988, 2]
+// Dependencies: [19, 7145, 5378, 2]
 // Exports: default
 
-// Module 9340 (useResolveGame)
+// Module 9523 (useResolveGame)
 import noop from "noop";
 
 const require = arg1;

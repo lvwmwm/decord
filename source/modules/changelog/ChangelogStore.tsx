@@ -1,9 +1,9 @@
-// Module ID: 4356
-// Function ID: 4357
+// Module ID: 4771
+// Function ID: 4772
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1994, 1340, 1978, 595, 4034, 589, 709, 2]
+// Dependencies: [1994, 1340, 1978, 595, 4066, 589, 709, 2]
 
-// Module 4356 (handleUserSettingsProtoStoreChange)
+// Module 4771 (handleUserSettingsProtoStoreChange)
 import _getSystemLocale from "_getSystemLocale";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY";
@@ -14,7 +14,7 @@ let c4;
 let c5;
 const require = arg1;
 function handleUserSettingsProtoStoreChange() {
-  const LastReceivedChangelogId = require(4034) /* explicitContentFromProto */.LastReceivedChangelogId;
+  const LastReceivedChangelogId = require(4066) /* explicitContentFromProto */.LastReceivedChangelogId;
   const setting = LastReceivedChangelogId.getSetting();
 }
 ({ AssetType: c4, ChangelogLoadState: c5 } = CHANGELOG_MODAL_KEY);

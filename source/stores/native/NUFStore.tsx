@@ -1,9 +1,9 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 5387
+// Function ID: 5388
 // Name: handleCacheOrSocketLoaded
-// Dependencies: [1910, 3998, 589, 709, 2]
+// Dependencies: [1910, 4030, 589, 709, 2]
 
-// Module 7172 (handleCacheOrSocketLoaded)
+// Module 5387 (handleCacheOrSocketLoaded)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { PersistedStore } from "initialize";

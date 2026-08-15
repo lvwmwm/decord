@@ -1,8 +1,8 @@
-// Module ID: 9003
-// Function ID: 9004
-// Dependencies: [5, 1218, 7055, 1397, 676, 530, 5191, 1222, 9004, 4604, 709, 9009, 11, 2]
+// Module ID: 8783
+// Function ID: 8784
+// Dependencies: [5, 1218, 4370, 1397, 676, 530, 4975, 1222, 8784, 4384, 709, 8789, 11, 2]
 
-// Module 9003
+// Module 8783
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
@@ -36,8 +36,8 @@ export default {
     return HTTP.patch(obj);
   },
   joinVoiceEvent(arg0, id) {
-    const voiceChannel = importDefault(5191).selectVoiceChannel(id);
-    const obj = importDefault(5191);
+    const voiceChannel = importDefault(4975).selectVoiceChannel(id);
+    const obj = importDefault(4975);
     require(1222) /* transitionTo */.transitionTo(closure_11.CHANNEL(arg0, id));
   },
   saveEvent(arg0, entityType) {
@@ -55,19 +55,19 @@ export default {
       let obj = /^data:/;
     }
     obj = { name: entityType.name, description: entityType.description, image, privacy_level: entityType.privacyLevel, scheduled_start_time: entityType.scheduledStartTime, scheduled_end_time: entityType.scheduledEndTime, entity_type: entityType.entityType, channel_id: channelId, entity_metadata: entityMetadata, recurrence_rule: null };
-    obj[9] = require(9004) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
+    obj[9] = require(8784) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENT(arg2, arg0), body: obj, rejectWithError: null };
-    const obj3 = require(9004) /* EditGuildEventScreens */;
+    const obj3 = require(8784) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   createGuildEvent(first, id) {
     let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: null };
-    obj[9] = require(9004) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
+    obj[9] = require(8784) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENTS_FOR_GUILD(id), body: obj, rejectWithError: null };
-    const obj2 = require(9004) /* EditGuildEventScreens */;
+    const obj2 = require(8784) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.post(obj);
   },
@@ -79,7 +79,7 @@ export default {
       let body = tmp5;
       const obj1 = { url: null, rejectWithError: null };
       obj1[0] = outer1_10.GUILD_EVENT(outer1_0, outer1_1);
-      const obj8 = outer1_0(4604);
+      const obj8 = outer1_0(4384);
       obj1[1] = outer1_0(530).rejectWithMigratedError();
       yield obj8.httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
@@ -99,7 +99,7 @@ export default {
       obj1[0] = outer1_10.GUILD_EVENTS_FOR_GUILD(outer1_0);
       obj1[1] = outer1_0(530).rejectWithMigratedError();
       const obj9 = outer1_0(530);
-      yield outer1_0(4604).httpGetWithCountryCodeQuery(obj1);
+      yield outer1_0(4384).httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
       const obj = outer1_1(709);
       const obj4 = { type: "FETCH_GUILD_EVENTS_FOR_GUILD", guildId: null, guildScheduledEvents: null };
@@ -164,7 +164,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ export default {
             obj5[2] = body;
             obj.dispatch(obj5);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -238,7 +238,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -335,7 +335,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ export default {
                 return obj3;
               } else {
                 rsvp = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === tmp7) {
@@ -438,7 +438,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -554,7 +554,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

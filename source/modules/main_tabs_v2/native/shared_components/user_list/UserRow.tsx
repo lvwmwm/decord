@@ -1,9 +1,9 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 9645
+// Function ID: 9646
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4334, 4383, 7191, 1391, 4431, 3998, 9680, 676, 21, 4342, 712, 4355, 38, 9691, 9692, 4061, 9693, 9307, 7192, 589, 1297, 4338, 4187, 9698, 5789, 8876, 1236, 9718, 4296, 4294, 4777, 1904, 8469, 4863, 8846, 2007, 8877, 9719, 7761, 4805, 8136, 4596, 9300, 9533, 9195, 9721, 9316, 8519, 9619, 5435, 2]
+// Dependencies: [19, 17, 4662, 4478, 5410, 1391, 4559, 4030, 9081, 676, 21, 4661, 712, 4770, 38, 9646, 9887, 4093, 9888, 9736, 5411, 589, 1297, 4734, 4219, 9893, 7139, 4797, 1236, 9911, 4328, 4326, 4745, 1904, 8508, 6867, 8929, 2007, 8961, 9912, 7979, 6814, 8186, 4815, 9455, 9452, 9462, 9914, 9509, 8558, 9573, 6291, 2]
 
-// Module 9690 (UserRowSubLabel)
+// Module 9645 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,15 +45,15 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9698), obj);
+        return callback(importDefault(9893), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4187).getUserTag(user);
-    callback(tmp(4338).Text, obj);
-    const tmpResult = tmp(4187);
+    obj[3] = tmp(4219).getUserTag(user);
+    callback(tmp(4734).Text, obj);
+    const tmpResult = tmp(4219);
   }
   if (null == stateFromStores) {
     const obj1 = { style: null };
@@ -75,7 +75,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4338).Text, obj5);
+    items1[1] = callback(tmp(4734).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "r" };
+      let obj = { accessibilityActions: null, actions: "a" };
       obj[0] = items;
       return obj;
     } else {
@@ -387,17 +387,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
             const channel = outer1_8.getChannel(arg0);
             if (null != channel) {
               outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-              const obj2 = outer1_1(outer1_2[15])(channel, false);
-              if (!obj2.inCall) {
-                obj2.onPress();
+              const obj4 = outer1_1(outer1_2[15])(channel, false);
+              if (!obj4.inCall) {
+                obj4.onPress();
               }
-              const tmp = outer1_1;
-              const tmp2 = outer1_2;
-              const tmp3 = outer1_1(outer1_2[14]);
+              const tmp4 = outer1_1;
+              const tmp5 = outer1_2;
+              const tmp6 = outer1_1(outer1_2[14]);
               const obj = { recipientIds: null };
               obj[0] = current.id;
               outer1_1(outer1_2[13]).openPrivateChannel(obj);
-              const tmpResult = outer1_1(outer1_2[13]);
+              const tmp4Result = outer1_1(outer1_2[13]);
             }
           });
         };
@@ -446,17 +446,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         const channel = outer1_8.getChannel(arg0);
         if (null != channel) {
           outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-          const obj2 = outer1_1(outer1_2[15])(channel, false);
-          if (!obj2.inCall) {
-            obj2.onPress();
+          const obj4 = outer1_1(outer1_2[15])(channel, false);
+          if (!obj4.inCall) {
+            obj4.onPress();
           }
-          const tmp = outer1_1;
-          const tmp2 = outer1_2;
-          const tmp3 = outer1_1(outer1_2[14]);
+          const tmp4 = outer1_1;
+          const tmp5 = outer1_2;
+          const tmp6 = outer1_1(outer1_2[14]);
           const obj = { recipientIds: null };
           obj[0] = current.id;
           outer1_1(outer1_2[13]).openPrivateChannel(obj);
-          const tmpResult = outer1_1(outer1_2[13]);
+          const tmp4Result = outer1_1(outer1_2[13]);
         }
       });
     } else if (tmp.MESSAGE === actionName) {

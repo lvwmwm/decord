@@ -1,9 +1,9 @@
-// Module ID: 4359
-// Function ID: 4360
+// Module ID: 4540
+// Function ID: 4541
 // Name: set
-// Dependencies: [4360, 4361, 589, 709, 2]
+// Dependencies: [4541, 4542, 589, 709, 2]
 
-// Module 4359 (set)
+// Module 4540 (set)
 import handleUpdate from "handleUpdate";
 import updateVoiceState from "updateVoiceState";
 import { DeviceSettingsStore } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 10379
-// Function ID: 10380
+// Module ID: 10636
+// Function ID: 10637
 // Name: ChatOverlays
-// Dependencies: [1390, 1391, 10377, 9820, 647, 3979, 10380, 2]
+// Dependencies: [1390, 1391, 10634, 8703, 647, 4011, 8724, 2]
 // Exports: default
 
-// Module 10379 (ChatOverlays)
+// Module 10636 (ChatOverlays)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChatOverlays } from "ChatOverlays";
@@ -36,12 +36,12 @@ export default function useAllowedChatOverlays() {
   const stateFromStores = obj.useStateFromStores(items, () => store.getCurrentEmbeddedActivity());
   const items1 = [participantFromServer];
   const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => store.getActivityPanelMode());
-  require(3979) /* getEmbeddedActivityLocationChannelId */;
+  require(4011) /* getEmbeddedActivityLocationChannelId */;
   if (stateFromStores != null) {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
-    if (!importDefault(10380)(tmp5, ensureGuildLoaded)) {
+    if (!importDefault(8724)(tmp5, ensureGuildLoaded)) {
       let tmp9 = obj[stateFromStores1];
     }
     return tmp9;

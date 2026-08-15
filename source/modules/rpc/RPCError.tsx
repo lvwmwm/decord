@@ -1,9 +1,9 @@
-// Module ID: 10727
-// Function ID: 10728
+// Module ID: 8752
+// Function ID: 8753
 // Name: prototype
-// Dependencies: [2, 10728]
+// Dependencies: [2, 8753]
 
-// Module 10727 (prototype)
+// Module 8752 (prototype)
 const result = require("set").fileFinishedImporting("modules/rpc/RPCError.tsx");
 
 export { RPCError as default } from "prototype";

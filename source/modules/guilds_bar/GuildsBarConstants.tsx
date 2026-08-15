@@ -1,9 +1,9 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15553
+// Function ID: 15554
 // Name: DEFAULT_FOLDER_COLOR
 // Dependencies: [688, 711, 2]
 
-// Module 15503 (DEFAULT_FOLDER_COLOR)
+// Module 15553 (DEFAULT_FOLDER_COLOR)
 import int2hslRaw from "int2hslRaw";
 import unsafe_getRawColor from "unsafe_getRawColor";
 

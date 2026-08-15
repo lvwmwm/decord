@@ -1,10 +1,10 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 5062
+// Function ID: 5063
 // Name: sampleWithUserId
 // Dependencies: [1217, 2]
 // Exports: sampleWithUserId
 
-// Module 7000 (sampleWithUserId)
+// Module 5062 (sampleWithUserId)
 let c2 = 2147483647;
 const result = require("set").fileFinishedImporting("modules/app_analytics/sampleWithUserId.tsx");
 

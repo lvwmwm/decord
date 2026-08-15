@@ -1,10 +1,10 @@
-// Module ID: 10502
-// Function ID: 10503
+// Module ID: 9812
+// Function ID: 9813
 // Name: styles
-// Dependencies: [19, 17, 21, 4342, 712, 1435, 9604, 4280, 1236, 9764, 5329, 4338, 10503, 5828, 5435, 1297, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 1435, 8770, 4312, 1236, 9813, 5449, 4734, 9815, 6286, 6291, 1297, 2]
 // Exports: default
 
-// Module 10502 (styles)
+// Module 9812 (styles)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

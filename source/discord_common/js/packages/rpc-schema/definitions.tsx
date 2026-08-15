@@ -1,9 +1,9 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13847
+// Function ID: 13848
 // Name: response
-// Dependencies: [13816, 8965, 2]
+// Dependencies: [13848, 4375, 2]
 
-// Module 13815 (response)
+// Module 13847 (response)
 let obj = { request: "Array", response: 0 };
 obj[1] = function response(string) {
   const obj = { image_url: null };
@@ -45,8 +45,8 @@ obj = {
     let arrayResult = string.array();
     const stringResult5 = string.string();
     const stringResult6 = string.string();
-    const items = [...require(13816) /* RPCCommands */.joiEnum(require(8965) /* set */.OAuth2Scopes)];
-    const obj12 = require(13816) /* RPCCommands */;
+    const items = [...require(13848) /* RPCCommands */.joiEnum(require(4375) /* set */.OAuth2Scopes)];
+    const obj12 = require(13848) /* RPCCommands */;
     obj[2] = arrayResult.items(stringResult6.valid.apply(items)).required();
     const itemsResult = arrayResult.items(stringResult6.valid.apply(items));
     obj[3] = string.string().required();
@@ -261,11 +261,11 @@ function ButtonComponent(arg0) {
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export const RPCCommandSchemas = {
-  [require(13816).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
-  [require(13816).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
-  [require(13816).RPCCommand.AUTHENTICATE]: obj,
-  [require(13816).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
-  [require(13816).RPCCommand.SHARE_INTERACTION]: {
+  [require(13848).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
+  [require(13848).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
+  [require(13848).RPCCommand.AUTHENTICATE]: obj,
+  [require(13848).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
+  [require(13848).RPCCommand.SHARE_INTERACTION]: {
     request(string) {
       let obj = { command: null, options: null, content: null, require_launch_channel: null, preview_image: null, components: null, pid: null };
       obj[0] = string.string().required();
@@ -325,7 +325,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13816).RPCCommand.SHARE_LINK]: {
+  [require(13848).RPCCommand.SHARE_LINK]: {
     request(string) {
       const obj = { custom_id: null, message: null, link_id: null };
       obj[0] = string.string().max(64);
@@ -346,8 +346,8 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13816).RPCCommand.GET_RELATIONSHIPS]: obj4,
-  [require(13816).RPCCommand.INVITE_USER_EMBEDDED]: {
+  [require(13848).RPCCommand.GET_RELATIONSHIPS]: obj4,
+  [require(13848).RPCCommand.INVITE_USER_EMBEDDED]: {
     request(string) {
       const obj = { user_id: null, content: null };
       obj[0] = string.string().required();
@@ -356,9 +356,9 @@ export const RPCCommandSchemas = {
       obj[1] = string.string().min(0).max(1024);
       return obj;
     },
-    response: "r"
+    response: "a"
   },
-  [require(13816).RPCCommand.GET_USER]: {
+  [require(13848).RPCCommand.GET_USER]: {
     request(string) {
       const obj = { id: null };
       const stringResult = string.string();
@@ -369,7 +369,7 @@ export const RPCCommandSchemas = {
       return User(arg0).allow(null);
     }
   },
-  [require(13816).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
+  [require(13848).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -386,7 +386,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13816).RPCCommand.QUEST_START_TIMER]: {
+  [require(13848).RPCCommand.QUEST_START_TIMER]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -398,6 +398,6 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13816).RPCCommand.GET_QUEST]: obj9,
-  [require(13816).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
+  [require(13848).RPCCommand.GET_QUEST]: obj9,
+  [require(13848).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
 };

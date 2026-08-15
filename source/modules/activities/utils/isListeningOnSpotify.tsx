@@ -1,10 +1,10 @@
-// Module ID: 9714
-// Function ID: 9715
+// Module ID: 7261
+// Function ID: 7262
 // Name: isListeningOnSpotify
-// Dependencies: [676, 8966, 5063, 2]
+// Dependencies: [676, 7242, 5097, 2]
 // Exports: default
 
-// Module 9714 (isListeningOnSpotify)
+// Module 7261 (isListeningOnSpotify)
 import ME from "ME";
 import { isSpotifyParty } from "WEB_OPEN";
 
@@ -19,8 +19,8 @@ export default function isListeningOnSpotify(type) {
     tmp = type.type === constants.LISTENING;
   }
   if (tmp) {
-    tmp = type.name === importDefault(5063).get(constants2.SPOTIFY).name;
-    const obj = importDefault(5063);
+    tmp = type.name === importDefault(5097).get(constants2.SPOTIFY).name;
+    const obj = importDefault(5097);
   }
   if (tmp) {
     tmp = null != type.party;

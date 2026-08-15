@@ -1,9 +1,9 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6261
+// Function ID: 6262
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6903 (metadata)
+// Module 6261 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VoiceFiltersSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/382cafbf1d2e647dd508e2c6acc140d3cf88faea47d002dc55c503f33ba34fe6.png";

@@ -1,9 +1,9 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14198
+// Function ID: 14199
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: [5, 17, 8148, 21, 700, 705, 3974, 12116, 585, 4062, 10421, 14167, 2]
+// Dependencies: [5, 17, 8198, 21, 700, 705, 4006, 11853, 585, 4094, 10669, 14199, 2]
 
-// Module 14166 (setFindYourFriendsDeletionIsLoading)
+// Module 14198 (setFindYourFriendsDeletionIsLoading)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ function _onFindYourFriendsDeletionPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ function _onFindYourFriendsDeletionPress() {
             const aPIError = new callback(585).APIError(callback2);
             callback = aPIError.getAnyErrorMessage();
             if (null != callback) {
-              let obj2 = callback2(4062);
+              let obj2 = callback2(4094);
               obj2 = { key: "FIND_YOUR_FRIENDS_DELETION", content: null };
               obj2[1] = callback;
               obj2.open(obj2);
@@ -119,9 +119,9 @@ identity = {
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return callback2((isLoading) => isLoading.isLoading, require(3974) /* isIterable */.shallow);
+    return callback2((isLoading) => isLoading.isLoading, require(4006) /* isIterable */.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -136,13 +136,13 @@ identity = {
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (callback2((isLoading) => isLoading.isLoading, require(3974) /* isIterable */.shallow)) {
+    if (callback2((isLoading) => isLoading.isLoading, require(4006) /* isIterable */.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;
   }
 };
 identity = createToggle.createPressable(identity);
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
 
 export default identity;

@@ -1,10 +1,10 @@
-// Module ID: 15712
-// Function ID: 15713
+// Module ID: 15762
+// Function ID: 15763
 // Name: useReplyActions
-// Dependencies: [5, 19, 1391, 4703, 1922, 1925, 4335, 21, 589, 8303, 8427, 4355, 15713, 4187, 7210, 6986, 15709, 4310, 4062, 1236, 14212, 8976, 8700, 7289, 15713, 2007, 2]
+// Dependencies: [5, 19, 1391, 4825, 1922, 1925, 4663, 21, 589, 8344, 8466, 4770, 15763, 4219, 7436, 7427, 15759, 4342, 4094, 1236, 14244, 9057, 9298, 7510, 15763, 2007, 2]
 // Exports: useReplyActions
 
-// Module 15712 (useReplyActions)
+// Module 15762 (useReplyActions)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -12,7 +12,7 @@ import { DraftType } from "handleChanged";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { EmojiIntention } from "set";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import { jsx } from "module_8976";
+import { jsx } from "module_9057";
 
 const require = arg1;
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
@@ -78,7 +78,7 @@ export const useReplyActions = function useReplyActions(content) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

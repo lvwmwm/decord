@@ -1,10 +1,10 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 12473
+// Function ID: 12474
 // Name: useIframeLifecycle
 // Dependencies: [19, 676, 1231, 2]
 // Exports: default
 
-// Module 10718 (useIframeLifecycle)
+// Module 12473 (useIframeLifecycle)
 import noop from "noop";
 import { ComponentActions } from "ME";
 

@@ -1,36 +1,36 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14670
+// Function ID: 14671
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 3047, 9770, 14639, 9769, 2]
+// Dependencies: [8198, 10669, 1236, 3079, 9979, 14671, 9978, 2]
 
-// Module 14638 (toggle)
+// Module 14670 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3047).OT1NK5);
+    return intl.string(importDefault(3079).OT1NK5);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate() {
-    return require(9770) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue() {
-    return importDefault(14639)(false);
+    return importDefault(14671)(false);
   },
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
 });
 const obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3047).OT1NK5);
+    return intl.string(importDefault(3079).OT1NK5);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate() {
-    return require(9770) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue() {
-    return importDefault(14639)(false);
+    return importDefault(14671)(false);
   },
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
 };

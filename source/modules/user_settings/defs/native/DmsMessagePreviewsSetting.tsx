@@ -1,9 +1,9 @@
-// Module ID: 14630
-// Function ID: 14631
+// Module ID: 14662
+// Function ID: 14663
 // Name: radio
-// Dependencies: [19, 8148, 14631, 4034, 1236, 4039, 10421, 2]
+// Dependencies: [19, 8198, 14663, 4066, 1236, 4071, 10669, 2]
 
-// Module 14630 (radio)
+// Module 14662 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -13,12 +13,12 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.OAOUoQ);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useValue: function useDMsMessagePreviewsValue() {
-    return require(14631) /* useMessagePreview */.useMessagePreviewSetting();
+    return require(14663) /* useMessagePreview */.useMessagePreviewSetting();
   },
   onValueChange: function onDMsMessagePreviewsValueChange(arg0) {
-    const MessagePreviewSetting = require(4034) /* explicitContentFromProto */.MessagePreviewSetting;
+    const MessagePreviewSetting = require(4066) /* explicitContentFromProto */.MessagePreviewSetting;
     MessagePreviewSetting.updateSetting(arg0);
   },
   useOptions: function useDMsMessagePreviewsOptions() {
@@ -26,17 +26,17 @@ createToggle = {
       let obj = { label: null, value: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t["8K53DF"]);
-      obj[1] = callback(4039).MessagePreviewTypes.ALL;
+      obj[1] = callback(4071).MessagePreviewTypes.ALL;
       const items = [obj, , ];
       obj = { label: null, value: null };
       const intl2 = callback(1236).intl;
       obj[0] = intl2.string(callback(1236).t.Gw11zg);
-      obj[1] = callback(4039).MessagePreviewTypes.UNREADS;
+      obj[1] = callback(4071).MessagePreviewTypes.UNREADS;
       items[1] = obj;
       obj = { label: null, value: null };
       const intl3 = callback(1236).intl;
       obj[0] = intl3.string(callback(1236).t.R2Ok7F);
-      obj[1] = callback(4039).MessagePreviewTypes.NONE;
+      obj[1] = callback(4071).MessagePreviewTypes.NONE;
       items[2] = obj;
       return items;
     }, []);

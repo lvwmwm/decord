@@ -1,10 +1,10 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11058
+// Function ID: 11059
 // Name: ClassificationDetailModal
-// Dependencies: [19, 676, 11346, 21, 4342, 712, 4572, 5331, 11347, 6080, 11382, 11354, 1500, 5844, 1236, 2]
+// Dependencies: [19, 676, 11059, 21, 4661, 712, 5260, 6314, 11060, 7360, 11095, 11067, 1501, 6312, 1236, 2]
 // Exports: default
 
-// Module 11345 (ClassificationDetailModal)
+// Module 11058 (ClassificationDetailModal)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = classificationId(11382);
+  let obj = classificationId(11095);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -39,7 +39,7 @@ export default function ClassificationDetailModal(classificationId) {
       const obj = flag(_undefined[11]);
     }
   }, items);
-  const isFocused = classificationId(1500).useIsFocused();
+  const isFocused = classificationId(1501).useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
     let closure_1 = closure_2;
@@ -74,9 +74,9 @@ export default function ClassificationDetailModal(classificationId) {
           }
         },
         onError() {
-          let arr = callback2(4572);
+          let arr = callback2(5260);
           arr = arr.pop();
-          let obj = callback(6080);
+          let obj = callback(7360);
           obj = { screen: constants.ACCOUNT, params: obj };
           obj = { initialTab: constants2.STANDING };
           obj.openUserSettings(obj);
@@ -89,5 +89,5 @@ export default function ClassificationDetailModal(classificationId) {
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null };
   const intl = classificationId(1236).intl;
   obj[2] = intl.string(classificationId(1236).t["13/7kX"]);
-  return jsx(classificationId(5844).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
+  return jsx(classificationId(6312).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
 };

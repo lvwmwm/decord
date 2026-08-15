@@ -1,10 +1,10 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13360
+// Function ID: 13361
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1395, 1391, 3989, 676, 11140, 9680, 21, 4342, 712, 500, 1236, 13329, 7373, 1370, 13330, 4605, 698, 9806, 4353, 8987, 11168, 2007, 4707, 13331, 13332, 5338, 8453, 1624, 5331, 11147, 13333, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 1391, 4021, 676, 9080, 9081, 21, 4661, 712, 500, 1236, 13361, 7591, 1370, 13362, 4385, 698, 9084, 4768, 9068, 12046, 2007, 4657, 13363, 13364, 6319, 8492, 1625, 6314, 9092, 13365, 2]
 // Exports: default
 
-// Module 13328 (getAttachmentsRestriction)
+// Module 13360 (getAttachmentsRestriction)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import HeaderBackImage from "HeaderBackImage";
 import allSettled from "allSettled";
@@ -139,7 +139,7 @@ export default function ShareScreen(sharedContent) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -249,7 +249,7 @@ export default function ShareScreen(sharedContent) {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -272,7 +272,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              let obj1 = callback(13330);
+                              let obj1 = callback(13362);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = outer1_1;
                               obj1[1] = channel;
@@ -301,7 +301,7 @@ export default function ShareScreen(sharedContent) {
                           obj3[4] = outer1_2;
                           callback2(698).track(outer3_11.SHARE_MESSAGE_SENT, obj3);
                           c4 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } catch (tmp11) {
                         c4 = tmp;

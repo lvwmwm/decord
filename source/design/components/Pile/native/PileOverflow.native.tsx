@@ -1,10 +1,10 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11789
+// Function ID: 11790
 // Name: map
-// Dependencies: [19, 17, 1994, 21, 4342, 712, 647, 4338, 1898, 2]
+// Dependencies: [19, 17, 1994, 21, 4661, 712, 647, 4734, 1898, 2]
 // Exports: PileOverflow
 
-// Module 11171 (map)
+// Module 11789 (map)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -47,6 +47,6 @@ export const PileOverflow = function PileOverflow(size) {
   const obj1 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, children: null };
   const items2 = ["+", require(1898) /* shortenAndLocalizeNumber */.humanizeValue(value, stateFromStores)];
   obj1[3] = items2;
-  obj[1] = closure_4(require(4338) /* Text */.Text, obj1);
+  obj[1] = closure_4(require(4734) /* Text */.Text, obj1);
   return closure_5(View, obj);
 };

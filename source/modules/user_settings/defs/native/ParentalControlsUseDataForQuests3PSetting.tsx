@@ -1,9 +1,9 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15046
+// Function ID: 15047
 // Name: toggle
-// Dependencies: [7066, 8148, 7405, 14150, 10421, 1236, 2]
+// Dependencies: [5296, 8198, 7623, 14182, 10669, 1236, 2]
 
-// Module 15001 (toggle)
+// Module 15046 (toggle)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -13,20 +13,20 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.CyLYKZ);
   },
-  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuests3PSettingValue() {
-    const selectedTeenId = require(7405) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(14150) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const selectedTeenId = require(7623) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledQuests3PDataOptedOut = require(14182) /* result */.ParentalControlledQuests3PDataOptedOut;
     return !ParentalControlledQuests3PDataOptedOut.useControlledSetting(selectedTeenId);
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(14150) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const ParentalControlledQuests3PDataOptedOut = require(14182) /* result */.ParentalControlledQuests3PDataOptedOut;
     const result = ParentalControlledQuests3PDataOptedOut.updateControlledSetting(selectedTeenId, !arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    const selectedTeenId = require(7405) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(14150) /* result */.ParentalControlledDropsOptedOut;
+    const selectedTeenId = require(7623) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDropsOptedOut = require(14182) /* result */.ParentalControlledDropsOptedOut;
     return ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
   },
   unsearchable: true

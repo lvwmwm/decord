@@ -1,10 +1,10 @@
-// Module ID: 11764
-// Function ID: 11765
+// Module ID: 11484
+// Function ID: 11485
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 11759, 11752, 21, 4342, 589, 4242, 8042, 1236, 8051, 8050, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 11479, 11472, 21, 4661, 589, 4274, 8092, 1236, 8101, 8100, 4745, 2]
 // Exports: default
 
-// Module 11764 (GuildDirectoryEditDescriptionTemplate)
+// Module 11484 (GuildDirectoryEditDescriptionTemplate)
 import closure_3 from "DirectoryEntryTypes";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -55,7 +55,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

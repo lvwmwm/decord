@@ -1,10 +1,10 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8570
+// Function ID: 8571
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1922, 21, 4342, 1499, 589, 8532, 691, 4242, 4062, 1236, 8533, 4338, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 21, 4661, 1500, 589, 8571, 691, 4274, 4094, 1236, 8572, 4734, 4745, 2]
 // Exports: default
 
-// Module 8531 (ConfirmEmailChangeStart)
+// Module 8570 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -27,7 +27,7 @@ const result = require("noop").fileFinishedImporting("modules/verification/nativ
 export default function ConfirmEmailChangeStart() {
   const tmp = callback4();
   const require = tmp;
-  let obj = require(1499) /* useNavigation */;
+  let obj = require(1500) /* useNavigation */;
   const navigation = obj.useNavigation();
   let obj1 = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
@@ -46,13 +46,13 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(8533);
+    obj2[1] = navigation(8572);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;
     const intl2 = tmp2(1236).intl;
     obj3[4] = intl2.string(tmp2(1236).t.dQ71Wa);
-    items1[1] = callback2(tmp2(4338).Text, obj3);
+    items1[1] = callback2(tmp2(4734).Text, obj3);
     items1[2] = intl.format(tmp2(1236).t.oMFSgi, obj).map((children) => outer1_10(tmp(table[15]).Text, { style: tmp.body, variant: "text-sm/medium", color: "text-default", children }, arg1));
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.button;
@@ -61,7 +61,7 @@ export default function ConfirmEmailChangeStart() {
     obj5[0] = intl3.string(tmp2(1236).t.rXV81H);
     obj5[1] = tmp7;
     obj5[2] = tmp6[0];
-    obj4[1] = callback2(tmp2(4777).Button, obj5);
+    obj4[1] = callback2(tmp2(4745).Button, obj5);
     items1[3] = callback2(closure_6, obj4);
     obj1[1] = items1;
     obj[2] = callback3(closure_6, obj1);

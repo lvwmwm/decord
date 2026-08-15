@@ -1,10 +1,10 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 10723
+// Function ID: 10724
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4383, 4391, 676, 7263, 8119, 1236, 10992, 5914, 5909, 3239, 8282, 7717, 4331, 7823, 501, 589, 1370, 5795, 2]
+// Dependencies: [32, 19, 4478, 4521, 676, 4371, 8169, 1236, 10724, 7205, 7200, 3271, 8323, 7935, 4363, 8041, 501, 589, 1370, 7145, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10991 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 10723 (createSocialLayerStorefrontProductDetailsEmbed)
 import _slicedToArray from "_slicedToArray";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import addApplication from "addApplication";
@@ -21,7 +21,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(8119)(theme.theme));
+  ({ colors, baseColors } = importDefault(8169)(theme.theme));
   let obj = addSku;
   const value = addSku.get(skuId);
   let applicationId;
@@ -31,7 +31,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   application = application.getApplication(applicationId);
   const isFetchingResult = obj.isFetching(skuId);
   let result = null != applicationId;
-  const tmp3 = importDefault(8119)(theme.theme);
+  const tmp3 = importDefault(8169)(theme.theme);
   if (result) {
     result = obj2.isFetchingApplication(applicationId);
   }
@@ -50,11 +50,11 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(10992)(application)) {
+        if (tmp(10724)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result1 = require(5914) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj4 = require(5914) /* useSKUPrice */;
-            const str4 = require(5909) /* getPrice */.getCardImageURL(value);
+            const result1 = require(7205) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj4 = require(7205) /* useSKUPrice */;
+            const str4 = require(7200) /* getPrice */.getCardImageURL(value);
             str = undefined;
             if (str4 != null) {
               str = str4.toString();
@@ -78,7 +78,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             if (result1) {
               let stringResult = string(tmp12(1236).t.boqtTA);
             } else {
-              stringResult = string(tmp(3239).BKf0MM);
+              stringResult = string(tmp(3271).BKf0MM);
             }
             obj.acceptLabelText = stringResult;
             let prop;

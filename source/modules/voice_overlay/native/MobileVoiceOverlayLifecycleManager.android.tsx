@@ -1,9 +1,9 @@
-// Module ID: 13861
-// Function ID: 13862
+// Module ID: 13893
+// Function ID: 13894
 // Name: importDefaultResult1
-// Dependencies: [1391, 1980, 1910, 4393, 3989, 4416, 3998, 5199, 1922, 4361, 10837, 676, 13862, 13863, 13864, 13865, 8093, 13132, 13866, 13867, 8080, 1236, 13868, 10848, 7283, 4535, 5221, 698, 4549, 4523, 2]
+// Dependencies: [1391, 1980, 1910, 4497, 4021, 4539, 4030, 4774, 1922, 4542, 12548, 676, 13894, 13895, 13896, 13897, 8143, 12667, 13898, 13899, 8130, 1236, 13900, 12555, 7504, 4984, 6714, 698, 5042, 4720, 2]
 
-// Module 13861 (importDefaultResult1)
+// Module 13893 (importDefaultResult1)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

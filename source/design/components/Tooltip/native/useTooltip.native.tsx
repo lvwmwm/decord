@@ -1,10 +1,10 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 9270
+// Function ID: 9271
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 514, 5778, 8718, 1493, 8723, 2]
+// Dependencies: [32, 5, 19, 21, 3, 514, 7128, 9271, 1494, 9276, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 8717 (useTooltip)
+// Module 9270 (useTooltip)
 import _slicedToArray from "_slicedToArray";
 import v1 from "v1";
 import noop from "noop";
@@ -131,10 +131,10 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
   const _require = ref;
   const importDefault = targetRef;
   const dependencyMap = callback;
-  const tmp = importDefault(1493)();
+  const tmp = importDefault(1494)();
   let _slicedToArray = tmp;
   let v1 = context.useRef(tmp);
-  context = context.useContext(_require(5778).LayerContext);
+  context = context.useContext(_require(7128).LayerContext);
   let closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15062
+// Function ID: 15063
 // Name: useAutoScrollToSearchResultSetting
-// Dependencies: [19, 13961, 10422, 13966, 13964, 1499, 2]
+// Dependencies: [19, 13993, 10670, 13998, 13996, 1500, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 15013 (useAutoScrollToSearchResultSetting)
+// Module 15062 (useAutoScrollToSearchResultSetting)
 import noop from "noop";
 import zustandStore from "zustandStore";
 import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -16,7 +16,7 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   const _require = ref;
   const dependencyMap = memo;
   let current = ref.useField("selected");
-  const navigation = _require(1499).useNavigation();
+  const navigation = _require(1500).useNavigation();
   ref = navigation.useRef(scrollTarget);
   if (current == null) {
     current = ref.current;
@@ -24,14 +24,14 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   let flag = false;
   if (null != current) {
     flag = false;
-    if (tmp(13966).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      let initialScrollIndex = tmp(13964).getInitialScrollIndex(current, memo);
+    if (tmp(13998).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      let initialScrollIndex = tmp(13996).getInitialScrollIndex(current, memo);
       let tmp7 = 0 !== initialScrollIndex;
       if (tmp7) {
         tmp7 = 1 !== initialScrollIndex;
       }
       flag = tmp7;
-      const tmpResult = tmp(13964);
+      const tmpResult = tmp(13996);
     }
   }
   const items = [memo, flag, ref, navigation, current];

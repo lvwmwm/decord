@@ -1,10 +1,10 @@
-// Module ID: 8923
-// Function ID: 8924
+// Module ID: 9008
+// Function ID: 9009
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 676, 21, 5771, 4310, 8924, 2]
+// Dependencies: [19, 676, 21, 7122, 4342, 9009, 2]
 // Exports: default
 
-// Module 8923 (MediaModalSheetWrapper)
+// Module 9008 (MediaModalSheetWrapper)
 import noop from "noop";
 import { MEDIA_MODAL_KEY } from "ME";
 import { jsx } from "jsxProd";

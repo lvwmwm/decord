@@ -1,10 +1,10 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 8852
+// Function ID: 8853
 // Name: _isDefaultChannelThresholdMetAfterDelete
-// Dependencies: [5, 1910, 5303, 5304, 676, 5302, 5310, 506, 4705, 1236, 2]
+// Dependencies: [5, 1910, 6788, 5286, 676, 6787, 5285, 506, 4827, 1236, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9062 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 8852 (_isDefaultChannelThresholdMetAfterDelete)
 import fetchOnboardingPrompts from "fetchOnboardingPrompts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUpdate from "handleUpdate";
@@ -34,7 +34,7 @@ function _isDefaultChannelThresholdMetAfterDelete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ function _isChattableChannelThresholdMetAfterChannelChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
             obj4[0] = tmp54;
             return obj4;
           } else {
-            obj = callback(4705);
+            obj = callback(4827);
             obj5 = { title: null, body: null };
             const intl = guildId(1236).intl;
             obj5[0] = intl.string(guildId(1236).t.ut7sq0);

@@ -1,10 +1,10 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7657
+// Function ID: 7658
 // Name: comparePriorityDescending
 // Dependencies: [2]
 // Exports: default
 
-// Module 7439 (comparePriorityDescending)
+// Module 7657 (comparePriorityDescending)
 function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {
   effectiveStartDate = effectiveStartDate.effectiveStartDate;
   let num;

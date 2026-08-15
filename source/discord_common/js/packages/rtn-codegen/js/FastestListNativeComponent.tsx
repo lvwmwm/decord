@@ -1,9 +1,9 @@
-// Module ID: 8598
-// Function ID: 8599
+// Module ID: 8637
+// Function ID: 8638
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 114, 2]
 
-// Module 8598 (__INTERNAL_VIEW_CONFIG)
+// Module 8637 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 

@@ -1,10 +1,10 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 9824
+// Function ID: 9825
 // Name: Checkbox
-// Dependencies: [17, 21, 4342, 4073, 1236, 4775, 8035, 4338, 2]
+// Dependencies: [17, 21, 4661, 4105, 1236, 4733, 8085, 4734, 2]
 // Exports: Checkbox
 
-// Module 10512 (Checkbox)
+// Module 9824 (Checkbox)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

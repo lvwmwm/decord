@@ -1,10 +1,10 @@
-// Module ID: 15414
-// Function ID: 15415
+// Module ID: 15464
+// Function ID: 15465
 // Name: items
-// Dependencies: [32, 19, 1383, 676, 1388, 644, 9770, 6086, 1377, 2]
-// Exports: setFavoritesGuildSuggestions, useFavoritesGuildShouldShowSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useHasFavoritesGuildSuggestions
+// Dependencies: [32, 19, 1383, 676, 1388, 644, 9979, 7366, 1377, 2]
+// Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 15414 (items)
+// Module 15464 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withContent from "withContent";
@@ -30,32 +30,37 @@ export const useHasFavoritesGuildSuggestions = function useHasFavoritesGuildSugg
 export const setFavoritesGuildSuggestions = function setFavoritesGuildSuggestions(suggestions) {
   state.setState({ suggestions });
 };
-export const useFavoritesGuildShouldShowSuggestions = function useFavoritesGuildShouldShowSuggestions() {
-  let hasAccess;
-  let isFreemium;
-  const favoritesAccess = require(9770) /* useFavoritesAccess */.useFavoritesAccess();
-  ({ hasAccess, isFreemium } = favoritesAccess);
-  const obj = require(9770) /* useFavoritesAccess */;
-  require(6086) /* useSelectedDismissibleContent */;
-  if (hasAccess) {
-    if (isFreemium) {
-      if (tmp4) {
-        const items = [tmp(1377).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
-      }
-      const tmp9 = callback(tmp6([]), 2);
-      require = tmp10;
-      const items1 = [tmp9[1]];
-      const layoutEffect = React.useLayoutEffect(() => {
-        outer1_8.setState({
-          dismiss() {
-            return callback(outer1_6.USER_DISMISS);
-          }
-        });
-      }, items1);
-      const layoutEffect1 = React.useLayoutEffect(() => () => state.setState({ dismiss: closure_5 }), []);
-      return tmp9[0] === tmp(1377).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
-    }
+export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuildSuggestionsVisibility() {
+  let obj = require(9979) /* useFavoritesAccess */;
+  const favoritesAccess = obj.useFavoritesAccess();
+  let isFreemium = favoritesAccess.hasAccess;
+  if (isFreemium) {
+    isFreemium = favoritesAccess.isFreemium;
   }
+  if (isFreemium) {
+    isFreemium = tmp4;
+  }
+  tmp4 = callback2((postConnectionOpen) => postConnectionOpen.postConnectionOpen);
+  if (isFreemium) {
+    const items = [tmp(1377).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+    let items1 = items;
+  } else {
+    items1 = [];
+  }
+  const tmp5 = callback(require(7366) /* useSelectedDismissibleContent */.useSelectedDismissibleContent(items1), 2);
+  require = tmp6;
+  const items2 = [tmp5[1]];
+  const layoutEffect = React.useLayoutEffect(() => {
+    outer1_8.setState({
+      dismiss() {
+        callback(outer1_6.USER_DISMISS);
+        outer1_8.setState({ suggestions: outer1_7 });
+      }
+    });
+  }, items2);
+  const layoutEffect1 = React.useLayoutEffect(() => () => state.setState({ dismiss: closure_5 }), []);
+  obj = { isEligible: isFreemium, isSelected: tmp5[0] === tmp(1377).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS };
+  return obj;
 };
 export const useFavoritesGuildSuggestionsDismissal = function useFavoritesGuildSuggestionsDismissal() {
   return state((dismiss) => dismiss.dismiss);

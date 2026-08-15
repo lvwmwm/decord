@@ -1,10 +1,10 @@
-// Module ID: 9279
-// Function ID: 9280
+// Module ID: 9714
+// Function ID: 9715
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [5, 32, 19, 1218, 4393, 4416, 9275, 4406, 589, 38, 206, 9258, 2]
+// Dependencies: [5, 32, 19, 1218, 4497, 4539, 9710, 4529, 589, 38, 206, 9693, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9279 (useSecureFramesPairwiseFingerprint)
+// Module 9714 (useSecureFramesPairwiseFingerprint)
 import createRTCConnection from "createRTCConnection";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -69,7 +69,7 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

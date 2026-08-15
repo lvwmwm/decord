@@ -1,10 +1,10 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15650
+// Function ID: 15651
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 7168, 589, 7169, 2]
+// Dependencies: [19, 4801, 589, 4802, 2]
 // Exports: default
 
-// Module 15600 (useNotificationsTabBadge)
+// Module 15650 (useNotificationsTabBadge)
 import noop from "noop";
 import _validate from "_validate";
 

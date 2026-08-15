@@ -1,9 +1,9 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 8586
+// Function ID: 8587
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5892, 1236, 500, 8548, 8549, 1624, 2]
+// Dependencies: [5, 17, 3, 5264, 1236, 500, 8587, 8588, 1625, 2]
 
-// Module 8547 (_promptForRegisterCredential)
+// Module 8586 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -26,7 +26,7 @@ function _promptForRegisterCredential() {
           obj[0] = credential;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -145,8 +145,8 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
   get: () => {
     let isAndroidResult = require(500) /* set */.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = !require(1624) /* isMetaQuest */.isMetaQuest();
-      const tmpResult = require(1624) /* isMetaQuest */;
+      isAndroidResult = !require(1625) /* isMetaQuest */.isMetaQuest();
+      const tmpResult = require(1625) /* isMetaQuest */;
     }
     return isAndroidResult;
   },
@@ -183,7 +183,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

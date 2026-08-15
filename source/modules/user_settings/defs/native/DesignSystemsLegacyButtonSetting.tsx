@@ -1,22 +1,22 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14902
+// Function ID: 14903
 // Name: route
-// Dependencies: [8148, 676, 10421, 14863, 2]
+// Dependencies: [8198, 676, 10669, 14903, 2]
 
-// Module 14862 (route)
+// Module 14902 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
     return "Legacy Button";
   },
-  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.DESIGN_SYSTEM_LEGACY_BUTTON,
   getComponent() {
-    return require(14863) /* ComparisonRow */.default;
+    return require(14903) /* ComparisonRow */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,10 +1,10 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 12812
+// Function ID: 12813
 // Name: parents
-// Dependencies: [32, 19, 21, 7068, 4061, 1236, 7850, 12733, 12319, 2]
+// Dependencies: [32, 19, 21, 5298, 4093, 1236, 6553, 12811, 12047, 2]
 // Exports: default
 
-// Module 12734 (parents)
+// Module 12812 (parents)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -53,11 +53,11 @@ export default function _default(parents) {
     }
     obj[3] = username3;
     obj[1] = intl.formatToPlainString(parents(1236).t.BlAMme, obj);
-    obj[2] = jsx(parents(12319).ShareIcon, {});
+    obj[2] = jsx(parents(12047).ShareIcon, {});
     const intl2 = tmp15(1236).intl;
     obj[3] = intl2.string(parents(1236).t["5l/hlt"]);
     obj[4] = tmp[0];
     obj[5] = tmp2;
-    return jsx(importDefault(12733), { count: null, parent1: null, parent2: null, parent3: null });
+    return jsx(importDefault(12811), { count: null, parent1: null, parent2: null, parent3: null });
   }
 };

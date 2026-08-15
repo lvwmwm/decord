@@ -1,9 +1,9 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13464
+// Function ID: 13465
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 13432 (__INTERNAL_VIEW_CONFIG)
+// Module 13464 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDLocalImageThumbnail", validAttributes: { localImageSource: true } };

@@ -1,10 +1,10 @@
-// Module ID: 4264
-// Function ID: 4265
+// Module ID: 4296
+// Function ID: 4297
 // Name: trackExposureToExperiment
-// Dependencies: [4256, 4257, 709, 2]
+// Dependencies: [4288, 4289, 709, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 4264 (trackExposureToExperiment)
+// Module 4296 (trackExposureToExperiment)
 import getHash from "getHash";
 import { registerExperiment } from "getHash";
 import ExperimentBuckets from "ExperimentBuckets";

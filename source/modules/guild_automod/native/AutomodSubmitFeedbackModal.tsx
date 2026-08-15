@@ -1,10 +1,10 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11046
+// Function ID: 11047
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5389, 6072, 1236, 8093, 7047, 1628, 4338, 8033, 1297, 4777, 4549, 11334, 7046, 4061, 5844, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 6803, 5432, 1236, 8143, 5242, 1629, 4734, 8083, 1297, 4745, 5042, 11047, 5241, 4093, 6312, 2]
 // Exports: default
 
-// Module 11333 (Navbar)
+// Module 11046 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -23,10 +23,10 @@ function Navbar(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(8093);
-  obj[1] = callback2(require(6072) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = importDefault(8143);
+  obj[1] = callback2(require(5432) /* HeaderActionButton */.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
-  return callback2(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function SubmitFeedbackScreen(onSubmit) {
   let importDefault;
@@ -36,17 +36,17 @@ function SubmitFeedbackScreen(onSubmit) {
   let feedbackOptions;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = require(7047) /* Feedback */;
+  let obj = require(5242) /* Feedback */;
   feedbackOptions = obj.generateFeedbackOptions();
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["7bdzNo"]);
-  const items = [callback2(require(4338) /* Text */.Text, obj), , , ];
+  const items = [callback2(require(4734) /* Text */.Text, obj), , , ];
   const obj1 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.Lbpk6m);
-  items[1] = callback2(require(4338) /* Text */.Text, obj1);
+  items[1] = callback2(require(4734) /* Text */.Text, obj1);
   items[2] = callback2(View, {
     style: tmp.formBody,
     children: feedbackOptions.map((children) => {
@@ -89,12 +89,12 @@ function SubmitFeedbackScreen(onSubmit) {
       return outer1_8(outer1_4.Fragment, { children }, value);
     })
   };
-  items1[1] = { paddingBottom: importDefault(1628)().bottom + 16 };
+  items1[1] = { paddingBottom: importDefault(1629)().bottom + 16 };
   const obj5 = { size: "md", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[1] = intl3.string(require(1236) /* getSystemLocale */.t.Z6DZZ6);
   obj5[2] = onSubmit.onSubmit;
-  obj3[1] = callback2(require(4777) /* Button */.Button, obj5);
+  obj3[1] = callback2(require(4745) /* Button */.Button, obj5);
   items[3] = callback2(View, obj3);
   obj[1] = items;
   return callback3(View, obj);
@@ -104,11 +104,11 @@ const SUBMIT_FEEDBACK = "SUBMIT_FEEDBACK";
 createCacheKey = { container: null, header: null, headerTitle: null, headerSubtitle: null, closeButtonContainer: null, formBody: null, formRow: null, radioIndicator: null, submitButtonContainer: null };
 createCacheKey = { flex: 1, paddingHorizontal: 16, paddingVertical: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", justifyContent: "flex-end", paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[1] = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { textAlign: "center", marginTop: 8 };
 createCacheKey[4] = { marginVertical: 14 };
-let obj1 = { flexDirection: "row", justifyContent: "flex-end", paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let obj1 = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[5] = { marginTop: 24, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[6] = { paddingVertical: 2 };
 createCacheKey[7] = { marginRight: 0 };

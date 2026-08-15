@@ -1,10 +1,10 @@
-// Module ID: 15527
-// Function ID: 15528
+// Module ID: 15577
+// Function ID: 15578
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 15497, 676, 1388, 21, 4083, 9776, 15522, 1236, 3047, 15528, 8716, 2]
+// Dependencies: [32, 19, 15547, 676, 1388, 21, 4115, 9985, 15572, 1236, 3079, 15578, 9314, 2]
 // Exports: default
 
-// Module 15527 (FavoritesGuildCoachmarkIntro)
+// Module 15577 (FavoritesGuildCoachmarkIntro)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withEqualityFn from "withEqualityFn";

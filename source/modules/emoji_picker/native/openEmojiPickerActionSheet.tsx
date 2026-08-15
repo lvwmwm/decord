@@ -1,10 +1,10 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 9298
+// Function ID: 9299
 // Name: EMOJI_PICKER_ACTION_SHEET_KEY
-// Dependencies: [1925, 8701, 4310, 8702, 2007, 2]
+// Dependencies: [1925, 9299, 4342, 9300, 2007, 2]
 // Exports: openEmojiPickerActionSheet
 
-// Module 8700 (EMOJI_PICKER_ACTION_SHEET_KEY)
+// Module 9298 (EMOJI_PICKER_ACTION_SHEET_KEY)
 import { EmojiInteractionPoint } from "set";
 
 const EmojiPickerActionSheet = "EmojiPickerActionSheet";
@@ -12,7 +12,7 @@ let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/
 
 export const EMOJI_PICKER_ACTION_SHEET_KEY = "EmojiPickerActionSheet";
 export const openEmojiPickerActionSheet = function openEmojiPickerActionSheet(arg0, stack) {
-  const result = require(8701) /* toggleGuildExpandedState */.initiateEmojiInteraction(EmojiInteractionPoint.EmojiPickerActionSheetOpened);
-  const obj = require(8701) /* toggleGuildExpandedState */;
-  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(8702, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
+  const result = require(9299) /* toggleGuildExpandedState */.initiateEmojiInteraction(EmojiInteractionPoint.EmojiPickerActionSheetOpened);
+  const obj = require(9299) /* toggleGuildExpandedState */;
+  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(9300, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
 };

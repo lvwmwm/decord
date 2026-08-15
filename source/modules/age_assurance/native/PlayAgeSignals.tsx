@@ -1,10 +1,10 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16676
+// Function ID: 16677
 // Name: _getAgeSignals
-// Dependencies: [5, 16624, 16625, 2]
-// Exports: getAgeSignals, isConsideredOlderThan
+// Dependencies: [5, 16677, 16678, 2]
+// Exports: getAgeSignals
 
-// Module 16623 (_getAgeSignals)
+// Module 16676 (_getAgeSignals)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -22,7 +22,7 @@ function _getAgeSignals() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -95,10 +95,9 @@ function _getAgeSignals() {
   }
   return applyArgumentsResult;
 }
-let obj = { VERIFIED: 0, SUPERVISED: 1, SUPERVISED_APPROVAL_PENDING: 2, SUPERVISED_APPROVAL_DENIED: 3, UNKNOWN: 4, DECLARED: 5 };
 let result = require("apexExperiment").fileFinishedImporting("modules/age_assurance/native/PlayAgeSignals.tsx");
 
-export const AgeSignalsVerificationStatus = obj;
+export const AgeSignalsVerificationStatus = { VERIFIED: 0, SUPERVISED: 1, SUPERVISED_APPROVAL_PENDING: 2, SUPERVISED_APPROVAL_DENIED: 3, UNKNOWN: 4, DECLARED: 5 };
 export const getAgeSignals = function getAgeSignals() {
   const self = this;
   const apply = _getAgeSignals.apply;
@@ -108,27 +107,4 @@ export const getAgeSignals = function getAgeSignals() {
     applyArgumentsResult = apply(self, arguments);
   }
   return applyArgumentsResult;
-};
-export const isConsideredOlderThan = function isConsideredOlderThan(outer1_0, outer1_02) {
-  if (null == outer1_0.userStatus) {
-    return true;
-  } else {
-    const userStatus = outer1_0.userStatus;
-    if (obj.VERIFIED === userStatus) {
-      return true;
-    } else {
-      if (tmp.SUPERVISED !== userStatus) {
-        if (tmp.SUPERVISED_APPROVAL_PENDING !== userStatus) {
-          if (tmp.SUPERVISED_APPROVAL_DENIED !== userStatus) {
-            return false;
-          }
-        }
-      }
-      let tmp2 = null != outer1_0.ageLower;
-      if (tmp2) {
-        tmp2 = outer1_0.ageLower >= outer1_02;
-      }
-      return tmp2;
-    }
-  }
 };

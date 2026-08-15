@@ -1,10 +1,10 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 7384
+// Function ID: 7385
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 5920, 589, 4705, 1236, 2]
+// Dependencies: [19, 5319, 589, 4827, 1236, 2]
 // Exports: default
 
-// Module 6945 (useStoreConnectionErrorAlert)
+// Module 7384 (useStoreConnectionErrorAlert)
 import noop from "noop";
 import updateProduct from "updateProduct";
 

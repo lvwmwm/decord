@@ -1,10 +1,10 @@
-// Module ID: 9101
-// Function ID: 9102
+// Module ID: 8891
+// Function ID: 8892
 // Name: useGuildEvents
-// Dependencies: [32, 19, 1391, 1910, 3989, 7055, 9102, 1397, 676, 687, 589, 9005, 9103, 9011, 2]
+// Dependencies: [32, 19, 1391, 1910, 4021, 4370, 8892, 1397, 676, 687, 589, 8785, 8893, 8791, 2]
 // Exports: default, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 9101 (useGuildEvents)
+// Module 8891 (useGuildEvents)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -302,11 +302,11 @@ export const useImminentUpcomingGuildEvents = function useImminentUpcomingGuildE
   return React.useMemo(() => stateFromStores.filter((status) => {
     let endTime;
     let startTime;
-    const eventSchedule = callback(9011).getEventSchedule(status);
+    const eventSchedule = callback(8791).getEventSchedule(status);
     ({ startTime, endTime } = eventSchedule);
-    const obj = callback(9011);
+    const obj = callback(8791);
     let toISOStringResult1;
-    const obj2 = callback(9005);
+    const obj2 = callback(8785);
     if (endTime != null) {
       toISOStringResult1 = endTime.toISOString();
     }

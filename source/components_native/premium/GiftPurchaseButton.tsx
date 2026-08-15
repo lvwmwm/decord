@@ -1,10 +1,10 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 13000
+// Function ID: 13001
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4013, 5920, 21, 4782, 4338, 589, 5923, 7487, 5789, 10094, 4706, 1236, 4007, 10090, 4778, 12924, 2]
+// Dependencies: [5, 19, 17, 4045, 5319, 21, 4750, 4734, 589, 5322, 7705, 7139, 10299, 4656, 1236, 4039, 10295, 4746, 13001, 2]
 // Exports: default
 
-// Module 12923 (GiftPurchaseButton)
+// Module 13000 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -67,7 +67,7 @@ export default function GiftPurchaseButton(style) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = outer1_1(4706);
+          obj1 = outer1_1(4656);
           const obj3 = { title: null, body: null };
           const intl = outer1_0(1236).intl;
           obj3[0] = intl.string(outer1_0(1236).t.R0RpRX);
@@ -124,10 +124,10 @@ export default function GiftPurchaseButton(style) {
         } else {
           closure_0 = arg1;
           premiumType = 0;
-          premiumTypeFromPlanId = outer1_0(4007).getPremiumTypeFromPlanId(closure_0);
+          premiumTypeFromPlanId = outer1_0(4039).getPremiumTypeFromPlanId(closure_0);
           premiumType = premiumTypeFromPlanId.premiumType;
           planInterval = premiumTypeFromPlanId.planInterval;
-          const obj9 = outer1_0(4007);
+          const obj9 = outer1_0(4039);
           const obj5 = { recipientUserId: null, premiumType: null, planInterval: null, analyticsLocation: null, analyticsLocations: null, order: null };
           obj5[0] = premiumType;
           obj5[1] = premiumType;
@@ -135,9 +135,9 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(10090).openGiftModal(obj5);
+          outer1_0(10295).openGiftModal(obj5);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp24) {
         if (tmp4 === premiumType) {

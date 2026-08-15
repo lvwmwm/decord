@@ -1,9 +1,9 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4780
+// Function ID: 4781
 // Name: handleSoundCreateOrUpdate
-// Dependencies: [32, 1340, 1922, 4813, 676, 685, 4428, 3943, 12, 698, 4814, 4034, 11, 589, 709, 2]
+// Dependencies: [32, 1340, 1922, 4781, 676, 685, 4556, 3975, 12, 698, 4782, 4066, 11, 589, 709, 2]
 
-// Module 4812 (handleSoundCreateOrUpdate)
+// Module 4780 (handleSoundCreateOrUpdate)
 import _slicedToArray from "_slicedToArray";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -111,7 +111,7 @@ obj = {
       }
       return num2;
     }
-    obj = importDefault(3943)();
+    obj = importDefault(3975)();
   },
   lookupKey(arg0) {
     return arg0;
@@ -128,10 +128,10 @@ let tmp7 = new require("DEFAULT_FRECENCY")(obj);
 let closure_22 = require("DISCORD_EPOCH").debounce((volume) => {
   let obj = importDefault(698);
   obj = { volume: null, location_stack: null };
-  obj[0] = Math.round(require(4814) /* perceptualToAmplitude */.amplitudeToPerceptual(volume));
+  obj[0] = Math.round(require(4782) /* perceptualToAmplitude */.amplitudeToPerceptual(volume));
   obj[1] = arg1;
   obj.track(AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, obj);
-  const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(4066) /* explicitContentFromProto */.SoundboardSettings;
   obj = { volume };
   SoundboardSettings.updateSetting(obj);
 }, 1000);
@@ -141,7 +141,7 @@ const prototype = SoundboardStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(settings, mergeGuildAvatar);
   syncLocalSoundboardMutesFromUserSettings(settings.settings);
-  const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(4066) /* explicitContentFromProto */.SoundboardSettings;
   const setting = SoundboardSettings.getSetting();
   let volume;
   if (setting != null) {
@@ -389,7 +389,7 @@ obj = {
       }
     } else if (tmp2.PRELOADED_USER_SETTINGS === type) {
       syncLocalSoundboardMutesFromUserSettings(proto);
-      const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;
+      const SoundboardSettings = require(4066) /* explicitContentFromProto */.SoundboardSettings;
       const setting = SoundboardSettings.getSetting();
       let volume;
       if (setting != null) {

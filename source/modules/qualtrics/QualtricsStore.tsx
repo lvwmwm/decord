@@ -1,9 +1,9 @@
-// Module ID: 4564
-// Function ID: 4565
+// Module ID: 9877
+// Function ID: 9878
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 4564 (map)
+// Module 9877 (map)
 import { Store } from "initialize";
 
 let obj = { surveys: null };

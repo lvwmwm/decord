@@ -1,10 +1,10 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11204
+// Function ID: 11205
 // Name: getCommandContext
 // Dependencies: [19, 1910, 2]
 // Exports: getCommandContext, useCommandContext
 
-// Module 11491 (getCommandContext)
+// Module 11204 (getCommandContext)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 

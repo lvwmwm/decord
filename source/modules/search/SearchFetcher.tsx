@@ -1,9 +1,9 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11521
+// Function ID: 11522
 // Name: fetch
-// Dependencies: [5, 1391, 676, 687, 3, 530, 1483, 2]
+// Dependencies: [5, 1391, 676, 687, 3, 530, 1484, 2]
 
-// Module 11797 (fetch)
+// Module 11521 (fetch)
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -39,7 +39,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
             if (null == lib) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (!sendRequest.isCanceled) {
               if (200 === lib.status) {
                 lib(outer1_0);
@@ -102,7 +102,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
                 if (sendRequest.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   const _parseInt = parseInt;
                   callback = parseInt(lib.headers["retry-after"]);
@@ -125,7 +125,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         c6 = 3;
       } catch (tmp49) {
@@ -202,10 +202,10 @@ prototype2["makeRequest"] = function makeRequest(rejectWithError) {
     const HTTP = require(530) /* sendRequest */.HTTP;
     const obj = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
     obj[0] = endpoint;
-    obj[1] = importDefault(1483).stringify(this.query);
+    obj[1] = importDefault(1484).stringify(this.query);
     obj[3] = rejectWithError.rejectWithError;
     value = HTTP.get(obj);
-    const obj2 = importDefault(1483);
+    const obj2 = importDefault(1484);
   }
   return value;
 };

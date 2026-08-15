@@ -1,10 +1,10 @@
-// Module ID: 7030
-// Function ID: 7031
+// Module ID: 5095
+// Function ID: 5096
 // Name: hasMemberSupplemental
-// Dependencies: [7031, 2]
+// Dependencies: [5096, 2]
 // Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 7030 (hasMemberSupplemental)
+// Module 5095 (hasMemberSupplemental)
 let closure_2 = {};
 const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14571
+// Function ID: 14572
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 6946, 14540, 2]
+// Dependencies: [19, 21, 7385, 14572, 2]
 // Exports: default
 
-// Module 14539 (GuildRoleSubscriptionCancelSettingScreen)
+// Module 14571 (GuildRoleSubscriptionCancelSettingScreen)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -12,9 +12,9 @@ const require = arg1;
 const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/billing/native/GuildRoleSubscriptionCancelSettingScreen.tsx");
 
 export default function GuildRoleSubscriptionCancelSettingScreen() {
-  let obj = require(6946) /* useSettingNavigationRoute */;
+  let obj = require(7385) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   obj = {};
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(14540), {});
+  return jsx(importDefault(14572), {});
 };

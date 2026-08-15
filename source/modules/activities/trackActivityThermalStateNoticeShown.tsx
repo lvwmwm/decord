@@ -1,10 +1,10 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 16275
+// Function ID: 16276
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [1391, 4416, 1390, 676, 3979, 698, 2]
+// Dependencies: [1391, 4539, 1390, 676, 4011, 698, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 16225 (trackActivityThermalStateNoticeShown)
+// Module 16275 (trackActivityThermalStateNoticeShown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import participantFromServer from "participantFromServer";
@@ -15,7 +15,7 @@ const result = require("participantFromServer").fileFinishedImporting("modules/a
 
 export const trackActivityThermalStateNoticeShown = function trackActivityThermalStateNoticeShown() {
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  let obj = require(3979) /* getEmbeddedActivityLocationChannelId */;
+  let obj = require(4011) /* getEmbeddedActivityLocationChannelId */;
   let _location;
   if (currentEmbeddedActivity != null) {
     _location = currentEmbeddedActivity.location;

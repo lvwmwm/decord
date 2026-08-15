@@ -1,10 +1,10 @@
-// Module ID: 13466
-// Function ID: 13467
+// Module ID: 13498
+// Function ID: 13499
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 4054, 676, 21, 9413, 503, 4310, 4774, 5771, 4759, 589, 11867, 4712, 2]
+// Dependencies: [32, 19, 17, 4086, 676, 21, 9177, 503, 4342, 4732, 7122, 4716, 589, 11595, 4669, 2]
 // Exports: ActionSheetPresenter
 
-// Module 13466 (ActionSheetPresenter)
+// Module 13498 (ActionSheetPresenter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -43,7 +43,7 @@ let closure_9 = importAllResult.forwardRef((sheetKey, ref) => {
   obj[0] = sheetKey(503).ImpressionTypes.HALFSHEET;
   obj[1] = impressionName;
   obj[2] = impressionProperties;
-  first(9413)(obj);
+  first(9177)(obj);
   const imperativeHandle = callback.useImperativeHandle(ref, () => ({
     componentDidEnter() {
       callback("visible");
@@ -72,10 +72,10 @@ let closure_9 = importAllResult.forwardRef((sheetKey, ref) => {
     callback2();
     return true;
   }, items2);
-  first(4774)(callback3);
+  first(4732)(callback3);
   obj = { value: memo, children: null };
-  obj[1] = jsx(sheetKey(4759).Dialog, { dialogKey: sheetKey, onDismiss: callback2, zIndex, children: content });
-  return jsx(first(5771).Provider, { value: memo, children: null });
+  obj[1] = jsx(sheetKey(4716).Dialog, { dialogKey: sheetKey, onDismiss: callback2, zIndex, children: content });
+  return jsx(first(7122).Provider, { value: memo, children: null });
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
 
@@ -91,7 +91,7 @@ export const ActionSheetPresenter = function ActionSheetPresenter(appEntryKey) {
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => callback(closure_9, { sheetKey: content.key, content: content.content, impressionName: content.impressionName, impressionProperties: content.impressionProperties, zIndex: content.zIndex }, content.key));
   obj = { style: StyleSheet.absoluteFill, component: null, children: null };
-  obj[1] = appEntryKey(4712).TransitionGroupOverlayView;
+  obj[1] = appEntryKey(4669).TransitionGroupOverlayView;
   obj[2] = mapped;
-  return jsx(appEntryKey(11867).TransitionGroup, { style: StyleSheet.absoluteFill, component: null, children: null });
+  return jsx(appEntryKey(11595).TransitionGroup, { style: StyleSheet.absoluteFill, component: null, children: null });
 };

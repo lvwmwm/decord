@@ -1,9 +1,9 @@
-// Module ID: 12097
-// Function ID: 12098
+// Module ID: 11832
+// Function ID: 11833
 // Name: render
-// Dependencies: [19, 17, 21, 4342, 712, 4072, 12098, 1236, 1435, 5329, 1903, 1297, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4104, 11833, 1236, 1435, 5449, 1903, 1297, 2]
 
-// Module 12097 (render)
+// Module 11832 (render)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ GuildInviteIcon.prototype["render"] = function render() {
   const props = this.props;
   ({ style, guild } = props);
   ({ size, textScale } = props);
-  let obj = require(12098) /* getClass */;
+  let obj = require(11833) /* getClass */;
   const getClassResult = obj.getClass(tmp, "icon", size);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { guildName: guild.name };
@@ -45,7 +45,7 @@ GuildInviteIcon.prototype["render"] = function render() {
     const items = [tmp.icon, getClassResult, style];
     obj1[2] = items;
     obj1[3] = guildIconSource;
-    return jsx(importDefault(5329), { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
+    return jsx(importDefault(5449), { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
   } else {
     const acronym = tmp2(1903).getAcronym(guild.name);
     let num = table[acronym.length - 1];

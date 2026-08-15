@@ -1,10 +1,10 @@
-// Module ID: 7884
-// Function ID: 7885
+// Module ID: 6555
+// Function ID: 6556
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 4710, 1236, 2821, 4710, 2]
+// Dependencies: [19, 21, 4660, 1236, 2853, 4660, 2]
 // Exports: default
 
-// Module 7884 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 6555 (AgeVerificationQuestUnsupportedAlertModal)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,14 +14,14 @@ const result = require("getAlertModalItemKey").fileFinishedImporting("modules/ag
 export default function AgeVerificationQuestUnsupportedAlertModal() {
   let obj = { title: null, content: null, actions: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2821).gUqXQN);
+  obj[0] = intl.string(importDefault(2853).gUqXQN);
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(2821).yBHwMy);
+  obj[1] = intl2.string(importDefault(2853).yBHwMy);
   obj = { children: null };
   obj = { text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
-  obj[0] = jsx(require(4710) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "got-it");
-  obj[2] = jsx(require(4710) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4710) /* getAlertModalItemKey */.AlertModal, { text: null });
+  obj[0] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "got-it");
+  obj[2] = jsx(require(4660) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

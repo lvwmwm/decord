@@ -1,19 +1,19 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14186
+// Function ID: 14187
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [8148, 14145, 7129, 5977, 1236, 14146, 10421, 14148, 2]
+// Dependencies: [8198, 14177, 5001, 5023, 1236, 14178, 10669, 14180, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14154 (useObscuredContentNonFriendsDmSettingValue)
-import { MobileSetting } from "MobileSetting";
+// Module 14186 (useObscuredContentNonFriendsDmSettingValue)
+import { MobileUserSettings } from "MobileUserSettings";
 import createToggle from "createToggle";
 
 function useObscuredContentNonFriendsDmSettingValue() {
-  const obj = require(14145) /* useExplicitContentSettingOrDefault */;
-  return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
+  const obj = require(14177) /* useExplicitContentSettingOrDefault */;
+  return require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
 }
 function onObscuredContentNonFriendsDmOnPress() {
-  let obj = require(5977) /* resolveExplicitContentSettingWithDefaults */;
+  let obj = require(5023) /* resolveExplicitContentSettingWithDefaults */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
   obj = { title: stringResult, subtitle: null, handlePress: null, currentValue: null };
@@ -25,7 +25,7 @@ function onObscuredContentNonFriendsDmOnPress() {
     return obj.updateExplicitContentSetting(obj);
   };
   obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm;
-  const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(14178) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 const pressable = createToggle.createPressable({
   useTitle: function getTitle() {
@@ -33,7 +33,7 @@ const pressable = createToggle.createPressable({
     return intl.string(require(1236) /* getSystemLocale */.t["Yh+HX1"]);
   },
   parent() {
-    return MobileSetting.SENSITIVE_CONTENT_FILTERS;
+    return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: useObscuredContentNonFriendsDmSettingValue,
   onPress: onObscuredContentNonFriendsDmOnPress,
@@ -54,7 +54,7 @@ let obj = {
     return intl.string(require(1236) /* getSystemLocale */.t["Yh+HX1"]);
   },
   parent() {
-    return MobileSetting.SENSITIVE_CONTENT_FILTERS;
+    return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: useObscuredContentNonFriendsDmSettingValue,
   onPress: onObscuredContentNonFriendsDmOnPress,

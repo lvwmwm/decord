@@ -1,9 +1,9 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 17031
+// Function ID: 17032
 // Name: getBackoffJitter
-// Dependencies: [5, 5057, 5061, 5190, 13264, 11411, 8962, 8983, 676, 687, 12, 16986, 709, 13039, 16987, 5322, 2]
+// Dependencies: [5, 4495, 5221, 4974, 13060, 11123, 9045, 9064, 676, 687, 12, 17032, 709, 13242, 17033, 5038, 2]
 
-// Module 16985 (getBackoffJitter)
+// Module 17031 (getBackoffJitter)
 import updateImpressionCaches from "updateImpressionCaches";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import closure_5 from "set";
@@ -60,7 +60,7 @@ function canFetch(GLOBAL_FEED) {
       } else {
         return false;
       }
-      obj = require(13039) /* apexExperiment */;
+      obj = require(13242) /* apexExperiment */;
     }
     return true;
   }
@@ -106,7 +106,7 @@ function scheduleNextFetch() {
               flag = false;
             }
           }
-          obj9 = require(13039) /* apexExperiment */;
+          obj9 = require(13242) /* apexExperiment */;
         }
       } else {
         flag = false;
@@ -195,7 +195,7 @@ function _fetchInventory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -394,7 +394,7 @@ function handleSpotifyNewTrack(connectionId) {
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16987) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(17033) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
 }
 let closure_11 = 2 * require("set").Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;

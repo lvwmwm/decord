@@ -1,10 +1,10 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 14014
+// Function ID: 14015
 // Name: ColorBox
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 13980, 4788, 5488, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 4115, 14012, 4756, 6377, 2]
 // Exports: default
 
-// Module 13982 (ColorBox)
+// Module 14014 (ColorBox)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -23,7 +23,7 @@ function ColorBox(hue) {
   const tmp = createCacheKey();
   const tmp2 = callback(React.useState("rgb(0,0,0)"), 2);
   importDefault = tmp3;
-  let obj = hue(4083);
+  let obj = hue(4115);
   class S {
     constructor() {
       obj = hue(outer1_2[7]);
@@ -31,7 +31,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(13980).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(14012).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;
@@ -43,7 +43,7 @@ function ColorBox(hue) {
       const runOnJSResult = hue(outer1_2[6]).runOnJS(c1);
     }
   };
-  obj = { runOnJS: hue(4083).runOnJS, setColor: tmp3 };
+  obj = { runOnJS: hue(4115).runOnJS, setColor: tmp3 };
   fn.__closure = obj;
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;
@@ -53,9 +53,9 @@ function ColorBox(hue) {
   items1 = ["rgb(255,255,255)", tmp2[0]];
   const obj2 = { colors: ["rgba(0, 0, 0, 0)", "#000"], children: null };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
-  const tmp5 = importDefault(4788);
+  const tmp5 = importDefault(4756);
   obj2[1] = callback2(View, { style: items2 });
-  obj1[4] = callback2(importDefault(4788), obj2);
+  obj1[4] = callback2(importDefault(4756), obj2);
   return callback2(tmp5, obj1);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);

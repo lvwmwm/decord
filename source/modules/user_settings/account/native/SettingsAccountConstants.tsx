@@ -1,9 +1,9 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11059
+// Function ID: 11060
 // Name: AccountSettingsTabs
 // Dependencies: [2]
 
-// Module 11346 (AccountSettingsTabs)
+// Module 11059 (AccountSettingsTabs)
 const result = require("set").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountConstants.tsx");
 
 export const AccountSettingsTabs = { SECURITY: "SECURITY", STANDING: "STANDING" };

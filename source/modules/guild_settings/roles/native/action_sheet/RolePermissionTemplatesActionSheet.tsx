@@ -1,10 +1,10 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 16854
+// Function ID: 16855
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 676, 21, 4342, 712, 698, 4310, 4061, 5457, 1236, 5825, 16788, 4705, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 712, 698, 4342, 4093, 6949, 1236, 7175, 16834, 4827, 2]
 // Exports: default
 
-// Module 16808 (RolePermissionTemplatesActionSheet)
+// Module 16854 (RolePermissionTemplatesActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -34,9 +34,9 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.KgCkoQ);
   const tmp = createCacheKey();
-  obj = { header: jsx(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
+  obj = { header: jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
   obj = { style: tmp.templateContainer, children: null };
-  obj[1] = jsx(importDefault(16788), {
+  obj[1] = jsx(importDefault(16834), {
     onSelect(arg0) {
       let closure_0 = arg0;
       if (closure_0) {
@@ -72,5 +72,5 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
     guildId: guildId.guildId
   });
   obj[2] = <View style={tmp.templateContainer}>{null}</View>;
-  return jsx(require(5825) /* ActionSheet */.ActionSheet, { style: tmp.templateContainer, children: null });
+  return jsx(require(7175) /* ActionSheet */.ActionSheet, { style: tmp.templateContainer, children: null });
 };

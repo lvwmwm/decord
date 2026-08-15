@@ -1,10 +1,10 @@
-// Module ID: 11184
-// Function ID: 11185
+// Module ID: 10885
+// Function ID: 10886
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4334, 5237, 1391, 4584, 1922, 21, 4342, 712, 589, 1435, 5421, 1236, 4909, 4338, 7287, 5488, 8390, 5789, 11185, 8844, 7289, 4534, 4187, 5435, 1297, 9194, 8846, 4083, 4343, 7811, 4278, 1363, 11186, 11187, 5809, 4310, 5458, 2]
+// Dependencies: [32, 5, 19, 17, 4662, 6727, 1391, 4994, 1922, 21, 4661, 712, 589, 1435, 6930, 1236, 5433, 4734, 7508, 6377, 8429, 7139, 10886, 10458, 7510, 4796, 4219, 6291, 1297, 9966, 8929, 4115, 4664, 8029, 4310, 1363, 10887, 10888, 7159, 4342, 6950, 2]
 // Exports: default
 
-// Module 11184 (PollEmoji)
+// Module 10885 (PollEmoji)
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import importAllResult from "LegacyBaseButton";
@@ -50,7 +50,7 @@ function PollEmoji(emoji) {
     }
   });
   obj = { style: emoji.style, src: stateFromStores, name: emoji.name, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emojiImage };
-  return callback(importDefault(5421), obj);
+  return callback(importDefault(6930), obj);
 }
 function PollVotesHeader(message) {
   message = message.message;
@@ -79,7 +79,7 @@ function PollVotesHeader(message) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ function PollVotesHeader(message) {
               }
               scrollWidth.current = true;
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
           const current2 = v0.current;
@@ -336,25 +336,25 @@ function NoResults() {
   const tmp = callback3();
   let obj = { style: tmp.noResultsContainer, children: null };
   obj = { style: tmp.noResultsImage, source: null };
-  const tmp4 = importDefault(4278)();
+  const tmp4 = importDefault(4310)();
   const tmp5 = closure_15;
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11186);
+    let tmp2Result = tmp2(10887);
   } else {
-    tmp2Result = tmp2(11187);
+    tmp2Result = tmp2(10888);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];
   obj = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp9(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.vhQK3o);
-  items[1] = closure_14(require(4338) /* Text */.Text, obj);
+  items[1] = closure_14(require(4734) /* Text */.Text, obj);
   const obj1 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: null };
   const intl2 = tmp9(1236).intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.bwytdh);
-  items[2] = closure_14(require(4338) /* Text */.Text, obj1);
+  items[2] = closure_14(require(4734) /* Text */.Text, obj1);
   obj[1] = items;
   return tmp5(tmp6, obj);
 }
@@ -426,15 +426,15 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
     obj1[0] = tmp.answerText;
     obj1[2] = str;
     obj1[4] = answer.poll_media.text;
-    tmp11 = callback(tmp3(4338).Text, obj1);
+    tmp11 = callback(tmp3(4734).Text, obj1);
   }
   items2[1] = tmp11;
   const obj2 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };
   const items3 = [" ", "(", num.toLocaleString(), ")"];
   obj2[3] = items3;
-  items2[2] = closure_15(answer(4338).Text, obj2);
+  items2[2] = closure_15(answer(4734).Text, obj2);
   obj[6] = items2;
-  return closure_15(answer(4909).PressableHighlight, obj);
+  return closure_15(answer(5433).PressableHighlight, obj);
 });
 let closure_20 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 let result = require("noop").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");

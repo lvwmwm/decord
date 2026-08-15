@@ -1,9 +1,9 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14847
+// Function ID: 14848
 // Name: _serializeIntlData
-// Dependencies: [5, 17, 676, 21, 644, 705, 1625, 1239, 1273, 1236, 500, 530, 4062, 4298, 10421, 13955, 14167, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 1626, 1239, 1273, 1236, 500, 530, 4094, 4330, 10669, 13987, 14199, 2]
 
-// Module 14807 (_serializeIntlData)
+// Module 14847 (_serializeIntlData)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "set";
 import ME from "ME";
@@ -28,7 +28,7 @@ function _serializeIntlData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ function _serializeIntlData() {
             str = "iOS";
           }
           obj7[1] = str;
-          obj = lib(1625);
+          obj = lib(1626);
           lib = obj.getConstants();
           let str3 = "N/A";
           if (str2.trim().length > 0) {
@@ -167,7 +167,7 @@ function _handleUploadIntlDataSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -220,9 +220,9 @@ function _handleUploadIntlDataSettingPress() {
         } else {
           if (2 === tmp9) {
             dependencyMap = 1;
-            let obj5 = callback(4062);
+            let obj5 = callback(4094);
             const obj1 = { key: "USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", IconComponent: null, content: "Failed to upload internationalization data." };
-            obj1[1] = ANDROID_APP(4298).CircleInformationIcon;
+            obj1[1] = ANDROID_APP(4330).CircleInformationIcon;
             obj5.open(obj1);
             dependencyMap = 0;
             (function onUploadIntlDataRequestFinish() {
@@ -262,9 +262,9 @@ function _handleUploadIntlDataSettingPress() {
             c5 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = callback(4062);
+            obj = callback(4094);
             obj5 = { key: "USER_SETTINGS_INTL_DATA_UPLOADED", IconComponent: null, content: "Internationalization data uploaded successfully." };
-            obj5[1] = ANDROID_APP(4298).CircleInformationIcon;
+            obj5[1] = ANDROID_APP(4330).CircleInformationIcon;
             obj.open(obj5);
             dependencyMap = 1;
           }

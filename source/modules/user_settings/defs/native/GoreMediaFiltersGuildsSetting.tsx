@@ -1,9 +1,9 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14190
+// Function ID: 14191
 // Name: pressable
-// Dependencies: [8148, 8102, 14149, 14145, 7129, 5979, 14146, 1236, 1306, 10421, 2]
+// Dependencies: [8198, 8152, 14181, 14177, 5001, 5025, 14178, 1236, 1306, 10669, 2]
 
-// Module 14158 (pressable)
+// Module 14190 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -11,13 +11,13 @@ const pressable = createToggle.createPressable({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["FP+a42"]);
   },
-  parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
+  parent: require("MobileUserSettings").MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14145) /* useExplicitContentSettingOrDefault */;
-    return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14177) /* useExplicitContentSettingOrDefault */;
+    return require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5979) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5025) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, excluded: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -31,11 +31,11 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14178) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8102) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8102) /* useUserIsTeen */;
+    let userIsTeen = require(8152) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8152) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }
@@ -56,13 +56,13 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["FP+a42"]);
   },
-  parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
+  parent: require("MobileUserSettings").MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14145) /* useExplicitContentSettingOrDefault */;
-    return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14177) /* useExplicitContentSettingOrDefault */;
+    return require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5979) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5025) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, excluded: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -76,11 +76,11 @@ let obj = {
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14178) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8102) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8102) /* useUserIsTeen */;
+    let userIsTeen = require(8152) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8152) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

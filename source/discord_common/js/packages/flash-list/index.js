@@ -1,15 +1,15 @@
-// Module ID: 7811
-// Function ID: 7812
+// Module ID: 8029
+// Function ID: 8030
 // Name: noop
-// Dependencies: [19, 17, 21, 500, 5685, 4083, 5684, 5460, 2]
+// Dependencies: [19, 17, 21, 500, 7036, 4115, 7035, 6952, 2]
 
-// Module 7811 (noop)
+// Module 8029 (noop)
 import importAllResult from "noop";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_4083";
-import importDefaultResult1 from "module_4083";
+import importDefaultResult from "module_4115";
+import importDefaultResult1 from "module_4115";
 import set from "jsxProd";
 
 const require = arg1;
@@ -24,9 +24,9 @@ function noop() {
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj = { maintainVisibleContentPosition: obj, ref };
   const merged = Object.assign(arg0);
-  return jsx(require(5685).FlashList, { maintainVisibleContentPosition: obj, ref });
+  return jsx(require(7036).FlashList, { maintainVisibleContentPosition: obj, ref });
 });
-let closure_8 = require("module_4083").createAnimatedComponent(require("module_5685").FlashList);
+let closure_8 = require("module_4115").createAnimatedComponent(require("module_7036").FlashList);
 const forwardRefResult1 = importAllResult.forwardRef((arg0, ref) => {
   obj = { maintainVisibleContentPosition: obj, ref };
   const merged = Object.assign(arg0);
@@ -36,9 +36,9 @@ const forwardRefResult2 = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0, Object.create(null));
   obj = { ref, maintainVisibleContentPosition: obj, masonry: true };
   const merged1 = Object.assign(merged);
-  return jsx(require(5685).FlashList, { ref, maintainVisibleContentPosition: obj, masonry: true });
+  return jsx(require(7036).FlashList, { ref, maintainVisibleContentPosition: obj, masonry: true });
 });
-let closure_9 = require("module_4083").createAnimatedComponent(require("module_5685").FlashList);
+let closure_9 = require("module_4115").createAnimatedComponent(require("module_7036").FlashList);
 const forwardRefResult3 = importAllResult.forwardRef((arg0, ref) => {
   let preventNativeModalDismiss;
   let refreshControl;
@@ -64,12 +64,12 @@ const forwardRefResult3 = importAllResult.forwardRef((arg0, ref) => {
   obj = { ref, maintainVisibleContentPosition: obj };
   const merged1 = Object.assign(merged);
   obj.refreshControl = memo;
-  return jsx(refreshControl(5684), { ref, maintainVisibleContentPosition: obj });
+  return jsx(refreshControl(7035), { ref, maintainVisibleContentPosition: obj });
 });
 const result = set.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10063 in require("module_5685")) {
+for (const key10063 in require("module_7036")) {
   let tmp8 = key10063;
-  arg5[key10063] = require("module_5685")[key10063];
+  arg5[key10063] = require("module_7036")[key10063];
   continue;
 }
 
@@ -101,7 +101,7 @@ export const BottomSheetMasonryFlashList = importAllResult.forwardRef((arg0, ref
     }
     return tmp2;
   }, items);
-  obj[3] = preventNativeModalDismiss(5460).BottomSheetScrollView;
+  obj[3] = preventNativeModalDismiss(6952).BottomSheetScrollView;
   const merged1 = Object.assign(merged);
   obj.refreshControl = memo;
   return <closure_9 ref={arg1} maintainVisibleContentPosition={obj} masonry renderScrollComponent={null} />;

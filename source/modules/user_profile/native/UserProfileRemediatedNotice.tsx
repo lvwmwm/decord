@@ -1,10 +1,10 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12351
+// Function ID: 12352
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 3998, 676, 21, 4342, 712, 8898, 647, 4338, 1236, 9307, 2]
+// Dependencies: [19, 17, 4030, 676, 21, 4661, 712, 8982, 647, 4734, 1236, 9736, 2]
 // Exports: default
 
-// Module 12600 (RemediatedUserNotice)
+// Module 12351 (RemediatedUserNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -40,7 +40,7 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1236).intl;
       obj[3] = intl.string(tmp4(1236).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4338).Text, obj);
+      isBlocked = callback(tmp4(4734).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -48,7 +48,7 @@ export default function RemediatedUserNotice(user) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1236).intl;
       obj2[3] = intl2.string(tmp4(1236).t.HXz5An);
-      const items3 = [callback(tmp4(4338).Text, obj2), callback(tmp4(4338).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(tmp4(4734).Text, obj2), callback(tmp4(4734).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1236).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {

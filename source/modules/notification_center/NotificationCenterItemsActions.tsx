@@ -1,10 +1,10 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15670
+// Function ID: 15671
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7168, 676, 709, 4562, 503, 1404, 7170, 530, 4034, 2]
+// Dependencies: [5, 4801, 676, 709, 5227, 503, 1404, 4967, 530, 4066, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15620 (_fetchNotificationCenterItems)
+// Module 15670 (_fetchNotificationCenterItems)
 import encodeProperties from "encodeProperties";
 import _validate from "_validate";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ function _fetchNotificationCenterItems() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ function _fetchNotificationCenterItems() {
               c6 = 3;
               c7 = 1;
               let obj6 = { value: null, done: false };
-              obj6[0] = callback(4562).get(obj3);
+              obj6[0] = callback(5227).get(obj3);
               return obj6;
             }
           } else if (2 === tmp7) {
@@ -310,7 +310,7 @@ function _deleteNotificationCenterItem() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -379,7 +379,7 @@ function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           encodeProperties = tmp19;
@@ -435,7 +435,7 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
     importDefault(709).dispatch(obj);
     const obj4 = importDefault(709);
   } else {
-    obj = require(7170) /* getRelativeTimestamp */;
+    obj = require(4967) /* getRelativeTimestamp */;
     if (obj.isMentionItem(local_id)) {
       obj = { type: "NOTIFICATION_CENTER_ITEMS_ACK", optimistic: true, ids: null };
       const items1 = [local_id.id];

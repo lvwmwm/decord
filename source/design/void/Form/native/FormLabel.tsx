@@ -1,10 +1,10 @@
-// Module ID: 5448
-// Function ID: 5449
+// Module ID: 6940
+// Function ID: 6941
 // Name: FormLabel
-// Dependencies: [19, 21, 4338, 2]
+// Dependencies: [19, 21, 4734, 2]
 // Exports: default
 
-// Module 5448 (FormLabel)
+// Module 6940 (FormLabel)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -23,5 +23,5 @@ export default function FormLabel(children) {
   if (color === undefined) {
     color = "mobile-text-heading-primary";
   }
-  return jsx(require(4338) /* Text */.Text, { variant: "heading-md/semibold", color, lineClamp, style, maxFontSizeMultiplier: 2, accessible, children: children.text });
+  return jsx(require(4734) /* Text */.Text, { variant: "heading-md/semibold", color, lineClamp, style, maxFontSizeMultiplier: 2, accessible, children: children.text });
 };

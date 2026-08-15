@@ -1,10 +1,10 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13362
+// Function ID: 13363
 // Name: _sendShareMessage
-// Dependencies: [5, 4703, 4335, 4062, 8675, 8427, 7303, 4914, 4913, 7210, 8412, 6986, 2]
+// Dependencies: [5, 4825, 4663, 4094, 10455, 8466, 7524, 4829, 4828, 7436, 8451, 7427, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13330 (_sendShareMessage)
+// Module 13362 (_sendShareMessage)
 import dispatcher from "dispatcher";
 import { DraftType } from "handleChanged";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
@@ -31,7 +31,7 @@ function _sendShareMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,13 +79,13 @@ function _sendShareMessage() {
               if (dependencyMap == null) {
                 lib2 = "";
               }
-              constants = lib2(7210).parse(lib2, lib2);
+              constants = lib2(7436).parse(lib2, lib2);
               if (c4.length > 0) {
-                let obj2 = lib2(8427);
+                let obj2 = lib2(8466);
                 obj2.clearAll(id, c4.ChannelMessage);
               }
-              future = new lib(8412).Future();
-              let obj3 = lib2(6986);
+              future = new lib(8451).Future();
+              let obj3 = lib2(7427);
               obj2 = { location: null, doNotNotifyOnError: true, attachmentsToUpload: null, onAttachmentUploadError: null };
               obj2[0] = constants.SHARE_MODAL;
               obj2[2] = c4;
@@ -138,8 +138,8 @@ function _sendShareMessage() {
 const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
 export const showInformationToast = function showInformationToast(intl3) {
-  let obj = importDefault(4062);
-  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(8675) };
+  let obj = importDefault(4094);
+  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(10455) };
   obj.open(obj);
 };
 export const sendShareMessage = function sendShareMessage(arg0) {

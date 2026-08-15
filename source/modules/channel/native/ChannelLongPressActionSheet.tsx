@@ -1,10 +1,10 @@
-// Module ID: 9727
-// Function ID: 9728
+// Module ID: 9920
+// Function ID: 9921
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 9728, 6009, 1396, 5285, 1395, 5321, 1391, 7056, 1910, 3989, 3998, 1979, 4550, 1922, 676, 9729, 21, 7839, 2007, 4576, 1236, 9730, 8846, 4284, 4355, 4535, 4705, 9732, 9733, 4286, 4572, 9744, 3047, 9764, 1222, 9766, 9768, 9782, 9128, 9784, 5317, 4198, 5387, 9786, 8028, 9787, 9788, 9790, 8568, 5314, 9792, 9200, 5323, 5318, 9794, 8082, 4865, 9796, 9797, 4888, 4863, 4310, 9798, 12213, 4570, 7840, 8832, 8086, 8566, 5293, 6075, 4290, 9059, 9609, 5817, 4061, 5789, 5809, 9770, 589, 1399, 7064, 8473, 4034, 5840, 1297, 12214, 10256, 12215, 5825, 1624, 10257, 5827, 2]
+// Dependencies: [5, 19, 9921, 5268, 1396, 4969, 1395, 5270, 1391, 5271, 1910, 4021, 4030, 1979, 5043, 1922, 676, 9922, 21, 8057, 2007, 8663, 1236, 9923, 8929, 4316, 4770, 4984, 4827, 9925, 9926, 4318, 5260, 9947, 3079, 9813, 1222, 9975, 9977, 9991, 8918, 9993, 6794, 4230, 6368, 9995, 8078, 9996, 9997, 9999, 8607, 5277, 10001, 10003, 6798, 6795, 10004, 8132, 6869, 10006, 10007, 6892, 6867, 4342, 10008, 11956, 8666, 8058, 9435, 8136, 8605, 6778, 7355, 4322, 8849, 9563, 7167, 4093, 7139, 7159, 9979, 589, 1399, 5282, 8512, 4066, 7188, 1297, 11957, 10515, 11958, 7175, 1625, 10516, 7177, 2]
 // Exports: default
 
-// Module 9727 (handleVoiceOrStageChannelConnectPress)
+// Module 9920 (handleVoiceOrStageChannelConnectPress)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import connectToStage from "connectToStage";
 import { SafetyWarningTypes } from "handleConnectionOpen";
@@ -67,7 +67,7 @@ function _handleVoiceOrStageChannelConnectPress() {
           obj[0] = openGuildVoiceModal;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -711,7 +711,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -744,7 +744,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   } else {
                     arg1.openEndStageModal(closure_0);
                     paths = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp10) {
                   paths = tmp;

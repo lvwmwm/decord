@@ -1,9 +1,9 @@
-// Module ID: 16988
-// Function ID: 16989
+// Module ID: 17034
+// Function ID: 17035
 // Name: _fetch
-// Dependencies: [7228, 687, 5322, 10437, 1208, 10438, 500, 10462, 16989, 2]
+// Dependencies: [7453, 687, 5038, 10685, 1208, 10477, 500, 10501, 17035, 2]
 
-// Module 16988 (_fetch)
+// Module 17034 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 
@@ -106,7 +106,7 @@ class QuestFetchManager extends tmp2 {
   }
 }
 QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
-  let obj = require(10437) /* getIsEligibleForQuests */;
+  let obj = require(10685) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     isEligibleForQuests = !initializeState.isFetchingCurrentQuests;
@@ -122,12 +122,12 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
     obj[4] = initializeState.isFetchingCurrentQuests;
     obj[2] = obj;
     importDefault(1208).addBreadcrumb(obj);
-    let tmpResult = tmp(10438);
+    let tmpResult = tmp(10477);
     const currentQuests = tmpResult.fetchCurrentQuests();
     tmpResult = tmp(500);
     if (tmpResult.isMac()) {
-      const state = tmp6(10462).getState();
-      const tmp6Result = tmp6(10462);
+      const state = tmp6(10501).getState();
+      const tmp6Result = tmp6(10501);
     }
     const obj2 = importDefault(1208);
     tmp6 = importDefault;

@@ -1,9 +1,9 @@
-// Module ID: 14091
-// Function ID: 14092
+// Module ID: 14123
+// Function ID: 14124
 // Name: pressable
-// Dependencies: [1922, 8148, 589, 8522, 10421, 1236, 2]
+// Dependencies: [1922, 8198, 589, 8561, 10669, 1236, 2]
 
-// Module 14091 (pressable)
+// Module 14123 (pressable)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["w/qqKK"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountEmailSettingTrailing() {
     const items = [mergeGuildAvatar];
     return require(589) /* initialize */.useStateFromStores(items, () => {
@@ -26,7 +26,7 @@ createToggle = {
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    importDefault(8522).open(true);
+    importDefault(8561).open(true);
   },
   withArrow: true
 };

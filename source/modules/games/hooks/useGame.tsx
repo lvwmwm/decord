@@ -1,10 +1,10 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 5378
+// Function ID: 5379
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4366, 676, 589, 687, 5989, 2]
+// Dependencies: [5, 19, 4505, 676, 589, 687, 5379, 2]
 // Exports: useGames
 
-// Module 5988 (importDefaultResult1)
+// Module 5378 (importDefaultResult1)
 import noop from "noop";
 import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";
@@ -49,7 +49,7 @@ let closure_2 = require("set")((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let closure_2 = require("set")((arg0) => {
           return obj;
         }
         table = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         table = tmp;
         throw tmp9;

@@ -1,10 +1,10 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16756
+// Function ID: 16757
 // Name: ConnectedGuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 1391, 1910, 1979, 1922, 16711, 676, 21, 4342, 712, 1499, 589, 16713, 4187, 1236, 5822, 16720, 16730, 6072, 16721, 5884, 5435, 4338, 5442, 1297, 16731, 5775, 2]
+// Dependencies: [32, 19, 17, 1391, 1910, 1979, 1922, 16757, 676, 21, 4661, 712, 1500, 589, 16759, 4219, 1236, 7172, 16766, 16776, 5432, 16767, 5446, 6291, 4734, 6297, 1297, 16777, 6550, 2]
 // Exports: default
 
-// Module 16710 (ConnectedGuildSettingsModalAuditLog)
+// Module 16756 (ConnectedGuildSettingsModalAuditLog)
 import _slicedToArray from "_slicedToArray";
 import ApplicationHook from "ApplicationHook";
 import get_ActivityIndicator from "showSimpleActionSheet";

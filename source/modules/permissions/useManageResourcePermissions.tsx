@@ -1,10 +1,10 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 8839
+// Function ID: 8840
 // Name: canManageResource
-// Dependencies: [32, 19, 3989, 1922, 9048, 505, 506, 1430, 589, 2]
+// Dependencies: [32, 19, 4021, 1922, 8838, 505, 506, 1430, 589, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions, useManageResourcePermissions
 
-// Module 9049 (canManageResource)
+// Module 8839 (canManageResource)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

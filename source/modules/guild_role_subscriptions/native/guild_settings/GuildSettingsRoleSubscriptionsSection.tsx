@@ -1,10 +1,10 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 16746
+// Function ID: 16747
 // Name: HasCreatedListingsSection
-// Dependencies: [19, 1434, 1922, 676, 21, 589, 5828, 1236, 5435, 16701, 16702, 16703, 16704, 5942, 2]
+// Dependencies: [19, 1434, 1922, 676, 21, 589, 6286, 1236, 6291, 16747, 16748, 16749, 16750, 7226, 2]
 // Exports: default
 
-// Module 16700 (HasCreatedListingsSection)
+// Module 16746 (HasCreatedListingsSection)
 import "noop";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -30,47 +30,47 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["/CfKoD"]);
   const obj1 = { source: null };
-  obj1[0] = importDefault(16701);
-  obj[2] = callback(require(5435) /* TableRowInner */.TableRow.Icon, obj1);
+  obj1[0] = importDefault(16747);
+  obj[2] = callback(require(6291) /* TableRowInner */.TableRow.Icon, obj1);
   obj[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
   };
-  const items1 = [callback(require(5435) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
+  const items1 = [callback(require(6291) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
   const obj2 = { label: null, arrow: true, icon: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.pXbGYc);
   const obj3 = { source: null };
-  obj3[0] = importDefault(16702);
-  obj2[2] = callback(require(5435) /* TableRowInner */.TableRow.Icon, obj3);
+  obj3[0] = importDefault(16748);
+  obj2[2] = callback(require(6291) /* TableRowInner */.TableRow.Icon, obj3);
   obj2[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
   };
-  items1[1] = callback(require(5435) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
+  items1[1] = callback(require(6291) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
   if (stateFromStores) {
     const obj4 = { label: null, arrow: true, icon: null, onPress: null };
     const intl4 = tmp(1236).intl;
     obj4[0] = intl4.string(tmp(1236).t.p2Rsdl);
     const obj5 = { source: null };
-    obj5[0] = tmp6(16703);
-    obj4[2] = tmp5(tmp(5435).TableRow.Icon, obj5);
+    obj5[0] = tmp6(16749);
+    obj4[2] = tmp5(tmp(6291).TableRow.Icon, obj5);
     obj4[3] = function onPress() {
       return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = tmp5(tmp(5435).TableRow, obj4, "guild-role-subscriptions-payments");
+    stateFromStores = tmp5(tmp(6291).TableRow, obj4, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj6 = { label: null, arrow: true, icon: null, onPress: null };
   const intl5 = tmp(1236).intl;
   obj6[0] = intl5.string(require(1236) /* getSystemLocale */.t.C5Dbwn);
   const obj7 = { source: null };
-  obj7[0] = importDefault(16704);
-  obj6[2] = callback(require(5435) /* TableRowInner */.TableRow.Icon, obj7);
+  obj7[0] = importDefault(16750);
+  obj6[2] = callback(require(6291) /* TableRowInner */.TableRow.Icon, obj7);
   obj6[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
   };
-  items1[3] = callback(require(5435) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
+  items1[3] = callback(require(6291) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
   obj[2] = items1;
-  return closure_8(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return closure_8(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ GuildFeatures: c5, GuildSettingsSections: closure_6 } = ME);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -78,7 +78,7 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = require(5942) /* computeGuildRoleSubscriptionSettingsVisibility */;
+  let obj = require(7226) /* computeGuildRoleSubscriptionSettingsVisibility */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;

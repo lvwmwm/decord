@@ -1,10 +1,10 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15375
+// Function ID: 15376
 // Name: ThreadChannel
-// Dependencies: [19, 17, 3991, 1391, 3989, 4357, 1979, 1922, 4361, 4417, 9855, 676, 4551, 1235, 21, 4342, 712, 7901, 4783, 589, 11741, 4353, 9956, 15326, 15328, 9096, 15331, 1297, 15333, 15342, 4527, 2]
+// Dependencies: [19, 17, 4023, 1391, 4021, 4772, 1979, 1922, 4542, 4545, 10055, 676, 5044, 1235, 21, 4661, 712, 6571, 4751, 589, 11461, 4768, 10161, 15376, 15378, 8886, 15381, 1297, 15383, 15392, 4979, 2]
 // Exports: default
 
-// Module 15325 (ThreadChannel)
+// Module 15375 (ThreadChannel)
 import importAllResult from "initialize";
 import { View } from "inlineStyles";
 import storeThread from "storeThread";
@@ -240,8 +240,8 @@ let closure_21 = importAllResult.memo((arg0) => {
   obj = { position: "absolute", left: 23, top: null };
   obj[2] = callback(fontScale) / 2 - 16 + 2;
   obj[2] = obj;
-  obj[3] = callback2(require(7901) /* inlineStyles */.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
-  return callback2(importDefault(7901), obj);
+  obj[3] = callback2(require(6571) /* inlineStyles */.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
+  return callback2(importDefault(6571), obj);
 });
 let obj2 = { backgroundColor: require("Themes").colors.SPINE_DEFAULT, width: 2, position: "absolute", left: 23 };
 const result = require("storeThread").fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");

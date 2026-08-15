@@ -1,10 +1,10 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7531
+// Function ID: 7532
 // Name: _generateAnimationSource
-// Dependencies: [5, 32, 19, 17, 4006, 7311, 1435, 500, 7348, 2]
+// Dependencies: [5, 32, 19, 17, 4038, 7532, 1435, 500, 7569, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 7310 (_generateAnimationSource)
+// Module 7531 (_generateAnimationSource)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -35,7 +35,7 @@ function _generateAnimationSource() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -68,13 +68,13 @@ function _generateAnimationSource() {
               const obj1 = {};
               const merged = Object.assign(items);
               obj1.animated = false;
-              const emojiUrl = lib(4006).getEmojiUrl(obj1, 128);
+              const emojiUrl = lib(4038).getEmojiUrl(obj1, 128);
               noop = emojiUrl;
               if (emojiUrl == null) {
                 noop = "";
               }
               items = noop;
-              const obj12 = lib(7311);
+              const obj12 = lib(7532);
               c9 = 2;
               c10 = 1;
               let obj2 = { value: null, done: false };
@@ -167,7 +167,7 @@ function _generateAnimationSource() {
               obj9[0] = c9;
               obj9[1] = c10;
               obj9[2] = closure_11;
-              closure_6 = lib(7348).replaceAnimationColors(closure_6, obj9);
+              closure_6 = lib(7569).replaceAnimationColors(closure_6, obj9);
               const _JSON2 = JSON;
               dependencyMap2 = 0;
               c10 = 3;
@@ -233,7 +233,7 @@ function _generateAnimationSourceFromLocalImage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -332,7 +332,7 @@ function _generateAnimationSourceFromLocalImage() {
             obj6[0] = closure_8;
             obj6[1] = closure_9;
             obj6[2] = closure_10;
-            c5 = lib(7348).replaceAnimationColors(c5, obj6);
+            c5 = lib(7569).replaceAnimationColors(c5, obj6);
             const _JSON = JSON;
             c4 = 0;
             c6 = 3;
@@ -390,7 +390,7 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -488,7 +488,7 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -536,7 +536,7 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
               closure_0 = arg1;
               v0(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp14) {
             c3 = tmp;

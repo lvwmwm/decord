@@ -1,10 +1,10 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10179
+// Function ID: 10180
 // Name: MediaPostThumbnailActionSheet
-// Dependencies: [19, 17, 1388, 21, 4342, 712, 1628, 5458, 5460, 4338, 1236, 1297, 4777, 2]
+// Dependencies: [19, 17, 1388, 21, 4661, 712, 1629, 6950, 6952, 4734, 1236, 1297, 4745, 2]
 // Exports: default
 
-// Module 9974 (MediaPostThumbnailActionSheet)
+// Module 10179 (MediaPostThumbnailActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -40,25 +40,25 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.container, children: null };
   obj = { contentContainerStyle: items, children: null };
-  items = [tmp.contentContainer, { paddingBottom: importDefault(1628)().bottom }];
+  items = [tmp.contentContainer, { paddingBottom: importDefault(1629)().bottom }];
   const obj1 = { style: tmp.topContainer, children: null };
   const obj2 = { style: tmp.setAsThumbnailContainer, children: null };
   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1236).intl;
   obj3[2] = intl.string(markAsDismissed(1236).t.ews2pj);
-  const items1 = [callback(markAsDismissed(4338).Text, obj3), callback(markAsDismissed(1297).Checkbox, { selected: true })];
+  const items1 = [callback(markAsDismissed(4734).Text, obj3), callback(markAsDismissed(1297).Checkbox, { selected: true })];
   obj2[1] = items1;
   obj1[1] = callback2(View, obj2);
   const items2 = [callback(View, obj1), , , , , ];
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl2 = markAsDismissed(1236).intl;
   obj4[3] = intl2.string(markAsDismissed(1236).t.WJisip);
-  items2[1] = callback(markAsDismissed(4338).Text, obj4);
+  items2[1] = callback(markAsDismissed(4734).Text, obj4);
   items2[2] = callback(markAsDismissed(1297).Spacer, { size: 12 });
   const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
   const intl3 = markAsDismissed(1236).intl;
   obj5[3] = intl3.string(markAsDismissed(1236).t.X6ZH6d);
-  items2[3] = callback(markAsDismissed(4338).Text, obj5);
+  items2[3] = callback(markAsDismissed(4734).Text, obj5);
   items2[4] = callback(markAsDismissed(1297).Spacer, { size: 48 });
   const obj6 = { text: null, grow: true, onPress: null };
   const intl4 = markAsDismissed(1236).intl;
@@ -66,9 +66,9 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   obj6[2] = function onPress() {
     return markAsDismissed(outer1_4.UNKNOWN);
   };
-  items2[5] = callback(markAsDismissed(4777).Button, obj6);
+  items2[5] = callback(markAsDismissed(4745).Button, obj6);
   obj[1] = items2;
-  obj[1] = callback2(markAsDismissed(5460).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(6952).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5458).BottomSheet, obj);
+  return callback(markAsDismissed(6950).BottomSheet, obj);
 };

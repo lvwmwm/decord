@@ -1,10 +1,10 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 7927
+// Function ID: 7928
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 6982, 7410, 7710, 589, 7438, 2]
+// Dependencies: [32, 19, 7421, 7628, 7928, 589, 7656, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 7709 (usePromotionMarketingComponent)
+// Module 7927 (usePromotionMarketingComponent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import emitChanges from "emitChanges";
@@ -33,13 +33,6 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
       }
       if (null != trialId) {
         const userTrialOffer = ref.getUserTrialOffer(promotionByTypeAndId.trialId);
-        if (null != userTrialOffer) {
-          if (null != userTrialOffer.expires_at) {
-            const _Date = Date;
-            const _Date2 = Date;
-            const parsed = Date.parse(userTrialOffer.expires_at);
-          }
-        }
         return null;
       }
       return marketingComponentByType;

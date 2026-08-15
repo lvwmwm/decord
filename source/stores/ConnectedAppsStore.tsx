@@ -1,9 +1,9 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5290
+// Function ID: 5291
 // Name: isConnected
 // Dependencies: [589, 12, 709, 2]
 
-// Module 5312 (isConnected)
+// Module 5290 (isConnected)
 import { Store } from "initialize";
 
 let closure_2 = {};

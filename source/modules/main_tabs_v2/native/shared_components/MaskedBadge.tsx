@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 8459
+// Module ID: 8497
+// Function ID: 8498
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4342, 712, 1297, 8459, 2]
+// Dependencies: [19, 21, 4661, 712, 1297, 8498, 2]
 // Exports: default
 
-// Module 8458 (MaskedBadge)
+// Module 8497 (MaskedBadge)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -51,7 +51,7 @@ export default function MaskedBadge(backgroundColor) {
       obj[0] = size;
       obj[1] = backgroundColor;
       obj[2] = tmp.unreadBadge;
-      tmp7Result = jsx(importDefault(8459), { size: null, maskColor: null, style: null });
+      tmp7Result = jsx(importDefault(8498), { size: null, maskColor: null, style: null });
     }
   }
   return tmp7Result;

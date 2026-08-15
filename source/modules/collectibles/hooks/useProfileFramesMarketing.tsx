@@ -1,10 +1,10 @@
-// Module ID: 16113
-// Function ID: 16114
+// Module ID: 16163
+// Function ID: 16164
 // Name: deriveProfileFramesMarketing
-// Dependencies: [1922, 9466, 16114, 9415, 589, 8871, 9467, 2]
+// Dependencies: [1922, 9233, 16164, 589, 8956, 9234, 2]
 // Exports: deriveProfileFramesMarketing, getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 16113 (deriveProfileFramesMarketing)
+// Module 16163 (deriveProfileFramesMarketing)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -14,9 +14,8 @@ export const deriveProfileFramesMarketing = function deriveProfileFramesMarketin
   let canViewProfileFramesInCollectiblesShop;
   let hasPaidTier2;
   let isEarlyAccess;
-  let isFrameGiftingEnabled;
   let isFramesEAMarketingEnabled;
-  ({ canViewProfileFramesInCollectiblesShop, isEarlyAccess, isFramesEAMarketingEnabled, hasPaidTier2, isFrameGiftingEnabled } = arg0);
+  ({ canViewProfileFramesInCollectiblesShop, isEarlyAccess, isFramesEAMarketingEnabled, hasPaidTier2 } = arg0);
   if (canViewProfileFramesInCollectiblesShop) {
     canViewProfileFramesInCollectiblesShop = !isEarlyAccess;
   }
@@ -28,11 +27,7 @@ export const deriveProfileFramesMarketing = function deriveProfileFramesMarketin
     }
     tmp = tmp2;
   }
-  const obj = { isAnnouncementEligible: tmp, isEarlyAccess, showGiftingMarketing: null, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
-  if (canViewProfileFramesInCollectiblesShop) {
-    canViewProfileFramesInCollectiblesShop = isFrameGiftingEnabled;
-  }
-  obj[2] = canViewProfileFramesInCollectiblesShop;
+  const obj = { isAnnouncementEligible: tmp, isEarlyAccess, showGiftingMarketing: canViewProfileFramesInCollectiblesShop, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
   let tmp3 = isEarlyAccess;
   if (isEarlyAccess) {
     tmp3 = isFramesEAMarketingEnabled;
@@ -51,41 +46,35 @@ export const deriveProfileFramesMarketing = function deriveProfileFramesMarketin
   return obj;
 };
 export const useProfileFramesMarketing = function useProfileFramesMarketing(CollectiblesMobileAnnouncementActionSheet) {
-  let obj = require(9466) /* useCanPurchaseFrames */;
+  let obj = require(9233) /* useCanPurchaseFrames */;
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop(CollectiblesMobileAnnouncementActionSheet);
-  let isProfileFramesEarlyAccessPhase = require(9466) /* useCanPurchaseFrames */.useIsProfileFramesEarlyAccessPhase(CollectiblesMobileAnnouncementActionSheet);
-  const obj2 = require(9466) /* useCanPurchaseFrames */;
-  const isProfileFramesEAMarketingEnabled = require(16114) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
-  const obj3 = require(16114) /* apexExperiment */;
-  const isProfileFrameGiftingEnabled = require(9415) /* apexExperiment */.useIsProfileFrameGiftingEnabled(CollectiblesMobileAnnouncementActionSheet);
-  const obj4 = require(9415) /* apexExperiment */;
+  let isProfileFramesEarlyAccessPhase = require(9233) /* useCanPurchaseFrames */.useIsProfileFramesEarlyAccessPhase(CollectiblesMobileAnnouncementActionSheet);
+  const obj2 = require(9233) /* useCanPurchaseFrames */;
+  const isProfileFramesEAMarketingEnabled = require(16164) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
+  const obj3 = require(16164) /* apexExperiment */;
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => callback(table[1]).isUserPaidTier2(currentUser.getCurrentUser()));
-  let tmp6 = canViewProfileFramesInCollectiblesShop;
+  let tmp5 = canViewProfileFramesInCollectiblesShop;
   if (canViewProfileFramesInCollectiblesShop) {
-    tmp6 = !isProfileFramesEarlyAccessPhase;
+    tmp5 = !isProfileFramesEarlyAccessPhase;
   }
-  let tmp7 = tmp6;
-  if (!tmp6) {
-    let tmp8 = isProfileFramesEarlyAccessPhase;
+  let tmp6 = tmp5;
+  if (!tmp5) {
+    let tmp7 = isProfileFramesEarlyAccessPhase;
     if (isProfileFramesEarlyAccessPhase) {
-      tmp8 = isProfileFramesEAMarketingEnabled;
+      tmp7 = isProfileFramesEAMarketingEnabled;
     }
-    tmp7 = tmp8;
+    tmp6 = tmp7;
   }
-  obj = { isAnnouncementEligible: tmp7, isEarlyAccess: isProfileFramesEarlyAccessPhase, showGiftingMarketing: null, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
-  if (tmp6) {
-    tmp6 = isProfileFrameGiftingEnabled;
-  }
-  obj[2] = tmp6;
-  let tmp9 = isProfileFramesEarlyAccessPhase;
+  obj = { isAnnouncementEligible: tmp6, isEarlyAccess: isProfileFramesEarlyAccessPhase, showGiftingMarketing: tmp5, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
+  let tmp8 = isProfileFramesEarlyAccessPhase;
   if (isProfileFramesEarlyAccessPhase) {
-    tmp9 = isProfileFramesEAMarketingEnabled;
+    tmp8 = isProfileFramesEAMarketingEnabled;
   }
-  if (tmp9) {
-    tmp9 = stateFromStores;
+  if (tmp8) {
+    tmp8 = stateFromStores;
   }
-  obj[3] = tmp9;
+  obj[3] = tmp8;
   if (isProfileFramesEarlyAccessPhase) {
     isProfileFramesEarlyAccessPhase = isProfileFramesEAMarketingEnabled;
   }
@@ -96,48 +85,42 @@ export const useProfileFramesMarketing = function useProfileFramesMarketing(Coll
   return obj;
 };
 export const getProfileFramesMarketing = function getProfileFramesMarketing(location) {
-  let obj = importDefault(8871);
+  let obj = importDefault(8956);
   obj = { location };
   let enableProfileFrames = obj.getConfig(obj).enableProfileFrames;
   obj = { location };
-  const bucket = importDefault(9467).getConfig(obj).bucket;
+  const bucket = importDefault(9234).getConfig(obj).bucket;
   let tmp2 = enableProfileFrames;
   if (enableProfileFrames) {
-    tmp2 = bucket !== require(9467) /* apexExperiment */.ProfileFramesPurchaseBucket.CONTROL;
+    tmp2 = bucket !== require(9234) /* apexExperiment */.ProfileFramesPurchaseBucket.CONTROL;
   }
   if (enableProfileFrames) {
-    enableProfileFrames = bucket === require(9467) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
+    enableProfileFrames = bucket === require(9234) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
   }
-  const obj3 = importDefault(9467);
-  const isProfileFramesEAMarketingEnabled = require(16114) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
-  const obj5 = require(16114) /* apexExperiment */;
-  const isProfileFrameGiftingEnabled = require(9415) /* apexExperiment */.getIsProfileFrameGiftingEnabled(location);
-  const obj6 = require(9415) /* apexExperiment */;
-  const isUserPaidTier2Result = require(9466) /* useCanPurchaseFrames */.isUserPaidTier2(currentUser.getCurrentUser());
+  const obj3 = importDefault(9234);
+  const isProfileFramesEAMarketingEnabled = require(16164) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
+  const obj5 = require(16164) /* apexExperiment */;
+  const isUserPaidTier2Result = require(9233) /* useCanPurchaseFrames */.isUserPaidTier2(currentUser.getCurrentUser());
   if (tmp2) {
     tmp2 = !enableProfileFrames;
   }
-  let tmp8 = tmp2;
+  let tmp7 = tmp2;
   if (!tmp2) {
-    let tmp9 = enableProfileFrames;
+    let tmp8 = enableProfileFrames;
     if (enableProfileFrames) {
-      tmp9 = isProfileFramesEAMarketingEnabled;
+      tmp8 = isProfileFramesEAMarketingEnabled;
     }
-    tmp8 = tmp9;
+    tmp7 = tmp8;
   }
-  const obj1 = { isAnnouncementEligible: tmp8, isEarlyAccess: enableProfileFrames, showGiftingMarketing: null, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
-  if (tmp2) {
-    tmp2 = isProfileFrameGiftingEnabled;
-  }
-  obj1[2] = tmp2;
-  let tmp10 = enableProfileFrames;
+  const obj1 = { isAnnouncementEligible: tmp7, isEarlyAccess: enableProfileFrames, showGiftingMarketing: tmp2, showEaPremiumMarketing: null, showEaNonPremiumMarketing: null };
+  let tmp9 = enableProfileFrames;
   if (enableProfileFrames) {
-    tmp10 = isProfileFramesEAMarketingEnabled;
+    tmp9 = isProfileFramesEAMarketingEnabled;
   }
-  if (tmp10) {
-    tmp10 = isUserPaidTier2Result;
+  if (tmp9) {
+    tmp9 = isUserPaidTier2Result;
   }
-  obj1[3] = tmp10;
+  obj1[3] = tmp9;
   if (enableProfileFrames) {
     enableProfileFrames = isProfileFramesEAMarketingEnabled;
   }

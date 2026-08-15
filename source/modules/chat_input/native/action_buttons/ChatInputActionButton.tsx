@@ -1,8 +1,8 @@
-// Module ID: 11685
-// Function ID: 11686
-// Dependencies: [19, 17, 21, 4342, 712, 1367, 4065, 4909, 2]
+// Module ID: 11402
+// Function ID: 11403
+// Dependencies: [19, 17, 21, 4661, 712, 1367, 4097, 5433, 2]
 
-// Module 11685
+// Module 11402
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -55,12 +55,12 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   let obj = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputActionButton" });
   ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
-  const token = require(4065) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj2 = require(4065) /* map */;
+  const token = require(4097) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = require(4097) /* map */;
   const tmp = require;
-  const token1 = require(4065) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const obj3 = require(4065) /* map */;
-  const token2 = require(4065) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token1 = require(4097) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require(4097) /* map */;
+  const token2 = require(4097) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = callback(enabled, token, token1);
   let tmp8;
   if (chatInputFloating) {
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   items1[3] = disabled;
   obj[12] = <IconComponent size="custom" style={items1} />;
-  return jsx(tmp(4909).PressableOpacity, { disabled });
+  return jsx(tmp(5433).PressableOpacity, { disabled });
 }));
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

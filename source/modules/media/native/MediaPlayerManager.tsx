@@ -1,10 +1,10 @@
-// Module ID: 13869
-// Function ID: 13870
+// Module ID: 13901
+// Function ID: 13902
 // Name: _initialize
-// Dependencies: [17, 1390, 4577, 1391, 4584, 3989, 6944, 676, 9820, 13870, 505, 3, 644, 705, 4523, 4198, 709, 500, 643, 6986, 9823, 2]
+// Dependencies: [17, 1390, 8664, 1391, 4994, 4021, 7383, 676, 8703, 13902, 505, 3, 644, 705, 4720, 4230, 709, 500, 643, 7427, 10023, 2]
 // Exports: isPlaybackComplete
 
-// Module 13869 (_initialize)
+// Module 13901 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,20 +28,9 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  const obj = {
-    activeMediaPlayerSource: "HermesInternal",
-    mediaSourceMessage: "PX_16",
-    canAccessMedia: "disabled",
-    isPlaying: false,
-    wasPipClosedByUser: null,
-    progress: null,
-    rate: "ct",
-    showPip: "setInitialState",
-    closePip() {
-      callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
-    },
-    displayedMediaItemIdsPerChannel: "\u{1F469}\u{1F3FE}\u200D\u2764\uFE0F\u200D\u{1F48B}\u200D\u{1F469}\u{1F3FB}",
-    currentlyDisplayedChannelId: true
+  const obj = { activeMediaPlayerSource: "HermesInternal", mediaSourceMessage: "PX_16", canAccessMedia: "disabled", isPlaying: false, wasPipClosedByUser: null, progress: null, rate: "ct", showPip: "#297071", closePip: 0, displayedMediaItemIdsPerChannel: 50, currentlyDisplayedChannelId: null };
+  obj[8] = function closePip() {
+    callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
   };
   obj[9] = {};
   return obj;
@@ -82,7 +71,7 @@ prototype["_initialize"] = function _initialize() {
   this.subscriptions = items;
   let MediaPlayerManager = closure_4.MediaPlayerManager;
   const result = MediaPlayerManager.subscribeToPlaybackEvents();
-  const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.addListener("state", self.updateDisplayState);
   }
@@ -90,7 +79,7 @@ prototype["_initialize"] = function _initialize() {
   participantFromServer.addChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.addChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.addChangeListener(self.updateMediaPermissions);
-  const obj2 = require(4198) /* getRootNavigationRef */;
+  const obj2 = require(4230) /* getRootNavigationRef */;
   const tmp2 = require;
   const subscription = importDefault(709).subscribe("LOGOUT", self.userDidClosePip);
   const obj4 = importDefault(709);
@@ -142,7 +131,7 @@ prototype["_terminate"] = function _terminate() {
   const subscriptions = this.subscriptions;
   const item = subscriptions.forEach((remove) => remove.remove());
   this.subscriptions = [];
-  const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.removeListener("state", self.updateDisplayState);
   }
@@ -157,7 +146,7 @@ prototype["_terminate"] = function _terminate() {
   participantFromServer.removeChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.removeChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.removeChangeListener(self.updateMediaPermissions);
-  const obj = require(4198) /* getRootNavigationRef */;
+  const obj = require(4230) /* getRootNavigationRef */;
   importDefault(709).unsubscribe("LOGOUT", self.userDidClosePip);
 };
 prototype["pauseCurrentPlayer"] = function pauseCurrentPlayer(arg0) {
@@ -351,13 +340,13 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
         const obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(6986).fetchMessage(obj);
+        const message1 = self(7427).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(6986);
+        const obj2 = self(7427);
       }
       obj4 = message;
     }

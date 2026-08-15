@@ -1,10 +1,10 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 9530
+// Function ID: 9531
 // Name: GuildProfileGameRow
-// Dependencies: [19, 17, 21, 9336, 9347, 5435, 12288, 4342, 12292, 12293, 7470, 1236, 4310, 9317, 2007, 5458, 5460, 5828, 2]
+// Dependencies: [19, 17, 21, 9519, 9101, 6291, 9524, 4661, 9528, 9529, 7688, 1236, 4342, 9510, 2007, 6950, 6952, 6286, 2]
 // Exports: default
 
-// Module 12294 (GuildProfileGameRow)
+// Module 9530 (GuildProfileGameRow)
 import noop from "noop";
 import { View } from "TableRowGroupTitle";
 import { jsx } from "jsxProd";
@@ -17,15 +17,15 @@ function GuildProfileGameRow(activityLevel) {
   ({ game, clickable } = activityLevel);
   let _require;
   let obj = { gameId: game.id, source: null, trackEntryPointImpression: null };
-  obj[1] = _require(9347).GameProfileSources.GuildProfileGames;
+  obj[1] = _require(9101).GameProfileSources.GuildProfileGames;
   obj[2] = clickable;
-  const tmp3Result = importDefault(9336)(obj);
+  const tmp3Result = importDefault(9519)(obj);
   _require = tmp3Result;
   if (clickable) {
     clickable = null != tmp3Result;
   }
   obj = { icon: null, label: null, arrow: null, onPress: null };
-  obj[0] = jsx(importDefault(12288), { game, activityLevel: activityLevel.activityLevel });
+  obj[0] = jsx(importDefault(9524), { game, activityLevel: activityLevel.activityLevel });
   obj[1] = game.name;
   obj[2] = clickable;
   let fn;
@@ -33,7 +33,7 @@ function GuildProfileGameRow(activityLevel) {
     fn = () => _undefined();
   }
   obj[3] = fn;
-  return jsx(_require(5435).TableRow, { icon: null, label: null, arrow: null, onPress: null });
+  return jsx(_require(6291).TableRow, { icon: null, label: null, arrow: null, onPress: null });
 }
 let closure_7 = createCacheKey.createStyles({ container: { padding: 16, paddingBottom: 48 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");

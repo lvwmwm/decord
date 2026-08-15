@@ -1,9 +1,9 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 11805
+// Function ID: 11806
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4342, 7470, 8498, 4168, 4062, 1236, 6060, 712, 4310, 5458, 5389, 8042, 5212, 4777, 2]
+// Dependencies: [5, 32, 19, 21, 4661, 7688, 8537, 4200, 4094, 1236, 7341, 712, 4342, 6950, 6803, 8092, 6687, 4745, 2]
 
-// Module 12072 (JoinRequestRejectionReasonActionSheet)
+// Module 11805 (JoinRequestRejectionReasonActionSheet)
 import useBottomSheetRef from "useBottomSheetRef";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
@@ -51,7 +51,7 @@ class JoinRequestRejectionReasonActionSheet {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

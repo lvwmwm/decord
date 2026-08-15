@@ -1,9 +1,9 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 14846
+// Function ID: 14847
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9925, 4062, 4298, 1236, 10421, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 10131, 4094, 4330, 1236, 10669, 2]
 
-// Module 14806 (_handleUploadDebugLogSettingPress)
+// Module 14846 (_handleUploadDebugLogSettingPress)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { DebugLogCategory } from "ME";
@@ -26,7 +26,7 @@ function _handleUploadDebugLogSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -70,9 +70,9 @@ function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj1 = callback2(4062);
+            let obj1 = callback2(4094);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4298).CircleInformationIcon;
+            obj1[1] = callback(4330).CircleInformationIcon;
             const intl = callback(1236).intl;
             obj1[2] = intl.string(callback(1236).t.VzHcSm);
             obj1.open(obj1);
@@ -87,12 +87,12 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4298).CircleInformationIcon;
+            obj2[1] = callback(4330).CircleInformationIcon;
             const intl2 = callback(1236).intl;
             obj2[2] = intl2.string(callback(1236).t.BvyxE7);
-            callback2(4062).open(obj2);
+            callback2(4094).open(obj2);
             c3 = 1;
-            const obj6 = callback2(4062);
+            const obj6 = callback2(4094);
           }
           c3 = 0;
           (function onUploadDebugLogsRequestFinish() {

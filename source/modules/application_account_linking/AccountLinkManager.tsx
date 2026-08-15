@@ -1,10 +1,10 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16158
+// Function ID: 16159
 // Name: _claimIncentivizedAccountLinkingReward
-// Dependencies: [32, 5, 5311, 16109, 676, 687, 530, 5322, 2]
+// Dependencies: [32, 5, 5289, 16159, 676, 687, 530, 5038, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 16108 (_claimIncentivizedAccountLinkingReward)
+// Module 16158 (_claimIncentivizedAccountLinkingReward)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -37,7 +37,7 @@ function _claimIncentivizedAccountLinkingReward() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

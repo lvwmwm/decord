@@ -1,10 +1,10 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 14991
+// Function ID: 14992
 // Name: useSecureFramesVerifiedUserIds
-// Dependencies: [9257, 589, 2]
+// Dependencies: [9692, 589, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 14951 (useSecureFramesVerifiedUserIds)
+// Module 14991 (useSecureFramesVerifiedUserIds)
 import initialize from "initialize";
 
 const require = arg1;

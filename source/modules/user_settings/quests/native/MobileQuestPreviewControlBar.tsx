@@ -1,9 +1,9 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14526
+// Function ID: 14527
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7228, 505, 21, 4342, 712, 10436, 589, 10438, 5823, 1236, 5817, 14495, 14499, 7817, 13920, 12331, 4338, 2]
+// Dependencies: [5, 32, 19, 17, 7453, 505, 21, 4661, 712, 10684, 589, 10477, 7173, 1236, 7167, 14527, 14531, 8035, 13952, 12061, 4734, 2]
 
-// Module 14494 (MobileQuestPreviewControlBar)
+// Module 14526 (MobileQuestPreviewControlBar)
 import sum from "sum";
 import _slicedToArray from "_slicedToArray";
 import MoreVerticalIcon from "MoreVerticalIcon";
@@ -106,7 +106,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

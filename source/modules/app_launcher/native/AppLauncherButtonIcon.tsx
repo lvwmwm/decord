@@ -1,10 +1,10 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11407
+// Function ID: 11408
 // Name: AppLauncherButtonIcon
-// Dependencies: [19, 17, 21, 4207, 1626, 9766, 7756, 2]
+// Dependencies: [19, 17, 21, 4239, 1627, 9975, 7974, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11690 (AppLauncherButtonIcon)
+// Module 11407 (AppLauncherButtonIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
   style = style.style;
   const merged = Object.assign(style, Object.create(null));
   let obj = { style: { overflow: "hidden" }, children: null };
-  if (tmp3 === require(1626) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER) {
+  if (tmp3 === require(1627) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER) {
     obj = {};
     const merged1 = Object.assign(merged);
     const items = [style, ];
@@ -25,12 +25,12 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
     obj[0] = items1;
     items[1] = obj;
     obj.style = items;
-    let tmp4Result = tmp4(tmp6(9766).PlusLargeIcon, obj);
+    let tmp4Result = tmp4(tmp6(9975).PlusLargeIcon, obj);
   } else {
     const obj1 = { style: null };
     obj1[0] = style;
     const merged2 = Object.assign(merged);
-    tmp4Result = tmp4(tmp6(7756).AppsIcon, obj1);
+    tmp4Result = tmp4(tmp6(7974).AppsIcon, obj1);
   }
   obj[1] = tmp4Result;
   return <View style={{ overflow: "hidden" }}>{null}</View>;

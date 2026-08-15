@@ -1,10 +1,10 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15114
+// Function ID: 15115
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 9931, 4775, 5828, 5435, 4338, 15066, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 10137, 4733, 6286, 6291, 4734, 15115, 2]
 // Exports: default
 
-// Module 15065 (DevToolsProfilingScreen)
+// Module 15114 (DevToolsProfilingScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -38,7 +38,7 @@ export default function DevToolsProfilingScreen() {
   }, []);
   const tmp3 = createCacheKey();
   const dependencyMap = tmp3;
-  let obj = require(9931) /* addValue */;
+  let obj = require(10137) /* addValue */;
   componentRenderStats = obj.getComponentRenderStats();
   obj = { style: tmp3.container, children: null };
   const tmp = componentRenderStats(React.useState(false), 2);
@@ -47,8 +47,8 @@ export default function DevToolsProfilingScreen() {
     let obj1 = { title: "Component Profiler", hasIcons: false, children: null };
     const obj2 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: null };
     obj2[3] = callback;
-    obj1[2] = tmp8(tmp4(5435).TableRow, obj2);
-    let items = [tmp8(tmp4(5828).TableRowGroup, obj1), ];
+    obj1[2] = tmp8(tmp4(6291).TableRow, obj2);
+    let items = [tmp8(tmp4(6286).TableRowGroup, obj1), ];
     const _Object = Object;
     const keys = Object.keys(componentRenderStats);
     items[1] = keys.map((arg0) => {
@@ -84,15 +84,15 @@ export default function DevToolsProfilingScreen() {
     const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: null };
     const obj6 = { variant: "text-xs/semibold", style: null, children: "<ComponentProfiler />" };
     obj6[1] = tmp3.monospace;
-    const items1 = ["Make sure you wrap your component in ", tmp8(tmp4(4338).Text, obj6), " to enable measurements."];
+    const items1 = ["Make sure you wrap your component in ", tmp8(tmp4(4734).Text, obj6), " to enable measurements."];
     obj5[2] = items1;
-    obj4[1] = tmp10(tmp4(4338).Text, obj5);
-    obj3[2] = tmp8(tmp4(5435).TableRow, obj4);
-    tmp8Result = tmp8(tmp4(5828).TableRowGroup, obj3);
+    obj4[1] = tmp10(tmp4(4734).Text, obj5);
+    obj3[2] = tmp8(tmp4(6291).TableRow, obj4);
+    tmp8Result = tmp8(tmp4(6286).TableRowGroup, obj3);
   }
   const obj7 = { spacing: 16, children: null };
-  const items2 = [tmp8Result, closure_5(require(15066) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
+  const items2 = [tmp8Result, closure_5(require(15115) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
   obj7[1] = items2;
-  obj[1] = closure_7(require(4775) /* Stack */.Stack, obj7);
+  obj[1] = closure_7(require(4733) /* Stack */.Stack, obj7);
   return closure_5(closure_4, obj);
 };

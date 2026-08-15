@@ -1,10 +1,10 @@
-// Module ID: 7839
-// Function ID: 7840
+// Module ID: 8057
+// Function ID: 8058
 // Name: connectToStage
-// Dependencies: [5, 4364, 1391, 1910, 3989, 1979, 1399, 7840, 6000, 5293, 12746, 12747, 5191, 4408, 4524, 12749, 2]
+// Dependencies: [5, 4652, 1391, 1910, 4021, 1979, 1399, 8058, 7284, 6778, 12824, 12825, 4975, 4531, 9860, 12827, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7839 (connectToStage)
+// Module 8057 (connectToStage)
 import handleConnectionOpen from "handleConnectionOpen";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,38 +22,38 @@ function connectToStage(channel, flag) {
     const canResult = getUncachedChannelPermissions.can(_require(1399).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
-      let num = importAll(7840).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      let num = importAll(8058).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(7840).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(8058).openStageBlockedUsersSheet(channel, () => {
           outer1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(7840);
+        const tmp7Result = tmp7(8058);
       }
       tmp6 = num;
-      const obj2 = importAll(7840);
+      const obj2 = importAll(8058);
       tmp7 = importAll;
     }
     if (tmp6) {
       return false;
     }
   }
-  importDefault(12747).initialize();
+  importDefault(12825).initialize();
   const obj = closure_9;
-  const obj4 = importDefault(12747);
-  const voiceChannel = importDefault(5191).selectVoiceChannel(channel.id);
+  const obj4 = importDefault(12825);
+  const voiceChannel = importDefault(4975).selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4524).watchStream(found, { noFocus: true });
-      const obj6 = _require(4524);
+      _require(9860).watchStream(found, { noFocus: true });
+      const obj6 = _require(9860);
     }
     return true;
   }
-  const obj5 = importDefault(5191);
+  const obj5 = importDefault(4975);
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -74,19 +74,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12749).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12749);
+    result = _require(12827).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12827);
   }
   if (result) {
-    result = flag2(7840).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(8058).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7840);
+    const obj2 = flag2(8058);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(7840).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(7840);
+      flag2(8058).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(8058);
     }
   }
 }
@@ -114,7 +114,7 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
               return flag;
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c4 = tmp;
@@ -211,8 +211,8 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  importAll(7840).navigateToStage(arg0, arg1);
+  importAll(8058).navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7840).showPlatformUserProfile(arg0);
+  const result = importAll(8058).showPlatformUserProfile(arg0);
 };

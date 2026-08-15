@@ -1,10 +1,10 @@
-// Module ID: 10046
-// Function ID: 10047
+// Module ID: 10251
+// Function ID: 10252
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 17, 676, 21, 10047, 10055, 4083, 4343, 2]
+// Dependencies: [19, 17, 676, 21, 10252, 10260, 4115, 4664, 2]
 // Exports: default
 
-// Module 10046 (HorizontalAutocompleteWrapper)
+// Module 10251 (HorizontalAutocompleteWrapper)
 import noop from "noop";
 import { FlatList } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

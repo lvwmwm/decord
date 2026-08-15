@@ -1,9 +1,9 @@
-// Module ID: 9507
-// Function ID: 9508
+// Module ID: 9281
+// Function ID: 9282
 // Name: PX_8
-// Dependencies: [19, 17, 7076, 1947, 7077, 7078, 8881, 9440, 21, 712, 4342, 9451, 9458, 5329, 9459, 9443, 1946, 9454, 2]
+// Dependencies: [19, 17, 5306, 1947, 5307, 5308, 8965, 9207, 21, 712, 4661, 9218, 9225, 5449, 9226, 9210, 1946, 9221, 2]
 
-// Module 9507 (PX_8)
+// Module 9281 (PX_8)
 import { View } from "NameplateInner";
 import { isAvatarDecorationRecord } from "fromServer";
 import { isNameplateRecord } from "fromServer";
@@ -40,7 +40,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj = { item: null, size: null };
     obj[0] = item;
     obj[1] = 0.75 * size;
-    obj[1] = callback(importDefault(9451), obj);
+    obj[1] = callback(importDefault(9218), obj);
     return callback(View, obj);
   } else if (isProfileFrameRecord(item)) {
     const obj1 = { style: null, children: null };
@@ -52,7 +52,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj3[1] = size * closure_8;
     obj3[2] = size - 2 * PX_8;
     obj3[3] = importDefault(712).colors.BACKGROUND_BASE_LOW;
-    obj2[1] = callback(importDefault(9458), obj3);
+    obj2[1] = callback(importDefault(9225), obj3);
     obj1[1] = callback(View, obj2);
     return callback(View, obj1);
   } else if (isProfileEffectRecord(item)) {
@@ -62,13 +62,13 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj5[0] = tmp.profileEffect;
     const obj6 = { source: null, style: null, resizeMode: "cover" };
     const obj7 = { uri: null };
-    obj7[0] = importDefault(9459);
+    obj7[0] = importDefault(9226);
     obj6[0] = obj7;
     obj6[1] = tmp.sampleProfile;
-    const items1 = [callback(importDefault(5329), obj6), ];
+    const items1 = [callback(importDefault(5449), obj6), ];
     const obj8 = { skuId: null, bannerAdjustment: 0, useThumbnail: true };
     obj8[0] = item.skuId;
-    items1[1] = callback(importDefault(9443), obj8);
+    items1[1] = callback(importDefault(9210), obj8);
     obj5[3] = items1;
     obj4[1] = callback2(View, obj5);
     return callback(View, obj4);
@@ -83,7 +83,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     const obj11 = { nameplate: null, fullOpacity: true, style: null };
     obj11[0] = nameplateData;
     obj11[2] = tmp.nameplate;
-    obj10[1] = callback(importDefault(9454), obj11);
+    obj10[1] = callback(importDefault(9221), obj11);
     obj9[1] = callback(View, obj10);
     return callback(View, obj9);
   } else {

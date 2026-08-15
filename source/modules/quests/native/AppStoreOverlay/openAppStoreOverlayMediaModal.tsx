@@ -1,10 +1,10 @@
-// Module ID: 10573
-// Function ID: 10574
+// Module ID: 10701
+// Function ID: 10702
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4054, 676, 1493, 8908, 2007, 8910, 8914, 10574, 1236, 38, 4310, 10575, 2]
+// Dependencies: [32, 5, 4086, 676, 1494, 8993, 2007, 8996, 9000, 10702, 1236, 38, 4342, 10703, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 10573 (_openAppStoreOverlayMediaModal)
+// Module 10701 (_openAppStoreOverlayMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -36,7 +36,7 @@ function _openAppStoreOverlayMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ function _openAppStoreOverlayMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4054.initVideoStateStore;
+            initVideoStateStore = 4086.initVideoStateStore;
             const obj4 = { text: null, onPress: null };
             const intl = callback(c2[10]).intl;
             obj4[0] = intl.string(callback(c2[10]).t.lwQdjB);
@@ -150,7 +150,7 @@ function _openAppStoreOverlayMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c4 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14591
+// Function ID: 14592
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4342, 4072, 5884, 2]
+// Dependencies: [19, 17, 21, 4661, 4104, 5446, 2]
 
-// Module 14559 (componentDidMount)
+// Module 14591 (componentDidMount)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -40,7 +40,7 @@ prototype["render"] = function render() {
   if (this.props.loading) {
     const obj = { style: null, children: null };
     obj[0] = tmp.container;
-    obj[1] = jsx(require(5884) /* ActivityIndicator */.ActivityIndicator, {});
+    obj[1] = jsx(require(5446) /* ActivityIndicator */.ActivityIndicator, {});
     tmp2 = <View style={null}>{null}</View>;
   }
   return tmp2;

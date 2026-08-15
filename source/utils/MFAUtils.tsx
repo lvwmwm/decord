@@ -1,10 +1,10 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 8588
+// Function ID: 8589
 // Name: _crypto
-// Dependencies: [17, 1624, 8550, 1208, 2]
+// Dependencies: [17, 1625, 8589, 1208, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 8549 (_crypto)
+// Module 8588 (_crypto)
 let _crypto;
 if (window != null) {
   _crypto = window.crypto;
@@ -38,12 +38,12 @@ export const hasWebAuthn = tmp6;
 export const generateTotpSecret = function generateTotpSecret() {
   const uint8Array = new Uint8Array(20);
   const randomValues = _crypto.getRandomValues(uint8Array);
-  const obj = importDefault(8550);
-  const str = importDefault(8550).encode(randomValues);
-  const str2 = importDefault(8550).encode(randomValues).toString("utf8");
-  const str3 = importDefault(8550).encode(randomValues).toString("utf8").replace(/=/g, "");
-  const str4 = importDefault(8550).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase();
-  return importDefault(8550).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim();
+  const obj = importDefault(8589);
+  const str = importDefault(8589).encode(randomValues);
+  const str2 = importDefault(8589).encode(randomValues).toString("utf8");
+  const str3 = importDefault(8589).encode(randomValues).toString("utf8").replace(/=/g, "");
+  const str4 = importDefault(8589).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase();
+  return importDefault(8589).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim();
 };
 export { encodeTotpSecret };
 export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {

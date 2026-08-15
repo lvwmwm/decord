@@ -1,10 +1,10 @@
-// Module ID: 4277
-// Function ID: 4278
+// Module ID: 4309
+// Function ID: 4310
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1346, 589, 1347, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4277 (useCustomThemeDisplaySettings)
+// Module 4309 (useCustomThemeDisplaySettings)
 import _slicedToArray from "_slicedToArray";
 import reset from "reset";
 

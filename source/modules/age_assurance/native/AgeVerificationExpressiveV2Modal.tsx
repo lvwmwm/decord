@@ -1,10 +1,10 @@
-// Module ID: 7888
-// Function ID: 7889
+// Module ID: 6559
+// Function ID: 6560
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 1940, 7889, 7891, 7893, 4342, 712, 7870, 7895, 7898, 4582, 7865, 7873, 7874, 4775, 6091, 4338, 7863, 1993, 1297, 4777, 1236, 2821, 5828, 5435, 7900, 8013, 5839, 4572, 5331, 8015, 514, 5844, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 1940, 6560, 6562, 6564, 4661, 712, 5437, 6566, 6568, 4992, 5254, 5440, 5445, 4733, 5447, 4734, 5428, 1993, 1297, 4745, 1236, 2853, 6286, 6291, 6570, 6683, 6685, 5260, 6314, 6686, 514, 6312, 2]
 // Exports: default
 
-// Module 7888 (MethodsScreen)
+// Module 6559 (MethodsScreen)
 import closure_3 from "jsxProd";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import Stack from "Stack";
@@ -83,7 +83,7 @@ function MethodsScreen(onComplete) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -321,7 +321,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     let closure_1 = closure_0;
     const _undefined = closure_1;
     closeModal = function closeModal() {
-      let arr = callback(4572);
+      let arr = callback(5260);
       arr = arr.pop();
       dependencyMap();
     };
@@ -350,7 +350,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(_undefined[34]);
     obj[2] = entryPoint(_undefined[34]).getHeaderBackButton();
     obj[3] = function render() {
-      return outer1_8(callback(8015), { onClose: closeModal, modalSessionId: closure_0 });
+      return outer1_8(callback(6686), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[outer1_11.GOOGLE_WALLET_VERIFICATION] = obj;
     return obj;
@@ -361,5 +361,5 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
   const intl = entryPoint(1236).intl;
   obj[2] = intl.string(entryPoint(1236).t["13/7kX"]);
-  return callback2(entryPoint(5844).Navigator, obj);
+  return callback2(entryPoint(6312).Navigator, obj);
 };

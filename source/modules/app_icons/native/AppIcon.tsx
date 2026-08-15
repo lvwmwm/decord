@@ -1,10 +1,10 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 14833
+// Function ID: 14834
 // Name: AppIcon
-// Dependencies: [19, 17, 7728, 21, 4342, 712, 4278, 1363, 2]
+// Dependencies: [19, 17, 7946, 21, 4661, 712, 4310, 1363, 2]
 // Exports: default
 
-// Module 14793 (AppIcon)
+// Module 14833 (AppIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getIconById } from "items";
@@ -28,7 +28,7 @@ export default function AppIcon(size) {
     num = 56;
   }
   const tmp = createCacheKey();
-  const tmp2 = importDefault(4278)();
+  const tmp2 = importDefault(4310)();
   let obj = require(1363) /* AccessibilityAnnouncer */;
   let num2 = 1;
   if (obj.isThemeDark(tmp2)) {

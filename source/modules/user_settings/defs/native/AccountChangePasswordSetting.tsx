@@ -1,9 +1,9 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 14132
+// Function ID: 14133
 // Name: route
-// Dependencies: [8148, 676, 10421, 1236, 14101, 2]
+// Dependencies: [8198, 676, 10669, 1236, 14133, 2]
 
-// Module 14100 (route)
+// Module 14132 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -11,13 +11,13 @@ obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["CIGa+7"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_PASSWORD,
   getComponent() {
-    return require(14101).default;
+    return require(14133).default;
   }
 };
 const route = createToggle.createRoute(obj);

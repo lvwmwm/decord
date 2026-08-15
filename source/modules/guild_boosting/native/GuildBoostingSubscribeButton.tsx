@@ -1,10 +1,10 @@
-// Module ID: 6932
-// Function ID: 6933
+// Module ID: 7372
+// Function ID: 7373
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4235, 676, 5215, 1924, 21, 6933, 4572, 5213, 12930, 1499, 5789, 647, 1940, 11976, 4777, 1236, 4886, 2]
+// Dependencies: [5, 19, 17, 4267, 676, 6712, 1924, 21, 7373, 5260, 6710, 13007, 1500, 7139, 647, 1940, 11707, 4745, 1236, 6890, 2]
 // Exports: default
 
-// Module 6932 (_handleBoostPress)
+// Module 7372 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
 import LockIcon from "LockIcon";
 import { View } from "Button";
@@ -39,7 +39,7 @@ function _handleBoostPress() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(6933).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(7373).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -82,10 +82,10 @@ function _handleBoostPress() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(5213);
+            obj = callback(6710);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c5 = tmp;

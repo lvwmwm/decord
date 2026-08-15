@@ -1,10 +1,10 @@
-// Module ID: 9910
-// Function ID: 9911
+// Module ID: 10116
+// Function ID: 10117
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 4115, 2]
 // Exports: default
 
-// Module 9910 (NotificationProgress)
+// Module 10116 (NotificationProgress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -29,7 +29,7 @@ export default function NotificationProgress(percent) {
   first = tmp2[0];
   dependencyMap = tmp2[1];
   callback = React.useCallback((nativeEvent) => callback(nativeEvent.nativeEvent.layout.width), []);
-  let obj = percent(4083);
+  let obj = percent(4115);
   const fn = function s() {
     let obj = percent;
     let value = percent;
@@ -46,6 +46,6 @@ export default function NotificationProgress(percent) {
   obj = { onLayout: callback, style: tmp.progressContainerBottom, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [tmp.progress, animatedStyle];
-  obj[2] = jsx(first(4083).View, { style: items });
+  obj[2] = jsx(first(4115).View, { style: items });
   return <View onLayout={callback} style={tmp.progressContainerBottom}>{null}</View>;
 };

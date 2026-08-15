@@ -1,9 +1,9 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 12433
+// Function ID: 12434
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1390, 4358, 1218, 4393, 1979, 5199, 10648, 9800, 4363, 21, 4342, 1297, 712, 9809, 12, 10645, 10669, 589, 4570, 10670, 10673, 10683, 10699, 10700, 10707, 10641, 10741, 4065, 8304, 9126, 10655, 10651, 10654, 1493, 500, 8958, 2]
+// Dependencies: [32, 19, 17, 1390, 4773, 1218, 4497, 1979, 4774, 8683, 8669, 4544, 21, 4661, 1297, 712, 10010, 12, 8679, 12434, 589, 8666, 12435, 12438, 12445, 11444, 12459, 12466, 8733, 12480, 4097, 8345, 8916, 8690, 8686, 8689, 1494, 500, 8671, 2]
 
-// Module 10668 (areParticipantsEqual)
+// Module 12433 (areParticipantsEqual)
 import registerAsset from "registerAsset";
 import importAllResult from "isWatchTogetherApplication";
 import get_ActivityIndicator from "apply";
@@ -16,7 +16,7 @@ import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import initialize from "initialize";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { ParticipantTypes } from "ParticipantTypes";
-import jsxProd from "module_4570";
+import jsxProd from "module_8666";
 import createCacheKey from "createCacheKey";
 import Button from "Button";
 
@@ -348,18 +348,18 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10655) /* useIsViewingActivity */;
+  let obj = require(8690) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10651) /* useShouldForcePipOrientation */;
+  let obj2 = require(8686) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp6 = importDefault(10654)(obj);
+  const tmp6 = importDefault(8689)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: null };
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
-  ({ width, height } = importDefault(1493)());
+  ({ width, height } = importDefault(1494)());
   const tmp10 = closure_4;
-  const tmp7 = importDefault(1493)();
+  const tmp7 = importDefault(1494)();
   let elevationShadow;
   if (tmp2Result.isAndroid()) {
     elevationShadow = tmp.elevationShadow;

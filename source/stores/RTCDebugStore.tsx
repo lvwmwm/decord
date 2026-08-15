@@ -1,10 +1,10 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 12596
+// Function ID: 12597
 // Name: updateStats
-// Dependencies: [32, 4393, 1922, 676, 4406, 10910, 4441, 709, 589, 2]
+// Dependencies: [32, 4497, 1922, 676, 4529, 12597, 4569, 709, 589, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10909 (updateStats)
+// Module 12596 (updateStats)
 import _slicedToArray from "_slicedToArray";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -327,7 +327,7 @@ obj = {
     section = section.section;
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY: function handleOpenReplay() {
-    importAll(10910).chooseReplayPath();
+    importAll(12597).chooseReplayPath();
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: function handleOpenReplayAtPath(path) {
     path = path.path;
@@ -341,7 +341,7 @@ obj = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(4441).BaseConnectionEvent.Video, (userId) => {
+          replayConnection.on(replayConnection(4569).BaseConnectionEvent.Video, (userId) => {
             let num = arg3;
             let obj = outer1_1(outer1_3[7]);
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: null, streamId: null };

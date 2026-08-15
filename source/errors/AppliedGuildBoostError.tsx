@@ -1,9 +1,9 @@
-// Module ID: 4246
-// Function ID: 4247
+// Module ID: 4278
+// Function ID: 4279
 // Name: _getMessageFromRateLimit
-// Dependencies: [4030, 4031, 687, 1236, 2]
+// Dependencies: [4062, 4063, 687, 1236, 2]
 
-// Module 4246 (_getMessageFromRateLimit)
+// Module 4278 (_getMessageFromRateLimit)
 import "prototype";
 
 const require = arg1;
@@ -18,10 +18,10 @@ class AppliedGuildBoostError extends tmp2 {
   }
 }
 AppliedGuildBoostError.prototype["_getMessageFromRateLimit"] = function _getMessageFromRateLimit(body) {
-  let obj = require(4031) /* resetCache */;
+  let obj = require(4063) /* resetCache */;
   const diffAsUnitsResult = obj.diffAsUnits(0, body.body.retry_after * importDefault(687).Millis.SECOND);
   obj = { days: require(1236) /* getSystemLocale */.t["iXc/Ib"], hours: require(1236) /* getSystemLocale */.t.WW9P57, minutes: require(1236) /* getSystemLocale */.t.I7rYev };
-  return require(4031) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
+  return require(4063) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
 };
 const result = require("set").fileFinishedImporting("errors/AppliedGuildBoostError.tsx");
 

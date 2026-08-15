@@ -1,10 +1,10 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9102
+// Function ID: 9103
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9343, 501, 4308, 9341, 9347, 2]
+// Dependencies: [19, 9098, 501, 4340, 9096, 9101, 2]
 // Exports: default
 
-// Module 9348 (useInAppBrowserReturn)
+// Module 9102 (useInAppBrowserReturn)
 import noop from "noop";
 import getSimilarGames from "getSimilarGames";
 

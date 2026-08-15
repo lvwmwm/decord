@@ -1,9 +1,9 @@
-// Module ID: 4560
-// Function ID: 4561
+// Module ID: 9874
+// Function ID: 9875
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4263, 1910, 3989, 4165, 1922, 676, 687, 4561, 506, 595, 3943, 589, 709, 2]
+// Dependencies: [4295, 1910, 4021, 4197, 1922, 676, 687, 9875, 506, 595, 3975, 589, 709, 2]
 
-// Module 4560 (fetchSurveyIfNeeded)
+// Module 9874 (fetchSurveyIfNeeded)
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -33,7 +33,7 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c18 = true;
-    obj = require(4561) /* overrideSurvey */;
+    obj = require(9875) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
@@ -226,7 +226,7 @@ function setSurvey(survey) {
   const value = Storage.get(closure_11);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = importDefault(3943)();
+    obj = importDefault(3975)();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;
@@ -697,7 +697,7 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(4561) /* overrideSurvey */;
+    obj = require(9875) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {

@@ -1,10 +1,10 @@
-// Module ID: 5395
-// Function ID: 5396
+// Module ID: 6906
+// Function ID: 6907
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1982, 1990, 4327, 1922, 676, 530, 4328, 709, 5396, 5309, 4168, 5400, 4705, 1236, 4241, 698, 2]
+// Dependencies: [5, 1982, 1990, 4359, 1922, 676, 530, 4360, 709, 6907, 6792, 4200, 6911, 4827, 1236, 4273, 698, 2]
 // Exports: showCoachmark
 
-// Module 5395 (_fetchVerificationForm)
+// Module 6906 (_fetchVerificationForm)
 import closure_3 from "ME";
 import initialize from "initialize";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -107,7 +107,7 @@ function _updateVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ function _updateVerificationForm() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c7 = tmp;
@@ -197,7 +197,7 @@ function _updateVerificationFormDescription() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -248,7 +248,7 @@ function _updateVerificationFormDescription() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c5 = tmp;
@@ -285,7 +285,7 @@ function _enableVerificationForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ function _enableVerificationForm() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -362,7 +362,7 @@ function _submitVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -410,7 +410,7 @@ function _submitVerificationForm() {
                 obj2[0] = { isPending: false };
                 const result = obj11.updateImpersonatedData(callback, obj2);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let c7 = 1;
                 const HTTP = callback(num9[6]).HTTP;

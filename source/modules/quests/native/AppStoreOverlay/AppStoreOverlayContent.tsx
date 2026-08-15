@@ -1,10 +1,10 @@
-// Module ID: 10565
-// Function ID: 10566
+// Module ID: 10693
+// Function ID: 10694
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 1236, 10566, 2]
+// Dependencies: [5, 1236, 10694, 2]
 // Exports: getAppStoreOverlayContent
 
-// Module 10565 (_getAppStoreOverlayContent)
+// Module 10693 (_getAppStoreOverlayContent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -28,7 +28,7 @@ function _getAppStoreOverlayContent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

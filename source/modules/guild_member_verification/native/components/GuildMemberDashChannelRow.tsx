@@ -1,10 +1,10 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15476
+// Function ID: 15477
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 676, 1398, 9855, 21, 4342, 712, 15427, 8498, 4168, 1222, 11828, 1236, 4880, 1297, 2]
+// Dependencies: [19, 676, 1398, 10055, 21, 4661, 712, 15477, 8537, 4200, 1222, 11553, 1236, 6884, 1297, 2]
 // Exports: default
 
-// Module 15426 (GuildMemberDashChannelRow)
+// Module 15476 (GuildMemberDashChannelRow)
 import noop from "noop";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -33,7 +33,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   const tmp = createCacheKey();
   id = guild.id;
-  let obj = id(15427);
+  let obj = id(15477);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -54,7 +54,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   const callback = React.useCallback(() => {
     id(outer1_2[10]).transitionTo(outer1_5.CHANNEL(id, outer1_6.MEMBER_SAFETY));
   }, items1);
-  const ChannelModes = tmp2(11828).ChannelModes;
+  const ChannelModes = tmp2(11553).ChannelModes;
   const tmp7 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   obj = { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null };
   const intl = tmp2(1236).intl;
@@ -65,10 +65,10 @@ export default function GuildMemberDashChannelRow(arg0) {
   const intl2 = tmp2(1236).intl;
   obj[0] = intl2.string(id(1236).t["9Oq93m"]);
   obj[1] = tmp7;
-  obj[6] = jsx(id(11828).BaseChannelName, { name: null, mode: null });
+  obj[6] = jsx(id(11553).BaseChannelName, { name: null, mode: null });
   const obj1 = { mode: tmp7, IconComponent: null };
-  obj1[1] = id(4880).GroupIcon;
-  obj[7] = jsx(id(11828).BaseChannelIcon, { mode: tmp7, IconComponent: null });
+  obj1[1] = id(6884).GroupIcon;
+  obj[7] = jsx(id(11553).BaseChannelIcon, { mode: tmp7, IconComponent: null });
   let tmp8Result = null;
   if (num > 0) {
     const obj2 = { style: null, textStyle: null, value: null };
@@ -77,5 +77,5 @@ export default function GuildMemberDashChannelRow(arg0) {
     tmp8Result = tmp8(tmp2(1297).Badge, obj2);
   }
   obj[8] = tmp8Result;
-  return jsx(hasItem(11828), { name: null, mode: null });
+  return jsx(hasItem(11553), { name: null, mode: null });
 };

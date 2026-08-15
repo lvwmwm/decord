@@ -1,9 +1,9 @@
-// Module ID: 9345
-// Function ID: 9346
+// Module ID: 7245
+// Function ID: 7246
 // Name: set
 // Dependencies: [2]
 
-// Module 9345 (set)
+// Module 7245 (set)
 let c0 = "not supported";
 const result = require("set").fileFinishedImporting("utils/GameUtils.native.tsx");
 

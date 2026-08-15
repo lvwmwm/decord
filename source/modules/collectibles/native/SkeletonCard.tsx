@@ -1,10 +1,10 @@
-// Module ID: 14402
-// Function ID: 14403
+// Module ID: 14434
+// Function ID: 14435
 // Name: sharedValue
-// Dependencies: [19, 21, 4342, 712, 9408, 4083, 4343, 2]
+// Dependencies: [19, 21, 4661, 712, 9172, 4115, 4664, 2]
 // Exports: default
 
-// Module 14402 (sharedValue)
+// Module 14434 (sharedValue)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,22 +22,22 @@ let result = require("createCacheKey").fileFinishedImporting("modules/collectibl
 export default function _default(width) {
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(9408).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(9172).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   if (COLLECTIBLES_SHOP_CARD_HEIGHT == null) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9408).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9172).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3 = closure_5;
   const tmp3Result = closure_5(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
-  sharedValue = sharedValue(4083).useSharedValue(0.3);
+  sharedValue = sharedValue(4115).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const obj = sharedValue(outer1_2[5]);
     const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[6]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(4083);
+  let obj = sharedValue(4115);
   class C {
     constructor() {
       obj = { opacity: c0.get() };
@@ -47,7 +47,7 @@ export default function _default(width) {
   C.__closure = { opacity: sharedValue };
   C.__workletHash = 5620456625640;
   C.__initData = closure_6;
-  const animatedStyle = sharedValue(4083).useAnimatedStyle(C);
+  const animatedStyle = sharedValue(4115).useAnimatedStyle(C);
   const style = [tmp3Result.skeletonCard, width.style, animatedStyle];
-  return jsx(importDefault(4083).View, { style });
+  return jsx(importDefault(4115).View, { style });
 };

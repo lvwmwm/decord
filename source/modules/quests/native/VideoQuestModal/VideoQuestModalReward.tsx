@@ -1,8 +1,8 @@
-// Module ID: 14470
-// Function ID: 14471
-// Dependencies: [19, 21, 4342, 14446, 10436, 11232, 4775, 712, 14451, 4338, 1236, 2]
+// Module ID: 14502
+// Function ID: 14503
+// Dependencies: [19, 21, 4661, 14478, 10684, 10947, 4733, 712, 14483, 4734, 1236, 2]
 
-// Module 14470
+// Module 14502
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,9 +29,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(14446);
+  let obj = quest(14478);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj1 = quest(10436);
+  let obj1 = quest(10684);
   const items = [quest.id];
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const callback = importAllResult.useCallback(() => {
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
   obj[2] = importDefault(712).space.PX_24;
   obj[3] = withQuestName.style;
   obj = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
-  const items1 = [callback(importDefault(14451), obj), ];
+  const items1 = [callback(importDefault(14483), obj), ];
   obj1 = { align: "center", spacing: null, onLayout: null, children: null };
   obj1[1] = importDefault(712).space.PX_4;
   obj1[2] = onTextBlockLayout;
@@ -54,20 +54,20 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     const obj3 = { questName: null };
     obj3[0] = quest.config.messages.questName;
     obj2[3] = intl.formatToPlainString(tmp3(1236).t.EAYZAr, obj3);
-    tmp = tmp9(tmp3(4338).Text, obj2);
+    tmp = tmp9(tmp3(4734).Text, obj2);
   }
   const items2 = [tmp, ];
   if (tmp9Result) {
     const obj4 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
     const intl2 = tmp3(1236).intl;
     obj4[2] = intl2.string(tmp3(1236).t["1Wvve2"]);
-    tmp9Result = tmp9(tmp3(4338).Text, obj4);
+    tmp9Result = tmp9(tmp3(4734).Text, obj4);
   }
   items2[1] = tmp9Result;
   obj1[3] = items2;
-  items1[1] = closure_5(quest(4775).Stack, obj1);
+  items1[1] = closure_5(quest(4733).Stack, obj1);
   obj[4] = items1;
-  return closure_5(quest(4775).Stack, obj);
+  return closure_5(quest(4733).Stack, obj);
 });
 let result = require("createCacheKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
 

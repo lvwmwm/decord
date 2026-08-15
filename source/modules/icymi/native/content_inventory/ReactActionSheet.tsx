@@ -1,10 +1,10 @@
-// Module ID: 15713
-// Function ID: 15714
+// Module ID: 15763
+// Function ID: 15764
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 5459, 1925, 21, 1236, 4342, 712, 8700, 7289, 4909, 7721, 8303, 8976, 8704, 4193, 8462, 1493, 5825, 4338, 15710, 4911, 4162, 4072, 15706, 5329, 1435, 7856, 4187, 7817, 4288, 14529, 15659, 2]
+// Dependencies: [5, 32, 19, 17, 6951, 1925, 21, 1236, 4661, 712, 9298, 7510, 5433, 7939, 8344, 9057, 9302, 4225, 8501, 1494, 7175, 4734, 15760, 9091, 4194, 4104, 15756, 5449, 1435, 8071, 4219, 8035, 4320, 14561, 15709, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 15713 (AddEmojiButton)
+// Module 15763 (AddEmojiButton)
 import set from "set";
 import SendMessageIcon from "SendMessageIcon";
 import useWindowDimensions from "useWindowDimensions";
@@ -111,7 +111,7 @@ function ReactActionSheetBase(content) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -128,13 +128,13 @@ function ReactActionSheetBase(content) {
             } else {
               let closure_0 = tmp4;
               outer1_5(true);
-              v0(8976).itemInteracted(outer1_0.id, outer1_6, "press_reply_send");
-              const obj5 = v0(8976);
+              v0(9057).itemInteracted(outer1_0.id, outer1_6, "press_reply_send");
+              const obj5 = v0(9057);
               const obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = outer1_0.id;
               obj1[1] = outer1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(8976).feedItemActioned(obj1);
+              v0(9057).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };
@@ -153,7 +153,7 @@ function ReactActionSheetBase(content) {
             callback(false);
             callback2("");
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           dependencyMap = tmp;
@@ -177,7 +177,7 @@ function ReactActionSheetBase(content) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -218,7 +218,7 @@ function ReactActionSheetBase(content) {
             } else {
               outer1_5(false);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp9) {
             c3 = tmp;
@@ -426,7 +426,7 @@ export default function ReactActionSheet(arg0) {
     obj = {};
     const merged1 = Object.assign(merged);
     obj[0] = callback2(ReactActionSheetBase, obj);
-    return callback2(require(15659) /* context */.ICYMIContextProvider, obj);
+    return callback2(require(15709) /* context */.ICYMIContextProvider, obj);
   }
 };
 export const getStatusReplyContent = function getStatusReplyContent(reply) {

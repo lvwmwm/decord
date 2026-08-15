@@ -1,9 +1,9 @@
-// Module ID: 5059
-// Function ID: 5060
+// Module ID: 7250
+// Function ID: 7251
 // Name: filterPlayingActivities
-// Dependencies: [5060, 1340, 4378, 5190, 4381, 10410, 4431, 4360, 676, 4390, 4034, 1403, 9714, 659, 12, 589, 709, 2]
+// Dependencies: [7241, 1340, 4509, 4974, 4512, 7251, 4559, 4541, 676, 4520, 4066, 1403, 7261, 659, 12, 589, 709, 2]
 
-// Module 5059 (filterPlayingActivities)
+// Module 7250 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import gameFromServer from "gameFromServer";
@@ -65,27 +65,27 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9714)(flags)) {
+      if (importDefault(7261)(flags)) {
         let shouldShowActivityResult = upsertAccount.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          let tmpResult = tmp(4390);
+          let tmpResult = tmp(4520);
           shouldShowActivityResult = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        tmpResult = tmp(4390);
+        tmpResult = tmp(4520);
         let result = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
       } else {
         const searchGamesByNameResult = gameFromServer.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(4390).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
-          const tmpResult1 = tmp(4390);
+          result = tmp(4520).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
+          const tmpResult1 = tmp(4520);
         } else {
-          const ShowCurrentGame = tmp(4034).ShowCurrentGame;
+          const ShowCurrentGame = tmp(4066).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
@@ -96,8 +96,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(4390).shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
-        const tmpResult2 = tmp(4390);
+        result1 = tmp(4520).shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
+        const tmpResult2 = tmp(4520);
       }
       return result1;
     }
@@ -118,7 +118,7 @@ function handleUpdate() {
     IDLE = INVISIBLE;
     ONLINE = INVISIBLE;
   } else {
-    const StatusSetting = require(4034) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(4066) /* explicitContentFromProto */.StatusSetting;
     ONLINE = StatusSetting.getSetting();
     if (ONLINE === StatusTypes.UNKNOWN) {
       ONLINE = StatusTypes.ONLINE;

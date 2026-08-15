@@ -1,9 +1,9 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14206
+// Function ID: 14207
 // Name: toggle
-// Dependencies: [19, 17, 8148, 700, 705, 3974, 500, 3, 10421, 1236, 2]
+// Dependencies: [19, 17, 8198, 700, 705, 4006, 500, 3, 10669, 1236, 2]
 
-// Module 14174 (toggle)
+// Module 14206 (toggle)
 import noop from "noop";
 import identity from "identity";
 import createToggle from "createToggle";
@@ -16,7 +16,7 @@ identity = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.J8foZq);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useIOSConversationSuggestionsSettingValue() {
     const effect = React.useEffect(() => {
       conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();
@@ -25,7 +25,7 @@ identity = {
         callback(table[4]).batchUpdates(() => outer1_4.setState({ isEnabled: closure_0 }));
       });
     }, []);
-    return callback((isEnabled) => isEnabled.isEnabled, require(3974) /* isIterable */.shallow);
+    return callback((isEnabled) => isEnabled.isEnabled, require(4006) /* isIterable */.shallow);
   },
   onValueChange: function onIOSConversationSuggestionsSettingValueChange(arg0) {
     const result = IntentsHandler.setConversationSuggestionsEnabled(arg0);
@@ -41,6 +41,6 @@ identity = {
   }
 };
 identity = createToggle.createToggle(identity);
-let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/IOSConversationSuggestionsSetting.tsx");
+let result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/IOSConversationSuggestionsSetting.tsx");
 
 export default identity;

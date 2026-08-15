@@ -1,9 +1,9 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14606
+// Function ID: 14607
 // Name: toggle
-// Dependencies: [4393, 8148, 589, 9219, 1236, 10421, 2]
+// Dependencies: [4497, 8198, 589, 9654, 1236, 10669, 2]
 
-// Module 14574 (toggle)
+// Module 14606 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -13,14 +13,14 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.BbESsg);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAdvancedVoiceActivitySettingValue() {
     const items = [_detectH265HardwareDecode];
     return require(589) /* initialize */.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
   },
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
     mode = mode.getMode();
-    let obj = importDefault(9219);
+    let obj = importDefault(9654);
     obj = { vadUseKrisp };
     obj.setMode(mode, obj);
   },

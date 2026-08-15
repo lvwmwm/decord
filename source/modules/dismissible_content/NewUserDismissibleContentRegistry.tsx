@@ -1,10 +1,10 @@
-// Module ID: 4186
-// Function ID: 4187
+// Module ID: 4218
+// Function ID: 4219
 // Name: useNewUserDismissibleContent
 // Dependencies: [1218, 1381, 1377, 687, 647, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough, useNewUserDismissibleContent
 
-// Module 4186 (useNewUserDismissibleContent)
+// Module 4218 (useNewUserDismissibleContent)
 import fetchFingerprint from "fetchFingerprint";
 import set from "set";
 

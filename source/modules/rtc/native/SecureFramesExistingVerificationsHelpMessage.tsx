@@ -1,10 +1,10 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9719
+// Function ID: 9720
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4342, 9286, 1297, 1236, 2]
+// Dependencies: [17, 21, 4661, 9720, 1297, 1236, 2]
 // Exports: default
 
-// Module 9285 (SecureFramesExistingVerificationsHelpMessage)
+// Module 9719 (SecureFramesExistingVerificationsHelpMessage)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -17,7 +17,7 @@ export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let userId;
   let userKey;
   ({ style, userId, userKey } = arg0);
-  let obj = require(9286) /* useSecureFramesUserVerifiedKeysCount */;
+  let obj = require(9720) /* useSecureFramesUserVerifiedKeysCount */;
   const secureFramesUserVerifiedKeysCount = obj.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
   let tmp5 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {

@@ -1,8 +1,8 @@
-// Module ID: 9306
-// Function ID: 9307
-// Dependencies: [1391, 3998, 1922, 676, 5191, 530, 698, 4705, 1236, 9307, 9298, 709, 2]
+// Module ID: 9735
+// Function ID: 9736
+// Dependencies: [1391, 4030, 1922, 676, 4975, 530, 698, 4827, 1236, 9736, 9730, 709, 2]
 
-// Module 9306
+// Module 9735
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -37,7 +37,7 @@ export default {
           if (ensureGuildLoaded) {
             ringable = body.body.ringable;
           }
-          const voiceChannel = id(5191).selectVoiceChannel(id, dependencyMap);
+          const voiceChannel = id(4975).selectVoiceChannel(id, dependencyMap);
           if (ringable) {
             self.ring(tmp2);
           }
@@ -65,11 +65,11 @@ export default {
             obj = { userId: markAllUserIdListsStale, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          id(4705).show(obj);
+          id(4827).show(obj);
         });
       }
     } else {
-      obj = importDefault(5191);
+      obj = importDefault(4975);
       let voiceChannel = obj.selectVoiceChannel(id, c1);
       if (arg2) {
         self.ring(id);
@@ -82,7 +82,7 @@ export default {
   ring(channelId, items, gdm_invite) {
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = require(9298) /* useCanRingToGuildVoiceChannel */;
+      let obj = require(9730) /* useCanRingToGuildVoiceChannel */;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {

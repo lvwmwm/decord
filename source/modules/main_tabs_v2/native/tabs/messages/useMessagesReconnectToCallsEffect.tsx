@@ -1,10 +1,10 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15314
+// Function ID: 15315
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5057, 1391, 5901, 709, 2]
+// Dependencies: [32, 19, 4495, 1391, 5388, 709, 2]
 // Exports: default
 
-// Module 15265 (useMessagesReconnectToCallsEffect)
+// Module 15314 (useMessagesReconnectToCallsEffect)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";

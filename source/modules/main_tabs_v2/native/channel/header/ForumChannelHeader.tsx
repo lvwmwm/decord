@@ -1,8 +1,8 @@
-// Module ID: 12636
-// Function ID: 12637
-// Dependencies: [19, 17, 8454, 21, 4342, 12637, 12623, 12638, 2]
+// Module ID: 12714
+// Function ID: 12715
+// Dependencies: [19, 17, 8493, 21, 4661, 12715, 12701, 12716, 2]
 
-// Module 12636
+// Module 12714
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,7 +20,7 @@ const memoResult = require("noop").memo((arg0) => {
   let searchPlaceholder;
   ({ channelId, guildId } = arg0);
   ({ screenIndex, pressable, isGuildMemberCountVisible, isNavigationScreen, searchPlaceholder } = arg0);
-  let obj = require(12637) /* useIsForumChannelSearchActive */;
+  let obj = require(12715) /* useIsForumChannelSearchActive */;
   if (obj.useIsForumChannelSearchActive(channelId)) {
     obj = { style: null, children: null };
     obj[0] = tmp.search;
@@ -28,7 +28,7 @@ const memoResult = require("noop").memo((arg0) => {
     obj[0] = channelId;
     obj[1] = guildId;
     obj[2] = searchPlaceholder;
-    obj[1] = tmp4(require(12623) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
+    obj[1] = tmp4(require(12701) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
     let tmp4Result = tmp4(View, obj);
   } else {
     const obj1 = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null };
@@ -38,7 +38,7 @@ const memoResult = require("noop").memo((arg0) => {
     obj1[3] = isGuildMemberCountVisible;
     obj1[4] = isNavigationScreen;
     obj1[5] = screenIndex;
-    tmp4Result = tmp4(importDefault(12638), obj1);
+    tmp4Result = tmp4(importDefault(12716), obj1);
   }
   return tmp4Result;
 });

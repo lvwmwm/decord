@@ -1,9 +1,9 @@
-// Module ID: 7073
-// Function ID: 7074
+// Module ID: 5303
+// Function ID: 5304
 // Name: fromServer
-// Dependencies: [32, 7074, 7075, 7080, 678, 676, 4387, 1949, 2]
+// Dependencies: [32, 5304, 5305, 5310, 678, 676, 4517, 1949, 2]
 
-// Module 7073 (fromServer)
+// Module 5303 (fromServer)
 import _slicedToArray from "_slicedToArray";
 import fromServer from "fromServer";
 import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse";
@@ -54,7 +54,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   obj.premiumType = tmp8;
   obj.categorySkuId = category_sku_id;
   obj.isCategoryReward = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === merged.sku_id);
-  obj.prices = importDefault(4387)(prices);
+  obj.prices = importDefault(4517)(prices);
   obj.items = callback(merged.items);
   let mapped;
   if (bundled_products != null) {
@@ -106,7 +106,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         obj = {};
       }
       let items = obj.items;
-      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "Array", bundledProducts: "couple_with_heart_man_man_medium_skin_tone_medium_dark_skin_tone" };
+      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "r", bundledProducts: "isArray" };
       ({ id: obj2[0], id: obj2[1] } = first);
       ({ name: obj2[2], summary: obj2[3], primaryCollectionStyles: obj2[4] } = skus);
       obj[5] = type;
@@ -157,7 +157,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             ({ items, item } = obj);
             const first = outer1_3(tenantMetadata.selectedOptions, 1)[0];
-            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "call", items: "loadJsonAsset", categorySkuId: 21428387296219950000000000000000000000000000000000000000000000000000000000000000000, isCategoryReward: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000317690894699096, prices: 139812.1333638505, previewAssets: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000630810169310198, googleSkuIds: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015113957937514574, eligibleOffers: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012219764116672643, variants: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000028420996816591494, bundledProducts: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061387498161538, isFirstParty: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004779732229874201 };
+            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "accessibilityRole", items: "apply", categorySkuId: false, isCategoryReward: false, prices: false, previewAssets: false, googleSkuIds: false, eligibleOffers: false, variants: false, bundledProducts: false, isFirstParty: false };
             obj[0] = skus.name;
             obj[1] = first.id;
             let str;

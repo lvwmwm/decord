@@ -1,10 +1,10 @@
-// Module ID: 1492
-// Function ID: 1493
+// Module ID: 1493
+// Function ID: 1494
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 676, 1470, 1493, 1483, 1895, 12, 1438, 1435, 2]
+// Dependencies: [32, 17, 676, 1470, 1494, 1484, 1471, 1896, 12, 1438, 1435, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1492 (getSrcWithWidthAndHeight)
+// Module 1493 (getSrcWithWidthAndHeight)
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME";
@@ -31,7 +31,7 @@ function getSrcWithWidthAndHeight(animated) {
   }
   const tmp = callback(src.split("?"), 2);
   const items = [tmp[0], ];
-  let obj = importDefault(1483);
+  let obj = importDefault(1484);
   items[1] = obj.parse(tmp[1]);
   const tmp4 = callback(items, 2);
   [tmp5, tmp6] = tmp4;
@@ -47,33 +47,39 @@ function getSrcWithWidthAndHeight(animated) {
     targetHeight = tmp8;
   }
   if (targetWidth !== sourceWidth) {
-    if ((function isAttachmentLadderEnabled(arg0) {
+    const tmp9 = (function getAttachmentLadderConfig(arg0) {
       try {
         const obj = { location: null };
         obj[0] = "native/ImageUtils.getSrcWithWidthAndHeight";
-        return true === callback(table[3]).getAttachmentImageLadderConfig(obj).enabled;
+        const attachmentImageLadderConfig = callback(table[3]).getAttachmentImageLadderConfig(obj);
+        let tmp5 = null;
+        if (true === attachmentImageLadderConfig.enabled) {
+          tmp5 = attachmentImageLadderConfig;
+        }
+        return tmp5;
       } catch (err) {
-        return false;
+        return null;
       }
-    })("native/ImageUtils.getSrcWithWidthAndHeight")) {
+    })("native/ImageUtils.getSrcWithWidthAndHeight");
+    let size = { width: null, height: null };
+    size[0] = targetWidth;
+    size[1] = targetHeight;
+    if (null != tmp9) {
       obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
       obj[0] = targetWidth;
       obj[1] = targetHeight;
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
-      obj[4] = require(1895) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
-      let size = require(1895) /* items */.snapAttachmentDimensions(obj);
-      const obj2 = require(1895) /* items */;
-    } else {
-      size = { width: null, height: null };
-      size[0] = targetWidth;
-      size[1] = targetHeight;
+      const obj2 = require(1471) /* items */;
+      obj[4] = require(1471) /* items */.getSnapDownMaxUpscale(tmp9, tmp2(1896)());
+      size = obj2.snapAttachmentDimensions(obj);
+      const obj4 = require(1471) /* items */;
     }
-    if (!tmp10) {
+    if (!tmp12) {
       tmp6.width = size.width | 0;
       tmp6.height = size.height | 0;
     }
-    tmp10 = size.width === sourceWidth && size.height === sourceHeight;
+    tmp12 = size.width === sourceWidth && size.height === sourceHeight;
   }
   if (flag) {
     tmp6.animated = true;
@@ -81,8 +87,8 @@ function getSrcWithWidthAndHeight(animated) {
   let tmp2Result = tmp2(12);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2Result = tmp2(1483);
-    text = `${tmp5}?${obj5.stringify(tmp6)}`;
+    tmp2Result = tmp2(1484);
+    text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;
 }
@@ -95,7 +101,7 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   if (tmp3.test(proxy_url)) {
     num = 0.3;
   }
-  let obj = require(1493) /* useWindowDimensions */;
+  let obj = require(1494) /* useWindowDimensions */;
   const size = obj.getWindowDimensions();
   const result = store.getPixelSizeForLayoutSize(size.width) * num;
   const bound = Math.min(width > height ? result / width : store.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);

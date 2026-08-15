@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15451
+// Function ID: 15452
 // Name: PX_8
-// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15402, 9515, 4781, 4342, 15403, 12432, 1236, 5437, 4909, 5387, 4338, 4777, 8021, 5995, 2]
+// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15452, 9288, 4749, 4661, 15453, 12183, 1236, 6292, 5433, 6368, 4734, 4745, 6693, 7279, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 15401 (PX_8)
+// Module 15451 (PX_8)
 import closure_3 from "jsxProd";
 import { View } from "Text";
 import ME from "ME";
@@ -39,15 +39,15 @@ const memoResult = importAllResult.memo((arg0) => {
   let require;
   ({ guild, markAsDismissed: require } = arg0);
   const tmp = callback4();
-  let obj = require(15403) /* fetchUnclaimedGames */;
+  let obj = require(15453) /* fetchUnclaimedGames */;
   let first = obj.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
   }
   const intl = tmp2(1236).intl;
   const tmp5 = importDefault;
-  const tmp6 = importDefault(12432);
-  const coverImageUrl = importDefault(12432)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
+  const tmp6 = importDefault(12183);
+  const coverImageUrl = importDefault(12183)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
   if (null == coverImageUrl) {
     return null;
   } else {
@@ -68,30 +68,30 @@ const memoResult = importAllResult.memo((arg0) => {
       return callback(outer1_7.USER_DISMISS);
     };
     obj[2] = tmp.closeButton;
-    obj[3] = callback2(tmp2(5387).XSmallIcon, { size: "sm", color: "text-default" });
-    const items = [callback2(tmp2(4909).PressableOpacity, obj), , , , ];
+    obj[3] = callback2(tmp2(6368).XSmallIcon, { size: "sm", color: "text-default" });
+    const items = [callback2(tmp2(5433).PressableOpacity, obj), , , , ];
     let obj1 = { imageSrc: null };
     obj1[0] = coverImageUrl;
-    items[1] = callback2(tmp5(15402), obj1);
+    items[1] = callback2(tmp5(15452), obj1);
     const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: null, children: null };
     obj2[2] = tmp.centeredText;
     const intl2 = tmp2(1236).intl;
     const obj3 = { gameName: null };
     obj3[0] = tmp8;
     obj2[3] = intl2.format(tmp2(1236).t.Q11WTQ, obj3);
-    items[2] = callback2(tmp2(4338).Text, obj2);
+    items[2] = callback2(tmp2(4734).Text, obj2);
     const obj4 = { variant: "text-sm/normal", color: "text-overlay-light", style: null, children: null };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     obj4[2] = items1;
     obj4[3] = stringResult;
-    items[3] = callback2(tmp2(4338).Text, obj4);
+    items[3] = callback2(tmp2(4734).Text, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.cta;
     const obj6 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
     const intl3 = tmp2(1236).intl;
     obj6[2] = intl3.string(tmp2(1236).t["2u6ZlY"]);
-    obj6[3] = callback2(tmp2(8021).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    obj6[3] = callback2(tmp2(6693).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj6[5] = callback(function*() {
       if (v0 === 2) {
         v0 = 3;
@@ -104,7 +104,7 @@ const memoResult = importAllResult.memo((arg0) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ const memoResult = importAllResult.memo((arg0) => {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           v0 = tmp;
@@ -145,12 +145,12 @@ const memoResult = importAllResult.memo((arg0) => {
         }
       }
     });
-    obj5[1] = callback2(tmp2(4777).Button, obj6);
+    obj5[1] = callback2(tmp2(4745).Button, obj6);
     items[4] = callback2(View, obj5);
     obj[2] = items;
-    return callback3(tmp2(5437).Card, obj);
+    return callback3(tmp2(6292).Card, obj);
   }
-  const tmp6Result = importDefault(12432)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a));
+  const tmp6Result = importDefault(12183)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a));
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
 
@@ -159,11 +159,11 @@ export const GAME_CLAIM_NOTICE_MARGIN_TOP = PX_8;
 export const GAME_CLAIM_NOTICE_MARGIN_BOTTOM = PX_82;
 export const getScaledGameClaimNoticeHeight = function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
-  const sum1 = sum + require(15402) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
-  const sum2 = sum1 + require(9515) /* map */.scaleTextLineHeight("text-md/medium", fontScale);
+  const sum1 = sum + require(15452) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
+  const sum2 = sum1 + require(9288) /* map */.scaleTextLineHeight("text-md/medium", fontScale);
   const sum3 = sum2 + importDefault(712).space.PX_4;
-  const obj = require(9515) /* map */;
-  const result = 2 * require(9515) /* map */.scaleTextLineHeight("text-sm/normal", fontScale);
+  const obj = require(9288) /* map */;
+  const result = 2 * require(9288) /* map */.scaleTextLineHeight("text-sm/normal", fontScale);
   const sum4 = sum3 + result + importDefault(712).space.PX_8;
-  return sum4 + require(4781) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_82;
+  return sum4 + require(4749) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_82;
 };

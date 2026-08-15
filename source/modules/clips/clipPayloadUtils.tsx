@@ -1,10 +1,10 @@
-// Module ID: 4916
-// Function ID: 4917
+// Module ID: 4831
+// Function ID: 4832
 // Name: getClipCreatedAt
-// Dependencies: [32, 4400, 676, 4406, 4917, 698, 4918, 2]
+// Dependencies: [32, 4523, 676, 4529, 4832, 698, 4833, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds
 
-// Module 4916 (getClipCreatedAt)
+// Module 4831 (getClipCreatedAt)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AnalyticEvents } from "ME";
@@ -52,7 +52,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.end;
       const sum1 = diff + 1000 * editMetadata.start;
-      let closure_1 = _require(4917).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
+      let closure_1 = _require(4832).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
         editMetadata = editMetadata.editMetadata;
@@ -107,7 +107,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         }
         const tmp10 = map;
       }
-      const obj2 = _require(4917);
+      const obj2 = _require(4832);
     }
   }
 };

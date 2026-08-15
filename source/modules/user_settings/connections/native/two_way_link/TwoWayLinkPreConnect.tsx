@@ -1,10 +1,10 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 9760
+// Function ID: 9761
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4342, 5186, 10482, 4058, 500, 10477, 5187, 38, 709, 4338, 1236, 5389, 4777, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4661, 5223, 9761, 4090, 500, 9756, 5224, 38, 709, 4734, 1236, 6803, 4745, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 10481 (_authorizeLink)
+// Module 9760 (_authorizeLink)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import Button from "Button";
@@ -36,7 +36,7 @@ function _authorizeLink() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -72,7 +72,7 @@ function _authorizeLink() {
             return obj;
           } else {
             url = body.body.url;
-            const obj5 = callback2(4058);
+            const obj5 = callback2(4090);
             const tmp19 = url;
             let tmp6 = closure_8;
             if (obj6.isAndroid()) {
@@ -143,7 +143,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
           outer1_1(outer1_2[14])(null != state, "Authorize URL state query parameter must be present");
           c4.current = state;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         let closure_2 = tmp15;

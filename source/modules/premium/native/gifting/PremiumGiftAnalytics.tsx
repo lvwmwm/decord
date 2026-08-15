@@ -1,10 +1,10 @@
-// Module ID: 10223
-// Function ID: 10224
+// Module ID: 10423
+// Function ID: 10424
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 676, 9671, 7440, 500, 698, 1236, 7441, 2]
+// Dependencies: [19, 676, 9625, 7658, 500, 698, 1236, 7659, 2]
 // Exports: default
 
-// Module 10223 (PremiumGiftAnalytics)
+// Module 10423 (PremiumGiftAnalytics)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

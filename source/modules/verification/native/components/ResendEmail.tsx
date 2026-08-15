@@ -1,10 +1,10 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8568
+// Function ID: 8569
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1385, 1922, 676, 21, 4342, 1499, 589, 38, 8530, 8522, 6091, 4338, 1236, 4777, 5888, 4062, 2]
+// Dependencies: [32, 19, 17, 1385, 1922, 676, 21, 4661, 1500, 589, 38, 8569, 8561, 5447, 4734, 1236, 4745, 5256, 4094, 2]
 // Exports: default
 
-// Module 8529 (ResendEmail)
+// Module 8568 (ResendEmail)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "handleLogout";
@@ -25,7 +25,7 @@ export default function ResendEmail() {
   let dependencyMap;
   let tmp10;
   let tmp = callback3();
-  let obj = navigation(1499);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   let obj1 = navigation(589);
   const items = [mergeGuildAvatar];
@@ -38,7 +38,7 @@ export default function ResendEmail() {
   let obj2 = navigation(589);
   const items1 = [handleRequiredAction];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(8530);
+  let obj3 = verified(8569);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -62,11 +62,11 @@ export default function ResendEmail() {
   callback = React.useCallback(() => {
     navigation.push(outer1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(6091).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(5447).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1236).intl;
   obj[4] = intl.string(navigation(1236).t.fUtddV);
-  items4[1] = callback2(navigation(4338).Text, obj);
+  items4[1] = callback2(navigation(4734).Text, obj);
   obj1 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = navigation(1236).intl;
   if (tmp10) {
@@ -77,7 +77,7 @@ export default function ResendEmail() {
     formatResult = intl2.string(tmp2(1236).t.tSXg8O);
   }
   obj1[3] = formatResult;
-  items4[2] = callback2(navigation(4338).Text, obj1);
+  items4[2] = callback2(navigation(4734).Text, obj1);
   obj3 = { style: tmp.resend, children: null };
   const obj4 = { text: null, variant: "primary", onPress: null, grow: true };
   const intl3 = tmp2(1236).intl;
@@ -91,7 +91,7 @@ export default function ResendEmail() {
     obj[1] = intl.string(navigation(outer1_2[15]).t["84yeoz"]);
     verified(outer1_2[18]).open(obj);
   };
-  obj3[1] = callback2(navigation(4777).Button, obj4);
+  obj3[1] = callback2(navigation(4745).Button, obj4);
   items4[3] = callback2(View, obj3);
   if (!result) {
     const obj5 = { style: null, children: null };
@@ -100,7 +100,7 @@ export default function ResendEmail() {
     const intl4 = tmp2(1236).intl;
     obj6[0] = intl4.string(tmp2(1236).t.Vm8akB);
     obj6[2] = callback;
-    obj5[1] = tmp16(tmp2(4777).Button, obj6);
+    obj5[1] = tmp16(tmp2(4745).Button, obj6);
     tmp16Result = tmp16(tmp15, obj5);
   }
   items4[4] = tmp16Result;

@@ -1,10 +1,10 @@
-// Module ID: 4008
-// Function ID: 4009
+// Module ID: 4040
+// Function ID: 4041
 // Name: createFromServer
 // Dependencies: [1931, 1924, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 4008 (createFromServer)
+// Module 4040 (createFromServer)
 import "toJS";
 import GuildFeatures from "GuildFeatures";
 

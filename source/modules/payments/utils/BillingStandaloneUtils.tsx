@@ -1,10 +1,10 @@
-// Module ID: 6937
-// Function ID: 6938
+// Module ID: 7376
+// Function ID: 7377
 // Name: goToStandalonePremiumCheckout
-// Dependencies: [676, 1486, 514, 530, 2]
+// Dependencies: [676, 1487, 514, 530, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 6937 (goToStandalonePremiumCheckout)
+// Module 7376 (goToStandalonePremiumCheckout)
 import ME from "ME";
 
 let c3;
@@ -15,7 +15,7 @@ function goToStandalonePremiumCheckout(planId, arg1, arg2) {
   const importDefault = arg1;
   const dependencyMap = arg2;
   let uRL;
-  let obj = importDefault(1486);
+  let obj = importDefault(1487);
   uRL = new URL(obj.makeUrl(closure_4.BILLING_LOGIN_HANDOFF, false));
   const v4Result = require(514) /* v1 */.v4();
   const searchParams = uRL.searchParams;
@@ -34,7 +34,7 @@ export const goToBillingStandalonePageWithHandoff = function goToBillingStandalo
   const _require = Routes;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  let obj = importDefault(1486);
+  let obj = importDefault(1487);
   const uRL = new URL(obj.makeUrl(closure_4.BILLING_LOGIN_HANDOFF, false));
   const v4Result = _require(514).v4();
   const searchParams = uRL.searchParams;

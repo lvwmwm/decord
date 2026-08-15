@@ -1,10 +1,10 @@
-// Module ID: 5844
-// Function ID: 5845
+// Module ID: 6312
+// Function ID: 6313
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4342, 712, 5845, 5331, 4065, 5846, 1628, 1236, 12, 5879, 1500, 4278, 5886, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 6313, 6314, 4097, 6371, 1629, 1236, 12, 6545, 1501, 4310, 6552, 1209, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5844 (NavigationStack)
+// Module 6312 (NavigationStack)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing";
@@ -225,7 +225,7 @@ function WrappedNavigationStack(arg0) {
   ({ initialRouteName, onStateChange } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   let navigationContainerRef;
-  let obj = require(1500) /* createStandardNavigationFactories */;
+  let obj = require(1501) /* createStandardNavigationFactories */;
   navigationContainerRef = obj.createNavigationContainerRef();
   const first = callback(React.useState(() => {
     let tmp2;
@@ -236,8 +236,8 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  let obj1 = require(5886) /* useNavigationTheme */;
-  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4278)());
+  let obj1 = require(6552) /* useNavigationTheme */;
+  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4310)());
   obj = { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null };
   obj[1] = navigationTheme;
   if (null == initialRouteState) {
@@ -257,8 +257,8 @@ function WrappedNavigationStack(arg0) {
   obj1 = { initialRouteName };
   const merged1 = Object.assign(merged);
   obj[5] = <NavigationStack initialRouteName={initialRouteName} />;
-  obj[0] = jsx(require(1500) /* createStandardNavigationFactories */.NavigationContainer, { children: null });
-  return jsx(require(1500) /* createStandardNavigationFactories */.NavigationIndependentTree, { children: null });
+  obj[0] = jsx(require(1501) /* createStandardNavigationFactories */.NavigationContainer, { children: null });
+  return jsx(require(1501) /* createStandardNavigationFactories */.NavigationIndependentTree, { children: null });
 }
 ({ StyleSheet, View: c5 } = get_ActivityIndicator);
 createCacheKey = { container: null, navbar: null, headerLeftContainerStyle: null, headerRightContainerStyle: null };
@@ -277,7 +277,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(5845).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(6313).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

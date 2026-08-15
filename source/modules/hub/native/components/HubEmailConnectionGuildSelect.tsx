@@ -1,13 +1,13 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 11915
+// Function ID: 11916
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 12155, 21, 4342, 712, 8033, 5840, 1430, 4338, 1236, 1628, 4777, 1297, 1499, 6072, 6070, 12168, 4241, 12163, 2]
+// Dependencies: [5, 32, 19, 17, 11897, 21, 4661, 712, 8083, 7188, 1430, 4734, 1236, 1629, 4745, 1297, 1500, 5432, 7351, 11910, 4273, 11905, 2]
 // Exports: default
 
-// Module 12173 (HubEmailConnectionGuildSelectRow)
+// Module 11915 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import module_12168 from "module_12168";
+import module_11910 from "module_11910";
 import get_ActivityIndicator from "HeaderActionButton";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "HubEmailConnectionModal";
@@ -42,7 +42,7 @@ function HubEmailConnectionGuildSelectHeader() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.mOMeiR);
-  obj[1] = callback(require(4338) /* Text */.Text, obj);
+  obj[1] = callback(require(4734) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
@@ -52,7 +52,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const tmp = createCacheKey();
   let obj = { style: null, children: null };
   const items = [tmp.footerSafeAreaContainer, ];
-  obj = { paddingBottom: importDefault(1628)().bottom };
+  obj = { paddingBottom: importDefault(1629)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { style: tmp.footerContainer, children: null };
@@ -60,7 +60,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t.G3Zk7V);
   obj1[5] = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [callback(require(4777) /* Button */.Button, obj1), ];
+  const items1 = [callback(require(4745) /* Button */.Button, obj1), ];
   let tmp3Result = null != errors;
   if (tmp3Result) {
     const obj2 = { style: null, children: null };
@@ -155,7 +155,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {

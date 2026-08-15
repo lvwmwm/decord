@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 11912
+// Function ID: 11913
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 676, 21, 4342, 712, 1499, 6072, 1236, 12171, 1297, 4338, 4777, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 712, 1500, 5432, 1236, 11913, 1297, 4734, 4745, 2]
 // Exports: default
 
-// Module 12170 (HubEmailConnectionWaitlist)
+// Module 11912 (HubEmailConnectionWaitlist)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function HubEmailConnectionWaitlist(school) {
   const onClose = school.onClose;
   let navigation;
   const tmp = createCacheKey();
-  let obj = onClose(1499);
+  let obj = onClose(1500);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -44,7 +44,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12171), style: tmp.header };
+  obj = { source: navigation(11913), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
   let intl = onClose(1236).intl;
@@ -53,13 +53,13 @@ export default function HubEmailConnectionWaitlist(school) {
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = onClose(1236).intl;
   obj2[3] = intl2.format(onClose(1236).t.Rs7MXJ, { school: school.school });
-  items1[2] = callback(onClose(4338).Text, obj2);
+  items1[2] = callback(onClose(4734).Text, obj2);
   const obj3 = { style: tmp.redesignButton, children: null };
   const obj4 = { size: "lg", text: null, onPress: null };
   const intl3 = onClose(1236).intl;
   obj4[1] = intl3.string(onClose(1236).t.i4jeWR);
   obj4[2] = onClose;
-  obj3[1] = callback(onClose(4777).Button, obj4);
+  obj3[1] = callback(onClose(4745).Button, obj4);
   items1[3] = callback(closure_4, obj3);
   obj[1] = items1;
   return callback2(closure_4, obj);

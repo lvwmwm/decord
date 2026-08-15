@@ -1,10 +1,10 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 12684
+// Function ID: 12685
 // Name: _fetchChannelConversations
-// Dependencies: [5, 7125, 8628, 7127, 676, 8625, 709, 530, 6986, 8629, 4559, 4567, 2]
+// Dependencies: [5, 5014, 12685, 5016, 676, 12682, 709, 530, 7427, 12686, 9873, 9880, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8627 (_fetchChannelConversations)
+// Module 12684 (_fetchChannelConversations)
 import apexExperiment from "apexExperiment";
 import removePendingListFetch from "removePendingListFetch";
 import initialize from "initialize";
@@ -38,7 +38,7 @@ function _fetchChannelConversations() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function _fetchChannelConversations() {
                     return obj5;
                   }
                 }
-                obj15 = callback(8625);
+                obj15 = callback(12682);
               }
             } else if (2 === tmp7) {
               c6 = 0;
@@ -188,7 +188,7 @@ function _fetchChannelConversations() {
               return obj;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp70) {
           if (tmp4 === c6) {
@@ -246,7 +246,7 @@ function _fetchConversationMessages() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -314,7 +314,7 @@ function _fetchConversationMessages() {
                   }
                 }
               }
-              obj14 = callback(8625);
+              obj14 = callback(12682);
               tmp52 = callback;
             }
           } else {
@@ -405,8 +405,8 @@ export const setSelectedConversation = function setSelectedConversation(channelI
     obj = { channelId: null, messageId: null, flash: false };
     obj[0] = channelId;
     obj[1] = conversationMetadata.conversation.startMessageId;
-    importDefault(6986).jumpToMessage(obj);
-    const tmpResult = importDefault(6986);
+    importDefault(7427).jumpToMessage(obj);
+    const tmpResult = importDefault(7427);
   }
 };
 export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
@@ -421,11 +421,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(8629) /* ConversationsAnalytics */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(12686) /* ConversationsAnalytics */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (initialize.shouldTriggerOnNextExposure()) {
-    importDefault(4559).fireSurveyAction(require(4567) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(4559);
+    importDefault(9873).fireSurveyAction(require(9880) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(9873);
   }
   importDefault(709).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

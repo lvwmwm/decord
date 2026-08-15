@@ -1,9 +1,9 @@
-// Module ID: 5993
-// Function ID: 5994
+// Module ID: 7277
+// Function ID: 7278
 // Name: initialize
-// Dependencies: [5057, 1395, 1391, 1979, 676, 1398, 709, 5904, 4170, 4183, 530, 2]
+// Dependencies: [4495, 1395, 1391, 1979, 676, 1398, 709, 5389, 4202, 4215, 530, 2]
 
-// Module 5993 (initialize)
+// Module 7277 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,7 +37,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(5904).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5389).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -64,11 +64,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4170);
+        let tmp13Result = tmp13(4202);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4183).RouteParam;
-        const RouteParam2 = tmp13(4183).RouteParam;
+        const RouteParam = tmp13(4215).RouteParam;
+        const RouteParam2 = tmp13(4215).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
         const HTTP = tmp13(530).HTTP;
@@ -99,7 +99,7 @@ function loadThread(channelId) {
         }).catch(() => {
           outer1_11[closure_0] = { type: "NOT_FOUND" };
           let obj = lib(outer1_2[6]);
-          obj = { id: closure_0, guild_id: null, parent_id: "r" };
+          obj = { id: closure_0, guild_id: null, parent_id: "Array" };
           let guildId;
           if (lib != null) {
             const params = lib.params;
@@ -146,7 +146,7 @@ export default {
         let tmp9 = nextResult;
         let tmp10 = items1;
         let tmp11 = dependencyMap;
-        if (nextResult !== items1(5904).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(5389).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp12 = isStaticChannelRoute;
           let tmp13 = nextResult;
           if (!isStaticChannelRoute(tmp9)) {

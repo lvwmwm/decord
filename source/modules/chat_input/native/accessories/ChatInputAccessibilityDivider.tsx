@@ -1,9 +1,9 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11427
+// Function ID: 11428
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 4763, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4721, 500, 1236, 2]
 
-// Module 11708 (ChatInputAccessibilityDivider)
+// Module 11427 (ChatInputAccessibilityDivider)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -13,7 +13,7 @@ let obj1;
 const require = arg1;
 ({ StyleSheet: obj1, View: c3 } = get_ActivityIndicator);
 const memoResult = require("noop").memo(() => {
-  let obj = require(4763) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = require(4721) /* SCREEN_READER_ENABLED_GETTER */;
   let tmp3 = null;
   if (obj.useIsScreenReaderEnabled()) {
     tmp3 = null;

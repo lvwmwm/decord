@@ -1,10 +1,10 @@
-// Module ID: 16480
-// Function ID: 16481
+// Module ID: 16530
+// Function ID: 16531
 // Name: handleVoiceChannelSelect
-// Dependencies: [5201, 4362, 1218, 1391, 4393, 4416, 676, 4579, 4924, 16481, 4529, 5322, 2]
+// Dependencies: [4990, 4543, 1218, 1391, 4497, 4539, 676, 4839, 4840, 16531, 4981, 5038, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 16480 (handleVoiceChannelSelect)
+// Module 16530 (handleVoiceChannelSelect)
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import isVoiceMuted from "isVoiceMuted";
 import fetchFingerprint from "fetchFingerprint";
@@ -50,35 +50,35 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceSta
               isSpeakerResult = speaker.isSpeaker(userId, channelId);
             }
             if (isSpeakerResult) {
-              const permission = callback2(4924).requestPermission(constants2.AUDIO);
+              const permission = callback2(4840).requestPermission(constants2.AUDIO);
               permission.then((arg0) => {
                 if (arg0) {
                   callback(table[9])(true);
                 }
               });
               if (store.getMode() === constants.PUSH_TO_TALK) {
-                const permission1 = callback2(4924).requestPermission(constants2.INPUT_MONITORING);
-                const tmp19Result = callback2(4924);
+                const permission1 = callback2(4840).requestPermission(constants2.INPUT_MONITORING);
+                const tmp19Result = callback2(4840);
               }
             } else {
               const tmp8 = new isVoiceMuted(arg0);
-              const audienceRequestToSpeakState = callback(4529).getAudienceRequestToSpeakState(tmp8);
-              if (audienceRequestToSpeakState === callback(4529).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-                const permission2 = callback2(4924).requestPermission(constants2.AUDIO);
+              const audienceRequestToSpeakState = callback(4981).getAudienceRequestToSpeakState(tmp8);
+              if (audienceRequestToSpeakState === callback(4981).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
+                const permission2 = callback2(4840).requestPermission(constants2.AUDIO);
                 permission2.then((arg0) => {
                   if (arg0) {
                     callback(table[9])(true);
                   }
                 });
                 if (store.getMode() === constants.PUSH_TO_TALK) {
-                  const permission3 = tmp13(4924).requestPermission(tmp14.INPUT_MONITORING);
-                  const tmp13Result = tmp13(4924);
+                  const permission3 = tmp13(4840).requestPermission(tmp14.INPUT_MONITORING);
+                  const tmp13Result = tmp13(4840);
                 }
-                const obj2 = callback2(4924);
+                const obj2 = callback2(4840);
                 tmp13 = callback2;
                 tmp14 = constants2;
               }
-              const obj = callback(4529);
+              const obj = callback(4981);
             }
           }
         }

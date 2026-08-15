@@ -1,10 +1,10 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12846
+// Function ID: 12847
 // Name: useCommonTriggerPoint
-// Dependencies: [32, 19, 4256, 589, 2]
+// Dependencies: [32, 19, 4288, 589, 2]
 // Exports: useCommonTriggerPoint
 
-// Module 12768 (useCommonTriggerPoint)
+// Module 12846 (useCommonTriggerPoint)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getHash from "getHash";

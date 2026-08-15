@@ -1,10 +1,10 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 12811
+// Function ID: 12812
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 5435, 2]
+// Dependencies: [19, 21, 6291, 2]
 // Exports: default
 
-// Module 12733 (InAppReportsUpsellsTableRow)
+// Module 12811 (InAppReportsUpsellsTableRow)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -40,5 +40,5 @@ export default function InAppReportsUpsellsTableRow(disabled) {
   obj[3] = icon;
   obj[4] = disabled;
   obj[5] = variant;
-  return jsx(require(5435) /* TableRowInner */.TableRow, { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null });
+  return jsx(require(6291) /* TableRowInner */.TableRow, { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null });
 };

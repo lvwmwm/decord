@@ -1,8 +1,8 @@
-// Module ID: 11212
-// Function ID: 11213
-// Dependencies: [4703, 7364, 709, 2]
+// Module ID: 10912
+// Function ID: 10913
+// Dependencies: [4825, 7582, 709, 2]
 
-// Module 11212
+// Module 10912
 import handleChanged from "handleChanged";
 import { DraftType } from "handleChanged";
 import initialize from "initialize";

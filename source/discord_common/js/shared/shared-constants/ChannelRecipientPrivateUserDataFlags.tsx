@@ -1,9 +1,9 @@
-// Module ID: 11428
-// Function ID: 11429
+// Module ID: 11141
+// Function ID: 11142
 // Name: ChannelRecipientPrivateUserDataFlags
 // Dependencies: [2]
 
-// Module 11428 (ChannelRecipientPrivateUserDataFlags)
+// Module 11141 (ChannelRecipientPrivateUserDataFlags)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ChannelRecipientPrivateUserDataFlags.tsx");
 
 export const ChannelRecipientPrivateUserDataFlags = { DISMISSED_IN_GAME_MESSAGE_NUX: 1, [1]: "DISMISSED_IN_GAME_MESSAGE_NUX", DISMISSED_CURRENT_CHAT_WALLPAPER: 2, [2]: "DISMISSED_CURRENT_CHAT_WALLPAPER" };

@@ -1,9 +1,9 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16831
+// Function ID: 16832
 // Name: handleSetSection
-// Dependencies: [1431, 16786, 1984, 1983, 9085, 16780, 676, 16787, 11860, 4805, 1370, 506, 3994, 688, 1986, 12, 589, 709, 2]
+// Dependencies: [1431, 16832, 1984, 1983, 8875, 16826, 676, 16833, 11588, 6814, 1370, 506, 4026, 688, 1986, 12, 589, 709, 2]
 
-// Module 16785 (handleSetSection)
+// Module 16831 (handleSetSection)
 import { set } from "isValueEqual";
 import map from "map";
 import { isRoleEqual } from "GuildRoleRecordTypeTag";
@@ -215,7 +215,7 @@ let closure_33 = require("applyOverwrites").debounce(() => {
   if (c24) {
     if (null != user) {
       if (null != closure_25) {
-        let obj = importDefault(11860);
+        let obj = importDefault(11588);
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
         obj[0] = store.getSortedRoles(user.id);
         obj[1] = closure_25;
@@ -368,7 +368,7 @@ Object.defineProperty(prototype, "formState", {
 prototype["getSortDeltas"] = function getSortDeltas() {
   if (null != user) {
     if (null != closure_25) {
-      let obj = importDefault(11860);
+      let obj = importDefault(11588);
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(user.id);
       obj[1] = closure_25;
@@ -479,7 +479,7 @@ obj = {
     let tmp2 = null != found;
     if (tmp2) {
       let obj = { permissions: null };
-      obj[0] = importAll(3994).NONE;
+      obj[0] = importAll(4026).NONE;
       const index = items.indexOf(found);
       if (index >= 0) {
         obj = {};

@@ -1,17 +1,17 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8416
+// Function ID: 8417
 // Name: useDisplayProfile
-// Dependencies: [19, 1922, 7150, 589, 8378, 1989, 8381, 2]
+// Dependencies: [19, 1922, 5365, 589, 8417, 1989, 8420, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8377 (useDisplayProfile)
+// Module 8416 (useDisplayProfile)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import areArraysShallowlyEqual from "areArraysShallowlyEqual";
 
 const require = arg1;
-let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => new importDefault(8381)(arg0, arg1));
+let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => new importDefault(8420)(arg0, arg1));
 const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/hooks/useDisplayProfile.tsx");
 
 export default function useDisplayProfile(arg0, arg1) {

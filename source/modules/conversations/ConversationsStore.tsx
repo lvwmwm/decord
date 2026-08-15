@@ -1,9 +1,9 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 5014
+// Function ID: 5015
 // Name: removePendingListFetch
-// Dependencies: [1218, 1391, 3998, 1979, 1922, 7126, 7127, 1405, 11, 4586, 7128, 1370, 4000, 589, 709, 2]
+// Dependencies: [1218, 1391, 4030, 1979, 1922, 5015, 5016, 1405, 11, 4803, 5017, 1370, 4032, 589, 709, 2]
 
-// Module 7125 (removePendingListFetch)
+// Module 5014 (removePendingListFetch)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -104,7 +104,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
         while (tmp4 !== undefined) {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj = require(4586) /* createMinimalMessageRecord */;
+          let obj = require(4803) /* createMinimalMessageRecord */;
           let messageRecord = obj.createMessageRecord(tmp6);
           let tmp11 = messageRecord;
           let arr = items1.push(messageRecord);
@@ -137,7 +137,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             obj = { conversationId: null, moderationLabel: null, message: null };
             let tmp23 = require;
             let tmp24 = dependencyMap;
-            let obj4 = require(4586) /* createMinimalMessageRecord */;
+            let obj4 = require(4803) /* createMinimalMessageRecord */;
             obj[2] = obj4.createMessageRecord(tmp21);
             let result1 = messageMetadataByMessageId4.set(tmp21.id, obj);
           }
@@ -169,11 +169,14 @@ function handleReaction(channelId) {
     if (null == message) {
       return false;
     } else {
-      if (obj.shouldApplyReaction(channelId)) {
+      if (obj2.shouldApplyReaction(channelId)) {
         const tmp4 = store.getId() === userId;
         if ("MESSAGE_REACTION_ADD" === type) {
           const message2 = value.message;
-          let addReactionResult = message2.addReaction(emoji, tmp4, channelId.colors, reactionType);
+          const obj = { colors: null, reactionType: null };
+          obj[0] = channelId.colors;
+          obj[1] = reactionType;
+          let addReactionResult = message2.addReaction(emoji, tmp4, obj);
         } else {
           message = value.message;
           addReactionResult = message.removeReaction(emoji, tmp4, reactionType);
@@ -202,7 +205,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj = messageId(4000);
+      obj2 = messageId(4032);
     }
   }
 }
@@ -574,7 +577,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7128).mapConversation);
+      const mapped = rawConversations.map(set(5017).mapConversation);
       const found = mapped.filter(set(1370).isNotNullish);
       const peekResult = tmp3.peek(channelId);
       if (isJump) {
@@ -1142,7 +1145,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4586).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4803).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1166,7 +1169,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4586);
+            const obj = id(4803);
           }
           return flag;
         }

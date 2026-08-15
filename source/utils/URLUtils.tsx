@@ -1,9 +1,9 @@
-// Module ID: 1486
-// Function ID: 1487
+// Module ID: 1487
+// Function ID: 1488
 // Name: isDiscordProxiedAssetUrl
-// Dependencies: [676, 1487, 1488, 1486, 1370, 12, 2]
+// Dependencies: [676, 1488, 1489, 1487, 1370, 12, 2]
 
-// Module 1486 (isDiscordProxiedAssetUrl)
+// Module 1487 (isDiscordProxiedAssetUrl)
 import { Routes } from "ME";
 import set from "Url";
 
@@ -12,7 +12,7 @@ function isDiscordProxiedAssetUrl(url, arg1, arg2) {
     if (null == url) {
       return false;
     } else {
-      url = importDefault(1486).toURLSafe(url);
+      url = importDefault(1487).toURLSafe(url);
       let tmp9 = null != url;
       if (tmp9) {
         const result = require(1370) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
@@ -109,7 +109,7 @@ export default {
       flag = false;
     }
     if (null != ctaLink) {
-      const toURLSafeResult = importDefault(1486).toURLSafe(ctaLink);
+      const toURLSafeResult = importDefault(1487).toURLSafe(ctaLink);
       let hostname;
       if (toURLSafeResult != null) {
         hostname = toURLSafeResult.hostname;
@@ -133,20 +133,20 @@ export default {
           return true;
         }
       }
-      const obj = importDefault(1486);
+      const obj = importDefault(1487);
     }
     return false;
   },
   isDiscordUri(arg0) {
     let tmp = null != arg0;
     if (tmp) {
-      const protocol = importAll(1488).parse(arg0).protocol;
+      const protocol = importAll(1489).parse(arg0).protocol;
       let tmp4 = null != protocol;
       if (tmp4) {
         tmp4 = "discord:" === protocol;
       }
       tmp = tmp4;
-      const obj = importAll(1488);
+      const obj = importAll(1489);
     }
     return tmp;
   },
@@ -154,8 +154,8 @@ export default {
     let tmp = null != src;
     if (tmp) {
       const _window = window;
-      tmp = importAll(1488).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
-      const obj = importAll(1488);
+      tmp = importAll(1489).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
+      const obj = importAll(1489);
     }
     return tmp;
   },
@@ -163,7 +163,7 @@ export default {
     if (null == shareURI) {
       return false;
     } else {
-      const toURLSafeResult = importDefault(1486).toURLSafe(shareURI);
+      const toURLSafeResult = importDefault(1487).toURLSafe(shareURI);
       let tmp9 = null != toURLSafeResult;
       if (tmp9) {
         const result = require(1370) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
@@ -195,7 +195,7 @@ export default {
     if (null == url) {
       return false;
     } else {
-      const toURLSafeResult = importDefault(1486).toURLSafe(url);
+      const toURLSafeResult = importDefault(1487).toURLSafe(url);
       let hasItem = null != toURLSafeResult;
       if (hasItem) {
         hasItem = set.has(toURLSafeResult.hostname);
@@ -206,7 +206,7 @@ export default {
   isDiscordAssetUrl(url) {
     let flag = false;
     if (null != url) {
-      const toURLSafeResult = importDefault(1486).toURLSafe(url);
+      const toURLSafeResult = importDefault(1487).toURLSafe(url);
       let tmp4 = null != toURLSafeResult;
       if (tmp4) {
         const result = require(1370) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
@@ -231,7 +231,7 @@ export default {
         const obj2 = require(1370) /* isDiscordFrontendDevelopment */;
       }
       flag = tmp4;
-      const obj = importDefault(1486);
+      const obj = importDefault(1487);
     }
     let tmp13 = flag;
     if (!tmp13) {
@@ -239,13 +239,13 @@ export default {
       if (!tmp17) {
         let flag2 = false;
         if (null != url) {
-          const toURLSafeResult1 = importDefault(1486).toURLSafe(url);
+          const toURLSafeResult1 = importDefault(1487).toURLSafe(url);
           let hasItem = null != toURLSafeResult1;
           if (hasItem) {
             hasItem = set.has(toURLSafeResult1.hostname);
           }
           flag2 = hasItem;
-          const obj3 = importDefault(1486);
+          const obj3 = importDefault(1487);
         }
         tmp17 = flag2;
       }
@@ -256,7 +256,7 @@ export default {
   isDiscordUrlOrUri(url) {
     let flag = false;
     if (null != url) {
-      const toURLSafeResult = importDefault(1486).toURLSafe(url);
+      const toURLSafeResult = importDefault(1487).toURLSafe(url);
       let hostname;
       if (toURLSafeResult != null) {
         hostname = toURLSafeResult.hostname;
@@ -273,18 +273,18 @@ export default {
           flag = true;
         }
       }
-      const obj = importDefault(1486);
+      const obj = importDefault(1487);
     }
     if (!flag) {
       let tmp8 = null != url;
       if (tmp8) {
-        const protocol = importAll(1488).parse(url).protocol;
+        const protocol = importAll(1489).parse(url).protocol;
         let tmp11 = null != protocol;
         if (tmp11) {
           tmp11 = "discord:" === protocol;
         }
         tmp8 = tmp11;
-        const obj2 = importAll(1488);
+        const obj2 = importAll(1489);
       }
       flag = tmp8;
     }
@@ -299,23 +299,23 @@ export default {
     return startsWithResult;
   },
   format(arg0) {
-    return importAll(1488).format(arg0);
+    return importAll(1489).format(arg0);
   },
   formatPathWithQuery(pathname) {
-    let obj = importAll(1488);
+    let obj = importAll(1489);
     obj = { pathname, query: null };
     obj[1] = importDefault(12).pickBy(arg1);
     return obj.format(obj);
   },
   formatSearch(arg0) {
-    let obj = importAll(1488);
+    let obj = importAll(1489);
     obj = { query: null };
     obj[0] = importDefault(12).pickBy(arg0);
     return obj.format(obj);
   },
   safeParseWithQuery(target) {
     try {
-      return importAll(1488).parse(target, true);
+      return importAll(1489).parse(target, true);
     } catch (err) {
       return null;
     }

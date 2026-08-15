@@ -1,10 +1,10 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10387
+// Function ID: 10388
 // Name: PremiumGiftingGoGoSuccessActions
-// Dependencies: [19, 7410, 676, 678, 21, 4342, 712, 9671, 589, 7713, 10099, 1499, 9638, 4601, 10091, 8986, 7070, 5809, 10105, 1236, 2367, 4777, 2]
+// Dependencies: [19, 7628, 676, 678, 21, 4661, 712, 9625, 589, 7931, 10304, 1500, 9592, 4381, 10296, 9067, 5300, 7159, 10309, 1236, 2399, 4745, 2]
 // Exports: default
 
-// Module 10183 (PremiumGiftingGoGoSuccessActions)
+// Module 10387 (PremiumGiftingGoGoSuccessActions)
 import getSystemLocale from "getSystemLocale";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { AnalyticsSections } from "ME";

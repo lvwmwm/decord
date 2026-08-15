@@ -1,10 +1,10 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 5092
+// Function ID: 5093
 // Name: getJoinedAtDateFormatter
-// Dependencies: [1236, 7028, 2]
+// Dependencies: [1236, 5093, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp, getMembersTableTimestampFormatter
 
-// Module 7027 (getJoinedAtDateFormatter)
+// Module 5092 (getJoinedAtDateFormatter)
 function getJoinedAtDateFormatter() {
   return { seconds: require(1236) /* getSystemLocale */.t["FsBhl/"], minutes: require(1236) /* getSystemLocale */.t["4d1mgT"], hours: require(1236) /* getSystemLocale */.t["2wkczD"], days: require(1236) /* getSystemLocale */.t["ocdS+f"], months: require(1236) /* getSystemLocale */.t["az14+h"], years: require(1236) /* getSystemLocale */.t["5Gk1ns"] };
 }
@@ -31,7 +31,7 @@ export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1
   } else if (arg1 === tmp.ACCOUNT_AGE) {
     tmp2 = getAccountAgeDateFormatter;
   }
-  return importDefault(7028)(arg0, tmp2, false);
+  return importDefault(5093)(arg0, tmp2, false);
 };
 export const getJoinedAtTimestamp = function getJoinedAtTimestamp(joinedAt) {
   if (null != joinedAt) {

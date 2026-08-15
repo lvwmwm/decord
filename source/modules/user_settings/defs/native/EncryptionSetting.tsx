@@ -1,9 +1,9 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 14990
+// Function ID: 14991
 // Name: route
-// Dependencies: [9274, 8148, 676, 589, 14951, 1236, 10421, 14952, 2]
+// Dependencies: [9709, 8198, 676, 589, 14991, 1236, 10669, 14992, 2]
 
-// Module 14950 (route)
+// Module 14990 (route)
 import items from "items";
 import createToggle from "createToggle";
 
@@ -14,13 +14,13 @@ createToggle = {
     return intl.string(require(1236) /* getSystemLocale */.t.x8U2eC);
   },
   useDescription: function useSecureFramesEncryptionDescription() {
-    let obj = require(14951) /* useSecureFramesVerifiedUserIds */;
+    let obj = require(14991) /* useSecureFramesVerifiedUserIds */;
     const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { count: secureFramesVerifiedUserIds.length };
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["6vrePS"], obj);
   },
-  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
   usePredicate: function useSecureFramesPersistentCodesValue() {
     const items = [items];
     return require(589) /* initialize */.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
@@ -30,7 +30,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.SECURE_FRAMES,
   getComponent() {
-    return require(14952) /* UserListItem */.default;
+    return require(14992) /* UserListItem */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

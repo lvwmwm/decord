@@ -1,9 +1,9 @@
-// Module ID: 6571
-// Function ID: 6572
+// Module ID: 5929
+// Function ID: 5930
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6571 (metadata)
+// Module 5929 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MagnifyingGlassSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ed07a1f3bc392a1158f332e5d3196bbef4a694c2d793cc3a121ddd19784aefdc.png";

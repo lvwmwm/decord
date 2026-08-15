@@ -1,10 +1,10 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9985
+// Function ID: 9986
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [4165, 676, 1913, 698, 2]
+// Dependencies: [4197, 676, 1913, 698, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 9776 (setNextFavoritesGuildViewSource)
+// Module 9985 (setNextFavoritesGuildViewSource)
 import handleConnectionOpen from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";
 
@@ -21,9 +21,9 @@ export function consumeNextFavoritesGuildViewSource() {
   const manual_browsing = "manual_browsing";
   return manual_browsing;
 }
-export const trackFavoritesGuildAddToFavorites = function trackFavoritesGuildAddToFavorites(source, type, length) {
+export const trackFavoritesGuildAddToFavorites = function trackFavoritesGuildAddToFavorites(source, type, total_favorites) {
   let obj = importDefault(698);
-  obj = { source, channel_type: type, total_favorites: length };
+  obj = { source, channel_type: type, total_favorites };
   obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_TO_FAVORITES, obj);
 };
 export const trackFavoritesGuildRemoveFromFavorites = function trackFavoritesGuildRemoveFromFavorites(channel_type, length) {

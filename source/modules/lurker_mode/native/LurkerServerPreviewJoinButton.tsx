@@ -1,8 +1,8 @@
-// Module ID: 15367
-// Function ID: 15368
-// Dependencies: [5, 32, 19, 1391, 3990, 676, 21, 9139, 1306, 5293, 4777, 1236, 2]
+// Module ID: 15416
+// Function ID: 15417
+// Dependencies: [5, 32, 19, 1391, 4022, 676, 21, 11505, 1306, 6778, 4745, 1236, 2]
 
-// Module 15367
+// Module 15416
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

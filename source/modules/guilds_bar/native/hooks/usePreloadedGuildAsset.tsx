@@ -1,10 +1,10 @@
-// Module ID: 15550
-// Function ID: 15551
+// Module ID: 15600
+// Function ID: 15601
 // Name: usePreloadedGuildAsset
-// Dependencies: [32, 19, 5390, 5329, 2]
+// Dependencies: [32, 19, 6804, 5449, 2]
 // Exports: default
 
-// Module 15550 (usePreloadedGuildAsset)
+// Module 15600 (usePreloadedGuildAsset)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -21,7 +21,7 @@ export default function usePreloadedGuildAsset(guildId, icon, asset) {
   const effect = React.useEffect(() => () => {
     ref.current.guildId = undefined;
   }, []);
-  const tmp3 = importDefault(5390)(ref);
+  const tmp3 = importDefault(6804)(ref);
   if (guildId === tmp3.guildId) {
     asset = tmp3.asset;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11362
+// Function ID: 11363
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 4334, 21, 4342, 712, 589, 11637, 1891, 4310, 11646, 2007, 11646, 1297, 11640, 9730, 11643, 4338, 2]
+// Dependencies: [32, 19, 4662, 21, 4661, 712, 589, 11354, 1892, 4342, 11363, 2007, 11363, 1297, 11357, 9923, 11360, 4734, 2]
 // Exports: default
 
-// Module 11645 (AppLauncherUserOption)
+// Module 11362 (AppLauncherUserOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -102,26 +102,26 @@ export default function AppLauncherUserOption(option) {
     let tmp9Result = tmp9(tmp2(1297).Avatar, obj);
   } else {
     const obj1 = { icon: null, wrapperStyle: null };
-    obj1[0] = tmp9(tmp2(9730).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+    obj1[0] = tmp9(tmp2(9923).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
     obj1[1] = tmp.iconWrapper;
-    tmp9Result = tmp9(tmp10(11640), obj1);
-    const tmp10Result = tmp10(11640);
+    tmp9Result = tmp9(tmp10(11357), obj1);
+    const tmp10Result = tmp10(11357);
   }
   obj[5] = tmp9Result;
   if (null != tmp8) {
     let obj2 = { guildId: null, user: null };
     obj2[0] = guild_id;
     obj2[1] = tmp8;
-    tmp9Result = tmp9(tmp10(11643), obj2);
+    tmp9Result = tmp9(tmp10(11360), obj2);
   } else {
     tmp9Result = null;
     if (null != tmp6) {
       const obj3 = { variant: "text-md/medium", color: "text-default", children: null };
       obj3[2] = tmp6;
-      tmp9Result = tmp9(tmp2(4338).Text, obj3);
+      tmp9Result = tmp9(tmp2(4734).Text, obj3);
     }
   }
   obj[6] = tmp9Result;
   obj[7] = autoFocus;
-  return c6(importDefault(11637), obj);
+  return c6(importDefault(11354), obj);
 };

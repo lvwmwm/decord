@@ -1,8 +1,8 @@
-// Module ID: 16150
-// Function ID: 16151
-// Dependencies: [19, 17, 9855, 4551, 21, 4342, 16146, 4783, 8459, 2]
+// Module ID: 16200
+// Function ID: 16201
+// Dependencies: [19, 17, 10055, 5044, 21, 4661, 16196, 4751, 8498, 2]
 
-// Module 16150
+// Module 16200
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -17,8 +17,8 @@ const memoResult = require("noop").memo(function UnreadBadge(arg0) {
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp4 = importDefault(16146)();
-  require(4783) /* getFontScale */;
+  const tmp4 = importDefault(16196)();
+  require(4751) /* getFontScale */;
   let tmp9Result = null;
   if (unread) {
     let obj = { style: null, children: null };
@@ -30,7 +30,7 @@ const memoResult = require("noop").memo(function UnreadBadge(arg0) {
     obj[0] = items;
     obj = { classic: true, size: null, badgeStyle: null };
     const _Math = Math;
-    obj[1] = require(8459) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
+    obj[1] = require(8498) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {
@@ -40,10 +40,10 @@ const memoResult = require("noop").memo(function UnreadBadge(arg0) {
     obj1[0] = num2;
     const items1 = [obj1];
     obj[2] = items1;
-    obj[1] = jsx(importDefault(8459), { classic: true, size: null, badgeStyle: null });
+    obj[1] = jsx(importDefault(8498), { classic: true, size: null, badgeStyle: null });
     tmp9Result = tmp9(View, obj);
     const tmp10 = View;
-    const tmp2Result = importDefault(8459);
+    const tmp2Result = importDefault(8498);
   }
   return tmp9Result;
 });

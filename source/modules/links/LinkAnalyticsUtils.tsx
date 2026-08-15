@@ -1,9 +1,9 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 8780
+// Function ID: 8781
 // Name: SERVER_INVITE
-// Dependencies: [676, 9001, 1486, 4536, 698, 2]
+// Dependencies: [676, 8781, 1487, 4488, 698, 2]
 
-// Module 9000 (SERVER_INVITE)
+// Module 8780 (SERVER_INVITE)
 import { AnalyticEvents } from "ME";
 
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };
@@ -18,11 +18,11 @@ const items = [
   (target) => {
     let channelId;
     let guildId;
-    const safeParseWithQueryResult = importDefault(1486).safeParseWithQuery(target);
+    const safeParseWithQueryResult = importDefault(1487).safeParseWithQuery(target);
     if (null == safeParseWithQueryResult) {
       return null;
     } else {
-      const tryParseChannelPathResult = require(4536) /* ME */.tryParseChannelPath(safeParseWithQueryResult.path);
+      const tryParseChannelPathResult = require(4488) /* ME */.tryParseChannelPath(safeParseWithQueryResult.path);
       if (null == tryParseChannelPathResult) {
         return null;
       } else {
@@ -39,7 +39,7 @@ const items = [
         }
         UNKNOWN = constants.UNKNOWN;
       }
-      const obj2 = require(4536) /* ME */;
+      const obj2 = require(4488) /* ME */;
     }
   },
   (arg0) => {
@@ -74,7 +74,7 @@ export default {
   },
   trackLinkClicked(closure_1) {
     if (null != closure_1) {
-      let obj = importDefault(1486);
+      let obj = importDefault(1487);
       let tmp3 = obj.isDiscordUrl(closure_1, true) || null != arg1;
       importDefault(698);
       obj = { is_discord_link: null, discord_link_type: null };

@@ -1,10 +1,10 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15491
+// Function ID: 15492
 // Name: showChannelItemEmbeddedActivities
 // Dependencies: [2]
 // Exports: showChannelItemEmbeddedActivities
 
-// Module 15441 (showChannelItemEmbeddedActivities)
+// Module 15491 (showChannelItemEmbeddedActivities)
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/showChannelItemEmbeddedActivities.tsx");
 
 export const showChannelItemEmbeddedActivities = function showChannelItemEmbeddedActivities(arg0) {

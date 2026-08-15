@@ -1,10 +1,10 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11375
+// Function ID: 11376
 // Name: usePollDurationOptions
-// Dependencies: [7355, 1236, 2]
+// Dependencies: [7576, 1236, 2]
 // Exports: default
 
-// Module 11658 (usePollDurationOptions)
+// Module 11375 (usePollDurationOptions)
 import { PollDurations } from "POLL_ATTACHMENT_FOLDER";
 
 const result = require("set").fileFinishedImporting("modules/polls/usePollDurationOptions.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17006
+// Function ID: 17007
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1924, 505, 21, 4342, 712, 5329, 1297, 4338, 1236, 5917, 14545, 4778, 2]
+// Dependencies: [19, 17, 1924, 505, 21, 4661, 712, 5449, 1297, 4734, 1236, 5316, 14577, 4746, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 16960 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 17006 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -42,17 +42,17 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   obj = { style: tmp.header, children: null };
   ({ image, name, price_tier, description } = template.listings[0]);
   obj = { source: { uri: image }, style: tmp.image };
-  const items = [callback(importDefault(5329), obj), callback(template(1297).Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(5449), obj), callback(template(1297).Spacer, { size: 16 }), ];
   const obj1 = { style: { flexShrink: 1 }, children: null };
-  const items1 = [callback(template(4338).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), callback(template(1297).Spacer, { size: 4 }), ];
+  const items1 = [callback(template(4734).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), callback(template(1297).Spacer, { size: 4 }), ];
   const obj2 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: null };
   const intl = template(1236).intl;
   const obj3 = { price: null, interval: null };
-  let obj6 = template(5917);
+  let obj6 = template(5316);
   obj3[0] = obj6.formatPrice(price_tier, CurrencyCodes.USD);
-  obj3[1] = template(14545).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj3[1] = template(14577).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj2[2] = intl.format(template(1236).t.CgmBaG, obj3);
-  items1[2] = callback(template(4338).Text, obj2);
+  items1[2] = callback(template(4734).Text, obj2);
   obj1[1] = items1;
   items[2] = callback2(View, obj1);
   obj[1] = items;
@@ -60,7 +60,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   const obj5 = { variant: "text-sm/normal", style: descriptionTextStyle };
   const merged = Object.assign(descriptionTextProps);
   obj5.children = description;
-  items2[1] = callback(template(4338).Text, obj5);
+  items2[1] = callback(template(4734).Text, obj5);
   obj6 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl2 = template(1236).intl;
   obj6[0] = intl2.string(template(1236).t["1W7mCt"]);
@@ -68,7 +68,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   obj6[2] = function onPress() {
     return callback(template, closure_2);
   };
-  items2[2] = callback(template(4778).BaseTextButton, obj6);
+  items2[2] = callback(template(4746).BaseTextButton, obj6);
   obj[1] = items2;
   return callback2(View, obj);
 };

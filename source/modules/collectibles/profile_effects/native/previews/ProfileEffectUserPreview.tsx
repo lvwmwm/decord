@@ -1,10 +1,10 @@
-// Module ID: 9509
-// Function ID: 9510
+// Module ID: 9283
+// Function ID: 9284
 // Name: ProfileEffectUserPreview
-// Dependencies: [19, 21, 9510, 1236, 2]
+// Dependencies: [19, 21, 9284, 1236, 2]
 // Exports: default
 
-// Module 9509 (ProfileEffectUserPreview)
+// Module 9283 (ProfileEffectUserPreview)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function ProfileEffectUserPreview(profileEffect) {
   }
   obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(9510), { profileEffectOverride: profileEffect, accessibilityLabel: null });
+  return jsx(importDefault(9284), { profileEffectOverride: profileEffect, accessibilityLabel: null });
 };

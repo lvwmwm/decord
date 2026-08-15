@@ -1,9 +1,9 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14152
+// Function ID: 14153
 // Name: route
-// Dependencies: [19, 8148, 676, 14069, 1236, 1297, 14121, 10421, 14070, 14068, 2]
+// Dependencies: [19, 8198, 676, 14101, 1236, 1297, 14153, 10669, 14102, 14100, 2]
 
-// Module 14120 (route)
+// Module 14152 (route)
 import noop from "noop";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.xZEzbu);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   usePredicate: require("useIs2FAEnabled").useIs2FAEnabled,
   usePreNavigationAction: function useOnViewBackups() {
     return React.useCallback((arg0) => {
@@ -68,7 +68,7 @@ createToggle = {
       let intl3 = callback(1236).intl;
       obj[5] = intl3.string(callback(1236).t.PDTjLN);
       obj[6] = callback(1297).ButtonColors.BRAND;
-      callback2(14121)(obj);
+      callback2(14153)(obj);
       return false;
     }, []);
   },
@@ -77,7 +77,7 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
   getComponent() {
-    return require(14068) /* CodeRow */.default;
+    return require(14100) /* CodeRow */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

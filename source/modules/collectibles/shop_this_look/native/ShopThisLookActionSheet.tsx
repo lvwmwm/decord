@@ -1,10 +1,10 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12340
+// Function ID: 12341
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8879, 5459, 5837, 21, 4342, 712, 9419, 4062, 1236, 12252, 589, 12590, 7082, 12592, 10163, 9473, 8875, 12566, 5789, 5809, 4310, 7070, 9531, 4338, 2]
+// Dependencies: [19, 17, 8963, 6951, 7186, 21, 4661, 712, 9182, 4094, 1236, 11998, 589, 12341, 5312, 12343, 10367, 9240, 8960, 12317, 7139, 7159, 4342, 5300, 9450, 4734, 2]
 // Exports: default
 
-// Module 12589 (ShopThisLookCard)
+// Module 12340 (ShopThisLookCard)
 import useCardGridLayout from "useCardGridLayout";
 import get_ActivityIndicator from "WishlistButtonBase";
 import getFetchState from "getFetchState";
@@ -30,7 +30,7 @@ function ShopThisLookCard(skuId) {
   let getFetchState;
   let callback;
   let wishlistButton = createCacheKey();
-  let obj = skuId(12252);
+  let obj = skuId(11998);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -113,7 +113,7 @@ function ShopThisLookCard(skuId) {
     obj[1] = function renderPreview() {
       return callback(type, {});
     };
-    let tmp23 = callback(onPress(9419), obj);
+    let tmp23 = callback(onPress(9182), obj);
   } else {
     tmp23 = null;
     if (null != stateFromStores) {
@@ -124,14 +124,14 @@ function ShopThisLookCard(skuId) {
         obj1[0] = stateFromStores;
         obj1[1] = size;
         obj1[2] = callback1;
-        const items7 = [callback(onPress(10163), obj1), ];
+        const items7 = [callback(onPress(10367), obj1), ];
         let tmp17Result = null != memo1;
         if (tmp17Result) {
           callback1 = { selectedProduct: null, style: null };
           callback1[0] = memo1;
           wishlistButton = wishlistButton.wishlistButton;
           callback1[1] = wishlistButton;
-          tmp17Result = tmp17(tmp18(9473), callback1);
+          tmp17Result = tmp17(tmp18(9240), callback1);
         }
         items7[1] = tmp17Result;
         obj[1] = items7;
@@ -144,10 +144,10 @@ function ShopThisLookCard(skuId) {
         const obj2 = { sku: null, size: null, overlay: null, onPress: null };
         obj2[0] = stateFromStores;
         obj2[1] = size;
-        obj2[2] = skuId(9419).WishlistItemCardOverlay.LOCKED;
+        obj2[2] = skuId(9182).WishlistItemCardOverlay.LOCKED;
         obj2[3] = tmp10;
-        tmp15Result = callback(onPress(10163), obj2);
-        const tmp13 = onPress(10163);
+        tmp15Result = callback(onPress(10367), obj2);
+        const tmp13 = onPress(10367);
       }
     }
   }
@@ -181,32 +181,32 @@ export default function ShopThisLookActionSheet(arg0) {
   let dependencyMap;
   ({ userId, guildId } = arg0);
   const tmp = createCacheKey();
-  let obj = _require(8875);
+  let obj = _require(8960);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12566)(obj));
-  const tmp2 = analyticsLocations(12566)(obj);
-  analyticsLocations = analyticsLocations(5789)(analyticsLocations(5809).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12317)(obj));
+  const tmp2 = analyticsLocations(12317)(obj);
+  analyticsLocations = analyticsLocations(7139)(analyticsLocations(7159).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {
-    let obj = analyticsLocations(4310);
+    let obj = analyticsLocations(4342);
     obj.hideActionSheet();
-    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5809).USER_PROFILE_OVERFLOW_MENU };
-    const result = _undefined(7070).openCollectiblesShopMobile(obj);
+    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(7159).USER_PROFILE_OVERFLOW_MENU };
+    const result = _undefined(5300).openCollectiblesShopMobile(obj);
   }, items);
   obj = { value: null, children: null };
-  const items1 = [analyticsLocations(5809).SHOP_THIS_LOOK_ACTION_SHEET];
+  const items1 = [analyticsLocations(7159).SHOP_THIS_LOOK_ACTION_SHEET];
   obj[0] = items1;
   const obj1 = { startExpanded: true, title: null, children: null };
-  const tmp3 = analyticsLocations(5789);
+  const tmp3 = analyticsLocations(7139);
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.xNdRDO);
   const obj2 = { style: tmp.container, children: null };
   const obj3 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: null };
   const intl2 = _require(1236).intl;
   obj3[3] = intl2.string(_require(1236).t["ws+0Lr"]);
-  const items2 = [callback(_require(4338).Text, obj3), ];
-  const tmp4 = analyticsLocations(9531);
+  const items2 = [callback(_require(4734).Text, obj3), ];
+  const tmp4 = analyticsLocations(9450);
   const items3 = [tmp.itemsContainer, { gap, width: rowWidth }];
   items2[1] = callback(closure_5, {
     style: items3,
@@ -224,5 +224,5 @@ export default function ShopThisLookActionSheet(arg0) {
   obj2[1] = items2;
   obj1[2] = callback2(closure_5, obj2);
   obj[1] = callback(tmp4, obj1);
-  return callback(_require(5789).AnalyticsLocationProvider, obj);
+  return callback(_require(7139).AnalyticsLocationProvider, obj);
 };

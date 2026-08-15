@@ -1,9 +1,9 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15982
+// Function ID: 15983
 // Name: MediaKeyboardBackground
-// Dependencies: [32, 19, 17, 1623, 676, 21, 1624, 500, 4342, 712, 1236, 11540, 4711, 1367, 4193, 5460, 4084, 4311, 4312, 698, 4763, 4773, 4083, 4793, 1628, 4072, 4760, 4205, 2]
+// Dependencies: [32, 19, 17, 1624, 676, 21, 1625, 500, 4661, 712, 1236, 11256, 4668, 1367, 4225, 6952, 4116, 4343, 4344, 698, 4721, 4731, 4115, 4761, 1629, 4104, 4717, 4237, 2]
 
-// Module 15932 (MediaKeyboardBackground)
+// Module 15982 (MediaKeyboardBackground)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "expandEventProperties";
 import { View } from "HapticFeedbackTypes";

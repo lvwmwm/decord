@@ -1,9 +1,9 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 10187
+// Function ID: 10188
 // Name: PADDING_HORIZONTAL
-// Dependencies: [1338, 5048, 2]
+// Dependencies: [1338, 4964, 2]
 
-// Module 9982 (PADDING_HORIZONTAL)
+// Module 10187 (PADDING_HORIZONTAL)
 import ExpressionPickerViewType from "ExpressionPickerViewType";
 
 let MIN_MARGIN;

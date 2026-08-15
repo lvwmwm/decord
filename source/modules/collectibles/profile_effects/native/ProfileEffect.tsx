@@ -1,10 +1,10 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9210
+// Function ID: 9211
 // Name: StaticEffect
-// Dependencies: [32, 19, 17, 4334, 6944, 21, 4342, 1493, 9444, 9445, 9446, 9448, 589, 691, 9449, 9447, 5329, 8885, 2]
+// Dependencies: [32, 19, 17, 4662, 7383, 21, 4661, 1494, 9211, 9212, 9213, 9215, 589, 691, 9216, 9214, 5449, 8969, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9443 (StaticEffect)
+// Module 9210 (StaticEffect)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "useProfileEffect";
@@ -42,7 +42,7 @@ function StaticEffect(useThumbnail) {
   let obj = thumbnailUrlOverride;
   ({ thumbnailPreviewSrc, accessibilityLabel } = profileEffect);
   [tmp3, c0] = callback(thumbnailUrlOverride.useState(0), 2);
-  const height = reducedMotionSrc(1493)().height;
+  const height = reducedMotionSrc(1494)().height;
   callback = thumbnailUrlOverride.useCallback((nativeEvent) => {
     memo(nativeEvent.nativeEvent.layout.width);
   }, []);
@@ -88,8 +88,8 @@ function StaticEffect(useThumbnail) {
     obj3[2] = 0 - bannerAdjustment;
     items1[1] = obj3;
     obj1[7] = items1;
-    obj[3] = tmp10(tmp4(5329), obj1);
-    const tmp4Result = tmp4(5329);
+    obj[3] = tmp10(tmp4(5449), obj1);
+    const tmp4Result = tmp4(5449);
   }
   return <closure_5 {...obj} />;
 }
@@ -127,7 +127,7 @@ function ProfileEffect(profileEffect) {
   memo = undefined;
   const tmp2 = ref(React.useState(0), 2);
   memo = tmp2[1];
-  const height = memo1(1493)().height;
+  const height = memo1(1494)().height;
   React = tmp2[0];
   accessibilityLabel = profileEffect.accessibilityLabel;
   let items = [profileEffect.effects];
@@ -156,7 +156,7 @@ function ProfileEffect(profileEffect) {
       }
     }
   }, []);
-  jsx = React.useRef(-memo(9445).PROFILE_EFFECT_INTRO_DELAY);
+  jsx = React.useRef(-memo(9212).PROFILE_EFFECT_INTRO_DELAY);
   [c10, c11] = ref(React.useState([]), 2);
   closure_12 = React.useRef([]);
   closure_13 = React.useRef(false);
@@ -172,7 +172,7 @@ function ProfileEffect(profileEffect) {
   }, items3);
   const items4 = [ref];
   const tmp7 = ref(React.useState([]), 2);
-  const tmp9Result = memo1(9448)(React.useCallback((arg0) => {
+  const tmp9Result = memo1(9215)(React.useCallback((arg0) => {
     if (ref.current) {
       if (!ref4.current) {
         tmp.current = true;
@@ -263,8 +263,8 @@ export default function WrappedProfileEffect(skuId) {
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp = importDefault(8885)(skuId.skuId);
-  useThumbnail = require(9444) /* sortEffectLayers */.usePotentiallyRandomizedProfileEffect(tmp);
+  const tmp = importDefault(8969)(skuId.skuId);
+  useThumbnail = require(9211) /* sortEffectLayers */.usePotentiallyRandomizedProfileEffect(tmp);
   if (null == useThumbnail) {
     return null;
   } else {

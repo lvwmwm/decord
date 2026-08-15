@@ -1,10 +1,10 @@
-// Module ID: 9780
-// Function ID: 9781
+// Module ID: 9989
+// Function ID: 9990
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4054, 1979, 589, 4197, 2]
+// Dependencies: [4086, 1979, 589, 4229, 2]
 // Exports: default
 
-// Module 9780 (useCanShowFavoritesGuildOnboarding)
+// Module 9989 (useCanShowFavoritesGuildOnboarding)
 import setContent from "setContent";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -19,7 +19,7 @@ export default function useCanShowFavoritesGuildOnboarding() {
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => open.isOpen());
   const obj2 = require(589) /* initialize */;
   let tmp4 = !stateFromStores;
-  const isModalOpen = require(4197) /* coerceMainRoute */.useIsModalOpen();
+  const isModalOpen = require(4229) /* coerceMainRoute */.useIsModalOpen();
   if (!stateFromStores) {
     tmp4 = !stateFromStores1;
   }

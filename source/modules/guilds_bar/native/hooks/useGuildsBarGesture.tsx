@@ -1,10 +1,10 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15546
+// Function ID: 15547
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1910, 5217, 15497, 15498, 4083, 636, 4311, 1363, 12, 1208, 1236, 8074, 15239, 4065, 712, 3974, 11152, 705, 5293, 8761, 8662, 500, 1628, 4763, 15499, 15500, 14419, 5488, 2]
+// Dependencies: [5, 19, 17, 1910, 5078, 15547, 15548, 4115, 636, 4343, 1363, 12, 1208, 1236, 8124, 15288, 4097, 712, 4006, 11259, 705, 6778, 9365, 9959, 500, 1629, 4721, 15549, 15550, 14451, 6377, 2]
 // Exports: default
 
-// Module 15496 (getDropIndex)
+// Module 15546 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -13,9 +13,9 @@ import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import importDefaultResult from "withEqualityFn";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
-import module_4083 from "module_4083";
-import module_4083 from "module_4083";
-import module_4083 from "module_4083";
+import module_4115 from "module_4115";
+import module_4115 from "module_4115";
+import module_4115 from "module_4115";
 import apply from "module_1208";
 import apply from "module_1208";
 import importDefaultResult1 from "debounce";
@@ -85,7 +85,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
       obj[0] = tmp39;
       AccessibilityAnnouncer.announce(intl12.formatToPlainString(require(1236) /* getSystemLocale */.t["vHD/Je"], obj));
     }
-    lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
+    lib(require(4343) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
     lib.flush();
   } else if ("drag-move" === type) {
     type = undefined;
@@ -120,7 +120,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     if (tmp7 !== tmp8Result) {
       let fKYRlM = dependencyMap;
-      lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
+      lib(require(4343) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
       ({ dragNode, overNode, overState: overState2 } = type);
       if ("convert-before" !== overState2) {
         if ("convert-after" !== overState2) {
@@ -227,7 +227,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     tmp8Result = tmp8(type.dragNode, type.overNode, type.overState);
   } else if ("drag-drop" === type) {
-    lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
+    lib(require(4343) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
     lib.flush();
     lib2.flush();
     const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(8074) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(8074).FastListItemTypes.ITEM === type) {
+          if (require(8124) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(8124).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -307,7 +307,7 @@ let c12 = 160;
 let c13 = 16.666666666666668;
 let obj = { pan: null, itemMeasurements: null, activeIndex: null };
 obj[0] = require("module_4294967295");
-obj[1] = module_4083.makeMutable([]);
+obj[1] = module_4115.makeMutable([]);
 obj[2] = require("module_4294967295");
 let closure_16 = require("debounce")(require("HapticFeedbackTypes").triggerHapticFeedback, 16);
 let closure_17 = require("debounce")((intl) => {
@@ -782,7 +782,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: -1 };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: null };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

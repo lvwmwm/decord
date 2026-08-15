@@ -1,10 +1,10 @@
-// Module ID: 10560
-// Function ID: 10561
+// Module ID: 9810
+// Function ID: 9811
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 676, 21, 4342, 5063, 1236, 5186, 4058, 10561, 5389, 4338, 8536, 1297, 4777, 5331, 5844, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4661, 5097, 1236, 5223, 4090, 9811, 6803, 4734, 8575, 1297, 4745, 6314, 6312, 2]
 // Exports: default
 
-// Module 10560 (FederatedSocialModal)
+// Module 9810 (FederatedSocialModal)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -21,7 +21,7 @@ const result = require("noop").fileFinishedImporting("modules/connections/native
 
 export default function FederatedSocialModal(platformType) {
   const _require = platformType;
-  let screens = importDefault(5063);
+  let screens = importDefault(5097);
   let value = screens.get(platformType.platformType);
   let name;
   if (value != null) {
@@ -35,7 +35,7 @@ export default function FederatedSocialModal(platformType) {
   let obj = { headerTitle: null, headerLeft: null, render: null };
   let intl2 = _require(1236).intl;
   obj[0] = intl2.formatToPlainString(_require(1236).t["ImMhq+"], { serviceName: name });
-  obj[1] = _require(5331).getHeaderBackButton(platformType.onClose);
+  obj[1] = _require(6314).getHeaderBackButton(platformType.onClose);
   obj[2] = function render() {
     let closure_0;
     let closure_1;
@@ -59,7 +59,7 @@ export default function FederatedSocialModal(platformType) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -198,5 +198,5 @@ export default function FederatedSocialModal(platformType) {
     return outer1_8(platformType(outer1_2[11]).SafeAreaPaddingView, obj);
   };
   screens[0] = obj;
-  return callback(_require(5844).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(6312).Navigator, { initialRouteName: "root", screens });
 };

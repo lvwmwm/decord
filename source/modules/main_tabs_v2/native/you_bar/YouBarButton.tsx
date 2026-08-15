@@ -1,9 +1,9 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15648
+// Function ID: 15649
 // Name: YouBarButtonIcon
-// Dependencies: [19, 17, 14418, 21, 4342, 712, 8363, 8459, 7817, 2]
+// Dependencies: [19, 17, 14450, 21, 4661, 712, 8402, 8498, 8035, 2]
 
-// Module 15598 (YouBarButtonIcon)
+// Module 15648 (YouBarButtonIcon)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
@@ -88,7 +88,7 @@ class YouBarButtonIcon {
     items2 = [, ];
     items2[0] = memo;
     items2[1] = hasBadge;
-    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "id", bottom: "variant", padding: "justifyContent", minWidth: "Promise" }), items1);
+    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "id", bottom: "start", padding: "justifyContent", minWidth: "exports" }), items1);
     obj1 = { style: { position: "relative", height: tmp, width: tmp }, children: null };
     memo2 = obj2.useMemo(() => {
       if (size2) {
@@ -150,7 +150,7 @@ const memoResult = importAllResult.memo(function YouBarButton(arg0) {
   obj[4] = onPress;
   obj[5] = onLongPress;
   obj[6] = closure_5;
-  obj[0] = closure_7(require(7817) /* IconButton */.IconButton, obj);
+  obj[0] = closure_7(require(8035) /* IconButton */.IconButton, obj);
   return closure_7(YouBarButtonContainer, obj);
 });
 let result = require("CONNECTION_BANNER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarButton.tsx");

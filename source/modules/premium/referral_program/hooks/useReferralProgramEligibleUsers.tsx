@@ -1,10 +1,10 @@
-// Module ID: 12805
-// Function ID: 12806
+// Module ID: 12883
+// Function ID: 12884
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 6984, 589, 38, 6985, 8379, 2]
+// Dependencies: [5, 32, 19, 7423, 589, 38, 7424, 8418, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 12805 (useReferralProgramEligibleUsers)
+// Module 12883 (useReferralProgramEligibleUsers)
 import module_38 from "module_38";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -47,7 +47,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -97,7 +97,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let tmp34 = v0(Array.from(outer1_0.values()));
                 let num5 = 3;
                 v0 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let tmp46 = dependencyMap;
                 let tmp47 = module_38;
@@ -204,7 +204,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {

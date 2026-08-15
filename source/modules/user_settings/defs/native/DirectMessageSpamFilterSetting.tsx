@@ -1,9 +1,9 @@
-// Module ID: 14161
-// Function ID: 14162
+// Module ID: 14193
+// Function ID: 14194
 // Name: radio
-// Dependencies: [19, 8148, 14162, 4034, 10421, 1236, 14164, 2]
+// Dependencies: [19, 8198, 14194, 4066, 10669, 1236, 14196, 2]
 
-// Module 14161 (radio)
+// Module 14193 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.tiCXaH);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useOptions: function useDmSpamFilterSettingOptions() {
     return React.useMemo(() => {
       const dmSpamOptions = callback(table[2]).generateDmSpamOptions();
@@ -22,7 +22,7 @@ createToggle = {
   },
   useValue: require("useDerivedDmSpamFilterSettingValue").useDerivedDmSpamFilterSettingValue,
   onValueChange: function onDmSpamFilterSettingValueChange(arg0) {
-    const DmSpamFilterV2 = require(4034) /* explicitContentFromProto */.DmSpamFilterV2;
+    const DmSpamFilterV2 = require(4066) /* explicitContentFromProto */.DmSpamFilterV2;
     DmSpamFilterV2.updateSetting(Number(arg0));
   },
   useSearchTerms() {

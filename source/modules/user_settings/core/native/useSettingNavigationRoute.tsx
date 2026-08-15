@@ -1,12 +1,12 @@
-// Module ID: 6946
-// Function ID: 6947
+// Module ID: 7385
+// Function ID: 7386
 // Name: useSettingNavigationRoute
-// Dependencies: [1500, 2]
+// Dependencies: [1501, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 6946 (useSettingNavigationRoute)
+// Module 7385 (useSettingNavigationRoute)
 const result = require("set").fileFinishedImporting("modules/user_settings/core/native/useSettingNavigationRoute.tsx");
 
 export const useSettingNavigationRoute = function useSettingNavigationRoute() {
-  return require(1500) /* createStandardNavigationFactories */.useRoute();
+  return require(1501) /* createStandardNavigationFactories */.useRoute();
 };

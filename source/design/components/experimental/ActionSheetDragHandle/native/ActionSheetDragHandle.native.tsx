@@ -1,9 +1,9 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8820
+// Function ID: 8821
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8727, 21, 4342, 712, 1236, 4083, 2]
+// Dependencies: [19, 17, 8812, 21, 4661, 712, 1236, 4115, 2]
 
-// Module 8735 (ActionSheetDragHandle)
+// Module 8820 (ActionSheetDragHandle)
 import get_ActivityIndicator from "get ActivityIndicator";
 import PX_4 from "PX_4";
 import { jsx } from "jsxProd";
@@ -45,7 +45,7 @@ const memoResult = require("noop").memo((accessibilityLabel) => {
     obj = { style: null };
     const items1 = [tmp3.bar, animatedBarStyles];
     obj[0] = items1;
-    let tmp4Result = tmp4(importDefault(4083).View, obj);
+    let tmp4Result = tmp4(importDefault(4115).View, obj);
   } else {
     const obj1 = { style: null };
     obj1[0] = tmp3.bar;

@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 11960
+// Function ID: 11961
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 1429, 9680, 21, 4342, 712, 12218, 12219, 7373, 1370, 4061, 1236, 9769, 12216, 1493, 500, 11146, 3047, 4911, 11147, 11165, 12220, 2]
+// Dependencies: [5, 32, 19, 17, 1429, 9081, 21, 4661, 712, 11961, 11962, 7591, 1370, 4093, 1236, 9978, 11959, 1494, 500, 9090, 3079, 9091, 9092, 11963, 11965, 2]
 // Exports: default
 
-// Module 12217 (FavoritesGuildAddChannelModal)
+// Module 11960 (FavoritesGuildAddChannelModal)
 import UserRowModes from "UserRowModes";
 import _slicedToArray from "_slicedToArray";
 import SearchableDestinationListHeader from "SearchableDestinationListHeader";
@@ -30,7 +30,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   let dependencyMap;
   let height;
   const tmp = createCacheKey();
-  first(12219)(parentId.source);
+  first(11962)(parentId.source);
   const tmp4 = callback(React.useState([]), 2);
   first = tmp4[0];
   dependencyMap = tmp4[1];
@@ -50,7 +50,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -109,7 +109,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
       }
     }
   }), items);
-  height = first(1493)({ ignoreKeyboard: true }).height;
+  height = first(1494)({ ignoreKeyboard: true }).height;
   const items1 = [height];
   let obj = {
     style: React.useMemo(() => {
@@ -119,19 +119,19 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     children: null
   };
   obj = { title: null, onClose: null };
-  const tmp2 = first(12218)();
+  const tmp2 = first(11961)();
   let intl = parentId(1236).intl;
-  obj[0] = intl.string(first(3047).Rp35U1);
-  obj[1] = parentId(12216).closeFavoritesGuildAddChannelModal;
-  const items2 = [callback2(first(11146), obj), ];
+  obj[0] = intl.string(first(3079).Rp35U1);
+  obj[1] = parentId(11959).closeFavoritesGuildAddChannelModal;
+  const items2 = [callback2(first(9090), obj), ];
   obj = { style: tmp.container, children: null };
-  const items3 = [callback2(first(4911), { absolute: true }), callback2(first(11147), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 }), ];
+  const items3 = [callback2(first(9091), { absolute: true }), callback2(first(9092), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 }), ];
   let obj2 = { isVisible: first.length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: null, onPress: null };
   let obj1 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
-  const tmp7 = first(11146);
-  obj2[2] = parentId(12220).getFavoritesAddButtonLabel(first.length);
+  const tmp7 = first(9090);
+  obj2[2] = parentId(11965).getFavoritesAddButtonLabel(first.length);
   obj2[3] = callback1;
-  items3[2] = callback2(parentId(11165).ModalFloatingAction, obj2);
+  items3[2] = callback2(parentId(11963).ModalFloatingAction, obj2);
   obj[1] = items3;
   items2[1] = callback3(View, obj);
   obj[1] = items2;

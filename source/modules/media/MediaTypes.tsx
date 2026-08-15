@@ -1,10 +1,10 @@
-// Module ID: 4593
-// Function ID: 4594
+// Module ID: 4810
+// Function ID: 4811
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1403, 1954, 4532, 1486, 2]
+// Dependencies: [676, 1403, 1954, 4811, 1487, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4593 (messageAttachmentToUnfurledMediaItem)
+// Module 4810 (messageAttachmentToUnfurledMediaItem)
 import { MessageAttachmentFlags } from "ME";
 
 function messageAttachmentToUnfurledMediaItem(flags) {
@@ -75,11 +75,11 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
         if (null != obj3.toURLSafe(contentType.proxyUrl)) {
           str3 = "VIDEO";
         }
-        obj3 = importDefault(1486);
+        obj3 = importDefault(1487);
       }
     }
     str = str3;
-    tmpResult = require(4532) /* urlMatchesFileExtension */;
+    tmpResult = require(4811) /* urlMatchesFileExtension */;
   }
   return str;
 };
@@ -93,7 +93,7 @@ export const messageAttachmentToMediaItem = function messageAttachmentToMediaIte
       str2 = "VIDEO";
     }
     str = str2;
-    tmp2Result = require(4532) /* urlMatchesFileExtension */;
+    tmp2Result = require(4811) /* urlMatchesFileExtension */;
   }
   obj.type = str;
   obj.alt = found2.description;
@@ -124,7 +124,7 @@ export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
   } else {
     if ("VIDEO" === type.type) {
       if (null != type.proxyUrl) {
-        let str = importDefault(1486).toURLSafe(type.proxyUrl);
+        let str = importDefault(1487).toURLSafe(type.proxyUrl);
         str = null;
         if (null != str) {
           const searchParams = str.searchParams;

@@ -1,10 +1,10 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11097
+// Function ID: 11098
 // Name: shouldRenderReportFalsePositiveButton
-// Dependencies: [5972, 647, 2]
+// Dependencies: [5002, 647, 2]
 // Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 11384 (shouldRenderReportFalsePositiveButton)
+// Module 11097 (shouldRenderReportFalsePositiveButton)
 import getFpMessageInfo from "getFpMessageInfo";
 
 const require = arg1;

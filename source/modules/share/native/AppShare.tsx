@@ -1,10 +1,10 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17143
+// Function ID: 17144
 // Name: AppShare
-// Dependencies: [32, 19, 17, 6991, 13739, 1218, 676, 11858, 21, 589, 5888, 500, 13778, 11861, 7004, 698, 4793, 13887, 13328, 1624, 8987, 5883, 16074, 16122, 4710, 2]
+// Dependencies: [32, 19, 17, 5053, 13771, 1218, 676, 11586, 21, 589, 5256, 500, 13810, 11589, 5066, 698, 4761, 13919, 13360, 1625, 9068, 6549, 16124, 16172, 4660, 2]
 // Exports: default
 
-// Module 17097 (AppShare)
+// Module 17143 (AppShare)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "GestureWrapper";
@@ -45,9 +45,9 @@ export default function AppShare(targetUserId) {
   const items = [first];
   const effect = obj.useEffect(() => {
     if (!first) {
-      first(13778).init();
+      first(13810).init();
       dependencyMap(true);
-      const obj = first(13778);
+      const obj = first(13810);
     }
   }, items);
   const items1 = [targetUserId];
@@ -75,8 +75,8 @@ export default function AppShare(targetUserId) {
   const items3 = [stateFromStores];
   const effect2 = obj.useEffect(() => {
     if (stateFromStores) {
-      first(5888).startSession(outer1_7.getToken());
-      const obj = first(5888);
+      first(5256).startSession(outer1_7.getToken());
+      const obj = first(5256);
       if (obj2.isAndroid()) {
         const NativePermissionManager = outer1_6.NativePermissionManager;
         const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
@@ -94,7 +94,7 @@ export default function AppShare(targetUserId) {
     obj = { has_content: tmp2, has_attachment: tmp.attachments.length > 0 };
     obj.track(outer1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items4);
-  first(4793)(() => {
+  first(4761)(() => {
     const attachments = stateFromStores.attachments;
     const mapped = attachments.map((mimeType) => {
       let str = mimeType.mimeType;
@@ -103,29 +103,29 @@ export default function AppShare(targetUserId) {
       }
       return str;
     });
-    stateFromStores(7004).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
+    stateFromStores(5066).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
   });
   obj = { appEntryKey: share, children: null };
   if (first) {
     obj = { appEntryKey: null, sharedContent: null, onClose: null };
     obj[0] = tmp18;
     obj[1] = targetUserId;
-    const tmp14Result = tmp14(13328);
+    const tmp14Result = tmp14(13360);
     if (tmp9Result.isMetaQuest()) {
-      let exitApp = tmp14(8987).close;
+      let exitApp = tmp14(9068).close;
     } else {
       exitApp = exitApp.exitApp;
     }
     obj[2] = exitApp;
     tmp19(tmp14Result, obj);
-    tmp9Result = tmp9(1624);
+    tmp9Result = tmp9(1625);
   } else {
-    const items5 = [tmp19(tmp9(5883).SceneLoadingIndicator, {}), , , ];
+    const items5 = [tmp19(tmp9(6549).SceneLoadingIndicator, {}), , , ];
     obj1 = { appEntryKey: null };
     obj1[0] = tmp18;
-    items5[1] = tmp19(tmp9(16074).ActionSheetContainer, obj1);
-    items5[2] = tmp19(tmp14(16122), {});
-    items5[3] = tmp19(tmp9(4710).AlertModalContainer, {});
+    items5[1] = tmp19(tmp9(16124).ActionSheetContainer, obj1);
+    items5[2] = tmp19(tmp14(16172), {});
+    items5[3] = tmp19(tmp9(4660).AlertModalContainer, {});
     obj[1] = items5;
     return closure_11(tmp17, obj);
   }

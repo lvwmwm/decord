@@ -1,9 +1,9 @@
-// Module ID: 4398
-// Function ID: 4399
+// Module ID: 4502
+// Function ID: 4503
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 4398 (enforcing)
+// Module 4502 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMediaEngineModule");

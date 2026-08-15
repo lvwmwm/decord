@@ -1,10 +1,10 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14228
+// Function ID: 14229
 // Name: useSelectedMyFamilyTab
-// Dependencies: [7066, 7067, 676, 647, 7068, 698, 2]
+// Dependencies: [5296, 5297, 676, 647, 5298, 698, 2]
 // Exports: default
 
-// Module 14196 (useSelectedMyFamilyTab)
+// Module 14228 (useSelectedMyFamilyTab)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 import { AnalyticEvents } from "ME";
@@ -20,7 +20,7 @@ export default function useSelectedMyFamilyTab() {
   const items = [freshTeenActivityWithMap];
   obj[0] = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => selectedTab.getSelectedTab());
   obj[1] = function handleTabChange(tab) {
-    let obj = callback(7068);
+    let obj = callback(5298);
     tab = obj.selectTab(tab);
     obj = { action: TabChange.TabChange, tab };
     callback(698).track(constants.FAMILY_CENTER_ACTION, obj);

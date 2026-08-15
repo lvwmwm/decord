@@ -1,9 +1,9 @@
-// Module ID: 14955
-// Function ID: 14956
+// Module ID: 14995
+// Function ID: 14996
 // Name: route
-// Dependencies: [8148, 676, 10421, 1236, 14956, 2]
+// Dependencies: [8198, 676, 10669, 1236, 14996, 2]
 
-// Module 14955 (route)
+// Module 14995 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -11,14 +11,14 @@ obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["5b3FNI"]);
   },
-  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
   unsearchable: true,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
   getComponent() {
-    return require(14956) /* VerificationListItem */.default;
+    return require(14996) /* VerificationListItem */.default;
   }
 };
 const route = createToggle.createRoute(obj);

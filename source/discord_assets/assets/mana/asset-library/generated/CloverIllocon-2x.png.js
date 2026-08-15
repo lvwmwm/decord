@@ -1,9 +1,9 @@
-// Module ID: 6231
-// Function ID: 6232
+// Module ID: 5589
+// Function ID: 5590
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6231 (metadata)
+// Module 5589 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloverIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/a43e35e4b075af0bb4d72032d3dc8f5fbf95da3dc2a2eaf84d54a79bcbc47d4a.png";

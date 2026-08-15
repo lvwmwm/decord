@@ -1,9 +1,9 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12098
+// Function ID: 12099
 // Name: entryToKey
-// Dependencies: [4431, 8962, 676, 8303, 8307, 8981, 8967, 8963, 12, 589, 709, 2]
+// Dependencies: [4559, 9045, 676, 8344, 8348, 9062, 9048, 9046, 12, 589, 709, 2]
 
-// Module 12363 (entryToKey)
+// Module 12098 (entryToKey)
 import sortActivity from "sortActivity";
 import map from "map";
 import { ActivityTypes } from "ME";
@@ -20,7 +20,7 @@ function getMatchingActivity(author_type) {
   if (!obj.isEntryExpired(author_type)) {
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8981).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(9062).ContentInventoryAuthorType.USER) {
         activities = activities.getActivities(author_type.author_id);
         found = activities.find((type) => {
           if (type.type === outer1_5.PLAYING) {
@@ -44,7 +44,7 @@ function getMatchingActivity(author_type) {
       }
     }
     tmp3 = found;
-    tmpResult = tmp(8307);
+    tmpResult = tmp(8348);
   }
   return tmp3;
 }

@@ -1,22 +1,22 @@
-// Module ID: 6028
-// Function ID: 6029
+// Module ID: 7309
+// Function ID: 7310
 // Name: VoiceChannelEffectAnimationType
-// Dependencies: [1922, 6027, 6029, 6030, 6031, 6032, 6033, 6034, 6035, 6036, 6037, 6038, 6039, 6040, 6041, 6042, 6043, 6044, 6045, 6046, 6047, 6048, 6049, 6050, 12, 1469, 1435, 4002, 4006, 1236, 2]
+// Dependencies: [1922, 7308, 7310, 7311, 7312, 7313, 7314, 7315, 7316, 7317, 7318, 7319, 7320, 7321, 7322, 7323, 7324, 7325, 7326, 7327, 7328, 7329, 7330, 7331, 12, 1469, 1435, 4034, 4038, 1236, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 6028 (VoiceChannelEffectAnimationType)
+// Module 7309 (VoiceChannelEffectAnimationType)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType";
-import importDefaultResult from "module_6039";
+import importDefaultResult from "module_7320";
 
 let VoiceChannelEffectAnimationType;
 let c4;
 const require = arg1;
 ({ EMOJI_SIZE: c4, VoiceChannelEffectAnimationType } = VoiceChannelEffectAnimationType);
-const items = [require("module_6029")];
-const items1 = [require("module_6030"), require("module_6031"), require("module_6032"), require("module_6033"), require("module_6034"), require("module_6035"), require("module_6036"), require("module_6037"), require("module_6038"), require("module_6039"), require("module_6040"), require("module_6041"), require("module_6042"), require("module_6043"), require("module_6044"), require("module_6045"), require("module_6046"), require("module_6047"), require("module_6048"), require("module_6049"), require("module_6050")];
+const items = [require("module_7310")];
+const items1 = [require("module_7311"), require("module_7312"), require("module_7313"), require("module_7314"), require("module_7315"), require("module_7316"), require("module_7317"), require("module_7318"), require("module_7319"), require("module_7320"), require("module_7321"), require("module_7322"), require("module_7323"), require("module_7324"), require("module_7325"), require("module_7326"), require("module_7327"), require("module_7328"), require("module_7329"), require("module_7330"), require("module_7331")];
 let obj = { [VoiceChannelEffectAnimationType.BASIC]: items, [VoiceChannelEffectAnimationType.PREMIUM]: items1 };
-const memoizeResult = require("module_6039").memoize((arg0) => {
+const memoizeResult = require("module_7320").memoize((arg0) => {
   let closure_0 = arg0;
   return new Promise((arg0) => {
     let closure_0 = arg0;
@@ -41,7 +41,7 @@ const memoizeResult = require("module_6039").memoize((arg0) => {
     };
   });
 });
-let result = require("module_6029").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsUtils.tsx");
+let result = require("module_7310").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsUtils.tsx");
 
 export const CUSTOM_CALL_SOUND_ANIMATION_RANGE = { start: 10, end: 15 };
 export const AnimationTypeToAnimations = obj;
@@ -73,13 +73,13 @@ export const getEffectUrl = function getEffectUrl(emoji) {
     obj[2] = tmp;
     return importDefault(1435).getEmojiURL(obj);
   } else {
-    obj = importDefault(4002);
+    obj = importDefault(4034);
     const result = obj.convertSurrogateToName(emoji.name, false);
-    const byName = importDefault(4002).getByName(result);
+    const byName = importDefault(4034).getByName(result);
     let str = "";
     if (null != byName) {
-      str = importDefault(4006).getURL(byName.surrogates);
-      const tmp2Result = importDefault(4006);
+      str = importDefault(4038).getURL(byName.surrogates);
+      const tmp2Result = importDefault(4038);
     }
     return str;
   }

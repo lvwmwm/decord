@@ -1,10 +1,10 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 12649
+// Function ID: 12650
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4342, 712, 1236, 13116, 13117, 4083, 4343, 13118, 13119, 13120, 13121, 5437, 4872, 4338, 2]
+// Dependencies: [32, 19, 17, 21, 4661, 712, 1236, 12650, 12651, 4115, 4664, 12652, 12653, 12654, 12655, 6292, 6876, 4734, 2]
 // Exports: default
 
-// Module 13115 (NUFChannelIllustration)
+// Module 12649 (NUFChannelIllustration)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "Text";
@@ -43,9 +43,9 @@ export default function NUFChannelIllustration() {
   const tmp2 = sharedValue(sharedValue1.useState([]), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = require(4083);
+  let obj = require(4115);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = require(4083);
+  let obj1 = require(4115);
   sharedValue1 = obj1.useSharedValue(0);
   const effect = sharedValue1.useEffect(() => {
     const timeout = setTimeout(() => callback((arg0) => {
@@ -54,7 +54,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = callback(1236).intl;
       obj[0] = intl2.string(callback(1236).t["9m/HsX"]);
-      obj[1] = callback2(13116);
+      obj[1] = callback2(12650);
       obj[2] = intl.string(callback(1236).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -65,7 +65,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = callback(1236).intl;
       obj[0] = intl2.string(callback(1236).t["AW1kM+"]);
-      obj[1] = callback2(13117);
+      obj[1] = callback2(12651);
       obj[2] = intl.string(callback(1236).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -78,56 +78,56 @@ export default function NUFChannelIllustration() {
   let items = [sharedValue1, first];
   const effect1 = sharedValue1.useEffect(() => {
     if (first.length >= 2) {
-      const result = sharedValue1.set(sharedValue1(4343).withTiming(1, { duration: 250 }));
-      const obj = sharedValue1(4343);
+      const result = sharedValue1.set(sharedValue1(4664).withTiming(1, { duration: 250 }));
+      const obj = sharedValue1(4664);
     }
   }, items);
   let items1 = [sharedValue, first];
   const effect2 = sharedValue1.useEffect(() => {
     const result = sharedValue.set(0);
-    const result1 = sharedValue.set(tmp(4343).withTiming(1, { duration: 200 }));
+    const result1 = sharedValue.set(tmp(4664).withTiming(1, { duration: 200 }));
   }, items1);
-  let obj2 = require(4083);
+  let obj2 = require(4115);
   const fn = function b() {
     let obj = { transform: null };
     obj = { translateY: null };
-    obj[0] = tmp(4083).interpolate(sharedValue.get(), [0, 1], [50, 0]);
+    obj[0] = tmp(4115).interpolate(sharedValue.get(), [0, 1], [50, 0]);
     const items = [obj];
     obj[0] = items;
     return obj;
   };
-  obj = { interpolate: require(4083).interpolate, messageListAnimation: sharedValue };
+  obj = { interpolate: require(4115).interpolate, messageListAnimation: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 1240710065054;
   fn.__initData = closure_10;
   obj = { style: tmp.container, children: null };
   obj1 = { source: null, style: null };
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1[0] = first(13118);
+  obj1[0] = first(12652);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj1[1] = items2;
   const items3 = [callback(closure_6, obj1), , , , , ];
-  obj2 = { source: first(13119), style: items4 };
+  obj2 = { source: first(12653), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = callback(closure_6, obj2);
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
-  items3[2] = callback(closure_6, { source: first(13120), style: items5 });
-  const obj3 = { source: first(13120), style: items5 };
+  items3[2] = callback(closure_6, { source: first(12654), style: items5 });
+  const obj3 = { source: first(12654), style: items5 };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
-  items3[3] = callback(closure_6, { source: first(13121), style: items6 });
+  items3[3] = callback(closure_6, { source: first(12655), style: items6 });
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
   const obj6 = { style: tmp.card, shadow: "low", border: "subtle", children: null };
   const obj7 = { style: tmp.header, children: null };
-  const items7 = [callback(require(4872) /* TextIcon */.TextIcon, { size: "sm" }), ];
+  const items7 = [callback(require(6876) /* TextIcon */.TextIcon, { size: "sm" }), ];
   const obj8 = { variant: "text-md/bold", allowFontScaling: false, children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   const items8 = [" ", intl.string(require(1236) /* getSystemLocale */.t.aLOLry)];
   obj8[2] = items8;
-  items7[1] = callback2(require(4338) /* Text */.Text, obj8);
+  items7[1] = callback2(require(4734) /* Text */.Text, obj8);
   obj7[1] = items7;
   const items9 = [callback2(closure_5, obj7), ];
   const obj9 = { style: tmp.content, children: null };
@@ -137,16 +137,16 @@ export default function NUFChannelIllustration() {
     obj = { source: children.avatar, style: tmp.messageAvatar };
     const items = [outer1_7(outer1_6, obj), ];
     obj = { style: tmp.messageContent, children: null };
-    const items1 = [outer1_7(tmp(4338).Text, { variant: "text-md/semibold", allowFontScaling: false, children: children.name }), outer1_7(tmp(4338).Text, { variant: "text-md/medium", allowFontScaling: false, children: children.message })];
+    const items1 = [outer1_7(tmp(4734).Text, { variant: "text-md/semibold", allowFontScaling: false, children: children.name }), outer1_7(tmp(4734).Text, { variant: "text-md/medium", allowFontScaling: false, children: children.message })];
     obj[1] = items1;
     items[1] = outer1_8(outer1_5, obj);
     obj[1] = items;
     return outer1_8(outer1_5, obj, children.message);
   });
-  obj9[1] = callback(first(4083).View, obj10);
+  obj9[1] = callback(first(4115).View, obj10);
   items9[1] = callback(closure_5, obj9);
   obj6[3] = items9;
-  items3[5] = callback2(require(5437) /* PressableCard */.Card, obj6);
+  items3[5] = callback2(require(6292) /* PressableCard */.Card, obj6);
   obj[1] = items3;
   return callback2(closure_5, obj);
 };

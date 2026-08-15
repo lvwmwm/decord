@@ -1,10 +1,10 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15965
+// Function ID: 15966
 // Name: RequestsSettingsModalButton
-// Dependencies: [19, 17, 21, 8633, 4342, 712, 8456, 8453, 12034, 1236, 7004, 5844, 15916, 15922, 15935, 15936, 15937, 15943, 15944, 15945, 15947, 15950, 15951, 4193, 1628, 4072, 2]
+// Dependencies: [19, 17, 21, 9931, 4661, 712, 8495, 8492, 11765, 1236, 5066, 6312, 15966, 15972, 15985, 15986, 15987, 15993, 15994, 15995, 15997, 16000, 16001, 4225, 1629, 4104, 2]
 // Exports: default
 
-// Module 15915 (RequestsSettingsModalButton)
+// Module 15965 (RequestsSettingsModalButton)
 import FriendRequestsSettingsScreen from "FriendRequestsSettingsScreen";
 import { View } from "UsernameSearchScreen";
 import jsxProd from "SpamRequestsScreen";
@@ -17,17 +17,17 @@ const require = arg1;
 function RequestsSettingsModalButton(onPress) {
   let obj = { isModal: true, children: null };
   obj = { source: null, onPress: null, accessibilityLabel: null };
-  obj[0] = importDefault(12034);
+  obj[0] = importDefault(11765);
   obj[1] = onPress.onPress;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["3D5yo/"]);
-  obj[1] = callback(require(8453) /* GenericHeaderTitle */.HeaderIconButton, obj);
-  return callback(importDefault(8456), obj);
+  obj[1] = callback(require(8492) /* GenericHeaderTitle */.HeaderIconButton, obj);
+  return callback(importDefault(8495), obj);
 }
 function FriendsNavigator() {
   const _require = createNativeStackNavigator();
-  const layoutEffect = React.useLayoutEffect(() => lib(7004).trackAppUIViewed(), []);
-  let obj = _require(5844);
+  const layoutEffect = React.useLayoutEffect(() => lib(5066).trackAppUIViewed(), []);
+  let obj = _require(6312);
   let closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(arg0) {
@@ -94,7 +94,7 @@ function FriendsNavigator() {
       return obj;
     },
     getComponent() {
-      return lib(15916).default;
+      return lib(15966).default;
     }
   };
   const items = [callback(createNativeStackNavigator.Screen, obj), , , , , , , , , , ];
@@ -104,7 +104,7 @@ function FriendsNavigator() {
   obj2[0] = intl.string(_require(1236).t.jD1qzM);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return lib(15922).default;
+    return lib(15972).default;
   };
   items[1] = callback(createNativeStackNavigator.Screen, obj1);
   let obj3 = { name: "gdm", options: null, getComponent: null };
@@ -113,7 +113,7 @@ function FriendsNavigator() {
   obj4[0] = intl2.string(_require(1236).t["3hF1W4"]);
   obj3[1] = obj4;
   obj3[2] = function getComponent() {
-    return lib(15935).default;
+    return lib(15985).default;
   };
   items[2] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "add-friend", options: null, getComponent: null };
@@ -122,7 +122,7 @@ function FriendsNavigator() {
   obj6[0] = intl3.string(_require(1236).t.w5uwoI);
   obj5[1] = obj6;
   obj5[2] = function getComponent() {
-    return lib(15936).default;
+    return lib(15986).default;
   };
   items[3] = callback(createNativeStackNavigator.Screen, obj5);
   const obj7 = { name: "add-friends", options: null, getComponent: null };
@@ -131,7 +131,7 @@ function FriendsNavigator() {
   obj8[0] = intl4.string(_require(1236).t.zIJnA6);
   obj7[1] = obj8;
   obj7[2] = function getComponent() {
-    return lib(15937).default;
+    return lib(15987).default;
   };
   items[4] = callback(createNativeStackNavigator.Screen, obj7);
   const obj9 = { name: "username-search", options: null, getComponent: null };
@@ -140,7 +140,7 @@ function FriendsNavigator() {
   obj10[0] = intl5.string(_require(1236).t.QzVsOs);
   obj9[1] = obj10;
   obj9[2] = function getComponent() {
-    return lib(15943).default;
+    return lib(15993).default;
   };
   items[5] = callback(createNativeStackNavigator.Screen, obj9);
   const obj11 = { name: "suggested-friends", options: null, getComponent: null };
@@ -149,7 +149,7 @@ function FriendsNavigator() {
   obj12[0] = intl6.string(_require(1236).t["1uAmCw"]);
   obj11[1] = obj12;
   obj11[2] = function getComponent() {
-    return lib(15944).default;
+    return lib(15994).default;
   };
   items[6] = callback(createNativeStackNavigator.Screen, obj11);
   const obj13 = { name: "requests-settings", options: null, getComponent: null };
@@ -158,7 +158,7 @@ function FriendsNavigator() {
   obj14[0] = intl7.string(_require(1236).t.XT4hVl);
   obj13[1] = obj14;
   obj13[2] = function getComponent() {
-    return lib(15945).default;
+    return lib(15995).default;
   };
   items[7] = callback(createNativeStackNavigator.Screen, obj13);
   items[8] = callback(createNativeStackNavigator.Screen, {
@@ -178,7 +178,7 @@ function FriendsNavigator() {
       return obj;
     },
     getComponent() {
-      return lib(15947).default;
+      return lib(15997).default;
     }
   });
   const obj16 = { name: "spam-requests", options: null, getComponent: null };
@@ -187,7 +187,7 @@ function FriendsNavigator() {
   obj17[0] = intl8.string(_require(1236).t.oHVeHc);
   obj16[1] = obj17;
   obj16[2] = function getComponent() {
-    return lib(15950).default;
+    return lib(16000).default;
   };
   items[9] = callback(createNativeStackNavigator.Screen, obj16);
   const obj18 = { name: "ignored-user-requests", options: null, getComponent: null };
@@ -196,7 +196,7 @@ function FriendsNavigator() {
   obj19[0] = intl9.string(_require(1236).t.tFY5Zb);
   obj18[1] = obj19;
   obj18[2] = function getComponent() {
-    return lib(15951).default;
+    return lib(16001).default;
   };
   items[10] = callback(createNativeStackNavigator.Screen, obj18);
   obj[1] = items;
@@ -215,13 +215,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export default function ThemedFriendsNavigator() {
   let left;
   let right;
-  const tmp = importDefault(4193)();
-  ({ left, right } = importDefault(1628)());
-  const tmp2 = importDefault(1628)();
+  const tmp = importDefault(4225)();
+  ({ left, right } = importDefault(1629)());
+  const tmp2 = importDefault(1629)();
   let obj = { gradient: tmp, children: null };
   obj = { style: items, children: null };
   items = [createNativeStackNavigator().container, { paddingLeft: left, paddingRight: right }];
   obj[1] = callback(FriendsNavigator, {});
   obj[1] = callback(View, obj);
-  return callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
 };

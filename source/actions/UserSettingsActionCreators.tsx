@@ -1,10 +1,10 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 9365
+// Function ID: 9366
 // Name: saveGuildFolders
-// Dependencies: [5, 4163, 1303, 1302, 676, 1305, 1374, 1306, 1337, 709, 4190, 4034, 2]
+// Dependencies: [5, 4195, 1303, 1302, 676, 1305, 1374, 1306, 1337, 709, 4222, 4066, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8761 (saveGuildFolders)
+// Module 9365 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -36,19 +36,19 @@ export default {
       obj = {};
     } else {
       obj = { inlineAttachmentMedia: null, inlineEmbedMedia: null, renderEmbeds: null, renderReactions: null, animateEmoji: null, animateStickers: null, gifAutoPlay: null };
-      const InlineAttachmentMedia = require(4034) /* explicitContentFromProto */.InlineAttachmentMedia;
+      const InlineAttachmentMedia = require(4066) /* explicitContentFromProto */.InlineAttachmentMedia;
       obj[0] = InlineAttachmentMedia.getSetting();
-      const InlineEmbedMedia = require(4034) /* explicitContentFromProto */.InlineEmbedMedia;
+      const InlineEmbedMedia = require(4066) /* explicitContentFromProto */.InlineEmbedMedia;
       obj[1] = InlineEmbedMedia.getSetting();
-      const RenderEmbeds = require(4034) /* explicitContentFromProto */.RenderEmbeds;
+      const RenderEmbeds = require(4066) /* explicitContentFromProto */.RenderEmbeds;
       obj[2] = RenderEmbeds.getSetting();
-      const RenderReactions = require(4034) /* explicitContentFromProto */.RenderReactions;
+      const RenderReactions = require(4066) /* explicitContentFromProto */.RenderReactions;
       obj[3] = RenderReactions.getSetting();
-      const AnimateEmoji = require(4034) /* explicitContentFromProto */.AnimateEmoji;
+      const AnimateEmoji = require(4066) /* explicitContentFromProto */.AnimateEmoji;
       obj[4] = AnimateEmoji.getSetting();
-      const AnimateStickers = require(4034) /* explicitContentFromProto */.AnimateStickers;
+      const AnimateStickers = require(4066) /* explicitContentFromProto */.AnimateStickers;
       obj[5] = AnimateStickers.getSetting();
-      const GifAutoPlay = require(4034) /* explicitContentFromProto */.GifAutoPlay;
+      const GifAutoPlay = require(4066) /* explicitContentFromProto */.GifAutoPlay;
       obj[6] = GifAutoPlay.getSetting();
     }
     obj[1] = obj;
@@ -68,7 +68,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ export default {
                   if (gradientPreset != null) {
                     id = gradientPreset.id;
                   }
-                  const ClientThemeSettings = tmp4(4034).ClientThemeSettings;
+                  const ClientThemeSettings = tmp4(4066).ClientThemeSettings;
                   const setting = ClientThemeSettings.getSetting();
                   let prop;
                   if (setting != null) {
@@ -148,7 +148,7 @@ export default {
           } else if (1 === tmp7) {
             dependencyMap = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c3 = 3;
             throw arg1;
@@ -176,10 +176,10 @@ export default {
             }
             const obj4 = { backgroundGradientPresetId: null, customUserThemeSettings: null };
             obj4[0] = id;
-            let ClientThemeSettings = outer1_0(4034).ClientThemeSettings;
+            let ClientThemeSettings = outer1_0(4066).ClientThemeSettings;
             obj4[1] = ClientThemeSettings.getSetting().customUserThemeSettings;
             obj3[1] = obj4;
-            const DeveloperMode = outer1_0(4034).DeveloperMode;
+            const DeveloperMode = outer1_0(4066).DeveloperMode;
             obj3[2] = DeveloperMode.getSetting();
           }
           const obj5 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };

@@ -1,10 +1,10 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12927
+// Function ID: 12928
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4334, 676, 21, 4342, 712, 1628, 589, 12848, 5809, 689, 4083, 4343, 4788, 9575, 2]
+// Dependencies: [19, 17, 4662, 676, 21, 4661, 712, 1629, 589, 12925, 7159, 689, 4115, 4664, 4756, 9498, 2]
 // Exports: default
 
-// Module 12850 (PremiumMarketingFloatingSubscribeButton)
+// Module 12927 (PremiumMarketingFloatingSubscribeButton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

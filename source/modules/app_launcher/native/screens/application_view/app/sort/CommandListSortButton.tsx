@@ -1,10 +1,10 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11327
+// Function ID: 11328
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 11596, 1301, 21, 4342, 712, 1236, 4909, 4310, 11611, 2007, 4338, 9541, 2]
+// Dependencies: [19, 17, 11313, 1301, 21, 4661, 712, 1236, 5433, 4342, 11328, 2007, 4734, 9464, 2]
 // Exports: default
 
-// Module 11610 (CommandListSortButton)
+// Module 11327 (CommandListSortButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { CommandListSortOrder } from "CommandListSortOrder";
@@ -54,11 +54,11 @@ export default function CommandListSortButton(sortOrder) {
     children: null
   };
   obj = { style: tmp.button, children: null };
-  const items = [callback(sortOrder(4338).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const items = [callback(sortOrder(4734).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
   obj = { size: "xs", color: null };
   obj[1] = onSortOptionPress(712).colors.TEXT_DEFAULT;
-  items[1] = callback(sortOrder(9541).ChevronSmallDownIcon, obj);
+  items[1] = callback(sortOrder(9464).ChevronSmallDownIcon, obj);
   obj[1] = items;
   obj[5] = callback2(View, obj);
-  return callback(sortOrder(4909).PressableOpacity, obj);
+  return callback(sortOrder(5433).PressableOpacity, obj);
 };

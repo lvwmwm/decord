@@ -1,14 +1,14 @@
-// Module ID: 14965
-// Function ID: 14966
-// Name: MobileSetting
-// Dependencies: [19, 5217, 13961, 14966, 8148, 4310, 14967, 2007, 10421, 2]
+// Module ID: 15010
+// Function ID: 15011
+// Name: MobileUserSettings
+// Dependencies: [19, 5078, 13993, 15011, 8198, 4342, 15012, 2007, 10669, 2]
 
-// Module 14965 (MobileSetting)
+// Module 15010 (MobileUserSettings)
 import noop from "noop";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import zustandStore from "zustandStore";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import createToggle from "createToggle";
 
 let c9;
@@ -18,7 +18,7 @@ let metroImportAll;
 const require = arg1;
 ({ getSelectedGuildId: closure_6, GUILD_SELECT_ALL_SERVERS_OPTION_ID: error, setSelectedGuildId: metroImportAll, useUserSafetySettingsSelectedGuildStore: c9 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 let items = [, ];
-({ GUILD_SETTING_ACTIVITY_STATUS: arr[0], GUILD_SETTING_ACTIVITY_JOINING: arr[1] } = MobileSetting);
+({ GUILD_SETTING_ACTIVITY_STATUS: arr[0], GUILD_SETTING_ACTIVITY_JOINING: arr[1] } = MobileUserSettings);
 createToggle = {
   unsearchable: true,
   useSelectedGuildId() {
@@ -39,9 +39,9 @@ createToggle = {
     }, items);
     return callback().selectedGuildId;
   },
-  parent: MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
-    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14967, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(15012, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 createToggle = createToggle.createGuildSelector(createToggle);

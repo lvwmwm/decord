@@ -1,9 +1,9 @@
-// Module ID: 8564
-// Function ID: 8565
+// Module ID: 8603
+// Function ID: 8604
 // Name: SplitTextInput
-// Dependencies: [19, 21, 7857, 8565, 2]
+// Dependencies: [19, 21, 8072, 8604, 2]
 
-// Module 8564 (SplitTextInput)
+// Module 8603 (SplitTextInput)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -13,8 +13,8 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
   obj = { ref };
   const merged1 = Object.assign(arg0);
-  obj.children = jsx(require(8565) /* SplitTextField */.SplitTextField, { ref });
-  return jsx(require(7857) /* Input */.Input, { ref });
+  obj.children = jsx(require(8604) /* SplitTextField */.SplitTextField, { ref });
+  return jsx(require(8072) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/SplitTextInput/native/SplitTextInput.native.tsx");
 

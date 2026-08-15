@@ -1,9 +1,9 @@
-// Module ID: 5328
-// Function ID: 5329
+// Module ID: 6370
+// Function ID: 6371
 // Name: NAV_BAR_HEIGHT
 // Dependencies: [2]
 
-// Module 5328 (NAV_BAR_HEIGHT)
+// Module 6370 (NAV_BAR_HEIGHT)
 const result = require("set").fileFinishedImporting("design/components/Navigator/native/NavigatorConstants.native.tsx");
 
 export const NAV_BAR_HEIGHT = 56;

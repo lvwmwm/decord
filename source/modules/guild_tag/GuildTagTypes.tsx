@@ -1,10 +1,10 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 8882
+// Function ID: 8883
 // Name: toServerGuildProfile
 // Dependencies: [2]
 // Exports: toServerGuildProfile
 
-// Module 9092 (toServerGuildProfile)
+// Module 8882 (toServerGuildProfile)
 const result = require("set").fileFinishedImporting("modules/guild_tag/GuildTagTypes.tsx");
 
 export const toServerGuildProfile = function toServerGuildProfile(profile) {

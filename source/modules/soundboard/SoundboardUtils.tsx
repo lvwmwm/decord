@@ -1,10 +1,10 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 7304
+// Function ID: 7305
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1340, 1395, 3989, 1922, 4812, 4813, 676, 1338, 4034, 4007, 6024, 6017, 4819, 6025, 709, 6052, 6053, 6054, 647, 4187, 1377, 1374, 698, 4549, 2]
+// Dependencies: [5, 1340, 1395, 4021, 1922, 4780, 4781, 676, 1338, 4066, 4039, 7305, 7299, 6824, 7306, 709, 7333, 7334, 7335, 647, 4219, 1377, 1374, 698, 5042, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 6023 (hasPermissionToPlaySound)
+// Module 7304 (hasPermissionToPlaySound)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord";
@@ -46,7 +46,7 @@ function canUseSoundboardSound(closure_0, closure_1, channel) {
   if (arg3 === undefined) {
     flag = true;
   }
-  let result = importDefault(4007).canUseSoundboardEverywhere(closure_0);
+  let result = importDefault(4039).canUseSoundboardEverywhere(closure_0);
   if (!result) {
     let guild_id;
     if (channel != null) {
@@ -88,7 +88,7 @@ function canUseSoundboardSound(closure_0, closure_1, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(6024) /* getMuteStates */;
+  let obj = require(7305) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   const mute = muteStates.mute;
@@ -116,7 +116,7 @@ function _maybePlayCustomJoinSound() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ function _maybePlayCustomJoinSound() {
             }
           }
           sound2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp33) {
           sound2 = tmp;
           throw tmp33;
@@ -222,7 +222,7 @@ function _maybePlayCustomJoinSound() {
 let result = require("createChannelRecord").fileFinishedImporting("modules/soundboard/SoundboardUtils.tsx");
 
 export const getAmplitudinalSoundboardVolume = function getAmplitudinalSoundboardVolume() {
-  const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(4066) /* explicitContentFromProto */.SoundboardSettings;
   const setting = SoundboardSettings.getSetting();
   let num;
   if (setting != null) {
@@ -237,10 +237,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(6017) /* _fetchDefaultSoundsFromApi2 */;
-  obj.playSoundLocally(channelId, soundId, require(4819) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(6025) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(6025) /* VoiceChannelEffectSentLocation */;
+  let obj = require(7299) /* _fetchDefaultSoundsFromApi2 */;
+  obj.playSoundLocally(channelId, soundId, require(6824) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
+  const result = require(7306) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(7306) /* VoiceChannelEffectSentLocation */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(709).dispatch(obj);
 };
@@ -286,13 +286,13 @@ export const useSoundBoardDismissContentTypes = function useSoundBoardDismissCon
     const _Object = Object;
     const values = Object.values(guilds);
     if (!values.some((joinSound) => null != joinSound.joinSound)) {
-      const result = tmp(4187).ageEligibleForPremiumUpsell(stateFromStores);
-      const tmpResult = tmp(4187);
-      const obj5 = importDefault(4007);
+      const result = tmp(4219).ageEligibleForPremiumUpsell(stateFromStores);
+      const tmpResult = tmp(4219);
+      const obj5 = importDefault(4039);
       if (tmp9) {
         items1.push(tmp(1377).DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL);
       }
-      tmp9 = importDefault(4007).canUseCustomCallSounds(stateFromStores) || result;
+      tmp9 = importDefault(4039).canUseCustomCallSounds(stateFromStores) || result;
     }
   }
   return items1;
@@ -362,7 +362,7 @@ export const trackCustomCallSoundExternallyDeleted = function trackCustomCallSou
 };
 export const trackSoundFavorited = function trackSoundFavorited(location) {
   const sound = location.sound;
-  let obj = importDefault(4549);
+  let obj = importDefault(5042);
   obj = { location: location.location, expression_type: ExpressionPickerViewType.SOUNDBOARD, expression_id: sound.soundId, expression_name: sound.name, expression_guild_id: sound.guildId };
   obj.trackWithMetadata(constants2.EXPRESSION_FAVORITED, obj);
 };

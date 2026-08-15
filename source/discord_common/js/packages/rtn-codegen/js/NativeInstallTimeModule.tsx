@@ -1,9 +1,9 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13250
+// Function ID: 13251
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13047 (enforcing)
+// Module 13250 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeInstallTimeModule");

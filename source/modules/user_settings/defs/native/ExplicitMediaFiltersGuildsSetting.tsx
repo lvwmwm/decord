@@ -1,10 +1,10 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14187
+// Function ID: 14188
 // Name: pressable
-// Dependencies: [8148, 8102, 14149, 14145, 7129, 5977, 1236, 14146, 1306, 10421, 2]
+// Dependencies: [8198, 8152, 14181, 14177, 5001, 5023, 1236, 14178, 1306, 10669, 2]
 
-// Module 14155 (pressable)
-import { MobileSetting } from "MobileSetting";
+// Module 14187 (pressable)
+import { MobileUserSettings } from "MobileUserSettings";
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,14 +13,14 @@ const pressable = createToggle.createPressable({
     return intl.string(require(1236) /* getSystemLocale */.t["FP+a42"]);
   },
   parent() {
-    return MobileSetting.SENSITIVE_CONTENT_FILTERS;
+    return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentGuildsSettingValue() {
-    const obj = require(14145) /* useExplicitContentSettingOrDefault */;
-    return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
+    const obj = require(14177) /* useExplicitContentSettingOrDefault */;
+    return require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
   },
   onPress: function onObscuredContentGuildsOnPress() {
-    let obj = require(5977) /* resolveExplicitContentSettingWithDefaults */;
+    let obj = require(5023) /* resolveExplicitContentSettingWithDefaults */;
     const intl = require(1236) /* getSystemLocale */.intl;
     const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
     obj = { title: stringResult, subtitle: null, handlePress: null, excluded: null, currentValue: null };
@@ -34,7 +34,7 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
-    const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14178) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -46,8 +46,8 @@ const pressable = createToggle.createPressable({
     return items;
   },
   useIsDisabled() {
-    let userIsTeen = require(8102) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8102) /* useUserIsTeen */;
+    let userIsTeen = require(8152) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8152) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

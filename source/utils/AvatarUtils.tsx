@@ -1,7 +1,7 @@
 // Module ID: 1435
 // Function ID: 1436
 // Name: getAvatarURL
-// Dependencies: [676, 1436, 1438, 500, 1469, 1483, 1897, 1898, 14, 1899, 1901, 1902, 11, 1488, 2]
+// Dependencies: [676, 1436, 1438, 500, 1469, 1484, 1897, 1898, 14, 1899, 1901, 1902, 11, 1489, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
 // Module 1435 (getAvatarURL)
@@ -114,7 +114,7 @@ function getAvatarURL(canAnimate) {
           obj.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        return combined + "?" + importDefault(1483).stringify(obj);
+        return combined + "?" + importDefault(1484).stringify(obj);
       }
     }
   }
@@ -279,7 +279,7 @@ function getGuildMemberAvatarURLSimple(size) {
     obj.animated = true;
   }
   const obj3 = require(1469) /* handleImageLoad */;
-  return combined + "?" + importDefault(1483).stringify(obj);
+  return combined + "?" + importDefault(1484).stringify(obj);
 }
 function getGuildBannerURL(guild, flag) {
   let banner;
@@ -341,7 +341,7 @@ function getGuildBannerURL(guild, flag) {
     const obj4 = require(1469) /* handleImageLoad */;
     tmp17 = closure_11;
     const _HermesInternal2 = HermesInternal;
-    return combined + "?" + importDefault(1483).stringify(obj);
+    return combined + "?" + importDefault(1484).stringify(obj);
   }
 }
 function getApplicationIconURL(guildMember) {
@@ -501,8 +501,8 @@ function getChannelIconURL(arg0) {
 }
 function _getAssetHash(bannerURL) {
   try {
-    const obj = require(1488) /* Url */;
-    const parts = require(1488) /* Url */.parse(bannerURL).pathname.split("/");
+    const obj = require(1489) /* Url */;
+    const parts = require(1489) /* Url */.parse(bannerURL).pathname.split("/");
     return parts.pop();
   } catch (err) {
     return null;
@@ -680,7 +680,7 @@ function getUserBannerURL(arg0) {
     }
     const obj3 = require(1469) /* handleImageLoad */;
     const _HermesInternal2 = HermesInternal;
-    return combined + "?" + importDefault(1483).stringify(obj);
+    return combined + "?" + importDefault(1484).stringify(obj);
   }
 }
 function getAvatarDecorationURL(canAnimate) {
@@ -797,7 +797,7 @@ function getGuildMemberBannerURL(arg0) {
       }
       const obj3 = require(1469) /* handleImageLoad */;
       const _HermesInternal2 = HermesInternal;
-      return combined + "?" + importDefault(1483).stringify(obj);
+      return combined + "?" + importDefault(1484).stringify(obj);
     }
   }
 }

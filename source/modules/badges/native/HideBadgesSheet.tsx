@@ -1,16 +1,16 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14040
+// Function ID: 14041
 // Name: HideBadgeTile
-// Dependencies: [32, 19, 17, 8331, 1922, 8853, 21, 4342, 712, 5437, 1236, 14009, 14011, 8566, 8568, 1628, 1493, 13992, 589, 13989, 8856, 13990, 4065, 9977, 5884, 4338, 5458, 5457, 5460, 2]
+// Dependencies: [32, 19, 17, 8370, 1922, 8936, 21, 4661, 712, 6292, 1236, 14041, 14043, 8605, 8607, 1629, 1494, 14024, 589, 14021, 8939, 14022, 4097, 10182, 5446, 4734, 6950, 6949, 6952, 2]
 // Exports: default
 
-// Module 14008 (HideBadgeTile)
+// Module 14040 (HideBadgeTile)
 import _slicedToArray from "_slicedToArray";
 import getSavedBadgeSettings from "getSavedBadgeSettings";
 import { View } from "apexExperiment";
 import handleFormOpen from "handleFormOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
-import map from "map";
+import initialize from "initialize";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
 
@@ -34,27 +34,27 @@ function HideBadgeTile(badge) {
   obj[7] = intl.string(badge(1236).t.TPp3Mq);
   obj[8] = callback;
   obj = { badge, size: null, style: null };
-  obj[1] = badge(14011).BADGE_TILE_ICON_SIZE;
+  obj[1] = badge(14043).BADGE_TILE_ICON_SIZE;
   let badgeIconHidden;
   if (badge.hidden) {
     badgeIconHidden = tmp.badgeIconHidden;
   }
   obj[2] = badgeIconHidden;
-  const items2 = [closure_9(onToggle(14009), obj), ];
+  const items2 = [closure_9(onToggle(14041), obj), ];
   const obj1 = { style: tmp.indicator, "aria-hidden": true, children: null };
   if (badge.hidden) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = tmp7(712).colors.CONTROL_CRITICAL_SECONDARY_TEXT_DEFAULT;
-    let tmp6Result = tmp6(tmp4(8566).EyeSlashIcon, obj2);
+    let tmp6Result = tmp6(tmp4(8605).EyeSlashIcon, obj2);
   } else {
     const obj3 = { size: "sm", color: null };
     obj3[1] = tmp7(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-    tmp6Result = tmp6(tmp4(8568).EyeIcon, obj3);
+    tmp6Result = tmp6(tmp4(8607).EyeIcon, obj3);
   }
   obj1[2] = tmp6Result;
   items2[1] = closure_9(View, obj1);
   obj[9] = items2;
-  return closure_10(badge(5437).Card, obj);
+  return closure_10(badge(6292).Card, obj);
 }
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { grid: null, tile: null, badgeIconHidden: null, indicator: null, message: null, messageText: null };
@@ -88,8 +88,8 @@ export default function HideBadgesSheet() {
     return id;
   });
   let obj2 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items1 = [map];
-  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => map.getBadges(stateFromStores));
+  const items1 = [initialize];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => initialize.getBadges(stateFromStores));
   let obj3 = tenureBadgeHideable(stateFromStoresArray[18]);
   const items2 = [handleFormOpen];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items2, () => {
@@ -106,17 +106,17 @@ export default function HideBadgesSheet() {
     return obj.applyPendingBadgeSettings(stateFromStoresArray, obj);
   }, items3);
   let obj5 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items4 = [map];
+  const items4 = [initialize];
   const stateFromStores1 = obj5.useStateFromStores(items4, () => {
     let hasCatalogForResult = null != stateFromStores;
     if (hasCatalogForResult) {
-      hasCatalogForResult = map.hasCatalogFor(tmp);
+      hasCatalogForResult = initialize.hasCatalogFor(tmp);
     }
     return hasCatalogForResult;
   });
   let obj6 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items5 = [map];
-  const stateFromStores2 = obj6.useStateFromStores(items5, () => map.hasCatalogFetchErrorFor(stateFromStores));
+  const items5 = [initialize];
+  const stateFromStores2 = obj6.useStateFromStores(items5, () => initialize.hasCatalogFetchErrorFor(stateFromStores));
   const items6 = [stateFromStores];
   const effect = pendingBadgeHiddenBadges.useEffect(() => {
     if (null != stateFromStores) {
@@ -124,8 +124,8 @@ export default function HideBadgesSheet() {
         const badgeDirectory = tenureBadgeHideable(stateFromStoresArray[20]).fetchBadgeDirectory(tmp);
         const obj2 = tenureBadgeHideable(stateFromStoresArray[20]);
       }
-      const obj = map;
-      tmp2 = map.hasCatalogFor(tmp) && !map.isCatalogStaleFor(tmp);
+      const obj = initialize;
+      tmp2 = initialize.hasCatalogFor(tmp) && !initialize.isCatalogStaleFor(tmp);
     }
   }, items6);
   const items7 = [memo, tenureBadgeHideable];
@@ -160,7 +160,7 @@ export default function HideBadgesSheet() {
     }
   }
   const items8 = [memo];
-  map = obj4.useCallback((hidden) => {
+  initialize = obj4.useCallback((hidden) => {
     const found = memo.filter((hidden) => hidden.hidden);
     const set = new Set(found.map((badge_id) => badge_id.badge_id));
     if (hidden.hidden) {
@@ -201,7 +201,7 @@ export default function HideBadgesSheet() {
   if (0 !== memo1.length) {
     obj5 = { style: null, accessibilityRole: "list", children: null };
     obj5[0] = tmp.grid;
-    obj5[2] = memo1.map((badge) => outer1_9(outer1_12, { badge, size: badgeTileSize, onToggle: map }, badge.badge_id));
+    obj5[2] = memo1.map((badge) => outer1_9(outer1_12, { badge, size: badgeTileSize, onToggle: initialize }, badge.badge_id));
     callback(memo, obj5);
     const tmp32 = callback;
     const tmp33 = memo;

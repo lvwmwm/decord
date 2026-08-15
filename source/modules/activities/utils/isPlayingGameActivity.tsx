@@ -1,10 +1,10 @@
-// Module ID: 9304
-// Function ID: 9305
+// Module ID: 9733
+// Function ID: 9734
 // Name: isPlayingGameActivity
-// Dependencies: [4370, 676, 7266, 2]
+// Dependencies: [4481, 676, 7259, 2]
 // Exports: default
 
-// Module 9304 (isPlayingGameActivity)
+// Module 9733 (isPlayingGameActivity)
 import { XBOX_ACTIVITY_APPLICATION_ID as closure_2 } from "items3";
 import { ActivityTypes } from "ME";
 
@@ -18,7 +18,7 @@ export default function isPlayingGameActivity(application_id) {
       tmp2 = application_id.type === ActivityTypes.PLAYING;
     }
     if (tmp2) {
-      tmp2 = !importDefault(7266)(application_id);
+      tmp2 = !importDefault(7259)(application_id);
     }
     if (tmp2) {
       tmp2 = application_id.application_id !== closure_2;

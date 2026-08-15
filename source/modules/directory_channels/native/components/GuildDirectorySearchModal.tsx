@@ -1,10 +1,10 @@
-// Module ID: 11748
-// Function ID: 11749
+// Module ID: 11468
+// Function ID: 11469
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 11749, 5844, 5777, 2]
+// Dependencies: [19, 21, 11469, 6312, 7127, 2]
 // Exports: default
 
-// Module 11748 (GuildDirectorySearchModal)
+// Module 11468 (GuildDirectorySearchModal)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ const result = require("DefaultState").fileFinishedImporting("modules/directory_
 export default function GuildDirectorySearchModal(arg0) {
   const _require = arg0;
   const obj = { screens: null, initialRouteName: null };
-  obj[0] = importDefault(5777)(() => ({
+  obj[0] = importDefault(7127)(() => ({
     [outer1_4]: {
       fullscreen: true,
       headerShown: false,
@@ -26,5 +26,5 @@ export default function GuildDirectorySearchModal(arg0) {
     }
   }));
   obj[1] = SEARCH_SCREEN_KEY;
-  return jsx(_require(5844).Navigator, { screens: null, initialRouteName: null });
+  return jsx(_require(6312).Navigator, { screens: null, initialRouteName: null });
 };

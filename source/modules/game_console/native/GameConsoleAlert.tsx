@@ -1,10 +1,10 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 9850
+// Function ID: 9851
 // Name: SelfDismissibleAlertBody
-// Dependencies: [19, 17, 4359, 21, 4342, 589, 4338, 2]
+// Dependencies: [19, 17, 4540, 21, 4661, 589, 4734, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 10874 (SelfDismissibleAlertBody)
+// Module 9850 (SelfDismissibleAlertBody)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import set from "set";

@@ -1,10 +1,10 @@
-// Module ID: 4052
-// Function ID: 4053
+// Module ID: 4084
+// Function ID: 4085
 // Name: _openURL
-// Dependencies: [5, 4053, 9002, 2007, 2]
+// Dependencies: [5, 4085, 8782, 2007, 2]
 // Exports: default
 
-// Module 4052 (_openURL)
+// Module 4084 (_openURL)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -27,7 +27,7 @@ function _openURL() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _openURL() {
             obj[1] = [];
             arg1.default(callback, obj);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c4 = tmp;

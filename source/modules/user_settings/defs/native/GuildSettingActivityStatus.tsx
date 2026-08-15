@@ -1,9 +1,9 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 15022
+// Function ID: 15023
 // Name: toggle
-// Dependencies: [14966, 8148, 4034, 6077, 10421, 1236, 2]
+// Dependencies: [15011, 8198, 4066, 7357, 10669, 1236, 2]
 
-// Module 14977 (toggle)
+// Module 15022 (toggle)
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import createToggle from "createToggle";
 
@@ -19,21 +19,21 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.TUKMak);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
     const setting = ActivityRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(6077) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityRestrictedGuilds.add(tmp);
     }
-    const ActivityRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
     const items = [...sanitizedActivityRestrictedGuilds];
     ActivityRestrictedGuilds.updateSetting(items);
   }
@@ -47,21 +47,21 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.TUKMak);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
     const setting = ActivityRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(6077) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityRestrictedGuilds.add(tmp);
     }
-    const ActivityRestrictedGuilds = require(4034) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
     const items = [...sanitizedActivityRestrictedGuilds];
     ActivityRestrictedGuilds.updateSetting(items);
   }

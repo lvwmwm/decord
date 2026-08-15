@@ -1,11 +1,11 @@
-// Module ID: 11366
-// Function ID: 11367
+// Module ID: 11079
+// Function ID: 11080
 // Name: items
-// Dependencies: [19, 17, 11348, 7871, 21, 4342, 712, 1236, 589, 1628, 11365, 7863, 7865, 4310, 5458, 5460, 4338, 5828, 5435, 4058, 4777, 11354, 2]
+// Dependencies: [19, 17, 11061, 5438, 21, 4661, 712, 1236, 589, 1629, 11078, 5428, 5254, 4342, 6950, 6952, 4734, 6286, 6291, 4090, 4745, 11067, 2]
 // Exports: default
 
-// Module 11366 (items)
-import module_4058 from "module_4058";
+// Module 11079 (items)
+import module_4090 from "module_4090";
 import { View } from "TableRowGroupTitle";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import SafetyHubView from "SafetyHubView";
@@ -69,7 +69,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   let obj1 = onClose(589);
   const items1 = [callback1];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => callback1.getIsLoadingAgeVerification());
-  const bottom = classificationId(1628)().bottom;
+  const bottom = classificationId(1629)().bottom;
   const items2 = [onClose];
   callback = stateFromStores.useCallback(() => {
     if (onClose != null) {
@@ -111,11 +111,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = onClose(1236).intl;
   obj4[2] = intl.string(onClose(1236).t["9SDLnj"]);
-  const items5 = [callback(onClose(4338).Text, obj4), ];
+  const items5 = [callback(onClose(4734).Text, obj4), ];
   const obj5 = { variant: "heading-md/medium", color: "text-default", children: null };
   const intl2 = onClose(1236).intl;
   obj5[2] = intl2.string(onClose(1236).t["yvx//1"]);
-  items5[1] = callback(onClose(4338).Text, obj5);
+  items5[1] = callback(onClose(4734).Text, obj5);
   obj3[1] = items5;
   const items6 = [callback2(callback, obj3), , , ];
   const obj6 = { children: null };
@@ -131,7 +131,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     obj[2] = outer1_8(callback, obj);
     return outer1_8(onClose(_undefined[18]).TableRow, obj, arg1);
   });
-  obj6[0] = callback(onClose(5828).TableRowGroup, obj7);
+  obj6[0] = callback(onClose(6286).TableRowGroup, obj7);
   items6[1] = callback(callback, obj6);
   const obj8 = { style: tmp.moreInfo, children: null };
   const obj9 = { title: null, hasIcons: false, children: null };
@@ -145,8 +145,8 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj10[2] = function onPress() {
     return classificationId(_undefined[19]).openURL(constants.AGE_VERIFICATION_LINK);
   };
-  obj9[2] = callback(onClose(5435).TableRow, obj10);
-  obj8[1] = callback(onClose(5828).TableRowGroup, obj9);
+  obj9[2] = callback(onClose(6291).TableRow, obj10);
+  obj8[1] = callback(onClose(6286).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer, children: null };
   const obj12 = {
@@ -159,15 +159,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   };
   const intl6 = onClose(1236).intl;
   obj12[3] = intl6.string(onClose(1236).t["54b8V0"]);
-  const items7 = [callback(onClose(4777).Button, obj12), ];
+  const items7 = [callback(onClose(4745).Button, obj12), ];
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: null };
   const intl7 = onClose(1236).intl;
   obj13[3] = intl7.format(onClose(1236).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(4338).Text, obj13);
+  items7[1] = callback(onClose(4734).Text, obj13);
   obj11[1] = items7;
   items6[3] = callback2(callback, obj11);
   obj1[1] = items6;
   obj[1] = callback2(callback, obj1);
-  obj[2] = callback(onClose(5460).BottomSheetScrollView, obj);
-  return callback(onClose(5458).BottomSheet, obj);
+  obj[2] = callback(onClose(6952).BottomSheetScrollView, obj);
+  return callback(onClose(6950).BottomSheet, obj);
 };

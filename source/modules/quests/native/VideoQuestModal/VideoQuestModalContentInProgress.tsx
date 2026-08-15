@@ -1,9 +1,9 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14482
+// Function ID: 14483
 // Name: importDefaultResult1
-// Dependencies: [32, 19, 17, 5223, 505, 21, 689, 712, 14451, 4342, 500, 10447, 10563, 14453, 14456, 4083, 4343, 1628, 5389, 4072, 14469, 8075, 14470, 14447, 14471, 4775, 4909, 4338, 14472, 5329, 4777, 10457, 7817, 1236, 9157, 9749, 10436, 10576, 14416, 8795, 4788, 14474, 9748, 14351, 14349, 12319, 8667, 14446, 4310, 14475, 2007, 10467, 7249, 9579, 9580, 9584, 7244, 7255, 5226, 7245, 8986, 14476, 11232, 14477, 5230, 2]
+// Dependencies: [32, 19, 17, 6716, 505, 21, 689, 712, 14483, 4661, 500, 10486, 10691, 14485, 14488, 4115, 4664, 1629, 6803, 4104, 14501, 8125, 14502, 14479, 14503, 4733, 5433, 4734, 14504, 5449, 4745, 10496, 8035, 1236, 12048, 9952, 10684, 10704, 14448, 8995, 4756, 14506, 9951, 14383, 14381, 12047, 9415, 14478, 4342, 14507, 2007, 10687, 7474, 9502, 9503, 9507, 7469, 7480, 6719, 7470, 9067, 14508, 10947, 14509, 6723, 2]
 
-// Module 14450 (importDefaultResult1)
+// Module 14482 (importDefaultResult1)
 import IconButton from "IconButton";
 import importAllResult from "ManaContext";
 import get_ActivityIndicator from "useSafeAreaInsets";
@@ -625,7 +625,7 @@ let closure_26 = importAllResult.forwardRef(function FooterButton(arg0, ref) {
   const obj = { accessibilityRole: "button", style: callback4().footerButton };
   const merged = Object.assign(arg0);
   obj.ref = ref;
-  return callback2(require(4909) /* PressableBase */.PressableOpacity, obj);
+  return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
 });
 const alphaResult3 = require("n")(require("Themes").unsafe_rawColors.PLUM_23).alpha(0.4);
 const memoResult = importAllResult.memo(function VideoQuestModalContentInProgress(arg0) {
@@ -642,7 +642,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
   let tmp6;
   ({ onClose, sourceQuestContent } = arg0);
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
-  let obj = sourceQuestContent(14446);
+  let obj = sourceQuestContent(14478);
   const quest = obj.useVideoQuestModalContext().quest;
   const items = [quest];
   const items1 = [quest];
@@ -658,11 +658,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
   }, items2);
   let tmp = sourceQuestContent;
   const tmp5 = getQuestImpressionId(importAllResult.useState(false), 2);
-  getQuestImpressionId = sourceQuestContent(10467).useGetQuestImpressionId();
-  const obj2 = sourceQuestContent(10467);
+  getQuestImpressionId = sourceQuestContent(10687).useGetQuestImpressionId();
+  const obj2 = sourceQuestContent(10687);
   [tmp11, closure_4] = getQuestImpressionId(importAllResult.useState(false), 2);
   const tmp10 = getQuestImpressionId(importAllResult.useState(false), 2);
-  const isShareableQuestResult = sourceQuestContent(7249).isShareableQuest(quest.config);
+  const isShareableQuestResult = sourceQuestContent(7474).isShareableQuest(quest.config);
   let closure_5 = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
   const callback2 = importAllResult.useCallback(() => {
@@ -707,21 +707,21 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
       questUrl2.showShareActionSheet(obj1, "Video Quest Modal - " + id);
     }
   }, items3);
-  const obj3 = sourceQuestContent(7249);
+  const obj3 = sourceQuestContent(7474);
   const items4 = [quest.id];
-  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14476).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
+  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14508).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const callback3 = importAllResult.useCallback(() => {
     let obj = sourceQuestContent(outer1_2[62]);
     obj = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj);
   }, items4);
-  const obj4 = sourceQuestContent(14476);
-  const videoExternallyPaused = sourceQuestContent(14477).useVideoExternallyPaused(quest.id, tmp11);
-  const tmp17 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5230).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  const obj4 = sourceQuestContent(14508);
+  const videoExternallyPaused = sourceQuestContent(14509).useVideoExternallyPaused(quest.id, tmp11);
+  const tmp17 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6723).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp18 = null == tmp17;
   if (!tmp18) {
-    tmp18 = "portrait" === tmp(10576).getVideoOrientation(tmp17);
-    const tmpResult = tmp(10576);
+    tmp18 = "portrait" === tmp(10704).getVideoOrientation(tmp17);
+    const tmpResult = tmp(10704);
   }
   obj = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handlePrimaryCtaPress: videoQuestClickCtaAndMaybeCloseModal, handleRewardDetailsPress: callback3, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };
   return callback2(tmp18 ? closure_24 : closure_23, obj);

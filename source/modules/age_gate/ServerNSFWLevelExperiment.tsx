@@ -1,7 +1,7 @@
 // Module ID: 1907
 // Function ID: 1908
 // Name: apexExperiment
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: isServerNSFWLevelEnabled
 
 // Module 1907 (apexExperiment)

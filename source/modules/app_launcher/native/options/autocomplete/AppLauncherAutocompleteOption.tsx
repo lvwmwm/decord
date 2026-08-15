@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11348
+// Function ID: 11349
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 676, 21, 4342, 712, 1891, 4310, 11632, 2007, 11630, 4909, 4338, 2]
+// Dependencies: [32, 19, 676, 21, 4661, 712, 1892, 4342, 11349, 2007, 11347, 5433, 4734, 2]
 // Exports: default
 
-// Module 11631 (AppLauncherAutocompleteOption)
+// Module 11348 (AppLauncherAutocompleteOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -71,7 +71,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
   first = tmp[0];
   closure_9 = tmp[1];
   const tmp3 = createCacheKey();
-  let obj = require(11630) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11347) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   obj = { onPress, style: null, children: null };
   const items = [tmp3.container, , ];
@@ -87,6 +87,6 @@ export default function AppLauncherAutocompleteOption(arg0) {
     str = first.displayName;
   }
   obj[2] = str;
-  obj[2] = jsx(require(4338) /* Text */.Text, { variant: "text-md/normal", style: tmp3.inputText, children: null });
-  return jsx(require(4909) /* PressableBase */.PressableOpacity, { variant: "text-md/normal", style: tmp3.inputText, children: null });
+  obj[2] = jsx(require(4734) /* Text */.Text, { variant: "text-md/normal", style: tmp3.inputText, children: null });
+  return jsx(require(5433) /* PressableBase */.PressableOpacity, { variant: "text-md/normal", style: tmp3.inputText, children: null });
 };

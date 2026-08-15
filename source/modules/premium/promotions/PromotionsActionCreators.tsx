@@ -1,10 +1,10 @@
-// Module ID: 7710
-// Function ID: 7711
+// Module ID: 7928
+// Function ID: 7929
 // Name: fetchActivePromotions
-// Dependencies: [5, 1994, 7411, 1922, 7410, 1924, 676, 709, 7711, 530, 6930, 1374, 1337, 7712, 2]
+// Dependencies: [5, 1994, 7629, 1922, 7628, 1924, 676, 709, 7929, 530, 5358, 1374, 1337, 7930, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7710 (fetchActivePromotions)
+// Module 7928 (fetchActivePromotions)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
@@ -144,7 +144,7 @@ function _fetchActiveBogoPromotion() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -255,7 +255,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(7712).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(7930).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;

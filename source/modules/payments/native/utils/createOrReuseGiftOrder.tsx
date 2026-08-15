@@ -1,10 +1,10 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10299
+// Function ID: 10300
 // Name: useCreateOrReuseGiftOrder
-// Dependencies: [5, 19, 4325, 1924, 505, 3, 9499, 6961, 500, 3943, 4022, 2]
+// Dependencies: [5, 19, 4357, 1924, 505, 3, 9266, 7400, 500, 3975, 4054, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10094 (useCreateOrReuseGiftOrder)
+// Module 10299 (useCreateOrReuseGiftOrder)
 import timestamp from "timestamp";
 import noop from "noop";
 import { ItemPurchaseType } from "CustomCheckoutFlow";
@@ -18,7 +18,7 @@ let result = require("CustomCheckoutFlow").fileFinishedImporting("modules/paymen
 
 export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let _require = GiftPurchaseButton;
-  let obj = _require(9499);
+  let obj = _require(9266);
   obj = { location: GiftPurchaseButton };
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled(obj);
   _require = undefined;
@@ -42,7 +42,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

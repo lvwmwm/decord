@@ -1,9 +1,9 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4782
+// Function ID: 4783
 // Name: perceptualToAmplitude
-// Dependencies: [2, 4815]
+// Dependencies: [2, 4783]
 
-// Module 4814 (perceptualToAmplitude)
+// Module 4782 (perceptualToAmplitude)
 const result = require("set").fileFinishedImporting("utils/PerceptualVolumeUtils.tsx");
 
 export const perceptualToAmplitude = require("perceptualToAmplitude").perceptualToAmplitude;

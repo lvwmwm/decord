@@ -1,9 +1,9 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17061
+// Function ID: 17062
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4358, 4364, 4430, 676, 687, 4408, 17012, 9232, 9233, 17009, 2]
+// Dependencies: [4773, 4652, 4558, 676, 687, 4531, 17058, 9667, 9668, 17055, 2]
 
-// Module 17015 (AVErrorStreamSendLowFPSDefinition)
+// Module 17061 (AVErrorStreamSendLowFPSDefinition)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import initialize from "initialize";
@@ -22,7 +22,7 @@ export const AVErrorStreamSendLowFPSDefinition = {
         if (0 === obj.getViewerIds(currentUserActiveStream).length) {
           return null;
         } else {
-          const encodeStreamKeyResult = require(4408) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
+          const encodeStreamKeyResult = require(4531) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
           rTCConnection = rTCConnection.getRTCConnection(encodeStreamKeyResult);
           if (null == rTCConnection) {
             return null;
@@ -39,33 +39,33 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 }
               }
               if (rTCConnection.hasActiveRemoteWants()) {
-                let tmp11Result = tmp11(4408);
+                let tmp11Result = tmp11(4531);
                 participant = participant.getParticipant(currentUserActiveStream.channelId, tmp11Result.encodeStreamKey(currentUserActiveStream));
                 if (null == participant) {
                   return null;
                 } else {
-                  tmp11Result = tmp11(17012);
+                  tmp11Result = tmp11(17058);
                   const accumulatedStatsWithMinDatapoints = tmp11Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
-                    const maxQuality = tmp11(9232).getMaxQuality(participant);
+                    const maxQuality = tmp11(9667).getMaxQuality(participant);
                     let tmp9 = null;
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < tmp11Result2.getWarningFrameRate(maxQuality.maxFrameRate)) {
                         obj = { type: null };
-                        obj[0] = tmp11(9233).AVError.STREAM_SEND_LOW_FPS;
-                        const tmp11Result3 = tmp11(17009);
-                        const merged = Object.assign(tmp11Result3.getStreamErrorContext(tmp11(4408).encodeStreamKey(currentUserActiveStream)));
+                        obj[0] = tmp11(9668).AVError.STREAM_SEND_LOW_FPS;
+                        const tmp11Result3 = tmp11(17055);
+                        const merged = Object.assign(tmp11Result3.getStreamErrorContext(tmp11(4531).encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp6 = items;
-                        const tmp11Result4 = tmp11(4408);
+                        const tmp11Result4 = tmp11(4531);
                       } else {
                         tmp6 = null;
-                        const tmp11Result5 = tmp11(17012);
+                        const tmp11Result5 = tmp11(17058);
                       }
                       tmp9 = tmp6;
-                      tmp11Result2 = tmp11(17012);
+                      tmp11Result2 = tmp11(17058);
                     }
                     return tmp9;
                   }
@@ -75,7 +75,7 @@ export const AVErrorStreamSendLowFPSDefinition = {
               }
             }
           }
-          const obj8 = require(4408) /* isStreamKey */;
+          const obj8 = require(4531) /* isStreamKey */;
           obj9 = rTCConnection;
         }
       }

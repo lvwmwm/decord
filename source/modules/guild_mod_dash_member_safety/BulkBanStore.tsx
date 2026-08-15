@@ -1,9 +1,9 @@
-// Module ID: 5294
-// Function ID: 5295
+// Module ID: 6779
+// Function ID: 6780
 // Name: set
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 5294 (set)
+// Module 6779 (set)
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
 import set from "dispatcher";

@@ -1,10 +1,10 @@
-// Module ID: 3996
-// Function ID: 3997
+// Module ID: 4028
+// Function ID: 4029
 // Name: doesThreadMembersActionAffectMe
 // Dependencies: [1218, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 3996 (doesThreadMembersActionAffectMe)
+// Module 4028 (doesThreadMembersActionAffectMe)
 import fetchFingerprint from "fetchFingerprint";
 
 const result = require("set").fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");

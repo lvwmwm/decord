@@ -1,10 +1,10 @@
-// Module ID: 10620
-// Function ID: 10621
+// Module ID: 8735
+// Function ID: 8736
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4383, 4368, 1391, 10604, 10597, 10621, 2]
+// Dependencies: [5, 4478, 4479, 1391, 8701, 8719, 8736, 2]
 // Exports: default
 
-// Module 10620 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 8735 (_getCachedOrFetchActivityApplicationForLaunch)
 import getShelfItemData from "getShelfItemData";
 import addApplication from "addApplication";
 import createExecutable from "createExecutable";
@@ -30,7 +30,7 @@ function _getCachedOrFetchActivityApplicationForLaunch() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

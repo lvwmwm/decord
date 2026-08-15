@@ -1,10 +1,10 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14530
+// Function ID: 14531
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4163, 1302, 1305, 8761, 1347, 1363, 4190, 2]
+// Dependencies: [4195, 1302, 1305, 9365, 1347, 1363, 4222, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14498 (enableSameAsDeviceTheme)
+// Module 14530 (enableSameAsDeviceTheme)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import handleThemeChange from "handleThemeChange";
 import SystemThemeState from "SystemThemeState";
@@ -16,7 +16,7 @@ const require = arg1;
 let result = require("SystemThemeState").fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
-  let obj = importDefault(8761);
+  let obj = importDefault(9365);
   const result = obj.setShouldSyncAppearanceSettings(false);
   let obj1 = syncedClientTheme;
   if (null == syncedClientTheme.getSyncedClientTheme(constants.LIGHT)) {
@@ -35,35 +35,35 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
           id = gradientPreset.id;
         }
       }
-      let tmp6Result = tmp6(4190);
+      let tmp6Result = tmp6(4222);
       obj = {};
       obj[tmp8] = customThemeBaseTheme;
       const result1 = tmp6Result.updateThemePreferences(obj);
       if (null != arg0) {
-        tmp6Result = tmp6(4190);
+        tmp6Result = tmp6(4222);
         obj = { customUserThemeSettings: null };
         obj[0] = arg0;
         const result2 = tmp6Result.updateSyncedClientTheme(tmp8, obj);
       } else if (null != tmp9) {
         obj1 = { backgroundGradientPresetId: null };
         obj1[0] = tmp9;
-        const result3 = tmp6(4190).updateSyncedClientTheme(tmp8, obj1);
-        const tmp6Result1 = tmp6(4190);
+        const result3 = tmp6(4222).updateSyncedClientTheme(tmp8, obj1);
+        const tmp6Result1 = tmp6(4222);
       } else {
         obj2 = { theme: null };
         obj2[0] = customThemeBaseTheme;
-        const result4 = tmp6(4190).updateSyncedClientTheme(tmp8, obj2);
-        const tmp6Result2 = tmp6(4190);
+        const result4 = tmp6(4222).updateSyncedClientTheme(tmp8, obj2);
+        const tmp6Result2 = tmp6(4222);
       }
       const obj4 = require(1363) /* AccessibilityAnnouncer */;
     }
   }
-  const result5 = require(4190) /* setSystemTheme */.setSameAsDeviceThemeEnabled(true);
-  const obj13 = require(4190) /* setSystemTheme */;
-  require(4190) /* setSystemTheme */.setUseSystemTheme(constants2.ON);
+  const result5 = require(4222) /* setSystemTheme */.setSameAsDeviceThemeEnabled(true);
+  const obj13 = require(4222) /* setSystemTheme */;
+  require(4222) /* setSystemTheme */.setUseSystemTheme(constants2.ON);
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
-  require(4190) /* setSystemTheme */.setUseSystemTheme(constants2.OFF);
-  const obj = require(4190) /* setSystemTheme */;
-  const result = require(4190) /* setSystemTheme */.setSameAsDeviceThemeEnabled(false);
+  require(4222) /* setSystemTheme */.setUseSystemTheme(constants2.OFF);
+  const obj = require(4222) /* setSystemTheme */;
+  const result = require(4222) /* setSystemTheme */.setSameAsDeviceThemeEnabled(false);
 };

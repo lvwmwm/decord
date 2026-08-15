@@ -1,10 +1,10 @@
-// Module ID: 4022
-// Function ID: 4023
+// Module ID: 4054
+// Function ID: 4055
 // Name: _createGatewayCheckoutContext
-// Dependencies: [5, 505, 4023, 1208, 530, 4029, 2]
+// Dependencies: [5, 505, 4055, 1208, 530, 4061, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4022 (_createGatewayCheckoutContext)
+// Module 4054 (_createGatewayCheckoutContext)
 import set from "set";
 import { PaymentGateways } from "sum";
 
@@ -27,7 +27,7 @@ function _createGatewayCheckoutContext() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -127,7 +127,7 @@ export const isExpectedHttpClientError = function isExpectedHttpClientError(onSi
     tmp2 = onSignFailure.status < 500;
   }
   if (!tmp2) {
-    let tmp4 = onSignFailure instanceof importDefault(4029);
+    let tmp4 = onSignFailure instanceof importDefault(4061);
     if (tmp4) {
       tmp4 = null != onSignFailure.status;
     }

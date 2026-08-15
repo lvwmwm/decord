@@ -1,10 +1,10 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16845
+// Function ID: 16846
 // Name: AsyncFromSyncIterator
-// Dependencies: [5, 676, 709, 5293, 11036, 1231, 2]
+// Dependencies: [5, 676, 709, 6778, 10770, 1231, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 16799 (AsyncFromSyncIterator)
+// Module 16845 (AsyncFromSyncIterator)
 import ComponentDispatcher from "ComponentDispatcher";
 import ME from "ME";
 
@@ -119,7 +119,7 @@ function _saveRoleSettings() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ function _saveRoleSettings() {
                 c18 = 0;
                 let num3 = 3;
                 c21 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let tmp19 = closure_8;
                 throw closure_8;

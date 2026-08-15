@@ -1,8 +1,8 @@
-// Module ID: 10425
-// Function ID: 10426
-// Dependencies: [5, 1391, 676, 4335, 709, 530, 7210, 6986, 4549, 10426, 10427, 4355, 2]
+// Module ID: 10673
+// Function ID: 10674
+// Dependencies: [5, 1391, 676, 4663, 709, 530, 7436, 7427, 5042, 10674, 10675, 4770, 2]
 
-// Module 10425
+// Module 10673
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -129,8 +129,8 @@ export default {
     let require;
     const self = this;
     ({ type: importDefault, activity: dependencyMap, content: sendRequest, location: require } = userId);
-    const obj = importDefault(4355);
-    return importDefault(4355).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: sendRequest, location: closure_0 }));
+    const obj = importDefault(4770);
+    return importDefault(4770).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: sendRequest, location: closure_0 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
     let closure_0 = arg0;

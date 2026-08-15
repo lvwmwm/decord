@@ -1,10 +1,10 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7938
+// Function ID: 7939
 // Name: useBuyNitroPerks
-// Dependencies: [19, 6964, 1924, 689, 6928, 1236, 7721, 7723, 7724, 7726, 7727, 7756, 7758, 7760, 7761, 7763, 7764, 7766, 7767, 7769, 7770, 7772, 7774, 7775, 7777, 7778, 7780, 7782, 4863, 7783, 7784, 7786, 7787, 7789, 7790, 7792, 7794, 7796, 2]
+// Dependencies: [19, 7403, 1924, 689, 5356, 1236, 7939, 7941, 7942, 7944, 7945, 7974, 7976, 7978, 7979, 7981, 7982, 7984, 7985, 7987, 7988, 7990, 7992, 7993, 7995, 7996, 7998, 8000, 6867, 8001, 8002, 8004, 8005, 8007, 8008, 8010, 8012, 8014, 2]
 // Exports: default
 
-// Module 7720 (useBuyNitroPerks)
+// Module 7938 (useBuyNitroPerks)
 import registerAsset from "registerAsset";
 import { Gradients } from "items";
 import GuildFeatures from "GuildFeatures";
@@ -26,7 +26,7 @@ let result = require("GuildFeatures").fileFinishedImporting("modules/premium_mar
 
 export default function useBuyNitroPerks(arg0) {
   let closure_0 = arg0;
-  let tmp = importDefault(6928)({ forceFetch: true }).fractionalState === constants.FP_ONLY;
+  let tmp = importDefault(5356)({ forceFetch: true }).fractionalState === constants.FP_ONLY;
   importDefault = tmp;
   let items = [arg0, tmp];
   return React.useMemo(() => {

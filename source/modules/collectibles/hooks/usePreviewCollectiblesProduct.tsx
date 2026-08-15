@@ -1,10 +1,10 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9268
+// Function ID: 9269
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 7076, 1947, 7077, 7078, 9438, 1949, 8335, 2]
+// Dependencies: [32, 19, 5306, 1947, 5307, 5308, 9205, 1949, 8374, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 9501 (usePreviewCollectibleProduct)
+// Module 9268 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { isAvatarDecorationRecord } from "fromServer";
@@ -19,7 +19,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(9438).useShopProductItems(product);
+  const shopProductItems = _require(9205).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;

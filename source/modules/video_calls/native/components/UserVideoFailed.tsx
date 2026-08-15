@@ -1,10 +1,10 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16357
+// Function ID: 16358
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4342, 712, 9233, 10680, 4338, 1236, 4777, 10690, 4441, 9219, 2]
+// Dependencies: [17, 676, 21, 4661, 712, 9668, 12071, 4734, 1236, 4745, 12452, 4569, 9654, 2]
 // Exports: default
 
-// Module 16307 (UserVideoFailed)
+// Module 16357 (UserVideoFailed)
 import { View } from "get ActivityIndicator";
 import { VideoToggleState } from "ME";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function UserVideoFailed(arg0) {
   ({ style, avError } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
-  let obj = require(9233) /* mapped */;
+  let obj = require(9668) /* mapped */;
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.container, style];
@@ -41,20 +41,20 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(10680).StreamFailed, obj);
+    tmp9 = callback(tmp3(12071).StreamFailed, obj);
   }
   const obj1 = { children: null };
   const items1 = [tmp9, ];
   const obj2 = { variant: "text-md/semibold", color: "text-strong", children: null };
   const intl = tmp3(1236).intl;
   obj2[2] = intl.string(require(1236) /* getSystemLocale */.t["z+mxvo"]);
-  items1[1] = callback(require(4338) /* Text */.Text, obj2);
+  items1[1] = callback(require(4734) /* Text */.Text, obj2);
   obj1[0] = items1;
   const items2 = [closure_7(closure_6, obj1), , ];
   const obj3 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: null };
   const intl2 = tmp3(1236).intl;
   obj3[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.ejOT95, { errorCode: obj.getErrorInfo(avError).errorCode });
-  items2[1] = callback(require(4338) /* Text */.Text, obj3);
+  items2[1] = callback(require(4734) /* Text */.Text, obj3);
   const obj4 = { style: tmp2.button, children: null };
   let tmp11Result = !removeRetryButton;
   if (!removeRetryButton) {
@@ -69,7 +69,7 @@ export default function UserVideoFailed(arg0) {
         outer1_1(outer1_2[12]).setDisableLocalVideo(closure_0, outer1_4.MANUAL_ENABLED, outer1_0(outer1_2[11]).MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp11Result = tmp11(tmp3(4777).Button, obj5);
+    tmp11Result = tmp11(tmp3(4745).Button, obj5);
   }
   obj4[1] = tmp11Result;
   items2[2] = callback(View, obj4);

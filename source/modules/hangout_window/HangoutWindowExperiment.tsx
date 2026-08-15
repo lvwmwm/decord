@@ -1,10 +1,10 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16048
+// Function ID: 16049
 // Name: experiment
-// Dependencies: [4257, 4254, 2]
+// Dependencies: [4289, 4286, 2]
 // Exports: getHangoutWindowExperiment, useHangoutWindowExperiment
 
-// Module 15998 (experiment)
+// Module 16048 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable Hangout Window", config: { enableHangoutWindow: true } }];

@@ -1,10 +1,10 @@
-// Module ID: 10719
-// Function ID: 10720
+// Module ID: 12474
+// Function ID: 12475
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1496, 500, 1640, 1628, 10302, 2]
+// Dependencies: [32, 19, 1497, 500, 1641, 1629, 10560, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 10719 (useStableSafeAreaInsets)
+// Module 12474 (useStableSafeAreaInsets)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("context").fileFinishedImporting("modules/safe_area/useStableSafeAreaInsets.native.tsx");
 
 export default function useStableSafeAreaInsets() {
-  appEntryKey = appEntryKey(1496).useAppEntryKey();
+  appEntryKey = appEntryKey(1497).useAppEntryKey();
   const tmp2 = callback(React.useState(() => {
     let DEFAULT_APP_ENTRY_KEY = appEntryKey;
     if (appEntryKey === undefined) {
@@ -47,14 +47,14 @@ export default function useStableSafeAreaInsets() {
 };
 export const getStableSafeAreaInsets = function getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = require(1496) /* context */.DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = require(1497) /* context */.DEFAULT_APP_ENTRY_KEY;
   }
   if (obj.isAndroid()) {
-    let stableSafeAreaInsets = importDefault(1640).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const obj3 = importDefault(1640);
+    let stableSafeAreaInsets = importDefault(1641).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const obj3 = importDefault(1641);
   } else {
-    stableSafeAreaInsets = require(1628) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const tmp3Result = require(1628) /* useSafeAreaInsets */;
+    stableSafeAreaInsets = require(1629) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const tmp3Result = require(1629) /* useSafeAreaInsets */;
   }
   return stableSafeAreaInsets;
 };

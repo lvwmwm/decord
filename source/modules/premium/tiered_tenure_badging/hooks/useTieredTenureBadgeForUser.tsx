@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9497
+// Function ID: 9498
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7150, 589, 7163, 2]
+// Dependencies: [5365, 589, 5381, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 9574 (useTieredTenureBadgeForUser)
+// Module 9497 (useTieredTenureBadgeForUser)
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const require = arg1;

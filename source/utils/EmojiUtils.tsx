@@ -1,10 +1,10 @@
-// Module ID: 4006
-// Function ID: 4007
+// Module ID: 4038
+// Function ID: 4039
 // Name: getEmojiUnavailableReason
-// Dependencies: [5, 1395, 3989, 1922, 676, 1925, 4005, 4007, 5242, 3982, 7309, 1490, 1435, 2]
+// Dependencies: [5, 1395, 4021, 1922, 676, 1925, 4037, 4039, 6732, 4014, 7530, 1491, 1435, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4006 (getEmojiUnavailableReason)
+// Module 4038 (getEmojiUnavailableReason)
 import closure_3 from "set";
 import createChannelRecord from "createChannelRecord";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -34,7 +34,7 @@ function getEmojiUnavailableReason(intention) {
     }
   }
   intention = intention.intention;
-  let tmp5 = emoji.type === require(4005) /* EmojiTypes */.EmojiTypes.GUILD;
+  let tmp5 = emoji.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD;
   if (!tmp5) {
     tmp5 = null != emoji.guildId;
   }
@@ -51,7 +51,7 @@ function getEmojiUnavailableReason(intention) {
         }
         let tmp13 = null != emoji && null != guildId;
         if (tmp13) {
-          const tmp14 = emoji.type === tmp3(4005).EmojiTypes.GUILD || null != emoji.guildId;
+          const tmp14 = emoji.type === tmp3(4037).EmojiTypes.GUILD || null != emoji.guildId;
           let tmp15 = !tmp14;
           if (tmp14) {
             tmp15 = guildId === emoji.guildId;
@@ -70,7 +70,7 @@ function getEmojiUnavailableReason(intention) {
           if (!callback4(intention)) {
             let tmp19 = null != emoji && null != guildId;
             if (tmp19) {
-              const tmp20 = emoji.type === tmp3(4005).EmojiTypes.GUILD || null != emoji.guildId;
+              const tmp20 = emoji.type === tmp3(4037).EmojiTypes.GUILD || null != emoji.guildId;
               let tmp21 = !tmp20;
               if (tmp20) {
                 tmp21 = guildId === emoji.guildId;
@@ -105,9 +105,9 @@ function getEmojiUnavailableReason(intention) {
               }
             }
           }
-          let tmp3Result = tmp3(5242);
+          let tmp3Result = tmp3(6732);
           if (tmp3Result.isUnusableRoleSubscriptionEmoji(emoji, guildId)) {
-            tmp3Result = tmp3(3982);
+            tmp3Result = tmp3(4014);
             tmp3Result.shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
           } else {
             let PREMIUM_LOCKED = null;
@@ -118,13 +118,13 @@ function getEmojiUnavailableReason(intention) {
                 if (!tmp3Result1.isPurchasableRoleSubscriptionEmoji(emoji)) {
                   PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                 }
-                tmp3Result1 = tmp3(5242);
+                tmp3Result1 = tmp3(6732);
               }
-              tmp27Result = tmp27(4007);
+              tmp27Result = tmp27(4039);
             }
             return PREMIUM_LOCKED;
           }
-          obj = importDefault(4007);
+          obj = importDefault(4039);
           tmp27 = importDefault;
         }
       }
@@ -190,7 +190,7 @@ export default {
   isInternalEmojiForGuildId(type) {
     let tmp = null != type && null != arg1;
     if (tmp) {
-      const tmp4 = type.type === require(4005) /* EmojiTypes */.EmojiTypes.GUILD || null != type.guildId;
+      const tmp4 = type.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD || null != type.guildId;
       let tmp5 = !tmp4;
       if (tmp4) {
         tmp5 = arg1 === type.guildId;
@@ -201,7 +201,7 @@ export default {
   },
   getEmojiUnavailableReason,
   isCustomEmoji(emoji) {
-    let tmp = emoji.type === require(4005) /* EmojiTypes */.EmojiTypes.GUILD;
+    let tmp = emoji.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD;
     if (!tmp) {
       tmp = null != emoji.guildId;
     }
@@ -318,7 +318,7 @@ export default {
     return size.size > 2097152;
   },
   isDataTooBig(arg0) {
-    return require(1490) /* fit */.dataUriFileSize(arg0) > closure_9;
+    return require(1491) /* fit */.dataUriFileSize(arg0) > closure_9;
   }
 };
 export const countEmoji = function countEmoji(arr) {
@@ -382,7 +382,7 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
     let emojiURL = importDefault(1435).getEmojiURL(obj);
     const obj2 = importDefault(1435);
   } else {
-    obj = importDefault(7309);
+    obj = importDefault(7530);
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

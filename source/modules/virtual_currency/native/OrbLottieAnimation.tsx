@@ -1,9 +1,9 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10402
+// Function ID: 10403
 // Name: forwardRef
-// Dependencies: [19, 21, 4278, 1363, 10203, 10206, 2]
+// Dependencies: [19, 21, 4310, 1363, 10403, 10406, 2]
 
-// Module 10202 (forwardRef)
+// Module 10402 (forwardRef)
 import closure_2 from "noop";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ const require = arg1;
 const forwardRefResult = forwardRef((animationType, ref) => {
   animationType = animationType.animationType;
   let dependencyMap;
-  let obj = animationType(4278);
+  let obj = animationType(4310);
   const theme = obj.useTheme();
   const obj2 = animationType(1363);
   const tmp5 = callback(null);
@@ -41,9 +41,9 @@ const forwardRefResult = forwardRef((animationType, ref) => {
     }
   }));
   if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp(10203).SpendEarnOrbsLightThemeLottie;
+    let SpendEarnOrbsLottie = tmp(10403).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp(10206).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp(10406).SpendEarnOrbsLottie;
   }
   obj = { ref: tmp5, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
   let str = "spend";

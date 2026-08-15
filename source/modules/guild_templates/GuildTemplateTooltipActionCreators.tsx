@@ -1,8 +1,8 @@
-// Module ID: 6002
-// Function ID: 6003
-// Dependencies: [5, 3989, 676, 6003, 709, 2]
+// Module ID: 7286
+// Function ID: 7287
+// Dependencies: [5, 4021, 676, 7287, 709, 2]
 
-// Module 6002
+// Module 7286
 import set from "set";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
@@ -23,7 +23,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ export default {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           v0 = tmp;
           throw tmp7;

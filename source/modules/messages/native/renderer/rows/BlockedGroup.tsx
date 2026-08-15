@@ -1,10 +1,10 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8160
+// Function ID: 8161
 // Name: generateBlockedGroupRowData
-// Dependencies: [8108, 505, 12, 1363, 712, 4191, 8111, 2]
+// Dependencies: [8158, 505, 12, 1363, 712, 4223, 8161, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 8110 (generateBlockedGroupRowData)
+// Module 8160 (generateBlockedGroupRowData)
 import { SeparatorAction } from "Changeset";
 import { UNSAFE_Colors } from "sum";
 import apply from "apply";
@@ -22,17 +22,17 @@ let closure_5 = apply.memoize((arg0) => {
   }
   tmpResult = tmp(1363);
   if (tmpResult.isThemeDark(arg0)) {
-    let GREY1 = tmp(4191).hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_300, 0.6);
-    const tmpResult1 = tmp(4191);
+    let GREY1 = tmp(4223).hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_300, 0.6);
+    const tmpResult1 = tmp(4223);
   } else {
     GREY1 = UNSAFE_Colors.GREY1;
   }
   obj = { borderColor: null, backgroundColor: null, color: null };
-  obj[0] = require(8111) /* processColorOrThrow */.processColorOrThrow(str);
-  const tmpResult2 = require(8111) /* processColorOrThrow */;
-  obj[1] = require(8111) /* processColorOrThrow */.processColorOrThrow(str2);
-  const tmpResult3 = require(8111) /* processColorOrThrow */;
-  obj[2] = require(8111) /* processColorOrThrow */.processColorOrThrow(GREY1);
+  obj[0] = require(8161) /* processColorOrThrow */.processColorOrThrow(str);
+  const tmpResult2 = require(8161) /* processColorOrThrow */;
+  obj[1] = require(8161) /* processColorOrThrow */.processColorOrThrow(str2);
+  const tmpResult3 = require(8161) /* processColorOrThrow */;
+  obj[2] = require(8161) /* processColorOrThrow */.processColorOrThrow(GREY1);
   return obj;
 });
 const result = require("apply").fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");

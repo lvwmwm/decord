@@ -1,10 +1,10 @@
-// Module ID: 4604
-// Function ID: 4605
+// Module ID: 4384
+// Function ID: 4385
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 4009, 4010, 4013, 676, 4605, 4603, 4684, 1469, 4686, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 4041, 4042, 4045, 676, 4385, 4383, 4464, 1469, 4466, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4604 (_httpGetWithCountryCodeQuery)
+// Module 4384 (_httpGetWithCountryCodeQuery)
 import closure_2 from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
@@ -36,7 +36,7 @@ function _httpGetWithCountryCodeQuery() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ function _httpGetWithCountryCodeQuery() {
                         let closure_0 = arg0;
                         let c2 = 0;
                         let c3 = 0;
-                        return (/* F120712 */ function*() { ... })();
+                        return (/* F120893 */ function*() { ... })();
                       });
                       return new Promise(function() {
                         const self = this;

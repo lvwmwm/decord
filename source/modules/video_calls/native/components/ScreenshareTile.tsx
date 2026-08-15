@@ -1,10 +1,10 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 12435
+// Function ID: 12436
 // Name: ScreenShareTile
-// Dependencies: [19, 17, 676, 21, 4342, 712, 10671, 5488, 1297, 10672, 4338, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 712, 12436, 6377, 1297, 12437, 4734, 1236, 2]
 // Exports: default
 
-// Module 10670 (ScreenShareTile)
+// Module 12435 (ScreenShareTile)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
@@ -37,18 +37,18 @@ export default function ScreenShareTile(onSingleTap) {
     onDoubleTap = NOOP;
   }
   const tmp = createCacheKey();
-  let obj = { gesture: importDefault(10671)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
+  let obj = { gesture: importDefault(12436)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.liveContainer, children: null };
   obj[1] = callback(require(1297) /* Button */.LiveTag, {});
   const items = [callback(closure_3, obj), , ];
-  const tmp2 = importDefault(10671)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
-  items[1] = callback(closure_4, { source: importDefault(10672), style: tmp.image, resizeMode: "contain" });
+  const tmp2 = importDefault(12436)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
+  items[1] = callback(closure_4, { source: importDefault(12437), style: tmp.image, resizeMode: "contain" });
   const obj2 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.G84gtR);
-  items[2] = callback(require(4338) /* Text */.Text, obj2);
+  items[2] = callback(require(4734) /* Text */.Text, obj2);
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
-  return callback(require(5488) /* LegacyBaseButton */.GestureDetector, obj);
+  return callback(require(6377) /* LegacyBaseButton */.GestureDetector, obj);
 };

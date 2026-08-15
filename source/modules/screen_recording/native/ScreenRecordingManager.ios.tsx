@@ -1,9 +1,9 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15201
+// Function ID: 15202
 // Name: get ActivityIndicator
 // Dependencies: [17, 2]
 
-// Module 15152 (get ActivityIndicator)
+// Module 15201 (get ActivityIndicator)
 const DCDScreenRecordingManager = require("get ActivityIndicator").NativeModules.DCDScreenRecordingManager;
 const result = require("set").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingManager.ios.tsx");
 

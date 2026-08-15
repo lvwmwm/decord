@@ -1,9 +1,9 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12286
+// Function ID: 12287
 // Name: fetchStore
-// Dependencies: [5, 12534, 676, 709, 530, 589, 2]
+// Dependencies: [5, 12285, 676, 709, 530, 589, 2]
 
-// Module 12535 (fetchStore)
+// Module 12286 (fetchStore)
 import closure_3 from "initialize";
 import importDefaultResult from "map";
 import ME from "ME";
@@ -28,7 +28,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let obj = {
             obj.dispatch(obj6);
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -117,7 +117,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ let obj = {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           v0 = tmp;

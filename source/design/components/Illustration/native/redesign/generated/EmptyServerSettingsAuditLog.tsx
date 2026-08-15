@@ -1,10 +1,10 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16777
+// Function ID: 16778
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [19, 17, 21, 7689, 16732, 16733, 16734, 1363, 2]
+// Dependencies: [19, 17, 21, 7907, 16778, 16779, 16780, 1363, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 16731 (getEmptyServerSettingsAuditLogSource)
+// Module 16777 (getEmptyServerSettingsAuditLogSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,16 +13,16 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
 
 export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSettingsAuditLogSource(theme) {
-  let obj = require(7689) /* getIllustrationSource */;
+  let obj = require(7907) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16732);
+      return callback(16778);
     },
     darker() {
-      return callback(16733);
+      return callback(16779);
     },
     light() {
-      return callback(16734);
+      return callback(16780);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,32 +31,32 @@ export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSetti
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16732);
+      return callback(16778);
     },
     darker() {
-      return callback(16733);
+      return callback(16779);
     },
     light() {
-      return callback(16734);
+      return callback(16780);
     }
   };
-  return require(7689) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16732);
+      return callback(16778);
     },
     darker() {
-      return callback(16733);
+      return callback(16779);
     },
     light() {
-      return callback(16734);
+      return callback(16780);
     }
   };
   obj = {};
-  const illustrationSource = require(7689) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

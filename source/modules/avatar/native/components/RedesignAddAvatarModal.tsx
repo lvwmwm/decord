@@ -1,10 +1,10 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16663
+// Function ID: 16664
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8331, 676, 21, 4342, 712, 1628, 589, 13975, 16596, 8345, 8374, 4923, 8335, 8337, 4338, 1236, 16605, 4777, 16593, 2]
+// Dependencies: [5, 32, 19, 17, 8370, 676, 21, 4661, 712, 1629, 589, 14007, 16648, 8384, 8413, 4838, 8374, 8376, 4734, 1236, 16657, 4745, 16645, 2]
 // Exports: default
 
-// Module 16611 (RedesignAddAvatarModal)
+// Module 16663 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -59,7 +59,7 @@ export default function RedesignAddAvatarModal(route) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ export default function RedesignAddAvatarModal(route) {
               dependencyMap = 1;
               v0 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = outer1_0(4923).openImagePicker(obj1);
+              obj2[0] = outer1_0(4838).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -100,19 +100,19 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(13975);
+                obj = outer1_0(14007);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(8345);
+                obj2 = outer1_0(8384);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               outer1_1 = pendingImage;
-              obj3 = outer1_0(8335);
+              obj3 = outer1_0(8374);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(8337);
+              obj5 = outer1_0(8376);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";

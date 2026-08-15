@@ -1,9 +1,9 @@
-// Module ID: 4244
-// Function ID: 4245
+// Module ID: 4276
+// Function ID: 4277
 // Name: displayMessage
-// Dependencies: [4245, 1236, 4237, 2]
+// Dependencies: [4277, 1236, 4269, 2]
 
-// Module 4244 (displayMessage)
+// Module 4276 (displayMessage)
 import { DispatchErrorCodes } from "RPC_SCOPE_CONFIG";
 
 const result = require("formatSize").fileFinishedImporting("errors/NativeDispatchError.tsx");
@@ -44,12 +44,12 @@ Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
       const code = self.code;
       if (DispatchErrorCodes.DISK_LOW === code) {
         ({ available, required } = self.context);
-        const obj5 = require(4237) /* formatSize */;
-        const formatSizeResult = require(4237) /* formatSize */.formatSize(available, { useKibibytes: true });
-        const obj6 = require(4237) /* formatSize */;
+        const obj5 = require(4269) /* formatSize */;
+        const formatSizeResult = require(4269) /* formatSize */.formatSize(available, { useKibibytes: true });
+        const obj6 = require(4269) /* formatSize */;
         const intl13 = require(1236) /* getSystemLocale */.intl;
         let obj = { required: null, available: null };
-        obj[0] = require(4237) /* formatSize */.formatSize(required, { useKibibytes: true });
+        obj[0] = require(4269) /* formatSize */.formatSize(required, { useKibibytes: true });
         obj[1] = formatSizeResult;
         return intl13.formatToPlainString(require(1236) /* getSystemLocale */.t["2DR5dl"], obj);
       } else if (tmp32.POST_INSTALL_FAILED === code) {

@@ -1,8 +1,8 @@
-// Module ID: 10927
-// Function ID: 10928
-// Dependencies: [19, 17, 4358, 4363, 21, 4342, 712, 10917, 1493, 4912, 589, 10928, 1297, 2]
+// Module ID: 12613
+// Function ID: 12614
+// Dependencies: [19, 17, 4773, 4544, 21, 4661, 712, 12604, 1494, 8944, 589, 12614, 1297, 2]
 
-// Module 10927
+// Module 12613
 import { View } from "get ActivityIndicator";
 import getParticipants from "getParticipants";
 import { ParticipantTypes } from "ParticipantTypes";
@@ -20,10 +20,10 @@ const memoResult = require("noop").memo((channel) => {
   const participant = channel.participant;
   const size = channel.size;
   const tmp = callback();
-  let obj = channel(10917);
+  let obj = channel(12604);
   const speakerTileStyles = obj.useSpeakerTileStyles();
-  const isScreenLandscape = channel(4912).useIsScreenLandscape();
-  const obj2 = channel(4912);
+  const isScreenLandscape = channel(8944).useIsScreenLandscape();
+  const obj2 = channel(8944);
   const tmp5 = participant;
   const items = [getParticipants];
   const items1 = [channel.id, participant.id];
@@ -34,19 +34,19 @@ const memoResult = require("noop").memo((channel) => {
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       obj = { style: null, children: null };
       const items2 = [tmp.container, , ];
-      let tmp2Result = tmp2(10917);
+      let tmp2Result = tmp2(12604);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      tmp2Result = tmp2(10917);
-      items2[2] = tmp2Result.getTileWidthStyle(size, participant(1493)().width, isScreenLandscape);
+      tmp2Result = tmp2(12604);
+      items2[2] = tmp2Result.getTileWidthStyle(size, participant(1494)().width, isScreenLandscape);
       obj[0] = items2;
       obj = { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null };
       obj[4] = stateFromStores;
       obj[5] = tmp2(1297).AvatarSizes.XLARGE;
       obj[6] = channel;
       obj[8] = tmp.media;
-      obj[1] = jsx(tmp5(10928), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null });
+      obj[1] = jsx(tmp5(12614), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null });
       tmp8 = <View hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={null} avatarSize={null} channel={null} shrinkStreamEmptyState={false} contentStyle={null} />;
-      const tmp5Result = tmp5(10928);
+      const tmp5Result = tmp5(12614);
     }
   }
   return tmp8;

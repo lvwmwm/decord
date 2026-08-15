@@ -1,10 +1,10 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 12644
+// Function ID: 12645
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 4417, 21, 4342, 5789, 5809, 589, 4197, 4576, 13111, 13112, 5825, 13122, 13125, 13126, 4767, 13129, 2]
+// Dependencies: [19, 17, 4545, 21, 4661, 7139, 7159, 589, 4229, 8663, 12645, 12646, 7175, 12656, 12659, 12660, 4725, 12663, 2]
 // Exports: default
 
-// Module 13110 (VoiceActionSheet)
+// Module 12644 (VoiceActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "ItemSeparator";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -44,24 +44,24 @@ export default function VoiceActionSheet(channel) {
       callback(table[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(13112);
+  let obj1 = importDefault(12646);
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = { children: null };
     obj = { channel: null };
     obj[0] = channel;
-    obj[0] = callback(tmp2(13122), obj);
-    let children = callback(tmp5(5825).ActionSheet, obj);
+    obj[0] = callback(tmp2(12656), obj);
+    let children = callback(tmp5(7175).ActionSheet, obj);
     let tmp8 = callback;
   } else if (stateFromStores) {
     obj1 = { children: null };
     const obj2 = { channel: null };
     obj2[0] = channel;
-    const items2 = [callback(tmp2(13125), obj2), ];
+    const items2 = [callback(tmp2(12659), obj2), ];
     let obj3 = { channel: null };
     obj3[0] = channel;
-    items2[1] = callback(tmp2(13126), obj3);
+    items2[1] = callback(tmp2(12660), obj3);
     obj1[0] = items2;
-    children = callback2(tmp5(5825).ActionSheet, obj1);
+    children = callback2(tmp5(7175).ActionSheet, obj1);
     tmp8 = callback;
   } else {
     tmp8 = callback;
@@ -70,13 +70,13 @@ export default function VoiceActionSheet(channel) {
     obj5[0] = tmp.container;
     const obj6 = { blurTheme: "dark", style: null };
     obj6[1] = tmp.visualEffectView;
-    const items3 = [callback(tmp2(4767), obj6), ];
+    const items3 = [callback(tmp2(4725), obj6), ];
     const obj7 = { channel: null };
     obj7[0] = channel;
-    items3[1] = callback(tmp2(13129), obj7);
+    items3[1] = callback(tmp2(12663), obj7);
     obj5[1] = items3;
     obj4[2] = callback2(closure_4, obj5);
-    children = callback(tmp5(5825).ActionSheet, obj4);
+    children = callback(tmp5(7175).ActionSheet, obj4);
   }
-  return tmp8(channel(5789).AnalyticsLocationProvider, { value: importDefault(5789)(importDefault(5809).VOICE_ACTION_SHEET).analyticsLocations, children });
+  return tmp8(channel(7139).AnalyticsLocationProvider, { value: importDefault(7139)(importDefault(7159).VOICE_ACTION_SHEET).analyticsLocations, children });
 };

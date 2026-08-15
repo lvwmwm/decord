@@ -1,22 +1,22 @@
-// Module ID: 14896
-// Function ID: 14897
+// Module ID: 14936
+// Function ID: 14937
 // Name: route
-// Dependencies: [8148, 676, 10421, 14897, 2]
+// Dependencies: [8198, 676, 10669, 14937, 2]
 
-// Module 14896 (route)
+// Module 14936 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
     return "Modal";
   },
-  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.DESIGN_SYSTEM_MODAL,
   getComponent() {
-    return require(14897) /* DemoModal */.default;
+    return require(14937) /* DemoModal */.default;
   }
 };
 const route = createToggle.createRoute(obj);

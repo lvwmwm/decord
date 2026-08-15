@@ -1,10 +1,10 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11566
+// Function ID: 11567
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 4800, 11842, 9972, 676, 21, 11843, 4342, 712, 4783, 11844, 9600, 1954, 8417, 1351, 1236, 4549, 12, 11845, 7052, 11846, 11847, 1297, 10043, 2]
+// Dependencies: [32, 19, 17, 5246, 11567, 10177, 676, 21, 11568, 4661, 712, 4751, 11569, 9555, 1954, 8456, 1351, 1236, 5042, 12, 11570, 5248, 11571, 11572, 1297, 10248, 2]
 // Exports: default
 
-// Module 11841 (ApplicationCommandDiscovery)
+// Module 11566 (ApplicationCommandDiscovery)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "getSystemLocale";
@@ -66,7 +66,7 @@ export default function ApplicationCommandDiscovery(channel) {
   let closure_19;
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = require(4783) /* getFontScale */;
+  let obj = require(4751) /* getFontScale */;
   bound = Math.max(obj.useFontScale() * c11, c11);
   let obj1 = ref;
   ref = ref.useRef(null);
@@ -74,14 +74,14 @@ export default function ApplicationCommandDiscovery(channel) {
   first = tmp4[0];
   c7 = tmp6;
   closure_8 = ref.useRef(false);
-  let obj2 = require(11844) /* useCommandDiscoveryManager */;
+  let obj2 = require(11569) /* useCommandDiscoveryManager */;
   commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj3 = channel(9600);
+  let obj3 = channel(9555);
   obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
   obj = { commandTypes: null, builtIns: null, applicationCommands: null };
   let items = [require(1954) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
   obj[0] = items;
-  const BuiltInCommandFilter = require(8417) /* ScoreMethod */.BuiltInCommandFilter;
+  const BuiltInCommandFilter = require(8456) /* ScoreMethod */.BuiltInCommandFilter;
   obj[1] = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj[2] = !canOnlyUseTextCommands;
   obj[1] = obj;

@@ -1,10 +1,10 @@
-// Module ID: 10426
-// Function ID: 10427
+// Module ID: 10674
+// Function ID: 10675
 // Name: getActivitySessionKey
 // Dependencies: [2]
 // Exports: getActivitySessionKey
 
-// Module 10426 (getActivitySessionKey)
+// Module 10674 (getActivitySessionKey)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getActivitySessionKey.tsx");
 
 export const getActivitySessionKey = function getActivitySessionKey(application_id) {

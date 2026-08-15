@@ -1,9 +1,9 @@
-// Module ID: 12415
-// Function ID: 12416
+// Module ID: 12160
+// Function ID: 12161
 // Name: getNote
 // Dependencies: [1431, 1911, 1914, 2]
 
-// Module 12415 (getNote)
+// Module 12160 (getNote)
 import isValueEqual from "isValueEqual";
 import { LibdiscoreStore } from "identity";
 import { LibdiscoreBatchStoreRefactorExperiment } from "items";

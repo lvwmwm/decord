@@ -1,9 +1,9 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 7190
+// Function ID: 7191
 // Name: set
 // Dependencies: [2, 112]
 
-// Module 5842 (set)
+// Module 7190 (set)
 const result = require("set").fileFinishedImporting("modules/core/native/NativeView.tsx");
 
 export { default } from "Commands";

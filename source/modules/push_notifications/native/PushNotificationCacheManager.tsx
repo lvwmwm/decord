@@ -1,9 +1,9 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16690
+// Function ID: 16691
 // Name: prototype
-// Dependencies: [11857, 1922, 4187, 5322, 10764, 2]
+// Dependencies: [11585, 1922, 4219, 5038, 11579, 2]
 
-// Module 16644 (prototype)
+// Module 16690 (prototype)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import "initialize";
@@ -28,15 +28,15 @@ let prototype = function PushNotificationCacheManager() {
   applyArgumentsResult.handleUserUpdate = function handleUserUpdate() {
     currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
-      applyArgumentsResult(10764).setCurrentUser(currentUser.username, currentUser.id);
-      const obj2 = applyArgumentsResult(10764);
+      applyArgumentsResult(11579).setCurrentUser(currentUser.username, currentUser.id);
+      const obj2 = applyArgumentsResult(11579);
     } else {
-      applyArgumentsResult(10764).setCurrentUser(null, null);
-      const obj = applyArgumentsResult(10764);
+      applyArgumentsResult(11579).setCurrentUser(null, null);
+      const obj = applyArgumentsResult(11579);
     }
   };
   applyArgumentsResult.syncMultiAccountUsers = function syncMultiAccountUsers() {
-    obj = obj(10764);
+    obj = obj(11579);
     obj = undefined;
     if (obj.canUseMultiAccountNotifications) {
       const validUsers = obj.getValidUsers();

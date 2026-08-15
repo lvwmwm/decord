@@ -1,10 +1,10 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15424
+// Function ID: 15425
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 4342, 712, 15376, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 15425, 2]
 // Exports: default
 
-// Module 15375 (GuildThemeNuxPreviewGraphic)
+// Module 15424 (GuildThemeNuxPreviewGraphic)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,6 +25,6 @@ export default function GuildThemeNuxPreviewGraphic(arg0) {
   if (!isPersonal) {
     tmp4 = themeSettings;
   }
-  obj[3] = jsx(importDefault(15376), { themeSettings: tmp4 });
+  obj[3] = jsx(importDefault(15425), { themeSettings: tmp4 });
   return <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={createCacheKey().container}>{null}</View>;
 };

@@ -1,9 +1,9 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11253
+// Function ID: 11254
 // Name: ApplicationCollectionSurface
 // Dependencies: [2]
 
-// Module 11537 (ApplicationCollectionSurface)
+// Module 11253 (ApplicationCollectionSurface)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");
 
 export const ApplicationCollectionSurface = { APPLICATION_DIRECTORY: 1, [1]: "APPLICATION_DIRECTORY", APP_LAUNCHER_IN_TEXT: 2, [2]: "APP_LAUNCHER_IN_TEXT", APP_LAUNCHER_IN_VOICE_BANNER: 3, [3]: "APP_LAUNCHER_IN_VOICE_BANNER" };

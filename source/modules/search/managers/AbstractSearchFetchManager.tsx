@@ -1,9 +1,9 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11520
+// Function ID: 11521
 // Name: cleanUp
 // Dependencies: [2]
 
-// Module 11796 (cleanUp)
+// Module 11520 (cleanUp)
 let result = require("set").fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
 class AbstractSearchFetchManager {
   constructor() {

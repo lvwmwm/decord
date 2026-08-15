@@ -1,12 +1,12 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11040
+// Function ID: 11041
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 676, 7845, 21, 4342, 712, 1236, 7047, 4310, 5825, 5885, 4338, 8033, 1297, 4777, 4549, 11297, 7850, 2]
+// Dependencies: [32, 19, 17, 676, 5430, 21, 4661, 712, 1236, 5242, 4342, 7175, 6551, 4734, 8083, 1297, 4745, 5042, 11010, 6553, 2]
 // Exports: default
 
-// Module 11327 (GuildRaidResolveActionSheet)
+// Module 11040 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
-import module_7850 from "module_7850";
+import module_6553 from "module_6553";
 import { View } from "collectGuildAnalyticsMetadata";
 import { AnalyticEvents } from "ME";
 import { SafetyToastType } from "SafetyToastType";
@@ -51,22 +51,22 @@ export default function GuildRaidResolveActionSheet(arg0) {
   let obj = { text: null, value: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.yeaXw5);
-  obj[1] = require(7047) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
+  obj[1] = require(5242) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
   let items = [obj, , , ];
   obj = { text: null, value: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["o++3B8"]);
-  obj[1] = require(7047) /* Feedback */.RaidResolutionType.DM_SPAM;
+  obj[1] = require(5242) /* Feedback */.RaidResolutionType.DM_SPAM;
   items[1] = obj;
   obj = { text: null, value: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.UfHAwZ);
-  obj[1] = require(7047) /* Feedback */.RaidResolutionType.JOIN_RAID;
+  obj[1] = require(5242) /* Feedback */.RaidResolutionType.JOIN_RAID;
   items[2] = obj;
   let obj1 = { text: null, value: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl4.string(require(1236) /* getSystemLocale */.t.K3UWeR);
-  obj1[1] = require(7047) /* Feedback */.RaidResolutionType.OTHER;
+  obj1[1] = require(5242) /* Feedback */.RaidResolutionType.OTHER;
   items[3] = obj1;
   let obj2 = { children: null };
   let obj3 = { style: tmp.container, children: null };
@@ -74,11 +74,11 @@ export default function GuildRaidResolveActionSheet(arg0) {
   let obj4 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj4[3] = intl5.string(require(1236) /* getSystemLocale */.t["1zmw/H"]);
-  const items1 = [callback2(require(4338) /* Text */.Text, obj4), , , , ];
+  const items1 = [callback2(require(4734) /* Text */.Text, obj4), , , , ];
   let obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj5[3] = intl6.string(require(1236) /* getSystemLocale */.t.nF79oO);
-  items1[1] = callback2(require(4338) /* Text */.Text, obj5);
+  items1[1] = callback2(require(4734) /* Text */.Text, obj5);
   items1[2] = items.map((value) => {
     value = value.value;
     let closure_0 = value;
@@ -137,7 +137,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
   };
   const intl7 = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl7.string(require(1236) /* getSystemLocale */.t.Gh3A0O);
-  items1[3] = callback2(require(4777) /* Button */.Button, obj6);
+  items1[3] = callback2(require(4745) /* Button */.Button, obj6);
   const obj7 = {
     onPress: function handleClose() {
       callback(_undefined[10]).hideActionSheet("GuildRaidResolveActionSheet");
@@ -148,8 +148,8 @@ export default function GuildRaidResolveActionSheet(arg0) {
   };
   const intl8 = require(1236) /* getSystemLocale */.intl;
   obj7[1] = intl8.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  items1[4] = callback2(require(4777) /* Button */.Button, obj7);
+  items1[4] = callback2(require(4745) /* Button */.Button, obj7);
   obj3[1] = items1;
-  obj2[0] = callback3(importDefault(5885), obj3);
-  return callback2(require(5825) /* ActionSheet */.ActionSheet, obj2);
+  obj2[0] = callback3(importDefault(6551), obj3);
+  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj2);
 };

@@ -1,10 +1,10 @@
-// Module ID: 13847
-// Function ID: 13848
+// Module ID: 13879
+// Function ID: 13880
 // Name: toggleVoiceChannelChat
-// Dependencies: [1391, 4416, 4358, 4570, 2]
+// Dependencies: [1391, 4539, 4773, 8666, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13847 (toggleVoiceChannelChat)
+// Module 13879 (toggleVoiceChannelChat)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import getParticipants from "getParticipants";
@@ -25,7 +25,7 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
           if (open == null) {
             tmp3 = !chatOpen.getChatOpen(channelId);
           }
-          importDefault(4570).updateChatOpen(channelId, tmp3);
+          importDefault(8666).updateChatOpen(channelId, tmp3);
           obj = { channelId: null, chatOpen: null };
           obj[0] = channelId;
           obj[1] = tmp3;

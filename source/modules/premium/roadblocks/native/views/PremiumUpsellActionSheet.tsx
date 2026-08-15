@@ -1,10 +1,10 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 8480
+// Function ID: 8481
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4334, 1302, 1304, 4165, 1922, 1924, 676, 4401, 8442, 21, 4342, 712, 4065, 4007, 8443, 4960, 4919, 8444, 8445, 1236, 4058, 1993, 8447, 8448, 4310, 8440, 8449, 8450, 12654, 7695, 691, 589, 8761, 5829, 4338, 500, 9450, 5329, 5789, 8432, 8746, 698, 8791, 4205, 5825, 4788, 12657, 4777, 7771, 2]
+// Dependencies: [32, 19, 17, 4662, 1302, 1304, 4197, 1922, 1924, 676, 4524, 8481, 21, 4661, 712, 4097, 4039, 8482, 4876, 4834, 8483, 8484, 1236, 4090, 1993, 8486, 8487, 4342, 8479, 8488, 8489, 12732, 7913, 691, 589, 9365, 7178, 4734, 500, 9217, 5449, 7139, 8471, 9350, 698, 9395, 4237, 7175, 4756, 12735, 4745, 7989, 2]
 // Exports: default
 
-// Module 8441 (AlwaysCompressImagesSwitch)
+// Module 8480 (AlwaysCompressImagesSwitch)
 import registerAsset from "registerAsset";
 import getUploadFileSizeSum from "getUploadFileSizeSum";
 import { View } from "EntitlementFeatureNames";
@@ -58,8 +58,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1236).intl;
       obj1[2] = intl2.string(tmp2(1236).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4338).Text, obj1);
-      obj[1] = callback2(tmp2(5829).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4734).Text, obj1);
+      obj[1] = callback2(tmp2(7178).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }
@@ -77,13 +77,13 @@ function PremiumUpsellImage(arg0) {
         obj = { url: null, style: null, autoplay: true };
         obj[0] = image.uri;
         obj[1] = style;
-        let tmp5 = callback2(require(9450) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(9217) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }
   }
   obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = callback2(importDefault(5329), obj);
+  tmp5 = callback2(importDefault(5449), obj);
 }
 ({ PremiumSubscriptionSKUs: unpackModuleId, PremiumTypes: closure_12, PremiumUpsellTypes: map1 } = GuildFeatures);
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = ME);

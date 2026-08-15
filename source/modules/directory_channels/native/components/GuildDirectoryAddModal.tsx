@@ -1,10 +1,10 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11476
+// Function ID: 11477
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 11757, 21, 4342, 5328, 503, 5331, 11755, 11758, 11766, 11770, 11780, 5389, 5777, 5844, 1236, 2]
+// Dependencies: [19, 11477, 21, 4661, 6370, 503, 6314, 11475, 11478, 11486, 11490, 11500, 6803, 7127, 6312, 1236, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 11756 (GuildDirectoryAddModal)
+// Module 11476 (GuildDirectoryAddModal)
 import "noop";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export default function GuildDirectoryAddModal(arg0) {
   let initialStack;
   let screens;
   const _require = arg0;
-  ({ screens, initialStack } = importDefault(5777)(() => {
+  ({ screens, initialStack } = importDefault(7127)(() => {
     let obj = { name: outer1_3.CREATE_OR_ADD, params: null };
     obj = {};
     let merged = Object.assign(callback);
@@ -37,7 +37,7 @@ export default function GuildDirectoryAddModal(arg0) {
     };
     obj2[4] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback2(callback(11758), {});
+      return callback2(callback(11478), {});
     };
     obj1[outer1_3.CREATE_OR_ADD] = obj2;
     obj1[outer1_3.DESCRIPTION] = {
@@ -48,7 +48,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(11766), {});
+        return callback2(callback(11486), {});
       }
     };
     const obj3 = {
@@ -59,7 +59,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(11766), {});
+        return callback2(callback(11486), {});
       }
     };
     obj1[outer1_3.TEMPLATES] = {
@@ -70,7 +70,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(11770), {});
+        return callback2(callback(11490), {});
       }
     };
     obj5 = {
@@ -81,7 +81,7 @@ export default function GuildDirectoryAddModal(arg0) {
       impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(11780), {});
+        return callback2(callback(11500), {});
       }
     };
     obj1[outer1_3.CREATE] = obj5;
@@ -92,9 +92,9 @@ export default function GuildDirectoryAddModal(arg0) {
   let obj = { screens, initialRouteStack: initialStack, headerBackTitle: null };
   const intl = _require(1236).intl;
   obj[2] = intl.string(_require(1236).t["13/7kX"]);
-  return jsx(_require(5844).Navigator, { screens, initialRouteStack: initialStack, headerBackTitle: null });
+  return jsx(_require(6312).Navigator, { screens, initialRouteStack: initialStack, headerBackTitle: null });
 };
 export const GuildDirectoryAddModalScreen = function GuildDirectoryAddModalScreen(children) {
   const tmp = createCacheKey();
-  return jsx(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
+  return jsx(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
 };

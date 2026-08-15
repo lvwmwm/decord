@@ -1,10 +1,10 @@
-// Module ID: 15413
-// Function ID: 15414
+// Module ID: 15463
+// Function ID: 15464
 // Name: PX_8
-// Dependencies: [19, 17, 15414, 676, 9855, 21, 712, 4342, 1367, 15319, 1236, 3047, 5387, 8594, 15415, 15416, 4777, 7373, 2]
+// Dependencies: [19, 17, 15464, 676, 10055, 21, 712, 4661, 1367, 15369, 1236, 3079, 6368, 8633, 15465, 15466, 4745, 7591, 2]
 // Exports: default, getFavoritesSuggestionsNoticeHeight
 
-// Module 15413 (PX_8)
+// Module 15463 (PX_8)
 import noop from "noop";
 import { View } from "getChannelIdFromDestinationId";
 import items from "items";
@@ -28,7 +28,7 @@ const result = require("items").fileFinishedImporting("modules/favorites/native/
 export default function FavoritesGuildSuggestedChannels() {
   let tmp = callback6();
   const tmp4 = importDefault(1367)("FavoritesGuildSuggestedChannels");
-  let obj = arr(15319);
+  let obj = arr(15369);
   const categoryStyles = obj.useCategoryStyles(tmp4);
   arr = callback();
   const tmp7 = callback2();
@@ -42,7 +42,7 @@ export default function FavoritesGuildSuggestedChannels() {
     obj[2] = arr(tmp9[12]).XSmallIcon;
     return obj;
   }, items);
-  const tmp9 = importDefault(8594)();
+  const tmp9 = importDefault(8633)();
   const dependencyMap = tmp9;
   const items1 = [tmp9];
   React = React.useMemo(() => ({ height: closure_2 }), items1);
@@ -52,11 +52,11 @@ export default function FavoritesGuildSuggestedChannels() {
     obj[0] = tmp.container;
     obj = { name: null, withMarginTop: false, styles: null, isRefreshEnabled: null, trailingAction: null };
     let intl = tmp5(1236).intl;
-    obj[0] = intl.string(importDefault(3047).oHWnLy);
+    obj[0] = intl.string(importDefault(3079).oHWnLy);
     obj[2] = categoryStyles;
     obj[3] = tmp4;
     obj[4] = memo;
-    const items2 = [tmp5(15319).renderCategoryItem(obj), ];
+    const items2 = [tmp5(15369).renderCategoryItem(obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.rows;
     obj1[1] = arr.map((result) => {
@@ -80,7 +80,7 @@ export default function FavoritesGuildSuggestedChannels() {
     items2[1] = callback4(View, obj1);
     obj[1] = items2;
     tmp10 = callback5(View, obj);
-    const tmp5Result = tmp5(15319);
+    const tmp5Result = tmp5(15369);
   }
   return tmp10;
 };

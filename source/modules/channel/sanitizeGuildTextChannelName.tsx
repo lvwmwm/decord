@@ -1,10 +1,10 @@
-// Module ID: 4537
-// Function ID: 4538
+// Module ID: 4985
+// Function ID: 4986
 // Name: sanitizeGuildTextChannelName
 // Dependencies: [2]
 // Exports: default
 
-// Module 4537 (sanitizeGuildTextChannelName)
+// Module 4985 (sanitizeGuildTextChannelName)
 const result = require("set").fileFinishedImporting("modules/channel/sanitizeGuildTextChannelName.tsx");
 
 export default function sanitizeGuildTextChannelName(str) {

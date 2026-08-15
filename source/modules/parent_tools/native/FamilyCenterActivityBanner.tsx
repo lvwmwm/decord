@@ -1,10 +1,10 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14232
+// Function ID: 14233
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [19, 17, 21, 4342, 7403, 7404, 14201, 712, 11394, 1236, 2303, 14208, 14209, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 7621, 7622, 14233, 712, 11107, 1236, 2335, 14240, 14241, 4734, 2]
 // Exports: default
 
-// Module 14200 (FamilyCenterActivityBannerButton)
+// Module 14232 (FamilyCenterActivityBannerButton)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,9 +17,9 @@ let c5;
 let closure_6;
 const require = arg1;
 function FamilyCenterActivityBannerButton() {
-  let obj = require(7403) /* useUserIdsForLinkStatus */;
+  let obj = require(7621) /* useUserIdsForLinkStatus */;
   const hasActiveLinks = obj.useHasActiveLinks();
-  const tmp5 = importDefault(7404)();
+  const tmp5 = importDefault(7622)();
   const tmp = callback();
   const tmp2 = require;
   let tmp6 = null;
@@ -29,7 +29,7 @@ function FamilyCenterActivityBannerButton() {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    let tmp7Result = tmp2(14201);
+    let tmp7Result = tmp2(14233);
     tmp7Result = tmp7(tmp5 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj[1] = tmp7Result;
     tmp7Result = tmp7(closure_3, obj);
@@ -53,28 +53,28 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityBanner() {
   const tmp4 = createCacheKey();
-  let obj = require(7403) /* useUserIdsForLinkStatus */;
+  let obj = require(7621) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
-  let obj1 = require(11394) /* useAgeSpecificText */;
+  let obj1 = require(11107) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const tmp = importDefault;
-  const tmp3 = importDefault(7404)();
+  const tmp3 = importDefault(7622)();
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2303)["T7GyW+"]), intl2.string(importDefault(2303).goKE2b));
-  let obj2 = require(11394) /* useAgeSpecificText */;
+  const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2335)["T7GyW+"]), intl2.string(importDefault(2335).goKE2b));
+  let obj2 = require(11107) /* useAgeSpecificText */;
   const intl3 = require(1236) /* getSystemLocale */.intl;
-  const stringResult = intl.string(importDefault(2303)["T7GyW+"]);
+  const stringResult = intl.string(importDefault(2335)["T7GyW+"]);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj = { style: tmp4.container, children: null };
   obj = { source: null, style: null };
-  const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2303).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2303).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj[0] = tmp(tmp3 ? 14208 : 14209);
+  const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2335).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2335).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  obj[0] = tmp(tmp3 ? 14240 : 14241);
   obj[1] = tmp4.art;
   const items = [closure_5(closure_4, obj), , , ];
   obj1 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };
-  items[1] = closure_5(require(4338) /* Text */.Text, obj1);
+  items[1] = closure_5(require(4734) /* Text */.Text, obj1);
   obj2 = { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-  items[2] = closure_5(require(4338) /* Text */.Text, obj2);
+  items[2] = closure_5(require(4734) /* Text */.Text, obj2);
   let tmp13Result = null;
   if (!hasMaxConnections) {
     tmp13Result = tmp13(FamilyCenterActivityBannerButton, {});

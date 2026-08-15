@@ -1,10 +1,10 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13100
+// Function ID: 13101
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4393, 4406, 13173, 589, 2]
+// Dependencies: [4497, 4529, 13101, 589, 2]
 // Exports: default, isSpatialAudioAvailable
 
-// Module 13172 (useIsSpatialAudioAvailable)
+// Module 13100 (useIsSpatialAudioAvailable)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { Features } from "DesktopSources";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("apexExperiment").fileFinishedImporting("modules/spatial_audio/useIsSpatialAudioAvailable.tsx");
 
 export default function useIsSpatialAudioAvailable(location) {
-  let obj = importDefault(13173);
+  let obj = importDefault(13101);
   obj = { location };
   let enabled = obj.useConfig(obj).enabled;
   const items = [_detectH265HardwareDecode];
@@ -22,7 +22,7 @@ export default function useIsSpatialAudioAvailable(location) {
   return enabled;
 };
 export const isSpatialAudioAvailable = function isSpatialAudioAvailable(RTCConnectionStore) {
-  let obj = importDefault(13173);
+  let obj = importDefault(13101);
   obj = { location: RTCConnectionStore };
   let enabled = obj.getConfig(obj).enabled;
   if (enabled) {

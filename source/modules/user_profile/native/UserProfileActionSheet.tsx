@@ -1,9 +1,9 @@
-// Module ID: 8859
-// Function ID: 8860
+// Module ID: 8943
+// Function ID: 8944
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1391, 1990, 1922, 8331, 5837, 676, 5459, 21, 4342, 5460, 4083, 1628, 589, 8377, 5789, 5809, 7470, 4034, 8851, 4912, 8860, 8873, 8874, 8875, 8880, 8866, 8885, 8886, 8888, 1493, 5328, 8883, 4278, 4065, 712, 8858, 8889, 8379, 1977, 8378, 698, 4198, 4310, 8846, 1499, 5458, 1297, 8890, 1236, 4072, 8894, 500, 6080, 8897, 12350, 12422, 9443, 5773, 12608, 1306, 2]
+// Dependencies: [32, 19, 17, 1391, 1990, 1922, 8370, 7186, 676, 6951, 21, 4661, 6952, 4115, 1629, 589, 8416, 7139, 7159, 7688, 4066, 8934, 8944, 8945, 8958, 8959, 8960, 8964, 8951, 8969, 8970, 8972, 1494, 6370, 8967, 4310, 4097, 712, 8941, 8973, 8418, 1977, 8417, 698, 4230, 4342, 8929, 1500, 6950, 1297, 8974, 1236, 4104, 8978, 500, 7360, 8981, 12085, 12169, 9210, 7124, 12359, 1306, 2]
 
-// Module 8859 (UseAnimatedPosition)
+// Module 8943 (UseAnimatedPosition)
 import useWindowDimensions from "useWindowDimensions";
 import importAllResult from "useBottomSheetRef";
 import get_ActivityIndicator from "context";
@@ -28,8 +28,8 @@ const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(5460).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5460);
+  animatedPosition2 = animatedPosition(6952).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(6952);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -42,7 +42,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(4083).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4115).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {

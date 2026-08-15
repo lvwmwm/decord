@@ -1,9 +1,9 @@
-// Module ID: 8272
-// Function ID: 8273
+// Module ID: 4365
+// Function ID: 4366
 // Name: getFirstEligibleUserExperiment
-// Dependencies: [32, 4256, 4257, 4264, 12, 2]
+// Dependencies: [32, 4288, 4289, 4296, 12, 2]
 
-// Module 8272 (getFirstEligibleUserExperiment)
+// Module 4365 (getFirstEligibleUserExperiment)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import ExperimentBuckets from "ExperimentBuckets";
@@ -78,7 +78,7 @@ export default {
     const tmp = getFirstEligibleUserExperiment(arg0);
     if (null != tmp) {
       const tmp3 = callback(tmp, 2);
-      const result = require(4264) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
+      const result = require(4296) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
       return tmp3[1];
     }
   },

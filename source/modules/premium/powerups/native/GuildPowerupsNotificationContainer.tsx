@@ -1,10 +1,10 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 11724
+// Function ID: 11725
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4342, 712, 8261, 4338, 11994, 11995, 1236, 2335, 11998, 2]
+// Dependencies: [17, 21, 4661, 712, 8307, 4734, 11725, 11726, 1236, 2367, 11729, 2]
 // Exports: default
 
-// Module 11993 (Tier3OverrideNotice)
+// Module 11724 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -12,14 +12,14 @@ import createCacheKey from "createCacheKey";
 let c4;
 let c5;
 function Tier3OverrideNotice(children) {
-  let obj = require(8261) /* apexExperiment */;
+  let obj = require(8307) /* apexExperiment */;
   obj = { style: callback().staffContainer, children: null };
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("Tier3OverrideNotice");
   let str = "text-sm/medium";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-sm/normal";
   }
-  obj[1] = closure_4(require(4338) /* Text */.Text, { variant: str, children: children.text });
+  obj[1] = closure_4(require(4734) /* Text */.Text, { variant: str, children: children.text });
   return closure_4(View, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -33,9 +33,9 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11994)(guildId);
-  const tmp5 = importDefault(11995)(guildId);
-  let obj = require(8261) /* apexExperiment */;
+  const tmp4 = importDefault(11725)(guildId);
+  const tmp5 = importDefault(11726)(guildId);
+  let obj = require(8307) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
   if (tmp4.shouldShow) {
     obj = { style: null, children: null };
@@ -52,8 +52,8 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     }
     obj[1] = str2;
     const intl = tmp6(1236).intl;
-    obj[2] = intl.string(tmp2(2335)["3FRirU"]);
-    const items = [closure_4(tmp6(4338).Text, obj), , ];
+    obj[2] = intl.string(tmp2(2367)["3FRirU"]);
+    const items = [closure_4(tmp6(4734).Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       const obj1 = { text: null };
@@ -66,7 +66,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj2 = { guildId: null, powerupNames: null, warnings: null };
       obj2[0] = guildId;
       ({ expiringPowerupNames: obj5[1], warnings: obj5[2] } = tmp5);
-      shouldShow2 = tmp11(tmp2(11998), obj2);
+      shouldShow2 = tmp11(tmp2(11729), obj2);
     }
     items[2] = shouldShow2;
     obj[1] = items;

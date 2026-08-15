@@ -1,10 +1,10 @@
-// Module ID: 5883
-// Function ID: 5884
+// Module ID: 6549
+// Function ID: 6550
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4342, 5884, 5775, 2]
+// Dependencies: [19, 17, 21, 4661, 5446, 6550, 2]
 // Exports: SceneLoadingIndicator
 
-// Module 5883 (SceneLoadingIndicator)
+// Module 6549 (SceneLoadingIndicator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ const result = require("jsxProd").fileFinishedImporting("design/components/Navig
 
 export const SceneLoadingIndicator = function SceneLoadingIndicator() {
   const obj = { style: callback3().loadingContainer, children: null };
-  const items = [callback(require(5884) /* ActivityIndicator */.ActivityIndicator, {}), callback(require(5775) /* NavScrim */.NavScrim, {})];
+  const items = [callback(require(5446) /* ActivityIndicator */.ActivityIndicator, {}), callback(require(6550) /* NavScrim */.NavScrim, {})];
   obj[1] = items;
   return callback2(View, obj);
 };

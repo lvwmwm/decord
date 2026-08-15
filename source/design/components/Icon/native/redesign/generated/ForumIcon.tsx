@@ -1,10 +1,10 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 6883
+// Function ID: 6884
 // Name: ForumIcon
-// Dependencies: [19, 21, 712, 4064, 4847, 2]
+// Dependencies: [19, 21, 712, 4096, 6852, 2]
 // Exports: ForumIcon
 
-// Module 4879 (ForumIcon)
+// Module 6883 (ForumIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ForumIcon = function ForumIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4847) /* registerAsset */;
+  obj[0] = require(6852) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 10870
-// Function ID: 10871
+// Module ID: 9846
+// Function ID: 9847
 // Name: set
 // Dependencies: [2]
 
-// Module 10870 (set)
+// Module 9846 (set)
 import set from "set";
 
 const obj = { ALL: null };

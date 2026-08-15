@@ -1,10 +1,10 @@
-// Module ID: 4202
-// Function ID: 4203
+// Module ID: 4234
+// Function ID: 4235
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1493, 1628, 2]
+// Dependencies: [19, 1494, 1629, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 4202 (useBaseAppContainerDimensions)
+// Module 4234 (useBaseAppContainerDimensions)
 import noop from "noop";
 
 const require = arg1;
@@ -23,10 +23,10 @@ export default function useBaseAppContainerDimensions() {
 export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
   let height;
   let width;
-  let obj = require(1493) /* useWindowDimensions */;
+  let obj = require(1494) /* useWindowDimensions */;
   const windowDimensions = obj.getWindowDimensions();
   ({ width, height } = windowDimensions);
-  const rect = require(1628) /* useSafeAreaInsets */.getSafeAreaInsets();
+  const rect = require(1629) /* useSafeAreaInsets */.getSafeAreaInsets();
   obj = { width: width - rect.left - rect.right, height };
   return obj;
 };

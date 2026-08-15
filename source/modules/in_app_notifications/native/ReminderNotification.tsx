@@ -1,16 +1,16 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10521
+// Function ID: 10522
 // Name: NotificationAvatar
-// Dependencies: [19, 17, 1391, 1910, 9830, 676, 21, 4342, 1297, 4306, 712, 9829, 9911, 589, 692, 9909, 9848, 9850, 4039, 38, 1236, 4572, 8449, 8450, 698, 9907, 2]
+// Dependencies: [19, 17, 1391, 1910, 10030, 676, 21, 4661, 1297, 4338, 712, 10029, 10117, 589, 692, 10115, 10048, 10050, 4071, 38, 1236, 5260, 8488, 8489, 698, 10113, 2]
 
-// Module 10263 (NotificationAvatar)
+// Module 10521 (NotificationAvatar)
 import importAllResult from "module_38";
 import { View } from "PreviewIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import set from "set";
 import { AnalyticEvents } from "ME";
-import jsxProd from "module_4572";
+import jsxProd from "module_5260";
 import createCacheKey from "createCacheKey";
 import set from "ensureGuildLoaded";
 
@@ -34,7 +34,7 @@ function NotificationAvatar(arg0) {
   obj = { style: tmp.cutoutIconContainer, children: null };
   const obj1 = { size: "xs", color: null };
   obj1[1] = importDefault(712).colors.ICON_SUBTLE;
-  obj[1] = callback(require(4306) /* ClockIcon */.ClockIcon, obj1);
+  obj[1] = callback(require(4338) /* ClockIcon */.ClockIcon, obj1);
   items[1] = callback(View, obj);
   obj[1] = items;
   return callback2(View, obj);
@@ -48,7 +48,7 @@ function NotificationBody(channel) {
   let obj1 = channel(589);
   const items1 = [ensureGuildLoaded];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getChannel(channel.parent_id));
-  let obj2 = channel(9829);
+  let obj2 = channel(10029);
   const hasPreviewableMedia = obj2.useHasPreviewableMedia(message);
   const tmp6 = channel.type === channel(692).ChannelTypes.DM;
   let num = 1;
@@ -56,13 +56,13 @@ function NotificationBody(channel) {
     num = closure_8;
   }
   let tmp10 = null;
-  const messagePreviewTextVariant = channel(9829).getMessagePreviewTextVariant();
+  const messagePreviewTextVariant = channel(10029).getMessagePreviewTextVariant();
   if (!tmp6) {
     obj = { channel: null, parentChannel: null, guild: null, author: null };
     obj[0] = channel;
     obj[1] = stateFromStores1;
     obj[2] = stateFromStores;
-    tmp10 = callback(importDefault(9909), obj);
+    tmp10 = callback(importDefault(10115), obj);
   }
   const items2 = [tmp10, ];
   if (!hasPreviewableMedia) {
@@ -70,10 +70,10 @@ function NotificationBody(channel) {
       obj = { channel: null, message: null, color: "text-default", layout: null, variant: null, muted: false, lineClamp: null };
       obj[0] = channel;
       obj[1] = message;
-      obj[3] = tmp(4039).ChannelListLayoutTypes.COZY;
+      obj[3] = tmp(4071).ChannelListLayoutTypes.COZY;
       obj[4] = messagePreviewTextVariant;
       obj[6] = num;
-      let tmp14 = callback(tmp(9850).ChannelRowPreview, obj);
+      let tmp14 = callback(tmp(10050).ChannelRowPreview, obj);
     }
     obj1 = { children: null };
     items2[1] = tmp14;
@@ -81,7 +81,7 @@ function NotificationBody(channel) {
     return closure_11(closure_12, obj1);
   }
   obj2 = { message, lineClamp: num, showMessageAuthor: true, maxHeight: closure_7 };
-  tmp14 = callback(importDefault(9848), obj2);
+  tmp14 = callback(importDefault(10048), obj2);
 }
 let c3 = importAllResult;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: error, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportAll, RIGHT_ACCESSORY_LEFT_MARGIN } = set);
@@ -90,14 +90,14 @@ let closure_13 = createCacheKey.createStyles({ cutoutIconContainer: { position: 
 let obj = { direction: require("Button").CutoutDirection.BOTTOM_RIGHT, radius: 10, inset: -2 };
 let closure_16 = importAllResult.memo((message) => {
   message = message.message;
-  let obj = require(9829) /* isReactionMilestoneNotification */;
+  let obj = require(10029) /* isReactionMilestoneNotification */;
   let tmp4 = null;
   if (obj.useHasPreviewableMedia(message)) {
     obj = { style: null, children: null };
     obj[0] = tmp.rightAccessoryContainer;
     obj = { message: null };
     obj[0] = message;
-    obj[1] = callback(require(9911) /* VideoBadge */.MediaPreviewRightAccessory, obj);
+    obj[1] = callback(require(10117) /* VideoBadge */.MediaPreviewRightAccessory, obj);
     tmp4 = callback(View, obj);
   }
   return tmp4;
@@ -131,5 +131,5 @@ export default importAllResult.memo(function ReminderNotification(notification) 
   obj = { icon: callback(NotificationAvatar, obj), header: memo, onPress: callback, notification, rightAccessory: null, children: null };
   obj[4] = callback(closure_16, { message });
   obj[5] = callback(NotificationBody, { channel, message });
-  return callback(notification(9907).NotificationPressable, obj);
+  return callback(notification(10113).NotificationPressable, obj);
 });

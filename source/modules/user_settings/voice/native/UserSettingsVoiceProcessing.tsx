@@ -1,10 +1,10 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 12556
+// Function ID: 12557
 // Name: VoiceProcessingOptions
-// Dependencies: [19, 17, 4393, 21, 4342, 712, 589, 10850, 10851, 9219, 8051, 1236, 8050, 4338, 10854, 10836, 5829, 2]
+// Dependencies: [19, 17, 4497, 21, 4661, 712, 589, 12557, 12558, 9654, 8101, 1236, 8100, 4734, 12561, 12547, 7178, 2]
 // Exports: default
 
-// Module 10849 (VoiceProcessingOptions)
+// Module 12556 (VoiceProcessingOptions)
 import "noop";
 import { View } from "set";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -36,9 +36,9 @@ class VoiceProcessingOptions {
       obj1 = { value: null, onChange: null, title: null, hasIcons: false, children: null };
       obj1[0] = selectedNoiseSuppressionOption;
       obj1[1] = function noiseCancellationChanged(arg0) {
-        callback2(9219).setNoiseCancellation(arg0 === callback(10850).NoiseSuppressionOpt.KRISP);
-        const obj = callback2(9219);
-        callback2(9219).setNoiseSuppression(arg0 === callback(10850).NoiseSuppressionOpt.STANDARD);
+        callback2(9654).setNoiseCancellation(arg0 === callback(12557).NoiseSuppressionOpt.KRISP);
+        const obj = callback2(9654);
+        callback2(9654).setNoiseSuppression(arg0 === callback(12557).NoiseSuppressionOpt.STANDARD);
       };
       intl3 = require("getSystemLocale").intl;
       obj1[2] = intl3.string(require("getSystemLocale").t.t8Qhib);
@@ -107,8 +107,8 @@ class VoiceProcessingOptions {
       obj10[1] = intl2.string(require("getSystemLocale").t.najZCV);
       obj10[2] = selectedNoiseSuppressionOption === require("handleAutomaticGainControlChange").NoiseSuppressionOpt.STANDARD;
       obj10[3] = function onValueChange(arg0) {
-        const NoiseSuppressionOpt = callback(10850).NoiseSuppressionOpt;
-        return callback(10850).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+        const NoiseSuppressionOpt = callback(12557).NoiseSuppressionOpt;
+        return callback(12557).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
       };
       obj9[1] = jsx(require("TableSwitchRow").TableSwitchRow, obj10);
       return jsx(require("UserSettingsVoice").UserSettingsTableRowGroup, obj9);
@@ -142,17 +142,17 @@ export default function UserSettingsVoiceProcessing() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.iWTwu6);
   obj[1] = echoCancellation;
-  obj[2] = require(10850) /* handleAutomaticGainControlChange */.handleEchoCancellationChange;
-  obj[2] = callback(require(5829) /* TableSwitchRow */.TableSwitchRow, obj);
-  const items1 = [callback(require(10836) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
+  obj[2] = require(12557) /* handleAutomaticGainControlChange */.handleEchoCancellationChange;
+  obj[2] = callback(require(7178) /* TableSwitchRow */.TableSwitchRow, obj);
+  const items1 = [callback(require(12547) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
   const obj1 = { label: null, subLabel: null, value: null, onValueChange: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.cUMdH0);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["6EjbvA"]);
   obj1[2] = automaticGainControl;
-  obj1[3] = require(10850) /* handleAutomaticGainControlChange */.handleAutomaticGainControlChange;
-  const items2 = [callback(require(5829) /* TableSwitchRow */.TableSwitchRow, obj1), ];
+  obj1[3] = require(12557) /* handleAutomaticGainControlChange */.handleAutomaticGainControlChange;
+  const items2 = [callback(require(7178) /* TableSwitchRow */.TableSwitchRow, obj1), ];
   if (advancedVoiceActivitySupported) {
     const obj2 = { label: null, subLabel: null, value: null, onValueChange: null };
     const intl5 = tmp(1236).intl;
@@ -165,11 +165,11 @@ export default function UserSettingsVoiceProcessing() {
       obj = { vadUseKrisp };
       return obj.setMode(closure_0, obj);
     };
-    advancedVoiceActivitySupported = callback(tmp(5829).TableSwitchRow, obj2);
+    advancedVoiceActivitySupported = callback(tmp(7178).TableSwitchRow, obj2);
   }
   const obj3 = { children: null };
   items2[1] = advancedVoiceActivitySupported;
-  items1[2] = closure_6(require(10836) /* UserSettingsVoice */.UserSettingsTableRowGroup, { hasIcons: false, children: items2 });
+  items1[2] = closure_6(require(12547) /* UserSettingsVoice */.UserSettingsTableRowGroup, { hasIcons: false, children: items2 });
   obj3[0] = items1;
   return closure_6(closure_7, obj3);
 };

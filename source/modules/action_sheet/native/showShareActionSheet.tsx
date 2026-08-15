@@ -1,10 +1,10 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9067
+// Function ID: 9068
 // Name: showShareActionSheet
-// Dependencies: [17, 501, 8987, 8988, 8991, 1208, 2]
+// Dependencies: [17, 501, 9068, 9069, 9072, 1208, 2]
 // Exports: showShareActionSheet
 
-// Module 8986 (showShareActionSheet)
+// Module 9067 (showShareActionSheet)
 import PlatformTypes from "PlatformTypes";
 
 if (PlatformTypes.isAndroid()) {
@@ -13,7 +13,7 @@ if (PlatformTypes.isAndroid()) {
     let _location;
     let app;
     ({ app, location: _location } = arg0);
-    const result = require(8988) /* trackAppClickInNativeShareSheet */.trackAppClickInNativeShareSheet(app, _location);
+    const result = require(9069) /* trackAppClickInNativeShareSheet */.trackAppClickInNativeShareSheet(app, _location);
   });
 }
 let result = require("enforcing").fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");

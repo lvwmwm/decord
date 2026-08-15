@@ -1,9 +1,9 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 8777
+// Function ID: 8778
 // Name: set
-// Dependencies: [8966, 8998, 1486, 595, 589, 709, 2]
+// Dependencies: [7242, 8778, 1487, 595, 589, 709, 2]
 
-// Module 8997 (set)
+// Module 8777 (set)
 import { SPOTIFY_HOSTNAMES } from "WEB_OPEN";
 import { Store } from "initialize";
 import set from "isDiscordProxiedAssetUrl";
@@ -54,7 +54,7 @@ prototype["initialize"] = function initialize() {
   }
 };
 prototype["isTrustedDomain"] = function isTrustedDomain(arg0) {
-  const hostname = require(8998) /* getHostname */.getHostname(arg0);
+  const hostname = require(8778) /* getHostname */.getHostname(arg0);
   let flag = true;
   if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
     const _window2 = window;
@@ -70,8 +70,8 @@ prototype["isTrustedDomain"] = function isTrustedDomain(arg0) {
           if (location.hostname !== hostname) {
             let hasItem = SPOTIFY_HOSTNAMES.includes(hostname);
             if (!hasItem) {
-              hasItem = importDefault(1486).isDiscordHostname(hostname);
-              const obj2 = importDefault(1486);
+              hasItem = importDefault(1487).isDiscordHostname(hostname);
+              const obj2 = importDefault(1487);
             }
             if (!hasItem) {
               hasItem = set.has(hostname);
@@ -85,13 +85,13 @@ prototype["isTrustedDomain"] = function isTrustedDomain(arg0) {
   return flag;
 };
 prototype["isTrustedProtocol"] = function isTrustedProtocol(url) {
-  return set1.has(require(8998) /* getHostname */.getProtocol(url));
+  return set1.has(require(8778) /* getHostname */.getProtocol(url));
 };
 MaskedLinkStore.displayName = "MaskedLinkStore";
 const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: function handleAddTrustedDomain(url) {
     url = url.url;
-    let obj = require(8998) /* getHostname */;
+    let obj = require(8778) /* getHostname */;
     const hostname = obj.getHostname(url);
     let flag = true;
     if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
@@ -108,8 +108,8 @@ const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
             if (location.hostname !== hostname) {
               let hasItem = SPOTIFY_HOSTNAMES.includes(hostname);
               if (!hasItem) {
-                hasItem = importDefault(1486).isDiscordHostname(hostname);
-                const obj2 = importDefault(1486);
+                hasItem = importDefault(1487).isDiscordHostname(hostname);
+                const obj2 = importDefault(1487);
               }
               if (!hasItem) {
                 hasItem = set.has(hostname);
@@ -123,7 +123,7 @@ const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
     if (flag) {
       return false;
     } else {
-      set.add(tmp(8998).getHostname(url));
+      set.add(tmp(8778).getHostname(url));
       const Storage = tmp(595).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;
@@ -133,11 +133,11 @@ const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
   },
   MASKED_LINK_ADD_TRUSTED_PROTOCOL: function handleAddTrustedProtocol(url) {
     url = url.url;
-    let obj = require(8998) /* getHostname */;
+    let obj = require(8778) /* getHostname */;
     if (set1.has(obj.getProtocol(url))) {
       return false;
     } else {
-      set1.add(tmp(8998).getProtocol(url));
+      set1.add(tmp(8778).getProtocol(url));
       const Storage = tmp(595).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;

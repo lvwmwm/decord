@@ -1,9 +1,9 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14722
+// Function ID: 14723
 // Name: toggle
-// Dependencies: [4334, 8148, 589, 10421, 1236, 13781, 2]
+// Dependencies: [4662, 8198, 589, 10669, 1236, 13813, 2]
 
-// Module 14682 (toggle)
+// Module 14722 (toggle)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["sSY+mD"]);
   },
-  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: function useProfileColorsSettingValue() {
     const items = [maybeApplyNoTextColorForLightCustomTheme];
     return require(589) /* initialize */.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);

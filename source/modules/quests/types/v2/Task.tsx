@@ -1,10 +1,10 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7462
+// Function ID: 7463
 // Name: _firstPartyTasksFromServer
-// Dependencies: [7238, 5230, 7239, 7240, 2]
+// Dependencies: [7463, 6723, 7464, 7465, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 7237 (_firstPartyTasksFromServer)
+// Module 7462 (_firstPartyTasksFromServer)
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
   const keys = Object.keys(tasks);
@@ -47,15 +47,15 @@ const result = require("videoAssetFromServer").fileFinishedImporting("modules/qu
 
 export const questTaskConfigFromServer = function questTaskConfigFromServer(type) {
   type = type.type;
-  if (require(7238) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
+  if (require(7463) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
     let obj = { type: null, tasks: null, joinOperator: null };
-    obj[0] = tmp(7238).QuestTaskConfigTypes.FIRST_PARTY;
+    obj[0] = tmp(7463).QuestTaskConfigTypes.FIRST_PARTY;
     obj[1] = _firstPartyTasksFromServer(type.tasks);
     obj[2] = type.join_operator;
     return obj;
-  } else if (tmp(7238).QuestTaskConfigTypes.THIRD_PARTY === type) {
+  } else if (tmp(7463).QuestTaskConfigTypes.THIRD_PARTY === type) {
     obj = { type: null, tasks: null, enrollmentUrl: null, developerApplicationId: null, joinOperator: null };
-    obj[0] = tmp(7238).QuestTaskConfigTypes.THIRD_PARTY;
+    obj[0] = tmp(7463).QuestTaskConfigTypes.THIRD_PARTY;
     obj[1] = _thirdPartyTasksFromServer(type.tasks);
     ({ enrollment_url: obj[2], developer_application_id: obj[3], join_operator: obj[4] } = type);
     return obj;
@@ -153,7 +153,7 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
   } catch (err) {
     obj = { tasks: null, joinOperator: null };
     obj[0] = {};
-    obj[1] = require(7240) /* QuestTaskJoinOperator */.QuestTaskJoinOperator.OR;
+    obj[1] = require(7465) /* QuestTaskJoinOperator */.QuestTaskJoinOperator.OR;
     return obj;
   }
 };

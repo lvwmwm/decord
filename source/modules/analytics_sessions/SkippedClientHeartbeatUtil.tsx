@@ -1,10 +1,10 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 5061
+// Function ID: 5062
 // Name: shouldLogClientHeartbeatSkipped
-// Dependencies: [1922, 7000, 2]
+// Dependencies: [1922, 5062, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 6999 (shouldLogClientHeartbeatSkipped)
+// Module 5061 (shouldLogClientHeartbeatSkipped)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -16,8 +16,8 @@ export const shouldLogClientHeartbeatSkipped = function shouldLogClientHeartbeat
   if (tmp) {
     let isStaffResult = currentUser.isStaff();
     if (!isStaffResult) {
-      isStaffResult = require(7000) /* sampleWithUserId */.sampleWithUserId(currentUser.id, 0.02);
-      const obj2 = require(7000) /* sampleWithUserId */;
+      isStaffResult = require(5062) /* sampleWithUserId */.sampleWithUserId(currentUser.id, 0.02);
+      const obj2 = require(5062) /* sampleWithUserId */;
     }
     tmp = isStaffResult;
   }

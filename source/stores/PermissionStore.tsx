@@ -1,9 +1,9 @@
-// Module ID: 3989
-// Function ID: 3990
+// Module ID: 4021
+// Function ID: 4022
 // Name: getUncachedChannelPermissions
-// Dependencies: [1982, 3990, 1396, 3991, 1395, 1434, 1930, 1391, 1990, 1910, 1922, 676, 3993, 3994, 12, 3996, 1430, 589, 506, 3997, 709, 2]
+// Dependencies: [1982, 4022, 1396, 4023, 1395, 1434, 1930, 1391, 1990, 1910, 1922, 676, 4025, 4026, 12, 4028, 1430, 589, 506, 4029, 709, 2]
 
-// Module 3989 (getUncachedChannelPermissions)
+// Module 4021 (getUncachedChannelPermissions)
 import initialize from "initialize";
 import closure_5 from "initialize";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -32,11 +32,11 @@ function getUncachedChannelPermissions(id, arg1) {
   let obj = authStore;
   const currentUser = authStore.getCurrentUser();
   if (null == currentUser) {
-    return importAll(3994).NONE;
+    return importAll(4026).NONE;
   } else {
     const channel = store.getChannel(id);
     if (null == channel) {
-      return importAll(3994).NONE;
+      return importAll(4026).NONE;
     } else {
       const guildId = channel.getGuildId();
       let tmp7 = null != guildId;
@@ -60,19 +60,19 @@ function getUncachedChannelPermissions(id, arg1) {
               if (null == NONE2) {
                 const currentUser1 = obj.getCurrentUser();
                 if (null == currentUser1) {
-                  NONE2 = importAll(3994).NONE;
+                  NONE2 = importAll(4026).NONE;
                 } else {
                   const guild = store2.getGuild(guildId);
                   if (null == guild) {
-                    let NONE = importAll(3994).NONE;
+                    let NONE = importAll(4026).NONE;
                   } else {
                     obj = { user: null, context: null, checkElevated: null };
                     obj[0] = currentUser1;
                     obj[1] = guild;
                     obj[2] = true;
-                    NONE = importAll(3994).computePermissions(obj);
+                    NONE = importAll(4026).computePermissions(obj);
                     dependencyMap[guildId] = NONE;
-                    const obj3 = importAll(3994);
+                    const obj3 = importAll(4026);
                   }
                   NONE2 = NONE;
                 }
@@ -87,8 +87,8 @@ function getUncachedChannelPermissions(id, arg1) {
       obj[0] = currentUser;
       obj[1] = channel;
       obj[2] = flag;
-      NONE2 = importAll(3994).computePermissions(obj);
-      const obj5 = importAll(3994);
+      NONE2 = importAll(4026).computePermissions(obj);
+      const obj5 = importAll(4026);
     }
   }
 }
@@ -181,7 +181,7 @@ function handleStageInstancesChanged(instance) {
     return false;
   } else {
     const currentUser = authStore.getCurrentUser();
-    let obj = importAll(3994);
+    let obj = importAll(4026);
     obj = { user: null, context: null };
     obj[0] = currentUser;
     obj[1] = channel;
@@ -212,14 +212,14 @@ function handleImpersonateUpdate(guildId) {
   }
 }
 function computePermissions(context, overwrites, roles, excludeGuildPermissions) {
-  let NONE = importAll(3994).NONE;
+  let NONE = importAll(4026).NONE;
   if (context instanceof closure_8) {
     if (set.has(context.type)) {
       const channel = store.getChannel(context.parent_id);
       if (null == channel) {
-        let NONE4 = tmp(3994).NONE;
+        let NONE4 = tmp(4026).NONE;
       } else {
-        let tmpResult = tmp(3994);
+        let tmpResult = tmp(4026);
         const tmp24 = computePermissions(channel, overwrites, roles, excludeGuildPermissions);
         NONE4 = tmpResult.applyThreadPermissions(context, tmp24, storeThread.hasJoined(context.id), trackCommunicationDisabled.isCurrentUserGuest(context.guild_id));
         const hasJoinedResult = storeThread.hasJoined(context.id);
@@ -243,13 +243,13 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
       if (null == NONE2) {
         const currentUser = authStore.getCurrentUser();
         if (null == currentUser) {
-          NONE2 = tmp(3994).NONE;
+          NONE2 = tmp(4026).NONE;
         } else {
           const guild = store2.getGuild(id);
           if (null == guild) {
-            let NONE3 = tmp(3994).NONE;
+            let NONE3 = tmp(4026).NONE;
           } else {
-            tmpResult = tmp(3994);
+            tmpResult = tmp(4026);
             obj = { user: null, context: null, checkElevated: null };
             obj[0] = currentUser;
             obj[1] = guild;
@@ -267,7 +267,7 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
     return NONE;
   }
   obj = { user: authStore.getCurrentUser(), context, overwrites, roles, checkElevated: true, excludeGuildPermissions };
-  NONE = importAll(3994).computePermissions(obj);
+  NONE = importAll(4026).computePermissions(obj);
 }
 ({ ChannelRecordBase: metroImportAll, THREAD_CHANNEL_TYPES: c9 } = createChannelRecord);
 ({ isGuildOwner: c10, isGuildOwnerWithRequiredMfaLevel: unpackModuleId } = GuildNSFWContentLevel);
@@ -301,13 +301,13 @@ prototype["getGuildPermissions"] = function getGuildPermissions(guild) {
   if (null == NONE) {
     const currentUser = authStore.getCurrentUser();
     if (null == currentUser) {
-      NONE = importAll(3994).NONE;
+      NONE = importAll(4026).NONE;
     } else {
       guild = store2.getGuild(id);
       if (null == guild) {
-        let NONE2 = importAll(3994).NONE;
+        let NONE2 = importAll(4026).NONE;
       } else {
-        let obj = importAll(3994);
+        let obj = importAll(4026);
         obj = { user: null, context: null, checkElevated: null };
         obj[0] = currentUser;
         obj[1] = guild;
@@ -351,19 +351,19 @@ prototype["canAccessMemberSafetyPage"] = function canAccessMemberSafetyPage(id) 
   if (null == NONE) {
     const currentUser = authStore.getCurrentUser();
     if (null == currentUser) {
-      NONE = tmp(3994).NONE;
+      NONE = tmp(4026).NONE;
     } else {
       const guild = store2.getGuild(id);
       if (null == guild) {
-        let NONE2 = tmp(3994).NONE;
+        let NONE2 = tmp(4026).NONE;
       } else {
         obj = { user: null, context: null, checkElevated: null };
         obj[0] = currentUser;
         obj[1] = guild;
         obj[2] = true;
-        NONE2 = tmp(3994).computePermissions(obj);
+        NONE2 = tmp(4026).computePermissions(obj);
         dependencyMap[id] = NONE2;
-        const tmpResult = tmp(3994);
+        const tmpResult = tmp(4026);
       }
       NONE = NONE2;
     }
@@ -377,24 +377,24 @@ prototype["canAccessGuildSettings"] = function canAccessGuildSettings(guild) {
   if (null == NONE) {
     const currentUser = authStore.getCurrentUser();
     if (null == currentUser) {
-      NONE = tmp(3994).NONE;
+      NONE = tmp(4026).NONE;
     } else {
       guild = store2.getGuild(id);
       if (null == guild) {
-        let NONE2 = tmp(3994).NONE;
+        let NONE2 = tmp(4026).NONE;
       } else {
         obj = { user: null, context: null, checkElevated: null };
         obj[0] = currentUser;
         obj[1] = guild;
         obj[2] = true;
-        NONE2 = tmp(3994).computePermissions(obj);
+        NONE2 = tmp(4026).computePermissions(obj);
         dependencyMap[id] = NONE2;
-        const tmpResult = tmp(3994);
+        const tmpResult = tmp(4026);
       }
       NONE = NONE2;
     }
   }
-  return obj.hasAny(NONE, importAll(3994).VIEW_GUILD_SETTINGS);
+  return obj.hasAny(NONE, importAll(4026).VIEW_GUILD_SETTINGS);
 };
 prototype["canWithPartialContext"] = function canWithPartialContext(MANAGE_MESSAGES, channelId) {
   const self = this;
@@ -415,13 +415,13 @@ prototype["can"] = function can(arg0, arg1, arg2, arg3, arg4) {
 };
 prototype["canBasicChannel"] = function canBasicChannel(VIEW_CHANNEL, basicChannel) {
   if ("basicPermissions" in basicChannel) {
-    let hasItem = importDefault(3997).has(basicChannel.basicPermissions, VIEW_CHANNEL);
-    const obj3 = importDefault(3997);
+    let hasItem = importDefault(4029).has(basicChannel.basicPermissions, VIEW_CHANNEL);
+    const obj3 = importDefault(4029);
   } else {
     const obj = importAll(506);
     const tmp8 = computePermissions(basicChannel, arg2, arg3, arg4);
-    hasItem = obj.has(tmp8, importDefault(3997).asBigFlag(VIEW_CHANNEL));
-    const obj2 = importDefault(3997);
+    hasItem = obj.has(tmp8, importDefault(4029).asBigFlag(VIEW_CHANNEL));
+    const obj2 = importDefault(4029);
   }
   return hasItem;
 };
@@ -432,8 +432,8 @@ prototype["computeBasicPermissions"] = function computeBasicPermissions(basicCha
   if ("basicPermissions" in basicChannel) {
     let basicPermissions = basicChannel.basicPermissions;
   } else {
-    basicPermissions = importDefault(3997).asBasicFlag(computePermissions(basicChannel));
-    const obj = importDefault(3997);
+    basicPermissions = importDefault(4029).asBasicFlag(computePermissions(basicChannel));
+    const obj = importDefault(4029);
   }
   return basicPermissions;
 };
@@ -449,13 +449,13 @@ prototype["canManageUser"] = function canManageUser(BAN_MEMBERS, user, guild) {
     const currentUser = authStore.getCurrentUser();
     if (this.can(BAN_MEMBERS, guild)) {
       if (null != currentUser) {
-        const highestRole = importAll(3994).getHighestRole(guild, currentUser.id);
-        const obj = importAll(3994);
+        const highestRole = importAll(4026).getHighestRole(guild, currentUser.id);
+        const obj = importAll(4026);
       }
-      const highestRole1 = importAll(3994).getHighestRole(guild, id);
+      const highestRole1 = importAll(4026).getHighestRole(guild, id);
       let isRoleHigherResult = null != currentUser;
       if (isRoleHigherResult) {
-        const tmp8Result = importAll(3994);
+        const tmp8Result = importAll(4026);
         isRoleHigherResult = tmp8Result.isRoleHigher(guild, currentUser.id, highestRole, highestRole1);
       }
       return isRoleHigherResult;
@@ -468,8 +468,8 @@ prototype["getHighestRole"] = function getHighestRole(arg0) {
   const currentUser = authStore.getCurrentUser();
   let highestRole = null;
   if (null != currentUser) {
-    highestRole = importAll(3994).getHighestRole(arg0, currentUser.id);
-    const obj = importAll(3994);
+    highestRole = importAll(4026).getHighestRole(arg0, currentUser.id);
+    const obj = importAll(4026);
   }
   return highestRole;
 };
@@ -484,7 +484,7 @@ prototype["isRoleHigher"] = function isRoleHigher(id) {
     }
     tmp3 = id;
   }
-  return importAll(3994).isRoleHigher(id, tmp3, arg1, arg2);
+  return importAll(4026).isRoleHigher(id, tmp3, arg1, arg2);
 };
 prototype["canImpersonateRole"] = function canImpersonateRole(arg0, id) {
   const self = this;
@@ -540,7 +540,7 @@ const permissionStore = new PermissionStore(require("dispatcher"), {
         const obj = { user: null, context: null };
         obj[0] = currentUser;
         obj[1] = channel;
-        const permissions = importAll(3994).computePermissions(obj);
+        const permissions = importAll(4026).computePermissions(obj);
         if (dependencyMap2[channel.id] === permissions) {
           return false;
         } else {
@@ -556,7 +556,7 @@ const permissionStore = new PermissionStore(require("dispatcher"), {
             const tmp10 = dependencyMap3;
           }
         }
-        const obj2 = importAll(3994);
+        const obj2 = importAll(4026);
       }
     }
     return false;
@@ -580,7 +580,7 @@ const permissionStore = new PermissionStore(require("dispatcher"), {
           let tmp5 = importAll;
           let tmp6 = dependencyMap;
           let currentUser = authStore.getCurrentUser();
-          let obj2 = importAll(3994);
+          let obj2 = importAll(4026);
           obj = { user: null, context: null };
           obj[0] = currentUser;
           let tmp7 = channel;
@@ -636,7 +636,7 @@ const permissionStore = new PermissionStore(require("dispatcher"), {
     return flag;
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(guildId) {
-    let flag = require(3996) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(guildId);
+    let flag = require(4028) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(guildId);
     if (flag) {
       guildId = guildId.guildId;
       flag = true;

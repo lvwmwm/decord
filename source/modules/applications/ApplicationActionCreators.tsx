@@ -1,10 +1,10 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 7140
+// Function ID: 7141
 // Name: fetchApplication
-// Dependencies: [5, 5791, 4368, 4383, 676, 709, 530, 589, 2]
+// Dependencies: [5, 7141, 4479, 4478, 676, 709, 530, 589, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5790 (fetchApplication)
+// Module 7140 (fetchApplication)
 import dispatcher from "dispatcher";
 import set from "set";
 import createExecutable from "createExecutable";
@@ -46,7 +46,7 @@ function _fetchApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

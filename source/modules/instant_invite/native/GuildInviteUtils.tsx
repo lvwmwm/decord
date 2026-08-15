@@ -1,10 +1,10 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12331
+// Function ID: 12332
 // Name: _sendGuildInvite
-// Dependencies: [5, 19, 1980, 4263, 1990, 1910, 3989, 5217, 1922, 12581, 7263, 676, 698, 4310, 12582, 2007, 5290, 589, 1351, 1236, 7824, 9130, 9193, 2]
+// Dependencies: [5, 19, 1980, 4295, 1990, 1910, 4021, 5078, 1922, 12332, 4371, 676, 698, 4342, 12333, 2007, 6775, 589, 1351, 1236, 8042, 8920, 11889, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12580 (_sendGuildInvite)
+// Module 12331 (_sendGuildInvite)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getSystemLocale from "getSystemLocale";
 import comparator from "comparator";
@@ -42,7 +42,7 @@ function _sendGuildInvite() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,12 +71,12 @@ function _sendGuildInvite() {
                 throw Error();
               } else {
                 const obj1 = { max_uses: null, max_age: null, unique: true };
-                obj1[0] = callback2(9130).INVITE_OPTIONS_ONCE.value;
-                obj1[1] = callback2(9130).INVITE_OPTIONS_7_DAYS.value;
+                obj1[0] = callback2(8920).INVITE_OPTIONS_ONCE.value;
+                obj1[1] = callback2(8920).INVITE_OPTIONS_7_DAYS.value;
                 c6 = 2;
                 c7 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback2(7824).createInvite(defaultChannel.id, obj1, tmp45);
+                obj2[0] = callback2(8042).createInvite(defaultChannel.id, obj1, tmp45);
                 return obj2;
               }
               tmp45 = dependencyMap;
@@ -94,10 +94,10 @@ function _sendGuildInvite() {
               throw arg1;
             } else if (arg0 !== 2) {
               code = arg1;
-              let obj4 = callback2(9193);
+              let obj4 = callback2(11889);
               const obj3 = { inviteKey: null, type: null, user: null, location: null, inviteAnalyticsMetadata: null };
               obj3[0] = code.code;
-              obj3[1] = callback(9193).InvitePropertiesType.USER;
+              obj3[1] = callback(11889).InvitePropertiesType.USER;
               obj3[2] = user.getUser(callback);
               obj3[3] = dependencyMap;
               obj4 = { source: null };
@@ -144,9 +144,9 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   let obj = importDefault(698);
   obj = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   obj.track(constants.OPEN_POPOUT, obj);
-  const obj3 = importDefault(4310);
+  const obj3 = importDefault(4342);
   obj = { recipientId: id, source: newestAnalyticsLocation };
-  obj3.openLazy(require(2007) /* asyncRequireImpl */(12582, dependencyMap.paths), "invite-to-guilds-" + id, obj);
+  obj3.openLazy(require(2007) /* asyncRequireImpl */(12333, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
   const _require = id;

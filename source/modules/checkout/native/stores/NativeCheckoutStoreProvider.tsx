@@ -1,10 +1,10 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7697
+// Function ID: 7698
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 6956, 4325, 21, 4342, 5777, 7480, 6961, 6962, 5884, 514, 1208, 7486, 2]
+// Dependencies: [5, 32, 19, 17, 7395, 4357, 21, 4661, 7127, 7698, 7400, 7401, 5446, 514, 1208, 7704, 2]
 // Exports: default
 
-// Module 7479 (NativeCheckoutStoreProvider)
+// Module 7697 (NativeCheckoutStoreProvider)
 import CustomCheckoutFlow from "CustomCheckoutFlow";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -30,7 +30,7 @@ function NativeCheckoutStoreProvider(children) {
   let closure_6;
   let first;
   let closure_8;
-  closure_6 = order(5777)(() => {
+  closure_6 = order(7127)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -142,7 +142,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -210,7 +210,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
             }
             outer1_10(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp23) {
           c4 = tmp;

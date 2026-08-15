@@ -1,9 +1,9 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16528
+// Function ID: 16529
 // Name: onPostConnectionOpen
-// Dependencies: [5322, 7259, 1208, 2]
+// Dependencies: [5038, 7484, 1208, 2]
 
-// Module 16478 (onPostConnectionOpen)
+// Module 16528 (onPostConnectionOpen)
 import "initialize";
 
 const require = arg1;
@@ -18,7 +18,7 @@ class ATTManager extends tmp2 {
 const prototype = ATTManager.prototype;
 prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
   try {
-    const adUser = require(7259) /* _fetchAdUser */.fetchAdUser("post_connection_open");
+    const adUser = require(7484) /* _fetchAdUser */.fetchAdUser("post_connection_open");
   } catch (tmp4) {
     importDefault(1208).captureException(tmp4);
     const obj2 = importDefault(1208);

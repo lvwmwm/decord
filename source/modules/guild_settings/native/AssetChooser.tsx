@@ -1,9 +1,9 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16752
+// Function ID: 16753
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 4072, 4923, 4909, 1236, 16707, 16708, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4661, 712, 4104, 4838, 5433, 1236, 16753, 16754, 1297, 2]
 
-// Module 16706 (getSource)
+// Module 16752 (getSource)
 import closure_3 from "createCacheKey";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
@@ -48,7 +48,7 @@ class AssetChooser extends PureComponent {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c3 = tmp;
@@ -142,7 +142,7 @@ prototype["render"] = function render() {
   obj[4] = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = importDefault(16707);
+    tmp9 = importDefault(16753);
   }
   obj = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
@@ -151,13 +151,13 @@ prototype["render"] = function render() {
     obj[0] = tmp.uploadIconWrapper;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(16708);
+    obj1[1] = importDefault(16754);
     obj[1] = tmp5(closure_5, obj1);
     tmp5Result = tmp5(closure_4, obj);
   }
   obj[2] = tmp5Result;
   obj[5] = closure_9(closure_6, obj);
-  const children = [closure_9(require(4909) /* PressableBase */.PressableOpacity, obj), ];
+  const children = [closure_9(require(5433) /* PressableBase */.PressableOpacity, obj), ];
   tmp5Result = null;
   if (null != source) {
     tmp5Result = null;

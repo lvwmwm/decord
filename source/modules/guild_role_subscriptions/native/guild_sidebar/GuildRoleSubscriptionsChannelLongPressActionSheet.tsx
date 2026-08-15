@@ -1,10 +1,10 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15468
+// Function ID: 15469
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 1398, 21, 4342, 712, 5825, 5457, 1297, 12211, 1236, 8033, 15313, 9786, 2]
+// Dependencies: [19, 17, 1398, 21, 4661, 712, 7175, 6949, 1297, 11954, 1236, 8083, 15362, 9995, 2]
 // Exports: default
 
-// Module 15418 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15468 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { StaticChannelRoute } from "set";
@@ -29,25 +29,25 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   obj = { leading: null, title: null };
   obj = { style: createCacheKey().headerIcon, children: null };
   const obj1 = { disableColor: true, source: null };
-  obj1[1] = importDefault(12211);
+  obj1[1] = importDefault(11954);
   obj[1] = callback(require(1297) /* Button */.Icon, obj1);
   obj[0] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  const items = [callback(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
   const obj2 = { leading: null, label: null, onPress: null };
   const obj3 = { source: null };
-  obj3[0] = importDefault(15313);
+  obj3[0] = importDefault(15362);
   obj2[0] = callback(require(1297) /* Button */.Icon, obj3);
   const obj4 = { text: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  obj2[1] = callback(require(8033) /* Form */.FormLabel, obj4);
+  obj2[1] = callback(require(8083) /* Form */.FormLabel, obj4);
   obj2[2] = function onPress() {
     callback();
     const result = outer1_0(outer1_2[13]).copyGuildChannelOrThreadLink(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
   };
-  items[1] = callback(require(8033) /* Form */.FormRow, obj2);
+  items[1] = callback(require(8083) /* Form */.FormRow, obj2);
   obj[0] = items;
-  return callback2(require(5825) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
 };

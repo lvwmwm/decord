@@ -1,10 +1,10 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 10211
+// Function ID: 10212
 // Name: GifIcon
-// Dependencies: [19, 21, 712, 4064, 8250, 2]
+// Dependencies: [19, 21, 712, 4096, 8296, 2]
 // Exports: GifIcon
 
-// Module 10006 (GifIcon)
+// Module 10211 (GifIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const GifIcon = function GifIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8250) /* registerAsset */;
+  obj[0] = require(8296) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

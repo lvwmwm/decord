@@ -1,9 +1,9 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14126
+// Function ID: 14127
 // Name: route
-// Dependencies: [8148, 676, 10421, 1236, 2821, 4582, 14095, 2]
+// Dependencies: [8198, 676, 10669, 1236, 2853, 4992, 14127, 2]
 
-// Module 14094 (route)
+// Module 14126 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -11,11 +11,11 @@ obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.piqs0o);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   useTrailing() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    return "" + intl.string(require(1236) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2821).FTawSP);
+    return "" + intl.string(require(1236) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2853).FTawSP);
   },
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings,
   screen: obj
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(14095) /* SettingsAgeGroupHeader */.default;
+    return require(14127) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

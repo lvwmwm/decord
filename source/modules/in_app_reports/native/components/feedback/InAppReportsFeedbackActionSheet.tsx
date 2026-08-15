@@ -1,10 +1,10 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16574
+// Function ID: 16575
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 676, 11077, 21, 16525, 16526, 11098, 1236, 698, 16527, 11080, 4061, 2]
+// Dependencies: [19, 676, 10811, 21, 16575, 16576, 10832, 1236, 698, 16577, 10814, 4093, 2]
 // Exports: default
 
-// Module 16524 (InAppReportsFeedbackActionSheet)
+// Module 16574 (InAppReportsFeedbackActionSheet)
 import "noop";
 import { AnalyticEvents } from "ME";
 import { FeedbackType } from "FeedbackRating";
@@ -17,10 +17,10 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
   let importDefault;
   let require;
   ({ reportId: require, reportType: importDefault } = arg0);
-  let obj = require(16526) /* newGetEnglishMessageText */;
+  let obj = require(16576) /* newGetEnglishMessageText */;
   const result = obj.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
   obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
-  const tmp = importDefault(16525)();
+  const tmp = importDefault(16575)();
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.MP5lDj);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -70,5 +70,5 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
       const obj4 = outer1_0(tmp2[11]);
     }
   };
-  return jsx(importDefault(11098), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null });
+  return jsx(importDefault(10832), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null });
 };

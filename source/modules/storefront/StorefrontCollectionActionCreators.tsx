@@ -1,10 +1,10 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 12001
+// Function ID: 12002
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1994, 12253, 7090, 676, 687, 709, 4604, 4242, 2]
+// Dependencies: [5, 1994, 11999, 5327, 676, 687, 709, 4384, 4274, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12255 (_maybeFetchCollectionsWithProducts)
+// Module 12001 (_maybeFetchCollectionsWithProducts)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
@@ -33,7 +33,7 @@ function _maybeFetchCollectionsWithProducts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -202,7 +202,7 @@ function _maybeFetchCollectionsForApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ function _maybeFetchCollectionsForApplication() {
                           }
                         }
                         fromServer = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     }
                     locale = 1;

@@ -1,10 +1,10 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 12456
+// Function ID: 12457
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 676, 1924, 4406, 21, 4342, 712, 10644, 8794, 5789, 4083, 4343, 1297, 9232, 10697, 698, 8685, 8686, 4007, 4909, 5329, 8763, 2]
+// Dependencies: [19, 17, 676, 1924, 4529, 21, 4661, 712, 8678, 9398, 7139, 4115, 4664, 1297, 9667, 12457, 698, 9325, 9326, 4039, 5433, 5449, 9367, 2]
 // Exports: default
 
-// Module 10696 (StreamQualityLiveIndicator)
+// Module 12456 (StreamQualityLiveIndicator)
 import getPremiumPlanItem from "getPremiumPlanItem";
 import { View } from "openPremiumModal";
 import { AnalyticEvents } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15652
+// Function ID: 15653
 // Name: ConnectionBannerIcon
-// Dependencies: [32, 19, 17, 13033, 14418, 676, 21, 4342, 712, 1236, 4065, 15603, 15605, 4338, 689, 4083, 5371, 4788, 589, 698, 14417, 4776, 13034, 2]
+// Dependencies: [32, 19, 17, 13236, 14450, 676, 21, 4661, 712, 1236, 4097, 15653, 15655, 4734, 689, 4115, 6352, 4756, 589, 698, 14449, 4744, 13237, 2]
 // Exports: default
 
-// Module 15602 (ConnectionBannerIcon)
+// Module 15652 (ConnectionBannerIcon)
 import _slicedToArray from "_slicedToArray";
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "LinearGradient";
@@ -23,7 +23,7 @@ let require = arg1;
 function ConnectionBannerIcon(state) {
   state = state.state;
   const tmp = createCacheKey();
-  require(4065) /* map */;
+  require(4097) /* map */;
   if (constants.WAITING_FOR_NETWORK === state) {
     let obj = { style: null, children: null };
     obj[0] = tmp.leadingSlot;
@@ -37,14 +37,14 @@ function ConnectionBannerIcon(state) {
     obj1[0] = tmp.leadingSlot;
     const obj2 = { size: "xs", color: null };
     obj2[1] = tmp5(712).colors.INTERACTIVE_ICON_DEFAULT;
-    obj1[1] = callback2(tmp2(15603).ConnectionUnknownIcon, obj2);
+    obj1[1] = callback2(tmp2(15653).ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (tmp7.BACK_ONLINE === state) {
     obj = { style: null, children: null };
     obj[0] = tmp.leadingSlot;
     const obj3 = { size: "xs", color: null };
     obj3[1] = tmp5(712).colors.ICON_FEEDBACK_POSITIVE;
-    obj[1] = callback2(tmp2(15605).ConnectionFineIcon, obj3);
+    obj[1] = callback2(tmp2(15655).ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -68,14 +68,14 @@ function ConnectionBannerContent(state) {
     stringResult = intl3.string(tmp4(1236).t.j8lYE2);
   }
   obj[3] = stringResult;
-  items[1] = callback2(require(4338) /* Text */.Text, obj);
+  items[1] = callback2(require(4734) /* Text */.Text, obj);
   obj[1] = items;
   return closure_13(closure_6, obj);
 }
 function BackOnlineGlow(opacity) {
   let token;
   const tmp = createCacheKey();
-  let obj = token(4065);
+  let obj = token(4097);
   token = obj.useToken(importDefault(712).colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = React.useMemo(() => {
@@ -92,10 +92,10 @@ function BackOnlineGlow(opacity) {
   obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [tmp.glow, { opacity: opacity.progress }];
   obj = { style: tmp.glow, maskElement: null, children: null };
-  obj[1] = callback2(importDefault(4788), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 });
-  obj[2] = callback2(importDefault(4788), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 });
-  obj[2] = callback2(importDefault(5371), obj);
-  return callback2(importDefault(4083).View, obj);
+  obj[1] = callback2(importDefault(4756), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 });
+  obj[2] = callback2(importDefault(4756), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 });
+  obj[2] = callback2(importDefault(6352), obj);
+  return callback2(importDefault(4115).View, obj);
 }
 function ConnectionBannerInner() {
   let tmp12;
@@ -209,11 +209,11 @@ let closure_26 = { code: "function ConnectionBannerTsx2(){const{progress,CONNECT
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(13034).useConfig({ location: "ConnectionBanner" });
+  const config = stateFromStores(13237).useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   stateFromStores = undefined;
   let dependencyMap;
-  let obj = stateFromStores(13034);
+  let obj = stateFromStores(13237);
   const items = [updateState];
   stateFromStores = hidden(589).useStateFromStores(items, () => state.getState());
   dependencyMap = React.useRef(null);

@@ -1,9 +1,9 @@
-// Module ID: 5957
-// Function ID: 5958
+// Module ID: 7239
+// Function ID: 7240
 // Name: handleLoadThreadsSuccess
-// Dependencies: [5958, 1922, 11, 4586, 589, 709, 2]
+// Dependencies: [7240, 1922, 11, 4803, 589, 709, 2]
 
-// Module 5957 (handleLoadThreadsSuccess)
+// Module 7239 (handleLoadThreadsSuccess)
 import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
@@ -33,8 +33,8 @@ function handleLoadThreadsSuccess(arg0) {
 function storeFirstMessage(channel_id, nextResult) {
   let messageRecord = null;
   if (null != nextResult) {
-    messageRecord = require(4586) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
-    const obj = require(4586) /* createMinimalMessageRecord */;
+    messageRecord = require(4803) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
+    const obj = require(4803) /* createMinimalMessageRecord */;
   }
   closure_5[channel_id] = { loaded: true, firstMessage: messageRecord };
 }
@@ -54,12 +54,15 @@ function handleReaction(colors) {
             return false;
           }
         }
-        const obj = {};
+        let obj = {};
         const merged = Object.assign(tmp5);
         dependencyMap[channelId] = obj;
         if ("MESSAGE_REACTION_ADD" === tmp) {
           const firstMessage2 = tmp5.firstMessage;
-          let addReactionResult = firstMessage2.addReaction(emoji, tmp6, colors.colors, reactionType);
+          obj = { colors: null, reactionType: null };
+          obj[0] = colors.colors;
+          obj[1] = reactionType;
+          let addReactionResult = firstMessage2.addReaction(emoji, tmp6, obj);
         } else {
           const firstMessage = tmp5.firstMessage;
           addReactionResult = firstMessage.removeReaction(emoji, tmp6, reactionType);
@@ -105,8 +108,8 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
         const message = isPushNotification.message;
         let messageRecord = null;
         if (null != message) {
-          messageRecord = require(4586) /* createMinimalMessageRecord */.createMessageRecord(message);
-          const obj2 = require(4586) /* createMinimalMessageRecord */;
+          messageRecord = require(4803) /* createMinimalMessageRecord */.createMessageRecord(message);
+          const obj2 = require(4803) /* createMinimalMessageRecord */;
         }
         obj = { loaded: true, firstMessage: null };
         obj[1] = messageRecord;
@@ -129,9 +132,9 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
           const result = importDefault(11).castMessageIdAsChannelId(message.message.id);
           const merged = Object.assign(tmp12);
           const tmp10Result = importDefault(11);
-          obj.firstMessage = require(4586) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
+          obj.firstMessage = require(4803) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
           dependencyMap[result] = obj;
-          const obj3 = require(4586) /* createMinimalMessageRecord */;
+          const obj3 = require(4803) /* createMinimalMessageRecord */;
         }
         tmp8 = tmp;
       }
@@ -229,7 +232,7 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
       if (null != first_message) {
         let tmp = require;
         let tmp2 = dependencyMap;
-        let obj = require(4586) /* createMinimalMessageRecord */;
+        let obj = require(4803) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(first_message);
       }
       let tmp4 = closure_5;
@@ -252,9 +255,9 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
     }
     if (tmp2) {
       obj = { loaded: true, firstMessage: null };
-      obj[1] = require(4586) /* createMinimalMessageRecord */.createMessageRecord(tmp);
+      obj[1] = require(4803) /* createMinimalMessageRecord */.createMessageRecord(tmp);
       closure_5[channelId] = obj;
-      const obj3 = require(4586) /* createMinimalMessageRecord */;
+      const obj3 = require(4803) /* createMinimalMessageRecord */;
     }
   }
 });

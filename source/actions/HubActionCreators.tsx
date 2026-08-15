@@ -1,17 +1,17 @@
-// Module ID: 12168
-// Function ID: 12169
-// Dependencies: [5, 676, 4562, 503, 1404, 530, 709, 2]
+// Module ID: 11910
+// Function ID: 11911
+// Dependencies: [5, 676, 5227, 503, 1404, 530, 709, 2]
 
-// Module 12168
+// Module 11910
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 
 const require = arg1;
-const result = require("module_4562").fileFinishedImporting("actions/HubActionCreators.tsx");
+const result = require("module_5227").fileFinishedImporting("actions/HubActionCreators.tsx");
 
 export default {
   signup(email, school) {
-    let obj = importDefault(4562);
+    let obj = importDefault(5227);
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj, trackedActionData: null, rejectWithError: null };
     obj = { email, school };
     obj[2] = {
@@ -98,7 +98,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ export default {
                 return obj4;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === tmp7) {

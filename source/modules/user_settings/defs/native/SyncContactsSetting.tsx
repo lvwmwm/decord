@@ -1,9 +1,9 @@
-// Module ID: 14168
-// Function ID: 14169
+// Module ID: 14200
+// Function ID: 14201
 // Name: toggle
-// Dependencies: [5061, 1922, 8148, 676, 12116, 14169, 10421, 1236, 2]
+// Dependencies: [5221, 1922, 8198, 676, 11853, 14201, 10669, 1236, 2]
 
-// Module 14168 (toggle)
+// Module 14200 (toggle)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PlatformTypes } from "ME";
@@ -15,11 +15,11 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.uSvEy7);
   },
-  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useContactSyncSettingValue() {
-    const contactSyncAccount = require(12116) /* _uploadContacts */.useContactSyncAccount();
-    const obj = require(12116) /* _uploadContacts */;
-    return require(12116) /* _uploadContacts */.isContactSyncEnabled(contactSyncAccount);
+    const contactSyncAccount = require(11853) /* _uploadContacts */.useContactSyncAccount();
+    const obj = require(11853) /* _uploadContacts */;
+    return require(11853) /* _uploadContacts */.isContactSyncEnabled(contactSyncAccount);
   },
   onValueChange: function onContactSyncSettingValueChange(arg0) {
     localAccount = localAccount.getLocalAccount(PlatformTypes.CONTACTS);
@@ -28,10 +28,10 @@ createToggle = {
     if (currentUser != null) {
       phone = currentUser.phone;
     }
-    require(14169) /* syncContacts */.handleSyncContacts(localAccount, phone, arg0);
+    require(14201) /* syncContacts */.handleSyncContacts(localAccount, phone, arg0);
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/SyncContactsSetting.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/SyncContactsSetting.tsx");
 
 export default createToggle;

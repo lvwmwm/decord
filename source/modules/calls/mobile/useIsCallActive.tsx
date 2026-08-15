@@ -1,10 +1,10 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 8204
+// Function ID: 8205
 // Name: useIsCallActive
-// Dependencies: [5058, 4358, 4363, 589, 2]
+// Dependencies: [4496, 4773, 4544, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8154 (useIsCallActive)
+// Module 8204 (useIsCallActive)
 import callConnect from "callConnect";
 import getParticipants from "getParticipants";
 import { ParticipantTypes } from "ParticipantTypes";

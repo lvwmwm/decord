@@ -1,10 +1,10 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7617
+// Function ID: 7618
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 7400, 1218, 4013, 5920, 676, 505, 530, 7401, 4241, 7402, 1236, 4029, 4705, 5923, 589, 6979, 7406, 7409, 7440, 7441, 7443, 5918, 4022, 7444, 698, 2]
+// Dependencies: [109, 5, 19, 7618, 1218, 4045, 5319, 676, 505, 530, 7619, 4273, 7620, 1236, 4061, 4827, 5322, 589, 7418, 7624, 7627, 7658, 7659, 7661, 5317, 4054, 7662, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 7399 (validatePurchase)
+// Module 7617 (validatePurchase)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import set from "set";
@@ -53,7 +53,7 @@ function _validatePurchase() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -116,7 +116,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(7401)(c6);
+            const tmp18 = new lib(7619)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -130,7 +130,7 @@ function _validatePurchase() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           c3 = tmp25;
@@ -216,7 +216,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -346,7 +346,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                     }
                     if (null != offerIds) {
                       if (null != outer1_1) {
-                        const tmp13 = _undefined(_undefined2[16]).TrialIdToProductOfferId[outer1_1.trial_id];
+                        const tmp13 = _undefined(_undefined2[16]).TrialIdToProductOfferId[outer1_1.trialId];
                         let tmp14;
                         if (tmp13 != null) {
                           tmp14 = tmp13[c0];
@@ -636,7 +636,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                 return obj;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (throwTypeErrorResult) {
             c4 = throwTypeErrorResult;

@@ -1,9 +1,9 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16368
+// Function ID: 16369
 // Name: StreamIcon
-// Dependencies: [19, 17, 4334, 1390, 4364, 4416, 11721, 11719, 11724, 676, 4363, 21, 4083, 1297, 4342, 712, 1367, 11720, 16276, 16319, 10935, 16320, 16274, 10844, 9242, 5842, 7859, 1236, 9243, 4776, 16272, 4524, 4408, 10591, 16204, 16321, 16322, 589, 16304, 8075, 16323, 4072, 4763, 5789, 8846, 9254, 4596, 9300, 4338, 9316, 12299, 16250, 2]
+// Dependencies: [19, 17, 4662, 1390, 4652, 4539, 11440, 11438, 11443, 676, 4544, 21, 4115, 1297, 4661, 712, 1367, 11439, 16326, 16369, 12620, 16370, 16324, 12140, 9677, 7190, 8074, 1236, 9678, 4744, 16322, 9860, 4531, 8713, 16254, 16371, 16372, 589, 16354, 8125, 16373, 4104, 4721, 7139, 8929, 9689, 4815, 9455, 4734, 9509, 9745, 16300, 2]
 
-// Module 16318 (StreamIcon)
+// Module 16368 (StreamIcon)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "dismissPanel";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -16,9 +16,9 @@ import { VOICE_PANEL_CARD_INNER_PADDING as closure_12 } from "CARD_SIZE";
 import { ThemeTypes } from "ME";
 import ParticipantTypes from "ParticipantTypes";
 import jsxProd from "registerAsset";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 import createCacheKey from "createCacheKey";
-import importDefaultResult1 from "module_4083";
+import importDefaultResult1 from "module_4115";
 
 let Platform;
 let Pressable;
@@ -33,8 +33,8 @@ const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
-  controlsSpecs = importAllResult.useContext(importDefault(11720)).controlsSpecs;
-  let obj = controlsSpecs(4083);
+  controlsSpecs = importAllResult.useContext(importDefault(11439)).controlsSpecs;
+  let obj = controlsSpecs(4115);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
     let num = 4;
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_23;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let source = importDefault(16276);
+  let source = importDefault(16326);
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(16319);
+    source = tmp(16369);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(10935);
+    source = tmp(12620);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(16320);
+    source = tmp(16370);
   }
   const style = [callback2(importDefault(1367)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
@@ -69,28 +69,28 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp3 = callback2(importDefault(1367)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(16274) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(16324) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(16274).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(16324).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     const obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(10844).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(12140).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(16274).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(16324).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
     const obj3 = { style: null, state: null };
     obj3[0] = tmp3.icon;
     obj3[1] = icon.videoIconState;
-    obj2[2] = callback(tmp4(9242).VideoIcon, obj3);
+    obj2[2] = callback(tmp4(9677).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(16274).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(16324).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -98,16 +98,16 @@ function AnimatedLabelIcon(icon) {
     const obj6 = { style: null, state: null, alwaysWhite: true };
     obj6[0] = tmp3.icon;
     obj6[1] = icon.muteDeafenIconState;
-    obj5[2] = callback(tmp4(9242).MuteDeafenIcon, obj6);
+    obj5[2] = callback(tmp4(9677).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
-    return callback(tmp(5842), obj4);
-  } else if (tmp4(16274).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+    return callback(tmp(7190), obj4);
+  } else if (tmp4(16324).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
     const obj7 = { size: "xs", color: null };
     obj7[1] = tmp(712).colors.TEXT_FEEDBACK_WARNING;
-    obj[2] = callback(tmp4(7859).CircleErrorIcon, obj7);
+    obj[2] = callback(tmp4(8074).CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -116,8 +116,8 @@ let c3 = importAllResult;
 ({ MODE_CHANGE_PHYSICS: c9, VoicePanelModes: c10 } = VoicePanelModes);
 ({ ParticipantTypes: closure_14, VoicePlatforms: closure_15 } = ParticipantTypes);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-let closure_19 = require("module_4083").createAnimatedComponent(require("Button").Icon);
-let closure_20 = require("module_4083").createAnimatedComponent(Pressable);
+let closure_19 = require("module_4115").createAnimatedComponent(require("Button").Icon);
+let closure_20 = require("module_4115").createAnimatedComponent(Pressable);
 let c21 = 28;
 let closure_22 = createCacheKey.createStyles((arg0) => {
   let obj = { labelPositionContainer: { position: "absolute", left: 8, right: 8, bottom: 8, justifyContent: "center", alignItems: "center", marginHorizontal: 8 }, labelOuterContainer: null, initialIcons: null, icon: null, iconWithoutBackground: null, iconContainer: null, speakerMuteIcon: null, floatingContainer: null, floatingText: null, ringingIconContainer: null, ringingIcon: null, secureFramesIcon: null };
@@ -157,8 +157,8 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(11720)).guildId;
-  let obj = controlsHidden(4083);
+  guildId = importAllResult.useContext(guildId(11439)).guildId;
+  let obj = controlsHidden(4115);
   const fn = function n() {
     const value = controlsHidden.get();
     if (value) {
@@ -174,7 +174,7 @@ let closure_27 = importAllResult.memo((participant) => {
     obj[3] = controlsHidden(outer1_2[29]).withSpring(num2, outer1_9);
     return obj;
   };
-  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4776).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
+  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4744).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 4080439075039;
   fn.__initData = closure_26;
@@ -204,13 +204,13 @@ let closure_27 = importAllResult.memo((participant) => {
     }
   }, items);
   obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
-  obj[0] = guildId(16321);
+  obj[0] = guildId(16371);
   obj[1] = callback;
   obj[2] = animatedStyle;
   obj[3] = layout;
   const tmp3 = closure_16;
-  const tmp4 = guildId(16204);
-  const result = controlsHidden(16272).isStableActivityParticipant(participant);
+  const tmp4 = guildId(16254);
+  const result = controlsHidden(16322).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;
@@ -394,7 +394,7 @@ let closure_37 = importAllResult.memo((controlsHidden) => {
 let closure_38 = importAllResult.memo((controlsHidden) => {
   const obj = { theme: ThemeTypes.LIGHT, children: null };
   obj[1] = callback(closure_37, { controlsHidden: controlsHidden.controlsHidden });
-  return callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
 });
 let closure_39 = { code: "function VoicePanelCardFloatingControlsTsx10(){const{hasHiddenVisibleIcon,focused,connected,mode,VoicePanelModes,controlsHidden}=this.__closure;const showIcon=hasHiddenVisibleIcon&&focused.get()==null;return!connected.get()||mode.get()===VoicePanelModes.PIP||!showIcon&&controlsHidden.get();}" };
 let closure_40 = { code: "function VoicePanelCardFloatingControlsTsx11(){const{isPillHidden}=this.__closure;return isPillHidden.get();}" };

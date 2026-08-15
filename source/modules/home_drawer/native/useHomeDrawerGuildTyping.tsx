@@ -1,10 +1,10 @@
-// Module ID: 15535
-// Function ID: 15536
+// Module ID: 15585
+// Function ID: 15586
 // Name: areHomeDrawerGuildTypingStatesEqual
-// Dependencies: [3991, 1395, 1391, 11439, 643, 15531, 15532, 589, 11, 2]
+// Dependencies: [4023, 1395, 1391, 11152, 643, 15581, 15582, 589, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 15535 (areHomeDrawerGuildTypingStatesEqual)
+// Module 15585 (areHomeDrawerGuildTypingStatesEqual)
 import storeThread from "storeThread";
 import { isThread } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -19,8 +19,7 @@ function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) 
   }
   return result;
 }
-let obj = { typingChannelId: "Array", typingChannelName: "isArray", typingUserIds: "a" };
-obj[2] = [];
+let closure_7 = { typingChannelId: "Array", typingChannelName: "ct", typingUserIds: [] };
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
 
 export const useHomeDrawerGuildTyping = function useHomeDrawerGuildTyping(id) {

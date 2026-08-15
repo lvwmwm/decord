@@ -1,8 +1,8 @@
-// Module ID: 15952
-// Function ID: 15953
-// Dependencies: [19, 17, 9634, 21, 4342, 712, 1628, 15231, 1493, 4200, 15953, 501, 2]
+// Module ID: 16002
+// Function ID: 16003
+// Dependencies: [19, 17, 9588, 21, 4661, 712, 1629, 15280, 1494, 4232, 16003, 501, 2]
 
-// Module 15952
+// Module 16002
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
   let items1 = callback();
   let tmp = importDefault;
   let tmp5Result = dependencyMap;
-  let obj = require(15231) /* trackTabPressed */;
+  let obj = require(15280) /* trackTabPressed */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (route != null) {
     const params = route.params;
@@ -31,14 +31,14 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
       const initialTab = params.initialTab;
     }
   }
-  if (tmp(4200)().isChatBesideChannelList) {
+  if (tmp(4232)().isChatBesideChannelList) {
     const items = [items1.container, ];
     let tmp3Result = tmp3(501);
     let tmp7;
     if (tmp3Result.isAndroid()) {
       obj = {};
       const merged = Object.assign(items1.androidContainer);
-      obj.paddingTop = importDefault(1628)().top;
+      obj.paddingTop = importDefault(1629)().top;
       tmp7 = obj;
     }
     obj = { style: null, children: null };
@@ -50,10 +50,10 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
       items1 = [, ];
       items1[0] = items1.wrapper;
       const obj2 = { maxWidth: null };
-      obj2[0] = 0.6 * tmp(1493)().width;
+      obj2[0] = 0.6 * tmp(1494)().width;
       items1[1] = obj2;
       obj1[0] = items1;
-      tmp = tmp(15953);
+      tmp = tmp(16003);
       const obj3 = { initialTab: null };
       obj3[0] = initialTab;
       tmp5Result = tmp5(tmp, obj3);
@@ -62,14 +62,14 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
     } else {
       const obj4 = { initialTab: null };
       obj4[0] = initialTab;
-      tmp5Result = tmp5(tmp(15953), obj4);
+      tmp5Result = tmp5(tmp(16003), obj4);
     }
     obj[1] = tmp5Result;
     tmp5(View, obj);
   } else {
     const obj5 = { initialTab: null };
     obj5[0] = initialTab;
-    return tmp5(tmp(15953), obj5);
+    return tmp5(tmp(16003), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

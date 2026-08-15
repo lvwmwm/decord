@@ -1,10 +1,10 @@
-// Module ID: 6934
-// Function ID: 6935
+// Module ID: 7374
+// Function ID: 7375
 // Name: defaultMobileWebNitroManagementSuccessCallback
-// Dependencies: [676, 505, 21, 3, 4706, 1236, 500, 1624, 6935, 6938, 2]
+// Dependencies: [676, 505, 21, 3, 4656, 1236, 500, 1625, 7375, 7377, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 6934 (defaultMobileWebNitroManagementSuccessCallback)
+// Module 7374 (defaultMobileWebNitroManagementSuccessCallback)
 import { SubscriptionStatusTypes } from "ME";
 import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
 import { jsx } from "jsxProd";
@@ -14,7 +14,7 @@ function defaultMobileWebNitroManagementSuccessCallback() {
 }
 function defaultMobileWebNitroManagementFailureCallback(arg0) {
   tmp2.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
-  let obj = importDefault(4706);
+  let obj = importDefault(4656);
   obj = { title: null, body: null, hideActionSheet: true };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NrBVjw);
@@ -54,7 +54,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
       if (null !== obj.IN_APP) {
         let str2 = "iOS";
         if (!obj7.isIOS()) {
-          let tmp13Result = tmp13(1624);
+          let tmp13Result = tmp13(1625);
           let str = "Android";
           if (tmp13Result.isMetaQuest()) {
             str = "Meta Quest";
@@ -76,7 +76,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
           if (null != tmp) {
             if (tmp.shouldAllowExternalManagement) {
               if ("iOS" !== str2) {
-                tmp13Result = tmp13(1624);
+                tmp13Result = tmp13(1625);
               }
               let status;
               if (subscription != null) {
@@ -98,7 +98,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1236).intl;
                 const t = tmp13(1236).t;
                 obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(6938).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                jsx(tmp13(7377).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
                 const tmp9 = jsx;
               } else {
                 function manageExternalNitroSubscription() {

@@ -1,9 +1,9 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5289
+// Function ID: 5290
 // Name: recomputeFromAppTokens
-// Dependencies: [32, 1391, 5312, 4584, 1370, 589, 709, 2]
+// Dependencies: [32, 1391, 5290, 4994, 1370, 589, 709, 2]
 
-// Module 5311 (recomputeFromAppTokens)
+// Module 5289 (recomputeFromAppTokens)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import isConnected from "isConnected";

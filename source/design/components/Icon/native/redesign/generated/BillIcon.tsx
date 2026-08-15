@@ -1,10 +1,10 @@
-// Module ID: 11597
-// Function ID: 11598
+// Module ID: 11314
+// Function ID: 11315
 // Name: BillIcon
-// Dependencies: [19, 21, 712, 4064, 11598, 2]
+// Dependencies: [19, 21, 712, 4096, 11315, 2]
 // Exports: BillIcon
 
-// Module 11597 (BillIcon)
+// Module 11314 (BillIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BillIcon = function BillIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11598) /* registerAsset */;
+  obj[0] = require(11315) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

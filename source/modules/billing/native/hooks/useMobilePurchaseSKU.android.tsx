@@ -1,10 +1,10 @@
-// Module ID: 10153
-// Function ID: 10154
+// Module ID: 10357
+// Function ID: 10358
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 6956, 1922, 676, 5921, 3, 7399, 9499, 5777, 698, 709, 6961, 4022, 1903, 7651, 514, 2]
+// Dependencies: [5, 19, 7395, 1922, 676, 5320, 3, 7617, 9266, 7127, 698, 709, 7400, 4054, 1903, 7869, 514, 2]
 // Exports: default
 
-// Module 10153 (useMobilePurchaseSKU)
+// Module 10357 (useMobilePurchaseSKU)
 import GPlayConnectionState from "GPlayConnectionState";
 import noop from "noop";
 import { useNativeCheckoutStoreOrNull as closure_5 } from "context";
@@ -101,7 +101,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ export default function useMobilePurchaseSKU(skuId) {
               if (lib.billingResult === onPurchasePending.OK) {
                 outer1_8();
                 v0 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let obj5 = platformSkuId(analyticsLocations[11]);
                 obj5.unsubscribe("GPLAY_PURCHASE_VERIFIED", outer1_19);
@@ -238,7 +238,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -383,7 +383,7 @@ export default function useMobilePurchaseSKU(skuId) {
             c4 = 0;
             closure_16.current = false;
             v02 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           obj9 = { productId: null, skuId: null, isOneTimePurchase: true, analyticsLoadId: null, analyticsLocations: null, analyticsData: null, isGift: null, giftInfoOptions: null, onPurchaseError: null };
           obj9[0] = closure_1;

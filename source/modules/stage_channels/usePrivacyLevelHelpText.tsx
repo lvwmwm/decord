@@ -1,10 +1,10 @@
-// Module ID: 9122
-// Function ID: 9123
+// Module ID: 8912
+// Function ID: 8913
 // Name: useStagePrivacyLevelSettings
-// Dependencies: [3989, 676, 1397, 505, 589, 3994, 506, 1236, 1993, 2]
+// Dependencies: [4021, 676, 1397, 505, 589, 4026, 506, 1236, 1993, 2]
 // Exports: default
 
-// Module 9122 (useStagePrivacyLevelSettings)
+// Module 8912 (useStagePrivacyLevelSettings)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { HelpdeskArticles } from "ME";
 import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -18,7 +18,7 @@ export default function useStagePrivacyLevelSettings(channel, privacy_level) {
   let obj = _require(589);
   const items = [getUncachedChannelPermissions];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_7.CREATE_INSTANT_INVITE, closure_0));
-  const obj2 = importAll(3994);
+  const obj2 = importAll(4026);
   const canEveryoneRoleResult = obj2.canEveryoneRole(importAll(506).combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
   privacy_level = undefined;
   if (privacy_level != null) {

@@ -1,10 +1,10 @@
-// Module ID: 10748
-// Function ID: 10749
+// Module ID: 12487
+// Function ID: 12488
 // Name: useModeratorOverlayChannelState
-// Dependencies: [700, 705, 3974, 2]
+// Dependencies: [700, 705, 4006, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10748 (useModeratorOverlayChannelState)
+// Module 12487 (useModeratorOverlayChannelState)
 import identity from "identity";
 
 let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {
@@ -23,7 +23,7 @@ const result = require("isIterable").fileFinishedImporting("modules/stage_channe
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
   const _require = id;
-  const dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(3974).shallow);
-  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(3974).shallow).has(id), () => callback(closure_0)];
+  const dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(4006).shallow);
+  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(4006).shallow).has(id), () => callback(closure_0)];
   return items;
 };

@@ -1,10 +1,10 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13477
+// Function ID: 13478
 // Name: useFlashListAnimationDisabler
-// Dependencies: [19, 4083, 2]
+// Dependencies: [19, 4115, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 13445 (useFlashListAnimationDisabler)
+// Module 13477 (useFlashListAnimationDisabler)
 import noop from "noop";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8364
+// Function ID: 8365
 // Name: createMessageFailedEmbed
-// Dependencies: [8108, 676, 8121, 8326, 1236, 8327, 4919, 2]
+// Dependencies: [8158, 676, 8171, 8365, 1236, 8366, 4834, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 8325 (createMessageFailedEmbed)
+// Module 8364 (createMessageFailedEmbed)
 import { MessageFailureState } from "Changeset";
 import { MessageEmbedTypes } from "ME";
 
@@ -22,9 +22,9 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.lBLP4u);
       obj[2] = MessageFailureState.UNSPECIFIED;
       obj[4] = colors.failedMessageBodyTextColor;
-      colors = require(8121) /* frozen */.getAssetUriForEmbed;
-      obj[5] = colors(importDefault(8327));
-      const tmp14 = require(8121) /* frozen */;
+      colors = require(8171) /* frozen */.getAssetUriForEmbed;
+      obj[5] = colors(importDefault(8366));
+      const tmp14 = require(8171) /* frozen */;
     } else {
       obj = { type: null, numAttachments: null, failureState: null, attachmentsSize: null, bodyTextColor: null };
       obj[0] = MessageEmbedTypes.TEXT;
@@ -36,8 +36,8 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       let str = "";
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        str = " (" + tmp6(4919).sizeString(uploaderFile.currentSize) + ")";
-        const tmp6Result = tmp6(4919);
+        str = " (" + tmp6(4834).sizeString(uploaderFile.currentSize) + ")";
+        const tmp6Result = tmp6(4834);
       }
       obj[3] = "" + str;
       obj[4] = colors.embedBodyTextColor;
@@ -55,6 +55,6 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
 };
 export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
   const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: null };
-  obj[5] = require(8121) /* frozen */.getAssetUriForEmbed(importDefault(8326));
+  obj[5] = require(8171) /* frozen */.getAssetUriForEmbed(importDefault(8365));
   return obj;
 };

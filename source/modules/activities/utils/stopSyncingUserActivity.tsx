@@ -1,10 +1,10 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 7246
+// Function ID: 7247
 // Name: stopSyncingUserActivity
 // Dependencies: [709, 2]
 // Exports: default
 
-// Module 12983 (stopSyncingUserActivity)
+// Module 7246 (stopSyncingUserActivity)
 const result = require("set").fileFinishedImporting("modules/activities/utils/stopSyncingUserActivity.tsx");
 
 export default function stopSyncingUserActivity() {

@@ -1,8 +1,8 @@
-// Module ID: 4055
-// Function ID: 4056
-// Dependencies: [17, 500, 4056, 2]
+// Module ID: 4087
+// Function ID: 4088
+// Dependencies: [17, 500, 4088, 2]
 
-// Module 4055
+// Module 4087
 import { NativeModules } from "get ActivityIndicator";
 
 let result = require("enforcing").fileFinishedImporting("modules/links/native/LinkingModule.tsx");
@@ -10,8 +10,8 @@ let result = require("enforcing").fileFinishedImporting("modules/links/native/Li
 export default {
   tryOpenUrlAsUniversalLink(closure_0) {
     if (obj.isAndroid()) {
-      let result = importDefault(4056).tryOpenUrlAsUniversalLink(closure_0);
-      const obj2 = importDefault(4056);
+      let result = importDefault(4088).tryOpenUrlAsUniversalLink(closure_0);
+      const obj2 = importDefault(4088);
     } else {
       const DCDLinkingManager = NativeModules.DCDLinkingManager;
       result = DCDLinkingManager.tryOpenUrlAsUniversalLink(closure_0);
@@ -20,8 +20,8 @@ export default {
   },
   tryOpenScheme(closure_0) {
     if (obj.isAndroid()) {
-      let tryOpenSchemeResult = importDefault(4056).tryOpenScheme(closure_0);
-      const obj2 = importDefault(4056);
+      let tryOpenSchemeResult = importDefault(4088).tryOpenScheme(closure_0);
+      const obj2 = importDefault(4088);
     } else {
       const DCDLinkingManager = NativeModules.DCDLinkingManager;
       tryOpenSchemeResult = DCDLinkingManager.tryOpenScheme(closure_0);

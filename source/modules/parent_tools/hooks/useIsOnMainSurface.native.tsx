@@ -1,10 +1,10 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16217
+// Function ID: 16218
 // Name: getIsOnMainSurface
-// Dependencies: [32, 19, 4198, 2]
+// Dependencies: [32, 19, 4230, 2]
 // Exports: useIsOnMainSurface
 
-// Module 16167 (getIsOnMainSurface)
+// Module 16217 (getIsOnMainSurface)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import set from "getRootNavigationRef";
@@ -15,7 +15,7 @@ function getIsOnMainSurface() {
   let index2;
   let routes;
   let routes2;
-  const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();

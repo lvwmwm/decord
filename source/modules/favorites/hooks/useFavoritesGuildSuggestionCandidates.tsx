@@ -1,10 +1,10 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15537
+// Function ID: 15538
 // Name: getAffineChannelId
-// Dependencies: [19, 15488, 7188, 1391, 15414, 7388, 15490, 589, 9145, 12218, 11148, 7386, 7375, 2]
+// Dependencies: [19, 15538, 5407, 1391, 15464, 7606, 15540, 589, 9637, 11961, 9093, 7604, 7593, 2]
 // Exports: default
 
-// Module 15487 (getAffineChannelId)
+// Module 15537 (getAffineChannelId)
 import noop from "noop";
 import map from "map";
 import recomputeAffinities from "recomputeAffinities";

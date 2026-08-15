@@ -1,8 +1,8 @@
-// Module ID: 9485
-// Function ID: 9486
-// Dependencies: [2, 9486, 9489]
+// Module ID: 9252
+// Function ID: 9253
+// Dependencies: [2, 9253, 9256]
 
-// Module 9485
+// Module 9252
 const result = require("useRedeemVirtualCurrency").fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");
 for (const key10018 in require("useFetchVirtualCurrencyBalance")) {
   let tmp3 = key10018;

@@ -1,14 +1,14 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8618
+// Function ID: 8619
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1922, 8524, 676, 21, 4342, 712, 1499, 589, 691, 8580, 698, 4338, 1236, 8536, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 8563, 676, 21, 4661, 712, 1500, 589, 691, 8619, 698, 4734, 1236, 8575, 4745, 2]
 // Exports: default
 
-// Module 8579 (EnterEmail)
+// Module 8618 (EnterEmail)
 import closure_4 from "ChangeEmailFields";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import get_ActivityIndicator from "module_8536";
+import get_ActivityIndicator from "module_8575";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ChangeEmailFields from "ChangeEmailFields";
 import { AnalyticEvents } from "ME";
@@ -81,7 +81,7 @@ export default function EnterEmail(isChangeEmail) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

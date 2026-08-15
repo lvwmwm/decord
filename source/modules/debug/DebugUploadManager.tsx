@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 10131
+// Function ID: 10132
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1391, 676, 3, 17, 4241, 9233, 9926, 7, 9927, 9929, 1917, 4204, 9930, 9931, 9932, 530, 2]
+// Dependencies: [5, 1391, 676, 3, 17, 4273, 9668, 10132, 7, 10133, 10135, 1917, 4236, 10136, 10137, 10138, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 9925 (_uploadDebugLogFiles)
+// Module 10131 (_uploadDebugLogFiles)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ function _uploadDebugLogFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _uploadDebugLogFiles() {
           } else if (1 === tmp7) {
             c5 = 0;
             closure_2 = V6OrEarlierAPIError;
-            if (closure_2 instanceof callback(4241).UploadVoiceDebugLogsError) {
+            if (closure_2 instanceof callback(4273).UploadVoiceDebugLogsError) {
               closure_1 = (function uploadErrorToAVUnderlyingError(closure_2) {
                 const code = closure_2.code;
                 if (callback(tmp3[5]).UploadErrorCodes.GENERAL === code) {
@@ -75,9 +75,9 @@ function _uploadDebugLogFiles() {
                 }
               })(closure_2);
             }
-            let obj4 = callback(9233);
+            let obj4 = callback(9668);
             const obj2 = { type: null, underlyingError: null, errorMessage: null };
-            obj2[0] = callback(9233).AVError.DEBUG_LOG_UPLOAD_FAILED;
+            obj2[0] = callback(9668).AVError.DEBUG_LOG_UPLOAD_FAILED;
             obj2[1] = closure_1;
             obj2[2] = outer1_2.message;
             obj4.reportAVError(obj2);
@@ -93,7 +93,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(9926);
+              obj1 = callback(10132);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };
@@ -112,7 +112,7 @@ function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp35) {
           V6OrEarlierAPIError = tmp35;
@@ -177,7 +177,7 @@ function _uploadAppLogFiles() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

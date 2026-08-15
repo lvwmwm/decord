@@ -1,10 +1,10 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9988
+// Function ID: 9989
 // Name: hasOfferedFavoritesGuildOnboarding
-// Dependencies: [32, 19, 1383, 1394, 676, 644, 1377, 9770, 589, 9780, 6086, 2]
+// Dependencies: [32, 19, 1383, 1394, 676, 644, 1377, 9979, 589, 9989, 7366, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding, useFavoritesIntroPopover, useIsFavoritesIntroPopoverShown
 
-// Module 9779 (hasOfferedFavoritesGuildOnboarding)
+// Module 9988 (hasOfferedFavoritesGuildOnboarding)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import withContent from "withContent";
@@ -23,14 +23,14 @@ let c11 = false;
 const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
   let hasAccess;
   let isFreemium;
-  const favoritesAccess = require(9770) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildIntroPopover");
+  const favoritesAccess = require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildIntroPopover");
   ({ hasAccess, isFreemium } = favoritesAccess);
-  const obj = require(9770) /* useFavoritesAccess */;
+  const obj = require(9979) /* useFavoritesAccess */;
   const items = [initializeFromUserSettings];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => false === obj.favoriteGuildVisibleSetting);
   const obj2 = require(589) /* initialize */;
-  const tmp5 = importDefault(9780)();
-  require(6086) /* useSelectedDismissibleContent */;
+  const tmp5 = importDefault(9989)();
+  require(7366) /* useSelectedDismissibleContent */;
   if (hasAccess) {
     if (isFreemium) {
       if (!stateFromStores) {
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
           } else {
             items3 = [];
           }
-          const tmp12 = callback(tmp(6086).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp12 = callback(tmp(7366).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp12;
           const items4 = [tmp12];
           const effect = importAllResult.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9943
+// Function ID: 9944
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 1363, 500, 4763, 2]
+// Dependencies: [19, 17, 1363, 500, 4721, 2]
 // Exports: default
 
-// Module 9740 (useAnnounceAsyncCompletion)
+// Module 9943 (useAnnounceAsyncCompletion)
 import noop from "noop";
 import { AccessibilityInfo } from "get ActivityIndicator";
 

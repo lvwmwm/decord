@@ -1,10 +1,10 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16899
+// Function ID: 16900
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
-// Dependencies: [19, 1910, 676, 4371, 21, 1499, 16854, 16855, 16856, 589, 2]
+// Dependencies: [19, 1910, 676, 4482, 21, 1500, 16900, 16901, 16902, 589, 2]
 // Exports: default
 
-// Module 16853 (GuildSettingsRoleSubscriptionsEmptyContent)
+// Module 16899 (GuildSettingsRoleSubscriptionsEmptyContent)
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -16,10 +16,10 @@ let c5;
 const require = arg1;
 function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   guild = guild.guild;
-  let obj = require(1499) /* useNavigation */;
+  let obj = require(1500) /* useNavigation */;
   const str = obj.useNavigation();
   if (tmp3.loading) {
-    let tmp7 = jsx(tmp2(16855), {});
+    let tmp7 = jsx(tmp2(16901), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
@@ -27,7 +27,7 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
         obj = { guild: null };
         obj[0] = guild;
-        tmp7 = jsx(tmp2(16856), { guild: null });
+        tmp7 = jsx(tmp2(16902), { guild: null });
       }
     }
     if (null == tmp4) {
@@ -50,7 +50,7 @@ export default function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(guildId));
   if (null == stateFromStores) {
-    let tmp5 = jsx(importDefault(16855), {});
+    let tmp5 = jsx(importDefault(16901), {});
   } else {
     obj = { guild: null };
     obj[0] = stateFromStores;

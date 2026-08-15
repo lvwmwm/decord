@@ -1,10 +1,10 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14586
+// Function ID: 14587
 // Name: EmojiIcon
-// Dependencies: [19, 21, 14555, 5329, 8751, 5421, 1435, 2]
+// Dependencies: [19, 21, 14587, 5449, 9355, 6930, 1435, 2]
 // Exports: default
 
-// Module 14554 (EmojiIcon)
+// Module 14586 (EmojiIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -29,7 +29,7 @@ export default function EmojiIcon(size) {
   if (lineHeight === undefined) {
     lineHeight = num + 4;
   }
-  let obj = require(14555) /* useEmojiByIdOrName */;
+  let obj = require(14587) /* useEmojiByIdOrName */;
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, id);
   if (null == emojiByIdOrName) {
     let tmp4 = null;
@@ -39,9 +39,9 @@ export default function EmojiIcon(size) {
       obj[0] = num;
       obj[1] = num;
       obj[1] = obj;
-      obj[2] = importDefault(8751);
-      tmp4 = jsx(importDefault(5329), { width: null, height: null });
-      const tmp7 = importDefault(5329);
+      obj[2] = importDefault(9355);
+      tmp4 = jsx(importDefault(5449), { width: null, height: null });
+      const tmp7 = importDefault(5449);
     }
     let tmp8Result = tmp4;
   } else {
@@ -80,8 +80,8 @@ export default function EmojiIcon(size) {
       url = emojiByIdOrName.url;
     }
     obj1[4] = url;
-    tmp8Result = jsx(importDefault(5421), { style: null, fastImageStyle: null, textEmojiStyle: null, name: null, src: null });
-    const tmp10 = importDefault(5421);
+    tmp8Result = jsx(importDefault(6930), { style: null, fastImageStyle: null, textEmojiStyle: null, name: null, src: null });
+    const tmp10 = importDefault(6930);
     const tmp8 = jsx;
     tmp9 = importDefault;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11421
+// Function ID: 11422
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1495, 11434, 1236, 6068, 8717, 2]
+// Dependencies: [19, 1496, 11147, 1236, 7349, 9270, 2]
 // Exports: default
 
-// Module 11704 (useVoiceMessageTooltip)
+// Module 11421 (useVoiceMessageTooltip)
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -48,7 +48,7 @@ export default function useVoiceMessageTooltip() {
       };
     }
   }, items1);
-  let obj = require(8717) /* useTooltip */;
+  let obj = require(9270) /* useTooltip */;
   const tooltip = obj.useTooltip(ref, memo);
   obj = { tooltipTargetRef: ref, showVoiceMessagesTooltip: closure_5 };
   return obj;

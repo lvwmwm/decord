@@ -1,10 +1,10 @@
-// Module ID: 7802
-// Function ID: 7803
+// Module ID: 8020
+// Function ID: 8021
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [19, 17, 5920, 1924, 505, 21, 4342, 712, 589, 5917, 4338, 1236, 2]
+// Dependencies: [19, 17, 5319, 1924, 505, 21, 4661, 712, 589, 5316, 4734, 1236, 2]
 // Exports: default
 
-// Module 7802 (BuyNitroPlanPriceDetails)
+// Module 8020 (BuyNitroPlanPriceDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateProduct from "updateProduct";
@@ -61,7 +61,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
   const value = priceStringByProductId.get(item.productId);
   if (null != trialTier) {
     if (item.premiumTier === trialTier) {
-      let tmp2Result = tmp2(5917);
+      let tmp2Result = tmp2(5316);
       obj = { style: null, children: null };
       obj[0] = tmp.container;
       obj = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
@@ -70,7 +70,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
       const obj1 = { price: null };
       obj1[0] = tmp2Result.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
       obj[3] = intl3.formatToPlainString(tmp2(1236).t.hXcaLT, obj1);
-      const items1 = [callback(tmp2(4338).Text, obj), ];
+      const items1 = [callback(tmp2(4734).Text, obj), ];
       if (null == value) {
         items1[1] = tmp17;
         obj[1] = items1;
@@ -88,7 +88,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
         obj3[0] = value;
         formatToPlainStringResult = intl4.formatToPlainString(v9QeON, obj3);
         obj2[3] = formatToPlainStringResult;
-        tmp16(tmp2(4338).Text, obj2);
+        tmp16(tmp2(4734).Text, obj2);
       }
       const formatPriceResult = tmp2Result.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
       tmp14 = closure_8;
@@ -105,11 +105,11 @@ export default function BuyNitroPlanPriceDetails(centered) {
       if (num == null) {
         num = 1;
       }
-      tmp2Result = tmp2(5917);
+      tmp2Result = tmp2(5316);
       let formatRateResult1 = null;
       if (null != value) {
-        formatRateResult1 = tmp2(5917).formatRate(value, item.interval, num);
-        const tmp2Result1 = tmp2(5917);
+        formatRateResult1 = tmp2(5316).formatRate(value, item.interval, num);
+        const tmp2Result1 = tmp2(5316);
       }
       const obj4 = { style: null, children: null };
       obj4[0] = tmp.container;
@@ -120,7 +120,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
       obj6[0] = tmp2Result.formatRate(discounted.priceString, item.interval, num);
       obj6[1] = discounted.numMonths;
       obj5[3] = intl.formatToPlainString(tmp2(1236).t["02Gmgm"], obj6);
-      const items2 = [callback(tmp2(4338).Text, obj5), ];
+      const items2 = [callback(tmp2(4734).Text, obj5), ];
       let tmp11Result = null != formatRateResult1;
       if (tmp11Result) {
         const obj7 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: null };
@@ -130,7 +130,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
         obj8[0] = formatRateResult1;
         obj8[1] = discounted.numMonths;
         obj7[3] = intl2.formatToPlainString(tmp2(1236).t["vZk+c/"], obj8);
-        tmp11Result = callback(tmp2(4338).Text, obj7);
+        tmp11Result = callback(tmp2(4734).Text, obj7);
       }
       items2[1] = tmp11Result;
       obj4[1] = items2;

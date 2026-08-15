@@ -1,0 +1,10 @@
+// Module ID: 12563
+// Function ID: 12564
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 12563 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "6d3bdfffed77899f44fd075e4ef2e92a", name: "krisp_logo_dark", type: "png" });

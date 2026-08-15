@@ -1,9 +1,9 @@
-// Module ID: 16325
-// Function ID: 16326
+// Module ID: 16375
+// Function ID: 16376
 // Name: GameRow
-// Dependencies: [19, 21, 5988, 9336, 9347, 1236, 9315, 5435, 9302, 16326, 9241, 2]
+// Dependencies: [19, 21, 5378, 9519, 9101, 1236, 9744, 6291, 9731, 16376, 9676, 2]
 
-// Module 16325 (GameRow)
+// Module 16375 (GameRow)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -11,11 +11,11 @@ const require = arg1;
 function GameRow(gameId) {
   gameId = gameId.gameId;
   let _require;
-  let obj = _require(5988);
+  let obj = _require(5378);
   const data = obj.useGame(gameId).data;
   obj = { gameId, source: null };
-  obj[1] = _require(9347).GameProfileSources.VoiceChannelGames;
-  const tmp4Result = importDefault(9336)(obj);
+  obj[1] = _require(9101).GameProfileSources.VoiceChannelGames;
+  const tmp4Result = importDefault(9519)(obj);
   _require = tmp4Result;
   if (null == data) {
     return null;
@@ -28,7 +28,7 @@ function GameRow(gameId) {
     }
     obj = { game: null, size: 32, fallback: "placeholder" };
     obj[0] = data;
-    const tmp7 = jsx(tmp3(9315), { game: null, size: 32, fallback: "placeholder" });
+    const tmp7 = jsx(tmp3(9744), { game: null, size: 32, fallback: "placeholder" });
     if (null == tmp4Result) {
       const obj1 = { icon: null, label: null, disabled: true };
       obj1[0] = tmp7;
@@ -46,17 +46,17 @@ function GameRow(gameId) {
       obj3[0] = name;
       obj2[5] = intl2.formatToPlainString(tmp(1236).t["9sZWVp"], obj3);
     }
-    return jsx(tmp(5435).TableRow, obj2);
+    return jsx(tmp(6291).TableRow, obj2);
   }
   tmp3 = importDefault;
-  const tmp4 = importDefault(9336);
+  const tmp4 = importDefault(9519);
 }
 const memoResult = require("noop").memo(function VoicePanelGamesSection(arg0) {
   let guildId;
   let members;
   ({ members, guildId } = arg0);
-  const tmp2 = importDefault(9302)("voice_pre_join_games_section");
-  const arr = importDefault(16326)(members, guildId, tmp2);
+  const tmp2 = importDefault(9731)("voice_pre_join_games_section");
+  const arr = importDefault(16376)(members, guildId, tmp2);
   let tmp3 = null;
   if (tmp2) {
     tmp3 = null;
@@ -65,7 +65,7 @@ const memoResult = require("noop").memo(function VoicePanelGamesSection(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl.string(require(1236) /* getSystemLocale */.t.crRMpG);
       obj[2] = arr.map((gameId) => callback(closure_4, { gameId }, gameId));
-      tmp3 = jsx(require(9241) /* VoiceBadges */.VoicePanelFormSection, { title: null, hasIcons: true, children: null });
+      tmp3 = jsx(require(9676) /* VoiceBadges */.VoicePanelFormSection, { title: null, hasIcons: true, children: null });
     }
   }
   return tmp3;

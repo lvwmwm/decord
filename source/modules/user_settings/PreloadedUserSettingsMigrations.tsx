@@ -1,16 +1,16 @@
-// Module ID: 13798
-// Function ID: 13799
+// Module ID: 13830
+// Function ID: 13831
 // Name: migrateHotspotLocation
-// Dependencies: [1391, 676, 11858, 1306, 1376, 5896, 595, 1342, 589, 1337, 1377, 7050, 2]
+// Dependencies: [1391, 676, 11586, 1306, 1376, 7193, 595, 1342, 589, 1337, 1377, 5245, 2]
 
-// Module 13798 (migrateHotspotLocation)
+// Module 13830 (migrateHotspotLocation)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelNoticeTypes } from "ME";
 import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS";
 
 const require = arg1;
 function migrateHotspotLocation(userContent, ACTIVITY_BEB_TUTORIAL, ACCOUNT_MULTIACCOUNT_TOOLTIP) {
-  const HotspotStore = require(5896) /* HotspotStore */.HotspotStore;
+  const HotspotStore = require(7193) /* HotspotStore */.HotspotStore;
   let hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(ACTIVITY_BEB_TUTORIAL);
   if (hasHiddenHotspotResult) {
     if (null == userContent.userContent) {
@@ -159,8 +159,8 @@ let items = [
       const Storage = require(595) /* Storage */.Storage;
       let hasHiddenHotspotResult = true === Storage.get("HAS_SEEN_HUB_UPSELL");
       if (!hasHiddenHotspotResult) {
-        const HotspotStore = tmp(5896).HotspotStore;
-        hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(tmp(5896).HotspotLocations.HUB_SECOND_EMAIL_CONNECTION_UPSELL);
+        const HotspotStore = tmp(7193).HotspotStore;
+        hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(tmp(7193).HotspotLocations.HUB_SECOND_EMAIL_CONNECTION_UPSELL);
       }
       let flag = false;
       if (hasHiddenHotspotResult) {
@@ -343,7 +343,7 @@ let items = [
   {
     version: 7,
     run(userContent) {
-      return migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.APPLICATION_COMMAND_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.APPLICATION_COMMAND_TOOLTIP);
+      return migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.APPLICATION_COMMAND_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.APPLICATION_COMMAND_TOOLTIP);
     },
     cleanup() {
 
@@ -352,7 +352,7 @@ let items = [
   {
     version: 8,
     run(userContent) {
-      return migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.CHANNEL_BANNER_MEMBER_LIST_NOTICE, require(1377) /* DismissibleContent */.DismissibleContent.CHANNELINFO_CHANNELBANNER_NOTICE);
+      return migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.CHANNEL_BANNER_MEMBER_LIST_NOTICE, require(1377) /* DismissibleContent */.DismissibleContent.CHANNELINFO_CHANNELBANNER_NOTICE);
     },
     cleanup() {
 
@@ -361,12 +361,12 @@ let items = [
   {
     version: 9,
     run(userContent) {
-      const HotspotStore = require(5896) /* HotspotStore */.HotspotStore;
-      if (HotspotStore.hasHiddenHotspot(require(5896) /* HotspotStore */.HotspotLocations.MULTI_ACCOUNT_TOOLTIP)) {
+      const HotspotStore = require(7193) /* HotspotStore */.HotspotStore;
+      if (HotspotStore.hasHiddenHotspot(require(7193) /* HotspotStore */.HotspotLocations.MULTI_ACCOUNT_TOOLTIP)) {
         const Storage = tmp(595).Storage;
         const result = Storage.set(closure_5, "true");
       }
-      return migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.MULTI_ACCOUNT_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.ACCOUNT_MULTIACCOUNT_TOOLTIP);
+      return migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.MULTI_ACCOUNT_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.ACCOUNT_MULTIACCOUNT_TOOLTIP);
     },
     cleanup() {
 
@@ -375,7 +375,7 @@ let items = [
   {
     version: 10,
     run(userContent) {
-      let flag = migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.HUB_LINK_CHANNEL_NOTICE, require(1377) /* DismissibleContent */.DismissibleContent.CHANNEL_NOTICE_HUBLINK);
+      let flag = migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.HUB_LINK_CHANNEL_NOTICE, require(1377) /* DismissibleContent */.DismissibleContent.CHANNEL_NOTICE_HUBLINK);
       const Storage = require(595) /* Storage */.Storage;
       let obj = Storage.get("channelNotices");
       if (obj == null) {
@@ -464,10 +464,10 @@ let items = [
     version: 11,
     run(userContent) {
       let flag = false;
-      if (migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.GUILD_EVENT_UPSELL, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_HEADER_EVENT_UPSELL)) {
+      if (migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.GUILD_EVENT_UPSELL, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_HEADER_EVENT_UPSELL)) {
         flag = true;
       }
-      if (migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_HEADER_ANIMATED_GUILD_BANNER)) {
+      if (migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_HEADER_ANIMATED_GUILD_BANNER)) {
         flag = true;
       }
       return flag;
@@ -659,7 +659,7 @@ let items = [
   {
     version: 14,
     run(userContent) {
-      return migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.ACTIVITY_BEB_TUTORIAL, require(1377) /* DismissibleContent */.DismissibleContent.ACTIVITIES_TUTORIAL_COACH_MARK);
+      return migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.ACTIVITY_BEB_TUTORIAL, require(1377) /* DismissibleContent */.DismissibleContent.ACTIVITIES_TUTORIAL_COACH_MARK);
     },
     cleanup() {
 
@@ -668,7 +668,7 @@ let items = [
   {
     version: 15,
     run(userContent) {
-      return migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.NOW_PLAYING_CONSENT_CARD, require(1377) /* DismissibleContent */.DismissibleContent.NOW_PLAYING_CONSENT_CARD);
+      return migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.NOW_PLAYING_CONSENT_CARD, require(1377) /* DismissibleContent */.DismissibleContent.NOW_PLAYING_CONSENT_CARD);
     },
     cleanup() {
 
@@ -741,10 +741,10 @@ let items = [
     version: 18,
     run(userContent) {
       let flag = false;
-      if (migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.GUILD_DELETE_FEEDBACK, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_DELETE_FEEDBACK)) {
+      if (migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.GUILD_DELETE_FEEDBACK, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_DELETE_FEEDBACK)) {
         flag = true;
       }
-      if (migrateHotspotLocation(userContent, require(5896) /* HotspotStore */.HotspotLocations.GUILD_LEAVE_FEEDBACK, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_LEAVE_FEEDBACK)) {
+      if (migrateHotspotLocation(userContent, require(7193) /* HotspotStore */.HotspotLocations.GUILD_LEAVE_FEEDBACK, require(1377) /* DismissibleContent */.DismissibleContent.GUILD_LEAVE_FEEDBACK)) {
         flag = true;
       }
       return flag;
@@ -817,7 +817,7 @@ let items = [
           Storage2.remove("lastChangeLogId");
           return false;
         }
-        tmpResult = tmp(7050);
+        tmpResult = tmp(5245);
       }
     },
     cleanup() {

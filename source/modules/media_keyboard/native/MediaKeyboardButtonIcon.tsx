@@ -1,10 +1,10 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11403
+// Function ID: 11404
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4207, 1367, 4083, 1626, 4343, 4346, 9766, 2]
+// Dependencies: [19, 21, 4239, 1367, 4115, 1627, 4664, 4667, 9975, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11686 (MediaKeyboardButtonIcon)
+// Module 11403 (MediaKeyboardButtonIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,11 +19,11 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp6 = chatInputFloating(4207)();
+    const tmp6 = chatInputFloating(4239)();
     _require = tmp6;
     let obj = _require(1367);
     chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "MediaKeyboardButtonIcon" }).chatInputFloating;
-    let obj1 = _require(4083);
+    let obj1 = _require(4115);
     const fn = function s() {
       let tmp4 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp4) {
@@ -45,10 +45,10 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     };
     obj = { keyboard: null, KeyboardTypes: null, chatInputFloating: null, withTiming: null, timingStandard: null };
     obj[0] = tmp6;
-    obj[1] = _require(1626).KeyboardTypes;
+    obj[1] = _require(1627).KeyboardTypes;
     obj[2] = chatInputFloating;
-    obj[3] = _require(4343).withTiming;
-    obj[4] = _require(4346).timingStandard;
+    obj[3] = _require(4664).withTiming;
+    obj[4] = _require(4667).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -57,7 +57,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(9766).PlusLargeIcon, {});
-    return jsx(chatInputFloating(4083).View, { style: null, children: null });
+    obj[1] = jsx(_require(9975).PlusLargeIcon, {});
+    return jsx(chatInputFloating(4115).View, { style: null, children: null });
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10930
+// Function ID: 10931
 // Name: useHasVideoPermission
-// Dependencies: [1910, 3989, 589, 7253, 2]
+// Dependencies: [1910, 4021, 589, 7478, 2]
 // Exports: default, getVideoPermission
 
-// Module 10811 (useHasVideoPermission)
+// Module 10930 (useHasVideoPermission)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
@@ -31,7 +31,7 @@ export default function useHasVideoPermission(arg0) {
 export const getVideoPermission = function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
-    const obj = require(7253) /* canStreamInChannel */;
+    const obj = require(7478) /* canStreamInChannel */;
     isPrivateResult = obj.canStreamInChannel(channel, createGuildRecordFromRust, getUncachedChannelPermissions, false);
   }
   return isPrivateResult;

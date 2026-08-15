@@ -1,10 +1,10 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 8847
+// Function ID: 8848
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 676, 1954, 506, 9058, 1363, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 1954, 506, 8848, 1363, 1236, 2]
 // Exports: default
 
-// Module 9057 (useCreateChannelSubmit)
+// Module 8847 (useCreateChannelSubmit)
 import fromString from "fromString";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -50,7 +50,7 @@ export default function useCreateChannelSubmit(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

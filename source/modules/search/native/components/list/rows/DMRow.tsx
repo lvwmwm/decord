@@ -1,9 +1,9 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15875
+// Function ID: 15876
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4334, 4431, 3998, 676, 21, 4342, 712, 4338, 4187, 9698, 589, 9195, 1297, 9070, 12856, 15826, 2]
+// Dependencies: [5, 32, 19, 17, 4662, 4559, 4030, 676, 21, 4661, 712, 4734, 4219, 9893, 589, 9462, 1297, 8860, 12933, 15876, 2]
 
-// Module 15825 (FriendPresence)
+// Module 15875 (FriendPresence)
 import sortActivity from "sortActivity";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchListRow";
@@ -30,16 +30,16 @@ function FriendPresence(user) {
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
     let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: null };
-    obj[3] = require(4187) /* nameFromUser */.getUserTag(user);
-    let tmp5 = callback(require(4338) /* Text */.Text, obj);
-    const obj3 = require(4187) /* nameFromUser */;
+    obj[3] = require(4219) /* nameFromUser */.getUserTag(user);
+    let tmp5 = callback(require(4734) /* Text */.Text, obj);
+    const obj3 = require(4219) /* nameFromUser */;
   } else {
     obj = { userId: null, guildId: null, iconStyle: null, textStyle: null, emojiSize: 16, animate: null };
     obj[0] = user.id;
     obj[1] = guildId;
     ({ activityStatusIcon: obj[2], activityStatusText: obj[3] } = tmp);
     obj[5] = animate;
-    tmp5 = callback(importDefault(9698), obj);
+    tmp5 = callback(importDefault(9893), obj);
   }
   return tmp5;
 }
@@ -110,7 +110,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
           c3 = 0;
           callback(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp23) {
         closure_2 = tmp23;

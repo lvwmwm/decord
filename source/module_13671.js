@@ -1,13 +1,11 @@
 // Module ID: 13671
 // Function ID: 13672
-// Dependencies: [13652, 13672]
+// Dependencies: [13672, 13737]
 
 // Module 13671
+import module_13672 from "module_13672";
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!require(13652)(arg0[arg1])) {
-    tmp4 = require(13672) /* all */(tmp);
-  }
-  return tmp4;
-};
+let obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj[3] = Object.assign !== require("assign");
+obj = { assign: require("assign") };
+module_13672(obj, obj);

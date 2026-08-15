@@ -1,8 +1,8 @@
-// Module ID: 11300
-// Function ID: 11301
-// Dependencies: [19, 1990, 1910, 3989, 1922, 676, 21, 4342, 589, 11301, 11302, 4534, 4310, 5827, 1236, 6075, 4572, 11303, 2007, 11299, 3978, 11320, 11306, 4284, 11322, 10518, 11324, 5458, 5457, 11326, 5828, 2]
+// Module ID: 11013
+// Function ID: 11014
+// Dependencies: [19, 1990, 1910, 4021, 1922, 676, 21, 4661, 589, 11014, 11015, 4796, 4342, 7177, 1236, 7355, 5260, 11016, 2007, 11012, 4010, 11033, 11019, 4316, 11035, 9830, 11037, 6950, 6949, 11039, 6286, 2]
 
-// Module 11300
+// Module 11013
 import importAllResult from "showModerateUserActionSheet";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

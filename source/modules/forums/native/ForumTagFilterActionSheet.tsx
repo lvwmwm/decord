@@ -1,10 +1,10 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 11943
+// Function ID: 11944
 // Name: EmojiIcon
-// Dependencies: [32, 19, 5237, 11464, 676, 21, 4342, 7293, 4793, 5825, 5457, 1236, 9039, 5460, 5828, 8519, 589, 5421, 1435, 2]
+// Dependencies: [32, 19, 6727, 11177, 676, 21, 4661, 7514, 4761, 7175, 6949, 1236, 8829, 6952, 6286, 8558, 589, 6930, 1435, 2]
 // Exports: default
 
-// Module 12200 (EmojiIcon)
+// Module 11943 (EmojiIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -47,7 +47,7 @@ function EmojiIcon(arg0) {
     emojiName = "";
   }
   obj[4] = emojiName;
-  return jsx(importDefault(5421), { style: tmp.emoji, textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: null, name: null });
+  return jsx(importDefault(6930), { style: tmp.emoji, textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: null, name: null });
 }
 ({ useForumChannelStore: closure_6, useForumChannelStoreApi: error } = set);
 ({ AnalyticsObjects: metroImportAll, AnalyticsPages: c9, AnalyticsSections: c10 } = ME);

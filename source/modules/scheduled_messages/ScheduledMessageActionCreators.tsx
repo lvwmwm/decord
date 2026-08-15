@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11171
+// Function ID: 11172
 // Name: _uploadAttachments
-// Dependencies: [32, 5, 676, 11459, 4915, 709, 11460, 530, 1403, 2]
+// Dependencies: [32, 5, 676, 11172, 4830, 709, 11173, 530, 1403, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, updateScheduledMessage
 
-// Module 11458 (_uploadAttachments)
+// Module 11171 (_uploadAttachments)
 import _slicedToArray from "_slicedToArray";
 import dispatcher from "dispatcher";
 import ME from "ME";
@@ -30,7 +30,7 @@ function _uploadAttachments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ function _uploadAttachments() {
                 return obj1;
               } else {
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (arg0 === 1) {
@@ -122,7 +122,7 @@ function _createScheduledMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -321,7 +321,7 @@ function _updateScheduledMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ function _updateScheduledMessage() {
               } else {
                 const obj3 = { content: null, flags: null };
                 obj3[0] = dependencyMap;
-                const obj14 = callback(11460);
+                const obj14 = callback(11173);
                 dependencyMap = callback2;
                 if (callback2 == null) {
                   dependencyMap = 0;
@@ -402,7 +402,7 @@ function _updateScheduledMessage() {
           } else if (2 === tmp7) {
             constants = 0;
             let closure_10 = closure_5;
-            const scheduledMessageLogger = callback(11460).scheduledMessageLogger;
+            const scheduledMessageLogger = callback(11173).scheduledMessageLogger;
             scheduledMessageLogger.error("Failed to update scheduled message", closure_10);
             body = closure_10.body;
             message = undefined;
@@ -434,12 +434,12 @@ function _updateScheduledMessage() {
             body = arg1;
             obj = message(709);
             const obj8 = { type: "SCHEDULED_MESSAGES_UPDATE_SUCCESS", scheduledMessageSend: null };
-            obj2 = callback(11460);
+            obj2 = callback(11173);
             obj8[1] = obj2.convertServerScheduledMessageSend(body.body);
             obj.dispatch(obj8);
             constants = 0;
             body = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp63) {
           closure_5 = tmp63;
@@ -483,7 +483,7 @@ function _deleteScheduledMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -552,7 +552,7 @@ function _deleteScheduledMessage() {
             obj.dispatch(obj6);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp39) {
           dispatcher = tmp39;
@@ -584,7 +584,7 @@ function _getScheduledMessages() {
     obj1[0] = outer1_5.SCHEDULED_MESSAGES;
     yield HTTP.get(obj1);
     const body = arg1.body;
-    return body.map(callback(11460).convertServerScheduledMessageSend);
+    return body.map(callback(11173).convertServerScheduledMessageSend);
   });
   const _getScheduledMessages = tmp;
   const apply = tmp.apply;
@@ -614,7 +614,7 @@ function _fetchScheduledMessages() {
     if (1 === tmp7) {
       c3 = 0;
       callback2 = dependencyMap;
-      const scheduledMessageLogger2 = callback(11460).scheduledMessageLogger;
+      const scheduledMessageLogger2 = callback(11173).scheduledMessageLogger;
       scheduledMessageLogger2.error("Failed to fetch scheduled messages", callback2);
       let obj3 = callback2(709);
       const obj2 = { type: "FETCH_SCHEDULED_MESSAGES_FAILURE", error: null };
@@ -626,7 +626,7 @@ function _fetchScheduledMessages() {
       throw arg1;
     } else if (arg0 !== 2) {
       callback = arg1;
-      const scheduledMessageLogger = callback(11460).scheduledMessageLogger;
+      const scheduledMessageLogger = callback(11173).scheduledMessageLogger;
       scheduledMessageLogger.info("Fetched scheduled messages", callback);
       const obj = callback2(709);
       obj3 = { type: "FETCH_SCHEDULED_MESSAGES_SUCCESS", messages: null };

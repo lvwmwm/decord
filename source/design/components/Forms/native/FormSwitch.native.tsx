@@ -1,20 +1,20 @@
-// Module ID: 5830
-// Function ID: 5831
+// Module ID: 7179
+// Function ID: 7180
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4083, 4342, 712, 4779, 1356, 1367, 4776, 4780, 4065, 5831, 5832, 4311, 4312, 2]
+// Dependencies: [32, 19, 17, 21, 4115, 4661, 712, 4747, 1356, 1367, 4744, 4748, 4097, 7180, 7181, 4343, 4344, 2]
 // Exports: FormSwitch
 
-// Module 5830 (FormSwitch)
+// Module 7179 (FormSwitch)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 import IconSizes from "IconSizes";
-import importDefaultResult1 from "module_4083";
+import importDefaultResult1 from "module_4115";
 
 const require = arg1;
-let closure_6 = require("module_4083").createAnimatedComponent(require("set").Pressable);
+let closure_6 = require("module_4115").createAnimatedComponent(require("set").Pressable);
 let obj = { switch: null, unselectedBackground: null, unselectedIcon: null, selectedIcon: null, selected: null, knob: null };
 obj = { width: require("Themes").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("Themes").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("Themes").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("Themes").radii.lg, borderWidth: 1 };
 obj[0] = obj;
@@ -116,11 +116,11 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   const animatedStyle1 = obj5.useAnimatedStyle(fn);
   const fn2 = function n() {
     if (enabled) {
-      let obj = require(4776) /* CONFIG_NEVER_ANIMATE */;
+      let obj = require(4744) /* CONFIG_NEVER_ANIMATE */;
       obj = { opacity: null, transform: null };
-      obj[0] = obj.withSpring(first ? c0 : c1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4748) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
       obj = { scale: null };
-      obj[0] = require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      obj[0] = require(4744) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4748) /* SUBTLE_SPRING */.SUBTLE_SPRING);
       const items = [obj];
       obj[1] = items;
       return obj;
@@ -136,11 +136,11 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   const obj1 = { useReducedMotion: enabled, checked: first, on: 1, off: 0, withSpring: _require(enabled[10]).withSpring, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
   const fn3 = function n() {
     if (enabled) {
-      let obj = require(4776) /* CONFIG_NEVER_ANIMATE */;
+      let obj = require(4744) /* CONFIG_NEVER_ANIMATE */;
       obj = { opacity: null, transform: null };
-      obj[0] = obj.withSpring(first ? c0 : c1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4748) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
       obj = { scale: null };
-      obj[0] = require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      obj[0] = require(4744) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4748) /* SUBTLE_SPRING */.SUBTLE_SPRING);
       const items = [obj];
       obj[1] = items;
       return obj;

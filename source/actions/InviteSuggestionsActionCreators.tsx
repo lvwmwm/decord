@@ -1,10 +1,10 @@
-// Module ID: 9144
-// Function ID: 9145
+// Module ID: 11501
+// Function ID: 11502
 // Name: loadInviteSuggestions
-// Dependencies: [9142, 9145, 709, 2]
+// Dependencies: [11502, 9637, 709, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 9144 (loadInviteSuggestions)
+// Module 11501 (loadInviteSuggestions)
 import _computeRows from "_computeRows";
 
 const result = require("dispatcher").fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
@@ -16,7 +16,7 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
   let importDefault;
   let require;
   ({ omitUserIds: require, guild: importDefault, channel: dependencyMap, applicationId: closure_3, inviteTargetType: closure_4 } = arg0);
-  const userAffinitiesV2 = require(9145) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
+  const userAffinitiesV2 = require(9637) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
   return userAffinitiesV2.then(() => {
     let obj = outer1_1(outer1_2[2]);
     let set = closure_0;

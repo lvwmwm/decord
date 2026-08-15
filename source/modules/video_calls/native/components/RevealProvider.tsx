@@ -1,10 +1,10 @@
-// Module ID: 10644
-// Function ID: 10645
+// Module ID: 8678
+// Function ID: 8679
 // Name: useRevealProviderValue
-// Dependencies: [19, 4054, 4359, 9800, 21, 589, 9802, 10645, 500, 4278, 7814, 10646, 2]
+// Dependencies: [19, 4086, 4540, 8669, 21, 589, 8673, 8679, 500, 4310, 8032, 8680, 2]
 // Exports: default
 
-// Module 10644 (useRevealProviderValue)
+// Module 8678 (useRevealProviderValue)
 import importAllResult from "noop";
 import setContent from "setContent";
 import set from "set";
@@ -24,7 +24,7 @@ function useRevealProviderValue(arg0, channel) {
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != key.getKey());
   const obj = require(589) /* initialize */;
   const tmp2 = require;
-  const tmp5 = importDefault(9802)(channel);
+  const tmp5 = importDefault(8673)(channel);
   const tmp6 = callback2();
   const items1 = [set];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
@@ -45,7 +45,7 @@ function useRevealProviderValue(arg0, channel) {
     tmp = stateFromStores1;
   }
   require = tmp;
-  const tmp8 = importDefault(10645)(channel.id);
+  const tmp8 = importDefault(8679)(channel.id);
   const tmp10 = tmp2(500).isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];
@@ -93,13 +93,13 @@ export default function RevealProvider(showStatus) {
   }
   const obj = { value: tmp2, children: null };
   let tmp10 = !reveal;
-  let tmp4Result = tmp4(7814);
+  let tmp4Result = tmp4(8032);
   if (!reveal) {
     tmp10 = !flag;
   }
   const items1 = [closure_10(tmp4Result, { hidden: tmp10, animated: true, barStyle: str }), children, ];
   let tmp12 = !reveal;
-  tmp4Result = tmp4(10646);
+  tmp4Result = tmp4(8680);
   if (!reveal) {
     tmp12 = !prefersDeferringSystemGestures;
   }

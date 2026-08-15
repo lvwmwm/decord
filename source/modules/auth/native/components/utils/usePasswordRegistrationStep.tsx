@@ -1,10 +1,10 @@
-// Module ID: 15186
-// Function ID: 15187
+// Module ID: 15235
+// Function ID: 15236
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 15163, 8555, 15187, 1236, 15174, 2]
+// Dependencies: [5, 32, 19, 15212, 8594, 15236, 1236, 15223, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 15186 (usePasswordRegistrationStep)
+// Module 15235 (usePasswordRegistrationStep)
 import PasswordScore from "PasswordScore";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -63,7 +63,7 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

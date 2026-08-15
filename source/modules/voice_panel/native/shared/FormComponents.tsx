@@ -1,10 +1,10 @@
-// Module ID: 9241
-// Function ID: 9242
+// Module ID: 9676
+// Function ID: 9677
 // Name: VoiceBadges
-// Dependencies: [19, 4431, 21, 4342, 712, 5842, 5828, 9242, 1297, 5789, 9243, 9254, 9298, 4596, 9300, 8846, 589, 7265, 9302, 9303, 9305, 4338, 1236, 5435, 4777, 9306, 9315, 4187, 9316, 12299, 2]
+// Dependencies: [19, 4559, 21, 4661, 712, 7190, 6286, 9677, 1297, 7139, 9678, 9689, 9730, 4815, 9455, 8929, 589, 7487, 9731, 9732, 9734, 4734, 1236, 6291, 4745, 9735, 9744, 4219, 9509, 9745, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9241 (VoiceBadges)
+// Module 9676 (VoiceBadges)
 import usePlayingGameActivities from "usePlayingGameActivities";
 import sortActivity from "sortActivity";
 import jsxProd from "Text";
@@ -23,12 +23,12 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: null, children: null };
     obj[0] = tmp.iconWrapper;
-    let tmp3Result = tmp3(5842);
+    let tmp3Result = tmp3(7190);
     obj = { state: null, size: null, style: null };
     obj[0] = muteDeafenIconState;
     obj[1] = require(1297) /* Button */.IconSizes.SMALL;
     obj[2] = tmp.icon;
-    obj[1] = callback(require(9242) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    obj[1] = callback(require(9677) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
     tmp6 = callback(tmp3Result, obj);
   }
   const items = [tmp6, ];
@@ -36,17 +36,17 @@ function VoiceBadges(arg0) {
   if (null != videoIconState) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.iconWrapper;
-    tmp3Result = tmp3(5842);
+    tmp3Result = tmp3(7190);
     const obj2 = { state: null, size: null, style: null };
     obj2[0] = videoIconState;
     obj2[1] = require(1297) /* Button */.IconSizes.SMALL;
     obj2[2] = tmp.icon;
-    obj1[1] = callback(require(9242) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    obj1[1] = callback(require(9677) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
     tmp10 = callback(tmp3Result, obj1);
   }
   items[1] = tmp10;
   obj[1] = items;
-  return closure_6(importDefault(5842), obj);
+  return closure_6(importDefault(7190), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: null, icon: null, notConnectedAvatar: null, memberRow: null, trailingContainer: null };
@@ -67,8 +67,8 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
   const tmp2 = createCacheKey();
   obj = {};
   const merged1 = Object.assign(merged);
-  obj[1] = callback(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
-  return callback(importDefault(5842), obj);
+  obj[1] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback(importDefault(7190), obj);
 };
 export const MemberRowItem = function MemberRowItem(user) {
   let guildId;

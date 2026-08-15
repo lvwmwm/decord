@@ -1,9 +1,9 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14672
+// Function ID: 14673
 // Name: toggle
-// Dependencies: [1212, 1218, 8148, 1367, 589, 709, 10421, 1236, 2]
+// Dependencies: [1212, 1218, 8198, 1367, 589, 709, 10669, 1236, 2]
 
-// Module 14640 (toggle)
+// Module 14672 (toggle)
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import createToggle from "createToggle";
@@ -19,7 +19,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["6e1ir2"]);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate: function useIsInDTesterExperimentVariant() {
     const items = [initialize, fetchFingerprint];
     return require(589) /* initialize */.useStateFromStores(items, () => {
@@ -49,6 +49,6 @@ createToggle = {
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/MobileVisualRefreshSetting.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/MobileVisualRefreshSetting.tsx");
 
 export default createToggle;

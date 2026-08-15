@@ -1,10 +1,10 @@
-// Module ID: 1490
-// Function ID: 1491
+// Module ID: 1491
+// Function ID: 1492
 // Name: fit
-// Dependencies: [5, 1491, 1492, 12, 38, 2]
+// Dependencies: [5, 1492, 1493, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1490 (fit)
+// Module 1491 (fit)
 import set from "set";
 import importDefaultResult from "apply";
 
@@ -90,7 +90,7 @@ function getPalette(width) {
         num12 = num12 + arg2;
       } while (num12 < result);
     }
-    const obj3 = importDefault(1491)(items, arg1);
+    const obj3 = importDefault(1492)(items, arg1);
     if (typeof obj3 === "boolean") {
       let paletteResult = items;
     } else {
@@ -173,7 +173,7 @@ function _isPNGAnimated() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ export const makeCssUrlString = function makeCssUrlString(arg0) {
 };
 export { getPalette };
 export const getPaletteForAvatar = function getPaletteForAvatar(closure_0) {
-  return require(1492) /* getSrcWithWidthAndHeight */.default.getPaletteForAvatarMobile(closure_0);
+  return require(1493) /* getSrcWithWidthAndHeight */.default.getPaletteForAvatarMobile(closure_0);
 };
 export const readFileAsBase64 = function readFileAsBase64(arg0) {
   let closure_0 = arg0;

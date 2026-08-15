@@ -1,10 +1,10 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 8773
+// Function ID: 8774
 // Name: installApplication
-// Dependencies: [676, 10611, 698, 8995, 4058, 10612, 506, 4572, 10615, 2007, 8965, 2]
+// Dependencies: [676, 8774, 698, 8775, 4090, 12426, 506, 5260, 10766, 2007, 4375, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 10610 (installApplication)
+// Module 8773 (installApplication)
 import { AnalyticEvents } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
@@ -34,7 +34,7 @@ export const installApplication = function installApplication(arg0) {
     obj[1] = function onConfirm() {
       outer1_1(outer1_3[4]).openURL(obj5);
     };
-    return obj5(8995).handleClick(obj);
+    return obj5(8775).handleClick(obj);
   } else {
     if (null != integrationTypesConfig) {
       const _Object = Object;
@@ -71,10 +71,10 @@ export const installApplication = function installApplication(arg0) {
           }
         };
         obj5 = obj2;
-        importDefault(4572).popWithKey(closure_5);
-        const obj9 = importDefault(4572);
+        importDefault(5260).popWithKey(closure_5);
+        const obj9 = importDefault(5260);
         const obj3 = {};
-        const obj10 = importDefault(4572);
+        const obj10 = importDefault(5260);
         const merged = Object.assign(obj2);
         obj3.dismissOAuthModal = function dismissOAuthModal() {
           const dismissOAuthModal = obj5.dismissOAuthModal;
@@ -83,7 +83,7 @@ export const installApplication = function installApplication(arg0) {
           }
           outer1_1(outer1_3[7]).popWithKey(outer1_5);
         };
-        obj10.pushLazy(obj5(2007)(10615, dependencyMap.paths), obj3, closure_5);
+        obj10.pushLazy(obj5(2007)(10766, dependencyMap.paths), obj3, closure_5);
       }
     }
     if (null != installParams) {
@@ -121,9 +121,9 @@ export const installApplication = function installApplication(arg0) {
           callback(arg0);
         }
       };
-      let tmp32Result = tmp32(4572);
+      let tmp32Result = tmp32(5260);
       tmp32Result.popWithKey(closure_5);
-      tmp32Result = tmp32(4572);
+      tmp32Result = tmp32(5260);
       const obj6 = {};
       const obj16 = importDefault(698);
       const tmp33 = dependencyMap;
@@ -135,17 +135,17 @@ export const installApplication = function installApplication(arg0) {
         }
         outer1_1(outer1_3[7]).popWithKey(outer1_5);
       };
-      tmp32Result.pushLazy(obj5(2007)(10615, dependencyMap.paths), obj6, closure_5);
-      const tmp10 = obj5(2007)(10615, dependencyMap.paths);
+      tmp32Result.pushLazy(obj5(2007)(10766, dependencyMap.paths), obj6, closure_5);
+      const tmp10 = obj5(2007)(10766, dependencyMap.paths);
     }
   }
 };
 export const openOAuth2Modal = function openOAuth2Modal(arg0) {
   const _require = arg0;
-  let obj = importDefault(4572);
+  let obj = importDefault(5260);
   obj.popWithKey(closure_5);
   obj = {};
-  const obj2 = importDefault(4572);
+  const obj2 = importDefault(5260);
   const merged = Object.assign(arg0);
   obj.dismissOAuthModal = function dismissOAuthModal() {
     const dismissOAuthModal = obj5.dismissOAuthModal;
@@ -154,21 +154,21 @@ export const openOAuth2Modal = function openOAuth2Modal(arg0) {
     }
     outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
-  obj2.pushLazy(_require(2007)(10615, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(2007)(10766, dependencyMap.paths), obj, closure_5);
 };
 export const installPrivateChannelIntegration = function installPrivateChannelIntegration(arg0) {
   let applicationId;
   let callback;
   let channelId;
   ({ applicationId, channelId, callback } = arg0);
-  let obj = importDefault(4572);
+  let obj = importDefault(5260);
   obj = { clientId: applicationId, scopes: null, channelId: null, dismissOAuthModal: null, disableGuildSelect: true, callback: null };
-  const items = [require(8965) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
+  const items = [require(4375) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
   obj[1] = items;
   obj[2] = channelId;
   obj[3] = function dismissOAuthModal() {
     return callback(table[7]).popWithKey(closure_5);
   };
   obj[5] = callback;
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(10615, dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(require(2007) /* asyncRequireImpl */(10766, dependencyMap.paths), obj, closure_5);
 };

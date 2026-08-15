@@ -229,7 +229,7 @@ class FeedbackWidget {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -506,7 +506,7 @@ class FeedbackWidget {
       tmp4Result._savedState = Object.assign({}, tmp4Result.state);
     };
     tmp4Result._clearFormState = () => {
-      closure_0._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "isArray", attachmentUri: "isArray" };
+      closure_0._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "disabled", attachmentUri: "isArray" };
     };
     tmp4Result._hasScreenshot = () => undefined !== tmp4Result.state.filename && undefined !== tmp4Result.state.attachment && undefined !== tmp4Result.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -671,7 +671,7 @@ let items = [
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -688,7 +688,7 @@ let items = [
                   obj = v0(outer1_2[7]);
                   obj.feedbackAlertDialog(outer1_2.errorTitle, outer1_2.captureScreenshotError);
                   v0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp8) {
                 v0 = tmp;
@@ -850,12 +850,12 @@ let items = [
 obj = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "isArray", attachmentUri: "isArray" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "disabled", attachmentUri: "isArray" };
   }
 };
 const items1 = [obj];
 const importDefaultResultResult = importDefaultResult(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = require("module_1201").defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "disabled", attachment: "isArray", attachmentUri: "isArray" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "disabled", attachmentUri: "isArray" };
 
 export const FeedbackWidget = importDefaultResultResult;

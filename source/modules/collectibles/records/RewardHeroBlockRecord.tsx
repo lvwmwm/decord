@@ -1,14 +1,14 @@
-// Module ID: 7110
-// Function ID: 7111
+// Module ID: 5347
+// Function ID: 5348
 // Name: fromServer
-// Dependencies: [7102, 7083, 2]
+// Dependencies: [5339, 5313, 2]
 
-// Module 7110 (fromServer)
+// Module 5347 (fromServer)
 let prototype;
 prototype = function RewardHeroBlockRecord(unpublished_at) {
   let summary;
   const obj = Object.create(new.target.prototype);
-  obj.type = require(7102) /* ShopBlockType */.ShopBlockType.REWARD_HERO;
+  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.REWARD_HERO;
   ({ category_sku_id: tmp.categorySkuId, name: tmp.name, summary } = unpublished_at);
   obj.summary = summary.trim();
   ({ category_store_listing_id: tmp.categoryStoreListingId, title: tmp.title, ranked_sku_ids: tmp.rankedSkuIds } = unpublished_at);
@@ -19,9 +19,9 @@ prototype = function RewardHeroBlockRecord(unpublished_at) {
   }
   obj.unpublishedAt = date;
   ({ banner_text_color: tmp.bannerTextColor, mobile_title: tmp.mobileTitle, mobile_summary: tmp.mobileSummary, mobile_products_title: tmp.mobileProductsTitle, reward_sku_id: tmp.rewardSkuId, hero_banner_url: tmp.heroBannerUrl, hero_banner_animated_url: tmp.heroBannerAnimatedUrl, hero_rive_url: tmp.heroRiveUrl, hero_logo_url: tmp.heroLogoUrl, mobile_hero_url: tmp.mobileHeroUrl, mobile_hero_animated_url: tmp.mobileHeroAnimatedUrl } = unpublished_at);
-  let tmp2Result = tmp2(7083);
+  let tmp2Result = tmp2(5313);
   obj.logoDisplayConfig = tmp2Result.getAssetDisplayConfig(unpublished_at.logo_display_config);
-  tmp2Result = tmp2(7083);
+  tmp2Result = tmp2(5313);
   obj.bannerDisplayConfig = tmp2Result.getAssetDisplayConfig(unpublished_at.banner_display_config);
   return obj;
 }.prototype;

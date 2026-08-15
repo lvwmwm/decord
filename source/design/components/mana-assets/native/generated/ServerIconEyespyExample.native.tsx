@@ -1,10 +1,10 @@
-// Module ID: 6768
-// Function ID: 6769
+// Module ID: 6126
+// Function ID: 6127
 // Name: ServerIconEyespyExample
-// Dependencies: [21, 5329, 6769, 2]
+// Dependencies: [21, 5449, 6127, 2]
 // Exports: ServerIconEyespyExample
 
-// Module 6768 (ServerIconEyespyExample)
+// Module 6126 (ServerIconEyespyExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconEyespyExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconEyespyExample = function ServerIconEyespyExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6769);
+  obj[0] = importDefault(6127);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconEyespyExample = function ServerIconEyespyExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

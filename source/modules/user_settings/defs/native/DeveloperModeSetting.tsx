@@ -1,9 +1,9 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 14839
+// Function ID: 14840
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 4034, 2]
+// Dependencies: [8198, 10669, 1236, 4066, 2]
 
-// Module 14799 (toggle)
+// Module 14839 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -11,7 +11,7 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.ObIb1Q);
   },
-  parent: require("MobileSetting").MobileSetting.ADVANCED,
+  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
   useValue: require("explicitContentFromProto").DeveloperMode.useSetting,
   onValueChange: require("explicitContentFromProto").DeveloperMode.updateSetting
 });
@@ -20,7 +20,7 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.ObIb1Q);
   },
-  parent: require("MobileSetting").MobileSetting.ADVANCED,
+  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
   useValue: require("explicitContentFromProto").DeveloperMode.useSetting,
   onValueChange: require("explicitContentFromProto").DeveloperMode.updateSetting
 };

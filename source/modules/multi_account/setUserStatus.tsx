@@ -1,10 +1,10 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 10025
+// Function ID: 10026
 // Name: _setUserStatus
-// Dependencies: [5, 5319, 5059, 676, 4187, 1236, 9826, 1374, 1337, 1350, 698, 2]
+// Dependencies: [5, 6796, 7250, 676, 4219, 1236, 10026, 1374, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 9825 (_setUserStatus)
+// Module 10025 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";
@@ -34,7 +34,7 @@ function _setUserStatus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -172,7 +172,7 @@ function _setUserStatus() {
               obj3.track(constants.USER_STATUS_UPDATED, obj5);
             }
             globalStats = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp54) {
           globalStats = tmp;

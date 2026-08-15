@@ -1,10 +1,10 @@
-// Module ID: 11188
-// Function ID: 11189
+// Module ID: 10889
+// Function ID: 10890
 // Name: _submitPollVote
-// Dependencies: [5, 676, 530, 4241, 2]
+// Dependencies: [5, 676, 530, 4273, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 11188 (_submitPollVote)
+// Module 10889 (_submitPollVote)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -31,7 +31,7 @@ function _submitPollVote() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ function _submitPollVote() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            const aPIError = new callback(4241).APIError(closure_3);
+            const aPIError = new callback(4273).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -95,7 +95,7 @@ function _submitPollVote() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           closure_3 = tmp21;
@@ -141,7 +141,7 @@ function _endPollEarly() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ function _endPollEarly() {
           } else if (2 === tmp8) {
             c4 = 0;
             asyncGeneratorStep = closure_3;
-            const aPIError = new callback(4241).APIError(asyncGeneratorStep);
+            const aPIError = new callback(4273).APIError(asyncGeneratorStep);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -202,7 +202,7 @@ function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

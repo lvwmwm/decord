@@ -1,14 +1,14 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13309
+// Function ID: 13310
 // Name: splitAgeRestrictedActivities
-// Dependencies: [13107, 10635, 2]
+// Dependencies: [13310, 4785, 2]
 // Exports: default
 
-// Module 13106 (splitAgeRestrictedActivities)
+// Module 13309 (splitAgeRestrictedActivities)
 const result = require("set").fileFinishedImporting("modules/presence/splitAgeRestrictedActivities.tsx");
 
 export default function splitAgeRestrictedActivities(arg0, arg1) {
-  const ContentClassificationPresenceFilterExperiment = require(13107) /* apexExperiment */.ContentClassificationPresenceFilterExperiment;
+  const ContentClassificationPresenceFilterExperiment = require(13310) /* apexExperiment */.ContentClassificationPresenceFilterExperiment;
   if (ContentClassificationPresenceFilterExperiment.getConfig({ location: "presence_filtering" }).enabled) {
     const items = [];
     const items1 = [];
@@ -18,7 +18,7 @@ export default function splitAgeRestrictedActivities(arg0, arg1) {
       let tmp5 = nextResult;
       let tmp6 = require;
       let tmp7 = dependencyMap;
-      let obj2 = require(10635) /* isAgeRestrictedClassificationReference */;
+      let obj2 = require(4785) /* isAgeRestrictedClassificationReference */;
       if (obj2.isAgeRestrictedClassificationReference(nextResult.content_classification)) {
         let tmp10 = nextResult;
         let arr = items1.push(tmp5);

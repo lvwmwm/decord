@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15394
+// Function ID: 15395
 // Name: useChannelListSpecs
-// Dependencies: [19, 9855, 15345, 1493, 15234, 4783, 1628, 11152, 2]
+// Dependencies: [19, 10055, 15395, 1494, 15283, 4751, 1629, 11259, 2]
 // Exports: default
 
-// Module 15344 (useChannelListSpecs)
+// Module 15394 (useChannelListSpecs)
 import noop from "noop";
 import hairlineWidth from "hairlineWidth";
 
@@ -15,14 +15,14 @@ const require = arg1;
 const result = require("GuildInfoHeader").fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
 export default function useChannelListSpecs(banner) {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15345).useRedesignGuildHeaderHeight(banner);
-  height = height(1493)().height;
-  const tmp2 = height(15234)();
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15395).useRedesignGuildHeaderHeight(banner);
+  height = height(1494)().height;
+  const tmp2 = height(15283)();
   const dependencyMap = tmp2;
-  const obj = redesignGuildHeaderHeight(15345);
-  const fontScale = redesignGuildHeaderHeight(4783).useFontScale();
+  const obj = redesignGuildHeaderHeight(15395);
+  const fontScale = redesignGuildHeaderHeight(4751).useFontScale();
   let closure_4 = tmp4;
-  const top = height(1628)().top;
+  const top = height(1629)().top;
   const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
   return fontScale.useMemo(() => {
     let num = 0;

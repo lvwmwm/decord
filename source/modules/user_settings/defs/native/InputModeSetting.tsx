@@ -1,9 +1,9 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14594
+// Function ID: 14595
 // Name: pressable
-// Dependencies: [4393, 8148, 4406, 589, 1236, 10421, 10840, 2]
+// Dependencies: [4497, 8198, 4529, 589, 1236, 10669, 12550, 2]
 
-// Module 14562 (pressable)
+// Module 14594 (pressable)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { InputModes } from "DesktopSources";
 import createToggle from "createToggle";
@@ -14,7 +14,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["pS+K2L"]);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
     const items = [_detectH265HardwareDecode];
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {

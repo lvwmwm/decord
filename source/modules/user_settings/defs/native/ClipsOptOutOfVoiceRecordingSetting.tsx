@@ -1,9 +1,9 @@
-// Module ID: 14300
-// Function ID: 14301
+// Module ID: 14332
+// Function ID: 14333
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 8148, 4034, 709, 10421, 1236, 2]
+// Dependencies: [5, 8198, 4066, 709, 10669, 1236, 2]
 
-// Module 14300 (_updateClipsAllowVoiceRecording)
+// Module 14332 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale";
 import createToggle from "createToggle";
 
@@ -26,7 +26,7 @@ function _updateClipsAllowVoiceRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -42,7 +42,7 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(4034).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(4066).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
@@ -61,7 +61,7 @@ function _updateClipsAllowVoiceRecording() {
             obj = callback2(709);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -88,7 +88,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["wW9/zQ"]);
   },
-  parent: require("MobileSetting").MobileSetting.CLIPS,
+  parent: require("MobileUserSettings").MobileUserSettings.CLIPS,
   useValue: require("explicitContentFromProto").ClipsAllowVoiceRecording.useSetting,
   onValueChange: function updateClipsAllowVoiceRecording() {
     const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12081
+// Function ID: 12082
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 12347, 8908, 12346, 4083, 4084, 2]
+// Dependencies: [19, 17, 21, 12080, 8993, 12079, 4115, 4116, 2]
 // Exports: default
 
-// Module 12348 (MediaViewerItemPresenter)
+// Module 12081 (MediaViewerItemPresenter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

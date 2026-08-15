@@ -1,10 +1,10 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 9085
+// Function ID: 9086
 // Name: shouldRefreshAttachmentUrl
-// Dependencies: [5, 676, 687, 4377, 1486, 530, 2]
+// Dependencies: [5, 676, 687, 4508, 1487, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9807 (shouldRefreshAttachmentUrl)
+// Module 9085 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";
@@ -29,7 +29,7 @@ function shouldRefreshAttachmentUrl(searchParams) {
   return tmp5;
 }
 function isAttachmentExpired(url) {
-  const toURLSafeResult = importDefault(1486).toURLSafe(url.url);
+  const toURLSafeResult = importDefault(1487).toURLSafe(url.url);
   let tmp4 = null != toURLSafeResult;
   if (tmp4) {
     const searchParams = toURLSafeResult.searchParams;
@@ -56,7 +56,7 @@ function isEmbedMediaExpiredAttachment(image) {
   if (null == image) {
     return false;
   } else {
-    const toURLSafeResult = importDefault(1486).toURLSafe(image.url);
+    const toURLSafeResult = importDefault(1487).toURLSafe(image.url);
     let tmp11 = null != toURLSafeResult;
     if (tmp11) {
       const require = toURLSafeResult;
@@ -156,7 +156,7 @@ function _maybeRefreshAttachmentUrl() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -278,10 +278,10 @@ let result = set.fileFinishedImporting("modules/messages/SignedAttachmentLinkUti
 
 export { isAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return require(4377) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
+  return require(4508) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
-  toURLSafeResult = importDefault(1486).toURLSafe(toURLSafeResult);
+  toURLSafeResult = importDefault(1487).toURLSafe(toURLSafeResult);
   if (null == toURLSafeResult) {
     return toURLSafeResult;
   } else {
@@ -293,7 +293,7 @@ export const removeSignedUrlParameters = function removeSignedUrlParameters(toUR
     }
     return toURLSafeResult;
   }
-  const obj = importDefault(1486);
+  const obj = importDefault(1487);
 };
 export { getSignedAttachmentExpiration };
 export const messageHasExpiredAttachmentUrl = function messageHasExpiredAttachmentUrl(attachments) {

@@ -1,10 +1,10 @@
-// Module ID: 14575
-// Function ID: 14576
+// Module ID: 14607
+// Function ID: 14608
 // Name: useAppearanceSettingTrailing
-// Dependencies: [4163, 1305, 676, 4278, 1367, 589, 1347, 8464, 1236, 2501, 10421, 7787, 14576, 2]
+// Dependencies: [4195, 1305, 676, 4310, 1367, 589, 1347, 8503, 1236, 2533, 10669, 8005, 14608, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14575 (useAppearanceSettingTrailing)
+// Module 14607 (useAppearanceSettingTrailing)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { ActiveThemeType } from "SystemThemeState";
 import createToggle from "createToggle";
@@ -12,17 +12,17 @@ import createToggle from "createToggle";
 const require = arg1;
 function useAppearanceSettingTrailing() {
   const tmp = importDefault;
-  const tmp3 = importDefault(4278)();
+  const tmp3 = importDefault(4310)();
   const tmp4 = importDefault(1367)("AppearanceSettingTrailing");
   const items = [isSyncedModeThemesEnabled];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => gradientPreset.gradientPreset);
   const obj = require(589) /* initialize */;
   const themeName = require(1347) /* getThemeForColor */.getThemeName(tmp3, tmp4);
   const obj2 = require(1347) /* getThemeForColor */;
-  const activeThemeType = require(8464) /* useActiveThemeType */.useActiveThemeType();
+  const activeThemeType = require(8503) /* useActiveThemeType */.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp5(1236).intl;
-    return intl2.string(tmp(2501).KSBBpC);
+    return intl2.string(tmp(2533).KSBBpC);
   } else if (tmp9.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {
@@ -41,7 +41,7 @@ function useAppearanceSettingTrailing() {
   } else {
     return tmp9.DEFAULT === activeThemeType ? themeName : undefined;
   }
-  const obj3 = require(8464) /* useActiveThemeType */;
+  const obj3 = require(8503) /* useActiveThemeType */;
 }
 createToggle = {
   useTitle() {
@@ -56,7 +56,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(14576).default;
+    return require(14608).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 7857
-// Function ID: 7858
+// Module ID: 8072
+// Function ID: 8073
 // Name: Input
-// Dependencies: [19, 17, 21, 4342, 712, 1236, 4338, 7858, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 1236, 4734, 8073, 2]
 // Exports: Input
 
-// Module 7857 (Input)
+// Module 8072 (Input)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -59,7 +59,7 @@ export const Input = function Input(arg0) {
       obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
       obj[2] = tmp.description;
       obj[3] = description;
-      tmp15Result = tmp15(require(4338) /* Text */.Text, obj);
+      tmp15Result = tmp15(require(4734) /* Text */.Text, obj);
     }
     items[2] = tmp15Result;
     tmp15Result = null;
@@ -67,7 +67,7 @@ export const Input = function Input(arg0) {
       const obj1 = { style: null, children: null };
       obj1[0] = tmp.error;
       obj1[1] = errorMessage;
-      tmp15Result = tmp15(require(7858) /* ErrorText */.ErrorText, obj1);
+      tmp15Result = tmp15(require(8073) /* ErrorText */.ErrorText, obj1);
     }
     items[3] = tmp15Result;
     obj[1] = items;
@@ -78,7 +78,7 @@ export const Input = function Input(arg0) {
     const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: null, children: null };
     obj3[2] = labelId;
     obj3[3] = label;
-    const items1 = [callback(require(4338) /* Text */.Text, obj3), labelTrailing];
+    const items1 = [callback(require(4734) /* Text */.Text, obj3), labelTrailing];
     obj2[1] = items1;
     let tmp7Result = tmp7(tmp8, obj2);
   } else {
@@ -91,11 +91,11 @@ export const Input = function Input(arg0) {
     if (required) {
       const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: null };
       obj5[3] = [" ", "*"];
-      tmp7Result = tmp7(tmp22(4338).Text, obj5);
+      tmp7Result = tmp7(tmp22(4734).Text, obj5);
     }
     items2[1] = tmp7Result;
     obj4[5] = items2;
-    tmp7Result = tmp7(require(4338) /* Text */.Text, obj4);
+    tmp7Result = tmp7(require(4734) /* Text */.Text, obj4);
     tmp22 = require;
   }
 };

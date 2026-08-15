@@ -1,10 +1,10 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14403
+// Function ID: 14404
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4334, 21, 712, 4342, 500, 9450, 14372, 8933, 14373, 1628, 589, 14374, 4338, 1236, 9471, 4777, 2]
+// Dependencies: [19, 17, 4662, 21, 712, 4661, 500, 9217, 14404, 9018, 14405, 1629, 589, 14406, 4734, 1236, 9238, 4745, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14371 (BountiesRecapOrbsBackground)
+// Module 14403 (BountiesRecapOrbsBackground)
 import "noop";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -25,19 +25,19 @@ function BountiesRecapOrbsBackground(arg0) {
     obj = { style: null, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: null };
     obj[0] = style;
     obj = { url: null, style: null, autoplay: null };
-    obj[0] = importDefault(14372);
+    obj[0] = importDefault(14404);
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
-    obj[4] = tmp3(tmp(9450).APNGPlayer, obj);
+    obj[4] = tmp3(tmp(9217).APNGPlayer, obj);
     let tmp3Result = tmp3(closure_4, obj);
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
     const obj2 = { uri: null };
-    obj2[0] = importDefault(14373);
+    obj2[0] = importDefault(14405);
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
-    tmp3Result = tmp3(tmp(8933).VideoComponent, obj1);
+    tmp3Result = tmp3(tmp(9018).VideoComponent, obj1);
   }
   return tmp3Result;
 }
@@ -81,11 +81,11 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none", children: null };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(14374);
+  obj2[0] = importDefault(14406);
   obj1[0] = obj2;
   obj1[1] = closure_3.absoluteFillObject;
   obj1[3] = stateFromStores;
-  const items2 = [callback(require(8933) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
+  const items2 = [callback(require(9018) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
   obj[2] = items2;
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none", children: null };
@@ -93,33 +93,33 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const obj6 = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj6[3] = intl.string(require(1236) /* getSystemLocale */.t.d6Rrn6);
-  const items4 = [callback(require(4338) /* Text */.Text, obj6), , ];
+  const items4 = [callback(require(4734) /* Text */.Text, obj6), , ];
   const obj7 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: null };
   const obj8 = { style: tmp.titleRow, children: null };
-  const items5 = [callback(require(9471) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
+  const items5 = [callback(require(9238) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
   const obj9 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj9[4] = "+" + orbAmount;
-  items5[1] = callback(require(4338) /* Text */.Text, obj9);
+  items5[1] = callback(require(4734) /* Text */.Text, obj9);
   obj8[1] = items5;
   obj7[3] = callback2(closure_4, obj8);
   items4[1] = callback(closure_4, obj7);
   const obj10 = { variant: "text-md/medium", color: "text-muted", style: { textAlign: "center" }, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj10[3] = intl2.string(require(1236) /* getSystemLocale */.t.x0Ffz3);
-  items4[2] = callback(require(4338) /* Text */.Text, obj10);
+  items4[2] = callback(require(4734) /* Text */.Text, obj10);
   obj5[2] = items4;
   const items6 = [callback2(closure_4, obj5), ];
   const obj11 = { style: null, children: null };
   const items7 = [tmp.actions, ];
   const obj3 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };
-  const tmp2 = importDefault(1628)();
-  items7[1] = { bottom: importDefault(1628)().bottom + importDefault(712).space.PX_8 };
+  const tmp2 = importDefault(1629)();
+  items7[1] = { bottom: importDefault(1629)().bottom + importDefault(712).space.PX_8 };
   obj11[0] = items7;
   const obj13 = { grow: true, variant: "primary", text: null, size: "lg", onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj13[2] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj13[4] = onClose;
-  obj11[1] = callback(require(4777) /* Button */.Button, obj13);
+  obj11[1] = callback(require(4745) /* Button */.Button, obj13);
   items6[1] = callback(closure_4, obj11);
   obj4[2] = items6;
   items3[1] = callback2(closure_4, obj4);

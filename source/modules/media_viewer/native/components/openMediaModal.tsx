@@ -1,10 +1,10 @@
-// Module ID: 8907
-// Function ID: 8908
+// Module ID: 8992
+// Function ID: 8993
 // Name: _openMediaModal
-// Dependencies: [32, 5, 4054, 676, 1493, 8908, 2007, 8910, 8914, 38, 4310, 8923, 4572, 8924, 2]
+// Dependencies: [32, 5, 4086, 676, 1494, 8993, 2007, 8996, 9000, 38, 4342, 9008, 5260, 9009, 2]
 // Exports: openMediaModal
 
-// Module 8907 (_openMediaModal)
+// Module 8992 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -36,7 +36,7 @@ function _openMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function _openMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4054.initVideoStateStore;
+            initVideoStateStore = 4086.initVideoStateStore;
             !(function getMeasureInWindowFunction(c0) {
               let closure_0 = c0;
               if (null != c0) {
@@ -173,7 +173,7 @@ function _openMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c4 = tmp;

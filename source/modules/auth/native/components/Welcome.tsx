@@ -1,10 +1,10 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15214
+// Function ID: 15215
 // Name: InviteCard
-// Dependencies: [19, 17, 15166, 4256, 6988, 11857, 1930, 4327, 9133, 676, 6005, 7263, 21, 4342, 712, 12097, 1236, 38, 1297, 4187, 4338, 12692, 7707, 13290, 1499, 1628, 589, 4793, 7004, 698, 595, 5888, 5777, 15167, 15162, 1500, 5212, 4777, 4072, 5328, 11362, 2]
+// Dependencies: [19, 17, 15215, 4288, 7429, 11585, 1930, 4359, 8923, 676, 7289, 4371, 21, 4661, 712, 11832, 1236, 38, 1297, 4219, 4734, 12770, 7925, 13322, 1500, 1629, 589, 4761, 5066, 698, 595, 5256, 7127, 15216, 15211, 1501, 6687, 4745, 4104, 6370, 11075, 2]
 // Exports: default
 
-// Module 15165 (InviteCard)
+// Module 15214 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(12097), obj);
+      let tmp14 = callback(importDefault(11832), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -51,30 +51,30 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       importDefault(38)(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "r" };
+      obj = { user: null, guildId: "a" };
       const tmp12 = new createdAt(inviter);
       obj[0] = tmp12;
       tmp14 = callback(require(1297) /* Button */.Avatar, obj);
       const intl = require(1236) /* getSystemLocale */.intl;
       stringResult = intl.string(require(1236) /* getSystemLocale */.t.OsdY8B);
-      let obj1 = importDefault(4187);
+      let obj1 = importDefault(4219);
       name = obj1.getFormattedName(inviter);
       tmp17 = require;
       tmp18 = callback;
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "r" };
+      obj = { user: null, guildId: "a" };
       const tmp33 = new createdAt(inviter);
       obj[0] = tmp33;
       const intl3 = require(1236) /* getSystemLocale */.intl;
       stringResult = intl3.string(require(1236) /* getSystemLocale */.t["+ITYkQ"]);
       const tmp35 = callback(require(1297) /* Button */.Avatar, obj);
-      name = importDefault(4187).getFormattedName(inviter, true);
+      name = importDefault(4219).getFormattedName(inviter, true);
       tmp14 = tmp35;
       tmp17 = require;
       tmp18 = callback;
-      const obj9 = importDefault(4187);
+      const obj9 = importDefault(4219);
     }
     obj1 = { style: null, children: null };
     const items = [tmp.container, invite.style];
@@ -84,10 +84,10 @@ function InviteCard(invite) {
     obj2[0] = tmp.text;
     const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: null };
     obj3[2] = stringResult;
-    const items2 = [tmp18(tmp17(4338).Text, obj3), ];
+    const items2 = [tmp18(tmp17(4734).Text, obj3), ];
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = name;
-    items2[1] = tmp18(tmp17(4338).Text, obj4);
+    items2[1] = tmp18(tmp17(4734).Text, obj4);
     obj2[1] = items2;
     items1[1] = callback2(closure_4, obj2);
     obj1[1] = items1;
@@ -101,13 +101,13 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12692) };
+  obj = { source: importDefault(12770) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.QzUORX);
-  const items2 = [callback(require(4338) /* Text */.Text, obj1), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name })];
+  const items2 = [callback(require(4734) /* Text */.Text, obj1), callback(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name })];
   obj[1] = items2;
   items1[1] = callback2(closure_4, obj);
   obj[1] = items1;
@@ -117,7 +117,7 @@ function Centerpiece(inlineButtons) {
   let guildTemplate;
   let invite;
   ({ invite, guildTemplate } = inlineButtons);
-  const tmp2 = importDefault(7707)();
+  const tmp2 = importDefault(7925)();
   const tmp3 = callback3(tmp2);
   let tmp7 = null != guildTemplate;
   if (tmp7) {
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13290) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(13322) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;
@@ -136,7 +136,7 @@ function Centerpiece(inlineButtons) {
   obj1[1] = num;
   const intl = tmp4(1236).intl;
   obj1[5] = intl.string(require(1236) /* getSystemLocale */.t["3S2xmm"]);
-  const items2 = [callback(require(4338) /* Text */.Heading, obj1), , , ];
+  const items2 = [callback(require(4734) /* Text */.Heading, obj1), , , ];
   const items3 = [tmp3.subHeader, ];
   if (null != invite) {
     let subHeaderWithInvite = tmp3.subHeaderWithInvite;
@@ -147,7 +147,7 @@ function Centerpiece(inlineButtons) {
   items3[1] = subHeaderWithInvite;
   const intl2 = tmp4(1236).intl;
   obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t.Gtcthl);
-  items2[1] = callback(require(4338) /* Text */.Text, obj2);
+  items2[1] = callback(require(4734) /* Text */.Text, obj2);
   let tmp9Result = null;
   if (null != invite) {
     const obj3 = { invite: null };

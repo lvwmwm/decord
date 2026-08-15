@@ -1,10 +1,10 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 8791
+// Function ID: 8792
 // Name: useEventSchedule
-// Dependencies: [7055, 9005, 9010, 589, 2]
+// Dependencies: [4370, 8785, 8790, 589, 2]
 // Exports: default, getEventSchedule, useEventScheduleById
 
-// Module 9011 (useEventSchedule)
+// Module 8791 (useEventSchedule)
 import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;
@@ -14,14 +14,14 @@ export default function useEventSchedule(recurrence_rule, nextRecurrenceIdInEven
   let endDate;
   let startDate;
   if (nextRecurrenceIdInEvent == null) {
-    let obj = require(9005) /* getRRule */;
+    let obj = require(8785) /* getRRule */;
     nextRecurrenceIdInEvent = obj.getNextRecurrenceIdInEvent(recurrence_rule);
   }
   if (null != recurrence_rule.recurrence_rule) {
     if (null != nextRecurrenceIdInEvent) {
-      const baseScheduleForRecurrence = require(9005) /* getRRule */.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, recurrence_rule);
-      const obj2 = require(9005) /* getRRule */;
-      const scheduleForRecurrenceWithException = require(9005) /* getRRule */.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp5);
+      const baseScheduleForRecurrence = require(8785) /* getRRule */.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, recurrence_rule);
+      const obj2 = require(8785) /* getRRule */;
+      const scheduleForRecurrenceWithException = require(8785) /* getRRule */.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp5);
       ({ startDate, endDate } = scheduleForRecurrenceWithException);
       obj = { startTime: null, endTime: null };
       obj[0] = startDate.toDate();
@@ -30,7 +30,7 @@ export default function useEventSchedule(recurrence_rule, nextRecurrenceIdInEven
         toDateResult = endDate.toDate();
       }
       obj[1] = toDateResult;
-      const obj3 = require(9005) /* getRRule */;
+      const obj3 = require(8785) /* getRRule */;
     }
     return obj;
   }
@@ -53,10 +53,10 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
   let stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuildScheduledEvent(closure_0));
   let tmp5 = null;
   if (recurrenceId == null) {
-    let tmp2Result = tmp2(9005);
+    let tmp2Result = tmp2(8785);
     nextRecurrenceIdInEvent = tmp2Result.getNextRecurrenceIdInEvent(stateFromStores);
   }
-  importDefault(9010);
+  importDefault(8790);
   if (stateFromStores != tmp5) {
     const id = stateFromStores.id;
   }
@@ -65,9 +65,9 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
   } else {
     if (tmp5 != stateFromStores.recurrence_rule) {
       if (tmp5 != nextRecurrenceIdInEvent) {
-        tmp2Result = tmp2(9005);
+        tmp2Result = tmp2(8785);
         const baseScheduleForRecurrence = tmp2Result.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, stateFromStores);
-        const scheduleForRecurrenceWithException = tmp2(9005).getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp7);
+        const scheduleForRecurrenceWithException = tmp2(8785).getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp7);
         ({ startDate, endDate } = scheduleForRecurrenceWithException);
         obj = { startTime: null, endTime: null };
         obj[0] = startDate.toDate();
@@ -76,7 +76,7 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
           toDateResult = endDate.toDate();
         }
         obj[1] = toDateResult;
-        const tmp2Result1 = tmp2(9005);
+        const tmp2Result1 = tmp2(8785);
       }
     }
     obj = { startTime: null, endTime: null };
@@ -96,12 +96,12 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
 export const getEventSchedule = function getEventSchedule(guildEvent, recurrenceId) {
   let endDate;
   let startDate;
-  require(9010) /* useEventException */;
+  require(8790) /* useEventException */;
   if (null != guildEvent.recurrence_rule) {
     if (null != recurrenceId) {
-      let tmpResult = tmp(9005);
+      let tmpResult = tmp(8785);
       const baseScheduleForRecurrence = tmpResult.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-      tmpResult = tmp(9005);
+      tmpResult = tmp(8785);
       const scheduleForRecurrenceWithException = tmpResult.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp4);
       ({ startDate, endDate } = scheduleForRecurrenceWithException);
       let obj = { startTime: null, endTime: null };

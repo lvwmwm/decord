@@ -1,11 +1,11 @@
-// Module ID: 4208
-// Function ID: 4209
+// Module ID: 4240
+// Function ID: 4241
 // Name: zustandStore
-// Dependencies: [4209, 4211, 514, 2]
+// Dependencies: [4241, 4243, 514, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4208 (zustandStore)
-const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ keyboard: null, state: require(4211) /* PortalKeyboardState */.PortalKeyboardState.EMPTY, renderers: [] }));
+// Module 4240 (zustandStore)
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ keyboard: null, state: require(4243) /* PortalKeyboardState */.PortalKeyboardState.EMPTY, renderers: [] }));
 const result = require("v1").fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
 
 export const PortalKeyboardUIStore = { getField: zustandStore.getField, useField: zustandStore.useField };
@@ -20,8 +20,8 @@ export const isPortalKeyboardOpenForChannel = function isPortalKeyboardOpenForCh
   }
   let tmp3 = channelId === arg0;
   if (tmp3) {
-    tmp3 = state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
-    const tmp6 = state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4211) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
+    tmp3 = state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
+    const tmp6 = state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4243) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
   }
   return tmp3;
 };
@@ -54,7 +54,7 @@ export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, a
     obj[2] = closure_0;
     obj[3] = arg2;
     obj[0] = obj;
-    obj[1] = tmp5(4211).PortalKeyboardState.REQUEST_OPEN;
+    obj[1] = tmp5(4243).PortalKeyboardState.REQUEST_OPEN;
     obj.setState(obj);
     const tmp5Result = tmp5(514);
   }
@@ -100,7 +100,7 @@ export const handlePortalKeyboardOpen = function handlePortalKeyboardOpen(id) {
   });
 };
 export const closePortalKeyboard = function closePortalKeyboard() {
-  zustandStore.setState({ state: require(4211) /* PortalKeyboardState */.PortalKeyboardState.CLOSED, keyboard: null });
+  zustandStore.setState({ state: require(4243) /* PortalKeyboardState */.PortalKeyboardState.CLOSED, keyboard: null });
 };
 export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnhandled() {
   let obj = zustandStore;
@@ -108,7 +108,7 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
   const keyboard = state.keyboard;
   let tmp3 = null == keyboard;
   if (tmp3) {
-    tmp3 = tmp2 === require(4211) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
+    tmp3 = tmp2 === require(4243) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
   }
   if (!tmp3) {
     let handlerId;
@@ -117,7 +117,7 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
     }
     if (null == handlerId) {
       obj = { state: null, keyboard: null };
-      obj[0] = require(4211) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
+      obj[0] = require(4243) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
       obj.setState(obj);
     }
   }
@@ -127,7 +127,7 @@ export const closePortalKeyboardRequest = function closePortalKeyboardRequest() 
   const field = zustandStore.getField("state");
   if (tmp4) {
     obj = { state: null };
-    obj[0] = tmp2(4211).PortalKeyboardState.REQUEST_CLOSE;
+    obj[0] = tmp2(4243).PortalKeyboardState.REQUEST_CLOSE;
     obj.setState(obj);
   }
 };

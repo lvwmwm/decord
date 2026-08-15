@@ -1,10 +1,10 @@
-// Module ID: 6956
-// Function ID: 6957
+// Module ID: 7395
+// Function ID: 7396
 // Name: context
-// Dependencies: [5, 32, 19, 6957, 6960, 3974, 700, 6961, 12, 4022, 6962, 2]
+// Dependencies: [5, 32, 19, 7396, 7399, 4006, 700, 7400, 12, 4054, 7401, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 6956 (context)
+// Module 7395 (context)
 import isIterable from "isIterable";
 import importAllResult from "noop";
 import createFromOrder from "createFromOrder";
@@ -21,14 +21,14 @@ export const NativeCheckoutStoreContextOrNull = context;
 export const useNativeCheckoutStore = function useNativeCheckoutStore(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3974) /* isIterable */.shallow;
+    shallow = require(4006) /* isIterable */.shallow;
   }
   return callback()(arg0, shallow);
 };
 export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3974) /* isIterable */.shallow;
+    shallow = require(4006) /* isIterable */.shallow;
   }
   context = importAllResult.useContext(context);
   let contextResult = null;
@@ -78,7 +78,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -178,7 +178,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -319,7 +319,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -447,7 +447,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -526,7 +526,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               v0 = 0;
               callback({ isCreateOrderLoading: false });
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp42) {
             isIterable = tmp42;
@@ -560,6 +560,6 @@ export const createNativeStore = function createNativeStore(arg0) {
     };
     obj[12] = _runRecreateOrder;
     return obj;
-  }, require(3974) /* isIterable */.shallow);
+  }, require(4006) /* isIterable */.shallow);
 };
 export const NativeCheckoutStoreContext = importDefaultResultResult[0];

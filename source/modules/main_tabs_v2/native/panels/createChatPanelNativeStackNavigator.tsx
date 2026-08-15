@@ -1,10 +1,10 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15209
+// Function ID: 15210
 // Name: ChatPanelNativeStackNavigator
-// Dependencies: [19, 21, 1500, 4197, 13505, 8633, 2]
+// Dependencies: [19, 21, 1501, 4229, 13537, 9931, 2]
 // Exports: default
 
-// Module 15160 (ChatPanelNativeStackNavigator)
+// Module 15209 (ChatPanelNativeStackNavigator)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -127,5 +127,5 @@ function ChatPanelNativeStackNavigator(arg0) {
 const result = require("createStandardNavigationFactories").fileFinishedImporting("modules/main_tabs_v2/native/panels/createChatPanelNativeStackNavigator.tsx");
 
 export default function createChatPanelNativeStackNavigator(arg0) {
-  return require(1500) /* createStandardNavigationFactories */.createNavigatorFactory(ChatPanelNativeStackNavigator)(arg0);
+  return require(1501) /* createStandardNavigationFactories */.createNavigatorFactory(ChatPanelNativeStackNavigator)(arg0);
 };

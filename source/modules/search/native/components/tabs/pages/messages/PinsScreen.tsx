@@ -1,9 +1,9 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15937
+// Function ID: 15938
 // Name: InitialPinsScreen
-// Dependencies: [19, 11128, 5961, 11786, 8468, 8467, 676, 21, 589, 15820, 11127, 15816, 11807, 15859, 15824, 15823, 15880, 2]
+// Dependencies: [19, 10865, 4971, 11510, 8507, 8506, 676, 21, 589, 15870, 10864, 15866, 11531, 15909, 15874, 15873, 15930, 2]
 
-// Module 15887 (InitialPinsScreen)
+// Module 15937 (InitialPinsScreen)
 import importAllResult from "noop";
 import handleChannelDelete from "handleChannelDelete";
 import { FetchState } from "handleChannelDelete";
@@ -172,7 +172,7 @@ const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
     obj[0] = searchContext;
     obj[1] = tab;
     obj[2] = isFocused;
-    let tmp5 = jsx(importDefault(15880), { searchContext: null, tab: null, isFocused: null });
+    let tmp5 = jsx(importDefault(15930), { searchContext: null, tab: null, isFocused: null });
   } else {
     obj = { searchContext: null, tab: null, isFocused: null };
     obj[0] = searchContext;

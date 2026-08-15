@@ -1,9 +1,9 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16578
+// Function ID: 16579
 // Name: handleChannelPreload
-// Dependencies: [1391, 1398, 5322, 5982, 2]
+// Dependencies: [1391, 1398, 5038, 7269, 2]
 
-// Module 16528 (handleChannelPreload)
+// Module 16578 (handleChannelPreload)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { isStaticChannelRoute } from "set";
 import "initialize";
@@ -21,8 +21,8 @@ ForumManager.prototype["handleChannelPreload"] = function handleChannelPreload(c
   if (!isStaticChannelRoute(channelId)) {
     channel = channel.getChannel(channelId);
     if (tmp3) {
-      require(5982) /* loadForumPostData */.preloadForumThreads(channel);
-      const obj2 = require(5982) /* loadForumPostData */;
+      require(7269) /* loadForumPostData */.preloadForumThreads(channel);
+      const obj2 = require(7269) /* loadForumPostData */;
     }
     tmp3 = null != channel && channel.isForumLikeChannel();
   }

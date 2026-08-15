@@ -1,9 +1,9 @@
-// Module ID: 5896
-// Function ID: 5897
+// Module ID: 7193
+// Function ID: 7194
 // Name: HotspotStore
-// Dependencies: [5897, 2, 5898, 5899]
+// Dependencies: [7194, 2, 7195, 7196]
 
-// Module 5896 (HotspotStore)
+// Module 7193 (HotspotStore)
 import importDefaultResult from "set";
 import HotspotLocations from "HotspotLocations";
 

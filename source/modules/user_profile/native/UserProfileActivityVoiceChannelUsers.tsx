@@ -1,10 +1,10 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12123
+// Function ID: 12124
 // Name: UserRow
-// Dependencies: [19, 4431, 21, 8876, 589, 5435, 4534, 1297, 9531, 1236, 2]
+// Dependencies: [19, 4559, 21, 4797, 589, 6291, 4796, 1297, 9450, 1236, 2]
 // Exports: default
 
-// Module 12388 (UserRow)
+// Module 12123 (UserRow)
 import "noop";
 import sortActivity from "sortActivity";
 import { jsx } from "jsxProd";
@@ -20,14 +20,14 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(8876);
+  let obj = user(4797);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [sortActivity];
   const stateFromStoresObject = user(589).useStateFromStoresObject(items, () => ({ status: outer1_3.getStatus(user.id), isMobileOnline: outer1_3.isMobileOnline(user.id), isVROnline: outer1_3.isVROnline(user.id) }));
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   obj = { onPress, label: null, icon: null, start: null, end: null };
   const obj2 = user(589);
-  obj[1] = importDefault(4534).getName(channel.guild_id, channel.id, user);
+  obj[1] = importDefault(4796).getName(channel.guild_id, channel.id, user);
   obj = { user, avatarDecoration, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true };
   obj[2] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[3] = channel.guild_id;
@@ -37,7 +37,7 @@ function UserRow(user) {
   obj[2] = jsx(user(1297).Avatar, { user, avatarDecoration, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true });
   obj[3] = start;
   obj[4] = end;
-  return jsx(user(5435).TableRow, { user, avatarDecoration, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true });
+  return jsx(user(6291).TableRow, { user, avatarDecoration, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");
 
@@ -70,7 +70,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   };
-  obj[3] = jsx(require(9531) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
+  obj[3] = jsx(require(9450) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
     data: users,
     keyExtractor(id) {
       return id.id;
@@ -88,7 +88,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   });
-  return jsx(importDefault(9531), {
+  return jsx(importDefault(9450), {
     data: users,
     keyExtractor(id) {
       return id.id;

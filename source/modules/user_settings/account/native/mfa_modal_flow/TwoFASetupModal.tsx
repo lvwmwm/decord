@@ -1,10 +1,10 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14139
+// Function ID: 14140
 // Name: TwoFAModalSetupSections
-// Dependencies: [19, 17, 14108, 21, 4342, 712, 1499, 14106, 5389, 4777, 1236, 14109, 5331, 14110, 14113, 14114, 14116, 5777, 8549, 5844, 2]
+// Dependencies: [19, 17, 14140, 21, 4661, 712, 1500, 14138, 6803, 4745, 1236, 14141, 6314, 14142, 14145, 14146, 14148, 7127, 8588, 6312, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 14107 (TwoFAModalSetupSections)
+// Module 14139 (TwoFAModalSetupSections)
 import NavigationStack from "NavigationStack";
 import { View } from "useInitialValue";
 import { TwoFAModalSetupSections } from "frozen";
@@ -30,22 +30,22 @@ export default function TwoFASetupModal(initialRouteName) {
   }
   let obj = {
     initialRouteName: LANDING,
-    screens: importDefault(5777)(() => {
-      let obj = callback(8549);
+    screens: importDefault(7127)(() => {
+      let obj = callback(8588);
       callback = obj.generateTotpSecret();
       obj = {};
       obj = { headerLeft: null, headerTitle: null, render: null };
-      obj[0] = callback(5331).getHeaderCloseButton(callback2(14106).close);
+      obj[0] = callback(6314).getHeaderCloseButton(callback2(14138).close);
       obj[1] = function headerTitle() {
-        return callback3(callback(14109).PageMarker, { currentPage: dependencyMap2[constants.LANDING], numMarkers: Object.keys(dependencyMap2).length - 1 });
+        return callback3(callback(14141).PageMarker, { currentPage: dependencyMap2[constants.LANDING], numMarkers: Object.keys(dependencyMap2).length - 1 });
       };
       obj[2] = function render() {
-        return callback3(callback2(14110), {});
+        return callback3(callback2(14142), {});
       };
       obj[constants.LANDING] = obj;
       obj[constants.SCAN] = {
         headerTitle() {
-          return callback3(callback(14109).PageMarker, { currentPage: dependencyMap2[constants.SCAN], numMarkers: Object.keys(dependencyMap2).length - 1 });
+          return callback3(callback(14141).PageMarker, { currentPage: dependencyMap2[constants.SCAN], numMarkers: Object.keys(dependencyMap2).length - 1 });
         },
         render() {
           return outer1_6(outer1_1(outer1_2[14]), { totpSecret: closure_0 });
@@ -53,20 +53,20 @@ export default function TwoFASetupModal(initialRouteName) {
       };
       obj[constants.ENTER_CODE] = {
         headerTitle() {
-          return callback3(callback(14109).PageMarker, { currentPage: dependencyMap2[constants.ENTER_CODE], numMarkers: Object.keys(dependencyMap2).length - 1 });
+          return callback3(callback(14141).PageMarker, { currentPage: dependencyMap2[constants.ENTER_CODE], numMarkers: Object.keys(dependencyMap2).length - 1 });
         },
         render() {
           return outer1_6(outer1_1(outer1_2[15]), { totpSecret: closure_0 });
         }
       };
       const obj1 = { headerLeft: null, headerTitle: null, render: null };
-      const obj4 = callback(5331);
-      obj1[0] = callback(5331).getHeaderCloseButton(callback2(14106).close);
+      const obj4 = callback(6314);
+      obj1[0] = callback(6314).getHeaderCloseButton(callback2(14138).close);
       obj1[1] = function headerTitle() {
         return null;
       };
       obj1[2] = function render() {
-        return callback3(callback2(14116), {});
+        return callback3(callback2(14148), {});
       };
       obj[constants.SUCCESS] = obj1;
       return obj;
@@ -76,14 +76,14 @@ export default function TwoFASetupModal(initialRouteName) {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(5844) /* NavigationStack */.Navigator, obj);
+  return callback(require(6312) /* NavigationStack */.Navigator, obj);
 };
 export const TwoFASetupModalScreen = function TwoFASetupModalScreen(children) {
   let navigation;
   let name;
   const tmp = createCacheKey();
   let i4jeWR = dependencyMap;
-  let obj = navigation(1499);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   name = navigation.getState().routes[navigation.getState(navigation).routes.length - 1].name;
   const items = [navigation, name];
@@ -107,8 +107,8 @@ export const TwoFASetupModalScreen = function TwoFASetupModalScreen(children) {
       stringResult = intl.string(tmp2(1236).t.XiOHRX);
     }
     obj1[1] = stringResult;
-    obj1 = tmp8(tmp2(4777).Button, obj1);
+    obj1 = tmp8(tmp2(4745).Button, obj1);
     obj[2] = obj1;
-    closure_6(tmp2(5389).SafeAreaPaddingView, obj);
+    closure_6(tmp2(6803).SafeAreaPaddingView, obj);
   }
 };

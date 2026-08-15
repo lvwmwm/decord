@@ -1,10 +1,10 @@
-// Module ID: 8577
-// Function ID: 8578
+// Module ID: 8616
+// Function ID: 8617
 // Name: OrSeparator
-// Dependencies: [19, 17, 8578, 21, 4342, 712, 4338, 1236, 5430, 1499, 1493, 8536, 4777, 2]
+// Dependencies: [19, 17, 8617, 21, 4661, 712, 4734, 1236, 5441, 1500, 1494, 8575, 4745, 2]
 // Exports: default
 
-// Module 8577 (OrSeparator)
+// Module 8616 (OrSeparator)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -69,7 +69,7 @@ export default function JoinServer(arg0) {
   let navigation;
   ({ error, inviteString, onInviteChange } = arg0);
   const tmp = createCacheKey();
-  let obj = navigation(1499);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
@@ -78,22 +78,22 @@ export default function JoinServer(arg0) {
   const callback = React.useCallback(() => {
     navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj[0] = importDefault(5430)().insets.bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(5441)().insets.bottom + importDefault(712).space.PX_16;
   items1[1] = obj;
   obj[1] = items1;
   let tmp7Result = null;
-  if (importDefault(1493)().height > closure_6) {
+  if (importDefault(1494)().height > closure_6) {
     const obj1 = { children: null };
     const obj2 = { style: null, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     obj2[0] = tmp.header;
     const intl = tmp4(1236).intl;
     obj2[4] = intl.string(tmp4(1236).t.jlfuFW);
-    const items2 = [callback(tmp4(4338).Text, obj2), ];
+    const items2 = [callback(tmp4(4734).Text, obj2), ];
     const obj3 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj3[0] = tmp.description;
     const intl2 = tmp4(1236).intl;
     obj3[3] = intl2.string(tmp4(1236).t.lVvN3A);
-    items2[1] = callback(tmp4(4338).Text, obj3);
+    items2[1] = callback(tmp4(4734).Text, obj3);
     obj1[0] = items2;
     tmp7Result = tmp7(closure_10, obj1);
   }
@@ -110,7 +110,7 @@ export default function JoinServer(arg0) {
   obj5[5] = intl4.string(navigation(1236).t.qreV25);
   obj5[10] = tmp.textInput;
   obj5[11] = onDone;
-  items3[1] = callback(importDefault(8536), obj5);
+  items3[1] = callback(importDefault(8575), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl5 = tmp4(1236).intl;
   obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {
@@ -121,7 +121,7 @@ export default function JoinServer(arg0) {
       return callback(navigation(table[6]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
     }
   });
-  items3[2] = callback(navigation(4338).Text, obj6);
+  items3[2] = callback(navigation(4734).Text, obj6);
   obj4[0] = items3;
   const items4 = [closure_9(closure_4, obj4), ];
   const obj8 = { children: null };
@@ -134,7 +134,7 @@ export default function JoinServer(arg0) {
   obj10[3] = submitting;
   obj10[4] = submitting;
   obj10[5] = onDone;
-  items5[1] = callback(navigation(4777).Button, obj10);
+  items5[1] = callback(navigation(4745).Button, obj10);
   items5[2] = callback(OrSeparator, {});
   const obj11 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1236).intl;
@@ -142,7 +142,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1236).intl;
   obj11[3] = intl9.string(navigation(1236).t["MOqX/G"]);
   obj11[4] = callback;
-  items5[3] = callback(navigation(4777).Button, obj11);
+  items5[3] = callback(navigation(4745).Button, obj11);
   obj8[0] = items5;
   items4[1] = closure_9(closure_10, obj8);
   obj[2] = items4;

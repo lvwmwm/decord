@@ -1,9 +1,9 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15027
+// Function ID: 15028
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 4034, 14983, 2]
+// Dependencies: [8198, 10669, 1236, 4066, 15028, 2]
 
-// Module 14982 (toggle)
+// Module 15027 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -11,7 +11,7 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.XpBObB);
   },
-  parent: require("MobileSetting").MobileSetting.CONNECTED_GAMES,
+  parent: require("MobileUserSettings").MobileUserSettings.CONNECTED_GAMES,
   useValue: require("explicitContentFromProto").AllowGameFriendDmsInDiscord.useSetting,
   onValueChange: require("explicitContentFromProto").AllowGameFriendDmsInDiscord.updateSetting,
   useSearchTerms() {
@@ -26,7 +26,7 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.XpBObB);
   },
-  parent: require("MobileSetting").MobileSetting.CONNECTED_GAMES,
+  parent: require("MobileUserSettings").MobileUserSettings.CONNECTED_GAMES,
   useValue: require("explicitContentFromProto").AllowGameFriendDmsInDiscord.useSetting,
   onValueChange: require("explicitContentFromProto").AllowGameFriendDmsInDiscord.updateSetting,
   useSearchTerms() {

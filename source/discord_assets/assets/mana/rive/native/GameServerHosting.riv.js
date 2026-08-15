@@ -1,9 +1,9 @@
-// Module ID: 4150
-// Function ID: 4151
+// Module ID: 4182
+// Function ID: 4183
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4150 (metadata)
+// Module 4182 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/GameServerHosting.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/03622d5cf6122c0557116bfd66c48955caf9a146c3dc6dcbd53c94fe0fe58a3a.riv";

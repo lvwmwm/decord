@@ -1,10 +1,10 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16123
+// Function ID: 16124
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 7871, 21, 4342, 712, 5389, 7817, 1236, 5888, 8093, 4338, 4058, 14074, 2]
+// Dependencies: [19, 17, 5438, 21, 4661, 712, 6803, 8035, 1236, 5256, 8143, 4734, 4090, 14106, 2]
 // Exports: default
 
-// Module 16073 (SuspendedUserSafetyHubPage)
+// Module 16123 (SuspendedUserSafetyHubPage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubView";
@@ -35,14 +35,14 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(5888).closeSuspendedUser();
+    callback(5256).closeSuspendedUser();
   };
-  obj1[3] = importDefault(8093);
-  const items = [callback(require(7817) /* IconButton */.IconButton, obj1), ];
+  obj1[3] = importDefault(8143);
+  const items = [callback(require(8035) /* IconButton */.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
-      callback(4058).openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
+      callback(4090).openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
     },
     variant: "text-xs/medium",
     color: "control-critical-primary-text-default",
@@ -53,12 +53,12 @@ export default function SuspendedUserSafetyHubPage() {
   const obj3 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl3.string(require(1236) /* getSystemLocale */.t["9JceHN"]);
-  items1[2] = callback(require(4338) /* Text */.Text, obj3);
+  items1[2] = callback(require(4734) /* Text */.Text, obj3);
   obj2[4] = items1;
-  items[1] = callback2(require(4338) /* Text */.Text, obj2);
+  items[1] = callback2(require(4734) /* Text */.Text, obj2);
   obj[1] = items;
-  const items2 = [callback2(View, obj), callback(importDefault(14074), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(14106), { visible: true })];
   obj[1] = items2;
   obj[3] = callback2(View, obj);
-  return callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

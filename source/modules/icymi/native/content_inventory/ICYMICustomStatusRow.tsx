@@ -1,10 +1,10 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15767
+// Function ID: 15768
 // Name: UploadPlaceholder
-// Dependencies: [32, 19, 17, 1922, 8961, 21, 712, 4342, 15658, 1297, 10247, 4338, 1236, 8462, 4191, 589, 4596, 9300, 9514, 9586, 500, 4909, 4301, 9732, 11196, 7721, 11, 687, 15714, 4187, 7170, 15718, 8363, 2]
+// Dependencies: [32, 19, 17, 1922, 9044, 21, 712, 4661, 15708, 1297, 10447, 4734, 1236, 8501, 4223, 589, 4815, 9455, 9287, 9541, 500, 5433, 4333, 9925, 10897, 7939, 11, 687, 15764, 4219, 4967, 15768, 8402, 2]
 // Exports: default
 
-// Module 15717 (UploadPlaceholder)
+// Module 15767 (UploadPlaceholder)
 import SolidCutout from "SolidCutout";
 import ActivityEmoji from "ActivityEmoji";
 import { View } from "DISPLAY_NAME_STYLES_FONT_FAMILY_MAP";
@@ -21,13 +21,13 @@ const require = arg1;
 function UploadPlaceholder() {
   let obj = { style: callback3(false).uploadContainer, children: null };
   obj = { source: null, size: null };
-  obj[0] = importDefault(10247);
+  obj[0] = importDefault(10447);
   obj[1] = require(1297) /* Button */.IconSizes.SMALL;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "text-md/normal", color: "text-strong", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["3UB9ad"]);
-  items[1] = callback(require(4338) /* Text */.Text, obj);
+  items[1] = callback(require(4734) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }

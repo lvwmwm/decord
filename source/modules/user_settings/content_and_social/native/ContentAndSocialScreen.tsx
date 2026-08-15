@@ -1,14 +1,14 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 15009
+// Function ID: 15010
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 8148, 676, 21, 4342, 712, 1236, 1993, 14965, 12116, 14968, 5979, 10421, 14140, 13959, 14969, 4338, 2]
+// Dependencies: [32, 19, 17, 8198, 676, 21, 4661, 712, 1236, 1993, 15010, 11853, 15013, 5025, 10669, 14172, 13991, 15014, 4734, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14964 (ContentAndSocialSettings)
+// Module 15009 (ContentAndSocialSettings)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "useAuthorizedSlayerApplications";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -191,7 +191,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   let showLoadingIndicator;
   let slayerSdkApplications;
   const tmp = createCacheKey();
-  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14969)());
+  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(15014)());
   if (showLoadingIndicator) {
     let obj = { style: null };
     obj[0] = tmp.loadingIndicator;
@@ -202,20 +202,20 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let obj1 = { variant: "text-md/semibold", color: "text-strong", children: null };
     let intl = require(1236) /* getSystemLocale */.intl;
     obj1[2] = intl.string(require(1236) /* getSystemLocale */.t["+0U77d"]);
-    let items = [callback2(require(4338) /* Text */.Text, obj1), ];
+    let items = [callback2(require(4734) /* Text */.Text, obj1), ];
     let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
     let intl2 = require(1236) /* getSystemLocale */.intl;
     const obj3 = { helpdeskArticle: null };
     obj3[0] = tmp2(1993).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.V8wClM, obj3);
-    items[1] = callback2(require(4338) /* Text */.Text, obj2);
+    items[1] = callback2(require(4734) /* Text */.Text, obj2);
     obj[1] = items;
     tmp7 = callback3(closure_6, obj);
     const tmp2Result = tmp2(1993);
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(13959), obj);
+    tmp7 = callback2(tmp2(13991), obj);
   }
   return tmp7;
 };

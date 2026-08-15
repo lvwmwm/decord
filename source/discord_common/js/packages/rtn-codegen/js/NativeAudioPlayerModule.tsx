@@ -1,9 +1,9 @@
-// Module ID: 13876
-// Function ID: 13877
+// Module ID: 13908
+// Function ID: 13909
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13876 (enforcing)
+// Module 13908 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioPlayerModule");

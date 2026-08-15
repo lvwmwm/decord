@@ -1,10 +1,10 @@
-// Module ID: 4027
-// Function ID: 4028
+// Module ID: 4059
+// Function ID: 4060
 // Name: _importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 4027 (_importWithRetry)
+// Module 4059 (_importWithRetry)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -30,7 +30,7 @@ function _importWithRetry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

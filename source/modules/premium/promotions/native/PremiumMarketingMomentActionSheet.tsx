@@ -1,16 +1,16 @@
-// Module ID: 16100
-// Function ID: 16101
+// Module ID: 16150
+// Function ID: 16151
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 4334, 676, 1388, 21, 4342, 712, 589, 5789, 709, 7821, 9413, 503, 7713, 12760, 5458, 4915, 8933, 5329, 4338, 4058, 9575, 1236, 2]
+// Dependencies: [19, 17, 4662, 676, 1388, 21, 4661, 712, 589, 7139, 709, 8039, 9177, 503, 7931, 12838, 6950, 4830, 9018, 5449, 4734, 4090, 9498, 1236, 2]
 // Exports: default
 
-// Module 16100 (PremiumMarketingMomentActionSheet)
+// Module 16150 (PremiumMarketingMomentActionSheet)
 import preload from "preload";
 import { View } from "items";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AnalyticsPages } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "module_4058";
+import jsxProd from "module_4090";
 import createCacheKey from "createCacheKey";
 
 let c9;
@@ -97,7 +97,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   let tmp5Result = tmp5(tmp3[12]);
   obj[0] = markAsDismissed(promotionId[13]).ImpressionTypes.HALFSHEET;
   obj[1] = markAsDismissed(promotionId[13]).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
-  obj = { component_type: tmp2(tmp3[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: component_id.componentId, dismissible_content: bottomSheetData.dismissibleContent };
+  obj = { component_type: tmp2(tmp3[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: component_id.componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId };
   obj[2] = obj;
   tmp5Result(obj);
   let tmp2Result = tmp2(tmp3[15]);

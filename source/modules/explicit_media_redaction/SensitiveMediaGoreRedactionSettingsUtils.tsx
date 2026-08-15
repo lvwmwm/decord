@@ -1,10 +1,10 @@
-// Module ID: 5979
-// Function ID: 5980
+// Module ID: 5025
+// Function ID: 5026
 // Name: resolveGoreSettingWithDefaults
-// Dependencies: [19, 1922, 676, 1306, 4040, 4047, 4034, 2]
+// Dependencies: [19, 1922, 676, 1306, 4072, 4079, 4066, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 5979 (resolveGoreSettingWithDefaults)
+// Module 5025 (resolveGoreSettingWithDefaults)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { HelpdeskArticles } from "ME";
@@ -28,7 +28,7 @@ function resolveGoreSettingWithDefaults(isFriend) {
   }
   currentUser = currentUser.getCurrentUser();
   let ExplicitContentRedaction = dependencyMap;
-  if (obj.isSettingTeenByDefault(require(4047) /* SettingsDefaultFeature */.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
+  if (obj.isSettingTeenByDefault(require(4079) /* SettingsDefaultFeature */.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
     if (isDm === undefined) {
       isDm = false;
     }
@@ -105,7 +105,7 @@ export const resolveGoreSettingWithDefaultsForTeen = function resolveGoreSetting
 export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDefault(arg0) {
   let setting = arg0;
   if (arg0 == null) {
-    const GoreContentSettings = require(4034) /* explicitContentFromProto */.GoreContentSettings;
+    const GoreContentSettings = require(4066) /* explicitContentFromProto */.GoreContentSettings;
     setting = GoreContentSettings.getSetting();
   }
   let goreContentGuilds;
@@ -126,7 +126,7 @@ export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDe
   return obj;
 };
 export const updateGoreContentSetting = function updateGoreContentSetting(arg0) {
-  const GoreContentSettings = require(4034) /* explicitContentFromProto */.GoreContentSettings;
+  const GoreContentSettings = require(4066) /* explicitContentFromProto */.GoreContentSettings;
   const setting = GoreContentSettings.getSetting();
   let goreContentGuilds;
   if (setting != null) {
@@ -143,7 +143,7 @@ export const updateGoreContentSetting = function updateGoreContentSetting(arg0) 
     goreContentFriendDm = setting.goreContentFriendDm;
   }
   obj[2] = resolveGoreSettingWithDefaults({ setting: goreContentFriendDm, isDm: true, isFriend: true });
-  const GoreContentSettings2 = require(4034) /* explicitContentFromProto */.GoreContentSettings;
+  const GoreContentSettings2 = require(4066) /* explicitContentFromProto */.GoreContentSettings;
   obj = {};
   const merged = Object.assign(obj);
   const merged1 = Object.assign(arg0);

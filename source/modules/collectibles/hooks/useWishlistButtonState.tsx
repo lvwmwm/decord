@@ -1,10 +1,10 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9232
+// Function ID: 9233
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7150, 5789, 1903, 589, 9420, 9427, 1363, 1236, 2]
+// Dependencies: [5, 32, 19, 5365, 7139, 1903, 589, 9185, 9192, 1363, 1236, 2]
 // Exports: useWishlistButtonState
 
-// Module 9465 (useWishlistButtonState)
+// Module 9232 (useWishlistButtonState)
 import isNullOrEmpty from "isNullOrEmpty";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -72,7 +72,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

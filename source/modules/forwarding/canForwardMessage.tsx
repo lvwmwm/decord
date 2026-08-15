@@ -1,10 +1,10 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 10851
+// Function ID: 10852
 // Name: canForwardMessage
-// Dependencies: [1981, 1391, 1910, 3989, 676, 1403, 589, 2]
+// Dependencies: [1981, 1391, 1910, 4021, 676, 1403, 589, 2]
 // Exports: useCanForwardMessage
 
-// Module 11114 (canForwardMessage)
+// Module 10851 (canForwardMessage)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

@@ -1,10 +1,10 @@
-// Module ID: 5402
-// Function ID: 5403
+// Module ID: 6913
+// Function ID: 6914
 // Name: getWindowId
 // Dependencies: [12, 2]
 // Exports: getMainWindowId, getWindowId, setupWindowId
 
-// Module 5402 (getWindowId)
+// Module 6913 (getWindowId)
 const result = require("set").fileFinishedImporting("utils/web/WindowIdUtils.tsx");
 
 export const getWindowId = function getWindowId(defaultView) {

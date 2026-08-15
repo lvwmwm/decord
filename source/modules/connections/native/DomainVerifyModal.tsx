@@ -1,10 +1,10 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 9808
+// Function ID: 9809
 // Name: DomainScreen
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 1499, 530, 5389, 4338, 1236, 8536, 10559, 4777, 4572, 5331, 5844, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 1500, 530, 6803, 4734, 1236, 8575, 9809, 4745, 5260, 6314, 6312, 2]
 // Exports: default
 
-// Module 10558 (DomainScreen)
+// Module 9808 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "NavigationStack";
@@ -238,7 +238,7 @@ function HTTPProofScreen(children) {
   let callback;
   let React;
   const tmp = createCacheKey();
-  let obj = require(1499) /* useNavigation */;
+  let obj = require(1500) /* useNavigation */;
   dependencyMap = obj.useNavigation();
   [tmp5, c3] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
@@ -247,21 +247,21 @@ function HTTPProofScreen(children) {
   obj = { variant: "text-md/normal", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.p4ql7y);
-  const items = [callback2(require(4338) /* Text */.Text, obj), , , , ];
+  const items = [callback2(require(4734) /* Text */.Text, obj), , , , ];
   const obj1 = { style: tmp.dns, children: null };
   const obj2 = { variant: "text-md/normal", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl2.string(require(1236) /* getSystemLocale */.t.GL3q7k);
-  const items1 = [callback2(require(4338) /* Text */.Text, obj2), , , ];
+  const items1 = [callback2(require(4734) /* Text */.Text, obj2), , , ];
   const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
-  let obj6 = require(10559) /* EXAMPLE_DOMAIN */;
+  let obj6 = require(9809) /* EXAMPLE_DOMAIN */;
   obj3[3] = obj6.getHttpName(domain);
-  items1[1] = callback2(require(4338) /* Text */.Text, obj3);
+  items1[1] = callback2(require(4734) /* Text */.Text, obj3);
   const obj4 = { variant: "text-md/normal", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl3.string(require(1236) /* getSystemLocale */.t.PVLriT);
-  items1[2] = callback2(require(4338) /* Text */.Text, obj4);
-  items1[3] = callback2(require(4338) /* Text */.Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: children.proof });
+  items1[2] = callback2(require(4734) /* Text */.Text, obj4);
+  items1[3] = callback2(require(4734) /* Text */.Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: children.proof });
   obj1[1] = items1;
   items[1] = callback3(View, obj1);
   let tmp9Result = null != tmp5;
@@ -269,7 +269,7 @@ function HTTPProofScreen(children) {
     obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: null, children: null };
     obj6[2] = tmp.error;
     obj6[3] = tmp5;
-    tmp9Result = tmp9(tmp2(4338).Text, obj6);
+    tmp9Result = tmp9(tmp2(4734).Text, obj6);
   }
   items[2] = tmp9Result;
   const obj7 = { style: tmp.button, children: null };
@@ -321,7 +321,7 @@ function HTTPProofScreen(children) {
       callback2(false);
     });
   };
-  obj7[1] = callback2(require(4777) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4745) /* Button */.Button, obj8);
   items[3] = callback2(View, obj7);
   const obj9 = { style: tmp.button, children: null };
   const obj10 = { variant: "secondary", text: null, onPress: null };
@@ -330,10 +330,10 @@ function HTTPProofScreen(children) {
   obj10[2] = function onPress() {
 
   };
-  obj9[1] = callback2(require(4777) /* Button */.Button, obj10);
+  obj9[1] = callback2(require(4745) /* Button */.Button, obj10);
   items[4] = callback2(View, obj9);
   obj[2] = items;
-  return callback3(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback3(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 ({ Endpoints: closure_6, PlatformTypes: error } = ME);
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
@@ -358,7 +358,7 @@ export default function DomainVerifyModal(arg0) {
     obj = { headerTitle: null, headerLeft: null, render: null };
     const intl = onClose(1236).intl;
     obj[0] = intl.string(onClose(1236).t["7lo8+e"]);
-    let obj2 = onClose(5331);
+    let obj2 = onClose(6314);
     obj[1] = obj2.getHeaderBackButton(onClose);
     obj[2] = function render() {
       return outer1_8(outer1_12, { onClose });
@@ -367,7 +367,7 @@ export default function DomainVerifyModal(arg0) {
     obj = { headerTitle: null, headerLeft: null, render: null };
     const intl2 = onClose(1236).intl;
     obj[0] = intl2.string(onClose(1236).t["7lo8+e"]);
-    obj[1] = onClose(5331).getHeaderBackButton(onClose);
+    obj[1] = onClose(6314).getHeaderBackButton(onClose);
     obj[2] = function render(domain) {
       return outer1_8(outer1_13, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -375,8 +375,8 @@ export default function DomainVerifyModal(arg0) {
     const obj1 = { headerTitle: null, headerLeft: null, render: null };
     const intl3 = onClose(1236).intl;
     obj1[0] = intl3.string(onClose(1236).t["7lo8+e"]);
-    const obj5 = onClose(5331);
-    obj1[1] = onClose(5331).getHeaderBackButton(onClose);
+    const obj5 = onClose(6314);
+    obj1[1] = onClose(6314).getHeaderBackButton(onClose);
     obj1[2] = function render(domain) {
       return outer1_8(outer1_14, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -386,6 +386,6 @@ export default function DomainVerifyModal(arg0) {
     obj2[1] = constants.DOMAIN;
     const intl4 = onClose(1236).intl;
     obj2[2] = intl4.string(onClose(1236).t["13/7kX"]);
-    return callback2(onClose(5844).Navigator, obj2);
+    return callback2(onClose(6312).Navigator, obj2);
   }
 };

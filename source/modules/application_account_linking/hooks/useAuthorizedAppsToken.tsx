@@ -1,10 +1,10 @@
-// Module ID: 5796
-// Function ID: 5797
+// Module ID: 7146
+// Function ID: 7147
 // Name: useAuthorizedAppsTokens
-// Dependencies: [19, 5311, 589, 1370, 5797, 2]
+// Dependencies: [19, 5289, 589, 1370, 7147, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5796 (useAuthorizedAppsTokens)
+// Module 7146 (useAuthorizedAppsTokens)
 import noop from "noop";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";

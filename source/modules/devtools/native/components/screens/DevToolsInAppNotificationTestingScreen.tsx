@@ -1,10 +1,10 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15179
+// Function ID: 15180
 // Name: getSelectedGuildChannel
-// Dependencies: [19, 17, 5280, 1395, 3999, 1391, 1910, 1979, 1922, 676, 21, 4342, 712, 4062, 8028, 9829, 9831, 5048, 11, 1628, 1297, 5828, 5435, 13925, 5442, 2]
+// Dependencies: [19, 17, 6769, 1395, 4031, 1391, 1910, 1979, 1922, 676, 21, 4661, 712, 4094, 8078, 10029, 10031, 4964, 11, 1629, 1297, 6286, 6291, 13957, 6297, 2]
 // Exports: default
 
-// Module 15130 (getSelectedGuildChannel)
+// Module 15179 (getSelectedGuildChannel)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { ScrollView } from "StickerFormat";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
@@ -30,7 +30,7 @@ function getSelectedGuildChannel() {
     channel = store.getChannel(channelId);
   }
   if (null == channel) {
-    let obj1 = importDefault(4062);
+    let obj1 = importDefault(4094);
     let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -54,9 +54,9 @@ function getSelectedGuildChannel() {
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
     };
-    importDefault(4062).open(obj);
+    importDefault(4094).open(obj);
     obj1 = null;
-    const obj5 = importDefault(4062);
+    const obj5 = importDefault(4094);
   } else {
     obj1 = { channel: null, guild: null };
     ({ channel: obj4[0], guild: obj4[1] } = obj);
@@ -73,7 +73,7 @@ function buildTestMessageData(arg0, items) {
     channel = store.getChannel(channelId);
   }
   if (null == channel) {
-    let obj1 = importDefault(4062);
+    let obj1 = importDefault(4094);
     let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -92,7 +92,7 @@ function buildTestMessageData(arg0, items) {
   }
   let currentUser = authStore.getCurrentUser();
   if (null == currentUser) {
-    let obj3 = importDefault(4062);
+    let obj3 = importDefault(4094);
     obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -114,7 +114,7 @@ function buildTestMessageData(arg0, items) {
         } else {
           obj3 = { id: null, format_type: null, name: "Cheer" };
           obj3[0] = tmp20;
-          obj3[1] = require(5048) /* StickerFormat */.StickerFormat.APNG;
+          obj3[1] = require(4964) /* StickerFormat */.StickerFormat.APNG;
         }
         const items1 = [obj3];
         obj1[2] = items1;
@@ -203,13 +203,13 @@ function buildReactionNotification(arg0, items) {
     obj[6] = closure_21;
     obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
     obj[0] = message.id;
-    obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.REACTION);
+    obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.REACTION);
     obj[2] = function onDismiss() {
       return callback(table[16]).clearNotification();
     };
-    const obj2 = require(9829) /* isReactionMilestoneNotification */;
+    const obj2 = require(10029) /* isReactionMilestoneNotification */;
     const tmp12 = InAppNotificationTypes;
-    obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+    obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
     const merged = Object.assign(obj);
     return obj;
   }
@@ -250,13 +250,13 @@ let items2 = [
         obj[4] = message;
         obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj[0] = message.id;
-        obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
+        obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
         obj[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj2 = require(9829) /* isReactionMilestoneNotification */;
+        const obj2 = require(10029) /* isReactionMilestoneNotification */;
         const tmp9 = InAppNotificationTypes;
-        obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj);
         return obj;
       }
@@ -297,12 +297,12 @@ let items2 = [
         obj[3] = obj;
         const obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = message.id;
-        obj1[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REMINDER);
+        obj1[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REMINDER);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj5 = require(9829) /* isReactionMilestoneNotification */;
-        obj1[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj5 = require(10029) /* isReactionMilestoneNotification */;
+        obj1[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         return obj;
       }
@@ -339,7 +339,7 @@ const items3 = [
         channel = store.getChannel(channelId);
       }
       if (null == channel) {
-        let obj1 = importDefault(4062);
+        let obj1 = importDefault(4094);
         let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -369,12 +369,12 @@ const items3 = [
         obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = castResult;
         const obj5 = importDefault(11);
-        obj1[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
+        obj1[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj8 = require(9829) /* isReactionMilestoneNotification */;
-        obj1[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj8 = require(10029) /* isReactionMilestoneNotification */;
+        obj1[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         return obj;
       }
@@ -388,7 +388,7 @@ const items3 = [
       const tmp = getSelectedGuildChannel();
       let currentUser = authStore.getCurrentUser();
       if (null == currentUser) {
-        let obj = importDefault(4062);
+        let obj = importDefault(4094);
         obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -417,12 +417,12 @@ const items3 = [
           const obj2 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
           obj2[0] = tmp11.id;
           const obj5 = importDefault(11);
-          obj2[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.FORUM_THREAD_CREATED);
+          obj2[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.FORUM_THREAD_CREATED);
           obj2[2] = function onDismiss() {
             return callback(table[16]).clearNotification();
           };
-          const obj8 = require(9829) /* isReactionMilestoneNotification */;
-          obj2[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+          const obj8 = require(10029) /* isReactionMilestoneNotification */;
+          obj2[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
           const merged = Object.assign(obj2);
           return obj1;
         }
@@ -437,12 +437,12 @@ const items3 = [
     build: function buildBugReporterNotification() {
       let obj = { type: InAppNotificationTypes.BUG_REPORTER, image: null };
       obj = { key: "dev-tools-bug-reporter-test", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.BUG_REPORTER);
+      obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.BUG_REPORTER);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(9829) /* isReactionMilestoneNotification */;
-      obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+      const obj3 = require(10029) /* isReactionMilestoneNotification */;
+      obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -460,15 +460,15 @@ const items3 = [
         ({ channel: obj[1], guild: obj[2] } = tmp);
         obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj[0] = tmp.guild.id;
-        obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.ALERT);
+        obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.ALERT);
         obj[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj3 = require(9829) /* isReactionMilestoneNotification */;
-        obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj3 = require(10029) /* isReactionMilestoneNotification */;
+        obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj);
         tmp2 = obj;
-        const obj4 = require(9829) /* isReactionMilestoneNotification */;
+        const obj4 = require(10029) /* isReactionMilestoneNotification */;
       }
       return tmp2;
     }
@@ -480,7 +480,7 @@ const items3 = [
     build: function buildMessageRequestNotification() {
       let currentUser = authStore.getCurrentUser();
       if (null == currentUser) {
-        let obj = importDefault(4062);
+        let obj = importDefault(4094);
         obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -496,15 +496,15 @@ const items3 = [
         const _HermesInternal = HermesInternal;
         const obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = "dev-tools-message-request-" + currentUser.id;
-        obj1[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REQUEST);
+        obj1[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REQUEST);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj5 = require(9829) /* isReactionMilestoneNotification */;
-        obj1[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj5 = require(10029) /* isReactionMilestoneNotification */;
+        obj1[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         tmp5 = obj;
-        const obj6 = require(9829) /* isReactionMilestoneNotification */;
+        const obj6 = require(10029) /* isReactionMilestoneNotification */;
       }
       return tmp5;
     }
@@ -516,12 +516,12 @@ const items3 = [
     build: function buildRestrictedHoursWarningNotification() {
       let obj = { type: InAppNotificationTypes.RESTRICTED_HOURS_WARNING, title: "Restricted Hours Warning", subtitle: "Test restricted hours warning." };
       obj = { key: "dev-tools-restricted-hours-warning", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_HOURS_WARNING);
+      obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_HOURS_WARNING);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(9829) /* isReactionMilestoneNotification */;
-      obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+      const obj3 = require(10029) /* isReactionMilestoneNotification */;
+      obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -533,12 +533,12 @@ const items3 = [
     build: function buildRestrictedScheduleUpdatedNotification() {
       let obj = { type: InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED, title: "Restricted Schedule Updated", subtitle: "Test restricted schedule update." };
       obj = { key: "dev-tools-restricted-schedule-updated", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED);
+      obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(9829) /* isReactionMilestoneNotification */;
-      obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+      const obj3 = require(10029) /* isReactionMilestoneNotification */;
+      obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -568,13 +568,13 @@ let obj2 = {
       obj[4] = message;
       obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
       obj[0] = message.id;
-      obj[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
+      obj[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj2 = require(9829) /* isReactionMilestoneNotification */;
+      const obj2 = require(10029) /* isReactionMilestoneNotification */;
       const tmp9 = InAppNotificationTypes;
-      obj[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+      obj[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -591,7 +591,7 @@ let obj3 = {
       channel = store.getChannel(channelId);
     }
     if (null == channel) {
-      let obj1 = importDefault(4062);
+      let obj1 = importDefault(4094);
       let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
       obj[1] = function icon() {
         return callback2(callback(table[14]).WarningIcon, {});
@@ -621,12 +621,12 @@ let obj3 = {
       obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
       obj1[0] = castResult;
       const obj5 = importDefault(11);
-      obj1[1] = require(9829) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
+      obj1[1] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
       obj1[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj8 = require(9829) /* isReactionMilestoneNotification */;
-      obj1[3] = require(9829) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+      const obj8 = require(10029) /* isReactionMilestoneNotification */;
+      obj1[3] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj1);
       return obj;
     }
@@ -644,7 +644,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
     }
   }, []);
   let obj = { style: tmp.container, contentContainerStyle: items, children: null };
-  items = [tmp.content, { paddingBottom: tmp.content.padding + importDefault(1628)().bottom }];
+  items = [tmp.content, { paddingBottom: tmp.content.padding + importDefault(1629)().bottom }];
   obj = { size: null };
   obj[0] = importDefault(712).space.PX_16;
   const items1 = [
@@ -683,7 +683,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
     obj[4] = outer1_14(callback(outer1_2[24]).TableRowArrow, {});
     return outer1_14(callback(outer1_2[22]).TableRow, obj, label.label);
   });
-  items1[2] = callback(_require(5828).TableRowGroup, obj);
+  items1[2] = callback(_require(6286).TableRowGroup, obj);
   obj[2] = items1;
   return callback2(ScrollView, obj);
 };

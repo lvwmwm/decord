@@ -1,10 +1,10 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13544
+// Function ID: 13545
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 13452, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4115, 4664, 13484, 2]
 // Exports: default
 
-// Module 13512 (CarouselPagination)
+// Module 13544 (CarouselPagination)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

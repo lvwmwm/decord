@@ -1,10 +1,10 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7511
+// Function ID: 7512
 // Name: checkReactionResponse
-// Dependencies: [5, 1218, 1391, 4584, 676, 687, 4705, 1236, 1231, 709, 7289, 530, 7291, 698, 4549, 1363, 7309, 4006, 2]
+// Dependencies: [5, 1218, 1391, 4994, 676, 687, 4827, 1236, 1231, 709, 7510, 530, 7512, 698, 5042, 1363, 7530, 4038, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7290 (checkReactionResponse)
+// Module 7511 (checkReactionResponse)
 import set from "set";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -40,7 +40,7 @@ function checkReactionResponse(arg0, arg1, isRetry) {
         code = body.code;
       }
       if (constants.TOO_MANY_REACTIONS === code) {
-        let obj = importDefault(4705);
+        let obj = importDefault(4827);
         obj = { title: null, body: null, confirmText: null };
         const intl = require(1236) /* getSystemLocale */.intl;
         obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lFddsR);
@@ -74,7 +74,7 @@ function optimisticDispatch(type, channelId, messageId, arg3, userId) {
     colors = [];
   }
   obj[6] = colors;
-  const ReactionTypes = require(7289) /* ReactionTypes */.ReactionTypes;
+  const ReactionTypes = require(7510) /* ReactionTypes */.ReactionTypes;
   obj[7] = userId.burst ? ReactionTypes.BURST : ReactionTypes.NORMAL;
   obj.dispatch(obj);
 }
@@ -90,7 +90,7 @@ function makeURL(type) {
   }
   let NORMAL = type.type;
   if (NORMAL === undefined) {
-    NORMAL = require(7289) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(7510) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   if (null != emoji.id) {
     const _HermesInternal = HermesInternal;
@@ -131,7 +131,7 @@ function _getReactors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -172,7 +172,7 @@ function _getReactors() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              if (c5 === callback(7289).ReactionTypes.VOTE) {
+              if (c5 === callback(7510).ReactionTypes.VOTE) {
                 let tmp28 = (function makeURLForVoteReactors(c0, c1, c2) {
                   let name = c2.id;
                   if (name == null) {
@@ -213,7 +213,7 @@ function _getReactors() {
           } else {
             closure_7 = arg1;
             let tmp14;
-            if (c5 === callback(7289).ReactionTypes.VOTE) {
+            if (c5 === callback(7510).ReactionTypes.VOTE) {
               body = closure_7.body.users;
             } else {
               body = closure_7.body;
@@ -278,7 +278,7 @@ function _addReaction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -327,7 +327,7 @@ function _addReaction() {
               }
               if (!isRetry) {
                 if (callback6(callback, callback2, dependencyMap, burst)) {
-                  let obj5 = callback2(4705);
+                  let obj5 = callback2(4827);
                   let obj2 = { title: null, body: null, confirmText: null };
                   let intl = callback(1236).intl;
                   obj2[0] = intl.string(callback(1236).t["uaUU/g"]);
@@ -337,7 +337,7 @@ function _addReaction() {
                   obj2[2] = intl3.string(callback(1236).t["NX+WJN"]);
                   obj5.show(obj2);
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               c7 = 2;
@@ -364,7 +364,7 @@ function _addReaction() {
               c7 = 3;
               c8 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(7291).unarchiveThreadIfNecessary(callback);
+              obj6[0] = callback2(7512).unarchiveThreadIfNecessary(callback);
               return obj6;
             }
           } else if (arg0 === 1) {
@@ -386,7 +386,7 @@ function _addReaction() {
             obj8[0] = callback4(obj9);
             obj = { location: null, type: null };
             obj[0] = MESSAGE;
-            let fn = callback(7289).ReactionTypes;
+            let fn = callback(7510).ReactionTypes;
             if (burst) {
               let NORMAL = fn.BURST;
             } else {
@@ -546,7 +546,7 @@ function _removeAllReactions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -593,7 +593,7 @@ function _removeAllReactions() {
               outer1_12(arg0, () => outer1_18(closure_0, closure_1, { isRetry: true }), { isRetry });
             });
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c6 = tmp;
@@ -642,7 +642,7 @@ function _removeEmojiReactions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -747,7 +747,7 @@ function _removeReaction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -803,7 +803,7 @@ function _removeReaction() {
               obj2[0] = c4;
               obj2[1] = burst;
               callback3("MESSAGE_REACTION_REMOVE", callback, callback2, dependencyMap, obj2);
-              let obj5 = callback2(7291);
+              let obj5 = callback2(7512);
               c4 = 2;
               c5 = 1;
               let obj3 = { value: null, done: false };
@@ -831,7 +831,7 @@ function _removeReaction() {
               callback2 = "@me";
             }
             obj5[3] = callback2;
-            let ReactionTypes = callback(7289).ReactionTypes;
+            let ReactionTypes = callback(7510).ReactionTypes;
             if (burst) {
               let NORMAL = ReactionTypes.BURST;
             } else {
@@ -873,7 +873,7 @@ function _removeReaction() {
                 let closure_0 = arg0;
                 let c3 = 0;
                 let c4 = 0;
-                return (/* F120447 */ function*() { ... })();
+                return (/* F120631 */ function*() { ... })();
               });
               return function() {
                 const self = this;
@@ -936,7 +936,7 @@ function _getOptimisticEmojiColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

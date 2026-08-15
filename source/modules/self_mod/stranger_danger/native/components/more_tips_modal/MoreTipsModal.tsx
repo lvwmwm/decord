@@ -1,10 +1,10 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10587
+// Function ID: 10588
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 9728, 676, 21, 4342, 712, 10330, 4338, 1236, 10331, 6072, 4572, 8093, 1297, 1628, 647, 10324, 7131, 7136, 5844, 2]
+// Dependencies: [19, 17, 9921, 676, 21, 4661, 712, 10588, 4734, 1236, 10589, 5432, 5260, 8143, 1297, 1629, 647, 10582, 5006, 5011, 6312, 2]
 // Exports: default
 
-// Module 10329 (MoreTipsModalScreen)
+// Module 10587 (MoreTipsModalScreen)
 import set from "set";
 import get_ActivityIndicator from "trackViewedEvent";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -30,7 +30,7 @@ function MoreTipsModalScreen(learnMore) {
   let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll, children: null };
   obj = { style: tmp.contentContainer, children: null };
   obj = { style: tmp.tipsContainer, children: null };
-  const items = [callback(importDefault(10330), { description, safetyTips, showHeader: true }), ];
+  const items = [callback(importDefault(10588), { description, safetyTips, showHeader: true }), ];
   let tmp2Result = null;
   if (null != learnMore) {
     const obj1 = { style: null, children: null };
@@ -45,10 +45,10 @@ function MoreTipsModalScreen(learnMore) {
   const obj3 = { variant: "eyebrow", color: "text-default", style: tmp.header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.K5FKtc);
-  const items2 = [callback(require(4338) /* Text */.Text, obj3), actionItems];
+  const items2 = [callback(require(4734) /* Text */.Text, obj3), actionItems];
   obj2[0] = items2;
   items1[1] = closure_9(closure_4, obj2);
-  items1[2] = callback(importDefault(10331), { channelId, warningId, senderId });
+  items1[2] = callback(importDefault(10589), { channelId, warningId, senderId });
   obj[1] = items1;
   obj[2] = closure_9(closure_4, obj);
   return callback(closure_5, obj);
@@ -136,5 +136,5 @@ export default function MoreTipsModal(channelId) {
       return outer1_8(outer1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(5844).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1628)().top });
+  return callback(_require(6312).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1629)().top });
 };

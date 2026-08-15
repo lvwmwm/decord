@@ -1,17 +1,17 @@
-// Module ID: 11067
-// Function ID: 11068
+// Module ID: 10801
+// Function ID: 10802
 // Name: handleAcceptEventInstantInvite
-// Dependencies: [7055, 8742, 7262, 7824, 9024, 2]
+// Dependencies: [4370, 9346, 4369, 8042, 8804, 2]
 // Exports: default
 
-// Module 11067 (handleAcceptEventInstantInvite)
+// Module 10801 (handleAcceptEventInstantInvite)
 import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;
 let result = require("InviteTypes").fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
 
 export default function handleAcceptEventInstantInvite(code) {
-  let obj = guildScheduledEvent(8742);
+  let obj = guildScheduledEvent(9346);
   if (!obj.handleNSFWGuildInvite(code)) {
     if (tmpResult.isGuildScheduledEventInviteEmbed(code)) {
       if (null != code.code) {
@@ -28,11 +28,11 @@ export default function handleAcceptEventInstantInvite(code) {
           obj[2] = function callback() {
             const result = guildScheduledEvent(outer1_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
           };
-          importDefault(7824).acceptInvite(obj);
-          const obj3 = importDefault(7824);
+          importDefault(8042).acceptInvite(obj);
+          const obj3 = importDefault(8042);
         }
       }
     }
-    tmpResult = guildScheduledEvent(7262);
+    tmpResult = guildScheduledEvent(4369);
   }
 };

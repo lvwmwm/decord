@@ -1,10 +1,10 @@
-// Module ID: 12007
-// Function ID: 12008
+// Module ID: 11738
+// Function ID: 11739
 // Name: GuildPowerupPerksSection
-// Dependencies: [17, 21, 4342, 712, 11990, 1236, 2335, 12008, 12010, 12012, 2]
+// Dependencies: [17, 21, 4661, 712, 11721, 1236, 2367, 11739, 11741, 11743, 2]
 // Exports: default
 
-// Module 12007 (GuildPowerupPerksSection)
+// Module 11738 (GuildPowerupPerksSection)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,10 +27,10 @@ export default function GuildPowerupPerksSection(arg0) {
   obj = { title: null, description: null };
   const tmp = callback3();
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2335).TV3Vm8);
+  obj[0] = intl.string(importDefault(2367).TV3Vm8);
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(2335).STx9hp);
-  const items = [callback(importDefault(11990), obj), ];
+  obj[1] = intl2.string(importDefault(2367).STx9hp);
+  const items = [callback(importDefault(11721), obj), ];
   obj = {
     style: tmp.container,
     children: listings.map((type) => {

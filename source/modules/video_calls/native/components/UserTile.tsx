@@ -1,10 +1,10 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 12459
+// Function ID: 12460
 // Name: UserTile
-// Dependencies: [32, 19, 17, 10701, 1218, 1391, 4393, 676, 4363, 4406, 21, 4342, 712, 4191, 589, 8374, 1297, 9126, 4338, 1236, 10683, 10686, 8067, 10702, 10703, 10704, 10633, 10699, 10705, 9809, 10671, 5488, 10706, 2]
+// Dependencies: [32, 19, 17, 12460, 1218, 1391, 4497, 676, 4544, 4529, 21, 4661, 712, 4223, 589, 8413, 1297, 8916, 4734, 1236, 12445, 12448, 8117, 12461, 12462, 12463, 4779, 11444, 12464, 10010, 12436, 6377, 12465, 2]
 // Exports: default
 
-// Module 10700 (UserTile)
+// Module 12459 (UserTile)
 import Emoji from "Emoji";
 import importAllResult from "getSystemLocale";
 import { View } from "registerAsset";
@@ -157,11 +157,11 @@ let closure_19 = importAllResult.memo((userId) => {
   }, items1), 3);
   let tmp5 = tmp4[1];
   if (tmp4[0]) {
-    let tmp6 = importDefault(8067);
+    let tmp6 = importDefault(8117);
   } else if (deafened) {
-    tmp6 = importDefault(10702);
+    tmp6 = importDefault(12461);
   } else if (muted) {
-    tmp6 = importDefault(10703);
+    tmp6 = importDefault(12462);
   }
   if (tmp5) {
     tmp5 = !tmp4[2];
@@ -173,7 +173,7 @@ let closure_19 = importAllResult.memo((userId) => {
       const items2 = [tmp.statusWrapper, style];
       obj[0] = items2;
       obj = { source: null, size: null, disableColor: true };
-      obj[0] = importDefault(10704);
+      obj[0] = importDefault(12463);
       obj[1] = tmp2(1297).Icon.Sizes.SMALL;
       obj[1] = callback2(tmp2(1297).Icon, obj);
       tmp14 = callback2(View, obj);
@@ -193,7 +193,7 @@ let closure_19 = importAllResult.memo((userId) => {
       obj3[0] = tmp6;
       obj3[1] = tmp2(1297).Icon.Sizes.SMALL;
       obj3[2] = importDefault(712).unsafe_rawColors.WHITE;
-      obj3[3] = tmp6 === importDefault(8067);
+      obj3[3] = tmp6 === importDefault(8117);
       obj2[1] = callback2(tmp2(1297).Icon, obj3);
       tmp19Result = tmp19(View, obj2);
       const tmp20 = View;

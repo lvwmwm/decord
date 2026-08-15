@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11361
+// Function ID: 11362
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 1983, 21, 647, 11637, 4310, 11642, 2007, 11642, 2]
+// Dependencies: [32, 19, 1983, 21, 647, 11354, 4342, 11359, 2007, 11359, 2]
 // Exports: default
 
-// Module 11644 (AppLauncherRoleOption)
+// Module 11361 (AppLauncherRoleOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

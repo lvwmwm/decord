@@ -1,10 +1,10 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8169
+// Function ID: 8170
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4342, 1363, 712, 4191, 2]
+// Dependencies: [19, 4661, 1363, 712, 4223, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 8119 (getEmbedThemeColors)
+// Module 8169 (getEmbedThemeColors)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
@@ -27,8 +27,8 @@ const result1 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(712).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
-    const tmpResult = require(4191) /* hexToRgba */;
+    PRIMARY_600 = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
+    const tmpResult = require(4223) /* hexToRgba */;
   }
   return PRIMARY_600;
 });
@@ -50,7 +50,7 @@ const result4 = createCacheKey.experimental_createToken((theme) => {
 const result5 = createCacheKey.experimental_createToken((theme) => {
   const obj = require(1363) /* AccessibilityAnnouncer */;
   const isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
-  const hexWithOpacity = require(4191) /* hexToRgba */.hexWithOpacity;
+  const hexWithOpacity = require(4223) /* hexToRgba */.hexWithOpacity;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.WHITE, 0.06);
@@ -75,8 +75,8 @@ const result8 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(712).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_200, 0.3);
-    const tmpResult = require(4191) /* hexToRgba */;
+    PRIMARY_600 = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_200, 0.3);
+    const tmpResult = require(4223) /* hexToRgba */;
   }
   return PRIMARY_600;
 });

@@ -1,9 +1,9 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17146
+// Function ID: 17147
 // Name: sendReply
-// Dependencies: [5, 16391, 4256, 5405, 1218, 1391, 1910, 3, 4204, 9931, 16571, 709, 7203, 1625, 698, 5888, 7824, 4353, 14838, 1307, 2]
+// Dependencies: [5, 16441, 4288, 4493, 1218, 1391, 1910, 3, 4236, 10137, 16623, 709, 5422, 1626, 698, 5256, 8042, 4768, 14878, 1307, 2]
 
-// Module 17100 (sendReply)
+// Module 17146 (sendReply)
 import importDefaultResult from "ensureGuildLoaded";
 import { applicationReady } from "linkFromAppsFlyer";
 import getHash from "getHash";
@@ -15,12 +15,12 @@ let closure_0 = arg1;
 function sendReply(status, message) {
   const merged = Object.assign(arg2);
   const json = JSON.stringify({ type: "response", status, message });
-  importDefault(4204).logToDevice(json);
+  importDefault(4236).logToDevice(json);
 }
 function sendStatus(message) {
   tmp2.log(message);
   const json = JSON.stringify({ type: "status", message });
-  importDefault(4204).logToDevice(json);
+  importDefault(4236).logToDevice(json);
 }
 function getErrorDetails(headers) {
   if (null != headers) {
@@ -83,7 +83,7 @@ function _setupTTITest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ function _apiLogin() {
           obj[0] = ok;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ function _apiLogin() {
                 }
               }
               if (null != outer1_8.getId()) {
-                let obj16 = callback(5888);
+                let obj16 = callback(5256);
                 c6 = 3;
                 c7 = 1;
                 const obj3 = { value: null, done: false };
@@ -239,7 +239,7 @@ function _apiLogin() {
               obj9[0] = ok;
               return obj9;
             } else if (ok.ok) {
-              obj7 = callback(5888);
+              obj7 = callback(5256);
               c6 = 4;
               c7 = 1;
               const obj10 = { value: null, done: false };
@@ -318,7 +318,7 @@ function _apiLogin() {
               let obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f120672 = () => { ... };
+              const f120855 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -328,7 +328,7 @@ function _apiLogin() {
               continue;
             }
             outer1_20(callback(709), "LOGIN_SUCCESS", (token) => callback(token.token));
-            let obj = callback(5888);
+            let obj = callback(5256);
             obj = { login: closure_0, password: callback };
             obj.login(obj);
           });
@@ -359,7 +359,7 @@ function subscribeOnce(subscribe) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f120672(arg0);
+    return f120855(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -370,43 +370,43 @@ let obj = {
   "setup-test": setupTTITest,
   ping() {
     const json = JSON.stringify({ type: "pong" });
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
-    let obj = callback(9931);
+    let obj = callback(10137);
     const result = obj.resetComponentProfiler();
     obj = { type: "response", status: "success", message: "reset-component-profiler" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
-    let obj = callback(9931);
+    let obj = callback(10137);
     const result = obj.pauseComponentProfiler();
     obj = { type: "response", status: "success", message: "pause-component-profiler" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
-    let obj = callback(9931);
+    let obj = callback(10137);
     const result = obj.resumeComponentProfiler();
     obj = { type: "response", status: "success", message: "resume-component-profiler" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
     let obj = { stats: null };
-    obj[0] = callback(9931).dumpStats();
+    obj[0] = callback(10137).dumpStats();
     obj = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj2 = callback(9931);
-    importDefault(4204).logToDevice(json);
+    const obj2 = callback(10137);
+    importDefault(4236).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16571);
+    let obj = importDefault(16623);
     let report;
     if (obj != null) {
       report = obj.requestReport();
@@ -415,27 +415,27 @@ let obj = {
     obj = { type: "response", status: "success", message: "dump-jank-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   (multiplier) => {
-    let obj = importDefault(16571);
+    let obj = importDefault(16623);
     if (obj != null) {
       const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     }
     obj = { type: "response", status: "success", message: "set-jank-multiplier" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16571);
+    let obj = importDefault(16623);
     if (obj != null) {
       obj.startTracking();
     }
     obj = { type: "response", status: "success", message: "start-jank-stats" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   (action) => {
     let obj = importDefault(709);
@@ -443,25 +443,25 @@ let obj = {
     obj = { type: "response", status: "success", message: "flux-dispatch" };
     const merged = Object.assign(undefined);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
     let obj = { token: token.getToken() };
     obj = { type: "response", status: "success", message: "get-token" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    importDefault(4204).logToDevice(json);
+    importDefault(4236).logToDevice(json);
   },
   () => {
     let obj = { cumulativeCPU: null, currentMemoryUsage: null };
-    obj[0] = importDefault(7203).getCumulativeCPUUsage();
-    const obj2 = importDefault(7203);
-    obj[1] = importDefault(7203).getCurrentMemoryUsageKB();
+    obj[0] = importDefault(5422).getCumulativeCPUUsage();
+    const obj2 = importDefault(5422);
+    obj[1] = importDefault(5422).getCurrentMemoryUsageKB();
     obj = { type: "response", status: "success", message: "get-resource-usage" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj3 = importDefault(7203);
-    importDefault(4204).logToDevice(json);
+    const obj3 = importDefault(5422);
+    importDefault(4236).logToDevice(json);
   },
   backchannel: null
 };
@@ -486,7 +486,7 @@ let closure_3 = importDefaultResult((arg0) => {
           obj[0] = result;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -551,7 +551,7 @@ let closure_3 = importDefaultResult((arg0) => {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -566,7 +566,7 @@ let closure_3 = importDefaultResult((arg0) => {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp4) {
                     c0 = tmp;

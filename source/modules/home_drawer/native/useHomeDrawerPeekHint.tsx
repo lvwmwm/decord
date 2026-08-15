@@ -1,21 +1,21 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15291
+// Function ID: 15292
 // Name: items
-// Dependencies: [32, 19, 4334, 15240, 676, 1388, 4083, 1377, 1500, 15243, 589, 15233, 4164, 6086, 4343, 4776, 15239, 2]
+// Dependencies: [32, 19, 4662, 15289, 676, 1388, 4115, 1377, 1501, 15292, 589, 15282, 4196, 7366, 4664, 4744, 15288, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 15242 (items)
+// Module 15291 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import withEqualityFn from "withEqualityFn";
 import { ME } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import { Easing } from "module_4083";
+import { Easing } from "module_4115";
 
 const require = arg1;
 let c8 = 2000;
-let closure_9 = Easing.inOut(require("module_4083").Easing.cubic);
+let closure_9 = Easing.inOut(require("module_4115").Easing.cubic);
 let closure_10 = [];
 let items = [require("DismissibleContent").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let closure_12 = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };

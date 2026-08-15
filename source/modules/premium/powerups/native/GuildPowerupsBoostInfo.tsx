@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 11722
+// Function ID: 11723
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4230, 21, 4342, 712, 8261, 11992, 7761, 4338, 2]
+// Dependencies: [17, 4262, 21, 4661, 712, 8307, 11723, 7979, 4734, 2]
 // Exports: default
 
-// Module 11991 (GuildPowerupsBoostInfo)
+// Module 11722 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,9 +25,9 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback();
-  let obj = require(8261) /* apexExperiment */;
+  let obj = require(8307) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsBoostInfo");
-  let obj1 = require(11992) /* getGuildPowerupsBoostInfoText */;
+  let obj1 = require(11723) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj1.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };
@@ -36,7 +36,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   } else {
     TEXT_MUTED = importDefault(712).colors.TEXT_MUTED;
   }
-  const items = [closure_5(require(7761) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
+  const items = [closure_5(require(7979) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
@@ -48,9 +48,9 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   obj1[1] = str2;
   obj1[3] = count;
-  items[1] = closure_5(require(4338) /* Text */.Text, obj1);
+  items[1] = closure_5(require(4734) /* Text */.Text, obj1);
   obj[3] = items;
-  const items1 = [closure_6(View, obj), closure_5(require(4338) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
+  const items1 = [closure_6(View, obj), closure_5(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
   obj[3] = items1;
   return closure_6(View, obj);
 };

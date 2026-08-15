@@ -1,10 +1,10 @@
-// Module ID: 11234
-// Function ID: 11235
+// Module ID: 10949
+// Function ID: 10950
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1922, 21, 4342, 712, 11232, 4310, 10436, 10452, 7233, 1236, 589, 5458, 4775, 11235, 4338, 2]
+// Dependencies: [19, 17, 1922, 21, 4661, 712, 10947, 4342, 10684, 10491, 7458, 1236, 589, 6950, 4733, 10950, 4734, 2]
 // Exports: default
 
-// Module 11234 (QuestRewardDetailsBottomSheet)
+// Module 10949 (QuestRewardDetailsBottomSheet)
 import noop from "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -39,25 +39,25 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(589);
   const items2 = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  let obj1 = quest(10452);
+  let obj1 = quest(10491);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { direction: "vertical", spacing: null, style: null, children: null };
   obj[1] = memo(712).space.PX_16;
   obj[2] = tmp.wrapper;
   obj = { align: "center", direction: "horizontal", spacing: null, children: null };
   obj[2] = memo(712).space.PX_16;
-  const items3 = [callback(memo(11235), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [callback(memo(10950), { quest, height: 56, width: 56, withAnimation: true }), ];
   obj1 = { direction: "vertical", spacing: null, style: null, children: null };
   obj1[1] = memo(712).space.PX_4;
   obj1[2] = tmp.rewardDetailsCopy;
   const obj2 = { variant: "eyebrow", color: "text-subtle", children: null };
   let intl = quest(1236).intl;
   obj2[2] = intl.string(quest(1236).t["jyYgZ+"]);
-  const items4 = [callback(quest(4338).Text, obj2), callback(quest(4338).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  const items4 = [callback(quest(4734).Text, obj2), callback(quest(4734).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   obj1[3] = items4;
-  items3[1] = callback2(quest(4775).Stack, obj1);
+  items3[1] = callback2(quest(4733).Stack, obj1);
   obj[3] = items3;
-  const items5 = [callback2(quest(4775).Stack, obj), ];
+  const items5 = [callback2(quest(4733).Stack, obj), ];
   let tmp9Result = null != memo1;
   if (tmp9Result) {
     const obj3 = { children: null };
@@ -66,13 +66,13 @@ function QuestRewardDetailsBottomSheet(quest) {
     const items6 = [tmp8(View, obj4), ];
     const obj5 = { variant: "text-md/normal", color: "text-subtle", children: null };
     obj5[2] = memo1;
-    items6[1] = tmp8(quest(4338).Text, obj5);
+    items6[1] = tmp8(quest(4734).Text, obj5);
     obj3[0] = items6;
     tmp9Result = tmp9(closure_8, obj3);
   }
   items5[1] = tmp9Result;
   obj[3] = items5;
-  return callback(quest(5458).BottomSheet, { startExpanded: true, children: callback2(quest(4775).Stack, obj) });
+  return callback(quest(6950).BottomSheet, { startExpanded: true, children: callback2(quest(4733).Stack, obj) });
 }
 ({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
 createCacheKey = { wrapper: null, rewardDetailsCopy: null, separator: null };
@@ -86,11 +86,11 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/quests/n
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = callback(11232).showQuestUnavailableAlert();
-    const obj = callback(11232);
-    callback2(4310).hideActionSheet();
+    const result = callback(10947).showQuestUnavailableAlert();
+    const obj = callback(10947);
+    callback2(4342).hideActionSheet();
   }, []);
-  let obj = require(10436) /* useQuests */;
+  let obj = require(10684) /* useQuests */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {

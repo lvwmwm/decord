@@ -1,10 +1,10 @@
-// Module ID: 4272
-// Function ID: 4273
+// Module ID: 4304
+// Function ID: 4305
 // Name: experiment
-// Dependencies: [676, 4254, 4273, 2]
+// Dependencies: [676, 4286, 4305, 2]
 // Exports: getServerThemeEnabled, useServerThemeEnabled
 
-// Module 4272 (experiment)
+// Module 4304 (experiment)
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import createExperiment from "createExperiment";
 
@@ -18,7 +18,7 @@ export const getServerThemeEnabled = function getServerThemeEnabled(guildId, Gui
   const currentConfig = experiment.getCurrentConfig(obj, { autoTrackExposure: false });
   let enabled = currentConfig.enabled;
   if (null != guildId) {
-    const ServerThemeApexShadowExperiment = require(4273) /* apexExperiment */.ServerThemeApexShadowExperiment;
+    const ServerThemeApexShadowExperiment = require(4305) /* apexExperiment */.ServerThemeApexShadowExperiment;
     obj = { guildId: null, location: null };
     obj[0] = guildId;
     obj[1] = GuildPowerupsConstants;
@@ -36,7 +36,7 @@ export const useServerThemeEnabled = function useServerThemeEnabled(guildId, use
   let obj = { guildId, location: useGuildPowerupNewPerkMarketingVersion };
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });
   let enabled = experiment.enabled;
-  const ServerThemeApexShadowExperiment = require(4273) /* apexExperiment */.ServerThemeApexShadowExperiment;
+  const ServerThemeApexShadowExperiment = require(4305) /* apexExperiment */.ServerThemeApexShadowExperiment;
   let tmp2 = guildId;
   if (guildId == null) {
     tmp2 = EMPTY_STRING_SNOWFLAKE_ID;

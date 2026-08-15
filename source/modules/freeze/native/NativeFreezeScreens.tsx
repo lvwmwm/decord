@@ -1,10 +1,10 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15284
+// Function ID: 15285
 // Name: NativeFreezeScreens
-// Dependencies: [32, 19, 17, 21, 38, 4713, 4342, 2]
+// Dependencies: [32, 19, 17, 21, 38, 4670, 4661, 2]
 // Exports: NativeFreezeScreens
 
-// Module 15235 (NativeFreezeScreens)
+// Module 15284 (NativeFreezeScreens)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";

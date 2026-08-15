@@ -1,10 +1,10 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11176
+// Function ID: 11177
 // Name: ForumPostGrid
-// Dependencies: [19, 1391, 3998, 11464, 21, 11465, 11469, 11480, 589, 38, 5982, 8474, 11484, 11485, 8476, 11490, 1401, 2]
+// Dependencies: [19, 1391, 4030, 11177, 21, 11178, 11182, 11193, 589, 38, 7269, 8513, 11197, 11198, 8515, 11203, 1401, 2]
 // Exports: ForumPostListDisabled
 
-// Module 11463 (ForumPostGrid)
+// Module 11176 (ForumPostGrid)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { useForumChannelStore } from "set";
@@ -25,7 +25,7 @@ function ForumPostGrid(arg0) {
   ({ hasUnreads, thread } = arg0);
   const obj = { children: null };
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [callback(importDefault(11465), { thread, hasUnreads, isNew }), callback(importDefault(11469), { thread, hasUnreads, media }), callback(importDefault(11480), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items = [callback(importDefault(11178), { thread, hasUnreads, isNew }), callback(importDefault(11182), { thread, hasUnreads, media }), callback(importDefault(11193), { thread, firstMessage, hasUnreads, parentChannel })];
   obj[0] = items;
   return callback2(closure_7, obj);
 }
@@ -173,9 +173,9 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
   const obj2 = threadId(589);
   const tmp = threadId;
   const tmp4 = stateFromStores;
-  const firstForumPostMessage = threadId(5982).useFirstForumPostMessage(stateFromStores);
+  const firstForumPostMessage = threadId(7269).useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(8474);
+  threadId(8513);
   if (loaded) {
     obj = { style: null, children: null };
     obj[0] = style;
@@ -186,8 +186,8 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
     obj[3] = tmp10;
     obj[4] = localDeviceMedia;
     obj[7] = loaded;
-    obj[1] = callback(tmp4(11485), obj);
-    tmp5 = callback(tmp(11484).ForumPostDisabledContainer, obj);
+    obj[1] = callback(tmp4(11198), obj);
+    tmp5 = callback(tmp(11197).ForumPostDisabledContainer, obj);
   }
   return tmp5;
 };

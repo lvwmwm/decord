@@ -1,8 +1,8 @@
-// Module ID: 11507
-// Function ID: 11508
-// Dependencies: [19, 17, 8674, 21, 4342, 712, 11508, 2]
+// Module ID: 11220
+// Function ID: 11221
+// Dependencies: [19, 17, 8682, 21, 4661, 712, 11221, 2]
 
-// Module 11507
+// Module 11220
 import { View } from "get ActivityIndicator";
 import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ const memoResult = require("noop").memo((visibleContent) => {
     obj = { context: null, visibleContent: null };
     obj[0] = context;
     obj[1] = visibleContent;
-    obj[1] = jsx(importDefault(11508), { context: null, visibleContent: null });
+    obj[1] = jsx(importDefault(11221), { context: null, visibleContent: null });
     tmp3 = <View context={null} visibleContent={null} />;
   }
   return tmp3;

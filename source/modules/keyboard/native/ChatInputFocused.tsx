@@ -1,10 +1,10 @@
-// Module ID: 1627
-// Function ID: 1628
+// Module ID: 1628
+// Function ID: 1629
 // Name: setIsAnyChatInputFocused
 // Dependencies: [2]
 // Exports: getIsAnyChatInputFocused, setIsAnyChatInputFocused
 
-// Module 1627 (setIsAnyChatInputFocused)
+// Module 1628 (setIsAnyChatInputFocused)
 let c0 = false;
 const result = require("set").fileFinishedImporting("modules/keyboard/native/ChatInputFocused.tsx");
 

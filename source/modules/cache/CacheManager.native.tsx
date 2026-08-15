@@ -1,9 +1,9 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16537
+// Function ID: 16538
 // Name: handleConnectionOpen
-// Dependencies: [5057, 7005, 3, 687, 5322, 7183, 14838, 500, 691, 2]
+// Dependencies: [4495, 5067, 3, 687, 5038, 5402, 14878, 500, 691, 2]
 
-// Module 16487 (handleConnectionOpen)
+// Module 16537 (handleConnectionOpen)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import handleClearCaches from "handleClearCaches";
 import "initialize";
@@ -30,7 +30,7 @@ class CacheManager extends tmp3 {
 }
 const prototype = CacheManager.prototype;
 prototype["handleConnectionOpen"] = function handleConnectionOpen() {
-  const result = importDefault(7183).doesDatabaseVersionMatchJsConstants();
+  const result = importDefault(5402).doesDatabaseVersionMatchJsConstants();
   result.then((arg0) => {
     if (!arg0) {
       callback(table[6]).writeCaches();
@@ -50,8 +50,8 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
     isConnectedResult = connected.isConnected();
   }
   if (isConnectedResult) {
-    tmp(14838).writeCaches();
-    const tmpResult = tmp(14838);
+    tmp(14878).writeCaches();
+    const tmpResult = tmp(14878);
   }
   return false;
 };
@@ -60,8 +60,8 @@ prototype["handleWindowFocus"] = function handleWindowFocus(focused) {
     const _Date = Date;
     if (Date.now() - lastWriteTime.lastWriteTime > closure_6) {
       tmp2.verbose("Writing cache from window unfocus");
-      require(14838) /* _writeCaches */.writeCaches();
-      const obj = require(14838) /* _writeCaches */;
+      require(14878) /* _writeCaches */.writeCaches();
+      const obj = require(14878) /* _writeCaches */;
     } else {
       tmp2.verbose("Not writing cache from window unfocus");
     }

@@ -1,10 +1,10 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8277
+// Function ID: 8278
 // Name: useHasActiveTrial
-// Dependencies: [1922, 4013, 6982, 1924, 589, 6981, 2]
+// Dependencies: [1922, 4045, 7421, 1924, 589, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 8231 (useHasActiveTrial)
+// Module 8277 (useHasActiveTrial)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
 import emitChanges from "emitChanges";
@@ -79,13 +79,6 @@ export const useCurrentPremiumTrialTier = function useCurrentPremiumTrialTier() 
 };
 export const getPremiumTrialOffer = function getPremiumTrialOffer() {
   const mapped = closure_9.map((closure_9) => userTrialOffer.getUserTrialOffer(closure_9));
-  const found = mapped.filter((expires_at) => {
-    let tmp = null != expires_at;
-    if (tmp) {
-      tmp = !callback(table[5]).hasUserTrialOfferExpired(expires_at);
-      const obj = callback(table[5]);
-    }
-    return tmp;
-  });
+  const found = mapped.filter((hasExpired) => null != hasExpired && !hasExpired.hasExpired());
   return found.shift();
 };

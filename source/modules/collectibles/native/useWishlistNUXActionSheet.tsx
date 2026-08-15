@@ -1,10 +1,10 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9179
+// Function ID: 9180
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7150, 1218, 1388, 589, 4164, 1377, 1379, 4310, 9417, 2007, 2]
+// Dependencies: [19, 5365, 1218, 1388, 589, 4196, 1377, 1379, 4342, 9180, 2007, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9416 (useWishlistNUXActionSheet)
+// Module 9179 (useWishlistNUXActionSheet)
 import noop from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import fetchFingerprint from "fetchFingerprint";

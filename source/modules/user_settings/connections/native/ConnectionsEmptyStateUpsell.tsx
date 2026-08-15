@@ -1,10 +1,10 @@
-// Module ID: 14284
-// Function ID: 14285
+// Module ID: 14316
+// Function ID: 14317
 // Name: EmptyStateCard
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4278, 10470, 14285, 14286, 1435, 1363, 5437, 1297, 4310, 14282, 2007, 4338, 7032, 1628, 4775, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 712, 4310, 9779, 14317, 14318, 1435, 1363, 6292, 1297, 4342, 14314, 2007, 4734, 5220, 1629, 4733, 1236, 2]
 // Exports: default
 
-// Module 14284 (EmptyStateCard)
+// Module 14316 (EmptyStateCard)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { View } from "Text";
 import { AnalyticsLocations } from "ME";
@@ -60,8 +60,8 @@ function OtherConnectionsCard(count) {
   let obj = { onPress: callback, style: callback3().card, border: "strong", children: null };
   obj = { variant: "text-md/medium", color: "interactive-text-default", children: null };
   obj[2] = "+" + count.count;
-  obj[3] = callback(require(4338) /* Text */.Text, obj);
-  return callback(require(5437) /* PressableCard */.Card, obj);
+  obj[3] = callback(require(4734) /* Text */.Text, obj);
+  return callback(require(6292) /* PressableCard */.Card, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles(() => {
@@ -75,7 +75,7 @@ let result = require("ME").fileFinishedImporting("modules/user_settings/connecti
 
 export default function ConnectionsEmptyStateUpsell() {
   const tmp = callback3();
-  let obj = emptyStatePlatforms(7032);
+  let obj = emptyStatePlatforms(5220);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = React.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
@@ -83,31 +83,31 @@ export default function ConnectionsEmptyStateUpsell() {
   const memo1 = React.useMemo(() => emptyStatePlatforms.slice(3, 5), items1);
   obj = { style: null, children: null };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(1628)().bottom };
+  obj = { paddingBottom: importDefault(1629)().bottom };
   items2[1] = obj;
   obj[0] = items2;
   const obj1 = { style: tmp.content, children: null };
   const obj2 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: null };
   const obj3 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
   obj3[3] = memo.map((platform) => callback(closure_9, { platform }, platform.type));
-  const items3 = [callback(emptyStatePlatforms(4775).Stack, obj3), ];
+  const items3 = [callback(emptyStatePlatforms(4733).Stack, obj3), ];
   const obj4 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
   const items4 = [memo1.map((platform) => callback(closure_9, { platform }, platform.type)), callback(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
   obj4[3] = items4;
-  items3[1] = callback2(emptyStatePlatforms(4775).Stack, obj4);
+  items3[1] = callback2(emptyStatePlatforms(4733).Stack, obj4);
   obj2[4] = items3;
-  const items5 = [callback2(emptyStatePlatforms(4775).Stack, obj2), ];
+  const items5 = [callback2(emptyStatePlatforms(4733).Stack, obj2), ];
   const obj6 = { spacing: 8, align: "center", style: tmp.textContainer, children: null };
   const obj7 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = emptyStatePlatforms(1236).intl;
   obj7[3] = intl.string(emptyStatePlatforms(1236).t.JlrHXb);
-  const items6 = [callback(emptyStatePlatforms(4338).Text, obj7), ];
+  const items6 = [callback(emptyStatePlatforms(4734).Text, obj7), ];
   const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: null };
   const intl2 = emptyStatePlatforms(1236).intl;
   obj8[3] = intl2.string(emptyStatePlatforms(1236).t.XijaQP);
-  items6[1] = callback(emptyStatePlatforms(4338).Text, obj8);
+  items6[1] = callback(emptyStatePlatforms(4734).Text, obj8);
   obj6[3] = items6;
-  items5[1] = callback2(emptyStatePlatforms(4775).Stack, obj6);
+  items5[1] = callback2(emptyStatePlatforms(4733).Stack, obj6);
   obj1[1] = items5;
   obj[1] = callback2(View, obj1);
   return callback(View, obj);

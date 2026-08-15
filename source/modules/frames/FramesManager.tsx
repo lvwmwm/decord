@@ -1,9 +1,9 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 8767
+// Function ID: 8768
 // Name: leaveFrame
-// Dependencies: [10582, 676, 4245, 5322, 10594, 10601, 698, 709, 2]
+// Dependencies: [8708, 676, 4277, 5038, 8716, 8723, 698, 709, 2]
 
-// Module 10969 (leaveFrame)
+// Module 8767 (leaveFrame)
 import map from "map";
 import ME from "ME";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
@@ -22,13 +22,13 @@ class FramesManager extends tmp3 {
             applyArgumentsResult.handleRPCDisconnect(arg0);
           },
       FRAME_LAUNCH(applicationId) {
-            const result = applyArgumentsResult(10594).trackFrameSessionStart(applicationId.applicationId);
+            const result = applyArgumentsResult(8716).trackFrameSessionStart(applicationId.applicationId);
           },
       FRAME_LAUNCH_FAIL(applicationId) {
-            const result = applyArgumentsResult(10601).discardPendingFrameLaunch(applicationId.applicationId);
+            const result = applyArgumentsResult(8723).discardPendingFrameLaunch(applicationId.applicationId);
           },
       FRAME_STOP(applicationId) {
-            applyArgumentsResult(10594).trackFrameSessionEnd(applicationId.applicationId);
+            applyArgumentsResult(8716).trackFrameSessionEnd(applicationId.applicationId);
           }
     };
     applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(arg0) {

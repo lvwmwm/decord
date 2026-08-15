@@ -1,10 +1,10 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17097
+// Function ID: 17098
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 514, 17044, 589, 8025, 17038, 1954, 7865, 17047, 6091, 1236, 2565, 2821, 7863, 1993, 13508, 5888, 4338, 8027, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4661, 514, 17090, 589, 6697, 17084, 1954, 5254, 17093, 5447, 1236, 2597, 2853, 5428, 1993, 13540, 5256, 4734, 6699, 2]
 // Exports: default
 
-// Module 17051 (AgeVerificationScreen)
+// Module 17097 (AgeVerificationScreen)
 import combined from "combined";
 import { Pressable } from "messagesProxy";
 import mergeGuildAvatar from "mergeGuildAvatar";

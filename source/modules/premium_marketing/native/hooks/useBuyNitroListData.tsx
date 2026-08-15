@@ -1,10 +1,10 @@
-// Module ID: 7719
-// Function ID: 7720
+// Module ID: 7937
+// Function ID: 7938
 // Name: useBuyNitroListData
-// Dependencies: [19, 676, 5789, 698, 7720, 2]
+// Dependencies: [19, 676, 7139, 698, 7938, 2]
 // Exports: default
 
-// Module 7719 (useBuyNitroListData)
+// Module 7937 (useBuyNitroListData)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -16,7 +16,7 @@ export default function useBuyNitroListData(selection) {
   let analyticsLocations = setTier;
   let dependencyMap;
   let React;
-  const tmp = analyticsLocations(7720)(selection.tier);
+  const tmp = analyticsLocations(7938)(selection.tier);
   const ref = React.useRef(null);
   dependencyMap = ref;
   React = React.useRef(false);
@@ -44,7 +44,7 @@ export default function useBuyNitroListData(selection) {
   let obj = { onScroll: null, onSelectNitroTier: null, listData: null, listRef: null };
   analyticsLocations = undefined;
   dependencyMap = undefined;
-  analyticsLocations = analyticsLocations(5789)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
   dependencyMap = React.useRef(false);
   obj[0] = function onScroll(nativeEvent) {
     const current = ref.current;

@@ -1,9 +1,9 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14948
+// Function ID: 14949
 // Name: route
-// Dependencies: [676, 10421, 1236, 11599, 14909, 7070, 5809, 2]
+// Dependencies: [676, 10669, 1236, 11316, 14949, 5300, 7159, 2]
 
-// Module 14908 (route)
+// Module 14948 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -16,11 +16,11 @@ obj = {
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(7070);
+      let obj = callback(5300);
       obj = { analyticsLocations: null, analyticsSource: null };
-      const items = [callback2(5809).USER_SETTINGS];
+      const items = [callback2(7159).USER_SETTINGS];
       obj[0] = items;
-      obj[1] = callback2(5809).USER_SETTINGS;
+      obj[1] = callback2(7159).USER_SETTINGS;
       const result = obj.openCollectiblesShopMobile(obj);
       return false;
     };
@@ -29,7 +29,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.COLLECTIBLES_SHOP,
   getComponent() {
-    return require(14909) /* CollectiblesShopScreen */.default;
+    return require(14949) /* CollectiblesShopScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

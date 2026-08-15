@@ -1,10 +1,10 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15140
+// Function ID: 15141
 // Name: describeServerError
-// Dependencies: [5, 32, 19, 17, 8244, 7188, 1340, 1391, 1979, 1922, 4341, 1924, 21, 709, 647, 530, 4062, 5435, 5442, 5828, 5823, 6986, 1297, 712, 7391, 4342, 6979, 4310, 15092, 2007, 5829, 15095, 7487, 11255, 4572, 15096, 15099, 15103, 15105, 15108, 2]
+// Dependencies: [5, 32, 19, 17, 8290, 5407, 1340, 1391, 1979, 1922, 4737, 1924, 21, 709, 647, 530, 4094, 6291, 6297, 6286, 7173, 7427, 1297, 712, 7609, 4661, 7418, 4342, 15141, 2007, 7178, 15144, 7705, 10970, 5260, 15145, 15148, 15152, 15154, 15157, 2]
 // Exports: default
 
-// Module 15091 (describeServerError)
+// Module 15140 (describeServerError)
 import recomputeAffinities from "recomputeAffinities";
 import serializePurchaseResponse from "serializePurchaseResponse";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -208,7 +208,7 @@ function FriendAnniversary() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -314,7 +314,7 @@ function FriendAnniversary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -640,7 +640,7 @@ function FriendAnniversary() {
   return callback3(closure_19, obj9);
 }
 function TrialOfferSheetExample() {
-  let obj = premiumTrialOffer(6979);
+  let obj = premiumTrialOffer(7418);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   obj = {
     label: "Trial Offer Nitro Basic",
@@ -659,9 +659,9 @@ function TrialOfferSheetExample() {
       }
     }
   };
-  const items = [closure_17(premiumTrialOffer(5435).TableRow, obj), ];
+  const items = [closure_17(premiumTrialOffer(6291).TableRow, obj), ];
   obj = { title: "Trial Offers", hasIcons: false, children: null };
-  items[1] = closure_17(premiumTrialOffer(5435).TableRow, {
+  items[1] = closure_17(premiumTrialOffer(6291).TableRow, {
     label: "Trial Offer Nitro",
     subLabel: "No trial offer in store",
     disabled: null == premiumTrialOffer,
@@ -679,7 +679,7 @@ function TrialOfferSheetExample() {
     }
   });
   obj[2] = items;
-  return closure_18(premiumTrialOffer(5828).TableRowGroup, obj);
+  return closure_18(premiumTrialOffer(6286).TableRowGroup, obj);
 }
 function PremiumToggles() {
   let obj = require(647) /* defaultAreStatesEqual */;
@@ -703,13 +703,13 @@ function PremiumToggles() {
       }
     }, tmp);
   });
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function ForceMockIAP() {
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [getUserAgnosticState];
   const stateFromStores = obj.useStateFromStores(items, () => getUserAgnosticState.get("force_mock_iap"));
-  let result = require(7487) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
+  let result = require(7705) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
   let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
   if (result) {
     str = "Forced on - the current device can't fetch real StoreKit products.";
@@ -719,16 +719,16 @@ function ForceMockIAP() {
   if (!result) {
     tmp4 = stateFromStores;
   }
-  obj = { title: "iOS IAP Mock", hasIcons: false, children: tmp3(require(5829) /* TableSwitchRow */.TableSwitchRow, obj) };
+  obj = { title: "iOS IAP Mock", hasIcons: false, children: tmp3(require(7178) /* TableSwitchRow */.TableSwitchRow, obj) };
   obj[2] = tmp4;
   obj[3] = result;
   obj[4] = function onValueChange(arg0) {
-    callback(15095).toggle("force_mock_iap", arg0);
+    callback(15144).toggle("force_mock_iap", arg0);
     getUserAgnosticState.persist();
-    const obj = callback(15095);
-    const result = callback2(11255).checkForUpdateAndReload();
+    const obj = callback(15144);
+    const result = callback2(10970).checkForUpdateAndReload();
   };
-  return closure_17(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return closure_17(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function PaymentFlowTest() {
   let obj = { title: "Payment Flow Test", hasIcons: false, children: null };
@@ -739,9 +739,9 @@ function PaymentFlowTest() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function Orbs() {
   let obj = { title: "Orbs", hasIcons: false, children: null };
@@ -752,9 +752,9 @@ function Orbs() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function RevenueSmokeTests() {
   let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: null };
@@ -765,9 +765,9 @@ function RevenueSmokeTests() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function GuildPowerups() {
   let obj = { title: "Guild Powerups", hasIcons: false, children: null };
@@ -778,9 +778,9 @@ function GuildPowerups() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function GuildTagBadges() {
   let obj = { title: "Guild Tag Badges", hasIcons: false, children: null };
@@ -792,9 +792,9 @@ function GuildTagBadges() {
     },
     trailing: null
   };
-  obj[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5435) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = GuildFeatures);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);

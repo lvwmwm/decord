@@ -1,15 +1,15 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8650
+// Function ID: 8651
 // Name: getFastestListVisibleItemsWithErrorChecking
-// Dependencies: [8601, 2]
+// Dependencies: [8640, 2]
 // Exports: default
 
-// Module 8611 (getFastestListVisibleItemsWithErrorChecking)
+// Module 8650 (getFastestListVisibleItemsWithErrorChecking)
 const result = require("set").fileFinishedImporting("modules/fastest_list/utils/getFastestListVisibleItemsWithErrorChecking.native.tsx");
 
 export default function getFastestListVisibleItemsWithErrorChecking(arg0, sectionStart) {
   if (tmp) {
-    let obj = require(8601) /* logFastestListError */;
+    let obj = require(8640) /* logFastestListError */;
     obj = { listId: null, sections: null, visibleItems: null };
     obj[0] = arg0;
     obj[1] = arg2;
@@ -21,8 +21,8 @@ export default function getFastestListVisibleItemsWithErrorChecking(arg0, sectio
     obj[0] = arg0;
     obj[1] = arg2;
     obj[2] = sectionStart;
-    require(8601) /* logFastestListError */.logFastestListError("Visible items `itemStart/End` is greater than the number of items in the first section", obj);
-    const obj3 = require(8601) /* logFastestListError */;
+    require(8640) /* logFastestListError */.logFastestListError("Visible items `itemStart/End` is greater than the number of items in the first section", obj);
+    const obj3 = require(8640) /* logFastestListError */;
   }
   return sectionStart;
 };

@@ -1,9 +1,9 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7636
+// Function ID: 7637
 // Name: create
-// Dependencies: [32, 1307, 7415, 2]
+// Dependencies: [32, 1307, 7633, 2]
 
-// Module 7418 (create)
+// Module 7636 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -28,7 +28,7 @@ class PremiumTab$Type extends MessageType {
       name: "acknowledged_badge_label_localized",
       kind: "message",
       T() {
-            return callback(7415).LocalizedString;
+            return callback(7633).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PremiumTab", items, T);
@@ -73,7 +73,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (5 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString2 = require(7415) /* create */.LocalizedString;
+        let LocalizedString2 = require(7633) /* create */.LocalizedString;
         let tmp29 = LocalizedString2;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -81,7 +81,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (6 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let LocalizedString = require(7415) /* create */.LocalizedString;
+        let LocalizedString = require(7633) /* create */.LocalizedString;
         let tmp24 = LocalizedString;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
@@ -140,13 +140,13 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(badgeLabel, tag,
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
   }
   if (badgeLabel.badgeLabelLocalized) {
-    const LocalizedString = require(7415) /* create */.LocalizedString;
+    const LocalizedString = require(7633) /* create */.LocalizedString;
     const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
     const joined = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (badgeLabel.acknowledgedBadgeLabelLocalized) {
-    const LocalizedString2 = require(7415) /* create */.LocalizedString;
+    const LocalizedString2 = require(7633) /* create */.LocalizedString;
     const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -175,7 +175,7 @@ items[5] = {
   name: "acknowledged_badge_label_localized",
   kind: "message",
   T() {
-    return callback(7415).LocalizedString;
+    return callback(7633).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PremiumTab", items, tmp, T, PremiumTab$Type, prototype, items);

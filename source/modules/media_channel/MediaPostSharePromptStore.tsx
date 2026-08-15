@@ -1,9 +1,9 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8166
+// Function ID: 8167
 // Name: set
-// Dependencies: [1981, 1218, 1391, 8117, 11, 589, 709, 2]
+// Dependencies: [1981, 1218, 1391, 8167, 11, 589, 709, 2]
 
-// Module 8116 (set)
+// Module 8166 (set)
 import isSubscriptionGated from "isSubscriptionGated";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -47,7 +47,7 @@ const mediaPostSharePromptStore = new MediaPostSharePromptStore(require("dispatc
             }
           }
         }
-        obj2 = require(8117) /* useIsFirstMessageInMediaPost */;
+        obj2 = require(8167) /* useIsFirstMessageInMediaPost */;
       }
     }
   },

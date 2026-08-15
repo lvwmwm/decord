@@ -1,9 +1,9 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10500
+// Function ID: 10501
 // Name: clearTimeoutTimer
-// Dependencies: [676, 7131, 7136, 698, 10462, 2]
+// Dependencies: [676, 5006, 5011, 698, 10501, 2]
 
-// Module 10461 (clearTimeoutTimer)
+// Module 10500 (clearTimeoutTimer)
 import { AnalyticEvents } from "ME";
 
 let c4 = 30000;
@@ -20,9 +20,9 @@ prototype["clearTimeoutTimer"] = function clearTimeoutTimer() {
 };
 prototype["sendMetric"] = function sendMetric(arg0, arg1, arg2) {
   if (Math.random() <= 0.1) {
-    let obj = importDefault(7131);
+    let obj = importDefault(5006);
     obj = { name: null, tags: null };
-    obj[0] = require(7136) /* set */.MetricEvents.QUEST_BAR_RENDER_DELAY;
+    obj[0] = require(5011) /* set */.MetricEvents.QUEST_BAR_RENDER_DELAY;
     const _HermesInternal = HermesInternal;
     const items = ["quest_id:" + arg0, ];
     const _HermesInternal2 = HermesInternal;
@@ -68,7 +68,7 @@ prototype["stopTracking"] = function stopTracking(arg0) {
         const _Math2 = Math;
         self.sendMetric(arg0, flag, Math.min(rounded, c4));
       }
-      obj = importDefault(10462);
+      obj = importDefault(10501);
     }
   }
 };

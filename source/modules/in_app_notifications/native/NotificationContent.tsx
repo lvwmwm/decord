@@ -1,10 +1,10 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 10114
+// Function ID: 10115
 // Name: NotificationContent
-// Dependencies: [19, 17, 21, 4342, 712, 9909, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 10115, 2]
 // Exports: default
 
-// Module 9908 (NotificationContent)
+// Module 10114 (NotificationContent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -53,12 +53,12 @@ export default function NotificationContent(arg0) {
   if ("message" === header.type) {
     const obj3 = {};
     const merged = Object.assign(header);
-    let tmp7Result = tmp7(importDefault(9909), obj3);
-    const tmp16 = importDefault(9909);
+    let tmp7Result = tmp7(importDefault(10115), obj3);
+    const tmp16 = importDefault(10115);
   } else {
     const obj4 = {};
     const merged1 = Object.assign(header);
-    tmp7Result = tmp7(require(9909) /* LocationText */.SimpleNotificationHeader, obj4);
+    tmp7Result = tmp7(require(10115) /* LocationText */.SimpleNotificationHeader, obj4);
   }
   obj2[1] = tmp7Result;
   items1[1] = callback(View, obj2);

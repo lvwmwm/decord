@@ -1,10 +1,10 @@
-// Module ID: 13986
-// Function ID: 13987
+// Module ID: 14018
+// Function ID: 14019
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8331, 7150, 1922, 676, 589, 709, 8581, 10193, 8582, 8583, 13987, 8338, 4241, 13988, 8379, 13989, 4034, 13342, 1236, 2]
+// Dependencies: [109, 5, 19, 8370, 5365, 1922, 676, 589, 709, 8620, 10397, 8621, 8622, 14019, 8377, 4273, 14020, 8418, 14021, 4066, 13374, 1236, 2]
 // Exports: default
 
-// Module 13986 (useUserProfileEditForm)
+// Module 14018 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import explicitContentFromProto from "explicitContentFromProto";
@@ -33,7 +33,7 @@ export default function useUserProfileEditForm() {
     }
     return isSubmitting;
   });
-  const effect = React.useEffect(() => () => callback2(709).wait(callback(8581).resetAllPending), []);
+  const effect = React.useEffect(() => () => callback2(709).wait(callback(8620).resetAllPending), []);
   const items2 = [stateFromStores, pendingChanges];
   callback = React.useCallback(callback(function*() {
     if (bannerOriginalMd5 === 2) {
@@ -53,7 +53,7 @@ export default function useUserProfileEditForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ export default function useUserProfileEditForm() {
               throwTypeErrorResult = outer1_1;
               if (outer1_1) {
                 bannerOriginalMd5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 throwTypeErrorResult = outer1_0;
                 throwTypeErrorResult = outer1_2;
@@ -542,7 +542,7 @@ export default function useUserProfileEditForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -563,7 +563,7 @@ export default function useUserProfileEditForm() {
               if (outer1_1) {
                 c3 = 3;
               } else {
-                let obj2 = outer1_0(8581);
+                let obj2 = outer1_0(8620);
                 const obj1 = { avatarDecoration: null };
                 obj1[0] = outer1_0.pendingAvatarDecoration;
                 dependencyMap = 1;
@@ -583,7 +583,7 @@ export default function useUserProfileEditForm() {
               ok = ok.ok;
             }
             if (ok) {
-              obj = outer1_0(8581);
+              obj = outer1_0(8620);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -597,7 +597,7 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(8581).resetAllPending
+    resetPending: pendingChanges(8620).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

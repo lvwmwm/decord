@@ -1,22 +1,22 @@
-// Module ID: 11936
-// Function ID: 11937
+// Module ID: 11665
+// Function ID: 11666
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [4270, 4233, 2]
+// Dependencies: [4302, 4265, 2]
 // Exports: default, isGuildPowerupRollbackEnabled
 
-// Module 11936 (useGuildPowerupRollbackEnabled)
+// Module 11665 (useGuildPowerupRollbackEnabled)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 
 export default function useGuildPowerupRollbackEnabled(guildId, skuId, location) {
-  const fileUpload250MbPowerupRollbackEnabled = require(4270) /* experiment */.useFileUpload250MbPowerupRollbackEnabled(guildId, location);
-  const obj = require(4270) /* experiment */;
-  return skuId.skuId === require(4233) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID && fileUpload250MbPowerupRollbackEnabled;
+  const fileUpload250MbPowerupRollbackEnabled = require(4302) /* experiment */.useFileUpload250MbPowerupRollbackEnabled(guildId, location);
+  const obj = require(4302) /* experiment */;
+  return skuId.skuId === require(4265) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID && fileUpload250MbPowerupRollbackEnabled;
 };
 export const isGuildPowerupRollbackEnabled = function isGuildPowerupRollbackEnabled(closure_0, skuId, maybeGetPerkPurchaseablePopoutDCF) {
-  let fileUpload250MbPowerupRollbackEnabled = skuId.skuId === require(4233) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID;
+  let fileUpload250MbPowerupRollbackEnabled = skuId.skuId === require(4265) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID;
   if (fileUpload250MbPowerupRollbackEnabled) {
-    fileUpload250MbPowerupRollbackEnabled = require(4270) /* experiment */.getFileUpload250MbPowerupRollbackEnabled(closure_0, maybeGetPerkPurchaseablePopoutDCF);
-    const tmpResult = require(4270) /* experiment */;
+    fileUpload250MbPowerupRollbackEnabled = require(4302) /* experiment */.getFileUpload250MbPowerupRollbackEnabled(closure_0, maybeGetPerkPurchaseablePopoutDCF);
+    const tmpResult = require(4302) /* experiment */;
   }
   return fileUpload250MbPowerupRollbackEnabled;
 };

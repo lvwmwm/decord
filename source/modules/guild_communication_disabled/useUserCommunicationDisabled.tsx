@@ -1,10 +1,10 @@
-// Module ID: 8150
-// Function ID: 8151
+// Module ID: 8200
+// Function ID: 8201
 // Name: useUserCommunicationDisabled
-// Dependencies: [1990, 1922, 589, 3978, 2]
+// Dependencies: [1990, 1922, 589, 4010, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 8150 (useUserCommunicationDisabled)
+// Module 8200 (useUserCommunicationDisabled)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -36,7 +36,7 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
   const items2 = [prop, ];
   const obj = _require(589);
   const tmp = _require;
-  items2[1] = _require(3978).isMemberCommunicationDisabled(stateFromStores);
+  items2[1] = _require(4010).isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
 export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
@@ -68,7 +68,7 @@ export const useCurrentUserCommunicationDisabled = function useCurrentUserCommun
     prop = null;
   }
   const items3 = [prop, ];
-  tmpResult = tmp(3978);
+  tmpResult = tmp(4010);
   items3[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 };
@@ -87,6 +87,6 @@ export const userCommunicationDisabled = function userCommunicationDisabled(id, 
   if (prop == null) {
     prop = null;
   }
-  const items = [prop, require(3978) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member)];
+  const items = [prop, require(4010) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member)];
   return items;
 };

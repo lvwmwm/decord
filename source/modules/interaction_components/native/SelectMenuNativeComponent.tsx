@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15166
+// Function ID: 15167
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 21, 15118, 2]
+// Dependencies: [19, 21, 15167, 2]
 // Exports: default
 
-// Module 15117 (SelectMenuNativeComponent)
+// Module 15166 (SelectMenuNativeComponent)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,5 +14,5 @@ export default function SelectMenuNativeComponent(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj.style = { width: "100%" };
-  return jsx(importDefault(15118), {});
+  return jsx(importDefault(15167), {});
 };

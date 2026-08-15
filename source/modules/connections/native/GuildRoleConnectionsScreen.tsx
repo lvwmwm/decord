@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 10763
+// Function ID: 10764
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 676, 21, 4342, 712, 1297, 4278, 589, 698, 4549, 5293, 4310, 11035, 2007, 11025, 11032, 5063, 1435, 1363, 4338, 1236, 1993, 11031, 5833, 10925, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 676, 21, 4661, 712, 1297, 4310, 589, 698, 5042, 6778, 4342, 10764, 2007, 10754, 10761, 5097, 1435, 1363, 4734, 1236, 1993, 10760, 7182, 10765, 2]
 // Exports: default
 
-// Module 11034 (GuildRoleConnectionsScreen)
+// Module 10763 (GuildRoleConnectionsScreen)
 import _slicedToArray from "_slicedToArray";
 import asyncRequireImpl from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -60,7 +60,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   let closure_7;
   let tmp = createCacheKey();
   dependencyMap = tmp;
-  callback = onCloseModal(4278)();
+  callback = onCloseModal(4310)();
   let obj = guildId(589);
   let items = [createGuildRoleRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getSortedRoles(guildId));
@@ -103,7 +103,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     obj2 = { helpdeskArticleUrl: null };
     obj2[0] = tmp2(1993).getArticleURL(constants.CONNECTION_DETAILS);
     obj1[3] = intl.format(tmp4(1236).t["Y+TsEV"], obj2);
-    const items5 = [callback2(tmp4(4338).Text, obj1), ];
+    const items5 = [callback2(tmp4(4734).Text, obj1), ];
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.verifiedRoles;
     obj3[1] = found.map((children) => {

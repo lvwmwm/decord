@@ -1,10 +1,10 @@
-// Module ID: 9508
-// Function ID: 9509
+// Module ID: 9282
+// Function ID: 9283
 // Name: ProfilePreviewWrapper
-// Dependencies: [19, 17, 678, 21, 4342, 712, 4788, 9412, 9509, 9616, 9617, 9618, 1949, 679, 9620, 9623, 2]
+// Dependencies: [19, 17, 678, 21, 4661, 712, 4756, 9176, 9283, 9570, 9571, 9572, 1949, 679, 9574, 9577, 2]
 // Exports: IndividualProductPreview
 
-// Module 9508 (ProfilePreviewWrapper)
+// Module 9282 (ProfilePreviewWrapper)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -41,7 +41,7 @@ function ProfilePreviewWrapper(children) {
   obj = { style: tmp.profilePreviewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj[3] = items1;
-  items[1] = callback(importDefault(4788), obj);
+  items[1] = callback(importDefault(4756), obj);
   obj[1] = items;
   obj[2] = callback2(closure_4, obj);
   return callback(closure_3, obj);
@@ -52,11 +52,11 @@ function ProfileEffectPreview(arg0) {
   let profileEffect;
   let width;
   ({ profileEffect, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(9412) /* useCurrentUser */;
+  let obj = require(9176) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = obj.useCurrentUser();
   obj = { user: currentUser, profileEffect, maxWidth: width, style: createCacheKey().profilePreview };
-  obj[2] = callback(importDefault(9509), obj);
+  obj[2] = callback(importDefault(9283), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 function ProfileFramePreview(arg0) {
@@ -65,11 +65,11 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(9412) /* useCurrentUser */;
+  let obj = require(9176) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = obj.useCurrentUser();
   obj = { profileFrame, user: currentUser, maxWidth: width, style: createCacheKey().profilePreview };
-  obj[2] = callback(importDefault(9616), obj);
+  obj[2] = callback(importDefault(9570), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 function AvatarDecorationPreview(product) {
@@ -86,11 +86,11 @@ function AvatarDecorationPreview(product) {
       }
     },
     style: createCacheKey().collectiblePreview,
-    children: callback(importDefault(9617), { product: product.product })
+    children: callback(importDefault(9571), { product: product.product })
   });
 }
 function NameplatePreview(product) {
-  return callback(closure_4, { style: createCacheKey().collectiblePreview, children: callback(importDefault(9618), { product: product.product }) });
+  return callback(closure_4, { style: createCacheKey().collectiblePreview, children: callback(importDefault(9572), { product: product.product }) });
 }
 ({ Pressable: c3, View: c4, StyleSheet } = get_ActivityIndicator);
 ({ EXTERNAL_PRODUCT_SKU_IDS: c5, ShopCtaEnum: closure_6 } = items);
@@ -143,11 +143,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1949).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(679).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(tmp(9620).FractionalNitroPreview, {});
+      let tmp5 = callback(tmp(9574).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(tmp(9623).OrbBadgePreview, {});
+        tmp5 = callback(tmp(9577).OrbBadgePreview, {});
       }
     }
     return tmp5;

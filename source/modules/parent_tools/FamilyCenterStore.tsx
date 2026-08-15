@@ -1,9 +1,9 @@
-// Module ID: 7066
-// Function ID: 7067
+// Module ID: 5296
+// Function ID: 5297
 // Name: freshTeenActivityWithMap
-// Dependencies: [32, 4042, 1220, 1922, 7067, 1430, 11, 7068, 7122, 7123, 2]
+// Dependencies: [32, 4074, 1220, 1922, 5297, 1430, 11, 5298, 5363, 5364, 2]
 
-// Module 7066 (freshTeenActivityWithMap)
+// Module 5296 (freshTeenActivityWithMap)
 import _slicedToArray from "_slicedToArray";
 import { getCountryCodeByAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import "clearAll";
@@ -323,8 +323,8 @@ function handleCurrentUserUpdate(user) {
     if (linked_users.some((arg0) => undefined === table[arg0.user_id])) {
       const _Object = Object;
       if (user.linked_users.length > Object.keys(reduced).length) {
-        const linkedUsers = importDefault(7068).fetchLinkedUsers();
-        const obj2 = importDefault(7068);
+        const linkedUsers = importDefault(5298).fetchLinkedUsers();
+        const obj2 = importDefault(5298);
       }
     }
     linked_users = user.linked_users;
@@ -558,7 +558,7 @@ prototype["loadCache"] = function loadCache() {
       let tmp2;
       let tmp3;
       [tmp2, tmp3] = callback(str.split(":"), 2);
-      let obj = _undefined(7122);
+      let obj = _undefined(5363);
       const result = obj.displayTypeFromString(tmp2);
       let tmp5 = arg0;
       if (undefined !== result) {
@@ -747,7 +747,7 @@ prototype["isCurrentUserInRestrictedHours"] = function isCurrentUserInRestricted
   } else {
     return false;
   }
-  obj = prototype(7123);
+  obj = prototype(5364);
 };
 FamilyCenterStore.displayName = "FamilyCenterStore";
 FamilyCenterStore.LATEST_SNAPSHOT_VERSION = 3;

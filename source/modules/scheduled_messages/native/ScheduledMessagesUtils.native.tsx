@@ -1,10 +1,10 @@
-// Module ID: 11456
-// Function ID: 11457
+// Module ID: 11169
+// Function ID: 11170
 // Name: _scheduleMessage
-// Dependencies: [5, 11457, 11458, 7280, 4062, 1236, 4306, 6060, 3943, 5822, 4310, 9038, 2007, 11460, 7303, 2]
+// Dependencies: [5, 11170, 11171, 7501, 4094, 1236, 4338, 7341, 3975, 7172, 4342, 8828, 2007, 11173, 7524, 2]
 // Exports: openScheduleMessageActionSheet, scheduleMessage
 
-// Module 11456 (_scheduleMessage)
+// Module 11169 (_scheduleMessage)
 import getSystemLocale from "getSystemLocale";
 import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS";
 
@@ -37,7 +37,7 @@ function _scheduleMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -171,18 +171,18 @@ export const scheduleMessage = function scheduleMessage(arg0) {
 };
 export const openScheduleMessageActionSheet = function openScheduleMessageActionSheet(id) {
   const _require = id;
-  let obj = importDefault(3943)();
+  let obj = importDefault(3975)();
   let addResult = obj.add(1, "day");
   let result = obj.add(1, "day").startOf("day").set("hours", 9);
-  let obj3 = importDefault(3943)();
+  let obj3 = importDefault(3975)();
   const startOfResult = obj.add(1, "day").startOf("day");
   const addResult1 = obj3.add(1, "day");
   const result1 = obj3.add(1, "day").startOf("day").set("hours", 13);
   const startOfResult1 = obj3.add(1, "day").startOf("day");
-  let obj7 = importDefault(3943)();
-  const startOfResult2 = importDefault(3943)().startOf("isoWeek");
+  let obj7 = importDefault(3975)();
+  const startOfResult2 = importDefault(3975)().startOf("isoWeek");
   obj = { label: null, value: null };
-  const result2 = importDefault(3943)().startOf("isoWeek").add(1, "week").set("hours", 9);
+  const result2 = importDefault(3975)().startOf("isoWeek").add(1, "week").set("hours", 9);
   let intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.tjIn9i);
   obj[1] = result;
@@ -197,7 +197,7 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   obj1[0] = intl3.string(_require(1236).t["+P5MmK"]);
   obj1[1] = result2;
   items[2] = obj1;
-  const addResult2 = importDefault(3943)().startOf("isoWeek").add(1, "week");
+  const addResult2 = importDefault(3975)().startOf("isoWeek").add(1, "week");
   const obj2 = { key: "schedule-message", header: null, hasIcons: false, options: null };
   obj3 = { title: null };
   const intl4 = _require(1236).intl;
@@ -242,5 +242,5 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   };
   items1[tmp4] = obj4;
   obj2[3] = items1;
-  const result3 = _require(5822).showSimpleActionSheet(obj2);
+  const result3 = _require(7172).showSimpleActionSheet(obj2);
 };

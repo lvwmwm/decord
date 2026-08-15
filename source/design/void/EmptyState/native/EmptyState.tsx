@@ -1,10 +1,10 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13490
+// Function ID: 13491
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4342, 712, 1363, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 1363, 4734, 2]
 // Exports: default
 
-// Module 13458 (EmptyState)
+// Module 13490 (EmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -63,7 +63,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj2[3] = items4;
     obj2[4] = title;
-    tmp14 = callback(tmp2(4338).Text, obj2);
+    tmp14 = callback(tmp2(4734).Text, obj2);
   }
   items3[1] = tmp14;
   let tmp16 = null;
@@ -72,7 +72,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj3[3] = items5;
     obj3[4] = body;
-    tmp16 = callback(tmp2(4338).Text, obj3);
+    tmp16 = callback(tmp2(4734).Text, obj3);
   }
   items3[2] = tmp16;
   items3[3] = children;

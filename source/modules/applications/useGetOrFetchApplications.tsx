@@ -1,10 +1,10 @@
-// Module ID: 5795
-// Function ID: 5796
+// Module ID: 7145
+// Function ID: 7146
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4383, 643, 5790, 12, 1370, 589, 2]
+// Dependencies: [19, 4478, 643, 7140, 12, 1370, 589, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 5795 (useGetOrFetchApplications)
+// Module 7145 (useGetOrFetchApplications)
 import noop from "noop";
 import addApplication from "addApplication";
 

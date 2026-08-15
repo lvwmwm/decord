@@ -1,10 +1,10 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12344
+// Function ID: 12345
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 3998, 1922, 21, 4342, 712, 589, 1236, 4572, 9307, 5885, 4795, 4338, 6057, 4187, 2]
+// Dependencies: [5, 32, 19, 17, 4030, 1922, 21, 4661, 712, 589, 1236, 5260, 9736, 6551, 4763, 4734, 7338, 4219, 2]
 // Exports: default
 
-// Module 12593 (AddFriendNicknameModal)
+// Module 12344 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -50,7 +50,7 @@ export default function AddFriendNicknameModal(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ export default function AddFriendNicknameModal(arg0) {
   obj = { children: null };
   const tmp3Result = require(589) /* initialize */;
   obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  const tmp11 = showUserProfile(5885);
+  const tmp11 = showUserProfile(6551);
   const intl3 = tmp3(1236).intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["R3BPH+"]);
   obj1[1] = function handleSubmit() {
@@ -174,17 +174,17 @@ export default function AddFriendNicknameModal(arg0) {
   const intl4 = tmp3(1236).intl;
   obj1[2] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
   obj1[3] = callback1;
-  const items3 = [callback2(require(4338) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
+  const items3 = [callback2(require(4734) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl5 = tmp3(1236).intl;
   obj3[3] = intl5.string(require(1236) /* getSystemLocale */.t["NdQ+lP"]);
-  items3[1] = callback2(require(4338) /* Text */.Text, obj3);
+  items3[1] = callback2(require(4734) /* Text */.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const tmp12 = showUserProfile(4795);
-  obj4[2] = showUserProfile(4187).getName(stateFromStores1);
+  const tmp12 = showUserProfile(4763);
+  obj4[2] = showUserProfile(4219).getName(stateFromStores1);
   obj4[3] = stateFromStores;
-  items3[2] = callback2(require(6057) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(7338) /* TextField */.TextField, obj4);
   obj1[4] = items3;
   obj[0] = callback3(tmp12, obj1);
   obj[1] = callback2(tmp11, obj);

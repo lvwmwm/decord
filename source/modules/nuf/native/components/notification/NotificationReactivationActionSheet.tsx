@@ -1,10 +1,10 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16669
+// Function ID: 16670
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 11854, 676, 21, 4342, 712, 698, 11855, 4310, 5458, 16618, 4338, 1236, 5212, 4777, 2]
+// Dependencies: [19, 17, 11582, 676, 21, 4661, 712, 698, 11583, 4342, 6950, 16670, 4734, 1236, 6687, 4745, 2]
 // Exports: default
 
-// Module 16617 (NotificationReactivationActionSheet)
+// Module 16669 (NotificationReactivationActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { EventActionType } from "EventActionType";
@@ -44,37 +44,37 @@ export default function NotificationReactivationActionSheet(location) {
   }, items);
   const callback1 = React.useCallback(() => {
     let obj = outer1_1(outer1_2[7]);
-    obj = { action_type: outer1_6.SKIP_STEP, action_location: _location, permission_granted: "r" };
+    obj = { action_type: outer1_6.SKIP_STEP, action_location: _location, permission_granted: "Array" };
     obj.track(outer1_7.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj);
     outer1_1(outer1_2[9]).hideActionSheet();
   }, items1);
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.image, source: null, resizeMode: "contain" };
-  obj[1] = importDefault(16618);
+  obj[1] = importDefault(16670);
   const items2 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1236).intl;
   obj1[3] = intl.string(_location(1236).t.a4bgO0);
-  items2[1] = callback(_location(4338).Text, obj1);
+  items2[1] = callback(_location(4734).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = _location(1236).intl;
   obj2[3] = intl2.string(_location(1236).t["rW5gw/"]);
-  items2[2] = callback(_location(4338).Text, obj2);
+  items2[2] = callback(_location(4734).Text, obj2);
   const obj3 = { style: tmp.buttons, children: null };
   const obj4 = { text: null, onPress: null };
   const intl3 = _location(1236).intl;
   obj4[0] = intl3.string(_location(1236).t.a4bgO0);
   obj4[1] = callback;
-  const items3 = [callback(_location(4777).Button, obj4), ];
+  const items3 = [callback(_location(4745).Button, obj4), ];
   const obj5 = { text: null, onPress: null, variant: "secondary" };
   const intl4 = _location(1236).intl;
   obj5[0] = intl4.string(_location(1236).t["/L3kom"]);
   obj5[1] = callback1;
-  items3[1] = callback(_location(4777).Button, obj5);
+  items3[1] = callback(_location(4745).Button, obj5);
   obj3[1] = items3;
-  items2[3] = callback2(_location(5212).ButtonGroup, obj3);
+  items2[3] = callback2(_location(6687).ButtonGroup, obj3);
   obj[1] = items2;
   obj[0] = callback2(closure_4, obj);
-  return callback(_location(5458).BottomSheet, obj);
+  return callback(_location(6950).BottomSheet, obj);
 };

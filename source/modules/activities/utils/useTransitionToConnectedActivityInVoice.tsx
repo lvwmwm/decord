@@ -1,10 +1,10 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16272
+// Function ID: 16273
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1979, 676, 3979, 10380, 10630, 10641, 1231, 2]
+// Dependencies: [5, 19, 1391, 1979, 676, 4011, 8724, 8744, 8733, 1231, 2]
 // Exports: default
 
-// Module 16222 (useTransitionToConnectedActivityInVoice)
+// Module 16272 (useTransitionToConnectedActivityInVoice)
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -46,7 +46,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -98,7 +98,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14767
+// Function ID: 14768
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1922, 4013, 8148, 676, 21, 4342, 712, 1499, 647, 4007, 4338, 1236, 5437, 1297, 10023, 7659, 10421, 13959, 2]
+// Dependencies: [19, 17, 1922, 4045, 8198, 676, 21, 4661, 712, 1500, 647, 4039, 4734, 1236, 6292, 1297, 10228, 7877, 10669, 13991, 2]
 // Exports: default
 
-// Module 14727 (VideoUploadQualityNitroUpsell)
-import module_13959 from "module_13959";
+// Module 14767 (VideoUploadQualityNitroUpsell)
+import module_13991 from "module_13991";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ let c10;
 let c9;
 const require = arg1;
 function VideoUploadQualityNitroUpsell() {
-  let obj = _require(1499);
+  let obj = _require(1500);
   _require = obj.useStackNavigation();
   const tmp3 = createCacheKey();
   let obj1 = _require(647);
@@ -31,7 +31,7 @@ function VideoUploadQualityNitroUpsell() {
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = _require(1236).intl;
   obj[2] = intl.format(_require(1236).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-  const children = [callback(_require(4338).Text, obj), ];
+  const children = [callback(_require(4734).Text, obj), ];
   let tmp7Result = !stateFromStores;
   if (!stateFromStores) {
     obj = { style: null, children: null };
@@ -41,7 +41,7 @@ function VideoUploadQualityNitroUpsell() {
     obj2[0] = tmp3.cardContent;
     const obj3 = { style: null, source: null, size: null, color: null };
     obj3[0] = tmp3.cardIcon;
-    obj3[1] = importDefault(10023);
+    obj3[1] = importDefault(10228);
     obj3[2] = tmp(1297).Icon.Sizes.SMALL;
     obj3[3] = importDefault(712).unsafe_rawColors.PRIMARY_400;
     const items2 = [tmp7(tmp(1297).Icon, obj3), ];
@@ -53,10 +53,10 @@ function VideoUploadQualityNitroUpsell() {
       const obj = outer1_1(outer1_2[17]);
     };
     obj4[2] = intl2.format(tmp(1236).t.uW1zul, obj5);
-    items2[1] = tmp7(tmp(4338).Text, obj4);
+    items2[1] = tmp7(tmp(4734).Text, obj4);
     obj2[1] = items2;
     obj1[2] = tmp5(tmp6, obj2);
-    obj[1] = tmp7(tmp(5437).Card, obj1);
+    obj[1] = tmp7(tmp(6292).Card, obj1);
     tmp7Result = tmp7(tmp6, obj);
   }
   children[1] = tmp7Result;
@@ -164,5 +164,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(importDefault(13959), { node });
+  return callback(importDefault(13991), { node });
 };

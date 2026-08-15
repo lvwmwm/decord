@@ -1,10 +1,10 @@
-// Module ID: 10866
-// Function ID: 10867
+// Module ID: 9747
+// Function ID: 9748
 // Name: useGameConsoleAccounts
-// Dependencies: [5061, 676, 589, 1370, 2]
+// Dependencies: [5221, 676, 589, 1370, 2]
 // Exports: default
 
-// Module 10866 (useGameConsoleAccounts)
+// Module 9747 (useGameConsoleAccounts)
 import set from "set";
 import { PlatformTypes } from "ME";
 

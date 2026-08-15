@@ -1,10 +1,10 @@
-// Module ID: 6018
-// Function ID: 6019
+// Module ID: 5360
+// Function ID: 5361
 // Name: items
 // Dependencies: [676, 1208, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 6018 (items)
+// Module 5360 (items)
 import set from "set";
 
 const items = [, , ];

@@ -1,10 +1,10 @@
-// Module ID: 11164
-// Function ID: 11165
+// Module ID: 12044
+// Function ID: 12045
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 500, 8423, 8041, 1236, 4909, 7721, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 500, 8462, 8091, 1236, 5433, 7939, 2]
 // Exports: default
 
-// Module 11164 (ShareChatInput)
+// Module 12044 (ShareChatInput)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -57,7 +57,7 @@ export default function ShareChatInput(onFocus) {
   let dependencyMap;
   const tmp = createCacheKey();
   const tmp2 = onBlur;
-  const tmp4 = onBlur(8423)();
+  const tmp4 = onBlur(8462)();
   [focused, c2] = callback(React.useState(false), 2);
   const items = [onFocus];
   const items1 = [onBlur];
@@ -93,15 +93,15 @@ export default function ShareChatInput(onFocus) {
   obj[11] = callback1;
   obj[16] = tmp.chatText;
   obj[17] = !flag;
-  const items3 = [callback2(tmp2(8041), obj), ];
+  const items3 = [callback2(tmp2(8091), obj), ];
   obj = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, disabled: null, children: null };
   const intl3 = onFocus(1236).intl;
   obj[0] = intl3.string(onFocus(1236).t.iZ7Mz9);
   obj[2] = onPressEmoji;
   obj[3] = tmp.emojiButton;
   obj[4] = flag;
-  obj[5] = callback2(onFocus(7721).ReactionIcon, { size: "md" });
-  items3[1] = callback2(onFocus(4909).PressableOpacity, obj);
+  obj[5] = callback2(onFocus(7939).ReactionIcon, { size: "md" });
+  items3[1] = callback2(onFocus(5433).PressableOpacity, obj);
   obj[1] = items3;
   return tmp8(tmp9, obj);
 };

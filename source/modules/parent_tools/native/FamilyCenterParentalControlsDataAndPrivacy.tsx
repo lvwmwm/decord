@@ -1,17 +1,17 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14288
+// Function ID: 14289
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 676, 8148, 21, 1236, 2303, 1993, 10421, 13959, 2]
+// Dependencies: [19, 676, 8198, 21, 1236, 2335, 1993, 10669, 13991, 2]
 // Exports: default
 
-// Module 14256 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 14288 (FamilyCenterParentalControlsDataAndPrivacy)
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("MobileSetting").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx");
 
 export default function FamilyCenterParentalControlsDataAndPrivacy() {
   const memo = React.useMemo(() => {
@@ -21,7 +21,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     obj = { helpdeskArticle: null };
     let obj2 = callback(1993);
     obj[0] = obj2.getArticleURL(constants.DATA_PRIVACY_CONTROLS);
-    obj[1] = intl.format(callback(2303).Z5yJZy, obj);
+    obj[1] = intl.format(callback(2335).Z5yJZy, obj);
     const items1 = [obj, , , ];
     obj = { settings: items2, subLabel: null };
     items2 = [closure_5.PARENTAL_CONTROLS_DATA_USAGE_PERSONALIZATION];
@@ -29,14 +29,14 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     const obj1 = { helpdeskArticle: null };
     let obj5 = callback(1993);
     obj1[0] = obj5.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED);
-    obj[1] = intl2.format(callback(2303).Imp6Ns, obj1);
+    obj[1] = intl2.format(callback(2335).Imp6Ns, obj1);
     items1[1] = obj;
     obj2 = { settings: items3, subLabel: null };
     items3 = [closure_5.PARENTAL_CONTROLS_DATA_USAGE_QUESTS];
     const intl3 = memo(1236).intl;
     const obj3 = { helpdeskArticle: null };
     obj3[0] = callback(1993).getArticleURL(constants.QUESTS_PRIVACY_CONTROLS);
-    obj2[1] = intl3.format(callback(2303).cnCK6b, obj3);
+    obj2[1] = intl3.format(callback(2335).cnCK6b, obj3);
     items1[2] = obj2;
     const obj4 = { settings: items4, subLabel: null };
     items4 = [closure_5.PARENTAL_CONTROLS_DATA_USAGE_QUESTS_3P];
@@ -44,7 +44,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     obj5 = { helpdeskArticle: null };
     const obj9 = callback(1993);
     obj5[0] = callback(1993).getArticleURL(constants.QUESTS_PRIVACY_CONTROLS);
-    obj4[1] = intl4.format(callback(2303)["6mK5Pz"], obj5);
+    obj4[1] = intl4.format(callback(2335)["6mK5Pz"], obj5);
     items1[3] = obj4;
     return items1;
   }, []);
@@ -54,5 +54,5 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     obj = { sections: memo };
     return obj.createList(obj);
   }, items);
-  return jsx(importDefault(13959), { node });
+  return jsx(importDefault(13991), { node });
 };

@@ -1,69 +1,62 @@
-// Module ID: 14959
-// Function ID: 14960
-// Name: toggle
-// Dependencies: [8148, 4034, 14958, 14149, 10421, 1236, 2]
+// Module ID: 15000
+// Function ID: 15001
+// Name: useDataToSupportQuests3PSettingValue
+// Dependencies: [8198, 4066, 14998, 14181, 10669, 1236, 14999, 2]
 
-// Module 14959 (toggle)
+// Module 15000 (useDataToSupportQuests3PSettingValue)
+import { MobileUserSettings } from "MobileUserSettings";
+import createToggle from "createToggle";
 import createToggle from "createToggle";
 
-const toggle = createToggle.createToggle({
-  useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.CyLYKZ);
-  },
-  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
-  useValue: function useDataToSupportQuests3PSettingValue() {
-    const Quests3PDataOptedOut = require(4034) /* explicitContentFromProto */.Quests3PDataOptedOut;
-    return !Quests3PDataOptedOut.useSetting();
-  },
-  onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
-    const Quests3PDataOptedOut = require(4034) /* explicitContentFromProto */.Quests3PDataOptedOut;
-    Quests3PDataOptedOut.updateSetting(!arg0);
-  },
-  useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14958) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const DropsOptedOut = require(4034) /* explicitContentFromProto */.DropsOptedOut;
-    const setting = DropsOptedOut.useSetting();
-    const obj = require(14958) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(14149) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
-    if (!adPersonalizationTogglesDisabled) {
-      adPersonalizationTogglesDisabled = setting;
-    }
-    if (!adPersonalizationTogglesDisabled) {
-      adPersonalizationTogglesDisabled = isParentallyControlled;
-    }
-    return adPersonalizationTogglesDisabled;
+function useDataToSupportQuests3PSettingValue() {
+  const Quests3PDataOptedOut = require(4066) /* explicitContentFromProto */.Quests3PDataOptedOut;
+  return !Quests3PDataOptedOut.useSetting();
+}
+function useDataToSupportQuests3PSettingIsDisabled() {
+  let adPersonalizationTogglesDisabled = require(14998) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+  const DropsOptedOut = require(4066) /* explicitContentFromProto */.DropsOptedOut;
+  const setting = DropsOptedOut.useSetting();
+  const obj = require(14998) /* useAdPersonalizationTogglesDisabled */;
+  const isParentallyControlled = require(14181) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+  if (!adPersonalizationTogglesDisabled) {
+    adPersonalizationTogglesDisabled = setting;
   }
-});
+  if (!adPersonalizationTogglesDisabled) {
+    adPersonalizationTogglesDisabled = isParentallyControlled;
+  }
+  return adPersonalizationTogglesDisabled;
+}
+function onDataToSupportQuests3PSettingValueChange(arg0) {
+  const Quests3PDataOptedOut = require(4066) /* explicitContentFromProto */.Quests3PDataOptedOut;
+  Quests3PDataOptedOut.updateSetting(!arg0);
+}
 let obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.CyLYKZ);
   },
-  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
-  useValue: function useDataToSupportQuests3PSettingValue() {
-    const Quests3PDataOptedOut = require(4034) /* explicitContentFromProto */.Quests3PDataOptedOut;
-    return !Quests3PDataOptedOut.useSetting();
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
+  usePredicate() {
+    return !require(14999) /* apexExperiment */.useIsAdTopicOptOutClientEnabled();
   },
-  onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
-    const Quests3PDataOptedOut = require(4034) /* explicitContentFromProto */.Quests3PDataOptedOut;
-    Quests3PDataOptedOut.updateSetting(!arg0);
-  },
-  useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14958) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const DropsOptedOut = require(4034) /* explicitContentFromProto */.DropsOptedOut;
-    const setting = DropsOptedOut.useSetting();
-    const obj = require(14958) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(14149) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
-    if (!adPersonalizationTogglesDisabled) {
-      adPersonalizationTogglesDisabled = setting;
-    }
-    if (!adPersonalizationTogglesDisabled) {
-      adPersonalizationTogglesDisabled = isParentallyControlled;
-    }
-    return adPersonalizationTogglesDisabled;
-  }
+  useValue: useDataToSupportQuests3PSettingValue,
+  onValueChange: onDataToSupportQuests3PSettingValueChange,
+  useIsDisabled: useDataToSupportQuests3PSettingIsDisabled
 };
+const toggle = createToggle.createToggle(obj);
+obj = {
+  useTitle() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.CyLYKZ);
+  },
+  parent: MobileUserSettings.SPONSORED_CONTENT_PREFERENCES,
+  usePredicate: require("apexExperiment").useIsAdTopicOptOutClientEnabled,
+  useValue: useDataToSupportQuests3PSettingValue,
+  onValueChange: onDataToSupportQuests3PSettingValueChange,
+  useIsDisabled: useDataToSupportQuests3PSettingIsDisabled
+};
+const toggle1 = createToggle.createToggle(obj);
 const result = require("useAdPersonalizationTogglesDisabled").fileFinishedImporting("modules/user_settings/defs/native/UseDataForQuests3PSetting.tsx");
 
 export default toggle;
+export const UseDataForQuests3PSponsoredContentSetting = toggle1;

@@ -1,10 +1,10 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 11854
+// Function ID: 11855
 // Name: _requestAndSyncContacts
-// Dependencies: [5, 5061, 1922, 12115, 12114, 676, 595, 12116, 5322, 5882, 2]
+// Dependencies: [5, 5221, 1922, 11852, 11851, 676, 595, 11853, 5038, 6548, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 12117 (_requestAndSyncContacts)
+// Module 11854 (_requestAndSyncContacts)
 import ME from "ME";
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -31,7 +31,7 @@ function _requestAndSyncContacts() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -112,7 +112,7 @@ function _requestAndSyncContacts() {
             if (null == phone) {
               currentUser = 0;
               v02 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               v0 = 2;
               v02 = 1;

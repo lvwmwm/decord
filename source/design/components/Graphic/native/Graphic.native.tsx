@@ -1,10 +1,10 @@
-// Module ID: 7801
-// Function ID: 7802
+// Module ID: 8019
+// Function ID: 8020
 // Name: ImageGraphic
-// Dependencies: [19, 17, 21, 4342, 5329, 4072, 4161, 2]
+// Dependencies: [19, 17, 21, 4661, 5449, 4104, 4193, 2]
 // Exports: Graphic
 
-// Module 7801 (ImageGraphic)
+// Module 8019 (ImageGraphic)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(5329), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(importDefault(5449), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;

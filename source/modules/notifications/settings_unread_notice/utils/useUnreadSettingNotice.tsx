@@ -1,10 +1,10 @@
-// Module ID: 10367
-// Function ID: 10368
+// Module ID: 10624
+// Function ID: 10625
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 1395, 9884, 589, 10368, 2]
+// Dependencies: [32, 19, 1395, 10088, 589, 10625, 2]
 // Exports: default
 
-// Module 10367 (useUnreadSettingNotice)
+// Module 10624 (useUnreadSettingNotice)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "createChannelRecord";

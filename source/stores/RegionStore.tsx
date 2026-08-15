@@ -1,9 +1,9 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 16029
+// Function ID: 16030
 // Name: initialize
 // Dependencies: [1910, 12, 589, 709, 2]
 
-// Module 15979 (initialize)
+// Module 16029 (initialize)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Store } from "initialize";
 

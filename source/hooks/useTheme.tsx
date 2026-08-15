@@ -1,10 +1,10 @@
-// Module ID: 4278
-// Function ID: 4279
+// Module ID: 4310
+// Function ID: 4311
 // Name: useTheme
 // Dependencies: [676, 1363, 2]
 // Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 4278 (useTheme)
+// Module 4310 (useTheme)
 import { ThemeTypes } from "ME";
 
 function useTheme() {

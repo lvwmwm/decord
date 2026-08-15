@@ -1,9 +1,9 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14793
+// Function ID: 14794
 // Name: toggle
-// Dependencies: [8148, 676, 4034, 9824, 1236, 698, 10421, 2]
+// Dependencies: [8198, 676, 4066, 10024, 1236, 698, 10669, 2]
 
-// Module 14753 (toggle)
+// Module 14793 (toggle)
 import { AnalyticEvents } from "ME";
 import createToggle from "createToggle";
 
@@ -12,11 +12,11 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(4034) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(4034) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
     let setting1 = !setting;
     if (!setting) {
       setting1 = ShowInAppNotifications.useSetting();
@@ -24,7 +24,7 @@ const toggle = createToggle.createToggle({
     return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(4034) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
     let obj = importDefault(698);
     obj = { notifications_in_app_enabled };
@@ -45,11 +45,11 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
   },
-  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(4034) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(4034) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
     let setting1 = !setting;
     if (!setting) {
       setting1 = ShowInAppNotifications.useSetting();
@@ -57,7 +57,7 @@ let obj = {
     return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(4034) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
     let obj = importDefault(698);
     obj = { notifications_in_app_enabled };

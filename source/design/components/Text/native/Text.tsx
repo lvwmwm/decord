@@ -1,9 +1,9 @@
-// Module ID: 4338
-// Function ID: 4339
+// Module ID: 4734
+// Function ID: 4735
 // Name: Text
-// Dependencies: [109, 19, 17, 505, 21, 4083, 712, 12, 4339, 4340, 4342, 4347, 4348, 4351, 501, 4352, 299, 2]
+// Dependencies: [109, 19, 17, 505, 21, 4115, 712, 12, 4735, 4736, 4661, 4738, 4739, 4742, 501, 4743, 299, 2]
 
-// Module 4338 (Text)
+// Module 4734 (Text)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
@@ -12,14 +12,14 @@ import { jsx } from "jsxProd";
 import { TextVariantsFlat } from "TEXT_VARIANT";
 import useManaTextMigrationHighlight from "useManaTextMigrationHighlight";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 
 const require = arg1;
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];
 let c5 = importAllResult;
 const Text = get_ActivityIndicator.Text;
 let closure_7 = get_ActivityIndicator.unstable_TextAncestorContext;
-let closure_9 = require("module_4083").createAnimatedComponent(Text);
+let closure_9 = require("module_4115").createAnimatedComponent(Text);
 let items = [{ includeFontPadding: true }];
 let closure_11 = [];
 const keys = Object.keys(require("Themes").colors);
@@ -119,26 +119,26 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
   if (color == null) {
     color = "text-default";
   }
-  let obj = require(4347) /* PlainTextExperimentProvider */;
+  let obj = require(4738) /* PlainTextExperimentProvider */;
   const plainTextExperimentEnabled = obj.usePlainTextExperimentEnabled();
   const context = importAllResult.useContext(closure_7);
-  let obj1 = require(4348) /* useTypographyVariantRemap */;
+  let obj1 = require(4739) /* useTypographyVariantRemap */;
   const typographyVariantRemap = obj1.useTypographyVariantRemap(animated.variant, false);
   const tmp2 = closure_18;
   const tmp2Result = closure_18(color, tabularNumbers);
   const items = [dependencyMap[typographyVariantRemap], tmp2Result.text, , ];
-  const manaTextMigrationHighlight = require(4340) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
+  const manaTextMigrationHighlight = require(4736) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
   const arraySpreadResult = HermesBuiltin.arraySpread(includeFontPadding ? items : closure_11, 2);
   items[arraySpreadResult] = style;
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
-  let tmp4Result = tmp4(4351);
+  let tmp4Result = tmp4(4742);
   obj = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != arg1, hasTextAncestor: context, isIOS: null, props: null, style: null };
   tmp4Result = tmp4(501);
   obj[6] = tmp4Result.isIOS();
   obj[7] = merged;
   obj[8] = items;
   const plainTextEligibility = tmp4Result.getPlainTextEligibility(obj);
-  const obj3 = require(4340) /* useManaTextMigrationHighlight */;
+  const obj3 = require(4736) /* useManaTextMigrationHighlight */;
   const tmp10 = includeFontPadding ? items : closure_11;
   if (tmp4Result1.isPlainTextEligible(plainTextEligibility)) {
     ({ fontWeight, textAlignVertical, verticalAlign } = plainTextEligibility);
@@ -176,7 +176,7 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
     }
     obj[13] = ellipsizeMode;
     const merged1 = Object.assign(merged);
-    return tmp20(importDefault(4352), obj);
+    return tmp20(importDefault(4743), obj);
   } else {
     if (flag2) {
       let NativeText = tmp4(299).NativeText;
@@ -196,10 +196,10 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
     obj1.children = children;
     return <NativeText style={null} numberOfLines={null} ellipsizeMode={null} allowFontScaling ref={null} />;
   }
-  tmp4Result1 = require(4351) /* set */;
+  tmp4Result1 = require(4742) /* set */;
 });
 const forwardRefResult1 = importAllResult.forwardRef((variant, ref) => {
-  let obj = require(4348) /* useTypographyVariantRemap */;
+  let obj = require(4739) /* useTypographyVariantRemap */;
   obj = { ref };
   const typographyVariantRemap = obj.useTypographyVariantRemap(variant.variant, true);
   const merged = Object.assign(variant);

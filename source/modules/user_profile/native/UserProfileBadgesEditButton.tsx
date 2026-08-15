@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14039
+// Function ID: 14040
 // Name: UserProfileBadgesEditButton
-// Dependencies: [19, 17, 8848, 21, 4342, 712, 13992, 5789, 4310, 14008, 2007, 14012, 1236, 14004, 4338, 14009, 2]
+// Dependencies: [19, 17, 8931, 21, 4661, 712, 14024, 7139, 4342, 14040, 2007, 14044, 1236, 14036, 4734, 14041, 2]
 // Exports: default
 
-// Module 14007 (UserProfileBadgesEditButton)
+// Module 14039 (UserProfileBadgesEditButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getBadgeAssetFromCDN } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -35,9 +35,9 @@ export default function UserProfileBadgesEditButton(arg0) {
   let analyticsLocations;
   const tmp = createCacheKey();
   _require = tmp;
-  let obj = _require(13992);
+  let obj = _require(14024);
   const isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "UserProfileBadgesEditButton" });
-  analyticsLocations = analyticsLocations(5789)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
   [][0] = analyticsLocations;
   const callback = React.useCallback(() => {
     analyticsLocations(paths[8]).openLazy(_undefined(paths[10])(paths[9], paths.paths), "Hide Badges", {});
@@ -79,7 +79,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     obj1[4] = callback;
     const intl3 = tmp2(1236).intl;
     obj1[5] = intl3.string(tmp2(1236).t.XMDvpN);
-    obj[1] = callback(tmp2(4338).Text, obj1);
+    obj[1] = callback(tmp2(4734).Text, obj1);
     const obj2 = { style: null, "aria-hidden": true, children: null };
     obj2[0] = tmp.content;
     if (null != substr1) {
@@ -102,7 +102,7 @@ export default function UserProfileBadgesEditButton(arg0) {
       obj3[2] = tmp.overflowCount;
       const _HermesInternal = HermesInternal;
       obj3[3] = "+" + diff;
-      tmp13Result = tmp13(tmp2(4338).Text, obj3);
+      tmp13Result = tmp13(tmp2(4734).Text, obj3);
     }
     items[1] = tmp13Result;
     obj2[2] = items;
@@ -115,7 +115,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     }
     obj[3] = tmp18;
     obj[4] = tmp6;
-    return callback(tmp2(14004).UserProfileEditFormButton, obj);
+    return callback(tmp2(14036).UserProfileEditFormButton, obj);
   } else {
     return null;
   }

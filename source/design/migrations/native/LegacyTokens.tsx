@@ -1,9 +1,9 @@
-// Module ID: 5220
-// Function ID: 5221
+// Module ID: 6289
+// Function ID: 6290
 // Name: result
-// Dependencies: [17, 4342, 1363, 712, 4191, 2]
+// Dependencies: [17, 4661, 1363, 712, 4223, 2]
 
-// Module 5220 (result)
+// Module 6289 (result)
 import { Platform } from "get ActivityIndicator";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
@@ -146,8 +146,8 @@ const result14 = createCacheKey.experimental_createToken((theme) => {
 });
 const result15 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let PRIMARY_160 = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.25);
-    const tmpResult = require(4191) /* hexToRgba */;
+    let PRIMARY_160 = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.25);
+    const tmpResult = require(4223) /* hexToRgba */;
   } else {
     PRIMARY_160 = importDefault(712).unsafe_rawColors.PRIMARY_160;
   }
@@ -195,8 +195,8 @@ const result23 = createCacheKey.experimental_createToken((theme) => {
 });
 const result24 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let BACKGROUND_BASE_LOW = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.24);
-    const tmpResult = require(4191) /* hexToRgba */;
+    let BACKGROUND_BASE_LOW = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.24);
+    const tmpResult = require(4223) /* hexToRgba */;
   } else {
     BACKGROUND_BASE_LOW = importDefault(712).colors.BACKGROUND_BASE_LOW;
   }
@@ -214,8 +214,8 @@ const result26 = createCacheKey.experimental_createToken((theme) => {
 });
 const result27 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let WHITE = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.24);
-    const tmpResult = require(4191) /* hexToRgba */;
+    let WHITE = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.24);
+    const tmpResult = require(4223) /* hexToRgba */;
   } else {
     WHITE = importDefault(712).unsafe_rawColors.WHITE;
   }
@@ -392,7 +392,7 @@ const result56 = createCacheKey.experimental_createToken((theme) => {
 const result57 = createCacheKey.experimental_createToken((theme) => {
   const obj = require(1363) /* AccessibilityAnnouncer */;
   const isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
-  const hexWithOpacity = require(4191) /* hexToRgba */.hexWithOpacity;
+  const hexWithOpacity = require(4223) /* hexToRgba */.hexWithOpacity;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.PRIMARY_100, c3);
@@ -404,7 +404,7 @@ const result57 = createCacheKey.experimental_createToken((theme) => {
 const result58 = createCacheKey.experimental_createToken((theme) => {
   const obj = require(1363) /* AccessibilityAnnouncer */;
   const isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
-  const hexWithOpacity = require(4191) /* hexToRgba */.hexWithOpacity;
+  const hexWithOpacity = require(4223) /* hexToRgba */.hexWithOpacity;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.PRIMARY_500, c3);
@@ -417,8 +417,8 @@ const result59 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_500 = importDefault(712).unsafe_rawColors.PRIMARY_500;
   } else {
-    PRIMARY_500 = require(4191) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
-    const tmpResult = require(4191) /* hexToRgba */;
+    PRIMARY_500 = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
+    const tmpResult = require(4223) /* hexToRgba */;
   }
   return PRIMARY_500;
 });

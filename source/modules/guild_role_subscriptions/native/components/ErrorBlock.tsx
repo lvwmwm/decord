@@ -1,10 +1,10 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11384
+// Function ID: 11385
 // Name: ErrorBlock
-// Dependencies: [19, 21, 11668, 2]
+// Dependencies: [19, 21, 11385, 2]
 // Exports: default
 
-// Module 11667 (ErrorBlock)
+// Module 11384 (ErrorBlock)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -13,7 +13,7 @@ const result = require("MessageBlock").fileFinishedImporting("modules/guild_role
 
 export default function ErrorBlock(children) {
   const obj = { color: null, children: null };
-  obj[0] = require(11668) /* MessageBlock */.MessageBlockColors.RED;
+  obj[0] = require(11385) /* MessageBlock */.MessageBlockColors.RED;
   obj[1] = children.children;
-  return jsx(importDefault(11668), { color: null, children: null });
+  return jsx(importDefault(11385), { color: null, children: null });
 };

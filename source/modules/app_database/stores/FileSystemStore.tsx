@@ -1,9 +1,9 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 5070
+// Function ID: 5071
 // Name: result
 // Dependencies: [5, 3, 687, 589, 709, 1955, 2]
 
-// Module 7008 (result)
+// Module 5070 (result)
 import items from "items";
 import { Store } from "initialize";
 
@@ -58,7 +58,7 @@ function refresh() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ function refresh() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp38) {
         c3 = tmp;

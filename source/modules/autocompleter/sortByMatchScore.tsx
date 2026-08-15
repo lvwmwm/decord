@@ -1,10 +1,10 @@
-// Module ID: 5291
-// Function ID: 5292
+// Module ID: 6776
+// Function ID: 6777
 // Name: sortByMatchScore
 // Dependencies: [2]
 // Exports: default
 
-// Module 5291 (sortByMatchScore)
+// Module 6776 (sortByMatchScore)
 const result = require("set").fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");
 
 export default function sortByMatchScore(score, score2) {

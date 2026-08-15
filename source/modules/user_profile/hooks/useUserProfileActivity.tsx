@@ -1,10 +1,10 @@
-// Module ID: 12402
-// Function ID: 12403
+// Module ID: 12143
+// Function ID: 12144
 // Name: useUserProfileActivity
-// Dependencies: [19, 9434, 4393, 4431, 4406, 589, 9700, 12403, 8307, 8967, 8963, 2]
+// Dependencies: [19, 9199, 4497, 4559, 4529, 589, 9895, 12144, 8348, 9048, 9046, 2]
 // Exports: default
 
-// Module 12402 (useUserProfileActivity)
+// Module 12143 (useUserProfileActivity)
 import { useMemo } from "noop";
 import map from "map";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

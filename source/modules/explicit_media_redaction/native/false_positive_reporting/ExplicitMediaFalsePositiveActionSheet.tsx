@@ -1,10 +1,10 @@
-// Module ID: 11134
-// Function ID: 11135
+// Module ID: 10871
+// Function ID: 10872
 // Name: ExplicitMediaFalsePositivePreviewEmbed
-// Dependencies: [19, 17, 21, 4923, 8934, 4342, 712, 1297, 4310, 4062, 10332, 10333, 1236, 4061, 7129, 5458, 4338, 4777, 2]
+// Dependencies: [19, 17, 21, 4838, 9019, 4661, 712, 1297, 4342, 4094, 9835, 9834, 1236, 4093, 5001, 6950, 4734, 4745, 2]
 // Exports: ExplicitMediaFalsePositiveActionSheet, handleError, handleSuccess
 
-// Module 11134 (ExplicitMediaFalsePositivePreviewEmbed)
+// Module 10871 (ExplicitMediaFalsePositivePreviewEmbed)
 import noop from "noop";
 import get_ActivityIndicator from "Button";
 import jsxProd from "jsxProd";
@@ -49,7 +49,7 @@ function ExplicitMediaFalsePositivePreviewAttachment(attachment) {
 function ExplicitMediaFalsePositivePreview(url) {
   url = url.url;
   const tmp = createCacheKey();
-  let obj = require(4923) /* openImagePickerUnhandled */;
+  let obj = require(4838) /* openImagePickerUnhandled */;
   obj = { style: items, children: null };
   items = [, ];
   ({ mediaContainer: arr[0], elevationShadow: arr[1] } = tmp);
@@ -59,7 +59,7 @@ function ExplicitMediaFalsePositivePreview(url) {
     const obj1 = { uri: null };
     obj1[0] = url;
     obj[4] = obj1;
-    let tmp3Result = tmp3(importDefault(8934), obj);
+    let tmp3Result = tmp3(importDefault(9019), obj);
   } else {
     const obj2 = { style: null, source: null };
     const items1 = [, ];
@@ -93,16 +93,16 @@ let obj4 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_GRADIE
 let result = require("jsxProd").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaFalsePositiveActionSheet.tsx");
 
 export const handleSuccess = function handleSuccess(arg0) {
-  let obj = importDefault(4310);
+  let obj = importDefault(4342);
   obj.hideActionSheet(arg0);
-  obj = { key: "explicit_media_report_false_positive_success", icon: importDefault(10332), IconComponent: require(10333) /* ShieldIcon */.ShieldIcon, iconColor: "text-brand", content: null };
+  obj = { key: "explicit_media_report_false_positive_success", icon: importDefault(9835), IconComponent: require(9834) /* ShieldIcon */.ShieldIcon, iconColor: "text-brand", content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.gFsTKu);
-  importDefault(4062).open(obj);
+  importDefault(4094).open(obj);
 };
 export const handleError = function handleError() {
   const intl = require(1236) /* getSystemLocale */.intl;
-  require(4061) /* presentAddedFriendToast */.presentError(intl.string(require(1236) /* getSystemLocale */.t.R0RpRX));
+  require(4093) /* presentAddedFriendToast */.presentError(intl.string(require(1236) /* getSystemLocale */.t.R0RpRX));
 };
 export const ExplicitMediaFalsePositiveActionSheet = function ExplicitMediaFalsePositiveActionSheet(channelId) {
   let attachmentPreview;

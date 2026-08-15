@@ -1,10 +1,10 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9571
+// Function ID: 9572
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4342, 9412, 9438, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4661, 9176, 9205, 1236, 1297, 2]
 // Exports: default
 
-// Module 9617 (AvatarDecorationProductPreview)
+// Module 9571 (AvatarDecorationProductPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,9 +15,9 @@ let closure_4 = createCacheKey.createStyles({ fullSizePreview: { flex: 1, alignI
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
 
 export default function AvatarDecorationProductPreview(product) {
-  let obj = require(9412) /* useCurrentUser */;
+  let obj = require(9176) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(9438) /* firstAvatarDecoration */;
+  let obj1 = require(9205) /* firstAvatarDecoration */;
   const firstAvatarDecoration = obj1.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp5 = null;
   if (null != firstAvatarDecoration) {
@@ -27,11 +27,11 @@ export default function AvatarDecorationProductPreview(product) {
     obj = { a11y_text: null };
     obj[0] = firstAvatarDecoration.label;
     obj[2] = intl.formatToPlainString(tmp2(1236).t.Do2lxE, obj);
-    obj1 = { user: null, guildId: "r", size: true, avatarDecoration: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", animate: null };
+    obj1 = { user: null, guildId: "r", size: true, avatarDecoration: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", animate: null };
     obj1[0] = currentUser;
     obj1[2] = tmp2(1297).AvatarSizes.GIFT_START;
     obj1[3] = firstAvatarDecoration;
-    obj[5] = jsx(tmp2(1297).Avatar, { user: null, guildId: "r", size: true, avatarDecoration: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", animate: null });
+    obj[5] = jsx(tmp2(1297).Avatar, { user: null, guildId: "r", size: true, avatarDecoration: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", animate: null });
     tmp5 = <View a11y_text={null} />;
   }
   return tmp5;

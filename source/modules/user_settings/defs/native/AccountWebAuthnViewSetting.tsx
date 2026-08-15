@@ -1,9 +1,9 @@
-// Module ID: 14124
-// Function ID: 14125
+// Module ID: 14156
+// Function ID: 14157
 // Name: route
-// Dependencies: [19, 14045, 1922, 8148, 676, 4705, 1236, 5892, 589, 10421, 14048, 2]
+// Dependencies: [19, 14077, 1922, 8198, 676, 4827, 1236, 5264, 589, 10669, 14080, 2]
 
-// Module 14124 (route)
+// Module 14156 (route)
 import noop from "noop";
 import hasFetchedCredentials from "hasFetchedCredentials";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -15,7 +15,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.y7SXYX);
   },
-  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
     return React.useCallback(() => {
       currentUser = currentUser.getCurrentUser();
@@ -27,7 +27,7 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4705);
+        let obj = callback2(4827);
         obj = { title: null, body: null };
         const intl = callback(1236).intl;
         obj[0] = intl.string(callback(1236).t.v740sh);
@@ -40,8 +40,8 @@ createToggle = {
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
     if (!hasFetchedCredentials.hasFetchedCredentials()) {
-      const webAuthnCredentials = require(5892) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
-      let obj = require(5892) /* _fetchWebAuthnConditionalChallenge */;
+      const webAuthnCredentials = require(5264) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
+      let obj = require(5264) /* _fetchWebAuthnConditionalChallenge */;
     }
     const items = [hasFetchedCredentials];
     return require(589) /* initialize */.useStateFromStores(items, () => {
@@ -57,7 +57,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(14048) /* UserSettingsWebAuthn */.default;
+    return require(14080) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

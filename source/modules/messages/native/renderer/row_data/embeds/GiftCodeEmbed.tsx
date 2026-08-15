@@ -1,10 +1,10 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12740
+// Function ID: 12741
 // Name: getGiftStyleUrl
-// Dependencies: [17, 1218, 10386, 1922, 4391, 676, 1924, 12663, 12664, 12665, 12666, 12667, 12668, 12669, 12670, 12671, 12672, 12673, 12233, 4187, 8119, 1363, 4162, 1236, 11274, 11275, 712, 3943, 8111, 8121, 12674, 12675, 12676, 12677, 12678, 5909, 4007, 2]
+// Dependencies: [17, 1218, 10641, 1922, 4521, 676, 1924, 12741, 12742, 12743, 12744, 12745, 12746, 12747, 12748, 12749, 12750, 12751, 11979, 4219, 8169, 1363, 4194, 1236, 10987, 10988, 712, 3975, 8161, 8171, 12752, 12753, 12754, 12755, 12756, 7200, 4039, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 12662 (getGiftStyleUrl)
+// Module 12740 (getGiftStyleUrl)
 import get_ActivityIndicator from "registerAsset";
 import fetchFingerprint from "fetchFingerprint";
 import updateGiftCode from "updateGiftCode";
@@ -21,33 +21,33 @@ let closure_12;
 let unpackModuleId;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12663);
+    return importDefault(12741);
   } else if (tmp.CUP === arg0) {
-    return importDefault(12664);
+    return importDefault(12742);
   } else if (tmp.SNOWGLOBE === arg0) {
-    return importDefault(12665);
+    return importDefault(12743);
   } else if (tmp.STANDARD_BOX === arg0) {
-    return importDefault(12666);
+    return importDefault(12744);
   } else if (tmp.COFFEE === arg0) {
-    return importDefault(12667);
+    return importDefault(12745);
   } else if (tmp.CAKE === arg0) {
-    return importDefault(12668);
+    return importDefault(12746);
   } else if (tmp.CHEST === arg0) {
-    return importDefault(12669);
+    return importDefault(12747);
   } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
-    return importDefault(12670);
+    return importDefault(12748);
   } else if (tmp.SEASONAL_CAKE === arg0) {
-    return importDefault(12671);
+    return importDefault(12749);
   } else if (tmp.SEASONAL_CHEST === arg0) {
-    return importDefault(12672);
+    return importDefault(12750);
   } else if (tmp.SEASONAL_COFFEE === arg0) {
-    return importDefault(12673);
+    return importDefault(12751);
   } else if (tmp.NITROWEEN_STANDARD === arg0) {
     const obj = { uri: null };
-    obj[0] = importDefault(12233);
+    obj[0] = importDefault(11979);
     return obj;
   } else {
-    return importDefault(12666);
+    return importDefault(12744);
   }
 }
 ({ Image: c3, processColor: c4 } = get_ActivityIndicator);
@@ -72,19 +72,19 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
   const importDefault = forcedTheme;
   if (null != message.author) {
     if (0 !== message.giftCodes.length) {
-      const colors = importDefault(8119)(forcedTheme).colors;
+      const colors = importDefault(8169)(forcedTheme).colors;
       ({ headerColor: dependencyMap, titleColor: closure_3, subtitleColor: closure_4, bodyTextColor: fetchFingerprint, backgroundColor, resolvingGradientStart: updateGiftCode, resolvingGradientEnd: mergeGuildAvatar, acceptLabelDisabledBackgroundColor: addSku, acceptLabelDisabledColor: closure_9, thumbnailBackgroundColor: closure_10, acceptLabelGreenColor: closure_11, acceptBlurpleLabelBackgroundColor: closure_12 } = colors);
       let obj = { borderColor: null, backgroundColor: null, thumbnailCornerRadius: 3 };
       obj[0] = colors.borderColor;
       let tmp4 = backgroundColor;
       if (obj2.isThemeDark(forcedTheme)) {
-        const embedBackground = _require(4162).getEmbedBackground();
+        const embedBackground = _require(4194).getEmbedBackground();
         let tmp5Result = closure_4(embedBackground);
         if (tmp5Result == null) {
           tmp5Result = backgroundColor;
         }
         tmp4 = tmp5Result;
-        const tmp3Result = _require(4162);
+        const tmp3Result = _require(4194);
         const tmp5 = closure_4;
       }
       obj[1] = tmp4;

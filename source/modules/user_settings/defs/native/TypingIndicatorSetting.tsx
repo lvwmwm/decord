@@ -1,9 +1,9 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14701
+// Function ID: 14702
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [676, 14670, 1377, 10421, 1236, 3371, 14672, 13991, 14674, 2]
+// Dependencies: [676, 14702, 1377, 10669, 1236, 3403, 14704, 14023, 14706, 2]
 
-// Module 14669 (dismissiblePremiumNewBadgeRouteProps)
+// Module 14701 (dismissiblePremiumNewBadgeRouteProps)
 import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps";
 import createToggle from "createToggle";
 
@@ -14,21 +14,21 @@ const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRou
 obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3371)["pT+BVM"]);
+    return intl.string(importDefault(3403)["pT+BVM"]);
   },
   parent: null,
   IconComponent: require("ChatDotsIcon").ChatDotsIcon,
   useTrailing,
   usePreNavigationAction,
   usePredicate() {
-    return "settings" === require(13991) /* apexExperiment */.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
+    return "settings" === require(14023) /* apexExperiment */.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
   },
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(14674) /* CustomTypingIndicatorEditScreen */.default;
+    return require(14706) /* CustomTypingIndicatorEditScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

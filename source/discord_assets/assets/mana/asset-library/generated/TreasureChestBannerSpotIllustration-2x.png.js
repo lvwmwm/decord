@@ -1,9 +1,9 @@
-// Module ID: 6889
-// Function ID: 6890
+// Module ID: 6247
+// Function ID: 6248
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6889 (metadata)
+// Module 6247 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TreasureChestBannerSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/e25a3191a2690c10b2ed170d7ac6f73d39b592cb0b486a03461ea65f16ed5b00.png";

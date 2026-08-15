@@ -1,9 +1,9 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 8587
+// Function ID: 8588
 // Name: prototype
 // Dependencies: [2]
 
-// Module 8548 (prototype)
+// Module 8587 (prototype)
 const prototype = function IgnorableWebAuthnError() {
   return HermesBuiltin.applyArguments(new.target, new.target);
 }.prototype;

@@ -1,9 +1,9 @@
-// Module ID: 5190
-// Function ID: 5191
+// Module ID: 4974
+// Function ID: 4975
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4406, 500, 4034, 687, 709, 3972, 5191, 636, 589, 2]
+// Dependencies: [1218, 676, 4529, 500, 4066, 687, 709, 4004, 4975, 636, 589, 2]
 
-// Module 5190 (checkIdleAFK)
+// Module 4974 (checkIdleAFK)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { SpeakingFlags } from "DesktopSources";
@@ -28,7 +28,7 @@ function checkIdleAFK() {
         const obj2 = importDefault(709);
       }
     }
-    const AfkTimeout = require(4034) /* explicitContentFromProto */.AfkTimeout;
+    const AfkTimeout = require(4066) /* explicitContentFromProto */.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
       if (null == closure_3) {
@@ -83,7 +83,7 @@ if (require("set").isPlatformEmbedded) {
   }
   if (null != powerMonitor) {
     function checkNativeIdle() {
-      const tmp3 = importDefault(3972);
+      const tmp3 = importDefault(4004);
       let getSystemIdleTimeMs;
       if (tmp3 != null) {
         const powerMonitor = tmp3.powerMonitor;
@@ -92,7 +92,7 @@ if (require("set").isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(3972).powerMonitor;
+        const powerMonitor2 = tmp(4004).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(arg0) {
@@ -138,7 +138,7 @@ if (require("set").isPlatformEmbedded) {
       let c11 = true;
       let closure_3 = Date.now();
       checkIdleAFK();
-      importDefault(5191).disconnect();
+      importDefault(4975).disconnect();
     });
     const powerMonitor3 = require("set").powerMonitor;
     class IdleStore extends r10079 {

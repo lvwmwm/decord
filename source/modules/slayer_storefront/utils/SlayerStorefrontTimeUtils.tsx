@@ -1,10 +1,10 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16145
+// Function ID: 16146
 // Name: getLimitedOfferTimeLeft
-// Dependencies: [32, 19, 3943, 687, 1236, 3239, 6977, 2]
+// Dependencies: [32, 19, 3975, 687, 1236, 3271, 7416, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 16095 (getLimitedOfferTimeLeft)
+// Module 16145 (getLimitedOfferTimeLeft)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -13,7 +13,7 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = importDefault(3943)(arg0).diff(importDefault(3943)(), "seconds");
+    const diffResult = importDefault(3975)(arg0).diff(importDefault(3975)(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const obj = { days: null, hours: null, minutes: null, seconds: null };
@@ -48,13 +48,13 @@ function formatLimitedOfferTimeLeft(arg0) {
       const intl2 = require(1236) /* getSystemLocale */.intl;
       obj = { hours: null };
       obj[0] = hours;
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(3239).PPaJSw, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(importDefault(3271).PPaJSw, obj);
     } else {
       const intl = require(1236) /* getSystemLocale */.intl;
       obj = { minutes: null };
       const _Math = Math;
       obj[0] = Math.max(tmp12, 1);
-      formatToPlainStringResult = intl.formatToPlainString(importDefault(3239)["7Z+aIf"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(importDefault(3271)["7Z+aIf"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -67,7 +67,7 @@ export const useTickingFormattedLimitedOfferTimeLeft = function useTickingFormat
   let closure_0 = endDate;
   const tmp = callback(React.useState(() => outer1_6(closure_0)), 2);
   const importDefault = tmp[1];
-  importDefault(6977)(() => {
+  importDefault(7416)(() => {
     callback(outer1_6(closure_0));
   }, 1000);
   return tmp[0];

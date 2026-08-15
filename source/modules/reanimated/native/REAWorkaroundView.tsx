@@ -1,9 +1,9 @@
-// Module ID: 4084
-// Function ID: 4085
+// Module ID: 4116
+// Function ID: 4117
 // Name: REAWorkaroundView
-// Dependencies: [19, 21, 1653, 4085, 2]
+// Dependencies: [19, 21, 1654, 4117, 2]
 
-// Module 4084 (REAWorkaroundView)
+// Module 4116 (REAWorkaroundView)
 import { jsx } from "jsxProd";
 import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import importDefaultResult from "cancelAnimation";

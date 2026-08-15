@@ -1,10 +1,10 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 5058
+// Function ID: 5059
 // Name: clickstreamExperimentEnabled
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 6996 (clickstreamExperimentEnabled)
+// Module 5058 (clickstreamExperimentEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

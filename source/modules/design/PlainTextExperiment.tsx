@@ -1,10 +1,10 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 13935
+// Function ID: 13936
 // Name: usePlainTextExperiment
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: usePlainTextExperiment
 
-// Module 13903 (usePlainTextExperiment)
+// Module 13935 (usePlainTextExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

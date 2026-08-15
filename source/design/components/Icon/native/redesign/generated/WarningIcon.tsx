@@ -1,10 +1,10 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8078
+// Function ID: 8079
 // Name: WarningIcon
-// Dependencies: [19, 21, 712, 4064, 8029, 2]
+// Dependencies: [19, 21, 712, 4096, 8079, 2]
 // Exports: WarningIcon
 
-// Module 8028 (WarningIcon)
+// Module 8078 (WarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const WarningIcon = function WarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8029) /* registerAsset */;
+  obj[0] = require(8079) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

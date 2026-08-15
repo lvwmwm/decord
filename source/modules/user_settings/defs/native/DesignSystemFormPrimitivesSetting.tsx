@@ -1,22 +1,22 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14942
+// Function ID: 14943
 // Name: route
-// Dependencies: [8148, 676, 10421, 14903, 2]
+// Dependencies: [8198, 676, 10669, 14943, 2]
 
-// Module 14902 (route)
+// Module 14942 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
     return "Form Primitives";
   },
-  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.DESIGN_SYSTEM_FORM_PRIMITIVES,
   getComponent() {
-    return require(14903) /* Radio */.default;
+    return require(14943) /* Radio */.default;
   }
 };
 const route = createToggle.createRoute(obj);

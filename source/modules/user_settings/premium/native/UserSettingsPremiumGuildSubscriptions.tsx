@@ -1,10 +1,10 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 12931
+// Function ID: 12932
 // Name: componentDidMount
-// Dependencies: [19, 17, 1922, 4009, 4235, 4012, 4013, 676, 1924, 21, 4342, 5220, 4072, 4238, 5939, 4686, 7659, 6077, 4338, 1236, 1993, 12855, 1940, 12869, 12871, 12873, 12877, 12775, 6928, 8232, 12815, 589, 1499, 6934, 1624, 2]
+// Dependencies: [19, 17, 1922, 4041, 4267, 4044, 4045, 676, 1924, 21, 4661, 6289, 4104, 4270, 7223, 4466, 7877, 7357, 4734, 1236, 1993, 12932, 1940, 12946, 12948, 12950, 12954, 12853, 5356, 8278, 12893, 589, 1500, 7374, 1625, 2]
 // Exports: default
 
-// Module 12854 (componentDidMount)
+// Module 12931 (componentDidMount)
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "getSanitizedRestrictedGuilds";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -64,16 +64,16 @@ const prototype = UserSettingsPremiumGuildSubscriptions.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
   if (!this.props.hasFetchedSlots) {
-    const guildBoostSlots = require(4238) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
-    const obj = require(4238) /* _fetchAppliedGuildBoostsForGuild */;
+    const guildBoostSlots = require(4270) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
+    const obj = require(4270) /* _fetchAppliedGuildBoostsForGuild */;
   }
   if (tmp4) {
-    const premiumSubscriptionPlans = require(5939) /* fetchSubscriptionPlansForSKU */.fetchPremiumSubscriptionPlans();
-    const obj2 = require(5939) /* fetchSubscriptionPlansForSKU */;
+    const premiumSubscriptionPlans = require(7223) /* fetchSubscriptionPlansForSKU */.fetchPremiumSubscriptionPlans();
+    const obj2 = require(7223) /* fetchSubscriptionPlansForSKU */;
   }
   if (!self.props.isFetchingPaymentSources) {
-    const paymentSources = require(4686) /* _deletePaymentSource */.fetchPaymentSources();
-    const obj3 = require(4686) /* _deletePaymentSource */;
+    const paymentSources = require(4466) /* _deletePaymentSource */.fetchPaymentSources();
+    const obj3 = require(4466) /* _deletePaymentSource */;
   }
 };
 prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscriptions() {
@@ -90,25 +90,25 @@ prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscr
     obj[0] = items;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t.GwnFO5);
-    const items1 = [callback(require(4338) /* Text */.Text, obj), , ];
+    const items1 = [callback(require(4734) /* Text */.Text, obj), , ];
     obj = { style: null, variant: "text-sm/medium", color: "interactive-text-default", children: null };
     obj[0] = tmp.blurb;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj1 = { helpdeskArticle: null };
     obj1[0] = importDefault(1993).getArticleURL(constants.GUILD_SUBSCRIPTIONS);
     obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.A4UTjH, obj1);
-    items1[1] = callback(require(4338) /* Text */.Text, obj);
+    items1[1] = callback(require(4734) /* Text */.Text, obj);
     let tmp6Result = null != externalManagementMessage;
     if (tmp6Result) {
       const obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj2[0] = tmp.externalManagement;
       obj2[3] = externalManagementMessage;
-      tmp6Result = tmp6(tmp7(4338).Text, obj2);
+      tmp6Result = tmp6(tmp7(4734).Text, obj2);
     }
     const obj3 = { children: null };
     items1[2] = tmp6Result;
     obj[1] = items1;
-    const items2 = [closure_15(closure_4, obj), callback(importDefault(12855), {})];
+    const items2 = [closure_15(closure_4, obj), callback(importDefault(12932), {})];
     obj3[0] = items2;
     tmp3Result = tmp3(importAllResult.Fragment, obj3);
     const obj5 = importDefault(1993);
@@ -133,7 +133,7 @@ prototype["render"] = function render() {
   if (premiumGroupRole === require(1940) /* create */.PremiumSubscriptionGroupRole.MEMBER) {
     let obj = { style: null };
     obj[0] = tmp.boostingUnavailablePill;
-    let tmp5 = callback(importDefault(12869), obj);
+    let tmp5 = callback(importDefault(12946), obj);
   } else {
     tmp5 = null;
     if (fractionalState !== FractionalPremiumStates.NONE) {
@@ -141,13 +141,13 @@ prototype["render"] = function render() {
       obj[0] = fpDurationText;
       obj[1] = isInReverseTrial;
       obj[2] = tmp.boostingUnavailablePill;
-      tmp5 = callback(importDefault(12871), obj);
+      tmp5 = callback(importDefault(12948), obj);
     }
   }
   obj = { style: tmp.scroller, children: null };
   const items = [tmp5, self.renderPremiumGuildSubscriptions(), ];
   const obj1 = { style: tmp.upsellSection, children: null };
-  const items1 = [callback(require(12873) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
+  const items1 = [callback(require(12950) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
   let tmp13Result = null;
   if (hasFetchedSubscriptionPlans) {
     const obj3 = { onLearnMorePremium: null, fractionalState: null, isInReverseTrial: null, hasAvailableSlots: null };
@@ -155,7 +155,7 @@ prototype["render"] = function render() {
     obj3[1] = fractionalState;
     obj3[2] = isInReverseTrial;
     obj3[3] = hasAvailableSlots;
-    tmp13Result = callback(importDefault(12877), obj3);
+    tmp13Result = callback(importDefault(12954), obj3);
   }
   items1[1] = tmp13Result;
   obj1[1] = items1;
@@ -175,7 +175,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   let dependencyMap;
   let closure_3;
   let closure_4;
-  let obj = _require(12775);
+  let obj = _require(12853);
   _require = obj.useSubscriptionPlansLoaded();
   flag = undefined;
   if (route != null) {
@@ -187,11 +187,11 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(6928)({ forceFetch: true }));
-  let tmpResult = tmp(8232);
+  ({ fractionalState: c2, endsAt } = flag(5356)({ forceFetch: true }));
+  let tmpResult = tmp(8278);
   closure_3 = tmpResult.useIsInReverseTrial();
-  const tmp3 = flag(6928)({ forceFetch: true });
-  closure_4 = flag(12815)(endsAt, tmp(12815).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp3 = flag(5356)({ forceFetch: true });
+  closure_4 = flag(12893)(endsAt, tmp(12893).CountDownMessageTypes.LONG_TIME_LEFT);
   tmpResult = tmp(589);
   const items = [handleGuildBoostsUpdate, handlePaymentSourceCreateEnd, addSubscriptionPlan, mergeGuildAvatar];
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
@@ -213,17 +213,17 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
     obj[10] = premiumGroupRole;
     return obj;
   });
-  const tmp4 = flag(12815);
+  const tmp4 = flag(12893);
   const items1 = [reset];
   const stateFromStores = _require(589).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const tmpResult1 = _require(589);
-  const navigation = _require(1499).useNavigation();
-  const tmpResult2 = _require(1499);
+  const navigation = _require(1500).useNavigation();
+  const tmpResult2 = _require(1500);
   obj = { navigation, externalManagementMessage: null };
-  const externalManagementMessage = _require(6934).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
+  const externalManagementMessage = _require(7374).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
   const tmp10 = UserSettingsPremiumGuildSubscriptions;
   const tmp9 = closure_14;
-  const tmpResult3 = _require(6934);
+  const tmpResult3 = _require(7374);
   let tmp11 = null;
   if (tmpResult4.isMetaQuest()) {
     tmp11 = externalManagementMessage;

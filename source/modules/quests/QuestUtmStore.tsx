@@ -1,25 +1,21 @@
-// Module ID: 7250
-// Function ID: 7251
+// Module ID: 7475
+// Function ID: 7476
 // Name: keys
 // Dependencies: [644, 2]
 
-// Module 7250 (keys)
+// Module 7475 (keys)
 import keys from "keys";
 
-const obj = keys.create((arg0) => {
+let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  return {
-    utmSourceCurrent: "r",
-    utmMediumCurrent: "disabled",
-    utmCampaignCurrent: "scales",
-    utmContentCurrent: "isArray",
-    setUtmCurrentContext(utmSourceCurrent) {
-      return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
-    },
-    getUtmCurrentContext() {
-      return state.getState();
-    }
+  const obj = { utmSourceCurrent: "r", utmMediumCurrent: "View", utmCampaignCurrent: "toCharArray$esjava$1", utmContentCurrent: "Path", setUtmCurrentContext: -36144369334270020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, getUtmCurrentContext: "<string:822214657>" };
+  obj[4] = function setUtmCurrentContext(utmSourceCurrent) {
+    return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
   };
+  obj[5] = function getUtmCurrentContext() {
+    return state.getState();
+  };
+  return obj;
 });
 const result = require("set").fileFinishedImporting("modules/quests/QuestUtmStore.tsx");
 

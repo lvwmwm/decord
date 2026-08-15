@@ -1,10 +1,10 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 10874
+// Function ID: 10875
 // Name: _upsertSavedMessage
-// Dependencies: [5, 11113, 676, 530, 8450, 709, 4586, 2]
+// Dependencies: [5, 10850, 676, 530, 8489, 709, 4803, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 11173 (_upsertSavedMessage)
+// Module 10874 (_upsertSavedMessage)
 import dispatcher from "dispatcher";
 import getTimeSafe from "getTimeSafe";
 import { Endpoints } from "ME";
@@ -77,7 +77,7 @@ function _fetchAndUpdateSavedMessages() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ function _fetchAndUpdateSavedMessages() {
             return obj8;
           } else {
             isStale = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           isStale = 3;
@@ -169,11 +169,11 @@ function _fetchAndUpdateSavedMessages() {
           callback = results.map((message) => {
             let messageRecord = null;
             if (null != message.message) {
-              let obj = callback(4586);
+              let obj = callback(4803);
               messageRecord = obj.createMessageRecord(message.message);
             }
             obj = { message: messageRecord, saveData: null };
-            obj[1] = callback(8450).savedMessageDataToClient(message.save_data);
+            obj[1] = callback(8489).savedMessageDataToClient(message.save_data);
             return obj;
           });
           obj10 = { type: "SAVED_MESSAGES_UPDATE", savedMessages: null };

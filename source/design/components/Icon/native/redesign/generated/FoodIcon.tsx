@@ -1,10 +1,10 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 9428
+// Function ID: 9429
 // Name: FoodIcon
-// Dependencies: [19, 21, 712, 4064, 8824, 2]
+// Dependencies: [19, 21, 712, 4096, 9429, 2]
 // Exports: FoodIcon
 
-// Module 8823 (FoodIcon)
+// Module 9428 (FoodIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const FoodIcon = function FoodIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8824) /* registerAsset */;
+  obj[0] = require(9429) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

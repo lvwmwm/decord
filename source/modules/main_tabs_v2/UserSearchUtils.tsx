@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 5409
+// Function ID: 5410
 // Name: cleanString
-// Dependencies: [7191, 1990, 3998, 676, 1903, 4187, 2]
+// Dependencies: [5410, 1990, 4030, 676, 1903, 4219, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7190 (cleanString)
+// Module 5409 (cleanString)
 import initialize from "initialize";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -37,7 +37,7 @@ export const getNames = function getNames(user) {
     names[nick] = names(1903).stripDiacritics(nick.toLocaleLowerCase()).trim().split(" ");
     let str2 = names(1903).stripDiacritics(nick.toLocaleLowerCase()).trim();
   }
-  const globalName = importDefault(4187).getGlobalName(user);
+  const globalName = importDefault(4219).getGlobalName(user);
   if (tmp4) {
     const obj6 = names(1903);
     const str4 = names(1903).stripDiacritics(globalName.toLocaleLowerCase());
@@ -45,7 +45,7 @@ export const getNames = function getNames(user) {
     const str5 = names(1903).stripDiacritics(globalName.toLocaleLowerCase()).trim();
   }
   const username = user.username;
-  const obj4 = importDefault(4187);
+  const obj4 = importDefault(4219);
   tmp4 = null != globalName && null == names[globalName];
   const obj7 = names(1903);
   const str7 = names(1903).stripDiacritics(username.toLocaleLowerCase());

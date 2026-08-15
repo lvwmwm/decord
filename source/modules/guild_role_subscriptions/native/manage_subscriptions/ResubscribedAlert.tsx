@@ -1,10 +1,10 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14564
+// Function ID: 14565
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4342, 712, 4795, 1236, 14533, 1297, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4763, 1236, 14565, 1297, 4734, 2]
 // Exports: default
 
-// Module 14532 (ResubscribedAlert)
+// Module 14564 (ResubscribedAlert)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,18 +34,18 @@ export default function ResubscribedAlert(onClose) {
   obj[1] = onClose.onClose;
   obj[2] = tmp.container;
   obj = { style: tmp.body, children: null };
-  obj = { source: importDefault(14533), style: tmp.headerImage };
+  obj = { source: importDefault(14565), style: tmp.headerImage };
   const items = [callback(closure_4, obj), callback(require(1297) /* Button */.Spacer, { size: 27 }), , , ];
   const obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.oPV2cy);
-  items[2] = callback(require(4338) /* Text */.Text, obj1);
+  items[2] = callback(require(4734) /* Text */.Text, obj1);
   items[3] = callback(require(1297) /* Button */.Spacer, { size: 12 });
   const obj2 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl3.string(require(1236) /* getSystemLocale */.t.DdRizV);
-  items[4] = callback(require(4338) /* Text */.Text, obj2);
+  items[4] = callback(require(4734) /* Text */.Text, obj2);
   obj[1] = items;
   obj[3] = callback2(closure_3, obj);
-  return callback(importDefault(4795), obj);
+  return callback(importDefault(4763), obj);
 };

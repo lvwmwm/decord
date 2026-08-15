@@ -1,10 +1,10 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 10913
+// Function ID: 10914
 // Name: render
-// Dependencies: [19, 17, 8966, 21, 1625, 530, 4058, 11214, 4777, 8313, 1236, 1297, 2]
+// Dependencies: [19, 17, 7242, 21, 1626, 530, 4090, 10914, 4745, 8352, 1236, 1297, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11213 (render)
+// Module 10913 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import WEB_OPEN from "WEB_OPEN";
@@ -170,7 +170,7 @@ export const canOpenSpotifyUrl = function canOpenSpotifyUrl() {
   return closure_4.canOpenURL("" + closure_6 + ":");
 };
 export const attributeInstall = function attributeInstall() {
-  let obj = importAll(1625);
+  let obj = importAll(1626);
   const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { url: closure_7.INSTALL_ATTRIBUTION(obj.getConstants().Identifier), rejectWithError: true };
   const value = HTTP.get(obj);
@@ -182,8 +182,8 @@ export const openUrl = function openUrl(arg0, ALBUM, album_id) {
     });
     const openURLResult = closure_4.openURL(closure_7.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
   } else {
-    catchPromise = importDefault(4058).openURL(closure_7.WEB_OPEN(ALBUM, album_id, "mobile"));
-    const obj = importDefault(4058);
+    catchPromise = importDefault(4090).openURL(closure_7.WEB_OPEN(ALBUM, album_id, "mobile"));
+    const obj = importDefault(4090);
   }
   return catchPromise;
 };
@@ -259,8 +259,8 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   let obj = { style: activity.style, children: null };
   obj = { icon: null, text: null, size: "sm", onPress: null, grow: true };
   obj = { source: null };
-  obj[0] = importDefault(8313);
-  obj[0] = callback(activity(4777).Button.Icon, obj);
+  obj[0] = importDefault(8352);
+  obj[0] = callback(activity(4745).Button.Icon, obj);
   const intl = activity(1236).intl;
   obj[1] = intl.formatToPlainString(activity(1236).t.LEgD7t, { platform: activity.name });
   obj[3] = function onPress() {
@@ -286,7 +286,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
 
     });
   };
-  obj[1] = callback(activity(4777).Button, obj);
+  obj[1] = callback(activity(4745).Button, obj);
   return callback(closure_5, obj);
 };
 export { SpotifyTrack };

@@ -1,10 +1,10 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8465
+// Function ID: 8466
 // Name: getAutoArchiveOptions
-// Dependencies: [1235, 687, 1236, 731, 3943, 2]
+// Dependencies: [1235, 687, 1236, 731, 3975, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 8426 (getAutoArchiveOptions)
+// Module 8465 (getAutoArchiveOptions)
 import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "AbortCodes";
 
 function getAutoArchiveOptions() {
@@ -45,9 +45,9 @@ export const getAutoArchiveDurationText = function getAutoArchiveDurationText(ar
     label = found.label;
   }
   if (label == null) {
-    const obj = importDefault(3943);
-    label = importDefault(3943).duration(arg0, "minutes").humanize();
-    const durationResult = importDefault(3943).duration(arg0, "minutes");
+    const obj = importDefault(3975);
+    label = importDefault(3975).duration(arg0, "minutes").humanize();
+    const durationResult = importDefault(3975).duration(arg0, "minutes");
   }
   return label;
 };

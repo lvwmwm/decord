@@ -1,9 +1,9 @@
-// Module ID: 5060
-// Function ID: 5061
+// Module ID: 7241
+// Function ID: 7242
 // Name: upsertAccount
-// Dependencies: [4365, 1218, 5061, 5190, 4431, 5199, 4361, 8966, 676, 5063, 687, 3, 4227, 709, 584, 11216, 12, 698, 643, 12983, 10633, 1370, 589, 8310, 2]
+// Dependencies: [4504, 1218, 5221, 4974, 4559, 4774, 4542, 7242, 676, 5097, 687, 3, 4259, 709, 584, 7243, 12, 698, 643, 7246, 4779, 1370, 589, 7247, 2]
 
-// Module 5060 (upsertAccount)
+// Module 7241 (upsertAccount)
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import closure_8 from "set";
@@ -68,7 +68,7 @@ function upsertAccount(accountId, accessToken) {
     }, closure_29);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
-    const interval = new obj(4227).Interval();
+    const interval = new obj(4259).Interval();
     obj.pingInterval = interval;
     const tmp15 = new importDefault(584)(undefined, MINUTE);
     obj.backoff = tmp15;
@@ -177,7 +177,7 @@ function activitySync(userId, activity, arg2) {
               }
               const tmp14Result = closure_13(type);
               if (null != tmp14Result) {
-                const obj4 = require(11216) /* apiRequest */;
+                const obj4 = require(7243) /* apiRequest */;
                 obj = { position: null, deviceId: null, repeat: null };
                 obj[0] = +bound;
                 obj[1] = device.id;
@@ -264,8 +264,8 @@ function handleUserActivitySyncStop() {
   if (null != tmp11) {
     const socket = tmp11.socket;
     if (tmp18) {
-      require(11216) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj4 = require(11216) /* apiRequest */;
+      require(7243) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj4 = require(7243) /* apiRequest */;
     }
     tmp18 = null != dependencyMap3[socket.accountId] && dependencyMap3[socket.accountId].track.id === trackId;
   }
@@ -311,7 +311,7 @@ function handleUserConnectionsUpdate() {
         if (null == tmp10.accessToken) {
           let tmp22 = require;
           let tmp23 = dependencyMap;
-          let obj2 = require(11216) /* apiRequest */;
+          let obj2 = require(7243) /* apiRequest */;
           let tmp24 = item10030;
           let accessToken = obj2.getAccessToken(tmp10.id);
         } else {
@@ -361,8 +361,8 @@ function autoPause() {
     if (null != tmp2) {
       const socket = tmp2.socket;
       let c43 = true;
-      require(11216) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj2 = require(11216) /* apiRequest */;
+      require(7243) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj2 = require(7243) /* apiRequest */;
       importDefault(698).track(constants4.SPOTIFY_AUTO_PAUSED);
       tmp4.info("Playback auto paused");
       const obj3 = importDefault(698);
@@ -465,7 +465,7 @@ function updatePlayerState(arg0, arg1, device) {
         if (context.type === tmp12.ALBUM) {
           resolved = Promise.resolve(context);
         } else {
-          const SpotifyAPI = _require(11216).SpotifyAPI;
+          const SpotifyAPI = _require(7243).SpotifyAPI;
           const obj2 = { url: null };
           obj2[0] = context.href;
           const value = SpotifyAPI.get(arg0, arg1, obj2);
@@ -650,7 +650,7 @@ prototype["connect"] = function connect() {
     self._requestedDisconnect = false;
     self._requestedConnect = true;
     ({ accountId, accessToken } = self);
-    const SpotifyAPI = accountId(11216).SpotifyAPI;
+    const SpotifyAPI = accountId(7243).SpotifyAPI;
     let obj = { url: null, query: null, onlyRetryOnAuthorizationErrors: true };
     obj[0] = constants.PLAYER;
     obj = { additional_types: null };
@@ -796,9 +796,9 @@ prototype["handleOpen"] = function handleOpen() {
   backoff.succeed();
   const pingInterval = this.pingInterval;
   pingInterval.start(closure_23, () => self.ping());
-  const profile = self(11216).getProfile(this.accountId, this.accessToken);
-  const obj = self(11216);
-  const devices = self(11216).getDevices(this.accountId, this.accessToken);
+  const profile = self(7243).getProfile(this.accountId, this.accessToken);
+  const obj = self(7243);
+  const devices = self(7243).getDevices(this.accountId, this.accessToken);
 };
 prototype["handleMessage"] = function handleMessage(data) {
   let payloads;
@@ -814,8 +814,8 @@ prototype["handleMessage"] = function handleMessage(data) {
         if (uri.startsWith(c22)) {
           const _decodeURIComponent = decodeURIComponent;
           self.connectionId = decodeURIComponent(uri.split(tmp15)[1]);
-          const result = require(11216) /* apiRequest */.subscribePlayerStateNotifications(self.accountId, self.accessToken, self.connectionId);
-          const obj = require(11216) /* apiRequest */;
+          const result = require(7243) /* apiRequest */.subscribePlayerStateNotifications(self.accountId, self.accessToken, self.connectionId);
+          const obj = require(7243) /* apiRequest */;
         }
         tmp15 = c22;
       }
@@ -964,7 +964,7 @@ prototype2["initialize"] = function initialize() {
     }
     return flag;
   });
-  const isSpotifyProtocolRegistered = require(11216) /* apiRequest */.fetchIsSpotifyProtocolRegistered();
+  const isSpotifyProtocolRegistered = require(7243) /* apiRequest */.fetchIsSpotifyProtocolRegistered();
 };
 prototype2["hasConnectedAccount"] = function hasConnectedAccount() {
   return Object.keys(closure_40).length > 0;
@@ -1143,7 +1143,7 @@ prototype2["getActivity"] = function getActivity() {
     }
     let assetFromImageURL = null;
     if (null != album.image) {
-      let obj1 = require(8310) /* updateAssets */;
+      let obj1 = require(7247) /* updateAssets */;
       assetFromImageURL = obj1.getAssetFromImageURL(PlatformTypes.SPOTIFY, album.image.url);
     }
     let obj = {};
@@ -1341,7 +1341,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
           }
         }
         timeout1.start(100, () => closure_35.stop(), false);
-        obj9 = device(10633);
+        obj9 = device(4779);
       }
       if (null != tmp10) {
         if (!tmp22) {
@@ -1465,7 +1465,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
           handleUserActivitySyncStop();
         }
         if (null != metadata) {
-          const obj2 = require(11216) /* apiRequest */;
+          const obj2 = require(7243) /* apiRequest */;
           ({ accountId, accessToken } = socket);
           let TRACK = metadata.type;
           if (TRACK == null) {
@@ -1501,7 +1501,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
     userId = userId.userId;
     if (userId === store.getId()) {
       const result = updateVoiceState.isCurrentClientInVoiceChannel();
-      let obj = require(10633) /* useIsSpeaking */;
+      let obj = require(4779) /* useIsSpeaking */;
       obj = { userId: null, checkSoundSharing: true, checkSoundboardSounds: false };
       obj[0] = userId;
       if (result) {
@@ -1556,7 +1556,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
       if (null != sourceId) {
         if (observedAppNameForWindow.getObservedAppNameForWindow(sourceId) === user.name) {
           if (tmp5) {
-            const interval = new require(4227) /* start */.Interval();
+            const interval = new require(4259) /* start */.Interval();
             c44 = interval;
             interval.start(closure_24, autoPause);
           }

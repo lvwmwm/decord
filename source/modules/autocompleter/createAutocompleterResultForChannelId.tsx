@@ -1,10 +1,10 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7604
+// Function ID: 7605
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1391, 3998, 1922, 5288, 676, 4535, 2]
+// Dependencies: [1391, 4030, 1922, 6773, 676, 4984, 2]
 // Exports: default
 
-// Module 7386 (createAutocompleterResultForChannelId)
+// Module 7604 (createAutocompleterResultForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -31,7 +31,7 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, closur
   if (null == channel) {
     return null;
   } else {
-    const channelName = require(4535) /* computeChannelName */.computeChannelName(channel, obj1, tmp);
+    const channelName = require(4984) /* computeChannelName */.computeChannelName(channel, obj1, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj1.getUser(channel.getRecipientId());
@@ -66,6 +66,6 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, closur
       obj2[3] = channelName;
       return obj2;
     }
-    const obj8 = require(4535) /* computeChannelName */;
+    const obj8 = require(4984) /* computeChannelName */;
   }
 };

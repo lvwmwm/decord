@@ -1,10 +1,10 @@
-// Module ID: 8872
-// Function ID: 8873
+// Module ID: 8957
+// Function ID: 8958
 // Name: useProfileFrame
-// Dependencies: [7071, 7087, 7078, 589, 2]
+// Dependencies: [5301, 5324, 5308, 589, 2]
 // Exports: default
 
-// Module 8872 (useProfileFrame)
+// Module 8957 (useProfileFrame)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import map from "map";
 import { isProfileFrameRecord } from "fromServer";

@@ -1,10 +1,10 @@
-// Module ID: 11830
-// Function ID: 11831
+// Module ID: 11555
+// Function ID: 11556
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4334, 5237, 676, 1925, 21, 4342, 500, 712, 4083, 4343, 4793, 589, 4776, 4034, 4002, 8142, 1435, 5421, 698, 5809, 8713, 4310, 5825, 4338, 1236, 11738, 11831, 4777, 2]
+// Dependencies: [5, 32, 19, 17, 4662, 6727, 676, 1925, 21, 4661, 500, 712, 4115, 4664, 4761, 589, 4744, 4066, 4034, 8192, 1435, 6930, 698, 7159, 9311, 4342, 7175, 4734, 1236, 11458, 11556, 4745, 2]
 // Exports: default
 
-// Module 11830 (EmojiConfetti)
+// Module 11555 (EmojiConfetti)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import closure_4 from "set";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";
@@ -35,15 +35,15 @@ function EmojiConfetti(children) {
   let sharedValue1;
   let sharedValue2;
   let sharedValue3;
-  sharedValue = top(4083).useSharedValue(0);
-  let obj = top(4083);
-  sharedValue1 = top(4083).useSharedValue(0);
-  let obj2 = top(4083);
-  sharedValue2 = top(4083).useSharedValue(0.2);
-  let obj3 = top(4083);
-  sharedValue3 = top(4083).useSharedValue(0);
-  let obj4 = top(4083);
-  const mountLayoutEffect = top(4793).useMountLayoutEffect(() => {
+  sharedValue = top(4115).useSharedValue(0);
+  let obj = top(4115);
+  sharedValue1 = top(4115).useSharedValue(0);
+  let obj2 = top(4115);
+  sharedValue2 = top(4115).useSharedValue(0.2);
+  let obj3 = top(4115);
+  sharedValue3 = top(4115).useSharedValue(0);
+  let obj4 = top(4115);
+  const mountLayoutEffect = top(4761).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
     if (!closure_2) {
@@ -84,7 +84,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(outer1_2[13]).withTiming(1, { duration: 360 });
     const result5 = obj4.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(outer1_2[13]).withTiming(0, { duration: 240 })));
   });
-  let obj5 = top(4793);
+  let obj5 = top(4761);
   const fn = function f() {
     let obj = { scale: sharedValue2.get() };
     const items = [obj, ];
@@ -117,8 +117,8 @@ function EmojiConfetti(children) {
   fn.__closure = { sizeValue: sharedValue2, left, rotationValue: sharedValue1, top, positionValue: sharedValue, opacityValue: sharedValue3 };
   fn.__workletHash = 1455873119263;
   fn.__initData = closure_14;
-  const style = top(4083).useAnimatedStyle(fn);
-  return callback3(left(4083).View, { style, children: children.emojiComponent });
+  const style = top(4115).useAnimatedStyle(fn);
+  return callback3(left(4115).View, { style, children: children.emojiComponent });
 }
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;
@@ -331,7 +331,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -385,7 +385,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           return obj.showDoubleTapEmojiUpdatedToast(obj);
         }, 500);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         c3 = tmp;
         throw tmp24;

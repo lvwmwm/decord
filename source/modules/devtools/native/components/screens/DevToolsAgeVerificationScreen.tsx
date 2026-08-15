@@ -1,10 +1,10 @@
-// Module ID: 15114
-// Function ID: 15115
+// Module ID: 15163
+// Function ID: 15164
 // Name: showAgeVerificationTestModal
-// Dependencies: [5, 19, 17, 21, 4342, 712, 7869, 7863, 4062, 7865, 1628, 5828, 5435, 8556, 5442, 2]
+// Dependencies: [5, 19, 17, 21, 4661, 712, 5436, 5428, 4094, 5254, 1629, 6286, 6291, 8595, 6297, 2]
 // Exports: default
 
-// Module 15114 (showAgeVerificationTestModal)
+// Module 15163 (showAgeVerificationTestModal)
 import Themes from "Themes";
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
@@ -33,7 +33,7 @@ function _showAgeVerificationTestModal() {
     yield obj2.requestAgeVerification({});
     if (1 === tmp7) {
       c3 = 0;
-      const obj1 = callback(4062);
+      const obj1 = callback(4094);
       obj1.open({ content: "Failed to show age verification test modal", key: "age-verification-test-failure" });
       let c5 = 3;
     } else if (arg0 === 1) {
@@ -49,10 +49,10 @@ function _showAgeVerificationTestModal() {
       obj2[4] = function onComplete() {
         tmp3(tmp15[8]).open({ content: "[On Complete] Successfully age verified", key: "age-verification-test-success" });
       };
-      obj2[5] = lib(7865).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
-      callback(7863).showAgeVerification(obj2);
+      obj2[5] = lib(5254).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
+      callback(5428).showAgeVerification(obj2);
       c3 = 0;
-      const obj7 = callback(7863);
+      const obj7 = callback(5428);
     }
     c3 = 0;
     return arg1;
@@ -79,28 +79,28 @@ export default function DevToolsAgeVerificationScreen() {
   const tmp = createCacheKey();
   let obj = { style: tmp.container, contentContainerStyle: null, children: null };
   const items = [tmp.content, ];
-  obj = { paddingBottom: tmp.content.padding + importDefault(1628)().bottom };
+  obj = { paddingBottom: tmp.content.padding + importDefault(1629)().bottom };
   items[1] = obj;
   obj[1] = items;
   obj = { title: "Quick Actions", hasIcons: true, children: null };
   const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: null, trailing: null };
-  obj1[2] = callback2(require(8556) /* KeyIcon */.KeyIcon, {});
-  obj1[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  const items1 = [callback2(require(5435) /* TableRowInner */.TableRow, obj1), ];
+  obj1[2] = callback2(require(8595) /* KeyIcon */.KeyIcon, {});
+  obj1[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  const items1 = [callback2(require(6291) /* TableRowInner */.TableRow, obj1), ];
   const obj2 = {
     label: "Launch Age Verification Modal",
     onPress() {
-      let obj = callback2(7863);
-      obj = { entryPoint: callback(7865).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
+      let obj = callback2(5428);
+      obj = { entryPoint: callback(5254).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
       return obj.showAgeVerificationGetStartedModal(obj);
     },
     icon: null,
     trailing: null
   };
-  obj2[2] = callback2(require(8556) /* KeyIcon */.KeyIcon, {});
-  obj2[3] = callback2(require(5442) /* TableRowArrow */.TableRowArrow, {});
-  items1[1] = callback2(require(5435) /* TableRowInner */.TableRow, obj2);
+  obj2[2] = callback2(require(8595) /* KeyIcon */.KeyIcon, {});
+  obj2[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+  items1[1] = callback2(require(6291) /* TableRowInner */.TableRow, obj2);
   obj[2] = items1;
-  obj[2] = callback3(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback3(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback2(ScrollView, obj);
 };

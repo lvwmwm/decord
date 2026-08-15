@@ -1,10 +1,10 @@
-// Module ID: 11194
-// Function ID: 11195
+// Module ID: 10895
+// Function ID: 10896
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1925, 21, 4342, 712, 1363, 4909, 1236, 7721, 1367, 5421, 1435, 4005, 2]
+// Dependencies: [19, 17, 1925, 21, 4661, 712, 1363, 5433, 1236, 7939, 1367, 6930, 1435, 4037, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11194 (EmojiPickerRowButton)
+// Module 10895 (EmojiPickerRowButton)
 import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -54,8 +54,8 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
     str = "md";
   }
   obj[1] = str;
-  obj[6] = jsx(require(7721) /* ReactionIcon */.ReactionIcon, { color: require(1363) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
-  return jsx(require(4909) /* PressableBase */.PressableOpacity, { color: require(1363) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
+  obj[6] = jsx(require(7939) /* ReactionIcon */.ReactionIcon, { color: require(1363) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
+  return jsx(require(5433) /* PressableBase */.PressableOpacity, { color: require(1363) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
 };
 export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiContainerSize) {
   let animated;
@@ -83,12 +83,12 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiConta
   obj[7] = items;
   if (null == animated) {
     obj[8] = null;
-    return tmp4(require(4909) /* PressableBase */.PressableOpacity, obj);
+    return tmp4(require(5433) /* PressableBase */.PressableOpacity, obj);
   } else {
     obj = { textEmojiStyle: null, fastImageStyle: null, name: null, src: null };
     ({ emojiText: obj3[0], emojiImage: obj3[1] } = tmp2);
     let str = "";
-    const emojiURL = getEmojiURL(5421);
+    const emojiURL = getEmojiURL(6930);
     if (null == animated.id) {
       str = animated.surrogates;
     }
@@ -112,6 +112,6 @@ export const getEmojiKey = function getEmojiKey(type, arg1) {
   if (null == type) {
     return arg1;
   } else {
-    type.type === require(4005) /* EmojiTypes */.EmojiTypes.UNICODE ? type.surrogates : type.id;
+    type.type === require(4037) /* EmojiTypes */.EmojiTypes.UNICODE ? type.surrogates : type.id;
   }
 };

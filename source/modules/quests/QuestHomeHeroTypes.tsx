@@ -1,40 +1,40 @@
-// Module ID: 10464
-// Function ID: 10465
+// Module ID: 10503
+// Function ID: 10504
 // Name: questHomeHeroFromServer
-// Dependencies: [10447, 10465, 2]
+// Dependencies: [10486, 10504, 2]
 // Exports: questHomeHeroFromServer
 
-// Module 10464 (questHomeHeroFromServer)
+// Module 10503 (questHomeHeroFromServer)
 const result = require("set").fileFinishedImporting("modules/quests/QuestHomeHeroTypes.tsx");
 
 export const questHomeHeroFromServer = function questHomeHeroFromServer(c7) {
   const creative_content = c7.creative_content;
   let obj = { id: creative_content.id, labelTitle: creative_content.label_title, labelSubtitle: creative_content.label_subtitle, heroImage: null, heroVideo: null, sponsorImage: null, cta: null, questIds: null, questHomeEntrypoint: null, shelfImage: null, shelfVideo: null, startsAt: null, endsAt: null };
-  obj[3] = require(10447) /* resolveAsset */.resolveAdCreativeCdnUrl(creative_content.hero_image);
-  const obj2 = require(10447) /* resolveAsset */;
-  obj[4] = require(10447) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.hero_video);
-  const obj3 = require(10447) /* resolveAsset */;
-  obj[5] = require(10447) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.sponsor_image);
-  const obj4 = require(10447) /* resolveAsset */;
-  obj[6] = require(10465) /* questHomeHeroCtaFromServer */.questHomeHeroCtaFromServer(creative_content.cta);
+  obj[3] = require(10486) /* resolveAsset */.resolveAdCreativeCdnUrl(creative_content.hero_image);
+  const obj2 = require(10486) /* resolveAsset */;
+  obj[4] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.hero_video);
+  const obj3 = require(10486) /* resolveAsset */;
+  obj[5] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.sponsor_image);
+  const obj4 = require(10486) /* resolveAsset */;
+  obj[6] = require(10504) /* questHomeHeroCtaFromServer */.questHomeHeroCtaFromServer(creative_content.cta);
   obj[7] = creative_content.quest_ids;
   let tmp3;
   if (null != creative_content.quest_home_entrypoint) {
     const quest_home_entrypoint = creative_content.quest_home_entrypoint;
     obj = { linearGradient: null, radialGradient: null, gradientPreset: null, image: null, tooltipImage: null, tooltipTitle: null, tooltipSubtitle: null };
     ({ linear_gradient: obj6[0], radial_gradient: obj6[1], gradient_preset: obj6[2] } = quest_home_entrypoint);
-    let tmpResult = tmp(10447);
+    let tmpResult = tmp(10486);
     obj[3] = tmpResult.resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.image);
-    tmpResult = tmp(10447);
+    tmpResult = tmp(10486);
     obj[4] = tmpResult.resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.tooltip_image);
     ({ tooltip_title: obj6[5], tooltip_subtitle: obj6[6] } = quest_home_entrypoint);
     tmp3 = obj;
   }
   obj[8] = tmp3;
-  const obj5 = require(10465) /* questHomeHeroCtaFromServer */;
-  obj[9] = require(10447) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.shelf_image);
-  const tmpResult1 = require(10447) /* resolveAsset */;
-  obj[10] = require(10447) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.shelf_video);
+  const obj5 = require(10504) /* questHomeHeroCtaFromServer */;
+  obj[9] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.shelf_image);
+  const tmpResult1 = require(10486) /* resolveAsset */;
+  obj[10] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.shelf_video);
   ({ starts_at: obj[11], ends_at: obj[12] } = c7);
   return obj;
 };

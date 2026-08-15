@@ -1,10 +1,10 @@
-// Module ID: 9741
-// Function ID: 9742
+// Module ID: 9944
+// Function ID: 9945
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 676, 21, 4342, 4923, 5840, 1435, 9742, 4909, 1236, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4661, 4838, 7188, 1435, 9945, 5433, 1236, 2]
 // Exports: default
 
-// Module 9741 (IconUploader)
+// Module 9944 (IconUploader)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export default function IconUploader(disabled) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -138,9 +138,9 @@ export default function IconUploader(disabled) {
       obj[0] = iconStyle;
       obj[1] = fnResult;
       obj[2] = name;
-      obj[3] = require(5840) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-      let tmp7 = callback(importDefault(5840), obj);
-      const tmp12 = importDefault(5840);
+      obj[3] = require(7188) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+      let tmp7 = callback(importDefault(7188), obj);
+      const tmp12 = importDefault(7188);
     }
     tmp8 = null == icon && null == name;
   } else {
@@ -156,7 +156,7 @@ export default function IconUploader(disabled) {
   if (!flag) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(9742);
+    obj1[1] = importDefault(9945);
     tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;
@@ -179,7 +179,7 @@ export default function IconUploader(disabled) {
       return applyArgumentsResult;
     };
     obj3[3] = tmp14Result;
-    obj2[1] = callback(require(4909) /* PressableBase */.PressableOpacity, obj3);
+    obj2[1] = callback(require(5433) /* PressableBase */.PressableOpacity, obj3);
     tmp22 = callback(closure_5, obj2);
   }
   return tmp22;

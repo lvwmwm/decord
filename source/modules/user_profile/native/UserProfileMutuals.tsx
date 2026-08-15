@@ -1,10 +1,10 @@
-// Module ID: 12595
-// Function ID: 12596
+// Module ID: 12346
+// Function ID: 12347
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8848, 5837, 21, 4342, 8851, 12040, 12356, 4310, 12046, 2007, 8846, 6021, 4909, 12389, 1297, 4338, 12047, 12056, 5840, 12041, 2]
+// Dependencies: [19, 17, 8931, 7186, 21, 4661, 8934, 11771, 12091, 4342, 11777, 2007, 8929, 7302, 5433, 12124, 1297, 4734, 11778, 11787, 7188, 11772, 2]
 // Exports: default
 
-// Module 12595 (UserProfileMutuals)
+// Module 12346 (UserProfileMutuals)
 import "GuildIconPile";
 import { View } from "Text";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -31,11 +31,11 @@ export default function UserProfileMutuals(user) {
   let dependencyMap;
   c3 = undefined;
   const tmp = callback2();
-  let obj = user(8851);
+  let obj = user(8934);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
-  ({ mutualFriends, mutualGuilds } = guildId(12040)(user));
-  if (guildId(12356)(user)) {
+  ({ mutualFriends, mutualGuilds } = guildId(11771)(user));
+  if (guildId(12091)(user)) {
     let tmp7 = null != mutualFriends;
     if (tmp7) {
       tmp7 = mutualFriends.length > 0;
@@ -88,18 +88,18 @@ export default function UserProfileMutuals(user) {
       obj1[1] = mapped.length;
       obj1[2] = mapped.map((username) => username.username);
       obj1[3] = mapped.map((id) => {
-        const obj = { user: id, size: null, guildId: "r" };
+        const obj = { user: id, size: null, guildId: "Array" };
         obj[1] = user(_undefined[16]).AvatarSizes.SIZE_16;
         return callback(user(_undefined[16]).Avatar, obj, id.id);
       });
-      const items = [callback(tmp2(12389).AvatarPile, obj1), ];
+      const items = [callback(tmp2(12124).AvatarPile, obj1), ];
       let obj2 = { variant: null, color: null, children: null };
       obj2[0] = c8;
       obj2[1] = c9;
-      obj2[2] = tmp5(12047)(mutualFriends.length);
-      items[1] = callback(tmp2(4338).Text, obj2);
+      obj2[2] = tmp5(11778)(mutualFriends.length);
+      items[1] = callback(tmp2(4734).Text, obj2);
       obj[3] = items;
-      tmp9Result = tmp9(tmp2(4909).PressableOpacity, obj);
+      tmp9Result = tmp9(tmp2(5433).PressableOpacity, obj);
     }
     const items1 = [tmp9Result, , ];
     let tmp15 = tmp7;
@@ -111,7 +111,7 @@ export default function UserProfileMutuals(user) {
       obj3[0] = c8;
       obj3[1] = c9;
       obj3[4] = DIVIDER_DOT;
-      tmp15 = callback(tmp2(4338).Text, obj3);
+      tmp15 = callback(tmp2(4734).Text, obj3);
     }
     items1[1] = tmp15;
     tmp9Result = null;
@@ -149,7 +149,7 @@ export default function UserProfileMutuals(user) {
       let tmp21 = !tmp7;
       if (!tmp7) {
         const obj5 = { size: null, totalCount: null, names: null, children: null };
-        obj5[0] = tmp2(5840).GuildIconSizes.XXSMALL;
+        obj5[0] = tmp2(7188).GuildIconSizes.XXSMALL;
         obj5[1] = mapped1.length;
         obj5[2] = mapped1.map((name) => name.name);
         obj5[3] = mapped1.map((guild) => {
@@ -157,16 +157,16 @@ export default function UserProfileMutuals(user) {
           obj[1] = user(_undefined[20]).GuildIconSizes.XXSMALL;
           return callback(guildId(_undefined[20]), obj, guild.id);
         });
-        tmp21 = callback(tmp2(12056).GuildIconPile, obj5);
+        tmp21 = callback(tmp2(11787).GuildIconPile, obj5);
       }
       const items2 = [tmp21, ];
       const obj6 = { variant: null, color: null, children: null };
       obj6[0] = c8;
       obj6[1] = c9;
-      obj6[2] = tmp5(12041)(mutualGuilds.length);
-      items2[1] = callback(tmp2(4338).Text, obj6);
+      obj6[2] = tmp5(11772)(mutualGuilds.length);
+      items2[1] = callback(tmp2(4734).Text, obj6);
       obj4[3] = items2;
-      tmp9Result = tmp9(tmp2(4909).PressableOpacity, obj4);
+      tmp9Result = tmp9(tmp2(5433).PressableOpacity, obj4);
     }
     items1[2] = tmp9Result;
     obj[1] = items1;
@@ -174,5 +174,5 @@ export default function UserProfileMutuals(user) {
   } else {
     return null;
   }
-  const tmp6 = guildId(12040)(user);
+  const tmp6 = guildId(11771)(user);
 };

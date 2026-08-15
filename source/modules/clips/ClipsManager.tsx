@@ -1,9 +1,9 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17024
+// Function ID: 17025
 // Name: handleRTCConnectionState
-// Dependencies: [5, 4413, 1218, 4393, 4416, 4430, 4399, 4400, 676, 4409, 5322, 4404, 4441, 4408, 698, 4918, 4034, 709, 4405, 3972, 500, 4403, 2]
+// Dependencies: [5, 4536, 1218, 4497, 4539, 4558, 4503, 4523, 676, 4532, 5038, 4527, 4569, 4531, 698, 4833, 4066, 709, 4528, 4004, 500, 4526, 2]
 
-// Module 16978 (handleRTCConnectionState)
+// Module 17024 (handleRTCConnectionState)
 import initialize from "initialize";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";
 import fetchFingerprint from "fetchFingerprint";
@@ -85,10 +85,10 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
     if (state.state === constants3.RTC_CONNECTED) {
       const self = this;
       const id = store.getId();
-      if (tmp(4441).MediaEngineContextTypes.DEFAULT === context) {
+      if (tmp(4569).MediaEngineContextTypes.DEFAULT === context) {
         const result = self.applyUserVoiceRecording(id);
         const result1 = self.applyUserSoundboardRecording(id);
-      } else if (tmp(4441).MediaEngineContextTypes.STREAM === context) {
+      } else if (tmp(4569).MediaEngineContextTypes.STREAM === context) {
         if (null != streamKey) {
           if (tmpResult.decodeStreamKey(streamKey).ownerId === id) {
             const rTCConnection = store2.getRTCConnection(streamKey);
@@ -96,7 +96,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
               self.applyStreamRecording(id, rTCConnection);
             }
           }
-          tmpResult = tmp(4408);
+          tmpResult = tmp(4531);
         }
       }
     }
@@ -105,7 +105,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
 prototype["handleRTCUsersUpdate"] = function handleRTCUsersUpdate(userIds) {
   const self = this;
   userIds = userIds.userIds;
-  if (userIds.context === self(4441).MediaEngineContextTypes.DEFAULT) {
+  if (userIds.context === self(4569).MediaEngineContextTypes.DEFAULT) {
     const item = userIds.forEach((id) => {
       const result = self.applyUserVoiceRecording(id);
       const result1 = self.applyUserSoundboardRecording(id);
@@ -126,7 +126,7 @@ prototype["handleRTCConnectionFlags"] = function handleRTCConnectionFlags(arg0) 
   } else {
     CALL = StreamTypes.CALL;
   }
-  const rTCConnection = store2.getRTCConnection(importAll(4408).encodeStreamKey({ streamType: CALL, ownerId: userId, channelId, guildId }));
+  const rTCConnection = store2.getRTCConnection(importAll(4531).encodeStreamKey({ streamType: CALL, ownerId: userId, channelId, guildId }));
   if (null != rTCConnection) {
     self.applyStreamRecording(userId, rTCConnection);
   }
@@ -137,7 +137,7 @@ prototype["handleClipsInitFailure"] = function handleClipsInitFailure(arg0) {
   ({ applicationName, errMsg } = arg0);
   let obj = importDefault(698);
   obj = { application_name: applicationName, error_message: errMsg, clip_runtime: null };
-  obj[2] = require(4918) /* apexExperiment */.getClipsRuntime("handleClipsInitFailure");
+  obj[2] = require(4833) /* apexExperiment */.getClipsRuntime("handleClipsInitFailure");
   obj.track(constants2.CLIPS_INIT_FAILURE, obj);
 };
 prototype["maybeShowClipsWarning"] = function maybeShowClipsWarning(userId) {
@@ -146,7 +146,7 @@ prototype["maybeShowClipsWarning"] = function maybeShowClipsWarning(userId) {
     if (!authStore2.getClipsWarningShown(channelId)) {
       let setting = userId !== store.getId() && obj3.isClipsEnabledForUser(userId);
       if (setting) {
-        const ClipsAllowVoiceRecording = require(4034) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
+        const ClipsAllowVoiceRecording = require(4066) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
         setting = ClipsAllowVoiceRecording.getSetting();
       }
       if (setting) {
@@ -169,7 +169,7 @@ prototype["handleClipsAllowVoiceRecordingUpdate"] = function handleClipsAllowVoi
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  if (importDefault(4405)(_detectH265HardwareDecode)) {
+  if (importDefault(4528)(_detectH265HardwareDecode)) {
     const self = this;
     const result = this.applyNativeClipsSettings();
     if (obj.areClipsAvailable()) {
@@ -187,7 +187,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         });
       }
     }
-    obj = require(4404) /* apexExperiment */;
+    obj = require(4527) /* apexExperiment */;
   }
 };
 prototype["loadClipsFromStorage"] = function loadClipsFromStorage() {
@@ -200,9 +200,9 @@ prototype["handleRTCConnectionVideo"] = function handleRTCConnectionVideo(arg0) 
   let userId;
   ({ userId, guildId } = arg0);
   ({ context, channelId } = arg0);
-  if (context === require(4441) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM) {
-    if (importDefault(4405)(_detectH265HardwareDecode)) {
-      let obj = importAll(4408);
+  if (context === require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM) {
+    if (importDefault(4528)(_detectH265HardwareDecode)) {
+      let obj = importAll(4531);
       if (null != guildId) {
         let CALL = StreamTypes.GUILD;
       } else {
@@ -235,7 +235,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -314,7 +314,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
           obj4[1] = outer1_13;
           obj4[2] = gpuModels;
           const obj7 = outer1_1(698);
-          obj4[3] = outer1_0(4918).getClipsRuntime("classifyHardwareAndTrack");
+          obj4[3] = outer1_0(4833).getClipsRuntime("classifyHardwareAndTrack");
           obj7.track(outer1_15.CLIPS_HARDWARE_CLASSIFICATION, obj4);
           dependencyMap = 0;
           c5 = 3;
@@ -344,7 +344,7 @@ prototype["classifyHardware"] = function classifyHardware(closure_1) {
     return MEETS_AUTO_ENABLE;
   } else {
     if (tmpResult.isMac()) {
-      const app = importDefault(3972).app;
+      const app = importDefault(4004).app;
       if ("arm64" === app.getAppArch()) {
         let MEETS_MINIMUM = constants.MEETS_AUTO_ENABLE;
       } else {
@@ -357,34 +357,34 @@ prototype["classifyHardware"] = function classifyHardware(closure_1) {
   }
 };
 prototype["applyUserVoiceRecording"] = function applyUserVoiceRecording(id) {
-  if (importDefault(4405)(_detectH265HardwareDecode)) {
+  if (importDefault(4528)(_detectH265HardwareDecode)) {
     const rTCConnection = authStore.getRTCConnection();
     if (null != rTCConnection) {
       if (id !== store.getId()) {
         rTCConnection.setClipRecordUser(id, "audio", authStore2.isVoiceRecordingAllowedForUser(id));
       } else {
-        rTCConnection.setClipRecordUser(id, "audio", require(4403) /* isClipsEnabled */.isClipsEnabled());
-        const obj2 = require(4403) /* isClipsEnabled */;
+        rTCConnection.setClipRecordUser(id, "audio", require(4526) /* isClipsEnabled */.isClipsEnabled());
+        const obj2 = require(4526) /* isClipsEnabled */;
       }
     }
   }
 };
 prototype["applyUserSoundboardRecording"] = function applyUserSoundboardRecording(id) {
-  if (importDefault(4405)(_detectH265HardwareDecode)) {
+  if (importDefault(4528)(_detectH265HardwareDecode)) {
     const rTCConnection = authStore.getRTCConnection();
     if (null != rTCConnection) {
-      rTCConnection.setClipRecordUser(id, "soundboard", require(4403) /* isClipsEnabled */.isClipsEnabled());
-      const obj2 = require(4403) /* isClipsEnabled */;
+      rTCConnection.setClipRecordUser(id, "soundboard", require(4526) /* isClipsEnabled */.isClipsEnabled());
+      const obj2 = require(4526) /* isClipsEnabled */;
     }
   }
 };
 prototype["applyStreamRecording"] = function applyStreamRecording(userId, rTCConnection) {
-  if (importDefault(4405)(_detectH265HardwareDecode)) {
+  if (importDefault(4528)(_detectH265HardwareDecode)) {
     if (store.getId() === userId) {
-      const isClipsEnabledResult = require(4403) /* isClipsEnabled */.isClipsEnabled();
+      const isClipsEnabledResult = require(4526) /* isClipsEnabled */.isClipsEnabled();
       rTCConnection.setClipRecordUser(userId, "audio", isClipsEnabledResult);
       rTCConnection.setClipRecordUser(userId, "video", isClipsEnabledResult);
-      const obj = require(4403) /* isClipsEnabled */;
+      const obj = require(4526) /* isClipsEnabled */;
     }
   }
 };

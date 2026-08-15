@@ -1,9 +1,9 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 10031
+// Function ID: 10032
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 9831 (dispatcher)
+// Module 10031 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
 
 export default {

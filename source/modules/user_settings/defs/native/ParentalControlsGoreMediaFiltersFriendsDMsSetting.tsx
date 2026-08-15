@@ -1,9 +1,9 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15041
+// Function ID: 15042
 // Name: pressable
-// Dependencies: [7066, 8148, 14149, 7129, 14153, 14146, 1236, 1306, 10421, 2]
+// Dependencies: [5296, 8198, 14181, 5001, 14185, 14178, 1236, 1306, 10669, 2]
 
-// Module 14996 (pressable)
+// Module 15041 (pressable)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -13,24 +13,24 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["+uI23H"]);
   },
-  parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
+  parent: require("MobileUserSettings").MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(14149) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = require(14181) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (parentalControlledGoreContentSettings != null) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
     }
     let tmp5 = null;
     if (null != goreContentFriendDm) {
-      tmp5 = require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(goreContentFriendDm)();
-      const tmpResult = require(7129) /* redactionSettingToRenderedString */;
+      tmp5 = require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(goreContentFriendDm)();
+      const tmpResult = require(5001) /* redactionSettingToRenderedString */;
     }
     return tmp5;
   },
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14153);
+      let obj = selectedTeenId(14185);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
       const intl = selectedTeenId(1236).intl;
       obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -44,8 +44,8 @@ createToggle = {
       obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(14146).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(14146);
+      const result = selectedTeenId(14178).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(14178);
     }
   },
   unsearchable: true

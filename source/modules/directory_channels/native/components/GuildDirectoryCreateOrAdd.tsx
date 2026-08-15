@@ -1,10 +1,10 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11478
+// Function ID: 11479
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 11759, 11757, 21, 4342, 712, 589, 5435, 5840, 11760, 9019, 1236, 4338, 9205, 1628, 4777, 1499, 5390, 11765, 11756, 2]
+// Dependencies: [32, 19, 17, 11479, 11477, 21, 4661, 712, 589, 6291, 7188, 11480, 8799, 1236, 4734, 10096, 1629, 4745, 1500, 6804, 11485, 11476, 2]
 // Exports: default
 
-// Module 11758 (GuildDirectoryCreateOrAddHeader)
+// Module 11478 (GuildDirectoryCreateOrAddHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useRefValue";
 import get_ActivityIndicator from "Button";
@@ -25,7 +25,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   let tabIndex;
   ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
   const tmp = callback3();
-  let obj = require(9019) /* useSegmentedControlState */;
+  let obj = require(8799) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex, items: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const items = [intl.string(require(1236) /* getSystemLocale */.t.FTe8HS), ];
@@ -37,12 +37,12 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl3.format(require(1236) /* getSystemLocale */.t["9SKJdF"], { guildName: directoryGuildName });
-  const items1 = [callback(require(4338) /* Text */.Text, obj1), , ];
+  const items1 = [callback(require(4734) /* Text */.Text, obj1), , ];
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl4.string(require(1236) /* getSystemLocale */.t.pYFZ9p);
-  items1[1] = callback(require(4338) /* Text */.Text, obj2);
-  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(9205) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
+  items1[1] = callback(require(4734) /* Text */.Text, obj2);
+  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(10096) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
@@ -50,19 +50,19 @@ function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   const tmp = callback3();
   let obj = { style: null, children: null };
   const items = [tmp.footerSafeAreaContainer, ];
-  obj = { paddingBottom: importDefault(1628)().bottom };
+  obj = { paddingBottom: importDefault(1629)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { style: tmp.footerContainer, children: null };
   const obj1 = { style: tmp.footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.pgCZRP);
-  const items1 = [callback(require(4338) /* Text */.Text, obj1), ];
+  const items1 = [callback(require(4734) /* Text */.Text, obj1), ];
   const obj2 = { variant: "secondary", text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl2.string(require(1236) /* getSystemLocale */.t.WqJbLi);
   obj2[2] = handleFooterPress.handleFooterPress;
-  items1[1] = callback(require(4777) /* Button */.Button, obj2);
+  items1[1] = callback(require(4745) /* Button */.Button, obj2);
   obj[1] = items1;
   obj[1] = callback2(closure_5, obj);
   return callback(closure_5, obj);
@@ -93,11 +93,11 @@ let closure_13 = importAllResult.memo((guild) => {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getDirectoryEntry(directoryChannelId, guild.id));
   obj = { label: guild.name, icon: null, trailing: null, start: null, end: null };
   obj = { style: callback3().guildIcon, guild };
-  obj[1] = callback(directoryChannelId(5840), obj);
-  obj[2] = callback(directoryChannelId(11760), { entry: stateFromStores });
+  obj[1] = callback(directoryChannelId(7188), obj);
+  obj[2] = callback(directoryChannelId(11480), { entry: stateFromStores });
   obj[3] = start;
   obj[4] = end;
-  return callback(guild(5435).TableRow, obj);
+  return callback(guild(6291).TableRow, obj);
 });
 let closure_14 = importAllResult.memo((guild) => {
   let end;
@@ -116,11 +116,11 @@ let closure_14 = importAllResult.memo((guild) => {
     end: null
   };
   obj = { style: callback3().guildIcon, guild };
-  obj[2] = callback(handleItemPress(5840), obj);
-  obj[3] = callback(guild(5435).TableRow.Arrow, {});
+  obj[2] = callback(handleItemPress(7188), obj);
+  obj[3] = callback(guild(6291).TableRow.Arrow, {});
   obj[4] = start;
   obj[5] = end;
-  return callback(guild(5435).TableRow, obj);
+  return callback(guild(6291).TableRow, obj);
 });
 let obj2 = { paddingHorizontal: require("Themes").space.PX_12, width: "100%", marginTop: 18 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");

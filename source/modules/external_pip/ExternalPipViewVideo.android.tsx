@@ -1,9 +1,9 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16222
+// Function ID: 16223
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: [32, 19, 17, 1391, 1922, 4363, 21, 4342, 712, 10677, 4298, 4338, 1236, 589, 1297, 10684, 4065, 16173, 10694, 16174, 9827, 2]
+// Dependencies: [32, 19, 17, 1391, 1922, 4544, 21, 4661, 712, 12442, 4330, 4734, 1236, 589, 1297, 12446, 4097, 16223, 12454, 16224, 10027, 2]
 
-// Module 16172 (ExternalPipViewVideoUnavailable)
+// Module 16222 (ExternalPipViewVideoUnavailable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useExternalPipParticipant";
 import get_ActivityIndicator from "updateVideoSize";
@@ -28,11 +28,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   if (wasStream) {
     obj = { style: null };
     obj[0] = tmp.unavaiableImage;
-    let tmp4Result = tmp4(tmp5(10677).StreamEnded, obj);
+    let tmp4Result = tmp4(tmp5(12442).StreamEnded, obj);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4298).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4330).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -45,7 +45,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1236).t.Nzo5nz);
   }
   obj[3] = result;
-  items[1] = tmp8(tmp10(4338).Text, obj);
+  items[1] = tmp8(tmp10(4734).Text, obj);
   obj[1] = items;
   return closure_12(closure_6, obj);
 }
@@ -196,7 +196,7 @@ const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) 
   let selectedParticipantSpeaking;
   let selectedParticipantStreamId;
   let selectedParticipantUserId;
-  const tmp2 = importDefault(16174)();
+  const tmp2 = importDefault(16224)();
   ({ selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType } = tmp2);
   const items = [selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType];
   ({ channelId, selectedParticipantSpeaking } = tmp2);

@@ -1,9 +1,9 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14673
+// Function ID: 14674
 // Name: items
-// Dependencies: [32, 19, 676, 1388, 21, 1377, 6086, 1297, 1236, 10421, 14642, 14644, 2]
+// Dependencies: [32, 19, 676, 1388, 21, 1377, 7366, 1297, 1236, 10669, 14674, 14676, 2]
 
-// Module 14641 (items)
+// Module 14673 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -21,7 +21,7 @@ createToggle = {
   IconComponent: require("AccessibilityIcon").AccessibilityIcon,
   useTrailing() {
     let tmp4;
-    let obj = require(6086) /* useSelectedDismissibleContent */;
+    let obj = require(7366) /* useSelectedDismissibleContent */;
     [tmp4, r10012] = callback(obj.useSelectedDismissibleContent(items), 2);
     let tmp5 = null;
     if (null != tmp4) {
@@ -40,7 +40,7 @@ createToggle = {
     return tmp5;
   },
   usePreNavigationAction() {
-    const tmp = callback(first(6086).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(7366).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     const dependencyMap = tmp3;
     items = [tmp[1], first];
@@ -65,7 +65,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return require(14644) /* SettingsAccessibilityScreen */.default;
+    return require(14676) /* SettingsAccessibilityScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

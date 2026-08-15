@@ -1,10 +1,10 @@
-// Module ID: 6734
-// Function ID: 6735
+// Module ID: 6092
+// Function ID: 6093
 // Name: RulebookSpotIllustration
-// Dependencies: [21, 5329, 6735, 2]
+// Dependencies: [21, 5449, 6093, 2]
 // Exports: RulebookSpotIllustration
 
-// Module 6734 (RulebookSpotIllustration)
+// Module 6092 (RulebookSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/RulebookSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const RulebookSpotIllustration = function RulebookSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6735);
+  obj[0] = importDefault(6093);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const RulebookSpotIllustration = function RulebookSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

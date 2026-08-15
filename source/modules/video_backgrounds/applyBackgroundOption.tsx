@@ -1,10 +1,10 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9659
+// Function ID: 9660
 // Name: _getFilterBlob
-// Dependencies: [5, 1922, 9225, 8342, 676, 38, 9227, 4441, 9230, 1435, 9226, 9229, 9231, 2]
+// Dependencies: [5, 1922, 9660, 8381, 676, 38, 9662, 4569, 9665, 1435, 9661, 9664, 9666, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9224 (_getFilterBlob)
+// Module 9659 (_getFilterBlob)
 import module_38 from "module_38";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleSyncedStoresUpdate from "handleSyncedStoresUpdate";
@@ -40,7 +40,7 @@ function _getFilterBlob() {
   return applyArgumentsResult;
 }
 function applyBackgroundMediaFilterSettings(arg0, target, graph, image, blob) {
-  let obj = require(9227) /* _fetchVideoFilterAssets */;
+  let obj = require(9662) /* _fetchVideoFilterAssets */;
   obj = { graph, target, image, blob };
   const result = obj.applyMediaFilterSettings({ [arg0]: obj });
 }
@@ -75,7 +75,7 @@ function _applyBackgroundOption() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -97,13 +97,13 @@ function _applyBackgroundOption() {
               c5 = undefined;
               let module_38 = false;
               if (null == source) {
-                outer1_10(tmp57, tmp58, callback(4441).FilterSettingsGraph.NONE);
+                outer1_10(tmp57, tmp58, callback(4569).FilterSettingsGraph.NONE);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (tmp59 === c7) {
-                outer1_10(tmp57, tmp58, callback(4441).FilterSettingsGraph.BACKGROUND_BLUR);
+                outer1_10(tmp57, tmp58, callback(4569).FilterSettingsGraph.BACKGROUND_BLUR);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 if (typeof tmp59 !== "string") {
                   if (typeof tmp59 !== "number") {
@@ -168,7 +168,7 @@ function _applyBackgroundOption() {
                     }
                   }
                 }
-                const tmp24 = callback2(9230)()[tmp59];
+                const tmp24 = callback2(9665)()[tmp59];
                 const isVideo = tmp24.isVideo;
                 module_38 = isVideo;
                 if (isVideo == null) {
@@ -261,7 +261,7 @@ function _applyBackgroundOptionLive() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -321,11 +321,11 @@ function _applyBackgroundOptionLive() {
               const result = obj.trackBackgroundOptionUpdated(callback, location, "Enabled");
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
-        } catch (tmp24) {
+        } catch (tmp16) {
           c5 = tmp;
-          throw tmp24;
+          throw tmp16;
         }
       }
     })();
@@ -361,7 +361,7 @@ function _applyBackgroundOptionPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -423,7 +423,7 @@ function _applyBackgroundOptionPreview() {
               const result1 = obj.trackBackgroundOptionUpdated(callback, location, "Preview");
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c6 = tmp;
@@ -460,8 +460,8 @@ export const applyBackgroundOptionPreview = function applyBackgroundOptionPrevie
 export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    const lastUsedVideoBackgroundOption = require(9229) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
-    let tmp6 = importDefault(9231)();
+    const lastUsedVideoBackgroundOption = require(9664) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
+    let tmp6 = importDefault(9666)();
     if (tmp6) {
       tmp6 = !hasBeenApplied.hasBeenApplied;
     }
@@ -472,6 +472,6 @@ export const applyInitialVideoBackgroundOption = function applyInitialVideoBackg
       applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false }).catch(NOOP);
       const promise = applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false });
     }
-    const obj = require(9229) /* getLastUsedVideoBackgroundOption */;
+    const obj = require(9664) /* getLastUsedVideoBackgroundOption */;
   }
 };

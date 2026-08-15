@@ -1,10 +1,10 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14986
+// Function ID: 14987
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 6946, 1499, 14947, 2]
+// Dependencies: [19, 21, 7385, 1500, 14987, 2]
 // Exports: default
 
-// Module 14946 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 14986 (CollectiblesShopViewAllCategoryItemsScreen)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -12,15 +12,15 @@ const require = arg1;
 const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopViewAllCategoryItemsScreen.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsScreen() {
-  let obj = stackNavigation(6946);
+  let obj = stackNavigation(7385);
   const settingNavigationRoute = obj.useSettingNavigationRoute();
-  stackNavigation = stackNavigation(1499).useStackNavigation();
+  stackNavigation = stackNavigation(1500).useStackNavigation();
   const items = [stackNavigation];
   const layoutEffect = React.useLayoutEffect(() => {
     stackNavigation.setOptions({ headerShown: false });
   }, items);
   obj = {};
-  const obj2 = stackNavigation(1499);
+  const obj2 = stackNavigation(1500);
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(14947), {});
+  return jsx(importDefault(14987), {});
 };

@@ -1,9 +1,9 @@
-// Module ID: 13528
-// Function ID: 13529
+// Module ID: 13560
+// Function ID: 13561
 // Name: getIntervalMs
-// Dependencies: [5, 13529, 3, 595, 2]
+// Dependencies: [5, 13561, 3, 595, 2]
 
-// Module 13528 (getIntervalMs)
+// Module 13560 (getIntervalMs)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import "append";
 
@@ -84,7 +84,7 @@ prototype["flushNow"] = function flushNow() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ prototype["flushNow"] = function flushNow() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp5) {
         c0 = tmp;
         throw tmp5;
@@ -242,7 +242,7 @@ prototype["_collectPages"] = function _collectPages(budget, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -322,7 +322,7 @@ prototype["_exportPages"] = function _exportPages(closure_0, flush) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

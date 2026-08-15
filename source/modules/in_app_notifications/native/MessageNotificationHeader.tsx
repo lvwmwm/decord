@@ -1,10 +1,10 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 10115
+// Function ID: 10116
 // Name: LocationText
-// Dependencies: [19, 17, 4334, 3998, 1922, 21, 4342, 712, 4338, 4535, 692, 4863, 4865, 4827, 589, 2]
+// Dependencies: [19, 17, 4662, 4030, 1922, 21, 4661, 712, 4734, 4984, 692, 6867, 6869, 6832, 589, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 9909 (LocationText)
+// Module 10115 (LocationText)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -104,7 +104,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     obj[0] = tmp5;
     const tmp6 = obj;
   }
-  let tmp2Result = tmp2(4535);
+  let tmp2Result = tmp2(4984);
   const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   const type = channel.type;
   let tmp10 = channelName;
@@ -119,7 +119,7 @@ export default function MessageNotificationHeader(locationTextColor) {
           }
           let channelName1 = null;
           if (null != parentChannel) {
-            tmp2Result = tmp2(4535);
+            tmp2Result = tmp2(4984);
             channelName1 = tmp2Result.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale);
           }
           if (null != channelName1) {
@@ -151,7 +151,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const items1 = [tmp.primaryText, tmp6];
     obj2[3] = items1;
     obj2[4] = author.nick;
-    tmp17Result = tmp17(tmp2(4338).Text, obj2);
+    tmp17Result = tmp17(tmp2(4734).Text, obj2);
   }
   const items2 = [tmp17Result, ];
   tmp17Result = null != tmp10;
@@ -177,18 +177,18 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
   const items = [tmp.primaryText, labelStyle];
-  const items1 = [callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text }), ];
+  const items1 = [callback(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text }), ];
   let tmp2Result = null != secondaryText;
   if (tmp2Result) {
     obj = { style: null, children: null };
     obj[0] = tmp.secondaryTextContainer;
     obj = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: null, children: "\u00B7" };
     obj[3] = tmp.separator;
-    const items2 = [tmp4(tmp5(4338).Text, obj), ];
+    const items2 = [tmp4(tmp5(4734).Text, obj), ];
     const obj1 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: null, children: null };
     obj1[3] = tmp.secondaryText;
     obj1[4] = secondaryText;
-    items2[1] = tmp4(tmp5(4338).Text, obj1);
+    items2[1] = tmp4(tmp5(4734).Text, obj1);
     obj[1] = items2;
     tmp2Result = tmp2(tmp3, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 9233
+// Function ID: 9234
 // Name: useCanPurchaseFrames
-// Dependencies: [1922, 1924, 8871, 9467, 1945, 1940, 589, 2]
+// Dependencies: [1922, 1924, 8956, 9234, 1945, 1940, 589, 2]
 // Exports: default, isUserPaidTier2, useCanViewProfileFramesInCollectiblesShop, useIsProfileFramesEarlyAccessPhase
 
-// Module 9466 (useCanPurchaseFrames)
+// Module 9233 (useCanPurchaseFrames)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -12,11 +12,11 @@ const require = arg1;
 const result = require("apexExperiment").fileFinishedImporting("modules/collectibles/hooks/useCanPurchaseFrames.tsx");
 
 export default function useCanPurchaseFrames(location) {
-  let obj = require(8871) /* apexExperiment */;
+  let obj = require(8956) /* apexExperiment */;
   let isProfileFramesEnabled = obj.useIsProfileFramesEnabled(location);
   obj = { location };
-  const bucket = importDefault(9467).useConfig(obj).bucket;
-  const obj2 = importDefault(9467);
+  const bucket = importDefault(9234).useConfig(obj).bucket;
+  const obj2 = importDefault(9234);
   const tmp = require;
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
@@ -34,10 +34,10 @@ export default function useCanPurchaseFrames(location) {
     }
     return isPremiumExactlyResult;
   });
-  let tmp5 = bucket === require(9467) /* apexExperiment */.ProfileFramesPurchaseBucket.OPEN_PURCHASE;
+  let tmp5 = bucket === require(9234) /* apexExperiment */.ProfileFramesPurchaseBucket.OPEN_PURCHASE;
   if (!tmp5) {
-    tmp5 = bucket === tmp(9467).ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY && stateFromStores;
-    const tmp6 = bucket === tmp(9467).ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY && stateFromStores;
+    tmp5 = bucket === tmp(9234).ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY && stateFromStores;
+    const tmp6 = bucket === tmp(9234).ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY && stateFromStores;
   }
   if (isProfileFramesEnabled) {
     isProfileFramesEnabled = tmp5;
@@ -45,18 +45,18 @@ export default function useCanPurchaseFrames(location) {
   return isProfileFramesEnabled;
 };
 export const useCanViewProfileFramesInCollectiblesShop = function useCanViewProfileFramesInCollectiblesShop(UserProfileFrameEditButton) {
-  let isProfileFramesEnabled = require(8871) /* apexExperiment */.useIsProfileFramesEnabled(UserProfileFrameEditButton);
-  importDefault(9467);
+  let isProfileFramesEnabled = require(8956) /* apexExperiment */.useIsProfileFramesEnabled(UserProfileFrameEditButton);
+  importDefault(9234);
   if (isProfileFramesEnabled) {
-    isProfileFramesEnabled = tmp5 !== require(9467) /* apexExperiment */.ProfileFramesPurchaseBucket.CONTROL;
+    isProfileFramesEnabled = tmp5 !== require(9234) /* apexExperiment */.ProfileFramesPurchaseBucket.CONTROL;
   }
   return isProfileFramesEnabled;
 };
 export const useIsProfileFramesEarlyAccessPhase = function useIsProfileFramesEarlyAccessPhase(CollectiblesShopCardCardDetailsV2) {
-  let isProfileFramesEnabled = require(8871) /* apexExperiment */.useIsProfileFramesEnabled(CollectiblesShopCardCardDetailsV2);
-  importDefault(9467);
+  let isProfileFramesEnabled = require(8956) /* apexExperiment */.useIsProfileFramesEnabled(CollectiblesShopCardCardDetailsV2);
+  importDefault(9234);
   if (isProfileFramesEnabled) {
-    isProfileFramesEnabled = tmp5 === require(9467) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
+    isProfileFramesEnabled = tmp5 === require(9234) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
   }
   return isProfileFramesEnabled;
 };

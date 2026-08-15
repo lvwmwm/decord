@@ -1,10 +1,10 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 9136
+// Function ID: 9137
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [4380, 2]
+// Dependencies: [4511, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 9382 (calculateSteamReviewScoreDescription)
+// Module 9136 (calculateSteamReviewScoreDescription)
 const result = require("set").fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
 
 export const calculateSteamReviewScoreDescription = function calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating) {
@@ -29,31 +29,31 @@ export const calculateSteamReviewScoreDescription = function calculateSteamRevie
       if (ratingCount >= 10) {
         if (rating >= 80) {
           if (ratingCount < num2) {
-            let VERY_POSITIVE = require(4380) /* GameTheme */.SteamReviewScoreDescription.POSITIVE;
+            let VERY_POSITIVE = require(4511) /* GameTheme */.SteamReviewScoreDescription.POSITIVE;
           } else {
             if (ratingCount >= num4) {
               if (rating >= 95) {
-                VERY_POSITIVE = require(4380) /* GameTheme */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE;
+                VERY_POSITIVE = require(4511) /* GameTheme */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE;
               }
             }
-            VERY_POSITIVE = require(4380) /* GameTheme */.SteamReviewScoreDescription.VERY_POSITIVE;
+            VERY_POSITIVE = require(4511) /* GameTheme */.SteamReviewScoreDescription.VERY_POSITIVE;
           }
         } else if (rating >= 70) {
-          let NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.MOSTLY_POSITIVE;
+          let NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.MOSTLY_POSITIVE;
         } else if (rating >= 40) {
-          NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.MIXED;
+          NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.MIXED;
         } else if (rating >= 20) {
-          NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.MOSTLY_NEGATIVE;
+          NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.MOSTLY_NEGATIVE;
         } else if (ratingCount < num) {
-          NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.NEGATIVE;
+          NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.NEGATIVE;
         } else if (ratingCount < num3) {
-          NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.VERY_NEGATIVE;
+          NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.VERY_NEGATIVE;
         } else {
-          NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE;
+          NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE;
         }
       }
       return NO_USER_REVIEWS;
     }
   }
-  NO_USER_REVIEWS = require(4380) /* GameTheme */.SteamReviewScoreDescription.NO_USER_REVIEWS;
+  NO_USER_REVIEWS = require(4511) /* GameTheme */.SteamReviewScoreDescription.NO_USER_REVIEWS;
 };

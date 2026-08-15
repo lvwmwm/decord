@@ -1,9 +1,9 @@
-// Module ID: 13796
-// Function ID: 13797
+// Module ID: 13828
+// Function ID: 13829
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4383, 4364, 1391, 4393, 4416, 3998, 1922, 676, 712, 7284, 7283, 10911, 9713, 4535, 1236, 4523, 2]
+// Dependencies: [32, 17, 1390, 4478, 4652, 1391, 4497, 4539, 4030, 1922, 676, 712, 7505, 7504, 12598, 9908, 4984, 1236, 4720, 2]
 
-// Module 13796 (processColor)
+// Module 13828 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "cloud_tornado", isPushToTalk: "cloud_with_tornado", embeddedActivity: "tornado", isStreaming: 634126337 };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "RCTView", embeddedActivity: "face_with_spiral_eyes", isStreaming: "woozy_face" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "cloud_tornado", isPushToTalk: "cloud_with_tornado", embeddedActivity: "tornado", isStreaming: 634126337 };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "RCTView", embeddedActivity: "face_with_spiral_eyes", isStreaming: "woozy_face" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

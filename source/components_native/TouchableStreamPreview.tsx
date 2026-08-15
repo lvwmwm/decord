@@ -1,12 +1,12 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 12615
+// Function ID: 12616
 // Name: StreamPreviewContainer
-// Dependencies: [19, 17, 4359, 4364, 1218, 1391, 1910, 3989, 4361, 676, 21, 4342, 4191, 712, 4527, 589, 1236, 5191, 4524, 4571, 4570, 4408, 4793, 10930, 4338, 2]
+// Dependencies: [19, 17, 4540, 4652, 1218, 1391, 1910, 4021, 4542, 676, 21, 4661, 4223, 712, 4979, 589, 1236, 4975, 9860, 9883, 8666, 4531, 4761, 12616, 4734, 2]
 // Exports: default
 
-// Module 10929 (StreamPreviewContainer)
+// Module 12615 (StreamPreviewContainer)
 import transitionToStream from "transitionToStream";
-import get_ActivityIndicator from "module_5191";
+import get_ActivityIndicator from "module_4975";
 import set from "set";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";

@@ -1,9 +1,9 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14520
+// Function ID: 14521
 // Name: clearTimeoutTimer
-// Dependencies: [676, 698, 7131, 7136, 10462, 2]
+// Dependencies: [676, 698, 5006, 5011, 10501, 2]
 
-// Module 14488 (clearTimeoutTimer)
+// Module 14520 (clearTimeoutTimer)
 import { AnalyticEvents } from "ME";
 
 let c4 = 30000;
@@ -24,14 +24,14 @@ prototype["sendMetric"] = function sendMetric(timeout, duration) {
   obj.track(AnalyticEvents.QUEST_HOME_ROUNDTRIP, obj);
   if (Math.random() <= 0.1) {
     obj = { name: null, tags: null };
-    obj[0] = require(7136) /* set */.MetricEvents.QUEST_HOME_ROUNDTRIP;
+    obj[0] = require(5011) /* set */.MetricEvents.QUEST_HOME_ROUNDTRIP;
     const _HermesInternal = HermesInternal;
     const items = ["includes_bounties:" + arg2, ];
     const _HermesInternal2 = HermesInternal;
     items[1] = "timeout:" + timeout;
     obj[1] = items;
-    importDefault(7131).distribution(obj, duration);
-    const tmpResult = importDefault(7131);
+    importDefault(5006).distribution(obj, duration);
+    const tmpResult = importDefault(5006);
   }
 };
 prototype["startTracking"] = function startTracking() {
@@ -79,7 +79,7 @@ prototype["stopTracking"] = function stopTracking() {
       const _Math2 = Math;
       self.sendMetric(flag2, Math.min(rounded, c4), flag);
     }
-    obj2 = importDefault(10462);
+    obj2 = importDefault(10501);
   }
 };
 prototype["clearTracking"] = function clearTracking() {

@@ -1,10 +1,10 @@
-// Module ID: 4238
-// Function ID: 4239
+// Module ID: 4270
+// Function ID: 4271
 // Name: _fetchAppliedGuildBoostsForGuild
-// Dependencies: [5, 4239, 4240, 4013, 676, 530, 709, 4241, 2]
+// Dependencies: [5, 4271, 4272, 4045, 676, 530, 709, 4273, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4238 (_fetchAppliedGuildBoostsForGuild)
+// Module 4270 (_fetchAppliedGuildBoostsForGuild)
 import sendRequest from "sendRequest";
 import createFromServer from "createFromServer";
 import closure_5 from "createFromServer";
@@ -31,7 +31,7 @@ function _fetchAppliedGuildBoostsForGuild() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ function _fetchAppliedGuildBoostsForUser() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ function _fetchAppliedBoostsCooldown() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -320,7 +320,7 @@ function _fetchAppliedBoostsCooldown() {
             c5 = 3;
             return { value: null, done: true };
           } else {
-            const appliedGuildBoostError = new ends_at(4241).AppliedGuildBoostError(lib);
+            const appliedGuildBoostError = new ends_at(4273).AppliedGuildBoostError(lib);
             throw appliedGuildBoostError;
           }
         } else if (arg0 === 1) {
@@ -385,7 +385,7 @@ function _applyToGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -519,7 +519,7 @@ function _unapplyFromGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -554,7 +554,7 @@ function _unapplyFromGuild() {
           } else if (1 === tmp7) {
             c5 = 0;
             dependencyMap = createFromServer;
-            appliedGuildBoostError = new callback(4241).AppliedGuildBoostError(dependencyMap);
+            appliedGuildBoostError = new callback(4273).AppliedGuildBoostError(dependencyMap);
             let obj3 = appliedGuildBoostError(709);
             obj3 = { type: "GUILD_UNAPPLY_BOOST_FAIL", error: null };
             obj3[1] = appliedGuildBoostError;
@@ -577,7 +577,7 @@ function _unapplyFromGuild() {
             obj5[1] = callback;
             obj.dispatch(obj5);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp33) {
           createFromServer = tmp33;

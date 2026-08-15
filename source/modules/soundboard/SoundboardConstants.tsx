@@ -1,9 +1,9 @@
-// Module ID: 4813
-// Function ID: 4814
+// Module ID: 4781
+// Function ID: 4782
 // Name: MAX_LENGTH_SOUND_NAME
 // Dependencies: [2]
 
-// Module 4813 (MAX_LENGTH_SOUND_NAME)
+// Module 4781 (MAX_LENGTH_SOUND_NAME)
 import set from "set";
 
 const obj = { SUCCESS: 0, [0]: "SUCCESS", INTERRUPTED: 1, [1]: "INTERRUPTED" };

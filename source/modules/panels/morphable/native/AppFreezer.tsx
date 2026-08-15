@@ -1,12 +1,12 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15778
+// Function ID: 15779
 // Name: jsx
-// Dependencies: [19, 8925, 21, 5842, 4724, 2]
+// Dependencies: [19, 9010, 21, 7190, 4681, 2]
 // Exports: default
 
-// Module 15728 (jsx)
+// Module 15778 (jsx)
 import "noop";
-import module_8925 from "module_8925";
+import module_9010 from "module_9010";
 import { jsx } from "jsxProd";
 import set from "set";
 
@@ -35,5 +35,5 @@ export default function AppFreezer(children) {
   if (!freeze) {
     freeze = flag;
   }
-  return jsx(lockKeys(4724).Freeze, { freeze, placeholder, children: children.children });
+  return jsx(lockKeys(4681).Freeze, { freeze, placeholder, children: children.children });
 };

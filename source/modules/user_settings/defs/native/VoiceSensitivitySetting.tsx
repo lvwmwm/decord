@@ -1,8 +1,8 @@
-// Module ID: 14564
-// Function ID: 14565
-// Dependencies: [17, 4393, 8148, 21, 4342, 589, 10841, 9219, 10421, 1236, 2]
+// Module ID: 14596
+// Function ID: 14597
+// Dependencies: [17, 4497, 8198, 21, 4661, 589, 12551, 9654, 10669, 1236, 2]
 
-// Module 14564
+// Module 14596
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ let obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["sqUm+k"]);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
@@ -23,7 +23,7 @@ let obj = {
     const items = [_detectH265HardwareDecode];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10841), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(12551), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -51,7 +51,7 @@ const createStaticResult = createToggle.createStatic({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["sqUm+k"]);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
@@ -59,7 +59,7 @@ const createStaticResult = createToggle.createStatic({
     const items = [_detectH265HardwareDecode];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10841), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(12551), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -82,6 +82,6 @@ const createStaticResult = createToggle.createStatic({
     return items;
   }
 });
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
 
 export default createStaticResult;

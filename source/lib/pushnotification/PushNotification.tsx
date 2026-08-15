@@ -1,9 +1,9 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 11579
+// Function ID: 11580
 // Name: NativeModules
-// Dependencies: [17, 500, 10765, 9928, 10766, 2]
+// Dependencies: [17, 500, 11580, 10134, 11581, 2]
 
-// Module 10764 (NativeModules)
+// Module 11579 (NativeModules)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 const NativeModules = get_ActivityIndicator.NativeModules;
@@ -71,8 +71,8 @@ export default {
         });
       });
     } else {
-      initialNotification = importDefault(10765).getInitialNotification();
-      const obj2 = importDefault(10765);
+      initialNotification = importDefault(11580).getInitialNotification();
+      const obj2 = importDefault(11580);
     }
     return initialNotification;
   },
@@ -103,30 +103,30 @@ export default {
   },
   clearPushNotificationLogs() {
     if (obj.isAndroid()) {
-      require(9928) /* enforcing */.default.clearLogs();
-      const _default = require(9928) /* enforcing */.default;
+      require(10134) /* enforcing */.default.clearLogs();
+      const _default = require(10134) /* enforcing */.default;
     }
   },
   setApplicationIconBadgeNumber(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(10765).setApplicationIconBadgeNumber(arg0);
-      const obj2 = importDefault(10765);
+      const result = importDefault(11580).setApplicationIconBadgeNumber(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   clearAllNotifications() {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.clearAllNotifications();
     } else {
-      const result1 = importDefault(10765).setApplicationIconBadgeNumber(0);
-      const obj2 = importDefault(10765);
+      const result1 = importDefault(11580).setApplicationIconBadgeNumber(0);
+      const obj2 = importDefault(11580);
     }
   },
   presentLocalNotification(arg0) {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.presentLocalNotification(arg0);
     } else {
-      const result1 = importDefault(10765).presentLocalNotification(arg0);
-      const obj2 = importDefault(10765);
+      const result1 = importDefault(11580).presentLocalNotification(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   getDeliveredNotifications() {
@@ -141,53 +141,53 @@ export default {
   },
   removeDeliveredNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(10765).removeDeliveredNotifications(arg0);
-      const obj2 = importDefault(10765);
+      const result = importDefault(11580).removeDeliveredNotifications(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   scheduleLocalNotification(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(10765).scheduleLocalNotification(arg0);
-      const obj2 = importDefault(10765);
+      const result = importDefault(11580).scheduleLocalNotification(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   getScheduledLocalNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const scheduledLocalNotifications = importDefault(10765).getScheduledLocalNotifications(arg0);
-      const obj2 = importDefault(10765);
+      const scheduledLocalNotifications = importDefault(11580).getScheduledLocalNotifications(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   cancelLocalNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(10765).cancelLocalNotifications(arg0);
-      const obj2 = importDefault(10765);
+      const result = importDefault(11580).cancelLocalNotifications(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   cancelAllLocalNotifications() {
     if (!obj.isAndroid()) {
-      const result = importDefault(10765).cancelAllLocalNotifications();
-      const obj2 = importDefault(10765);
+      const result = importDefault(11580).cancelAllLocalNotifications();
+      const obj2 = importDefault(11580);
     }
   },
   checkPermissions(arg0) {
     if (obj.isAndroid()) {
       arg0({});
     } else {
-      importDefault(10765).checkPermissions(arg0);
-      const obj2 = importDefault(10765);
+      importDefault(11580).checkPermissions(arg0);
+      const obj2 = importDefault(11580);
     }
   },
   requestPermissions(arg0) {
     if (obj.isAndroid()) {
       let permissions = new Promise((arg0) => arg0({}));
     } else {
-      permissions = importDefault(10765).requestPermissions(arg0);
-      const obj2 = importDefault(10765);
+      permissions = importDefault(11580).requestPermissions(arg0);
+      const obj2 = importDefault(11580);
     }
     return permissions;
   },
   openNotificationSettings() {
-    importDefault(10766)();
+    importDefault(11581)();
   },
   addNotificationEventListener(localNotification, handleLocalNotification) {
     const _require = handleLocalNotification;
@@ -298,8 +298,8 @@ export default {
       }
       const result = PushNotificationAndroid.registerEventListener(localNotification);
     } else {
-      const listener = importDefault(10765).addEventListener(localNotification, handleLocalNotification);
-      const obj2 = importDefault(10765);
+      const listener = importDefault(11580).addEventListener(localNotification, handleLocalNotification);
+      const obj2 = importDefault(11580);
     }
   },
   addRegisterEventListener(handleToken) {
@@ -310,8 +310,8 @@ export default {
       });
       const result = PushNotificationAndroid.registerEventListener("register");
     } else {
-      const listener = importDefault(10765).addEventListener("register", handleToken);
-      const obj2 = importDefault(10765);
+      const listener = importDefault(11580).addEventListener("register", handleToken);
+      const obj2 = importDefault(11580);
     }
   },
   getSoundsEnabled() {

@@ -1,9 +1,9 @@
-// Module ID: 7061
-// Function ID: 7062
+// Module ID: 5276
+// Function ID: 5277
 // Name: guildHasCommunity
-// Dependencies: [1340, 1218, 1391, 1980, 1990, 1910, 4357, 4550, 676, 687, 5962, 709, 5314, 11, 589, 2]
+// Dependencies: [1340, 1218, 1391, 1980, 1990, 1910, 4772, 5043, 676, 687, 4972, 709, 5277, 11, 589, 2]
 
-// Module 7061 (guildHasCommunity)
+// Module 5276 (guildHasCommunity)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -243,7 +243,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     guildId = guildId.guildId;
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== require(5962) /* SidebarType */.SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== require(4972) /* SidebarType */.SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
       maybeAckViewedChannel(guildId, guildId.channelId);

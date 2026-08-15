@@ -1,10 +1,10 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16834
+// Function ID: 16835
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4334, 1910, 16784, 676, 21, 4342, 712, 7707, 1493, 4763, 4083, 698, 4549, 8055, 4909, 4338, 10107, 1297, 11027, 4777, 1236, 2]
+// Dependencies: [32, 19, 17, 4662, 1910, 16830, 676, 21, 4661, 712, 7925, 1494, 4721, 4115, 698, 5042, 8105, 5433, 4734, 10311, 1297, 10756, 4745, 1236, 2]
 // Exports: default
 
-// Module 16788 (GuildSettingsRoleTemplate)
+// Module 16834 (GuildSettingsRoleTemplate)
 import _slicedToArray from "_slicedToArray";
 import Pagination from "Pagination";
 import get_ActivityIndicator from "PressableBase";
@@ -68,7 +68,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   let bound;
   let tmp = createCacheKey();
   callback = tmp;
-  const size = importDefault(1493)();
+  const size = importDefault(1494)();
   const height = size.height;
   let obj = ref;
   ref = ref.useRef(null);
@@ -79,7 +79,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   const tmp9 = callback(ref.useState(width), 2);
   first1 = tmp9[0];
   constants = tmp9[1];
-  let obj1 = require(4763) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj1 = require(4721) /* SCREEN_READER_ENABLED_GETTER */;
   num = 0.7;
   const isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   if (tmp4) {
@@ -145,7 +145,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
       return obj;
     }
   }
-  obj = { interpolate: tmp11(4083).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4083).Extrapolation, inactiveOpacity: num };
+  obj = { interpolate: tmp11(4115).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4115).Extrapolation, inactiveOpacity: num };
   V.__closure = obj;
   V.__workletHash = 1786335394860;
   V.__initData = closure_18;
@@ -154,9 +154,9 @@ export default function GuildSettingsRoleTemplate(arg0) {
   const values = Object.values(num);
   obj = { ref, style: tmp.container, children: null };
   obj1 = { style: tmp.sliderContainer, children: null };
-  tmp4 = importDefault(7707)();
-  let items2 = [callback2(ref1, { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(8055), obj3) }), ];
-  let obj2 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(8055), obj3) };
+  tmp4 = importDefault(7925)();
+  let items2 = [callback2(ref1, { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(8105), obj3) }), ];
+  let obj2 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(8105), obj3) };
   items2[1] = callback2(ref1, {
     style: tmp.sliderLabels,
     children: values.map((title) => {
@@ -220,7 +220,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     })
   };
   const items4 = [tmp.carousel, { minHeight: rounded }];
-  items3[1] = callback2(ref1, { style: items4, children: callback2(importDefault(10107), obj6) });
+  items3[1] = callback2(ref1, { style: items4, children: callback2(importDefault(10311), obj6) });
   obj[2] = items3;
   return callback3(ref1, obj);
 };

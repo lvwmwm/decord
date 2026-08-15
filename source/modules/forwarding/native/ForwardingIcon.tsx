@@ -1,15 +1,15 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 9087
+// Function ID: 9088
 // Name: ForwardingIcon
-// Dependencies: [21, 11144, 2]
+// Dependencies: [21, 9088, 2]
 // Exports: default
 
-// Module 11143 (ForwardingIcon)
+// Module 9087 (ForwardingIcon)
 import { jsx } from "jsxProd";
 
 const result = require("set").fileFinishedImporting("modules/forwarding/native/ForwardingIcon.tsx");
 
 export default function ForwardingIcon(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(require(11144) /* ArrowAngleRightUpIcon */.ArrowAngleRightUpIcon, {});
+  return jsx(require(9088) /* ArrowAngleRightUpIcon */.ArrowAngleRightUpIcon, {});
 };

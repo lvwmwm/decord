@@ -1,10 +1,10 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 6552
+// Function ID: 6553
 // Name: useNavigationTheme
-// Dependencies: [19, 4065, 712, 1363, 1500, 2]
+// Dependencies: [19, 4097, 712, 1363, 1501, 2]
 // Exports: useNavigationTheme
 
-// Module 5886 (useNavigationTheme)
+// Module 6552 (useNavigationTheme)
 import noop from "noop";
 
 const require = arg1;

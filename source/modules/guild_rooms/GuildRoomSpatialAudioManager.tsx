@@ -1,9 +1,9 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16587
+// Function ID: 16588
 // Name: _initialize
-// Dependencies: [32, 4256, 1212, 1218, 1391, 4393, 4416, 4540, 5322, 9219, 4569, 16538, 2]
+// Dependencies: [32, 4288, 1212, 1218, 1391, 4497, 4539, 9864, 5038, 9654, 9882, 16588, 2]
 
-// Module 16537 (_initialize)
+// Module 16587 (_initialize)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";
@@ -11,7 +11,7 @@ import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
-import handleSelectedChannelStoreChange from "handleSelectedChannelStoreChange";
+import resolveCreatingNotes from "resolveCreatingNotes";
 import "initialize";
 
 let require = arg1;
@@ -65,7 +65,7 @@ prototype["isLivingRoomAvailable"] = function isLivingRoomAvailable() {
   const guildId = store.getGuildId();
   let interactionsEnabled = null != guildId;
   if (interactionsEnabled) {
-    let obj = importDefault(4569);
+    let obj = importDefault(9882);
     obj = { guildId: null, location: "GuildRoomSpatialAudioManager" };
     obj[0] = guildId;
     interactionsEnabled = obj.getCurrentConfig(obj, { autoTrackExposure: false }).interactionsEnabled;
@@ -89,7 +89,7 @@ prototype["apply"] = function apply() {
           obj[0] = roomUsers.getRoomUsers(channelId);
           obj[1] = id.getId();
           obj[2] = channelId;
-          _require = _require(16538).computeLivingRoomWorldPoints(obj);
+          _require = _require(16588).computeLivingRoomWorldPoints(obj);
           const mediaEngine = obj.getMediaEngine();
           mediaEngine.eachConnection((setUserPosition) => {
             let tmp6;
@@ -106,7 +106,7 @@ prototype["apply"] = function apply() {
               continue;
             }
           });
-          const obj3 = _require(16538);
+          const obj3 = _require(16588);
         }
       }
     }

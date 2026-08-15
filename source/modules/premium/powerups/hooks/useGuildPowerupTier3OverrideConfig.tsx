@@ -1,10 +1,10 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 11725
+// Function ID: 11726
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [1910, 676, 589, 1236, 2335, 2]
+// Dependencies: [1910, 676, 589, 1236, 2367, 2]
 // Exports: default
 
-// Module 11994 (useGuildPowerupTier3OverrideConfig)
+// Module 11725 (useGuildPowerupTier3OverrideConfig)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
@@ -26,7 +26,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
   })) {
     obj = { shouldShow: true, text: null };
     const intl = _require(1236).intl;
-    obj[1] = intl.string(importDefault(2335).l9n4QZ);
+    obj[1] = intl.string(importDefault(2367).l9n4QZ);
   } else {
     obj = { shouldShow: false, text: "" };
   }

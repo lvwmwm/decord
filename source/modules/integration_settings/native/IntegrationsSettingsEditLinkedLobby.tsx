@@ -1,10 +1,10 @@
-// Module ID: 16018
-// Function ID: 16019
+// Module ID: 16068
+// Function ID: 16069
 // Name: EditLinkedLobby
-// Dependencies: [19, 17, 1922, 21, 4342, 712, 4065, 1499, 5789, 5809, 5795, 4535, 589, 9747, 8846, 1236, 4338, 8033, 4775, 1297, 1435, 5828, 5435, 2]
+// Dependencies: [19, 17, 1922, 21, 4661, 712, 4097, 1500, 7139, 7159, 7145, 4984, 589, 9950, 8929, 1236, 4734, 8083, 4733, 1297, 1435, 6286, 6291, 2]
 // Exports: default
 
-// Module 16018 (EditLinkedLobby)
+// Module 16068 (EditLinkedLobby)
 import Button from "Button";
 import { View } from "Form";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 4370
-// Function ID: 4371
+// Module ID: 4481
+// Function ID: 4482
 // Name: items3
 // Dependencies: [676, 1954, 2]
 // Exports: getAppIntentScheme
 
-// Module 4370 (items3)
+// Module 4481 (items3)
 import { ChannelTypes } from "ME";
 import set from "set";
 
@@ -20,8 +20,8 @@ obj[5] = items3;
 obj[6] = { [require(1954).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1954).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1954).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
 obj[9] = [];
 obj[10] = [];
-const items4 = [, , ];
-({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2] } = ChannelTypes);
+const items4 = [, , , ];
+({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2], GUILD_SPACE: arr5[3] } = ChannelTypes);
 const items5 = [];
 items5[HermesBuiltin.arraySpread(items4, 0)] = ChannelTypes.GUILD_VOICE;
 const result = set.fileFinishedImporting("modules/activities/Constants.tsx");

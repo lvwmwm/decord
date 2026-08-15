@@ -1,10 +1,10 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14298
+// Function ID: 14299
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5311, 1391, 3998, 4550, 1994, 676, 9729, 10338, 21, 4342, 712, 4298, 4338, 1499, 1500, 1236, 5797, 10591, 10494, 589, 12036, 1435, 4707, 12035, 4310, 10339, 2007, 503, 9307, 7850, 7659, 6077, 8995, 4198, 5323, 5318, 11, 11516, 9595, 5828, 5829, 5435, 2]
+// Dependencies: [19, 17, 1390, 5289, 1391, 4030, 5043, 1994, 676, 9922, 10594, 21, 4661, 712, 4330, 4734, 1500, 1501, 1236, 7147, 8713, 9771, 589, 11767, 1435, 4657, 11766, 4342, 10595, 2007, 503, 9736, 6553, 7877, 7357, 8775, 4230, 6798, 6795, 11, 11229, 9550, 6286, 7178, 6291, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14266 (WarningLabel)
+// Module 14298 (WarningLabel)
 import tokensToAppTokensMap from "tokensToAppTokensMap";
 import get_ActivityIndicator from "createStandardNavigationFactories";
 import participantFromServer from "participantFromServer";
@@ -33,13 +33,13 @@ function WarningLabel(children) {
   obj = { size: "xs", color: null, style: null };
   obj[1] = importDefault(712).colors.TEXT_MUTED;
   obj[2] = tmp.warningIcon;
-  const items = [callback(require(4298) /* CircleInformationIcon */.CircleInformationIcon, obj), callback(require(4338) /* Text */.Text, { color: "text-default", variant: "text-sm/medium", children: children.text })];
+  const items = [callback(require(4330) /* CircleInformationIcon */.CircleInformationIcon, obj), callback(require(4734) /* Text */.Text, { color: "text-default", variant: "text-sm/medium", children: children.text })];
   obj[1] = items;
   return callback2(closure_5, obj);
 }
 function AuthorizedAppTwoWay(application) {
   let navigation;
-  let obj = navigation(1499);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { text: null };
@@ -364,7 +364,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
 };
 export const handleDeleteApp = function handleDeleteApp(application) {
   application = application.application;
-  let obj = importDefault(5797);
+  let obj = importDefault(7147);
   obj.delete(application.id);
   selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
@@ -373,5 +373,5 @@ export const handleDeleteApp = function handleDeleteApp(application) {
     _location = value.location;
   }
   obj = { location: _location, applicationId: application.id };
-  importDefault(10591).leaveActivity(obj);
+  importDefault(8713).leaveActivity(obj);
 };

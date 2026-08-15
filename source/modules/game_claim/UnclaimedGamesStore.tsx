@@ -1,9 +1,9 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15454
+// Function ID: 15455
 // Name: getMap
 // Dependencies: [589, 709, 2]
 
-// Module 15404 (getMap)
+// Module 15454 (getMap)
 import { Store } from "initialize";
 
 let c0 = null;

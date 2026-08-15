@@ -1,9 +1,9 @@
-// Module ID: 4157
-// Function ID: 4158
+// Module ID: 4189
+// Function ID: 4190
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 4077, 4158, 4132, 2]
+// Dependencies: [109, 19, 21, 4109, 4190, 4164, 2]
 
-// Module 4157 (TeenScreenTimeRive)
+// Module 4189 (TeenScreenTimeRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -26,21 +26,21 @@ let closure_8 = importAllResult.forwardRef(function TeenScreenTimeRiveInner(defa
     tmp = defaultViewModelInstance;
   }
   const obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null };
-  obj[1] = importDefault(4158);
+  obj[1] = importDefault(4190);
   obj[2] = str;
   obj[3] = closure_6;
   obj[4] = closure_7;
   obj[5] = tmp;
   obj[6] = defaultViewModelInstance.stateMachine;
   const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(require(4077) /* BaseRive */.BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null });
+  return jsx(require(4109) /* BaseRive */.BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function TeenScreenTimeRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_8 ref={arg1} />;
-  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4164) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/TeenScreenTimeRive.tsx");
 

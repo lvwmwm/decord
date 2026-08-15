@@ -1,16 +1,16 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10666
+// Function ID: 10667
 // Name: useLaunchPadType
-// Dependencies: [10417, 4034, 1306, 2]
+// Dependencies: [10665, 4066, 1306, 2]
 // Exports: default
 
-// Module 10418 (useLaunchPadType)
+// Module 10666 (useLaunchPadType)
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 
 const result = require("create").fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
 
 export default function useLaunchPadType() {
-  const LaunchPadModeSetting = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
+  const LaunchPadModeSetting = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
   const setting = LaunchPadModeSetting.useSetting();
   if (require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {
     return LaunchPadTypes.DISABLED;

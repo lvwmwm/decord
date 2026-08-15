@@ -1,10 +1,10 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14414
+// Function ID: 14415
 // Name: BountiesModalContentInner
-// Dependencies: [5, 19, 17, 7227, 5223, 676, 505, 21, 1493, 1628, 4342, 712, 589, 9485, 10971, 14340, 14343, 10975, 14341, 14344, 7245, 7244, 7255, 5228, 10576, 14327, 14346, 11242, 14383, 14375, 5389, 14367, 10436, 4072, 2]
+// Dependencies: [5, 19, 17, 7452, 6716, 676, 505, 21, 1494, 1629, 4661, 712, 589, 9252, 10711, 14372, 14375, 10715, 14373, 14376, 7470, 7469, 7480, 6721, 10704, 14359, 14378, 10957, 14415, 14407, 6803, 14399, 10684, 4104, 2]
 // Exports: default
 
-// Module 14382 (BountiesModalContentInner)
+// Module 14414 (BountiesModalContentInner)
 import ME from "ME";
 import useBountiesModalVideoAnalytics from "useBountiesModalVideoAnalytics";
 import { View } from "fetchBountiesAndDispatch";
@@ -61,10 +61,10 @@ function BountiesModalContentInner(bounty) {
   width = undefined;
   height = undefined;
   dependencyMap = undefined;
-  const size = height(1493)();
+  const size = height(1494)();
   width = size.width;
   height = size.height;
-  const tmp4 = height(1628)();
+  const tmp4 = height(1629)();
   dependencyMap = tmp4;
   let obj = React;
   let items = [width, height, , , , ];
@@ -118,18 +118,18 @@ function BountiesModalContentInner(bounty) {
   let obj1 = width(589);
   const items4 = [flushProgress];
   const stateFromStores = obj1.useStateFromStores(items4, () => flushProgress.isBountyCompleted(width.id));
-  let obj2 = width(9485);
-  let obj3 = width(10971);
+  let obj2 = width(9252);
+  let obj3 = width(10711);
   const bountiesExperience = obj3.useBountiesExperience(handleVideoProgressAnalytics.VIDEO_MODAL_MOBILE);
   ({ loopingEnabled, ownedByVerticalScrollExperiment, stage1Enabled, rewardTimerSeconds } = bountiesExperience);
-  const BountyVideoEndMode = width(14340).BountyVideoEndMode;
+  const BountyVideoEndMode = width(14372).BountyVideoEndMode;
   const tmp12 = loopingEnabled ? BountyVideoEndMode.LOOP : BountyVideoEndMode.END_CARD;
   if (!stage1Enabled) {
     if (!ownedByVerticalScrollExperiment) {
       let result = 1000 * bounty.rewardTimerSeconds;
     }
     React = result;
-    let tmp9Result = tmp9(14343);
+    let tmp9Result = tmp9(14375);
     obj = { bountyId: null, endMode: null };
     obj[0] = bounty.id;
     obj[1] = tmp12;
@@ -156,7 +156,7 @@ function BountiesModalContentInner(bounty) {
       c3 = 0;
       return arg1;
     }), items5);
-    tmp9Result = tmp9(14344);
+    tmp9Result = tmp9(14376);
     obj = { bountyId: null, sourceQuestContent: null, rewardDurationMs: null, initialPlaybackTimeSec: null, initialMaxVideoProgressSec: null, initialVideoDurationSec: null, wasPreloaded: false, startupPath: "carousel", verticalScrollingPosition: null };
     obj[0] = bounty.id;
     obj[1] = sourceQuestContent;
@@ -186,7 +186,7 @@ function BountiesModalContentInner(bounty) {
       duration = initialProgress.duration;
     }
     obj1[11] = duration;
-    const bountiesModalTiming = tmp9(14340).useBountiesModalTiming(obj1);
+    const bountiesModalTiming = tmp9(14372).useBountiesModalTiming(obj1);
     isEndCardVisible = bountiesModalTiming.isEndCardVisible;
     maxVideoProgressSeconds = bountiesModalTiming.maxVideoProgressSeconds;
     videoDuration = bountiesModalTiming.videoDuration;
@@ -274,13 +274,13 @@ function BountiesModalContentInner(bounty) {
       return videoDuration(width(_undefined[27]).QuestContentImpressionTrackerNative, obj);
     };
     ({ width: obj13[24], height: obj13[25] } = memo);
-    obj3[1] = videoDuration(tmp9(14346).BountyVideo, obj4);
+    obj3[1] = videoDuration(tmp9(14378).BountyVideo, obj4);
     const items9 = [videoDuration(handleProgress, obj3), , ];
     let obj5 = { style: null, children: null };
     obj5[0] = memo2;
     const obj6 = { onPress: null };
     obj6[0] = callback2;
-    obj5[1] = videoDuration(tmp2(14375), obj6);
+    obj5[1] = videoDuration(tmp2(14407), obj6);
     items9[1] = videoDuration(handleProgress, obj5);
     const obj7 = { left: null, right: null, bottom: true, style: null, pointerEvents: "box-none", children: null };
     ({ isFullWidth: obj16[0], isFullWidth: obj16[1] } = memo);
@@ -290,8 +290,8 @@ function BountiesModalContentInner(bounty) {
     obj8[1] = isEndCardVisible;
     obj8[2] = sourceQuestContent;
     obj8[3] = callback3;
-    obj7[5] = videoDuration(tmp2(14367), obj8);
-    items9[2] = videoDuration(tmp9(5389).SafeAreaPaddingView, obj7);
+    obj7[5] = videoDuration(tmp2(14399), obj8);
+    items9[2] = videoDuration(tmp9(6803).SafeAreaPaddingView, obj7);
     obj2[0] = items9;
     return callback2(closure_11, obj2);
   }

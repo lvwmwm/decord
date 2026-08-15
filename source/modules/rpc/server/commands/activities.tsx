@@ -1,8 +1,8 @@
-// Module ID: 13844
-// Function ID: 13845
-// Dependencies: [5, 676, 13814, 13802, 10732, 7655, 10727, 13806, 10604, 2]
+// Module ID: 13876
+// Function ID: 13877
+// Dependencies: [5, 676, 13846, 13834, 8757, 7873, 8752, 13838, 8701, 2]
 
-// Module 13844
+// Module 13876
 import getApplicationFlags from "getApplicationFlags";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";
@@ -17,9 +17,9 @@ let obj = {};
 obj = {
   scope: require("activityInstanceConnectedParticipants").activityInstanceConnectedParticipantsScope,
   handler(socket) {
-    const result = require(10732) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
-    const obj = require(10732) /* recurseReplaceContentTree */;
-    return require(13802) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
+    const result = require(8757) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
+    const obj = require(8757) /* recurseReplaceContentTree */;
+    return require(13834) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
   }
 };
 obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = createRPCCommand.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj);
@@ -39,7 +39,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

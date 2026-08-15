@@ -1,9 +1,9 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13251
+// Function ID: 13252
 // Name: initialize
-// Dependencies: [7188, 5890, 3998, 1922, 589, 709, 2]
+// Dependencies: [5407, 5258, 4030, 1922, 589, 709, 2]
 
-// Module 13048 (initialize)
+// Module 13251 (initialize)
 import recomputeAffinities from "recomputeAffinities";
 import hasConsented from "hasConsented";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

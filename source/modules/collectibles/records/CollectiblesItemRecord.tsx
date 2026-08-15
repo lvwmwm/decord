@@ -1,10 +1,10 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 5305
+// Function ID: 5306
 // Name: createCollectiblesItemsFromServerResponse
-// Dependencies: [7076, 1947, 7077, 7078, 7079, 676, 1949, 2]
+// Dependencies: [5306, 1947, 5307, 5308, 5309, 676, 1949, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 7075 (createCollectiblesItemsFromServerResponse)
+// Module 5305 (createCollectiblesItemsFromServerResponse)
 import fromServer from "fromServer";
 import closure_3 from "fromServer";
 import closure_4 from "fromServer";

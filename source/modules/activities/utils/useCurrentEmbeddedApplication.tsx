@@ -1,10 +1,10 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 11235
+// Function ID: 11236
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 10709, 5795, 2]
+// Dependencies: [32, 11234, 7145, 2]
 // Exports: default
 
-// Module 10708 (useCurrentEmbeddedApplication)
+// Module 11235 (useCurrentEmbeddedApplication)
 import _slicedToArray from "_slicedToArray";
 
 const result = require("useGetOrFetchApplications").fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedApplication.tsx");
@@ -18,12 +18,12 @@ export default function useCurrentEmbeddedApplication() {
   if (flag === undefined) {
     flag = true;
   }
-  const tmp = importDefault(10709)();
+  const tmp = importDefault(11234)();
   if (null == tmp) {
     let items = [];
   } else {
     items = [tmp.applicationId];
   }
-  const first = callback(importDefault(5795)(items, flag), 1)[0];
+  const first = callback(importDefault(7145)(items, flag), 1)[0];
   return first;
 };

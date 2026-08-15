@@ -1,9 +1,9 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 13903
+// Function ID: 13904
 // Name: map
-// Dependencies: [5, 4393, 1979, 4812, 3, 13872, 13873, 13874, 9840, 6017, 2]
+// Dependencies: [5, 4497, 1979, 4780, 3, 13904, 13905, 13906, 10040, 7299, 2]
 
-// Module 13871 (map)
+// Module 13903 (map)
 import _initialize from "_initialize";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -77,7 +77,7 @@ let prototype = function SoundboardManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -149,7 +149,7 @@ let prototype = function SoundboardManager() {
               const result = obj2.reportSoundFinishedPlaying(c2, c3);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp30) {
           c3 = tmp30;

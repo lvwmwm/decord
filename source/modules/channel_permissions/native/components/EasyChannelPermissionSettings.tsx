@@ -1,10 +1,10 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16039
+// Function ID: 16040
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15990, 1391, 1990, 1983, 1910, 3989, 3998, 1922, 7847, 676, 21, 4342, 712, 1499, 589, 9060, 9061, 9062, 1236, 4535, 4705, 9068, 3994, 4775, 5828, 5829, 1297, 5435, 9590, 11062, 5337, 4549, 9019, 9205, 15991, 15993, 2]
+// Dependencies: [32, 5, 19, 17, 16040, 1391, 1990, 1983, 1910, 4021, 4030, 1922, 8064, 676, 21, 4661, 712, 1500, 589, 8850, 8851, 8852, 1236, 4984, 4827, 8858, 4026, 4733, 6286, 7178, 1297, 6291, 9545, 10796, 6318, 5042, 8799, 10096, 16041, 16043, 2]
 // Exports: default
 
-// Module 15989 (ChannelPermissionSettingsBasicView)
+// Module 16039 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";
@@ -64,7 +64,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -83,13 +83,13 @@ function ChannelPermissionSettingsBasicView(channel) {
               let closure_0 = tmp2;
               closure_0 = undefined;
               const accessPermissions = outer1_0.accessPermissions;
-              const result = v0(9060).isPrivateGuildChannel(outer1_0);
-              const obj9 = v0(9060);
+              const result = v0(8850).isPrivateGuildChannel(outer1_0);
+              const obj9 = v0(8850);
               const tmp22 = v0;
-              closure_0 = v0(9060).flipEveryonePermission(outer1_0, accessPermissions, result);
+              closure_0 = v0(8850).flipEveryonePermission(outer1_0, accessPermissions, result);
               const currentUser = outer1_16.getCurrentUser();
               let tmp7 = outer1_9;
-              const obj10 = v0(9060);
+              const obj10 = v0(8850);
               if (!outer1_9) {
                 tmp7 = null == currentUser;
               }
@@ -100,7 +100,7 @@ function ChannelPermissionSettingsBasicView(channel) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = tmp22(9060).grantUserChannelAccess(outer1_0, accessPermissions);
+                obj1[0] = tmp22(8850).grantUserChannelAccess(outer1_0, accessPermissions);
                 return obj1;
               }
               canResult = outer1_14.can(outer1_19.ADMINISTRATOR, outer1_4);
@@ -125,13 +125,13 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const items = [closure_0];
           v0 = 2;
           dependencyMap = 1;
           const obj3 = { value: null, done: false };
-          obj3[0] = outer1_0(9061).savePermissionUpdates(outer1_0.id, items);
+          obj3[0] = outer1_0(8851).savePermissionUpdates(outer1_0.id, items);
           return obj3;
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -162,7 +162,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ function ChannelPermissionSettingsBasicView(channel) {
               v0 = undefined;
               if (null != outer1_0.guild_id) {
                 if (!outer1_1) {
-                  let obj1 = outer1_0(9062);
+                  let obj1 = outer1_0(8852);
                   v0 = 1;
                   dependencyMap = 1;
                   obj1 = { value: null, done: false };
@@ -203,7 +203,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!arg1) {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const intl = outer1_0(1236).intl;
           const string = intl.string;
@@ -214,7 +214,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             stringResult = string(t["47gQYL"]);
           }
           outer1_0 = stringResult;
-          let obj3 = outer1_0(4535);
+          let obj3 = outer1_0(4984);
           outer1_1 = obj3.computeChannelName(outer1_0, outer1_16, outer1_15);
           let intl2 = outer1_0(1236).intl;
           let onCancel = intl2.format;
@@ -230,7 +230,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           }
           v0 = onCancelResult;
           v0(!c1);
-          show = outer1_1(4705).show;
+          show = outer1_1(4827).show;
           const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, onCancel: null };
           obj4[0] = c0;
           obj4[1] = v0;
@@ -246,7 +246,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj4[6] = onCancel;
           show(obj4);
           dependencyMap = 3;
-          const tmp42 = outer1_1(4705);
+          const tmp42 = outer1_1(4827);
         } catch (tmp54) {
           dependencyMap = tmp;
           throw tmp54;
@@ -281,7 +281,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "title" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {
@@ -409,7 +409,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   return null;
 }
 function onBack() {
-  importDefault(4705).close();
+  importDefault(4827).close();
   return false;
 }
 ({ View: error, ScrollView: metroImportAll } = get_ActivityIndicator);

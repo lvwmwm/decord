@@ -1,10 +1,10 @@
-// Module ID: 9593
-// Function ID: 9594
+// Module ID: 9548
+// Function ID: 9549
 // Name: Heading
-// Dependencies: [19, 17, 1994, 1990, 1910, 5837, 676, 1498, 21, 4342, 4065, 712, 4338, 1236, 9594, 589, 5187, 11, 9596, 5840, 9598, 1297, 8995, 5789, 8851, 9599, 8846, 4310, 4198, 1222, 5882, 4205, 1626, 9605, 4777, 5836, 2]
+// Dependencies: [19, 17, 1994, 1990, 1910, 7186, 676, 1499, 21, 4661, 4097, 712, 4734, 1236, 9549, 589, 5224, 11, 9551, 7188, 9553, 1297, 8775, 7139, 8934, 9554, 8929, 4342, 4230, 1222, 6548, 4237, 1627, 9559, 4745, 7185, 2]
 // Exports: default
 
-// Module 9593 (Heading)
+// Module 9548 (Heading)
 import GuildIconSizes from "GuildIconSizes";
 import { View } from "DISCORD_EPOCH";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,11 +34,11 @@ function Heading(children) {
     tmp = closure_14;
   }
   ({ headingVariant, headingSpacing } = tmp);
-  let variant = require(4065) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  let variant = require(4097) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
   if (variant == null) {
     variant = headingVariant;
   }
-  return closure_11(require(4338) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
+  return closure_11(require(4734) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
 }
 function TextWithIcon(themeType) {
   let accessibilityLabel;
@@ -55,7 +55,7 @@ function TextWithIcon(themeType) {
   }
   const obj = { style: items, accessible: true, accessibilityLabel, children: null };
   items = [callback3().textWithIcon, { columnGap: tmp2.columnGap }];
-  const items1 = [icon, callback(require(4338) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  const items1 = [icon, callback(require(4734) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
   obj[3] = items1;
   return callback2(View, obj);
 }
@@ -93,7 +93,7 @@ function Bio(arg0) {
       obj[1] = userId;
       obj[2] = tmp.textVariant;
       obj[3] = lineClamp;
-      items[1] = callback(importDefault(9594), obj);
+      items[1] = callback(importDefault(9549), obj);
       obj[0] = items;
       tmp4 = callback2(View, obj);
     }
@@ -136,10 +136,10 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  let obj3 = userId(5187);
+  let obj3 = userId(5224);
   let obj4 = importDefault(11);
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(5187);
+  let obj5 = userId(5224);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
@@ -151,7 +151,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9596).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(9551).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1236).intl;
   obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -162,13 +162,13 @@ function MemberJoinDates(userId) {
     obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     obj3[0] = textVariant;
     obj3[4] = closure_8;
-    const items6 = [tmp15(tmp4(4338).Text, obj3), ];
+    const items6 = [tmp15(tmp4(4734).Text, obj3), ];
     obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
     obj4[0] = themeType;
     obj5 = { guild: null, size: null };
     obj5[0] = stateFromStores1;
-    obj5[1] = tmp4(5840).GuildIconSizes.XXSMALL;
-    obj4[1] = tmp15(importDefault(5840), obj5);
+    obj5[1] = tmp4(7188).GuildIconSizes.XXSMALL;
+    obj4[1] = tmp15(importDefault(7188), obj5);
     const intl3 = tmp4(1236).intl;
     const obj6 = { guildName: null, date: null };
     obj6[0] = stateFromStores1.name;
@@ -178,7 +178,7 @@ function MemberJoinDates(userId) {
     items6[1] = tmp15(TextWithIcon, obj4);
     obj2[0] = items6;
     tmp13Result = tmp13(closure_13, obj2);
-    const tmp9Result = importDefault(5840);
+    const tmp9Result = importDefault(7188);
   }
   const obj7 = { children: null };
   items5[1] = tmp13Result;
@@ -196,7 +196,7 @@ function FriendsSinceDate(themeType) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = require(9598) /* useFriendsSinceDate */;
+  let obj = require(9553) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {
@@ -209,7 +209,7 @@ function FriendsSinceDate(themeType) {
     const obj1 = { variant: null, color: "text-default", children: null };
     obj1[0] = tmp.textVariant;
     obj1[2] = friendsSinceDate;
-    items[1] = callback(tmp3(4338).Text, obj1);
+    items[1] = callback(tmp3(4734).Text, obj1);
     obj[0] = items;
     tmp6 = callback2(View, obj);
   }
@@ -278,7 +278,7 @@ function PolicyLink(children) {
     },
     children: null
   };
-  obj[2] = callback(require(4338) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
+  obj[2] = callback(require(4734) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
   return callback(require(1297) /* Button */.PressableOpacity, obj);
 }
 function BotSlashCommands(channel) {
@@ -402,5 +402,5 @@ export default function UserProfileAboutMeCard(arg0) {
   }
   items1[4] = tmp7Result;
   obj[1] = items1;
-  return tmp5(importDefault(5836), obj);
+  return tmp5(importDefault(7185), obj);
 };

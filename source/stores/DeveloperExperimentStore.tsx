@@ -1,9 +1,9 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7472
+// Function ID: 7473
 // Name: init
-// Dependencies: [1910, 1922, 4257, 1929, 1928, 589, 709, 2]
+// Dependencies: [1910, 1922, 4289, 1929, 1928, 589, 709, 2]
 
-// Module 7247 (init)
+// Module 7472 (init)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExperimentBuckets } from "ExperimentBuckets";

@@ -1,10 +1,10 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9221
+// Function ID: 9222
 // Name: NameplateInner
-// Dependencies: [19, 4334, 21, 4342, 589, 4278, 4083, 4343, 1946, 9455, 4788, 500, 9450, 5329, 2]
+// Dependencies: [19, 4662, 21, 4661, 589, 4310, 4115, 4664, 1946, 9222, 4756, 500, 9217, 5449, 2]
 // Exports: default
 
-// Module 9454 (NameplateInner)
+// Module 9221 (NameplateInner)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ function NameplateInner(isFocused) {
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp4 = callback2(flag3, isPressed, flag, flag2, flag5);
-  let obj1 = flag6(4083);
+  let obj1 = flag6(4115);
   let num = 1;
   if (flag6) {
     num = 0;
@@ -69,7 +69,7 @@ function NameplateInner(isFocused) {
       const result = sharedValue.set(obj.withTiming(1, obj));
     }
   }, items1);
-  let tmpResult = tmp(4083);
+  let tmpResult = tmp(4115);
   class A {
     constructor() {
       obj = { opacity: c1.get() };
@@ -81,9 +81,9 @@ function NameplateInner(isFocused) {
   A.__initData = closure_8;
   const animatedStyle = tmpResult.useAnimatedStyle(A);
   tmpResult = tmp(1946);
-  const backgroundGradientColors = tmpResult.getBackgroundGradientColors(nameplate.palette, sharedValue(4278)());
-  const tmp6 = sharedValue(4278)();
-  const nameplateAssets = flag6(9455).getNameplateAssets(nameplate);
+  const backgroundGradientColors = tmpResult.getBackgroundGradientColors(nameplate.palette, sharedValue(4310)());
+  const tmp6 = sharedValue(4310)();
+  const nameplateAssets = flag6(9222).getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp12 = true === flag7;
   if (tmp12) {
@@ -115,25 +115,25 @@ function NameplateInner(isFocused) {
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj[3] = items3;
-    tmp15Result = callback(tmp5(4788), obj);
+    tmp15Result = callback(tmp5(4756), obj);
     const tmp15 = callback;
-    const tmp5Result = tmp5(4788);
+    const tmp5Result = tmp5(4756);
   }
   const items4 = [tmp15Result, ];
   const tmp13 = closure_6;
-  const tmpResult1 = flag6(9455);
+  const tmpResult1 = flag6(9222);
   if (tmpResult2.isAndroid()) {
     if (tmp12) {
       const obj2 = { url: null, style: null, autoplay: true };
       obj2[0] = str;
       obj2[1] = tmp4.img;
-      let tmp17 = callback(tmp(9450).APNGPlayer, obj2);
+      let tmp17 = callback(tmp(9217).APNGPlayer, obj2);
     }
     items4[1] = tmp17;
     obj[1] = items4;
-    return tmp13(tmp5(4083).View, obj);
+    return tmp13(tmp5(4115).View, obj);
   }
-  tmp17 = callback(tmp5(5329), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
+  tmp17 = callback(tmp5(5449), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles((arg0, arg1, arg2, arg3, arg4) => {

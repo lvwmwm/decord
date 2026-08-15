@@ -1,10 +1,10 @@
-// Module ID: 10638
-// Function ID: 10639
+// Module ID: 8729
+// Function ID: 8730
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1391, 1910, 3989, 1922, 4361, 676, 10636, 4527, 10628, 589, 2]
+// Dependencies: [1391, 1910, 4021, 1922, 4542, 676, 8727, 4979, 8699, 589, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10638 (getEmbeddedActivityJoinability)
+// Module 8729 (getEmbeddedActivityJoinability)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -86,8 +86,8 @@ function getEmbeddedActivityJoinability(arg0) {
                   return obj.IS_AFK_CHANNEL;
                 } else {
                   const currentClientVoiceChannelId = VoiceStateStore.getCurrentClientVoiceChannelId(channel.getGuildId());
-                  const obj2 = require(4527) /* allowChannelAccess */;
-                  const isChannelFullResult = require(4527) /* allowChannelAccess */.isChannelFull(channel, VoiceStateStore, GuildStore);
+                  const obj2 = require(4979) /* allowChannelAccess */;
+                  const isChannelFullResult = require(4979) /* allowChannelAccess */.isChannelFull(channel, VoiceStateStore, GuildStore);
                   if (PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
                     if (channel.isVocal()) {
                       if (currentClientVoiceChannelId !== tmp10) {
@@ -111,7 +111,7 @@ function getEmbeddedActivityJoinability(arg0) {
       } else {
         return obj.ACTIVITY_NOT_SUPPORTED_ON_OS;
       }
-      tmp7 = importDefault(10636);
+      tmp7 = importDefault(8727);
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }

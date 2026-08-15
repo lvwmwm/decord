@@ -1,10 +1,10 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 8700
+// Function ID: 8701
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [1391, 647, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10663 (useIsPrivateChannelWithEnabledActivities)
+// Module 8700 (useIsPrivateChannelWithEnabledActivities)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

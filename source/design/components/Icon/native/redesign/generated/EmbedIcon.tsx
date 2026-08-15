@@ -1,10 +1,10 @@
-// Module ID: 10516
-// Function ID: 10517
+// Module ID: 9828
+// Function ID: 9829
 // Name: EmbedIcon
-// Dependencies: [19, 21, 712, 4064, 10517, 2]
+// Dependencies: [19, 21, 712, 4096, 9829, 2]
 // Exports: EmbedIcon
 
-// Module 10516 (EmbedIcon)
+// Module 9828 (EmbedIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const EmbedIcon = function EmbedIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10517) /* registerAsset */;
+  obj[0] = require(9829) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

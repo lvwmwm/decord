@@ -1,10 +1,10 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8521
+// Function ID: 8522
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 3991, 4853, 8483, 2007, 7291, 4576, 2]
+// Dependencies: [5, 4023, 6858, 8522, 2007, 7512, 8663, 2]
 // Exports: default
 
-// Module 8482 (useHandleJoinThreadVoice)
+// Module 8521 (useHandleJoinThreadVoice)
 import patchThread from "patchThread";
 import storeThread from "storeThread";
 
@@ -25,7 +25,7 @@ export default function useHandleJoinThreadVoice(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ export default function useHandleJoinThreadVoice(arg0) {
           } else {
             arg1.openGuildVoiceModal(guildId, "Thread Header");
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           c2 = 4;
           c3 = 1;

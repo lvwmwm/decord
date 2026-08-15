@@ -1,10 +1,10 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 9369
+// Function ID: 9370
 // Name: useEmojiPickerData
-// Dependencies: [19, 5237, 5241, 8703, 589, 8766, 8767, 8768, 8770, 2]
+// Dependencies: [19, 6727, 6731, 9301, 589, 9370, 9371, 9372, 9374, 2]
 // Exports: default
 
-// Module 8765 (useEmojiPickerData)
+// Module 9369 (useEmojiPickerData)
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { LoadState } from "getEmojiToGroupId";

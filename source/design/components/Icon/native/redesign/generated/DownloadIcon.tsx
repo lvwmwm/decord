@@ -1,10 +1,10 @@
-// Module ID: 4292
-// Function ID: 4293
+// Module ID: 4324
+// Function ID: 4325
 // Name: DownloadIcon
-// Dependencies: [19, 21, 712, 4064, 4293, 2]
+// Dependencies: [19, 21, 712, 4096, 4325, 2]
 // Exports: DownloadIcon
 
-// Module 4292 (DownloadIcon)
+// Module 4324 (DownloadIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const DownloadIcon = function DownloadIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4293) /* registerAsset */;
+  obj[0] = require(4325) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

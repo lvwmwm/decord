@@ -1,8 +1,8 @@
-// Module ID: 10945
-// Function ID: 10946
-// Dependencies: [19, 17, 21, 4342, 5328, 10904, 10900, 2]
+// Module ID: 12629
+// Function ID: 12630
+// Dependencies: [19, 17, 21, 4661, 6370, 12591, 12587, 2]
 
-// Module 10945
+// Module 12629
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,21 +18,21 @@ obj[0] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo((channel) => {
   channel = channel.channel;
-  const tmp3 = importDefault(10904)(channel.id);
+  const tmp3 = importDefault(12591)(channel.id);
   let speaker;
   if (tmp3 != null) {
     speaker = tmp3.speaker;
   }
   let obj = { style: callback2().header, pointerEvents: "box-none", children: null };
-  const items = [callback(require(10900) /* HideStageChannelCallIcon */.HideStageChannelCallIcon, { channel }), callback(require(10900) /* HideStageChannelCallIcon */.StageChannelCallHeader, { channel }), , ];
+  const items = [callback(require(12587) /* HideStageChannelCallIcon */.HideStageChannelCallIcon, { channel }), callback(require(12587) /* HideStageChannelCallIcon */.StageChannelCallHeader, { channel }), , ];
   if (speaker) {
     obj = { channelId: null };
     obj[0] = channel.id;
-    speaker = tmp7(tmp8(10900).MusicMuteButton, obj);
+    speaker = tmp7(tmp8(12587).MusicMuteButton, obj);
   }
   items[2] = speaker;
   obj = { channelId: channel.id };
-  items[3] = callback(require(10900) /* HideStageChannelCallIcon */.StageInviteButton, obj);
+  items[3] = callback(require(12587) /* HideStageChannelCallIcon */.StageInviteButton, obj);
   obj[2] = items;
   return closure_5(View, obj);
 });

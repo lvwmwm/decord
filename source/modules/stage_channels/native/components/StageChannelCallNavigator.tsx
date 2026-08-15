@@ -1,13 +1,13 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 12486
+// Function ID: 12487
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 505, 21, 10748, 4083, 4776, 712, 10749, 10808, 10751, 9804, 9803, 9806, 10699, 4570, 10809, 10886, 4072, 10644, 10894, 10895, 10754, 10900, 10908, 10912, 10945, 10946, 4342, 10947, 10771, 2]
+// Dependencies: [32, 19, 17, 505, 21, 12487, 4115, 4744, 712, 12488, 12537, 12490, 8675, 8674, 9084, 11444, 8666, 12538, 12574, 4104, 8678, 12581, 12582, 12493, 12587, 12595, 12599, 12629, 12630, 4661, 12631, 12505, 2]
 // Exports: default
 
-// Module 10747 (ModeratorViewOverlay)
+// Module 12486 (ModeratorViewOverlay)
 import set from "set";
 import ManaContext from "ManaContext";
-import get_ActivityIndicator from "module_10809";
+import get_ActivityIndicator from "module_12538";
 import { ThemeTypes } from "sum";
 import jsxProd from "GestureContainer";
 import createCacheKey from "createCacheKey";
@@ -81,7 +81,7 @@ function JoinStageOverlay(channel) {
   const tmp = callback(React.useState(false), 2);
   first = tmp[0];
   importDefault = tmp[1];
-  let obj = first(4083);
+  let obj = first(4115);
   const fn = function s() {
     let obj = first(outer1_2[7]);
     let num = 0;
@@ -91,7 +91,7 @@ function JoinStageOverlay(channel) {
     obj = { opacity: obj.withSpring(num, outer1_11) };
     return obj;
   };
-  obj = { withSpring: first(4776).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4744).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
   fn.__initData = closure_15;
@@ -111,17 +111,17 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj[0] = items;
-  obj[1] = callback2(importDefault(10808), { channel: channel.channel });
-  return callback2(importDefault(4083).View, obj);
+  obj[1] = callback2(importDefault(12537), { channel: channel.channel });
+  return callback2(importDefault(4115).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: null };
   obj[0] = callback2(StagePromptInner, { channel: channel.channel });
-  return callback2(require(10947) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(12631) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = createCacheKey();
-  return callback2(require(10771) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
+  return callback2(require(12505) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);

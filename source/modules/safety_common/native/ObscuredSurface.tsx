@@ -1,10 +1,10 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9127
+// Function ID: 9128
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4342, 712, 9374, 4873, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 9128, 6877, 4734, 1236, 2]
 // Exports: default
 
-// Module 9373 (ObscuredSurface)
+// Module 9127 (ObscuredSurface)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export default function ObscuredSurface(obscured) {
   let tmp3Result = children;
   if (obscured.obscured) {
     let obj = { value: null, children: null };
-    obj[0] = require(9374) /* context */.OBSCURED_VALUE;
+    obj[0] = require(9128) /* context */.OBSCURED_VALUE;
     obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessible: false, "aria-hidden": true, children: null };
@@ -45,26 +45,26 @@ export default function ObscuredSurface(obscured) {
     obj2[0] = tmp.warning;
     const obj3 = { size: "lg", color: null };
     obj3[1] = importDefault(712).colors.TEXT_DEFAULT;
-    const items1 = [callback(require(4873) /* ImageWarningIcon */.ImageWarningIcon, obj3), , ];
+    const items1 = [callback(require(6877) /* ImageWarningIcon */.ImageWarningIcon, obj3), , ];
     if (heading == null) {
       const intl = tmp4(1236).intl;
       heading = intl.string(tmp4(1236).t.xC8Saf);
     }
     const obj4 = { variant: "heading-md/semibold", color: "text-strong", children: null };
     obj4[2] = heading;
-    items1[1] = callback(require(4338) /* Text */.Text, obj4);
+    items1[1] = callback(require(4734) /* Text */.Text, obj4);
     if (description == null) {
       const intl2 = tmp4(1236).intl;
       description = intl2.string(tmp4(1236).t["0fc/DG"]);
     }
     const obj5 = { variant: "text-sm/normal", color: "text-muted", children: null };
     obj5[2] = description;
-    items1[2] = callback(require(4338) /* Text */.Text, obj5);
+    items1[2] = callback(require(4734) /* Text */.Text, obj5);
     obj2[1] = items1;
     items[2] = closure_5(View, obj2);
     obj[1] = items;
     obj[1] = closure_5(View, obj);
-    tmp3Result = tmp3(require(9374) /* context */.ObscuredSurfaceContext.Provider, obj);
+    tmp3Result = tmp3(require(9128) /* context */.ObscuredSurfaceContext.Provider, obj);
   }
   return tmp3Result;
 };

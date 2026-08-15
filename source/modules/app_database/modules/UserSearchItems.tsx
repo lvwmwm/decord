@@ -1,9 +1,9 @@
-// Module ID: 7186
-// Function ID: 7187
+// Module ID: 5405
+// Function ID: 5406
 // Name: getAll
-// Dependencies: [5, 7187, 7188, 3998, 1922, 676, 3, 1955, 7190, 2]
+// Dependencies: [5, 5406, 5407, 4030, 1922, 676, 3, 1955, 5409, 2]
 
-// Module 7186 (getAll)
+// Module 5405 (getAll)
 import ME from "ME";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import recomputeAffinities from "recomputeAffinities";
@@ -41,7 +41,7 @@ prototype["getAll"] = function getAll() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -129,7 +129,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user) {
       let tmp14 = obj;
       let tmp15 = dependencyMap;
-      let obj5 = obj(7190);
+      let obj5 = obj(5409);
       let tmp16 = user;
       let names = obj5.getNames(tmp6);
       let tmp18 = nextResult;
@@ -164,7 +164,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user1) {
       let tmp22 = obj;
       let tmp23 = dependencyMap;
-      let obj7 = obj(7190);
+      let obj7 = obj(5409);
       let tmp24 = user1;
       let names1 = obj7.getNames(tmp11);
       let tmp26 = item10033;

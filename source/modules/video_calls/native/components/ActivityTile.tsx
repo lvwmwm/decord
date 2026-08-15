@@ -1,10 +1,10 @@
-// Module ID: 10707
-// Function ID: 10708
+// Module ID: 12466
+// Function ID: 12467
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4370, 21, 1297, 4342, 712, 589, 1370, 5795, 4534, 4187, 10708, 5789, 5809, 8794, 1236, 10638, 10639, 10710, 10637, 4909, 10711, 10739, 4338, 4778, 4072, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4481, 21, 1297, 4661, 712, 589, 1370, 7145, 4796, 4219, 11235, 7139, 7159, 9398, 1236, 8729, 8731, 12467, 8728, 5433, 12468, 12479, 4734, 4746, 4104, 2]
 // Exports: default
 
-// Module 10707 (ActivityTileInner)
+// Module 12466 (ActivityTileInner)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ManaContext from "ManaContext";
 import "context";
@@ -54,7 +54,7 @@ function ActivityTileInner(participant) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(10639)(obj1);
+                obj2[0] = v0(8731)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -94,7 +94,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = outer1_0(10710);
+            obj = outer1_0(12467);
             const result = obj.setOrientationLockState(mergeGuildAvatar);
           }
           dependencyMap = 3;
@@ -312,5 +312,5 @@ export default function ActivityTile(arg0) {
   obj = {};
   const merged = Object.assign(arg0);
   obj[1] = callback(ActivityTileInner, obj);
-  return callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
 };

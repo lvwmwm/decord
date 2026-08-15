@@ -1,10 +1,10 @@
-// Module ID: 13039
-// Function ID: 13040
+// Module ID: 13242
+// Function ID: 13243
 // Name: apexExperiment
-// Dependencies: [4257, 1471, 4254, 8977, 2]
+// Dependencies: [4289, 1472, 4286, 9058, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 13039 (apexExperiment)
+// Module 13242 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import createExperiment from "createExperiment";
 import ApexExperiment from "ApexExperiment";

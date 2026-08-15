@@ -1,10 +1,10 @@
-// Module ID: 4817
-// Function ID: 4818
+// Module ID: 6822
+// Function ID: 6823
 // Name: isSoundValid
-// Dependencies: [1391, 3989, 1922, 4813, 505, 4007, 2]
+// Dependencies: [1391, 4021, 1922, 4781, 505, 4039, 2]
 // Exports: default
 
-// Module 4817 (isSoundValid)
+// Module 6822 (isSoundValid)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -37,7 +37,7 @@ export default function isSoundValid(guildId) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(4007).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = importDefault(4039).canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }

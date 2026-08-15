@@ -1,10 +1,10 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16321
+// Function ID: 16322
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 11719, 11720, 2]
+// Dependencies: [19, 11438, 11439, 2]
 // Exports: default
 
-// Module 16271 (useVoicePanelNavArrowPressed)
+// Module 16321 (useVoicePanelNavArrowPressed)
 import noop from "noop";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 

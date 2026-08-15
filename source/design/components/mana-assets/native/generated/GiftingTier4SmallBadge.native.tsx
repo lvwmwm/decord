@@ -1,10 +1,10 @@
-// Module ID: 6512
-// Function ID: 6513
+// Module ID: 5870
+// Function ID: 5871
 // Name: GiftingTier4SmallBadge
-// Dependencies: [21, 5329, 6513, 2]
+// Dependencies: [21, 5449, 5871, 2]
 // Exports: GiftingTier4SmallBadge
 
-// Module 6512 (GiftingTier4SmallBadge)
+// Module 5870 (GiftingTier4SmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier4SmallBadge.native.tsx");
@@ -28,7 +28,7 @@ export const GiftingTier4SmallBadge = function GiftingTier4SmallBadge(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6513);
+  obj[0] = importDefault(5871);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftingTier4SmallBadge = function GiftingTier4SmallBadge(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

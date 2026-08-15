@@ -1,10 +1,10 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 11762
+// Function ID: 11763
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [3998, 676, 589, 2]
+// Dependencies: [4030, 676, 589, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 12031 (useIsRelationshipTypeSpamReportable)
+// Module 11762 (useIsRelationshipTypeSpamReportable)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 

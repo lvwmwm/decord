@@ -1,9 +1,9 @@
-// Module ID: 4414
-// Function ID: 4415
+// Module ID: 4537
+// Function ID: 4538
 // Name: bitrate
-// Dependencies: [4406, 589, 709, 2]
+// Dependencies: [4529, 589, 709, 2]
 
-// Module 4414 (bitrate)
+// Module 4537 (bitrate)
 import { DEFAULT_VOICE_BITRATE } from "DesktopSources";
 import { Store } from "initialize";
 

@@ -1,9 +1,9 @@
-// Module ID: 5797
-// Function ID: 5798
+// Module ID: 7147
+// Function ID: 7148
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 5311, 676, 4227, 709, 530, 2]
+// Dependencies: [5, 5289, 676, 4259, 709, 530, 2]
 
-// Module 5797 (tokensToAppTokensMap)
+// Module 7147 (tokensToAppTokensMap)
 import sendRequest from "sendRequest";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -58,7 +58,7 @@ function _fetchAuthorizedApps() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function _fetchAuthorizedApps() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;

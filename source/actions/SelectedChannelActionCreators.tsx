@@ -1,8 +1,8 @@
-// Module ID: 5191
-// Function ID: 5192
-// Dependencies: [4359, 1391, 4393, 676, 709, 1222, 5192, 10869, 2]
+// Module ID: 4975
+// Function ID: 4976
+// Dependencies: [4540, 1391, 4497, 676, 709, 1222, 4976, 9845, 2]
 
-// Module 5191
+// Module 4975
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -54,15 +54,15 @@ export default {
         const mediaEngine = supported.getMediaEngine();
         mediaEngine.interact();
       }
-      const obj5 = require(5192) /* selectVoiceChannelAdditional */;
+      const obj5 = require(4976) /* selectVoiceChannelAdditional */;
       const voiceChannelAdditional = obj5.selectVoiceChannelAdditional(id, guildId, flag, flag2, obj);
     }
   },
   disconnect() {
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(10869).remoteDisconnect(remoteSessionId);
-      const obj = importAll(10869);
+      importAll(9845).remoteDisconnect(remoteSessionId);
+      const obj = importAll(9845);
     }
     const voiceChannel = this.selectVoiceChannel(null);
   }

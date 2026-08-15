@@ -1,9 +1,9 @@
-// Module ID: 4505
-// Function ID: 4506
+// Module ID: 4633
+// Function ID: 4634
 // Name: VADAggressiveness
 // Dependencies: [2]
 
-// Module 4505 (VADAggressiveness)
+// Module 4633 (VADAggressiveness)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/VoiceEngine.tsx");
 
 export const VADAggressiveness = { DISABLED: -1, [-1]: "DISABLED", NORMAL: 0, [0]: "NORMAL", LOW_BIRTATE: 1, [1]: "LOW_BIRTATE", AGGRESSIVE: 2, [2]: "AGGRESSIVE", VERY_AGGRESSIVE: 3, [3]: "VERY_AGGRESSIVE" };

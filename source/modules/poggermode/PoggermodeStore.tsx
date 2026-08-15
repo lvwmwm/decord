@@ -1,10 +1,10 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7578
+// Function ID: 7579
 // Name: updateCombo
-// Dependencies: [1218, 1979, 7206, 7207, 676, 3985, 4227, 7358, 1231, 589, 709, 2]
+// Dependencies: [1218, 1979, 7432, 7433, 676, 4017, 4259, 7579, 1231, 589, 709, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7357 (updateCombo)
+// Module 7578 (updateCombo)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 import initialize from "initialize";
@@ -54,7 +54,7 @@ function updateCombo(userId) {
     decayInterval = iter.decayInterval;
   }
   if (decayInterval == null) {
-    decayInterval = new obj(4227).Interval();
+    decayInterval = new obj(4259).Interval();
   }
   obj.decayInterval = decayInterval;
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj);
@@ -114,8 +114,8 @@ prototype["getComboScore"] = function getComboScore(arg0, arg1) {
   const value = secondaryIndexMap.get("" + arg0 + "-" + arg1);
   let num = 0;
   if (null != value) {
-    num = require(7358) /* getComboShakeIntensity */.getComboScore(value);
-    const obj = require(7358) /* getComboShakeIntensity */;
+    num = require(7579) /* getComboShakeIntensity */.getComboScore(value);
+    const obj = require(7579) /* getComboShakeIntensity */;
   }
   return num;
 };
@@ -161,8 +161,8 @@ prototype["getUserComboShakeIntensity"] = function getUserComboShakeIntensity(id
   const userCombo = this.getUserCombo(id, throwTypeErrorResult);
   let num = 0;
   if (null != userCombo) {
-    num = require(7358) /* getComboShakeIntensity */.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
-    const obj = require(7358) /* getComboShakeIntensity */;
+    num = require(7579) /* getComboShakeIntensity */.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
+    const obj = require(7579) /* getComboShakeIntensity */;
   }
   return num;
 };
@@ -221,12 +221,12 @@ const poggermodeStore = new PoggermodeStore(require("dispatcher"), {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  let num2 = id(7358).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  let num2 = id(7579).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   if (num2 == null) {
                     num2 = 0.001;
                   }
                   let result = num2;
-                  const obj2 = id(7358);
+                  const obj2 = id(7579);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

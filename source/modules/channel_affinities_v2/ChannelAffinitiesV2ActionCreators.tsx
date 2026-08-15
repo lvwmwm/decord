@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15540
+// Function ID: 15541
 // Name: fetchChannelAffinitiesV2
-// Dependencies: [5890, 15488, 676, 709, 530, 2]
+// Dependencies: [5258, 15538, 676, 709, 530, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 15490 (fetchChannelAffinitiesV2)
+// Module 15540 (fetchChannelAffinitiesV2)
 import hasConsented from "hasConsented";
 import map from "map";
 import ME from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 4579
-// Function ID: 4580
+// Module ID: 4839
+// Function ID: 4840
 // Name: NativePermissionStatus
 // Dependencies: [2]
 
-// Module 4579 (NativePermissionStatus)
+// Module 4839 (NativePermissionStatus)
 const result = require("set").fileFinishedImporting("modules/native_permissions/NativePermissionConstants.tsx");
 
 export const NativePermissionStatus = { AUTHORIZED: "authorized", DENIED: "denied", RESTRICTED: "restricted", LIMITED: "limited", UNDETERMINED: "undetermined" };

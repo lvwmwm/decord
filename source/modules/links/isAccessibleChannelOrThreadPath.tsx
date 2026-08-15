@@ -1,10 +1,10 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 7213
+// Function ID: 7214
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1981, 5299, 1391, 1983, 1910, 676, 1398, 5930, 5932, 5941, 5909, 5944, 5946, 5905, 5947, 5948, 4253, 5949, 5907, 1370, 5993, 4355, 4536, 2]
+// Dependencies: [5, 1981, 6784, 1391, 1983, 1910, 676, 1398, 7214, 7216, 7225, 7200, 7228, 7230, 5283, 7231, 5292, 4285, 7232, 7198, 1370, 7277, 4770, 4488, 2]
 // Exports: default
 
-// Module 5929 (_isAccessibleChannelOrThreadPath)
+// Module 7213 (_isAccessibleChannelOrThreadPath)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import isSubscriptionGated from "isSubscriptionGated";
 import shouldShowOnboarding from "shouldShowOnboarding";
@@ -44,7 +44,7 @@ function _isAccessibleChannelOrThreadPath() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

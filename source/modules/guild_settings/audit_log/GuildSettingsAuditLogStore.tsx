@@ -1,9 +1,9 @@
-// Module ID: 16711
-// Function ID: 16712
+// Module ID: 16757
+// Function ID: 16758
 // Name: AuditLogActions
-// Dependencies: [16712, 1395, 1984, 1990, 1983, 1910, 676, 506, 12, 589, 709, 2]
+// Dependencies: [16758, 1395, 1984, 1990, 1983, 1910, 676, 506, 12, 589, 709, 2]
 
-// Module 16711 (AuditLogActions)
+// Module 16757 (AuditLogActions)
 import getTargetType from "getTargetType";
 import { AuditLogChange } from "getTargetType";
 import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord";

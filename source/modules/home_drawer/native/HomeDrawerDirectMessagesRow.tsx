@@ -1,10 +1,10 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15573
+// Function ID: 15574
 // Name: HomeDrawerDMsRow
-// Dependencies: [19, 17, 4431, 3998, 676, 21, 4342, 712, 589, 4338, 1236, 15519, 4203, 4200, 2]
+// Dependencies: [19, 17, 4559, 4030, 676, 21, 4661, 712, 589, 4734, 1236, 15569, 4235, 4232, 2]
 // Exports: default
 
-// Module 15523 (HomeDrawerDMsRow)
+// Module 15573 (HomeDrawerDMsRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import sortActivity from "sortActivity";
@@ -36,7 +36,7 @@ function HomeDrawerDMsRow() {
     const obj2 = { numFriends: null };
     obj2[0] = stateFromStores;
     obj1[3] = intl.format(tmp2(1236).t.N5UIKr, obj2);
-    items1[1] = callback(tmp2(4338).Text, obj1);
+    items1[1] = callback(tmp2(4734).Text, obj1);
     obj[1] = items1;
     tmp5 = callback2(View, obj);
   }
@@ -44,9 +44,9 @@ function HomeDrawerDMsRow() {
   const obj4 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
   const intl2 = tmp2(1236).intl;
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.YUU0RF);
-  obj3[0] = callback(require(4338) /* Text */.Text, obj4);
+  obj3[0] = callback(require(4734) /* Text */.Text, obj4);
   obj3[1] = tmp5;
-  return callback(require(15519) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
+  return callback(require(15569) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createCacheKey = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };
@@ -56,7 +56,7 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("sortActivity").fileFinishedImporting("modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx");
 
 export default function HomeDrawerDMsRowWrapper() {
-  const MobileHomeDrawerExperiment = require(4203) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4235) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;

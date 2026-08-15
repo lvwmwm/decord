@@ -1,10 +1,10 @@
-// Module ID: 5216
-// Function ID: 5217
+// Module ID: 6713
+// Function ID: 6714
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 1910, 5217, 5215, 21, 4342, 712, 5220, 1499, 589, 5221, 5389, 6055, 1236, 5213, 4909, 5840, 1297, 2]
+// Dependencies: [32, 19, 17, 1910, 5078, 6712, 21, 4661, 712, 6289, 1500, 589, 6714, 6803, 7336, 1236, 6710, 5433, 7188, 1297, 2]
 // Exports: default
 
-// Module 5216 (SubscribeModalGuildSelect)
+// Module 6713 (SubscribeModalGuildSelect)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import { ScrollView } from "PressableBase";
@@ -39,7 +39,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   let memo;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = guildBoostSlots(1499);
+  let obj = guildBoostSlots(1500);
   callback = obj.useNavigation();
   const tmp2 = callback(first.useState(""), 2);
   first = tmp2[0];
@@ -110,8 +110,8 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   const intl = guildBoostSlots(1236).intl;
   obj[0] = intl.string(guildBoostSlots(1236).t.vf3ZTa);
   obj[1] = tmp2[1];
-  obj[2] = importAll(5213).closeApplyBoostModal;
-  const items3 = [callback2(importDefault(6055), obj), ];
+  obj[2] = importAll(6710).closeApplyBoostModal;
+  const items3 = [callback2(importDefault(7336), obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: null };
   const obj2 = { bottom: true, children: null };
   obj2[1] = stateFromStoresArray.map((children) => {
@@ -132,8 +132,8 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
     obj[3] = items;
     return outer1_11(guildBoostSlots(_undefined[17]).PressableOpacity, obj, children.id);
   });
-  obj1[2] = callback2(guildBoostSlots(5389).SafeAreaPaddingView, obj2);
+  obj1[2] = callback2(guildBoostSlots(6803).SafeAreaPaddingView, obj2);
   items3[1] = callback2(memo, obj1);
   obj[2] = items3;
-  return callback3(guildBoostSlots(5389).SafeAreaPaddingView, obj);
+  return callback3(guildBoostSlots(6803).SafeAreaPaddingView, obj);
 };

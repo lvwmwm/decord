@@ -1,10 +1,10 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6254
+// Function ID: 6255
 // Name: VendingMachineSpotIllustration
-// Dependencies: [21, 5329, 6897, 2]
+// Dependencies: [21, 5449, 6255, 2]
 // Exports: VendingMachineSpotIllustration
 
-// Module 6896 (VendingMachineSpotIllustration)
+// Module 6254 (VendingMachineSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VendingMachineSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const VendingMachineSpotIllustration = function VendingMachineSpotIllustr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6897);
+  obj[0] = importDefault(6255);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const VendingMachineSpotIllustration = function VendingMachineSpotIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

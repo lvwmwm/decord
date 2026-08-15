@@ -1,10 +1,10 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9170
+// Function ID: 9171
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1910, 676, 38, 6020, 7824, 1222, 2]
+// Dependencies: [5, 1910, 676, 38, 7301, 8042, 1222, 2]
 // Exports: default
 
-// Module 9406 (_navigateToGameAnnouncement)
+// Module 9170 (_navigateToGameAnnouncement)
 import generateAcceptInviteOptions from "generateAcceptInviteOptions";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -36,7 +36,7 @@ function _navigateToGameAnnouncement() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ function _navigateToGameAnnouncement() {
                     if (null != set) {
                       if (!set.has(constants.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj5 = id(7824);
+                          let obj5 = id(8042);
                           const obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           let obj3 = { location: null };
@@ -117,7 +117,7 @@ function _navigateToGameAnnouncement() {
                         }
                       }
                     }
-                    let obj9 = lib(6020);
+                    let obj9 = lib(7301);
                     obj5 = { shouldNavigate: true, channelId: null, messageId: null, joinSource: null };
                     obj5[1] = dependencyMap;
                     obj5[2] = c3;
@@ -130,7 +130,7 @@ function _navigateToGameAnnouncement() {
                   }
                 }
                 guild = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else if (2 === tmp5) {
               if (arg0 === 1) {

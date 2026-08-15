@@ -1,9 +1,9 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14602
+// Function ID: 14603
 // Name: toggle
-// Dependencies: [4393, 8148, 589, 10850, 10421, 1236, 2]
+// Dependencies: [4497, 8198, 589, 12557, 10669, 1236, 2]
 
-// Module 14570 (toggle)
+// Module 14602 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -13,14 +13,14 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.t8Qhib);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useNoiseSuppressionSettingValue() {
     const items = [_detectH265HardwareDecode];
     return require(589) /* initialize */.useStateFromStores(items, () => noiseSuppression.getNoiseSuppression());
   },
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
-    const NoiseSuppressionOpt = require(10850) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt;
-    const result = require(10850) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+    const NoiseSuppressionOpt = require(12557) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt;
+    const result = require(12557) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
   },
   usePredicate: function useHasNoiseSuppressionSetting() {
     const items = [_detectH265HardwareDecode];

@@ -1,18 +1,18 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8524
+// Function ID: 8525
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 1990, 5326, 8486, 21, 4083, 1297, 4342, 712, 1628, 4278, 8487, 8489, 589, 4168, 709, 8490, 5884, 5885, 8507, 8514, 8515, 4909, 1236, 8126, 2]
+// Dependencies: [19, 17, 1990, 6801, 8525, 21, 4115, 1297, 4661, 712, 1629, 4310, 8526, 8528, 589, 4200, 709, 8529, 5446, 6551, 8546, 8553, 8554, 5433, 1236, 8176, 2]
 // Exports: default
 
-// Module 8485 (MemberVerificationModal)
-import module_5885 from "module_5885";
+// Module 8524 (MemberVerificationModal)
+import module_6551 from "module_6551";
 import { View } from "openMemberVerificationSuccessAlert";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import get from "get";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";
 import jsxProd from "FormSeparator";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4083";
+import importDefaultResult from "module_4115";
 
 let c10;
 let c9;
@@ -21,7 +21,7 @@ let metroImportAll;
 const require = arg1;
 ({ SCROLL_EVENT_TIMER_MS: error, useBannerHeight: metroImportAll } = BANNER_RATIO_HEIGHT_16_9);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let closure_11 = require("module_4083").createAnimatedComponent(require("Button").Icon);
+let closure_11 = require("module_4115").createAnimatedComponent(require("Button").Icon);
 let obj = { flex: { flex: 1 }, flexLoading: null, scrollContainer: null, closeButtonContainer: null, closeIconContainer: null, closeIconOverBanner: null, closeIconAfterBanner: null, headerSeparator: null };
 obj = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 obj[1] = obj;

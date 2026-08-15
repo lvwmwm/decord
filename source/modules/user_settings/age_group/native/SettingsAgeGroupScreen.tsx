@@ -1,13 +1,13 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14127
+// Function ID: 14128
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 8148, 676, 21, 4342, 712, 7863, 1993, 4338, 1236, 2821, 10421, 13959, 2]
+// Dependencies: [19, 17, 8198, 676, 21, 4661, 712, 5428, 1993, 4734, 1236, 2853, 10669, 13991, 2]
 // Exports: default
 
-// Module 14095 (SettingsAgeGroupHeader)
+// Module 14127 (SettingsAgeGroupHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
-import { MobileSetting } from "MobileSetting";
+import { MobileUserSettings } from "MobileUserSettings";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,17 +18,17 @@ const require = arg1;
 function SettingsAgeGroupHeader() {
   let obj = { style: createCacheKey().headerContainer, children: null };
   const callback = React.useCallback(() => {
-    const obj = callback(7863);
+    const obj = callback(5428);
     obj.openUrl(callback(1993).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
   obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(2821).PY4MA0);
-  const items = [callback(require(4338) /* Text */.Text, obj), ];
+  obj[2] = intl.string(importDefault(2853).PY4MA0);
+  const items = [callback(require(4734) /* Text */.Text, obj), ];
   obj = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.format(importDefault(2821)["1DN29p"], { handleOnHelpUrlHook: callback });
-  items[1] = callback(require(4338) /* Text */.Text, obj);
+  obj[2] = intl2.format(importDefault(2853)["1DN29p"], { handleOnHelpUrlHook: callback });
+  items[1] = callback(require(4734) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -37,15 +37,15 @@ createCacheKey = { headerContainer: null };
 createCacheKey = { gap: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
+const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10421);
+    let obj = callback(10669);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
-    obj[0] = intl.string(callback2(2821)["5Mi5TE"]);
+    obj[0] = intl.string(callback2(2853)["5Mi5TE"]);
     const items = [, ];
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = closure_5);
     obj[1] = items;
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13959), { node });
+  return callback(importDefault(13991), { node });
 };

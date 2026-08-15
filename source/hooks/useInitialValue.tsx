@@ -1,10 +1,10 @@
-// Module ID: 5777
-// Function ID: 5778
+// Module ID: 7127
+// Function ID: 7128
 // Name: useInitialValue
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 5777 (useInitialValue)
+// Module 7127 (useInitialValue)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("hooks/useInitialValue.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 10499
+// Function ID: 10500
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10460 (metadata)
+// Module 10499 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3.webm.js");
 
 export default "https://cdn.discordapp.com/assets/content/fb761d9c206f93cd8c4e7301798abe3f623039a4054f2e7accd019e1bb059fc8.webm";

@@ -1,21 +1,21 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11150
+// Function ID: 11151
 // Name: useKeyboardOpenPaddingStyle
-// Dependencies: [32, 19, 21, 4083, 4065, 712, 1642, 4207, 1626, 4343, 4346, 2]
+// Dependencies: [32, 19, 21, 4115, 4097, 712, 1643, 4239, 1627, 4664, 4667, 2]
 // Exports: default
 
-// Module 11437 (useKeyboardOpenPaddingStyle)
+// Module 11150 (useKeyboardOpenPaddingStyle)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4083";
+import { Easing } from "module_4115";
 
 const require = arg1;
 function useKeyboardOpenPaddingStyle() {
   let importDefault;
   let tmp5;
-  token = token(4065).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
-  let obj = token(4065);
+  token = token(4097).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
+  let obj = token(4097);
   const obj2 = React;
   [tmp5, importDefault] = sharedValue(React.useState(() => {
     const KeyboardController = token(tmp5[6]).KeyboardController;
@@ -51,15 +51,15 @@ function useKeyboardOpenPaddingStyle() {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4207);
+  const obj3 = token(4239);
   if (!tmp5) {
-    tmp5 = true === obj3.useKeyboardContextForType(token(1626).KeyboardTypes.SYSTEM).keyboardWillOpen;
+    tmp5 = true === obj3.useKeyboardContextForType(token(1627).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
   if (!tmp5) {
-    tmp5 = tmp7 !== token(1626).KeyboardTypes.SYSTEM;
+    tmp5 = tmp7 !== token(1627).KeyboardTypes.SYSTEM;
   }
   const dependencyMap = tmp5;
-  let tmpResult = tmp(4083);
+  let tmpResult = tmp(4115);
   let num = 0;
   if (tmp5) {
     num = token;
@@ -75,7 +75,7 @@ function useKeyboardOpenPaddingStyle() {
     obj = { duration: token(tmp5[10]).timingStandardDuration, easing: outer1_6 };
     const result = sharedValue.set(obj.withTiming(num, obj));
   }, items);
-  tmpResult = tmp(4083);
+  tmpResult = tmp(4115);
   const fn = function b() {
     return { paddingBottom: sharedValue.get() };
   };
@@ -96,6 +96,6 @@ export default function FloatingChatInputContainer(arg0) {
   style = [, ];
   style[0] = style;
   style[1] = useKeyboardOpenPaddingStyle();
-  return jsx(importDefault(4083).View, { style, onLayout, children });
+  return jsx(importDefault(4115).View, { style, onLayout, children });
 };
 export { useKeyboardOpenPaddingStyle };

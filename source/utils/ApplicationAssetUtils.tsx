@@ -1,10 +1,10 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 7247
+// Function ID: 7248
 // Name: updateAssets
-// Dependencies: [32, 5, 8311, 676, 38, 3, 530, 709, 1469, 2]
+// Dependencies: [32, 5, 7248, 676, 38, 3, 530, 709, 1469, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8310 (updateAssets)
+// Module 7247 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -119,7 +119,7 @@ function _resolveExternalAssets() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -219,7 +219,7 @@ function _resolveExternalAssets() {
           }
           let num4 = 3;
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       }
     })();
@@ -348,7 +348,7 @@ function _fetchAssetIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

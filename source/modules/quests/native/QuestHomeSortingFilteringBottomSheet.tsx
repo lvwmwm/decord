@@ -1,10 +1,10 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14355
+// Function ID: 14356
 // Name: FilterFooter
-// Dependencies: [32, 19, 17, 5223, 21, 4342, 712, 5389, 5212, 4777, 1236, 4763, 1363, 4310, 10436, 5458, 5457, 5460, 4775, 8051, 8050, 5828, 8519, 10457, 2]
+// Dependencies: [32, 19, 17, 6716, 21, 4661, 712, 6803, 6687, 4745, 1236, 4721, 1363, 4342, 10684, 6950, 6949, 6952, 4733, 8101, 8100, 6286, 8558, 10496, 2]
 // Exports: default
 
-// Module 14323 (FilterFooter)
+// Module 14355 (FilterFooter)
 import _slicedToArray from "_slicedToArray";
 import context from "context";
 import { View } from "BottomSheetModal";
@@ -38,15 +38,15 @@ function FilterFooter(inline) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj1[3] = onConfirm;
-  const items = [closure_7(require(4777) /* Button */.Button, obj1), ];
+  const items = [closure_7(require(4745) /* Button */.Button, obj1), ];
   const obj2 = { size: "lg", grow: true, text: null, onPress: null, variant: "secondary" };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.yBZMsQ);
   obj2[3] = onReset;
-  items[1] = closure_7(require(4777) /* Button */.Button, obj2);
+  items[1] = closure_7(require(4745) /* Button */.Button, obj2);
   obj[2] = items;
-  obj[1] = callback2(require(5212) /* ButtonGroup */.ButtonGroup, obj);
-  obj[2] = closure_7(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[1] = callback2(require(6687) /* ButtonGroup */.ButtonGroup, obj);
+  obj[2] = closure_7(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   return closure_7(View, obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);

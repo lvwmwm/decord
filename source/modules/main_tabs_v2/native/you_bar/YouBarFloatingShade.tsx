@@ -1,8 +1,8 @@
-// Module ID: 15601
-// Function ID: 15602
-// Dependencies: [19, 17, 4163, 14418, 15498, 21, 4342, 589, 4065, 712, 14420, 1493, 4200, 15234, 4083, 4162, 688, 4788, 2]
+// Module ID: 15651
+// Function ID: 15652
+// Dependencies: [19, 17, 4195, 14450, 15548, 21, 4661, 589, 4097, 712, 14452, 1494, 4232, 15283, 4115, 4194, 688, 4756, 2]
 
-// Module 15601
+// Module 15651
 import { View } from "LinearGradient";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { YOU_BAR_GRADIENT_EXTRA_HEIGHT as closure_5 } from "CONNECTION_BANNER_HEIGHT";
@@ -20,15 +20,15 @@ let closure_10 = createCacheKey.createStyles({ container: { position: "absolute"
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
 const memoResult = require("noop").memo(function YouBarFloatingShade() {
   const tmp = callback3();
-  let obj = require(14420) /* useYouBarTotalHeight */;
+  let obj = require(14452) /* useYouBarTotalHeight */;
   const youBarTotalHeight = obj.useYouBarTotalHeight();
   const sum = youBarTotalHeight + closure_5;
   require = sum;
-  width = width(1493)().width;
-  if (width(4200)().isChatBesideChannelList) {
+  width = width(1494)().width;
+  if (width(4232)().isChatBesideChannelList) {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
-  let tmp2Result = tmp2(4083);
+  let tmp2Result = tmp2(4115);
   const fn = function t() {
     return { height: closure_0, opacity: 1, width };
   };
@@ -36,10 +36,10 @@ const memoResult = require("noop").memo(function YouBarFloatingShade() {
   fn.__workletHash = 7609004216185;
   fn.__initData = closure_11;
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
-  tmp2Result = tmp2(4162);
-  const gradientValue = tmp2Result.useGradientValue(tmp2(4162).GradientPercentage.END);
-  const token = require(4065) /* map */.useToken(tmp6(712).colors.BACKGROUND_BASE_LOWER);
-  const tmp2Result1 = require(4065) /* map */;
+  tmp2Result = tmp2(4194);
+  const gradientValue = tmp2Result.useGradientValue(tmp2(4194).GradientPercentage.END);
+  const token = require(4097) /* map */.useToken(tmp6(712).colors.BACKGROUND_BASE_LOWER);
+  const tmp2Result1 = require(4097) /* map */;
   const items = [isSyncedModeThemesEnabled];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => gradientPreset.gradientPreset);
   const tmp2Result2 = require(589) /* initialize */;
@@ -53,7 +53,7 @@ const memoResult = require("noop").memo(function YouBarFloatingShade() {
       token1 = gradientValue;
     }
   }
-  tmp2Result3 = require(4065) /* map */;
+  tmp2Result3 = require(4097) /* map */;
   let str = require(688) /* int2hslRaw */.hex2rgb(token1, 1);
   if (str == null) {
     str = "transparent";
@@ -70,7 +70,7 @@ const memoResult = require("noop").memo(function YouBarFloatingShade() {
   obj = { bottom: sum / 2, height: sum / 2, width };
   items3[1] = obj;
   const items4 = [str2, str];
-  items2[1] = callback(width(4788), { style: items3, colors: items4, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1], pointerEvents: "none" });
+  items2[1] = callback(width(4756), { style: items3, colors: items4, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1], pointerEvents: "none" });
   const items5 = [tmp.container, { width, height: sum / 2, backgroundColor: str }];
   items2[2] = callback(View, { style: items5 });
   obj[0] = items2;

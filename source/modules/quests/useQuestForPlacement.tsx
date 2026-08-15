@@ -1,17 +1,17 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14467
+// Function ID: 14468
 // Name: maybeRefreshAd
-// Dependencies: [19, 7228, 687, 10437, 10462, 10438, 589, 14436, 7243, 7226, 2]
+// Dependencies: [19, 7453, 687, 10685, 10501, 10477, 589, 14468, 7468, 7451, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop
 
-// Module 14435 (maybeRefreshAd)
+// Module 14467 (maybeRefreshAd)
 import noop from "noop";
 import initializeState from "initializeState";
 
 let c3;
 let c4;
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
-  let isEligibleForQuests = require(10437) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+  let isEligibleForQuests = require(10685) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     let tmp5 = null != fetchedAt;
     if (tmp5) {
@@ -25,18 +25,18 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
     if ("active" === obj2.getState()) {
       if (!fetchingQuestToDeliverByPlacement.isFetchingQuestToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
         if (obj4.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
-          let tmpResult = tmp(10438);
+          let tmpResult = tmp(10477);
           const currentQuests = tmpResult.fetchCurrentQuests();
-          tmpResult = tmp(10438);
+          tmpResult = tmp(10477);
           const questToDeliver = tmpResult.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
         }
       }
       obj4 = fetchingQuestToDeliverByPlacement;
     } else if (null != fetchedAt) {
-      tmp(10438).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
-      const tmpResult1 = tmp(10438);
+      tmp(10477).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
+      const tmpResult1 = tmp(10477);
     }
-    obj2 = importDefault(10462);
+    obj2 = importDefault(10501);
   }
 }
 ({ useEffect: c3, useRef: c4 } = noop);

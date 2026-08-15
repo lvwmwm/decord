@@ -1,10 +1,10 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16430
+// Function ID: 16431
 // Name: ReportProblem
-// Dependencies: [19, 4431, 676, 21, 4342, 712, 4793, 7265, 698, 16381, 4310, 4061, 16382, 5827, 5825, 5457, 1236, 5460, 2]
+// Dependencies: [19, 4559, 676, 21, 4661, 712, 4761, 7487, 698, 16431, 4342, 4093, 16432, 7177, 7175, 6949, 1236, 6952, 2]
 // Exports: default
 
-// Module 16380 (ReportProblem)
+// Module 16430 (ReportProblem)
 import "noop";
 import sortActivity from "sortActivity";
 import { AnalyticEvents } from "ME";
@@ -22,7 +22,7 @@ export default function ReportProblem(arg0) {
   let importDefault;
   let require;
   ({ stream: require, analyticsData: importDefault } = arg0);
-  importDefault(4793)(() => {
+  importDefault(4761)(() => {
     let obj = outer1_0(outer1_2[7]);
     const streamerApplication = obj.getStreamerApplication(ownerId, outer1_3);
     obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId, application_id: null, application_name: null, game_id: null };
@@ -44,7 +44,7 @@ export default function ReportProblem(arg0) {
     outer1_1(outer1_2[8]).track(outer1_4.OPEN_POPOUT, obj);
   });
   let tmp = createCacheKey();
-  const mapped = importDefault(16382)({ isStreamer: false, isEndStream: false }).map((label) => {
+  const mapped = importDefault(16432)({ isStreamer: false, isEndStream: false }).map((label) => {
     const value = label.value;
     return outer1_5(outer1_0(outer1_2[13]).ActionSheetRow, {
       label: label.label,
@@ -66,9 +66,9 @@ export default function ReportProblem(arg0) {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.XuqqwI);
-  obj[1] = jsx(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
+  obj[1] = jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
   obj = { style: tmp.container, children: null };
-  obj[1] = jsx(require(5827) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped });
-  obj[2] = jsx(require(5460) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: null });
-  return jsx(require(5825) /* ActionSheet */.ActionSheet, { style: tmp.container, children: null });
+  obj[1] = jsx(require(7177) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped });
+  obj[2] = jsx(require(6952) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: null });
+  return jsx(require(7175) /* ActionSheet */.ActionSheet, { style: tmp.container, children: null });
 };

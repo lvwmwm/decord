@@ -1,10 +1,10 @@
-// Module ID: 13113
-// Function ID: 13114
+// Module ID: 12647
+// Function ID: 12648
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 1388, 21, 4310, 5458, 13114, 13115, 1236, 2]
+// Dependencies: [19, 1388, 21, 4342, 6950, 12648, 12649, 1236, 2]
 // Exports: default
 
-// Module 13113 (NUFChannelsActionSheet)
+// Module 12647 (NUFChannelsActionSheet)
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
@@ -33,7 +33,7 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
     children: null
   };
   obj = { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null };
-  obj[0] = jsx(importDefault(13115), {});
+  obj[0] = jsx(importDefault(12649), {});
   const intl = markAsDismissed(1236).intl;
   obj[1] = intl.string(markAsDismissed(1236).t.Ay9424);
   const intl2 = markAsDismissed(1236).intl;
@@ -41,6 +41,6 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1236).intl;
   obj[3] = intl3.string(markAsDismissed(1236).t.BddRzS);
   obj[4] = callback;
-  obj[2] = jsx(importDefault(13114), { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(5458).BottomSheet, { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
+  obj[2] = jsx(importDefault(12648), { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
+  return jsx(markAsDismissed(6950).BottomSheet, { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
 };

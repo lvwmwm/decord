@@ -1,10 +1,10 @@
-// Module ID: 9784
-// Function ID: 9785
+// Module ID: 9993
+// Function ID: 9994
 // Name: PinIcon
-// Dependencies: [19, 21, 712, 4064, 9785, 2]
+// Dependencies: [19, 21, 712, 4096, 9994, 2]
 // Exports: PinIcon
 
-// Module 9784 (PinIcon)
+// Module 9993 (PinIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PinIcon = function PinIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9785) /* registerAsset */;
+  obj[0] = require(9994) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

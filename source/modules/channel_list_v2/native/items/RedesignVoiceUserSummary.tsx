@@ -1,10 +1,10 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15393
+// Function ID: 15394
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1979, 4417, 21, 589, 4527, 15342, 2]
+// Dependencies: [19, 1979, 4545, 21, 589, 4979, 15392, 2]
 // Exports: default
 
-// Module 15343 (RedesignVoiceUserSummary)
+// Module 15393 (RedesignVoiceUserSummary)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -27,7 +27,7 @@ export default function RedesignVoiceUserSummary(channels) {
   const items3 = [channels, stateFromStores1, stateFromStores];
   const stageIcon = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: true, voiceStates: true };
+  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: "ct", voiceStates: null };
   obj[2] = stateFromStores1;
   obj[3] = stateFromStores;
   const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj);

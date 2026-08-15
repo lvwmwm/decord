@@ -1,10 +1,10 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12093
+// Function ID: 12094
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 5837, 21, 4342, 1493, 2]
+// Dependencies: [19, 17, 7186, 21, 4661, 1494, 2]
 // Exports: default
 
-// Module 12358 (UserProfileTextButtonGroup)
+// Module 12093 (UserProfileTextButtonGroup)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
@@ -24,7 +24,7 @@ export default function UserProfileTextButtonGroup(arg0) {
   let style;
   ({ primaryButton, secondaryButton, maxWidth, style } = arg0);
   let items = callback3();
-  const width = importDefault(1493)().width;
+  const width = importDefault(1494)().width;
   let bound = width;
   if (null != maxWidth) {
     const _Math = Math;

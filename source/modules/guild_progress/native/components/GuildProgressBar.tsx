@@ -1,10 +1,10 @@
-// Module ID: 13404
-// Function ID: 13405
+// Module ID: 13436
+// Function ID: 13437
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 4342, 11914, 712, 4083, 4343, 4346, 2]
+// Dependencies: [19, 17, 21, 4661, 11643, 712, 4115, 4664, 4667, 2]
 // Exports: default
 
-// Module 13404 (GuildProgressBar)
+// Module 13436 (GuildProgressBar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export default function GuildProgressBar(percent) {
   percent = percent.percent;
   let sharedValue;
   const tmp = createCacheKey();
-  let obj = percent(4083);
+  let obj = percent(4115);
   sharedValue = obj.useSharedValue(0);
   const items = [percent, sharedValue];
   const effect = React.useEffect(() => {
@@ -38,8 +38,8 @@ export default function GuildProgressBar(percent) {
   fn.__initData = closure_7;
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, percent.style];
-  const animatedStyle = percent(4083).useAnimatedStyle(fn);
+  const animatedStyle = percent(4115).useAnimatedStyle(fn);
   const items2 = [tmp.progress, animatedStyle];
-  obj[1] = jsx(sharedValue(4083).View, { style: items2 });
+  obj[1] = jsx(sharedValue(4115).View, { style: items2 });
   return <View style={items1}>{null}</View>;
 };

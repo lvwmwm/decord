@@ -1,9 +1,9 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14605
+// Function ID: 14606
 // Name: toggle
-// Dependencies: [4393, 8148, 589, 1236, 10421, 10850, 2]
+// Dependencies: [4497, 8198, 589, 1236, 10669, 12557, 2]
 
-// Module 14573 (toggle)
+// Module 14605 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.cUMdH0);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAutomaticGainControlSettingValue() {
     const items = [_detectH265HardwareDecode];
     return require(589) /* initialize */.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());

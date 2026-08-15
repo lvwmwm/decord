@@ -1,8 +1,8 @@
-// Module ID: 10103
-// Function ID: 10104
-// Dependencies: [19, 17, 21, 4342, 712, 7426, 10099, 4788, 5329, 4338, 1236, 10104, 2]
+// Module ID: 10307
+// Function ID: 10308
+// Dependencies: [19, 17, 21, 4661, 712, 7644, 10304, 4756, 5449, 4734, 1236, 10308, 2]
 
-// Module 10103
+// Module 10307
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,9 +33,9 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback2();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let obj = require(10099) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj = require(10304) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = require(10099) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj1 = require(10304) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true, angle: null, angleCenter: null, colors: null, onLayout: null, children: null };
   let num;
@@ -63,23 +63,23 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
     obj1 = { uri: null };
     obj1[0] = themeAndReducedMotionAwareAssetUrl;
     obj[2] = obj1;
-    tmp9 = callback(tmp7(5329), obj);
+    tmp9 = callback(tmp7(5449), obj);
   }
   const items = [tmp9, , ];
   const obj2 = { style: tmp.content, children: null };
   const obj3 = { style: tmp.heading, variant: "text-md/bold", color: "text-overlay-light", children: null };
   const intl = tmp2(1236).intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.OEtqpm);
-  const items1 = [callback(require(4338) /* Text */.Text, obj3), ];
+  const items1 = [callback(require(4734) /* Text */.Text, obj3), ];
   const obj4 = { style: tmp.subheading, variant: "text-md/medium", color: "text-overlay-light", children: null };
   const intl2 = tmp2(1236).intl;
   obj4[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["2h5M+X"], { availableCount: claimableRewards.length });
-  items1[1] = callback(require(4338) /* Text */.Text, obj4);
+  items1[1] = callback(require(4734) /* Text */.Text, obj4);
   obj2[1] = items1;
   items[1] = closure_5(View, obj2);
   let tmp12Result = null != themeAndReducedMotionAwareAssetUrl1;
   if (tmp12Result) {
-    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7426) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7644) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
     const items2 = [tmp.logoContainer, ];
     let logoContainerLargeTilted = logoLargeTilted;
     if (logoLargeTilted) {
@@ -97,13 +97,13 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
     items3[1] = logoLargeTilted;
     obj7[1] = items3;
     obj7[2] = themeAndReducedMotionAwareAssetUrl1;
-    obj6[1] = tmp12(tmp7(10104), obj7);
+    obj6[1] = tmp12(tmp7(10308), obj7);
     tmp12Result = tmp12(View, obj6);
-    const tmp7Result = tmp7(10104);
+    const tmp7Result = tmp7(10308);
   }
   items[2] = tmp12Result;
   obj[6] = items;
-  return closure_5(importDefault(4788), obj);
+  return closure_5(importDefault(4756), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelectPromotionalBanner.tsx");
 

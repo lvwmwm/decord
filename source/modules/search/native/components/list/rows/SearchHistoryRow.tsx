@@ -1,9 +1,9 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15878
+// Function ID: 15879
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 19, 17, 1391, 4357, 1922, 8468, 21, 4342, 712, 11810, 4909, 5387, 15816, 11807, 15826, 4338, 6070, 647, 15827, 8379, 4355, 15825, 15829, 15837, 1236, 2]
+// Dependencies: [5, 19, 17, 1391, 4772, 1922, 8507, 21, 4661, 712, 11534, 5433, 6368, 15866, 11531, 15876, 4734, 7351, 647, 15877, 8418, 4770, 15875, 15879, 15887, 1236, 2]
 
-// Module 15828 (SearchHistoryRemoveIcon)
+// Module 15878 (SearchHistoryRemoveIcon)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "GroupDMRow";
 import { View } from "MagnifyingGlassIcon";
@@ -11,7 +11,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import closure_8 from "mergeGuildAvatar";
 import { SearchHistoryItemTypes } from "MessageEmbedTypes";
-import jsxProd from "module_4355";
+import jsxProd from "module_4770";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -25,8 +25,8 @@ function SearchHistoryRemoveIcon(searchContext) {
     const result = searchHistoryItem(outer1_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
   const obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: null };
-  obj[5] = callback2(searchContext(5387).XSmallIcon, { size: "sm", color: "interactive-text-default" });
-  return callback2(searchContext(4909).PressableHighlight, obj);
+  obj[5] = callback2(searchContext(6368).XSmallIcon, { size: "sm", color: "interactive-text-default" });
+  return callback2(searchContext(5433).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -35,7 +35,7 @@ function SearchHistoryTextRow(searchContext) {
   let onPressSearchHistoryText;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = searchContext(15816);
+  let obj = searchContext(15866);
   onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -56,14 +56,14 @@ function SearchHistoryTextRow(searchContext) {
     });
   }
   obj = { label: null, onPress: null, trailing: null, iconContainerStyle: null, icon: null };
-  const items1 = [mapped, closure_10(searchContext(4338).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
+  const items1 = [mapped, closure_10(searchContext(4734).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
   obj[1] = items1;
   obj[0] = closure_11(View, obj);
   obj[1] = callback;
   obj[2] = closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj[3] = tmp.textIconContainer;
-  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(6070).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_10(searchContext(15826).SearchListRow, obj);
+  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(7351).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
+  return closure_10(searchContext(15876).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -143,7 +143,7 @@ function SearchHistoryDMRow(searchContext) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ function SearchHistoryDMRow(searchContext) {
             const result = searchHistoryItem(onPressDMItem[14]).trackSearchHistoryClicked(obj2);
             outer1_2(closure_0, closure_1);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c4 = tmp;

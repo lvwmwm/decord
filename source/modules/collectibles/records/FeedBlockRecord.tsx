@@ -1,13 +1,13 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 5343
+// Function ID: 5344
 // Name: fromServer
-// Dependencies: [7102, 2]
+// Dependencies: [5339, 2]
 
-// Module 7106 (fromServer)
+// Module 5343 (fromServer)
 let prototype;
 prototype = function FeedBlockRecord(arg0) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(7102) /* ShopBlockType */.ShopBlockType.FEED;
+  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.FEED;
   ({ ranked_sku_ids: tmp.rankedSkuIds, sorted_sku_ids: tmp.sortedSkuIds } = arg0);
   return obj;
 }.prototype;
@@ -16,7 +16,7 @@ prototype["fromServer"] = function fromServer(arg0) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(7102) /* ShopBlockType */.ShopBlockType.FEED;
+  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.FEED;
   ({ ranked_sku_ids: tmp2.rankedSkuIds, sorted_sku_ids: tmp2.sortedSkuIds } = arg0);
   return obj;
 };

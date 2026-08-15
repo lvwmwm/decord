@@ -1,10 +1,10 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 11898
+// Function ID: 11899
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4342, 1987, 4775, 4338, 1236, 9760, 2]
+// Dependencies: [19, 17, 21, 4661, 1987, 4733, 4734, 1236, 9971, 2]
 // Exports: default
 
-// Module 12156 (InviteRolesList)
+// Module 11898 (InviteRolesList)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,13 +46,13 @@ export default function InviteRolesList(invite) {
       obj = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = guild(1236).intl;
       obj[2] = intl.string(guild(1236).t.stcSfI);
-      const items1 = [callback(guild(4338).Text, obj), ];
+      const items1 = [callback(guild(4734).Text, obj), ];
       obj = { style: null, children: null };
       obj[0] = tmp.rolesRow;
       obj[1] = memo.map((id) => outer1_5(roles(outer1_2[8]), { role: id, guildId: guild.id }, id.id));
       items1[1] = callback(View, obj);
       obj[2] = items1;
-      tmp2 = callback2(guild(4775).Stack, obj);
+      tmp2 = callback2(guild(4733).Stack, obj);
     }
   }
   return tmp2;

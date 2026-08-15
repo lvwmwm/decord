@@ -1,9 +1,9 @@
-// Module ID: 13099
-// Function ID: 13100
+// Module ID: 13302
+// Function ID: 13303
 // Name: rebuildUnreads
-// Dependencies: [1395, 1391, 4357, 1979, 5901, 1989, 589, 709, 2]
+// Dependencies: [1395, 1391, 4772, 1979, 5388, 1989, 589, 709, 2]
 
-// Module 13099 (rebuildUnreads)
+// Module 13302 (rebuildUnreads)
 import { isPrivate } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

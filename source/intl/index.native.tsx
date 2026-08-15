@@ -1,7 +1,7 @@
 // Module ID: 1236
 // Function ID: 1237
 // Name: getSystemLocale
-// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13516, 2, 13517, 13520]
+// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13548, 2, 13549, 13552]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1236 (getSystemLocale)
@@ -61,7 +61,7 @@ obj = {
   $link(children) {
     let tmp;
     [tmp] = arg2;
-    return jsx(require(13516) /* IntlLink */.IntlLink, { target: tmp, children }, arg1);
+    return jsx(require(13548) /* IntlLink */.IntlLink, { target: tmp, children }, arg1);
   }
 };
 const reactFormatter = module_1274.makeReactFormatter(obj);

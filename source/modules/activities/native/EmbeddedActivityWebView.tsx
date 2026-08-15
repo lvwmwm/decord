@@ -1,10 +1,10 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 12471
+// Function ID: 12472
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 7654, 4370, 676, 4245, 21, 4342, 3, 500, 10717, 514, 7876, 10718, 10719, 1625, 10720, 10721, 698, 1231, 647, 4705, 1236, 530, 10722, 1486, 10593, 10723, 8916, 4570, 10591, 2]
+// Dependencies: [5, 32, 19, 17, 7872, 4481, 676, 4277, 21, 4661, 3, 500, 12472, 514, 6304, 12473, 12474, 1626, 12475, 12476, 698, 1231, 647, 4827, 1236, 530, 12477, 1487, 8715, 8748, 6701, 8666, 8713, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 10716 (getSafeArea)
+// Module 12471 (getSafeArea)
 import closure_4 from "items3";
 import postMessageToWebView from "postMessageToWebView";
 import _createWebviewHtmlFile from "_createWebviewHtmlFile";
@@ -166,7 +166,7 @@ class BaseActivityWebView {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -416,7 +416,7 @@ class BaseActivityWebView {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -466,7 +466,7 @@ class BaseActivityWebView {
                     outer1_30(items.map((arg0) => "^" + content_security_policy(table[26])(arg0).replace(/\\\*/g, ".*")));
                     outer1_28(true);
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp7) {
                   c4 = tmp;
@@ -607,7 +607,7 @@ class BaseActivityWebView {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -1043,5 +1043,5 @@ export { BaseActivityWebView };
 export const useHasInvalidUrlErrorState = function useHasInvalidUrlErrorState() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8916)(first) };
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(6701)(first) };
 };

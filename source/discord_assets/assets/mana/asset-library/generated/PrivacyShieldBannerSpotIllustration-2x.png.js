@@ -1,9 +1,9 @@
-// Module ID: 6707
-// Function ID: 6708
+// Module ID: 6065
+// Function ID: 6066
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6707 (metadata)
+// Module 6065 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivacyShieldBannerSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2f296e0ff2af6ecd5fbcf924fa42deb179597a2cd89cc86ac2413578d5aa9f61.png";

@@ -1,10 +1,10 @@
-// Module ID: 1625
-// Function ID: 1626
+// Module ID: 1626
+// Function ID: 1627
 // Name: getConstants
 // Dependencies: [17, 500, 672, 2]
 // Exports: getBuildNumberLabel, getConstants
 
-// Module 1625 (getConstants)
+// Module 1626 (getConstants)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("utils/native/ClientInfoUtils.tsx");
@@ -27,10 +27,10 @@ export const getConstants = function getConstants() {
 };
 export const getBuildNumberLabel = function getBuildNumberLabel() {
   const items = ["0", "123456", "1234567890"];
-  let str = "6237";
-  if (items.includes("6237")) {
+  let str = "6244";
+  if (items.includes("6244")) {
     const _HermesInternal = HermesInternal;
-    str = "dev (" + "6237" + ")";
+    str = "dev (" + "6244" + ")";
   }
   return str;
 };

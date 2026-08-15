@@ -1,10 +1,10 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 10517
+// Function ID: 10518
 // Name: useReactionPermissions
-// Dependencies: [32, 3990, 1990, 5193, 3989, 676, 589, 3995, 8150, 5951, 10259, 2]
+// Dependencies: [32, 4022, 1990, 4977, 4021, 676, 589, 4027, 8200, 7234, 10518, 2]
 // Exports: default
 
-// Module 10258 (useReactionPermissions)
+// Module 10517 (useReactionPermissions)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

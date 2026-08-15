@@ -1,17 +1,17 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10668
+// Function ID: 10669
 // Name: useSwipeToReplySettingValue
-// Dependencies: [8148, 676, 1306, 1236, 698, 4034, 10421, 2]
+// Dependencies: [8198, 676, 1306, 1236, 698, 4066, 10669, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10420 (useSwipeToReplySettingValue)
+// Module 10668 (useSwipeToReplySettingValue)
 import ME from "ME";
 import createToggle from "createToggle";
 
 let c3;
 let c4;
 function useSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(4034) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
@@ -29,7 +29,7 @@ const radio = createToggle.createRadio({
     const items = [intl.string(require(1236) /* getSystemLocale */.t["9BGJ1m"])];
     return items;
   },
-  parent: require("MobileSetting").MobileSetting.SWIPE_RIGHT_TO_LEFT,
+  parent: require("MobileUserSettings").MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
   useValue: useSwipeToReplySettingValue,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     const NumberResult = Number(arg0);
@@ -37,7 +37,7 @@ const radio = createToggle.createRadio({
     obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(4034) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
@@ -64,7 +64,7 @@ let obj = {
     const items = [intl.string(require(1236) /* getSystemLocale */.t["9BGJ1m"])];
     return items;
   },
-  parent: require("MobileSetting").MobileSetting.SWIPE_RIGHT_TO_LEFT,
+  parent: require("MobileUserSettings").MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
   useValue: useSwipeToReplySettingValue,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     const NumberResult = Number(arg0);
@@ -72,7 +72,7 @@ let obj = {
     obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(4034) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
@@ -94,7 +94,7 @@ const result = require("create").fileFinishedImporting("modules/user_settings/de
 export default radio;
 export { useSwipeToReplySettingValue };
 export const getSwipeToReplySettingValue = function getSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(4034) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.getSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;

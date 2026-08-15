@@ -1,10 +1,10 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9178
+// Function ID: 9179
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1949, 1236, 7083, 9415, 2]
+// Dependencies: [1949, 1236, 5313, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9414 (getProductNameAndTypeFromSku)
+// Module 9178 (getProductNameAndTypeFromSku)
 let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
@@ -40,19 +40,10 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   return formatToPlainStringResult;
 };
 export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
-  const result = require(7083) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(selectedProduct);
+  const result = require(5313) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(selectedProduct);
   let tmp4 = !result;
   if (!result) {
-    let tmp5 = selectedProduct.type !== tmp(1949).CollectiblesItemType.EXTERNAL_SKU;
-    if (tmp5) {
-      let tmp6 = selectedProduct.type === tmp(1949).CollectiblesItemType.PROFILE_FRAME;
-      if (tmp6) {
-        tmp6 = !tmp(9415).getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
-        const tmpResult = tmp(9415);
-      }
-      tmp5 = !tmp6;
-    }
-    tmp4 = tmp5;
+    tmp4 = selectedProduct.type !== require(1949) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
   }
   return tmp4;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15797
+// Function ID: 15798
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 4012, 21, 4342, 712, 4338, 1236, 4909, 1297, 15748, 7717, 14541, 647, 7718, 5917, 2]
+// Dependencies: [32, 19, 17, 4044, 21, 4661, 712, 4734, 1236, 5433, 1297, 15798, 7935, 14573, 647, 7936, 5316, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15747 (TruncatedText)
+// Module 15797 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -77,7 +77,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
         callback(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(num(4338).Text, obj), first];
+    const items = [closure_9(num(4734).Text, obj), first];
     obj[3] = items;
     return closure_10(closure_6, obj);
   } else {
@@ -93,7 +93,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
     }
     const obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
     obj1[2] = stringResult;
-    t = tmp7(num(4338).Text, obj1);
+    t = tmp7(num(4734).Text, obj1);
     obj[1] = t;
     closure_9(closure_7, obj);
     const tmp8 = closure_7;
@@ -106,28 +106,28 @@ export const ArrowButton = function ArrowButton(arg0) {
   const tmp = createCacheKey();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: null };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  const items = [callback2(require(4338) /* Text */.Text, obj), ];
+  const items = [callback2(require(4734) /* Text */.Text, obj), ];
   obj = { size: null, source: null, style: null };
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  obj[1] = importDefault(15748);
+  obj[1] = importDefault(15798);
   obj[2] = tmp.arrowButtonIcon;
   items[1] = callback2(require(1297) /* Button */.Icon, obj);
   obj[3] = items;
-  return callback3(require(4909) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(5433) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(7717);
-  const _require = callback(importAll(14541).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14541);
+  const obj = importDefault(7935);
+  const _require = callback(importAll(14573).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14573);
   const tmp2 = _require;
   const items = [addSubscriptionPlan];
   const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(7718)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const price = importDefault(7936)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + tmp2(5917).formatPrice(price.amount, price.currency) + "/mo.";
-    const tmp2Result = tmp2(5917);
+    str = "" + tmp2(5316).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp2Result = tmp2(5316);
   }
   return str;
 };

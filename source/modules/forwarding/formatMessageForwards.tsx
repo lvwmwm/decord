@@ -1,10 +1,10 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8179
+// Function ID: 8180
 // Name: getForwardInfo
-// Dependencies: [8130, 1391, 1910, 3989, 3998, 1922, 1435, 1236, 4031, 4535, 5980, 2]
+// Dependencies: [8180, 1391, 1910, 4021, 4030, 1922, 1435, 1236, 4063, 4984, 5026, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8129 (getForwardInfo)
+// Module 8179 (getForwardInfo)
 import getGuild from "getGuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -50,7 +50,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
     obj3 = getGuild;
   }
   ({ snapshotIndex, parentMessage } = this);
-  let obj4 = require(4031) /* resetCache */;
+  let obj4 = require(4063) /* resetCache */;
   const result = obj4.calendarFormatCompact(this.messageSnapshot.message.timestamp);
   const channel = obj.getChannel(this.parentMessage.channel_id);
   if (null != channel) {
@@ -93,7 +93,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
         if (obj1.can(channel1.accessPermissions, channel1)) {
           obj4 = { snapshotIndex: null, footerInfo: null };
           obj4[0] = snapshotIndex;
-          const tmp3Result = tmp3(4535);
+          const tmp3Result = tmp3(4984);
           const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
           const obj5 = { originLabel: null, timestampLabel: null, accessibilityLabel: null };
           obj5[0] = channelName;
@@ -155,7 +155,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 
 export { MessageForward };
 export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
-  if (importDefault(5980)(message)) {
+  if (importDefault(5026)(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
       if (typeof MessageForward !== "function") {

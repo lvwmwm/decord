@@ -1,10 +1,10 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15151
+// Function ID: 15152
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4342, 4572, 12239, 2007, 4062, 5437, 4338, 7856, 4777, 2]
+// Dependencies: [32, 19, 21, 4661, 5260, 11985, 2007, 4094, 6292, 4734, 8071, 4745, 2]
 // Exports: default
 
-// Module 15102 (OrbCheckoutMenu)
+// Module 15151 (OrbCheckoutMenu)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function OrbCheckoutMenu() {
   }, items);
   let obj = { children: null };
   obj = { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" };
-  const items1 = [callback2(first(4338).Text, obj), , , ];
+  const items1 = [callback2(first(4734).Text, obj), , , ];
   obj = {
     containerStyle: tmp.textInput,
     label: "SKU ID",
@@ -47,9 +47,9 @@ export default function OrbCheckoutMenu() {
     },
     isClearable: true
   };
-  items1[1] = callback2(first(7856).TextInput, obj);
-  items1[2] = callback2(first(4338).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" });
-  items1[3] = callback2(first(4777).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first });
+  items1[1] = callback2(first(8071).TextInput, obj);
+  items1[2] = callback2(first(4734).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" });
+  items1[3] = callback2(first(4745).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first });
   obj[0] = items1;
-  return callback3(first(5437).Card, obj);
+  return callback3(first(6292).Card, obj);
 };

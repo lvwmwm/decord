@@ -1,10 +1,10 @@
-// Module ID: 10181
-// Function ID: 10182
+// Module ID: 10385
+// Function ID: 10386
 // Name: PremiumGiftSuccessBody
-// Dependencies: [19, 17, 4391, 1924, 676, 21, 4342, 712, 9671, 1499, 9638, 4601, 10091, 8986, 4777, 1236, 4007, 5817, 4061, 9645, 4338, 8726, 4291, 2]
+// Dependencies: [19, 17, 4521, 1924, 676, 21, 4661, 712, 9625, 1500, 9592, 4381, 10296, 9067, 4745, 1236, 4039, 7167, 4093, 9599, 4734, 8811, 4323, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 10181 (PremiumGiftSuccessBody)
+// Module 10385 (PremiumGiftSuccessBody)
 import PremiumGiftBackgroundAnimation from "PremiumGiftBackgroundAnimation";
 import { View } from "_copy";
 import addSku from "addSku";
@@ -39,10 +39,10 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let giftCodeURL;
   let tmp = createCacheKey();
-  let obj = giftCodeRecord(9671);
+  let obj = giftCodeRecord(9625);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
-  let obj1 = giftCodeRecord(4601);
+  let obj1 = giftCodeRecord(4381);
   giftCodeURL = obj1.getGiftCodeURL(giftCodeRecord.code);
   if (null != giftCodeRecord.giftStyle) {
     giftStyle = giftCodeRecord.giftStyle;
@@ -50,12 +50,12 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   if (null != giftCodeRecord.subscriptionPlanId) {
     let subscriptionPlanId = giftCodeRecord.subscriptionPlanId;
   } else {
-    subscriptionPlanId = tmp2(4007).getPlanIdForPremiumType(premiumType, planInterval);
-    const tmp2Result = tmp2(4007);
+    subscriptionPlanId = tmp2(4039).getPlanIdForPremiumType(premiumType, planInterval);
+    const tmp2Result = tmp2(4039);
   }
-  let obj3 = giftCodeURL(4007);
+  let obj3 = giftCodeURL(4039);
   const tierDisplayNameByPlanId = obj3.getTierDisplayNameByPlanId(subscriptionPlanId);
-  let obj4 = giftCodeURL(4007);
+  let obj4 = giftCodeURL(4039);
   const items = [giftCodeRecord, giftCodeURL];
   obj = { children: null };
   const callback = React.useCallback(() => {
@@ -69,12 +69,12 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
     tmp = giftCodeRecord;
     const result = giftCodeRecord(outer1_2[18]).presentCopiedToClipboard();
   }, items);
-  obj[0] = callback(giftCodeURL(9645), { giftStyle });
+  obj[0] = callback(giftCodeURL(9599), { giftStyle });
   const items1 = [callback(View, obj), , , , ];
   obj = { style: tmp.title, variant: "heading-lg/bold", children: null };
   const intl = tmp2(1236).intl;
   obj[2] = intl.string(giftCodeRecord(1236).t["/s1xR7"]);
-  items1[1] = callback(giftCodeRecord(4338).Text, obj);
+  items1[1] = callback(giftCodeRecord(4734).Text, obj);
   obj1 = { style: tmp.description, variant: "text-md/medium", children: null };
   const intl2 = tmp2(1236).intl;
   if (obj4.getInterval(subscriptionPlanId).intervalType === SubscriptionIntervalTypes.YEAR) {
@@ -84,22 +84,22 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   }
   let obj2 = { children: null };
   obj1[2] = intl2.format(bUdTqI, { intervalCount: 1, name: tierDisplayNameByPlanId });
-  items1[2] = callback(giftCodeRecord(4338).Text, obj1);
+  items1[2] = callback(giftCodeRecord(4734).Text, obj1);
   obj3 = { style: tmp.input, children: null };
   obj4 = { style: tmp.inputLabel, variant: "heading-md/bold", children: null };
   const intl3 = tmp2(1236).intl;
   obj4[2] = intl3.string(giftCodeRecord(1236).t["qS+yMo"]);
-  const items2 = [callback(giftCodeRecord(4338).Text, obj4), ];
+  const items2 = [callback(giftCodeRecord(4734).Text, obj4), ];
   const obj5 = { text: giftCodeURL, icon: null, iconPosition: "end", onPress: null };
-  obj5[1] = giftCodeURL(4291);
+  obj5[1] = giftCodeURL(4323);
   obj5[3] = callback;
-  items2[1] = callback(giftCodeRecord(8726).InputButton, obj5);
+  items2[1] = callback(giftCodeRecord(8811).InputButton, obj5);
   obj3[1] = items2;
   items1[3] = closure_10(View, obj3);
   const obj6 = { style: tmp.disclaimer, variant: "text-xs/normal", children: null };
   const intl4 = tmp2(1236).intl;
   obj6[2] = intl4.string(giftCodeRecord(1236).t.As9eLl);
-  items1[4] = callback(giftCodeRecord(4338).Text, obj6);
+  items1[4] = callback(giftCodeRecord(4734).Text, obj6);
   obj2[0] = items1;
   return closure_10(closure_9, obj2);
 };

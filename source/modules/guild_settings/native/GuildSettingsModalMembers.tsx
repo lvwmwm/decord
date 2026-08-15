@@ -1,9 +1,9 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15827
+// Function ID: 15828
 // Name: items
-// Dependencies: [32, 19, 17, 1218, 4263, 1990, 1983, 1910, 3989, 1922, 9085, 676, 21, 7375, 4342, 712, 1499, 9760, 4534, 4187, 1236, 9755, 1628, 589, 5947, 9060, 8661, 15778, 6072, 9114, 5293, 9084, 11, 1351, 6056, 7811, 1297, 8890, 5775, 2]
+// Dependencies: [32, 19, 17, 1218, 4295, 1990, 1983, 1910, 4021, 1922, 8875, 676, 21, 7593, 4661, 712, 1500, 9971, 4796, 4219, 1236, 9965, 1629, 589, 7231, 8850, 9958, 15828, 5432, 8904, 6778, 8874, 11, 1351, 7337, 8029, 1297, 8974, 6550, 2]
 
-// Module 15777 (items)
+// Module 15827 (items)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import importAllResult from "nameFromUser";
 import { View } from "RolePill";
@@ -41,7 +41,7 @@ let closure_20 = importAllResult.memo((guild) => {
   const sortedGuildRoles = guild.sortedGuildRoles;
   let dependencyMap;
   ({ start, end } = guild);
-  let obj = guild(1499);
+  let obj = guild(1500);
   dependencyMap = obj.useNavigation();
   if (null == guild) {
     return null;
@@ -58,11 +58,11 @@ let closure_20 = importAllResult.memo((guild) => {
     let formatToPlainStringResult;
     if (found.length > 0) {
       user = user.getUser(guildMember.userId);
-      let obj1 = guildMember(4534);
+      let obj1 = guildMember(4796);
       let str = obj1.getNickname(guild.id, undefined, user);
       if (str == null) {
-        str = tmp9(4187).getGlobalName(user);
-        const tmp9Result = tmp9(4187);
+        str = tmp9(4219).getGlobalName(user);
+        const tmp9Result = tmp9(4219);
       }
       if (str == null) {
         let username;
@@ -101,7 +101,7 @@ let closure_20 = importAllResult.memo((guild) => {
     };
     obj[7] = start;
     obj[8] = end;
-    return closure_15(guildMember(9755), obj);
+    return closure_15(guildMember(9965), obj);
   }
   tmp = callback();
 });
@@ -292,12 +292,12 @@ const memoResult = importAllResult.memo(function GuildSettingsModalMembers(guild
           children(ref) {
             const merged = Object.assign(ref, Object.create(null));
             const obj = { source: null, accessibilityLabel: null, ref: null };
-            obj[0] = callback2(9114);
+            obj[0] = callback2(8904);
             const intl = callback(1236).intl;
             obj[1] = intl.string(callback(1236).t.ogxXGq);
             obj[2] = ref.ref;
             const merged1 = Object.assign(merged);
-            return callback3(callback(6072).HeaderActionButton, obj);
+            return callback3(callback(5432).HeaderActionButton, obj);
           }
         };
         return outer1_15(outer1_0(outer1_2[26]).ContextMenu, obj);

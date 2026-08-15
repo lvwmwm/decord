@@ -1,9 +1,9 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 6253
+// Function ID: 6254
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6895 (metadata)
+// Module 6253 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TypingIndicatorAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/10df878519d712909e96e5a5ccd7cdb72d822a0940950b34a27c9b2289f9c4c3.png";

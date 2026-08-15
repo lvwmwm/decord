@@ -1,10 +1,10 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 10008
+// Function ID: 10009
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 4535, 4570, 9737, 4888, 4223, 9799, 2]
+// Dependencies: [19, 21, 4984, 8666, 9930, 6892, 4255, 10009, 2]
 // Exports: default
 
-// Module 9798 (ChannelVoiceChatModal)
+// Module 10008 (ChannelVoiceChatModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -13,7 +13,7 @@ const result = require("computeChannelName").fileFinishedImporting("modules/vide
 
 export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
-  const tmp2 = importDefault(4535)(channel);
+  const tmp2 = importDefault(4984)(channel);
   const items = [channel.id];
   const effect = React.useEffect(() => {
     outer1_1(outer1_2[3]).updateChatOpen(channel.id, true);
@@ -25,8 +25,8 @@ export default function ChannelVoiceChatModal(channel) {
   if (tmp2 == null) {
     str = "";
   }
-  const tmp5 = importDefault(9737);
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(4888).StageIcon, { size: "sm" })} render={function render() {
+  const tmp5 = importDefault(9930);
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(6892).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {
       guild_id = null;

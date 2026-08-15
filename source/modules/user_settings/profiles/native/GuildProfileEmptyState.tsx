@@ -1,10 +1,10 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 14069
+// Function ID: 14070
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4342, 14038, 4338, 1236, 4777, 12144, 2007, 2]
+// Dependencies: [5, 19, 17, 21, 4661, 14070, 4734, 1236, 4745, 11881, 2007, 2]
 // Exports: default
 
-// Module 14037 (GuildProfileEmptyState)
+// Module 14069 (GuildProfileEmptyState)
 import SvgComponent from "SvgComponent";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,17 +24,17 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/use
 export default function GuildProfileEmptyState() {
   const tmp = callback4();
   let obj = { contentContainerStyle: tmp.container, children: null };
-  obj = { style: tmp.image, children: callback2(importDefault(14038), obj) };
+  obj = { style: tmp.image, children: callback2(importDefault(14070), obj) };
   obj = { style: tmp.image };
   const items = [callback2(closure_5, obj), , , , ];
   let obj1 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.Z1OZCV);
-  items[1] = callback2(require(4338) /* Text */.Text, obj1);
+  items[1] = callback2(require(4734) /* Text */.Text, obj1);
   const obj2 = { style: tmp.header, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.UEmBq7);
-  items[2] = callback2(require(4338) /* Text */.Text, obj2);
+  items[2] = callback2(require(4734) /* Text */.Text, obj2);
   const obj3 = { style: tmp.createButton, children: null };
   const obj4 = { text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -51,7 +51,7 @@ export default function GuildProfileEmptyState() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -83,7 +83,7 @@ export default function GuildProfileEmptyState() {
         } else {
           arg1.default.openCreateGuildModal();
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -91,7 +91,7 @@ export default function GuildProfileEmptyState() {
       }
     }
   });
-  obj3[1] = callback2(require(4777) /* Button */.Button, obj4);
+  obj3[1] = callback2(require(4745) /* Button */.Button, obj4);
   items[3] = callback2(closure_5, obj3);
   const obj5 = { text: null, variant: "secondary", onPress: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
@@ -108,7 +108,7 @@ export default function GuildProfileEmptyState() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -140,7 +140,7 @@ export default function GuildProfileEmptyState() {
         } else {
           const result = arg1.default.openGuildJoinServerScreen();
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -148,7 +148,7 @@ export default function GuildProfileEmptyState() {
       }
     }
   });
-  items[4] = callback2(require(4777) /* Button */.Button, obj5);
+  items[4] = callback2(require(4745) /* Button */.Button, obj5);
   obj[1] = items;
   return callback3(closure_4, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 11729
+// Function ID: 11730
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4342, 712, 8261, 11999, 7859, 4338, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 8307, 11730, 8074, 4734, 2]
 // Exports: default
 
-// Module 11998 (GuildPowerupsWarning)
+// Module 11729 (GuildPowerupsWarning)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function GuildPowerupsWarning(warnings) {
   ({ guildId, powerupNames } = warnings);
   const tmp = createCacheKey();
   _require = tmp;
-  let obj = _require(8261);
+  let obj = _require(8307);
   manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   if (tmp6.shouldShow) {
@@ -44,11 +44,11 @@ export default function GuildPowerupsWarning(warnings) {
     obj[0] = tmp.contentContainer;
     const obj1 = { color: null, size: "md" };
     obj1[0] = manaTypeConsolidationExperiment(712).colors.TEXT_FEEDBACK_WARNING;
-    let items = [callback(tmp2(7859).CircleErrorIcon, obj1), , , ];
+    let items = [callback(tmp2(8074).CircleErrorIcon, obj1), , , ];
     const obj2 = { variant: "text-md/semibold", color: "text-feedback-warning", style: null, children: null };
     obj2[2] = tmp.text;
     obj2[3] = tmp7;
-    items[1] = callback(tmp2(4338).Text, obj2);
+    items[1] = callback(tmp2(4734).Text, obj2);
     let str = "text-sm/medium";
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-sm/normal";
@@ -57,7 +57,7 @@ export default function GuildPowerupsWarning(warnings) {
     obj3[0] = str;
     obj3[1] = tmp.text;
     obj3[2] = tmp8;
-    items[2] = callback(tmp2(4338).Text, obj3);
+    items[2] = callback(tmp2(4734).Text, obj3);
     let mapped;
     if (warnings != null) {
       mapped = warnings.map((children) => {

@@ -1,9 +1,9 @@
-// Module ID: 14309
-// Function ID: 14310
+// Module ID: 14341
+// Function ID: 14342
 // Name: route
-// Dependencies: [8148, 676, 10421, 1236, 14310, 2]
+// Dependencies: [8198, 676, 10669, 1236, 14342, 2]
 
-// Module 14309 (route)
+// Module 14341 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -11,13 +11,13 @@ obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["8jmdON"]);
   },
-  parent: require("MobileSetting").MobileSetting.PREMIUM,
+  parent: require("MobileUserSettings").MobileUserSettings.PREMIUM,
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14310) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14342) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

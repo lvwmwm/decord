@@ -1,10 +1,10 @@
-// Module ID: 7050
-// Function ID: 7051
+// Module ID: 5245
+// Function ID: 5246
 // Name: buildCommand
-// Dependencies: [1395, 4703, 4800, 676, 505, 7051, 1954, 7052, 506, 12, 38, 14, 4549, 2]
+// Dependencies: [1395, 4825, 5246, 676, 505, 5247, 1954, 5248, 506, 12, 38, 14, 5042, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7050 (buildCommand)
+// Module 5245 (buildCommand)
 import { isReadableType } from "createChannelRecord";
 import { DraftType } from "handleChanged";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
@@ -57,7 +57,7 @@ function buildCommand(arg0) {
       CHAT = obj(1954).ApplicationCommandType.CHAT;
     }
     obj[6] = CHAT;
-    obj[7] = obj(7052).ApplicationCommandInputType.BOT;
+    obj[7] = obj(5248).ApplicationCommandInputType.BOT;
     ({ description: obj3[8], options } = command);
     let mapped2;
     if (options != null) {
@@ -344,10 +344,10 @@ function buildCommand(arg0) {
     ({ nsfw: obj3[17], contexts: obj3[18], integration_types: obj3[19], global_popularity_rank: obj3[20], handler: obj3[21] } = rootCommand);
     return obj;
   } else if (useKeyedPermissions) {
-    const keyPermissionsResult = obj(7051).keyPermissions(rootCommand.permissions);
+    const keyPermissionsResult = obj(5247).keyPermissions(rootCommand.permissions);
     obj = keyPermissionsResult;
     obj = keyPermissionsResult;
-    const obj2 = obj(7051);
+    const obj2 = obj(5247);
   } else {
     obj = {};
     const permissions = rootCommand.permissions;
@@ -468,8 +468,8 @@ function buildSubCommands(arg0) {
   }
 }
 function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
-  const obj = require(7051) /* commandPermissions */;
-  const tmp = commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, require(undefined, 7052) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+  const obj = require(5247) /* commandPermissions */;
+  const tmp = commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, require(undefined, 5248) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
   if (null != tmp) {
     return tmp.permission;
   } else {
@@ -479,8 +479,8 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
     while (obj4 !== undefined) {
       let tmp5 = require;
       let tmp6 = dependencyMap;
-      let obj2 = require(7051) /* commandPermissions */;
-      let tmp7 = commandLevelPermissions[obj2.toPermissionKey(obj2, tmp3, require(undefined, 7052) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+      let obj2 = require(5247) /* commandPermissions */;
+      let tmp7 = commandLevelPermissions[obj2.toPermissionKey(obj2, tmp3, require(undefined, 5248) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       if (null != tmp7) {
         flag = true;
         let tmp9 = tmp7;
@@ -495,8 +495,8 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
     if (flag) {
       return false;
     } else {
-      const obj3 = require(7051) /* commandPermissions */;
-      const tmp14 = commandLevelPermissions[obj3.toPermissionKey(obj3, id, require(undefined, 7052) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+      const obj3 = require(5247) /* commandPermissions */;
+      const tmp14 = commandLevelPermissions[obj3.toPermissionKey(obj3, id, require(undefined, 5248) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       let permission = null;
       if (null != tmp14) {
         permission = tmp14.permission;
@@ -514,7 +514,7 @@ export const buildApplicationCommands = function buildApplicationCommands(applic
   let closure_0 = arg1;
   return importDefault(12).flatMap(application_commands, (id) => {
     outer1_1(outer1_3[10])(null != id.id, "Missing command id");
-    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: 0 };
+    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: "<string:1124074245>" };
     obj[4] = closure_0;
     return outer1_12(obj);
   });
@@ -657,7 +657,7 @@ export const hasAccess = function hasAccess(arg0) {
   return true;
 };
 export const getCommandAttachmentDraftType = function getCommandAttachmentDraftType(closure_10) {
-  if (require(7052) /* ApplicationCommandSectionType */.CommandOrigin.CHAT === closure_10) {
+  if (require(5248) /* ApplicationCommandSectionType */.CommandOrigin.CHAT === closure_10) {
     return DraftType.SlashCommand;
   } else {
     return DraftType.ApplicationLauncherCommand;
@@ -666,18 +666,18 @@ export const getCommandAttachmentDraftType = function getCommandAttachmentDraftT
 export const getCommandTriggerSection = function getCommandTriggerSection(closure_3) {
   if (null != closure_3) {
     if (closure_3.id === constants.BUILT_IN) {
-      let APP = require(7052) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
+      let APP = require(5248) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
     } else if (closure_3.id === tmp.FRECENCY) {
-      APP = require(7052) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.FRECENCY;
+      APP = require(5248) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.FRECENCY;
     } else {
-      APP = require(7052) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
+      APP = require(5248) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
     }
     return APP;
   }
 };
 export const getApplicationCommandSection = function getApplicationCommandSection(application, arg1, arg2) {
   let name = arg2;
-  const obj = { type: require(7052) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION, id: application.id, name: null, icon: null, application: null, isUserApp: null };
+  const obj = { type: require(5248) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION, id: application.id, name: null, icon: null, application: null, isUserApp: null };
   if (arg2 == null) {
     let username;
     if (application != null) {
@@ -737,7 +737,7 @@ export const trackCommandSelected = function trackCommandSelected(command) {
   let triggerSection;
   command = command.command;
   ({ location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source } = command);
-  let obj = require(4549) /* collectGuildAnalyticsMetadata */;
+  let obj = require(5042) /* collectGuildAnalyticsMetadata */;
   const rootCommand = command.rootCommand;
   let id;
   if (rootCommand != null) {

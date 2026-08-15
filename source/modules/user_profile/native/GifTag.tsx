@@ -1,10 +1,10 @@
-// Module ID: 8904
-// Function ID: 8905
+// Module ID: 8989
+// Function ID: 8990
 // Name: GifTag
-// Dependencies: [17, 21, 4342, 712, 689, 4338, 1236, 2]
+// Dependencies: [17, 21, 4661, 712, 689, 4734, 1236, 2]
 // Exports: default
 
-// Module 8904 (GifTag)
+// Module 8989 (GifTag)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,6 +28,6 @@ export default function GifTag(style) {
   obj = { variant: "text-sm/bold", color: "none", style: tmp.gifTagText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.I5gL2H);
-  obj[2] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/bold", color: "none", style: tmp.gifTagText, children: null });
+  obj[2] = jsx(require(4734) /* Text */.Text, { variant: "text-sm/bold", color: "none", style: tmp.gifTagText, children: null });
   return <View variant="text-sm/bold" color="none" style={tmp.gifTagText}>{null}</View>;
 };

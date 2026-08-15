@@ -1,10 +1,10 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12823
+// Function ID: 12824
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5194, 676, 21, 4342, 712, 4310, 9212, 8031, 1297, 1236, 4338, 4777, 7844, 2]
+// Dependencies: [19, 17, 4978, 676, 21, 4661, 712, 4342, 9647, 8081, 1297, 1236, 4734, 4745, 8062, 2]
 // Exports: default
 
-// Module 12745 (EndStageActionSheet)
+// Module 12823 (EndStageActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -36,7 +36,7 @@ export default function EndStageActionSheet(channel) {
   const obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = channel(1236).intl;
   obj1[3] = intl2.string(channel(1236).t.mT7jwN);
-  items[1] = callback(channel(4338).Text, obj1);
+  items[1] = callback(channel(4734).Text, obj1);
   let obj2 = { style: tmp.cancelButton, children: null };
   const obj3 = { variant: "secondary", text: null, onPress: null };
   const intl3 = channel(1236).intl;
@@ -46,7 +46,7 @@ export default function EndStageActionSheet(channel) {
     const obj = outer1_1(outer1_2[7]);
     channel(outer1_2[8]).handleDisconnect(channel);
   };
-  obj2[1] = callback(channel(4777).Button, obj3);
+  obj2[1] = callback(channel(4745).Button, obj3);
   items[2] = callback(View, obj2);
   const obj4 = { style: tmp.confirmButton, children: null };
   const obj5 = { variant: "destructive", text: null, onPress: null };
@@ -59,9 +59,9 @@ export default function EndStageActionSheet(channel) {
     const obj2 = outer1_1(outer1_2[7]);
     channel(outer1_2[8]).handleDisconnect(channel);
   };
-  obj4[1] = callback(channel(4777).Button, obj5);
+  obj4[1] = callback(channel(4745).Button, obj5);
   items[3] = callback(View, obj4);
   obj[1] = items;
   obj[0] = callback2(View, obj);
-  return callback(importDefault(8031), obj);
+  return callback(importDefault(8081), obj);
 };

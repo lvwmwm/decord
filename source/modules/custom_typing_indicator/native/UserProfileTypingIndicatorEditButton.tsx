@@ -1,10 +1,10 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14060
+// Function ID: 14061
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 676, 1388, 21, 1499, 6086, 1377, 14004, 1236, 3371, 2]
+// Dependencies: [32, 19, 676, 1388, 21, 1500, 7366, 1377, 14036, 1236, 3403, 2]
 // Exports: default
 
-// Module 14028 (UserProfileTypingIndicatorEditButton)
+// Module 14060 (UserProfileTypingIndicatorEditButton)
 import _slicedToArray from "_slicedToArray";
 import { UserSettingsSections } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -15,24 +15,24 @@ require("noop").useCallback;
 const result = require("ME").fileFinishedImporting("modules/custom_typing_indicator/native/UserProfileTypingIndicatorEditButton.tsx");
 
 export default function UserProfileTypingIndicatorEditButton() {
-  let obj = nativeStackNavigation(1499);
+  let obj = nativeStackNavigation(1500);
   nativeStackNavigation = obj.useNativeStackNavigation();
   const items = [nativeStackNavigation(1377).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE];
-  const tmp2 = callback(nativeStackNavigation(6086).useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp2 = callback(nativeStackNavigation(7366).useSelectedDismissibleContent(items, undefined, true), 2);
   const importDefault = tmp3;
   const items1 = [nativeStackNavigation, tmp2[1]];
-  const obj2 = nativeStackNavigation(6086);
+  const obj2 = nativeStackNavigation(7366);
   obj = { label: null, labelTrailing: null, buttonText: null, onPress: null };
   const intl = nativeStackNavigation(1236).intl;
-  obj[0] = intl.string(importDefault(3371)["pT+BVM"]);
+  obj[0] = intl.string(importDefault(3403)["pT+BVM"]);
   obj = { showPremiumIcon: true, showNewBadge: null };
   obj[1] = tmp2[0] === nativeStackNavigation(1377).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
-  obj[1] = jsx(nativeStackNavigation(14004).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: null });
+  obj[1] = jsx(nativeStackNavigation(14036).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: null });
   const intl2 = nativeStackNavigation(1236).intl;
   obj[2] = intl2.string(nativeStackNavigation(1236).t.PoWNfe);
   obj[3] = useCallback(() => {
     nativeStackNavigation.navigate(outer1_5.TYPING_INDICATOR);
     tmp3(outer1_6.TAKE_ACTION);
   }, items1);
-  return jsx(nativeStackNavigation(14004).UserProfileEditFormButton, { showPremiumIcon: true, showNewBadge: null });
+  return jsx(nativeStackNavigation(14036).UserProfileEditFormButton, { showPremiumIcon: true, showNewBadge: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15216
+// Function ID: 15217
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 11857, 11858, 676, 21, 4342, 712, 1499, 15168, 698, 11861, 4706, 1236, 1297, 4310, 5822, 8570, 4338, 13292, 15169, 4909, 9114, 8033, 15170, 2]
+// Dependencies: [5, 19, 17, 11585, 11586, 676, 21, 4661, 712, 1500, 15217, 698, 11589, 4656, 1236, 1297, 4342, 7172, 8609, 4734, 13324, 15218, 5433, 8904, 8083, 15219, 2]
 // Exports: default
 
-// Module 15167 (ChooseAccount)
+// Module 15216 (ChooseAccount)
 import closure_4 from "ME";
 import "Text";
 import { View } from "showSimpleActionSheet";
@@ -53,7 +53,7 @@ export default function ChooseAccount() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -93,10 +93,10 @@ export default function ChooseAccount() {
                 intl2 = tmp31(1236).intl;
                 string = intl2.string;
                 obj1[4] = string(lib(1236).t["ETE/oC"]);
-                obj1 = outer1_1(4706).confirm(obj1);
+                obj1 = outer1_1(4656).confirm(obj1);
                 dependencyMap = 1;
                 c4 = 1;
-                const obj8 = outer1_1(4706);
+                const obj8 = outer1_1(4656);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -108,13 +108,13 @@ export default function ChooseAccount() {
               return obj3;
             } else {
               if (arg1) {
-                obj = outer1_1(4310);
+                obj = outer1_1(4342);
                 obj.hideActionSheet();
-                obj1 = outer1_2(11861);
+                obj1 = outer1_2(11589);
                 obj1.removeAccount(lib.id);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp23) {
             c4 = tmp;
@@ -133,9 +133,9 @@ export default function ChooseAccount() {
     return applyArgumentsResult;
   }
   let tmp = createCacheKey();
-  let obj = _require(1499);
+  let obj = _require(1500);
   _require = obj.useNavigation();
-  let obj1 = _require(15168);
+  let obj1 = _require(15217);
   const multiAccountUsers = obj1.useMultiAccountUsers().multiAccountUsers;
   obj = { headerText: null, subHeader: null, backgroundImageSource: null, backgroundImageCover: true, contentStyle: null, children: null };
   let intl = _require(1236).intl;
@@ -143,8 +143,8 @@ export default function ChooseAccount() {
   obj = { variant: "text-sm/medium", color: "text-default", children: null };
   let intl2 = _require(1236).intl;
   obj[2] = intl2.string(_require(1236).t["0M5fN7"]);
-  obj[1] = callback(_require(4338).Text, obj);
-  obj[2] = multiAccountUsers(13292);
+  obj[1] = callback(_require(4734).Text, obj);
+  obj[2] = multiAccountUsers(13324);
   obj[4] = tmp.container;
   obj1 = { style: tmp.mainCard, children: null };
   let items = [
@@ -220,8 +220,8 @@ export default function ChooseAccount() {
   let obj3 = { themedColor: null, size: null, source: null };
   obj3[0] = multiAccountUsers(712).colors.TEXT_LINK;
   obj3[1] = _require(1297).Icon.Sizes.SMALL_20;
-  obj3[2] = multiAccountUsers(15170);
-  obj2[0] = callback(_require(8033).FormRow.Icon, obj3);
+  obj3[2] = multiAccountUsers(15219);
+  obj2[0] = callback(_require(8083).FormRow.Icon, obj3);
   let intl3 = _require(1236).intl;
   obj2[1] = intl3.string(_require(1236).t.bPP34Q);
   obj2[2] = tmp.addAccountLabel;
@@ -242,8 +242,8 @@ export default function ChooseAccount() {
       obj.track(outer1_9.LOGIN_VIEWED, { source: "choose_account_add_account" });
     }
   };
-  items[1] = callback(_require(8033).FormRow, obj2);
+  items[1] = callback(_require(8083).FormRow, obj2);
   obj1[1] = items;
   obj[5] = callback2(View, obj1);
-  return callback(multiAccountUsers(8570), obj);
+  return callback(multiAccountUsers(8609), obj);
 };

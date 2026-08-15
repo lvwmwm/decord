@@ -1,10 +1,10 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 9299
+// Function ID: 9300
 // Name: toggleGuildExpandedState
 // Dependencies: [709, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 8701 (toggleGuildExpandedState)
+// Module 9299 (toggleGuildExpandedState)
 const result = require("set").fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
 
 export const toggleGuildExpandedState = function toggleGuildExpandedState(guildId) {

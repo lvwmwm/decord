@@ -1,10 +1,10 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14671
+// Function ID: 14672
 // Name: computeIsFavoritesGuildVisible
-// Dependencies: [4165, 1394, 1913, 9779, 9770, 589, 2]
+// Dependencies: [4197, 1394, 1913, 9988, 9979, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14639 (computeIsFavoritesGuildVisible)
+// Module 14671 (computeIsFavoritesGuildVisible)
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";
 
@@ -34,8 +34,8 @@ function computeIsFavoritesGuildVisible(initializeFromUserSettings, handleConnec
         if (!favoriteGuildEnabled) {
           if (isFreemium) {
             if (!isIntroPopoverShown) {
-              isIntroPopoverShown = require(9779) /* hasOfferedFavoritesGuildOnboarding */.hasOfferedFavoritesGuildOnboarding();
-              const obj2 = require(9779) /* hasOfferedFavoritesGuildOnboarding */;
+              isIntroPopoverShown = require(9988) /* hasOfferedFavoritesGuildOnboarding */.hasOfferedFavoritesGuildOnboarding();
+              const obj2 = require(9988) /* hasOfferedFavoritesGuildOnboarding */;
             }
             isFreemium = isIntroPopoverShown;
           }
@@ -72,9 +72,9 @@ export default function useIsFavoritesGuildVisible() {
   return flag(isExperimentEnabled[5]).useStateFromStores(items, () => isFavoritesIntroPopoverShown(hasAccess, isFreemium, { isExperimentEnabled, isFreemium, hasAccess, isIntroPopoverShown: isFavoritesIntroPopoverShown, keepWhileViewing: flag }), items1);
 };
 export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
-  let obj = require(9770) /* useFavoritesAccess */;
+  let obj = require(9979) /* useFavoritesAccess */;
   const favoritesAccess = obj.getFavoritesAccess();
   obj = { isExperimentEnabled: favoritesAccess.isExperimentEnabled, isFreemium: favoritesAccess.isFreemium, hasAccess: favoritesAccess.hasAccess, isIntroPopoverShown: null, keepWhileViewing: true };
-  obj[3] = require(9779) /* hasOfferedFavoritesGuildOnboarding */.isFavoritesIntroPopoverShown();
+  obj[3] = require(9988) /* hasOfferedFavoritesGuildOnboarding */.isFavoritesIntroPopoverShown();
   return computeIsFavoritesGuildVisible(initializeFromUserSettings, handleConnectionOpen, obj);
 };

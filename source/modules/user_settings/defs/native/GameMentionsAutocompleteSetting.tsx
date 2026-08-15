@@ -1,9 +1,9 @@
-// Module ID: 14637
-// Function ID: 14638
+// Module ID: 14669
+// Function ID: 14670
 // Name: toggle
-// Dependencies: [8148, 10421, 1236, 6013, 4034, 2]
+// Dependencies: [8198, 10669, 1236, 7295, 4066, 2]
 
-// Module 14637 (toggle)
+// Module 14669 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -11,9 +11,9 @@ const toggle = createToggle.createToggle({
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.c0oFDw);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate() {
-    const GameMentionsMobileExperiment = require(6013) /* apexExperiment */.GameMentionsMobileExperiment;
+    const GameMentionsMobileExperiment = require(7295) /* apexExperiment */.GameMentionsMobileExperiment;
     return GameMentionsMobileExperiment.useConfig({ location: "GameMentionsInAutocomplete" }).enabled;
   },
   useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,
@@ -24,9 +24,9 @@ const obj = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.c0oFDw);
   },
-  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate() {
-    const GameMentionsMobileExperiment = require(6013) /* apexExperiment */.GameMentionsMobileExperiment;
+    const GameMentionsMobileExperiment = require(7295) /* apexExperiment */.GameMentionsMobileExperiment;
     return GameMentionsMobileExperiment.useConfig({ location: "GameMentionsInAutocomplete" }).enabled;
   },
   useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,

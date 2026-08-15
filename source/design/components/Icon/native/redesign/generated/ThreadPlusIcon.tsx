@@ -1,10 +1,10 @@
-// Module ID: 11681
-// Function ID: 11682
+// Module ID: 11398
+// Function ID: 11399
 // Name: ThreadPlusIcon
-// Dependencies: [19, 21, 712, 4064, 11682, 2]
+// Dependencies: [19, 21, 712, 4096, 11399, 2]
 // Exports: ThreadPlusIcon
 
-// Module 11681 (ThreadPlusIcon)
+// Module 11398 (ThreadPlusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ThreadPlusIcon = function ThreadPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11682) /* registerAsset */;
+  obj[0] = require(11399) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

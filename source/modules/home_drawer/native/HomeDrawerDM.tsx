@@ -1,10 +1,10 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15605
+// Function ID: 15606
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [19, 17, 1395, 3998, 4550, 1922, 505, 21, 4342, 589, 4535, 15556, 14631, 12648, 9792, 4338, 9850, 4039, 15519, 4203, 4200, 2]
+// Dependencies: [19, 17, 1395, 4030, 5043, 1922, 505, 21, 4661, 589, 4984, 15606, 14663, 12726, 10001, 4734, 10050, 4071, 15569, 4235, 4232, 2]
 // Exports: default
 
-// Module 15555 (HomeDrawerDMExpandedChildren)
+// Module 15605 (HomeDrawerDMExpandedChildren)
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import { View } from "ChannelListLayoutTypes";
 import { isMultiUserDM } from "createChannelRecord";
@@ -36,8 +36,8 @@ function HomeDrawerDMExpandedChildren(channel) {
     let tmp2 = null;
     if (null != channel) {
       if (stateFromStores1(tmp.type)) {
-        let channelName = channel(4535).computeChannelName(tmp, outer1_8, memo);
-        const obj = channel(4535);
+        let channelName = channel(4984).computeChannelName(tmp, outer1_8, memo);
+        const obj = channel(4984);
       } else {
         channelName = null;
       }
@@ -46,9 +46,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   const obj2 = channel(589);
-  const tmp3 = importDefault(14631)(channel, { unread: channel(15556).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14663)(channel, { unread: channel(15606).useBaseChannelUnreadBadgeState(channel, false).unread });
   c4 = tmp3;
-  const obj3 = channel(15556);
+  const obj3 = channel(15606);
   const items2 = [updateUserGuildSettingsInternal];
   stateFromStores1 = channel(589).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -85,10 +85,10 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(12648);
+        tmp5Result = tmp5(12726);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp5(9792).BellSlashIcon;
+        BellSlashIcon = tmp5(10001).BellSlashIcon;
       }
     } else {
       let obj = { style: null, children: null };
@@ -96,7 +96,7 @@ function HomeDrawerDMExpandedChildren(channel) {
       obj = { variant: "text-md/medium", style: null, lineClamp: 1, color: "text-default", children: null };
       obj[1] = _undefined.titleText;
       obj[4] = stateFromStores;
-      const items = [outer1_10(channel(4338).Text, obj), outer1_10(outer1_9, { size: "xs" })];
+      const items = [outer1_10(channel(4734).Text, obj), outer1_10(outer1_9, { size: "xs" })];
       obj[1] = items;
       return outer1_11(c4, obj);
     }
@@ -107,20 +107,20 @@ function HomeDrawerDMExpandedChildren(channel) {
       const obj = { channel: null, message: null, variant: "text-xs/medium", color: "text-strong", layout: null, muted: null };
       obj[0] = channel;
       obj[1] = tmp;
-      obj[4] = channel(4039).ChannelListLayoutTypes.COZY;
+      obj[4] = channel(4071).ChannelListLayoutTypes.COZY;
       obj[5] = memo.isMuted;
-      tmp2 = outer1_10(channel(9850).ChannelRowPreview, obj);
+      tmp2 = outer1_10(channel(10050).ChannelRowPreview, obj);
     }
     return tmp2;
   }, items5);
-  return callback(channel(15519).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(15569).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 const result = require("createChannelRecord").fileFinishedImporting("modules/home_drawer/native/HomeDrawerDM.tsx");
 
 export default function HomeDrawerDMExpandedChildrenWrapper(channel) {
-  const MobileHomeDrawerExperiment = require(4203) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4235) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;

@@ -1,10 +1,10 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 12603
+// Function ID: 12604
 // Name: useActiveSpeakerPillScrollHandler
-// Dependencies: [32, 19, 700, 705, 3974, 2]
+// Dependencies: [32, 19, 700, 705, 4006, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10916 (useActiveSpeakerPillScrollHandler)
+// Module 12603 (useActiveSpeakerPillScrollHandler)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import identity from "identity";
@@ -32,7 +32,7 @@ export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillSc
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
     return items;
-  }, first(3974).shallow), 2);
+  }, first(4006).shallow), 2);
   first = tmp[0];
   const dependencyMap = tmp3;
   let items = [tmp[1]];
@@ -55,5 +55,5 @@ export const useActiveSpeakerPillState = function useActiveSpeakerPillState() {
     const items = [, ];
     ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
     return items;
-  }, require(3974) /* isIterable */.shallow);
+  }, require(4006) /* isIterable */.shallow);
 };

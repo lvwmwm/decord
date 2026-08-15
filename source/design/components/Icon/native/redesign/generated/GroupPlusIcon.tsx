@@ -1,10 +1,10 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 9991
+// Function ID: 9992
 // Name: GroupPlusIcon
-// Dependencies: [19, 21, 712, 4064, 9783, 2]
+// Dependencies: [19, 21, 712, 4096, 9992, 2]
 // Exports: GroupPlusIcon
 
-// Module 9782 (GroupPlusIcon)
+// Module 9991 (GroupPlusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const GroupPlusIcon = function GroupPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9783) /* registerAsset */;
+  obj[0] = require(9992) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

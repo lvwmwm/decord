@@ -1,11 +1,11 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8935
+// Function ID: 8936
 // Name: getProfileProperties
-// Dependencies: [8853, 5311, 7188, 4364, 1990, 4431, 3998, 1922, 7150, 8848, 676, 505, 1435, 8377, 698, 4549, 8857, 2]
+// Dependencies: [8936, 5289, 5407, 4652, 1990, 4559, 4030, 1922, 5365, 8931, 676, 505, 1435, 8416, 698, 5042, 8940, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8852 (getProfileProperties)
-import map from "map";
+// Module 8935 (getProfileProperties)
+import initialize from "initialize";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
 import recomputeAffinities from "recomputeAffinities";
@@ -129,7 +129,7 @@ function getTrackUserProfileProperties(userId) {
     if (showGuildProfile) {
       tmp3 = guildId;
     }
-    const displayProfile = require(8377) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
+    const displayProfile = require(8416) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
     let member = null;
     if (showGuildProfile) {
       member = null;
@@ -227,7 +227,7 @@ function getTrackUserProfileProperties(userId) {
       const _HermesInternal = HermesInternal;
       combined = "" + status + "-desktop";
     }
-    const obj6 = require(8377) /* useDisplayProfile */;
+    const obj6 = require(8416) /* useDisplayProfile */;
     tmp14 = StatusTypes;
   }
 }
@@ -244,9 +244,9 @@ function trackUserProfileAction(applicationId) {
   ({ guildId, channelId, messageId, roleId, widgetType, analyticsLocations, action, section } = applicationId);
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(applicationId));
   const userId = applicationId.userId;
   if (null == userId) {
@@ -354,7 +354,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
   let timeToInteractiveMs;
   let timeToLoadMs;
   let viewStartedAt;
-  let trackResult = require(8857) /* isUserProfilePerformanceAnalyticsEnabled */;
+  let trackResult = require(8940) /* isUserProfilePerformanceAnalyticsEnabled */;
   if (trackResult.isUserProfilePerformanceAnalyticsEnabled("UserProfileAnalyticsUtils")) {
     ({ timeToInteractiveMs, timeToLoadMs, timeToFetchMs } = userId);
     let num = timeToInteractiveMs;
@@ -379,9 +379,9 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
     }
     if (!tmp5) {
       trackResult = {};
-      let tmpResult = tmp(4549);
+      let tmpResult = tmp(5042);
       const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(guildId));
-      tmpResult = tmp(4549);
+      tmpResult = tmp(5042);
       const merged1 = Object.assign(tmpResult.collectChannelAnalyticsMetadataFromId(channelId));
       const merged2 = Object.assign(getTrackUserProfileProperties(userId));
       userId = userId.userId;
@@ -438,9 +438,9 @@ export const trackUserProfileActivityJoined = function trackUserProfileActivityJ
   ({ guildId, channelId, analyticsLocations, activityName, activityPlatform, activitySessionId, applicationId } = userId);
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(userId));
   userId = userId.userId;
   if (null == userId) {
@@ -510,9 +510,9 @@ export const trackUserProfileActivityAction = function trackUserProfileActivityA
   ({ guildId, channelId, analyticsLocations, action, display, stream, voiceChannelId } = userId);
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(userId));
   userId = userId.userId;
   if (null == userId) {
@@ -630,9 +630,9 @@ export const trackUserProfileBadgeAction = function trackUserProfileBadgeAction(
   }
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(userId));
   const userId2 = userId.userId;
   if (null == userId2) {
@@ -747,9 +747,9 @@ export const trackUserProfileEditAction = function trackUserProfileEditAction(us
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(698);
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged2 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged2 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(userId));
   obj = { application_id: applicationId, application_linked: null };
   let tmp6 = null;
@@ -787,9 +787,9 @@ export const trackUserProfileEditSaved = function trackUserProfileEditSaved(user
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(698);
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged2 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged2 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(userId));
   obj.location_stack = analyticsLocations;
   obj.widget_edited = widgetEdited;
@@ -815,9 +815,9 @@ export const trackUserProfileWishlistAction = function trackUserProfileWishlistA
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(698);
-  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4549) /* collectGuildAnalyticsMetadata */;
-  const merged2 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged2 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(userId));
   obj.location_stack = analyticsLocations;
   obj.action_type = action;

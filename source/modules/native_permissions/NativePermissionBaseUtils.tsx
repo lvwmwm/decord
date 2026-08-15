@@ -1,9 +1,9 @@
-// Module ID: 4928
-// Function ID: 4929
+// Module ID: 4844
+// Function ID: 4845
 // Name: requestAuthorization
-// Dependencies: [5, 4929, 4579, 676, 698, 4930, 1236, 2]
+// Dependencies: [5, 4845, 4839, 676, 698, 4846, 1236, 2]
 
-// Module 4928 (requestAuthorization)
+// Module 4844 (requestAuthorization)
 import setPermission from "setPermission";
 import initialize from "initialize";
 import NativePermissionStatus from "NativePermissionStatus";

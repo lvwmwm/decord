@@ -1,10 +1,10 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9997
+// Function ID: 9998
 // Name: InboxIcon
-// Dependencies: [19, 21, 712, 4064, 9789, 2]
+// Dependencies: [19, 21, 712, 4096, 9998, 2]
 // Exports: InboxIcon
 
-// Module 9788 (InboxIcon)
+// Module 9997 (InboxIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const InboxIcon = function InboxIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9789) /* registerAsset */;
+  obj[0] = require(9998) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

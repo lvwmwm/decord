@@ -1,10 +1,10 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 10926
+// Function ID: 10927
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [5311, 5794, 5797, 2]
+// Dependencies: [5289, 7144, 7147, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11228 (getShouldShowAppAuthPrompt)
+// Module 10926 (getShouldShowAppAuthPrompt)
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
 
@@ -16,7 +16,7 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
     return false;
   } else {
     let response = dependencyMap;
-    const authorizationApp = require(5794) /* getAuthorizationApp */.getAuthorizationApp(application);
+    const authorizationApp = require(7144) /* getAuthorizationApp */.getAuthorizationApp(application);
     if (null == authorizationApp) {
       return false;
     } else {
@@ -40,9 +40,9 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
           return tmp4;
         } else if (fetchStateForApplication.getFetchStateForApplication(parentId) === FetchState.NOT_FETCHED) {
           const items = [parentId];
-          response = importDefault(5797).fetch(items);
+          response = importDefault(7147).fetch(items);
           let flag2 = false;
-          const obj2 = importDefault(5797);
+          const obj2 = importDefault(7147);
         } else {
           flag2 = !(obj.getFetchStateForApplication(parentId) === tmp5.FETCHED && null != obj.getNewestTokenForApplication(parentId));
           const tmp6 = obj.getFetchStateForApplication(parentId) === tmp5.FETCHED && null != obj.getNewestTokenForApplication(parentId);
@@ -51,6 +51,6 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
         return false;
       }
     }
-    const obj3 = require(5794) /* getAuthorizationApp */;
+    const obj3 = require(7144) /* getAuthorizationApp */;
   }
 };

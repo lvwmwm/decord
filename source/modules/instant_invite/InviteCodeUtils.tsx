@@ -1,10 +1,10 @@
-// Module ID: 4328
-// Function ID: 4329
+// Module ID: 4360
+// Function ID: 4361
 // Name: readSnowflake
-// Dependencies: [32, 11, 1483, 4329, 2]
+// Dependencies: [32, 11, 1484, 4361, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
-// Module 4328 (readSnowflake)
+// Module 4360 (readSnowflake)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -34,7 +34,7 @@ function generateInviteKeyFromExtraData(closure_1) {
       obj[message] = targetMessageId;
     }
   }
-  const json = importDefault(1483).stringify(obj);
+  const json = importDefault(1484).stringify(obj);
   let combined = baseCode;
   if ("" !== json) {
     const _HermesInternal = HermesInternal;
@@ -57,21 +57,21 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       substr = search.substring(1);
     }
     try {
-      let obj = importDefault(1483);
+      let obj = importDefault(1484);
       const parsed = obj.parse(substr);
-      const firstQueryStringValue = require(4329) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
-      const obj2 = require(4329) /* getFirstQueryStringValue */;
+      const firstQueryStringValue = require(4361) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+      const obj2 = require(4361) /* getFirstQueryStringValue */;
       const tmp10 = readSnowflake;
       const tmp6 = require;
-      const tmp12 = readSnowflake(require(4329) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
+      const tmp12 = readSnowflake(require(4361) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
       obj = { baseCode: null, guildScheduledEventId: null, targetChannelId: null, targetMessageId: null };
       obj[0] = inviteHostRemainingPath;
       obj[1] = firstQueryStringValue;
       obj[2] = tmp12;
       let tmp10Result;
       if (null != tmp12) {
-        tmp10Result = tmp10(tmp6(4329).getFirstQueryStringValue(parsed[message]));
-        const tmp6Result = tmp6(4329);
+        tmp10Result = tmp10(tmp6(4361).getFirstQueryStringValue(parsed[message]));
+        const tmp6Result = tmp6(4361);
       }
       obj[3] = tmp10Result;
       return generateInviteKeyFromExtraData(obj);
@@ -90,12 +90,12 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     obj[0] = tmp2;
     return obj;
   } else {
-    const parsed = importDefault(1483).parse(tmp3);
-    const obj4 = importDefault(1483);
+    const parsed = importDefault(1484).parse(tmp3);
+    const obj4 = importDefault(1484);
     const tmp12 = require;
-    const firstQueryStringValue = require(4329) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
-    const obj5 = require(4329) /* getFirstQueryStringValue */;
-    const firstQueryStringValue1 = require(4329) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]);
+    const firstQueryStringValue = require(4361) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+    const obj5 = require(4361) /* getFirstQueryStringValue */;
+    const firstQueryStringValue1 = require(4361) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]);
     let tmp4;
     if (typeof firstQueryStringValue1 === "string") {
       let tmp9Result = tmp9(11);
@@ -109,7 +109,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     obj[2] = tmp4;
     let tmp5;
     if (null != tmp4) {
-      const firstQueryStringValue2 = tmp12(4329).getFirstQueryStringValue(parsed[message]);
+      const firstQueryStringValue2 = tmp12(4361).getFirstQueryStringValue(parsed[message]);
       let tmp8;
       if (typeof firstQueryStringValue2 === "string") {
         tmp9Result = tmp9(11);
@@ -118,7 +118,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
         }
       }
       tmp5 = tmp8;
-      const tmp12Result = tmp12(4329);
+      const tmp12Result = tmp12(4361);
     }
     obj[3] = tmp5;
     return obj;

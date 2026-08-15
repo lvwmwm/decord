@@ -1,8 +1,8 @@
-// Module ID: 15129
-// Function ID: 15130
-// Dependencies: [19, 17, 21, 4342, 712, 1499, 1628, 5828, 13917, 5435, 13914, 2]
+// Module ID: 15178
+// Function ID: 15179
+// Dependencies: [19, 17, 21, 4661, 712, 1500, 1629, 6286, 13949, 6291, 13946, 2]
 
-// Module 15129
+// Module 15178
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,14 +14,14 @@ obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1499);
+  let obj = _require(1500);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
   obj = { paddingBottom: null };
-  obj[0] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
   obj[1] = obj;
   const obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(13917).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13949).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
@@ -40,7 +40,7 @@ const memoResult = require("noop").memo(function DevToolsPerformanceTestingScree
     };
     return outer1_4(callback(outer1_2[9]).TableRow, obj, tmp);
   });
-  obj[2] = jsx(_require(5828).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(6286).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

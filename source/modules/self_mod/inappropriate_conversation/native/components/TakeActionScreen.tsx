@@ -1,10 +1,10 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15176
+// Function ID: 15177
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3998, 1922, 10311, 21, 4342, 712, 589, 10346, 10349, 1499, 9307, 7850, 10324, 8086, 4062, 1236, 4303, 4061, 4777, 10357, 8833, 4846, 8022, 4058, 4338, 2]
+// Dependencies: [5, 32, 19, 17, 4030, 1922, 10569, 21, 4661, 712, 589, 10603, 10606, 1500, 9736, 6553, 10582, 8136, 4094, 1236, 4335, 4093, 4745, 10614, 9436, 6851, 6694, 4090, 4734, 2]
 // Exports: default
 
-// Module 15127 (TakeActionButtons)
+// Module 15176 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -96,7 +96,7 @@ export default function TakeActionButtons(senderId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -114,23 +114,23 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(8086);
+              let obj2 = outer1_0(8136);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
               obj1[0] = obj2.submitReportForInappropriateConversationSafetyAlert(outer1_5, () => {
                 dependencyMap(true);
-                let obj = v1(4062);
+                let obj = v1(4094);
                 obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
-                obj[2] = tmp4(4303).CircleCheckIcon;
+                obj[2] = tmp4(4335).CircleCheckIcon;
                 obj[3] = outer1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
               }, () => {
                 const intl = tmp4(1236).intl;
-                tmp4(4061).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
+                tmp4(4093).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
               });
               return obj1;
             } else {
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(7850);
+          obj = v0(6553);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10324).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10582).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

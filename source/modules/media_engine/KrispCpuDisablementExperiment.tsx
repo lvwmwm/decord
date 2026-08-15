@@ -1,10 +1,10 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13119
+// Function ID: 13120
 // Name: getKrispCpuDisablementConfig
-// Dependencies: [1471, 2]
+// Dependencies: [1472, 2]
 // Exports: getKrispCpuDisablementConfig
 
-// Module 13191 (getKrispCpuDisablementConfig)
+// Module 13119 (getKrispCpuDisablementConfig)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { consecutiveFailures: 3 }, 3: { consecutiveFailures: 5 } };

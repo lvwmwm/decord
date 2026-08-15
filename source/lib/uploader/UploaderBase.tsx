@@ -1,9 +1,9 @@
-// Module ID: 7366
-// Function ID: 7367
+// Module ID: 7584
+// Function ID: 7585
 // Name: _fileSize
-// Dependencies: [5, 676, 4335, 3, 652, 12, 4955, 4960, 4921, 4922, 2]
+// Dependencies: [5, 676, 4663, 3, 652, 12, 4871, 4876, 4836, 4837, 2]
 
-// Module 7366 (_fileSize)
+// Module 7584 (_fileSize)
 import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";
@@ -112,7 +112,7 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -351,7 +351,7 @@ prototype["cancelItem"] = function cancelItem(itemId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

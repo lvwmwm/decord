@@ -1,10 +1,10 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15346
+// Function ID: 15347
 // Name: TypingIndicator
-// Dependencies: [19, 17, 21, 4342, 712, 4278, 1363, 1297, 2]
+// Dependencies: [19, 17, 21, 4661, 712, 4310, 1363, 1297, 2]
 // Exports: TypingIndicator
 
-// Module 15297 (TypingIndicator)
+// Module 15346 (TypingIndicator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,7 +25,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 
 export const TypingIndicator = function TypingIndicator(style) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
-  const tmp2 = callback(obj.isThemeLight(importDefault(4278)()));
+  const tmp2 = callback(obj.isThemeLight(importDefault(4310)()));
   obj = { style: items, children: jsx(require(1297) /* Button */.Ellipsis, obj) };
   items = [tmp2.ellipsisWrapper, style.style];
   obj = { style: items1, dotStyle: tmp2.ellipsisDot, disableScale: true };

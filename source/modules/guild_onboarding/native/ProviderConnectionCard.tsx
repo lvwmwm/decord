@@ -1,10 +1,10 @@
-// Module ID: 5805
-// Function ID: 5806
+// Module ID: 7155
+// Function ID: 7156
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 676, 21, 4278, 5063, 1236, 5806, 5807, 698, 4549, 1435, 1363, 1297, 4286, 5804, 2]
+// Dependencies: [5, 19, 676, 21, 4310, 5097, 1236, 7156, 7157, 698, 5042, 1435, 1363, 1297, 4318, 7154, 2]
 // Exports: default
 
-// Module 5805 (ProviderConnectionCard)
+// Module 7155 (ProviderConnectionCard)
 import getPlatformUserUrl from "getPlatformUserUrl";
 import noop from "noop";
 import { AnalyticEvents } from "ME";
@@ -59,7 +59,7 @@ export default function ProviderConnectionCard(connection) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ export default function ProviderConnectionCard(connection) {
             } else {
               const obj1 = {};
               const obj5 = v0(698);
-              const merged = Object.assign(outer1_0(4549).collectGuildAnalyticsMetadata(v0));
+              const merged = Object.assign(outer1_0(5042).collectGuildAnalyticsMetadata(v0));
               obj1.connection_type = "provider";
               const provider_id = outer1_0.provider_id;
               let c0 = provider_id;
@@ -102,7 +102,7 @@ export default function ProviderConnectionCard(connection) {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           v0 = tmp;

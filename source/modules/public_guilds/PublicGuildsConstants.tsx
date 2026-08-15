@@ -1,9 +1,9 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8254
+// Function ID: 8255
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
 // Dependencies: [676, 506, 2]
 
-// Module 8208 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+// Module 8254 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
 import importAllResult from "fromString";
 
 const items = [, , , , , , , , , , , , , ];

@@ -1,10 +1,10 @@
-// Module ID: 5441
-// Function ID: 5442
+// Module ID: 6296
+// Function ID: 6297
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4342, 712, 4779, 2]
+// Dependencies: [109, 19, 17, 21, 4661, 712, 4747, 2]
 // Exports: TableRowIcon
 
-// Module 5441 (TableRowIcon)
+// Module 6296 (TableRowIcon)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -57,12 +57,12 @@ export const TableRowIcon = function TableRowIcon(arg0) {
     if ("default" === variant) {
       let tmp7 = require;
       let tmp8 = dependencyMap;
-      let REFRESH_SMALL_16 = require(4779) /* IconSizes */.IconSizes.MEDIUM;
+      let REFRESH_SMALL_16 = require(4747) /* IconSizes */.IconSizes.MEDIUM;
       let tmp6 = dependencyMap;
     } else {
       let tmp5 = require;
       tmp6 = dependencyMap;
-      REFRESH_SMALL_16 = require(4779) /* IconSizes */.IconSizes.REFRESH_SMALL_16;
+      REFRESH_SMALL_16 = require(4747) /* IconSizes */.IconSizes.REFRESH_SMALL_16;
     }
     let str2 = "md";
     let str3 = "md";
@@ -104,7 +104,7 @@ export const TableRowIcon = function TableRowIcon(arg0) {
       obj[0] = color;
       obj[1] = source;
       obj[2] = REFRESH_SMALL_16;
-      tmp11Result = tmp11(importDefault(4779), obj);
+      tmp11Result = tmp11(importDefault(4747), obj);
     }
     obj[1] = tmp11Result;
     tmp11Result = tmp11(tmp12, obj);

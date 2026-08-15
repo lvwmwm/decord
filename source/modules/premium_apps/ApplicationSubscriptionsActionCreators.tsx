@@ -1,10 +1,10 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 13863
+// Function ID: 13864
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 10621, 5939, 2]
+// Dependencies: [5, 676, 709, 8736, 7223, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13831 (transformSubscriptionListingToSku)
+// Module 13863 (transformSubscriptionListingToSku)
 import set from "set";
 import ME from "ME";
 
@@ -165,7 +165,7 @@ function _fetchSubscriptionListingForPlan() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -287,7 +287,7 @@ function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp33) {
           closure_5 = tmp33;

@@ -1,9 +1,9 @@
-// Module ID: 3998
-// Function ID: 3999
+// Module ID: 4030
+// Function ID: 4031
 // Name: markAllUserIdListsStale
-// Dependencies: [32, 3999, 1922, 676, 709, 589, 2]
+// Dependencies: [32, 4031, 1922, 676, 709, 589, 2]
 
-// Module 3998 (markAllUserIdListsStale)
+// Module 4030 (markAllUserIdListsStale)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";

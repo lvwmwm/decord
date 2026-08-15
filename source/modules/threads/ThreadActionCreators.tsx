@@ -1,9 +1,9 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7512
+// Function ID: 7513
 // Name: patchThread
-// Dependencies: [5, 1395, 1218, 1391, 3989, 7292, 3991, 7302, 676, 1398, 530, 709, 4705, 1236, 4549, 7303, 7304, 7307, 7308, 1370, 1402, 2]
+// Dependencies: [5, 1395, 1218, 1391, 4021, 7513, 4023, 7523, 676, 1398, 530, 709, 4827, 1236, 5042, 7524, 7525, 7528, 7529, 1370, 1402, 2]
 
-// Module 7291 (patchThread)
+// Module 7512 (patchThread)
 import listKey from "listKey";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
@@ -95,7 +95,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -227,7 +227,7 @@ export default {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -413,7 +413,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -463,7 +463,7 @@ export default {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp9) {
           c0 = tmp;
           throw tmp9;
@@ -510,7 +510,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -588,7 +588,7 @@ export default {
                 outer1_18(outer1_0, false);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -634,7 +634,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -826,7 +826,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -972,16 +972,16 @@ export default {
     })();
   },
   openThreadCreationForMobile(channel, id, Message) {
-    let obj = require(4549) /* collectGuildAnalyticsMetadata */;
+    let obj = require(5042) /* collectGuildAnalyticsMetadata */;
     obj = { location: Message, channel_id: channel.id, guild_id: channel.guild_id };
     obj.trackWithMetadata(constants.THREAD_CREATION_STARTED, obj);
     obj = { parentMessageId: id, isPrivate: false, location: Message };
-    importDefault(7303).changeThreadSettings(channel.id, obj);
+    importDefault(7524).changeThreadSettings(channel.id, obj);
     if (null == id) {
       const obj1 = { channelId: null, command: null, section: null };
       obj1[0] = channel.id;
-      require(7304) /* setActiveCommand */.setActiveCommand(obj1);
-      const tmpResult = require(7304) /* setActiveCommand */;
+      require(7525) /* setActiveCommand */.setActiveCommand(obj1);
+      const tmpResult = require(7525) /* setActiveCommand */;
     }
   },
   setNotificationSettings(channel, muteSettings) {
@@ -1000,7 +1000,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

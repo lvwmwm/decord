@@ -1,10 +1,10 @@
-// Module ID: 5295
-// Function ID: 5296
+// Module ID: 6780
+// Function ID: 6781
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4205, 4706, 5296, 2007, 2]
+// Dependencies: [19, 17, 21, 4237, 4656, 6781, 2007, 2]
 // Exports: default
 
-// Module 5295 (openQuarantineModeInfoModal)
+// Module 6780 (openQuarantineModeInfoModal)
 import "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,7 +14,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/quarantine/open
 
 export default function openQuarantineModeInfoModal() {
   Keyboard.dismiss();
-  let obj = require(4205) /* getBestActiveInput */;
+  let obj = require(4237) /* getBestActiveInput */;
   const bestActiveInput = obj.getBestActiveInput();
   if (bestActiveInput != null) {
     bestActiveInput.blur();
@@ -30,5 +30,5 @@ export default function openQuarantineModeInfoModal() {
       });
     }
   };
-  importDefault(4706).openLazy(obj);
+  importDefault(4656).openLazy(obj);
 };

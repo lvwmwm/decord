@@ -1,8 +1,8 @@
-// Module ID: 15792
-// Function ID: 15793
-// Dependencies: [19, 1391, 676, 21, 15793, 7303, 8425, 589, 8424, 1236, 7856, 5390, 2]
+// Module ID: 15842
+// Function ID: 15843
+// Dependencies: [19, 1391, 676, 21, 15843, 7524, 8464, 589, 8463, 1236, 8071, 6804, 2]
 
-// Module 15792
+// Module 15842
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
@@ -16,7 +16,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const optional = chatInputRef.optional;
   let ref;
   const dependencyMap = arg1;
-  let obj = chatInputRef(15793);
+  let obj = chatInputRef(15843);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -72,8 +72,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const stateFromStores = chatInputRef(589).useStateFromStores(items4, () => outer1_4.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    str = tmp(8424).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-    const tmpResult = tmp(8424);
+    str = tmp(8463).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+    const tmpResult = tmp(8463);
   }
   const intl = tmp(1236).intl;
   const string = intl.string;
@@ -84,7 +84,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
     stringResult = string(t.j3XWjD);
   }
   obj = { defaultValue: null, errorMessage: null, label: null, accessibilityLabel: null, accessibilityHint: null, required: null, isClearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" };
-  obj[0] = threadSettingsDraft(5390)(ref);
+  obj[0] = threadSettingsDraft(6804)(ref);
   obj[1] = renderErrorResult;
   obj[2] = stringResult;
   obj[3] = stringResult;
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   }
   obj[12] = str;
   obj[13] = arg1;
-  return jsx(chatInputRef(7856).TextInput, { defaultValue: null, errorMessage: null, label: null, accessibilityLabel: null, accessibilityHint: null, required: null, isClearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" });
+  return jsx(chatInputRef(8071).TextInput, { defaultValue: null, errorMessage: null, label: null, accessibilityLabel: null, accessibilityHint: null, required: null, isClearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" });
 }));
 const result = require("ME").fileFinishedImporting("modules/threads/native/components/thread_creation/ThreadCreationTitleInput.tsx");
 

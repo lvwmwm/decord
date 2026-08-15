@@ -1,9 +1,9 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16758
+// Function ID: 16759
 // Name: getTargetType
-// Dependencies: [1931, 676, 1208, 3943, 11, 2]
+// Dependencies: [1931, 676, 1208, 3975, 11, 2]
 
-// Module 16712 (getTargetType)
+// Module 16758 (getTargetType)
 import "toJS";
 import ME from "ME";
 
@@ -273,7 +273,7 @@ const prototype = function AuditLogRecord(timestampEnd) {
   tmp5.actionType = getActionType(tmp5.action);
   ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
   if (timestampStart == null) {
-    const tmp8 = importDefault(3943);
+    const tmp8 = importDefault(3975);
     timestampStart = tmp8(importDefault(11).extractTimestamp(tmp5.id));
     const obj = importDefault(11);
   }

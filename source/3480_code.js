@@ -4,18 +4,18 @@
 // Dependencies: [3481, 3482, 3483, 3484, 3485]
 
 // Module 3480 (code)
-import futureSeconds from "futureSeconds";
+import formatDistance from "formatDistance";
 import buildFormatLongFn from "buildFormatLongFn";
 import formatRelative from "formatRelative";
 import buildLocalizeFn from "buildLocalizeFn";
 import module_3485 from "module_3485";
 
-if (!futureSeconds) {
+if (!formatDistance) {
   let obj = { default: null };
-  obj[0] = futureSeconds;
+  obj[0] = formatDistance;
   let tmp3 = obj;
 } else {
-  tmp3 = futureSeconds;
+  tmp3 = formatDistance;
 }
 if (!buildFormatLongFn) {
   obj = { default: null };
@@ -46,5 +46,5 @@ if (!module_3485) {
   tmp11 = module_3485;
 }
 
-export default { code: "fi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default { code: "cs", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

@@ -1,10 +1,10 @@
-// Module ID: 11732
-// Function ID: 11733
+// Module ID: 11452
+// Function ID: 11453
 // Name: _fetchGuildHomeSettings
-// Dependencies: [5, 1982, 1391, 4556, 4557, 676, 709, 530, 11733, 698, 4353, 11, 2]
+// Dependencies: [5, 1982, 1391, 5048, 5049, 676, 709, 530, 11453, 698, 4768, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11732 (_fetchGuildHomeSettings)
+// Module 11452 (_fetchGuildHomeSettings)
 import closure_3 from "ME";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -38,8 +38,8 @@ function _fetchGuildHomeSettings() {
       obj4[1] = callback;
       obj2.dispatch(obj4);
       lib = yield "HermesInternal";
-      dependencyMap = callback(11733).settingsFromServer(lib.body);
-      const obj8 = callback(11733);
+      dependencyMap = callback(11453).settingsFromServer(lib.body);
+      const obj8 = callback(11453);
       const obj6 = { type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS", guildId: null, homeSettings: null };
       obj6[1] = callback;
       obj6[2] = dependencyMap;
@@ -76,7 +76,7 @@ function _fetchNewMemberActions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -130,8 +130,8 @@ function _fetchNewMemberActions() {
             return obj5;
           } else {
             lib = arg1;
-            dependencyMap = callback(11733).actionsFromServer(lib.body);
-            const obj11 = callback(11733);
+            dependencyMap = callback(11453).actionsFromServer(lib.body);
+            const obj11 = callback(11453);
             const obj6 = { type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS", guildId: null, memberActions: null };
             obj6[1] = callback;
             obj6[2] = dependencyMap;
@@ -270,8 +270,8 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(clos
       obj.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj);
     }
     if (flag) {
-      require(4353) /* transitionToChannel */.transitionToChannel(channelId, { navigationReplace: false });
-      const obj3 = require(4353) /* transitionToChannel */;
+      require(4768) /* transitionToChannel */.transitionToChannel(channelId, { navigationReplace: false });
+      const obj3 = require(4768) /* transitionToChannel */;
     }
   }
 };
@@ -296,7 +296,7 @@ export const selectNewMemberActionChannel = function selectNewMemberActionChanne
     obj[3] = actionForChannel.actionType;
     obj.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj);
   }
-  require(4353) /* transitionToChannel */.transitionToChannel(id);
+  require(4768) /* transitionToChannel */.transitionToChannel(id);
 };
 export const completeNewMemberAction = function completeNewMemberAction(c0, c1) {
   let obj = importDefault(709);

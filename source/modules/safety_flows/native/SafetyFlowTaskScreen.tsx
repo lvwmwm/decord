@@ -1,10 +1,10 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17093
+// Function ID: 17094
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4342, 7873, 7874, 4775, 4338, 11401, 17045, 11166, 2]
+// Dependencies: [19, 21, 4661, 5440, 5445, 4733, 4734, 11114, 17091, 11964, 2]
 // Exports: default
 
-// Module 17047 (SafetyFlowTaskScreen)
+// Module 17093 (SafetyFlowTaskScreen)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -44,23 +44,23 @@ export default function SafetyFlowTaskScreen(action) {
   }
   const items = [tmp6, , ];
   let obj = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: action.title };
-  items[1] = callback(require(4338) /* Text */.Text, obj);
+  items[1] = callback(require(4734) /* Text */.Text, obj);
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     obj = { variant: "text-md/medium", color: null, style: null, children: null };
     obj[1] = subtitleColor;
     obj[2] = tmp2.header;
     obj[3] = subtitle;
-    tmp7Result = tmp7(tmp4(4338).Text, obj);
+    tmp7Result = tmp7(tmp4(4734).Text, obj);
   }
   obj = { children: null };
   items[2] = tmp7Result;
-  const items1 = [closure_4(require(4775) /* Stack */.Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
+  const items1 = [closure_4(require(4733) /* Stack */.Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   obj[0] = items1;
-  children = [closure_4(require(7874) /* ModalContent */.ModalContent, obj), ];
+  children = [closure_4(require(5445) /* ModalContent */.ModalContent, obj), ];
   if (undefined === footer) {
     if (withLogout) {
-      withLogout = tmp7(importDefault(17045), {});
+      withLogout = tmp7(importDefault(17091), {});
     }
     const items3 = [withLogout, ];
     tmp7Result = null != action;
@@ -69,13 +69,13 @@ export default function SafetyFlowTaskScreen(action) {
       obj1[1] = action;
       obj1[2] = onAction;
       obj1[3] = submitting;
-      tmp7Result = tmp7(tmp4(11166).ModalActionButton, obj1);
+      tmp7Result = tmp7(tmp4(11964).ModalActionButton, obj1);
     }
     const obj2 = { children: null };
     items3[1] = tmp7Result;
     obj2[0] = items3;
-    footer = tmp3(tmp4(11401).ModalFooter, obj2);
+    footer = tmp3(tmp4(11114).ModalFooter, obj2);
   }
   children[1] = footer;
-  return closure_4(require(7873) /* ModalScreen */.ModalScreen, { children });
+  return closure_4(require(5440) /* ModalScreen */.ModalScreen, { children });
 };

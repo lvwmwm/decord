@@ -1,9 +1,9 @@
-// Module ID: 14568
-// Function ID: 14569
+// Module ID: 14600
+// Function ID: 14601
 // Name: toggle
-// Dependencies: [10837, 8148, 589, 1236, 10421, 10848, 2]
+// Dependencies: [12548, 8198, 589, 1236, 10669, 12555, 2]
 
-// Module 14568 (toggle)
+// Module 14600 (toggle)
 import getUserAgnosticState from "getUserAgnosticState";
 import createToggle from "createToggle";
 
@@ -13,7 +13,7 @@ createToggle = {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["9CSZJm"]);
   },
-  parent: require("MobileSetting").MobileSetting.VOICE,
+  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAndroidMobileOverlaySettingValue() {
     const items = [getUserAgnosticState];
     return require(589) /* initialize */.useStateFromStores(items, () => enabled.getEnabled());

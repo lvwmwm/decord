@@ -1,31 +1,31 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14267
+// Function ID: 14268
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4338, 1236, 2303, 2]
+// Dependencies: [21, 4734, 1236, 2335, 2]
 // Exports: default
 
-// Module 14235 (useScheduleTimeControlsRowProps)
+// Module 14267 (useScheduleTimeControlsRowProps)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
 
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
-    let obj = { subLabel: null, trailing: "r" };
+    let obj = { subLabel: null, trailing: "a" };
     obj = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(importDefault(2303).fOBIZH);
-    obj[0] = jsx(require(4338) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
+    obj[2] = intl.string(importDefault(2335).fOBIZH);
+    obj[0] = jsx(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
     return obj;
   } else {
     const obj1 = { subLabel: null, trailing: null };
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj2 = { count: null };
     obj2[0] = arr.length;
-    obj1[0] = intl2.formatToPlainString(importDefault(2303).XfwcpX, obj2);
+    obj1[0] = intl2.formatToPlainString(importDefault(2335).XfwcpX, obj2);
     const intl3 = require(1236) /* getSystemLocale */.intl;
     const string = intl3.string;
-    const tmp11 = importDefault(2303);
+    const tmp11 = importDefault(2335);
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {
@@ -33,7 +33,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
     }
     obj = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj[2] = stringResult;
-    obj1[1] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: null });
+    obj1[1] = jsx(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: null });
     return obj1;
   }
 };

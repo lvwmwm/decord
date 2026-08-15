@@ -1,10 +1,10 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15529
+// Function ID: 15530
 // Name: fetchMobileGameCommunities
-// Dependencies: [15025, 676, 584, 687, 709, 530, 1483, 2]
+// Dependencies: [15074, 676, 584, 687, 709, 530, 1484, 2]
 // Exports: dismissGuild, fetchMobileGameCommunities, fetchMobileGameCommunitiesIfStale
 
-// Module 15479 (fetchMobileGameCommunities)
+// Module 15529 (fetchMobileGameCommunities)
 import set from "set";
 import { Endpoints } from "ME";
 import importDefaultResult from "fails";
@@ -29,7 +29,7 @@ export const fetchMobileGameCommunities = function fetchMobileGameCommunities(ga
   const HTTP = _require(530).HTTP;
   let obj = { url: Endpoints.MOBILE_GAME_COMMUNITIES, query: null, oldFormErrors: true, rejectWithError: true };
   obj = { game_ids: gameIdsForDetectedGames, limit: num, ignored_guild_ids: items };
-  obj[1] = importDefault(1483).stringify(obj);
+  obj[1] = importDefault(1484).stringify(obj);
   const value = HTTP.get(obj);
   return value.then((body) => {
     outer1_5.succeed();
@@ -69,7 +69,7 @@ export const fetchMobileGameCommunities = function fetchMobileGameCommunities(ga
               obj[1] = callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items });
               let value = HTTP.get(obj);
               let obj2 = callback(dependencyMap[6]);
-              value.then(() => { ... }, () => { ... }).catch(/* F118553 */ function() { ... });
+              value.then(() => { ... }, () => { ... }).catch(/* F118736 */ function() { ... });
             });
           }
         }).catch(() => {
@@ -99,7 +99,7 @@ export const fetchMobileGameCommunitiesIfStale = function fetchMobileGameCommuni
       obj[0] = arr;
       obj[1] = 20;
       obj[2] = items;
-      obj[1] = importDefault(1483).stringify(obj);
+      obj[1] = importDefault(1484).stringify(obj);
       const value = HTTP.get(obj);
       return value.then((body) => {
         outer1_5.succeed();
@@ -139,7 +139,7 @@ export const fetchMobileGameCommunitiesIfStale = function fetchMobileGameCommuni
                   obj[1] = callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items });
                   let value = HTTP.get(obj);
                   let obj2 = callback(dependencyMap[6]);
-                  value.then(() => { ... }, () => { ... }).catch(/* F118553 */ function() { ... });
+                  value.then(() => { ... }, () => { ... }).catch(/* F118736 */ function() { ... });
                 });
               }
             }).catch(() => {

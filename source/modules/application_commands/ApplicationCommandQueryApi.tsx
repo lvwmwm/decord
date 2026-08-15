@@ -1,10 +1,10 @@
-// Module ID: 9600
-// Function ID: 9601
+// Module ID: 9555
+// Function ID: 9556
 // Name: findCommandInSection
-// Dependencies: [32, 19, 1910, 8409, 4800, 676, 7050, 8417, 589, 8419, 1370, 1954, 8414, 9601, 7052, 2]
+// Dependencies: [32, 19, 1910, 8448, 5246, 676, 5245, 8456, 589, 8458, 1370, 1954, 8453, 9556, 5248, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9600 (findCommandInSection)
+// Module 9555 (findCommandInSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -40,7 +40,7 @@ function findCommandInSection(found, commandKey) {
       }
       let command;
       if (null != rootCommand) {
-        let obj = _require(7050);
+        let obj = _require(5245);
         obj = { rootCommand: null, command: null, applicationId: null };
         obj[0] = rootCommand;
         obj[1] = rootCommand;
@@ -168,7 +168,7 @@ export const getCachedApplicationSection = function getCachedApplicationSection(
 export const getCachedResults = function getCachedResults(type, CHAT, query) {
   let obj = { commandTypes: items, text: query };
   items = [CHAT];
-  obj = { scoreMethod: require(8417) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
+  obj = { scoreMethod: require(8456) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
   query = authStore.query(type, obj, obj);
   obj = { commands: query.commands, sections: query.descriptors };
   return obj;
@@ -340,7 +340,7 @@ export const executeQuery = function executeQuery(type, commandTypes, placeholde
     obj[0] = tmp3;
     let tmp4 = require;
     let tmp5 = dependencyMap;
-    obj[1] = require(7052) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER;
+    obj[1] = require(5248) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER;
     let _HermesInternal = HermesInternal;
     obj[2] = "placeholder-" + num3;
     let tmp6 = obj;
@@ -358,7 +358,7 @@ export const executeQuery = function executeQuery(type, commandTypes, placeholde
   if (loading) {
     tmp14 = descriptors;
     if (0 === descriptors.length) {
-      const items2 = [require(8419) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
+      const items2 = [require(8458) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
       tmp14 = items2;
     }
   }

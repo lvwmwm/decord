@@ -1,10 +1,10 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6266
+// Function ID: 6267
 // Name: WateringCanSpotIllustration
-// Dependencies: [21, 5329, 6909, 2]
+// Dependencies: [21, 5449, 6267, 2]
 // Exports: WateringCanSpotIllustration
 
-// Module 6908 (WateringCanSpotIllustration)
+// Module 6266 (WateringCanSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WateringCanSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const WateringCanSpotIllustration = function WateringCanSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6909);
+  obj[0] = importDefault(6267);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const WateringCanSpotIllustration = function WateringCanSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
 };

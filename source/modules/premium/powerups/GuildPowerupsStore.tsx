@@ -1,9 +1,9 @@
-// Module ID: 4229
-// Function ID: 4230
+// Module ID: 4261
+// Function ID: 4262
 // Name: calculateAppliedBoosts
-// Dependencies: [32, 1910, 4230, 676, 589, 709, 2]
+// Dependencies: [32, 1910, 4262, 676, 589, 709, 2]
 
-// Module 4229 (calculateAppliedBoosts)
+// Module 4261 (calculateAppliedBoosts)
 import _slicedToArray from "_slicedToArray";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import BoostedGuildTiers from "BoostedGuildTiers";

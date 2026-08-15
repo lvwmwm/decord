@@ -1,10 +1,10 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13458
+// Function ID: 13459
 // Name: NewTag
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4788, 4338, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4661, 712, 4756, 4734, 1236, 2]
 // Exports: default
 
-// Module 13426 (NewTag)
+// Module 13458 (NewTag)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HorizontalGradient } from "ME";
@@ -68,10 +68,10 @@ export default function NewTag(color) {
     obj2.style = items2;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj2.children = intl2.string(require(1236) /* getSystemLocale */.t.y2b7CA);
-    obj1[1] = tmp7(require(4338) /* Text */.Text, obj2);
+    obj1[1] = tmp7(require(4734) /* Text */.Text, obj2);
     obj[4] = tmp7(closure_3, obj1);
-    let tmp7Result = tmp7(importDefault(4788), obj);
-    const tmp17 = importDefault(4788);
+    let tmp7Result = tmp7(importDefault(4756), obj);
+    const tmp17 = importDefault(4756);
   } else {
     obj = { style: null, children: null };
     const items3 = [tmp6.tagContainer, containerStyle];
@@ -84,7 +84,7 @@ export default function NewTag(color) {
     obj3.style = items4;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj3.children = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
-    obj[1] = tmp7(require(4338) /* Text */.Text, obj3);
+    obj[1] = tmp7(require(4734) /* Text */.Text, obj3);
     tmp7Result = tmp7(closure_3, obj);
   }
   return tmp7Result;

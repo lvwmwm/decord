@@ -1,10 +1,10 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12189
+// Function ID: 12190
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 676, 5837, 21, 4342, 712, 12439, 12526, 12527, 5371, 4788, 2]
+// Dependencies: [32, 19, 17, 676, 7186, 21, 4661, 712, 12190, 12277, 12278, 6352, 4756, 2]
 // Exports: default
 
-// Module 12438 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 12189 (UserProfileApplicationWidgetTopHeroLayout)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,26 +47,26 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   let _require;
   const tmp = createCacheKey();
   [tmp3, c0] = callback(React.useState(null), 2);
-  let obj = _require(12439);
+  let obj = _require(12190);
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  let obj1 = _require(12439);
+  let obj1 = _require(12190);
   const textComponentValues1 = obj1.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj2 = _require(12439);
+  let obj2 = _require(12190);
   const textComponentValues2 = obj2.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj3 = _require(12439);
+  let obj3 = _require(12190);
   const hero_image = topConfig.components.hero_image;
   let image;
   const textComponentValues3 = obj3.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_require(12439).ResolvedValueType.MEDIA];
+  const items = [_require(12190).ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   obj = { style: tmp.root, children: null };
   const items1 = [header.header, , ];
   obj = { style: tmp.contentRow, children: null };
   obj1 = { style: tmp.heroText, children: null };
-  const items2 = [callback2(_require(12526).FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), callback2(_require(12526).FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12526).FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12526).FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  const items2 = [callback2(_require(12277).FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), callback2(_require(12277).FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12277).FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12277).FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
   obj1[1] = items2;
   const items3 = [callback3(closure_6, obj1), ];
   obj2 = { style: tmp.heroImageColumn, children: null };
@@ -74,7 +74,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   if (tmp14Result) {
     obj3 = { style: null };
     obj3[0] = tmp.heroImageSkeleton;
-    tmp14Result = tmp14(tmp4(12527).ImageSkeleton, obj3);
+    tmp14Result = tmp14(tmp4(12278).ImageSkeleton, obj3);
   }
   obj2[1] = tmp14Result;
   items3[1] = callback2(closure_6, obj2);
@@ -102,7 +102,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       ({ START: obj14[0], END: obj14[1] } = HorizontalGradient);
       obj8[2] = closure_10;
       obj8[3] = tmp.heroImageFadeGradient;
-      const items4 = [tmp14(importDefault(4788), obj8), ];
+      const items4 = [tmp14(importDefault(4756), obj8), ];
       const obj9 = { style: null };
       obj9[0] = tmp.heroImageMaskRemainder;
       items4[1] = tmp14(tmp13, obj9);
@@ -114,8 +114,8 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       obj10[0] = obj11;
       obj10[1] = { width: "100%", height: "100%" };
       obj5[3] = tmp14(closure_5, obj10);
-      tmp14Result = tmp14(importDefault(5371), obj5);
-      const tmp20 = importDefault(5371);
+      tmp14Result = tmp14(importDefault(6352), obj5);
+      const tmp20 = importDefault(6352);
     }
     obj4[3] = tmp14Result;
     tmp14Result1 = tmp14(tmp13, obj4);

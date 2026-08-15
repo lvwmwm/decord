@@ -1,8 +1,8 @@
-// Module ID: 16030
-// Function ID: 16031
-// Dependencies: [19, 17, 8467, 15817, 676, 21, 4342, 712, 8633, 5844, 11807, 1628, 16031, 8453, 16026, 16027, 2]
+// Module ID: 16080
+// Function ID: 16081
+// Dependencies: [19, 17, 8506, 15867, 676, 21, 4661, 712, 9931, 6312, 11531, 1629, 16081, 8492, 16076, 16077, 2]
 
-// Module 16030
+// Module 16080
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -24,7 +24,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo((route) => {
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(5844);
+  let obj = searchContext(6312);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = importAllResult.useEffect(() => {
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo((route) => {
       obj.trackSearchClosed(obj);
     };
   }, items);
-  const rect = importDefault(1628)();
+  const rect = importDefault(1629)();
   obj = { style: items1, children: null };
   items1 = [callback3().container, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj = { id: "search-navigator", screenOptions: null, children: null };
@@ -52,22 +52,22 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(16031).default;
+        return searchContext(16081).default;
       }
     }),
     callback(createNativeStackNavigator.Screen, {
       name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
       options(route) {
         route = route.route;
-        const obj = { headerShown: true, header: route(8453).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
-        obj[2] = route(8453).getRenderBackImage(route.navigation);
+        const obj = { headerShown: true, header: route(8492).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
+        obj[2] = route(8492).getRenderBackImage(route.navigation);
         obj[3] = function headerTitle() {
           return outer1_8(outer1_1(outer1_2[14]), { channelId: route.params.channelId });
         };
         return obj;
       },
       getComponent() {
-        return searchContext(16027).default;
+        return searchContext(16077).default;
       }
     })
   ];

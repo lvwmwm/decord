@@ -1,9 +1,9 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15924
+// Function ID: 15925
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 1391, 676, 1235, 21, 4342, 712, 5951, 5430, 10224, 4353, 15875, 647, 1500, 2]
+// Dependencies: [19, 17, 1391, 676, 1235, 21, 4661, 712, 7234, 5441, 10424, 4768, 15925, 647, 1501, 2]
 
-// Module 15874 (ThreadsScreen)
+// Module 15924 (ThreadsScreen)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -15,7 +15,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 function ThreadsScreen(channel) {
   channel = channel.channel;
-  let obj = channel(5951);
+  let obj = channel(7234);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const callback = importAllResult.useCallback(() => {
@@ -42,8 +42,8 @@ function ThreadsScreen(channel) {
   }
   obj[1] = tmp10;
   obj[2] = callback1;
-  const tmp9 = importDefault(15875);
-  obj[3] = { paddingBottom: importDefault(5430)({ includeKeyboardHeight: true }).insets.bottom + tmp4(712).space.PX_16, paddingHorizontal: 16 };
+  const tmp9 = importDefault(15925);
+  obj[3] = { paddingBottom: importDefault(5441)({ includeKeyboardHeight: true }).insets.bottom + tmp4(712).space.PX_16, paddingHorizontal: 16 };
   obj[1] = <tmp9 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;
   return <tmp8 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;
 }
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((searchContext) => {
   return tmp4;
 });
 const memoResult1 = importAllResult.memo(() => {
-  let obj = channelId(1500);
+  let obj = channelId(1501);
   channelId = obj.useRoute().params.channelId;
   const items = [ensureGuildLoaded];
   const stateFromStores = channelId(647).useStateFromStores(items, () => outer1_5.getChannel(channelId));
